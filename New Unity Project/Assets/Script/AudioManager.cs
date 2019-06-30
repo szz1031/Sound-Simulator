@@ -8,3 +8,6 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         Debug.Log("Interactor:"+interactor.name+ " Player Clip:" + clipName );
     }
 }
+
+
+//test
