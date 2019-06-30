@@ -28,7 +28,7 @@ public class UIWorldBase : MonoBehaviour,ISingleCoroutine
         if(b_2D)
             transform.rotation = Quaternion.LookRotation(Vector3.ProjectOnPlane( transform.position- Camera.main.transform.position, Camera.main.transform.right), Camera.main.transform.up);
         else
-            transform.LookAt(CameraController.MainCamera.transform);
+            transform.LookAt(CameraController.Instance.MainCamera.transform);
     }
     protected void Hide()
     {

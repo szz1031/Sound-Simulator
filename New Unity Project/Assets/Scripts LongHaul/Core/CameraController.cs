@@ -74,7 +74,7 @@ public class CameraController : SimpleSingletonMono<CameraController>  {
             f_Yaw = hori;
         }
     }
-    public static void Attach(Transform toTransform, Action _OnCameraAttached = null)
+    public void Attach(Transform toTransform, Action _OnCameraAttached = null)
     {
         Instance.b_CameraAttaching = true;
         Instance.OnCameraAttached = _OnCameraAttached;
@@ -138,8 +138,7 @@ public class CameraController : SimpleSingletonMono<CameraController>  {
 
     #endregion
     #region Tools
-
-    public bool InputRayCheck(Vector3 inputPos, int layerMask, ref RaycastHit rayHit)
+    public bool InputRayCheck(Vector2 inputPos, int layerMask, ref RaycastHit rayHit)
     {
         if (EventSystem.current!=null&&EventSystem.current.IsPointerOverGameObject())
         {
@@ -153,30 +152,43 @@ public class CameraController : SimpleSingletonMono<CameraController>  {
         return Physics.Raycast(r, out rayHit, 1000, layerMask);
     }
 
+    public bool ForwardRayCheck(int layerMask,int maxDistance, ref RaycastHit rayHit)
+    {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            return false;
+        }
+        Ray r = new Ray(Cam_Main.transform.position,Cam_Main.transform.forward);
+
+        if (B_DrawDebugLine)
+            Debug.DrawRay(r.origin, r.direction * maxDistance, Color.red);
+
+        return Physics.Raycast(r, out rayHit, maxDistance, layerMask);
+    }
     public Vector3 GetScreenPos(Vector3 worldPos)
     {
         return Cam_Main.WorldToScreenPoint(worldPos);
     }
     #endregion
     #region Get/Set
-    public static Camera MainCamera => Instance.Cam_Main;
-    public static Quaternion CameraRotation=> Instance.qt_CameraRot;
-    public static Quaternion CameraXZRotation=> Quaternion.LookRotation(CameraXZForward, Vector3.up);
-    public static Vector3 CameraXZForward
+    public Camera MainCamera => Instance.Cam_Main;
+    public Quaternion CameraRotation=> Instance.qt_CameraRot;
+    public Quaternion CameraXZRotation=> Quaternion.LookRotation(CameraXZForward, Vector3.up);
+    public Vector3 CameraXZForward
     {
         get
         {
-            Vector3 forward = Instance.tf_CameraTrans.forward;
+            Vector3 forward = tf_CameraTrans.forward;
             forward.y = 0;
             forward = forward.normalized;
             return forward;
         }
     }
-    public static Vector3 CameraXZRightward
+    public  Vector3 CameraXZRightward
     {
         get
         {
-            Vector3 rightward = Instance.tf_CameraTrans.right;
+            Vector3 rightward = tf_CameraTrans.right;
             rightward.y = 0;
             rightward = rightward.normalized;
             return rightward;
