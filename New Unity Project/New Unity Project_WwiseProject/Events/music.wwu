@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9665BD9A-4408-46C6-96A3-BAEA5A337EFC}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="music" ID="{9665BD9A-4408-46C6-96A3-BAEA5A337EFC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Testmusic_Event" ID="{7D54C127-D57E-4B8E-8C13-2F50678905D4}">
+					<ChildrenList>
+						<Action Name="" ID="{A51DFCB3-3413-48C9-98B0-E9629A2B09E0}" ShortID="962165475">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FULLMIX STEREO_03" ID="{6942F6C1-4E03-45D9-95A3-6AC87B5F12C9}" WorkUnitID="{31ED1AE0-AD25-46BE-8FF6-276035B331A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

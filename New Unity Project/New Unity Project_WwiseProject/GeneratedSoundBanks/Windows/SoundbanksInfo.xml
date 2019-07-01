@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="833005275" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_testSFX</ObjectPath>
+			<ShortName>Bank_testSFX</ShortName>
+			<Path>Bank_testSFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" DurationType="OneShot" DurationMin="1.039048" DurationMax="1.039048"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="398141459" Language="SFX">
+					<ShortName>开门－YS070511_爱给网_aigei_com.wav</ShortName>
+					<Path>SFX\开门－YS070511_爱给网_aigei_com_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2800366463" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
+			<ShortName>Bank_music</ShortName>
+			<Path>Bank_music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2058498499" Name="Testmusic_Event" ObjectPath="\Events\music\Testmusic_Event" DurationType="OneShot" DurationMin="410.106415" DurationMax="410.106415"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="175690829" Language="SFX">
+					<ShortName>FULLMIX STEREO_03.L.wav</ShortName>
+					<Path>SFX\FULLMIX STEREO_03.L_D79FB2B7.wem</Path>
+				</File>
+				<File Id="648123377" Language="SFX">
+					<ShortName>FULLMIX STEREO_03.R.wav</ShortName>
+					<Path>SFX\FULLMIX STEREO_03.R_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED4086E7-678C-40D7-9223-B0CF3E123B4D}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="DOOR" ID="{ED4086E7-678C-40D7-9223-B0CF3E123B4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="New Sound SFX" ID="{3B8C2BC5-9FB0-42BB-AEAE-1ECC20AA8BA1}" ShortID="308141962">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="开门－YS070511_爱给网_aigei_com" ID="{A3CB239E-9054-4A3E-ADEC-87827A476E2A}" ShortID="398141459">
+							<Language>SFX</Language>
+							<AudioFile>开门－YS070511_爱给网_aigei_com.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="开门－YS070511_爱给网_aigei_com" ID="{A3CB239E-9054-4A3E-ADEC-87827A476E2A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

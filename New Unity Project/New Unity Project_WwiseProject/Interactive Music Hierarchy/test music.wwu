@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{31ED1AE0-AD25-46BE-8FF6-276035B331A4}" SchemaVersion="94">
+	<InteractiveMusic>
+		<WorkUnit Name="test music" ID="{31ED1AE0-AD25-46BE-8FF6-276035B331A4}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="FULLMIX STEREO_03" ID="{6942F6C1-4E03-45D9-95A3-6AC87B5F12C9}" ShortID="703092064">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="410106.395833333"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="FULLMIX STEREO_03_L" ID="{5E78F505-7DC8-4FAC-A280-8E78D6B81961}" ShortID="867595606">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FULLMIX STEREO_03_L" ID="{7146D596-81EE-4FC3-A028-E40E72FEE81F}" ShortID="175690829">
+									<Language>SFX</Language>
+									<AudioFile>FULLMIX STEREO_03.L.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{93E83E00-7698-4F00-BFAE-7A5AA18781FE}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{7E1BCED5-2D45-47BF-945C-69DE533D49BD}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{72E72933-A32D-40ED-B1FA-3EAE97935AA3}">
+									<ClipList>
+										<MusicClip Name="FULLMIX STEREO_03_L" ID="{CB6F60FF-2EA5-418D-B5B6-AF2B8FEF9316}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="410106.395833333"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="FULLMIX STEREO_03_L" ID="{7146D596-81EE-4FC3-A028-E40E72FEE81F}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+						<MusicTrack Name="FULLMIX STEREO_03_R" ID="{E42F8E78-8489-45CA-8B41-A74226A796B9}" ShortID="931836293">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FULLMIX STEREO_03_R" ID="{A8383F40-82BF-4093-942F-FA8E2954D78E}" ShortID="648123377">
+									<Language>SFX</Language>
+									<AudioFile>FULLMIX STEREO_03.R.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4A0E27F3-61E7-4F51-8FDA-EB360BF62826}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="100"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{B0F36272-7C1B-41E1-96AF-1AE212949F3D}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{F535136E-C8DB-4485-893D-75453010DF94}">
+									<ClipList>
+										<MusicClip Name="FULLMIX STEREO_03_R" ID="{DAAB49D0-5B6F-4730-A193-3AAD4501AEEE}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="410106.395833333"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="FULLMIX STEREO_03_R" ID="{A8383F40-82BF-4093-942F-FA8E2954D78E}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{396EC380-B11E-4656-992B-F25FF9A80CAD}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-100"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{97139A7B-A50D-4048-BFBB-E5193C4567FE}"/>
+						<MusicCue Name="Exit Cue" ID="{07CE2FB8-31CF-4CC5-B2A7-BA34161A140E}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="410106.395833333"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

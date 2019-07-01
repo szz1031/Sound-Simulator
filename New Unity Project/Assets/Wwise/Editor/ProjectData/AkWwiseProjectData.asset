@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dbbd52538f2c34481ab4b4ea6df328, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 47884a31071ee5479523d9b4c0d5a007
+    GuidInternal: 
+    m_lastTime: -8586396285692774525
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c1ffe7deaa0e614bb759bac74ccf6fde
+    GuidInternal: 
+    m_lastTime: -8586396285693265565
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 61471425322961458087885ce7ef58e4
+    GuidInternal: 
+    m_lastTime: -8586396221380691703
+    List:
+    - name: Bank_music
+      guid: a50a6c269192a14183974c359a6bc735
+      id: 2800366463
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bank_music
+        ObjectType: 7
+      Path: Default Work Unit\Bank_music
+    - name: Bank_testSFX
+      guid: 9e180a81f8e4e940ad72a21e7bc6eb83
+      id: 833005275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bank_testSFX
+        ObjectType: 7
+      Path: Default Work Unit\Bank_testSFX
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d415b48cfe971f4394483401dcb078cf
+    GuidInternal: 
+    m_lastTime: -8586396224152346752
+    List: []
+  - PhysicalPath: Events\music.wwu
+    ParentPhysicalPath: 
+    guid: 9abd65960844c64696a3baea5a337efc
+    GuidInternal: 
+    m_lastTime: -8586396231352362711
+    List:
+    - name: Testmusic_Event
+      guid: 27c1547d7ed58e4b8c132f50678905d4
+      id: 2058498499
+      PathAndIcons:
+      - ElementName: music
+        ObjectType: 12
+      - ElementName: Testmusic_Event
+        ObjectType: 3
+      Path: music\Testmusic_Event
+      maxAttenuation: 0
+      maxDuration: 410.1064
+      minDuration: 410.1064
+  - PhysicalPath: Events\SFX.wwu
+    ParentPhysicalPath: 
+    guid: 0fa3a35f1f660447a398a1bfd0e200be
+    GuidInternal: 
+    m_lastTime: -8586396221380418654
+    List:
+    - name: test_door
+      guid: 67e1214b5934644cb5980b9306d649a3
+      id: 4209493196
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: test_door
+        ObjectType: 3
+      Path: SFX\test_door
+      maxAttenuation: 0
+      maxDuration: 1.039048
+      minDuration: 1.039048
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 03200b5d46398d45816fee77a83878c4
+    GuidInternal: 
+    m_lastTime: -8586396285693355080
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c429fcf79327e14dabaf29b6578fca2e
+    GuidInternal: 
+    m_lastTime: -8586396285693007887
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fce25eada189f14890b8b07b8874a80d
+    GuidInternal: 
+    m_lastTime: -8586396285692859093
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c13710bade14d643b7344a7706171b58
+    GuidInternal: 
+    m_lastTime: -8586396285693077074
+    List: []
+  ExpandedItems:
+  - /New Unity Project_WwiseProject
+  - /New Unity Project_WwiseProject/Events
+  - /New Unity Project_WwiseProject/Events/music
+  - /New Unity Project_WwiseProject/Events/SFX
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

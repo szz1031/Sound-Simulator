@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2058498499	Testmusic_Event			\music\Testmusic_Event	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	175690829	FULLMIX STEREO_03_L	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\FULLMIX STEREO_03.L_D79FB2B7.wem		\Interactive Music Hierarchy\test music\FULLMIX STEREO_03\FULLMIX STEREO_03_L		39370278
+	648123377	FULLMIX STEREO_03_R	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\FULLMIX STEREO_03.R_D79FB2B7.wem		\Interactive Music Hierarchy\test music\FULLMIX STEREO_03\FULLMIX STEREO_03_R		39370278
+

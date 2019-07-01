@@ -1,0 +1,5 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4209493196	test_door			\SFX\test_door	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	398141459	New Sound SFX	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\
