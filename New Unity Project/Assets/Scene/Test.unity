@@ -1118,7 +1118,6 @@ GameObject:
   - component: {fileID: 1700149123}
   - component: {fileID: 1700149126}
   - component: {fileID: 1700149125}
-  - component: {fileID: 1700149122}
   - component: {fileID: 1700149127}
   - component: {fileID: 1700149128}
   m_Layer: 0
@@ -1141,35 +1140,6 @@ Transform:
   m_Father: {fileID: 1594316847}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1700149122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1700149120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 842e9a81b3fccbc4cadb50e17af793b3,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!124 &1700149123
 Behaviour:
   m_ObjectHideFlags: 0
