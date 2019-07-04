@@ -597,8 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57252e045819d8041854c166cb1f1635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayAudio: 0
-  ClipName: 
   I_AnimRotation: 90
 --- !u!65 &1165275021
 BoxCollider:
@@ -623,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: 
+  triggerList: 9b776c3b
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4

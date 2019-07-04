@@ -16,21 +16,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 47884a31071ee5479523d9b4c0d5a007
     GuidInternal: 
-    m_lastTime: -8586396285692774525
+    m_lastTime: -8586394279018954176
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c1ffe7deaa0e614bb759bac74ccf6fde
     GuidInternal: 
-    m_lastTime: -8586396285693265565
+    m_lastTime: -8586394279038961619
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8586396221380691703
+    m_lastTime: -8586394279019992540
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -55,13 +55,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586396224152346752
+    m_lastTime: -8586394279052068355
     List: []
   - PhysicalPath: Events\music.wwu
     ParentPhysicalPath: 
     guid: 9abd65960844c64696a3baea5a337efc
     GuidInternal: 
-    m_lastTime: -8586396231352362711
+    m_lastTime: -8586394279052056388
     List:
     - name: Testmusic_Event
       guid: 27c1547d7ed58e4b8c132f50678905d4
@@ -79,7 +79,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0fa3a35f1f660447a398a1bfd0e200be
     GuidInternal: 
-    m_lastTime: -8586396221380418654
+    m_lastTime: -8586394279052068355
     List:
     - name: test_door
       guid: 67e1214b5934644cb5980b9306d649a3
@@ -98,33 +98,35 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 03200b5d46398d45816fee77a83878c4
     GuidInternal: 
-    m_lastTime: -8586396285693355080
+    m_lastTime: -8586394279052056388
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c429fcf79327e14dabaf29b6578fca2e
     GuidInternal: 
-    m_lastTime: -8586396285693007887
+    m_lastTime: -8586394279019243587
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: fce25eada189f14890b8b07b8874a80d
     GuidInternal: 
-    m_lastTime: -8586396285692859093
+    m_lastTime: -8586394279019243587
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c13710bade14d643b7344a7706171b58
     GuidInternal: 
-    m_lastTime: -8586396285693077074
+    m_lastTime: -8586394279018963930
     List: []
   ExpandedItems:
   - /New Unity Project_WwiseProject
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/music
   - /New Unity Project_WwiseProject/Events/SFX
+  - /New Unity Project_WwiseProject/SoundBanks
+  - /New Unity Project_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
