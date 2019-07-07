@@ -1,5 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1730208058	Player_Footsteps			\Default Work Unit\Player_Footsteps	3 materials - switches
 	4209493196	test_door			\SFX\test_door	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	165088305	Curtain	GroundMaterial			
+	841620460	Concrete	GroundMaterial			
+	2058049674	Wood	GroundMaterial			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	398141459	New Sound SFX	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\
+	126968948	fstp_concrete_06	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_D7488BDD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5428
+	203117369	fstp_wood_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_B245EC5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\fstp_wood_03		4977
+	261043379	fstp_wood_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_8B3F90D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\fstp_wood_02		3961
+	307543888	fstp_concrete_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_65277CB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_02		3849
+	398141459	New Sound SFX	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\	519856163	fstp_wood_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_7A0A09E4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\fstp_wood_04		4813
+	580121908	fstp_wood_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_A2BE4597.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\fstp_wood_05		5030
+	653581658	fstp_concrete_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_490BF6DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_01		4416
+	653792465	fstp_concrete_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_1E5DA541.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_04		4825
+	887034712	fstp_concrete_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_E225ACC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_05		4717
+	945656954	fstp_concrete_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_6FE0D2D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_03		5337
+	1038279815	fstp_wood_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_0F55BC3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\fstp_wood_01		5708
+

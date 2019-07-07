@@ -16,12 +16,57 @@
 			<ShortName>Bank_testSFX</ShortName>
 			<Path>Bank_testSFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
 				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="126968948" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_D7488BDD.wem</Path>
+				</File>
+				<File Id="203117369" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_B245EC5E.wem</Path>
+				</File>
+				<File Id="261043379" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_8B3F90D4.wem</Path>
+				</File>
+				<File Id="307543888" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_65277CB1.wem</Path>
+				</File>
 				<File Id="398141459" Language="SFX">
 					<ShortName>开门－YS070511_爱给网_aigei_com.wav</ShortName>
 					<Path>SFX\开门－YS070511_爱给网_aigei_com_6296B0F9.wem</Path>
+				</File>
+				<File Id="519856163" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_7A0A09E4.wem</Path>
+				</File>
+				<File Id="580121908" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_A2BE4597.wem</Path>
+				</File>
+				<File Id="653581658" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_490BF6DF.wem</Path>
+				</File>
+				<File Id="653792465" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_1E5DA541.wem</Path>
+				</File>
+				<File Id="887034712" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_E225ACC1.wem</Path>
+				</File>
+				<File Id="945656954" Language="SFX">
+					<ShortName>fstepConcreteMono.wav</ShortName>
+					<Path>SFX\fstepConcreteMono_6FE0D2D5.wem</Path>
+				</File>
+				<File Id="1038279815" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_0F55BC3E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

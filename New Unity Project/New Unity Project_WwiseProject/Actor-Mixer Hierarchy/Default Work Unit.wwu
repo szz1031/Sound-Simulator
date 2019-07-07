@@ -1,6 +1,468 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="Footsteps" ID="{3E0A5E58-9CEF-4699-BB2D-07FE16588C74}" ShortID="393174452">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{F4ACFAB8-FC57-4C5D-ACA4-B3FB50ACDD14}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">4</Value>
+												<Value Platform="Mac">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+												<Value Platform="Mac">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+												<Value Platform="Mac">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+												<Value Platform="Mac">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Windows">0</Value>
+												<Value Platform="Mac">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{4151549F-C899-4D86-97EF-AD95158EFE0C}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+										</ConversionPluginInfo>
+										<ConversionPluginInfo Platform="Mac">
+											<ConversionPlugin Name="" ID="{750E2D9E-B3DA-422B-AE73-17D4DF717A82}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GroundMaterial" ID="{91475BC4-CBDA-4ACC-913A-ADB91BE014EC}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}" ShortID="1071196432">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{693D2D7A-A6D3-43BD-A08C-30E26F4FD432}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="51"/>
+													<Property Name="Min" Type="Real64" Value="-51"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="fstp_concrete_01" ID="{28D18BA5-C39D-4BA7-A534-9055502A6B2F}" ShortID="358035162">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{3BF35554-386F-48C0-BF5B-63A3AF8329C6}" ShortID="126968948">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.41780080737256"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.48170517954204"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="653581658"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{702CBA7F-2234-4116-BCCF-F327C17914FE}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="1.76470588235293"/>
+												<Property Name="PanY" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{3BF35554-386F-48C0-BF5B-63A3AF8329C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_concrete_02" ID="{D81803B2-455E-4741-B16B-6EFDEDBC3624}" ShortID="760180133">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{9E10F779-0E8E-48B3-BCF7-AD20F59195A9}" ShortID="307543888">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.173370193460737"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.742292491381019"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.14736283140729"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{9E10F779-0E8E-48B3-BCF7-AD20F59195A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_concrete_03" ID="{AE5E3199-D7B8-46C2-9EDA-F2084C658DFA}" ShortID="364572053">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{EDDE04AF-FB72-4D54-9A17-3604842E1D61}" ShortID="945656954">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.250981662418438"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.41824558445975"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.99051132193982"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{EDDE04AF-FB72-4D54-9A17-3604842E1D61}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_concrete_04" ID="{EA5AD4EC-03B5-4A65-AFFF-0E03B0521A21}" ShortID="707155831">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-50</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{4D26872C-1793-40F6-AC1D-B563753ECAD7}" ShortID="653792465">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.282852349709669"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.13533604851243"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.61995739594161"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{4D26872C-1793-40F6-AC1D-B563753ECAD7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_concrete_05" ID="{B3A532E8-E88A-4FA3-B2CB-E50C9F35A576}" ShortID="258921180">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{375919CA-B718-4091-9BBE-32B8D48B9DA5}" ShortID="887034712">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.319793373615413"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.89009187027293"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.40441090358712"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{375919CA-B718-4091-9BBE-32B8D48B9DA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_concrete_06" ID="{173AE022-CE26-49D6-9454-D54E706826F6}" ShortID="583777564">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fstepConcreteMono" ID="{49EF654C-75B4-47AB-A393-2EB86A80752F}" ShortID="653581658">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.137840722534571"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.298787693355283"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.56951697661779"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.19755641685752"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="126968948"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fstepConcreteMono" ID="{49EF654C-75B4-47AB-A393-2EB86A80752F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}" ShortID="783071133">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E0FF78D4-56EA-47DA-BCFA-DC99EC6BDD61}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-60"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="fstp_wood_01" ID="{AE4CC08C-DFEB-41A8-8824-037BC087E248}" ShortID="164080099">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A17A4321-9219-46B1-B65F-A8A82D9E3FB2}" ShortID="1038279815">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.479365918097754"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.56803170409511E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.582087186261554"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A17A4321-9219-46B1-B65F-A8A82D9E3FB2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_wood_02" ID="{3D9F57B3-89DF-48BA-A320-27C70047C3A7}" ShortID="121801278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{26CA7194-92C2-45C6-9A82-186D018A0863}" ShortID="261043379">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.402324966974897"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.856010568031705"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.2583355350066"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{26CA7194-92C2-45C6-9A82-186D018A0863}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_wood_03" ID="{1686E599-DE9E-4824-8766-A7B89BBFB281}" ShortID="1047183038">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{12DC24CC-A802-496E-8F1C-1D50A0925909}" ShortID="203117369">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.265363276089824"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.61785997357992"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.08010568031704"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{12DC24CC-A802-496E-8F1C-1D50A0925909}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_wood_04" ID="{A009FE22-72AF-4A37-BB20-7EAAC4AC30E5}" ShortID="931504060">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{449A15B1-964C-4865-97F9-5CCC97FF519E}" ShortID="519856163">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.136961690885069"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.33690885072655"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.80771466314399"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{449A15B1-964C-4865-97F9-5CCC97FF519E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="fstp_wood_05" ID="{17012F5F-BC69-4CB1-AB16-6EC93930D716}" ShortID="942545233">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{DD863AE9-9A93-4F22-8E2E-110C1DEBD5A7}" ShortID="580121908">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="7.70409511228531E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.239682959048877"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.28708058124175"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.76644649933949"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{DD863AE9-9A93-4F22-8E2E-110C1DEBD5A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Curtain" ID="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}"/>
+								<ItemList>
+									<ItemRef Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Wood" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
+								<ItemList>
+									<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
