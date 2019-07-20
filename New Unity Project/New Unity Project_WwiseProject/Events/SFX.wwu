@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="SFX" ID="{5FA3A30F-661F-4704-A398-A1BFD0E200BE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test_door" ID="{4B21E167-3459-4C64-B598-0B9306D649A3}">
+				<Event Name="test_01" ID="{4B21E167-3459-4C64-B598-0B9306D649A3}">
 					<ChildrenList>
 						<Action Name="" ID="{29CF1D0A-9356-455C-8B9D-9B724E52DA7D}" ShortID="623466564">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="New Sound SFX" ID="{3B8C2BC5-9FB0-42BB-AEAE-1ECC20AA8BA1}" WorkUnitID="{ED4086E7-678C-40D7-9223-B0CF3E123B4D}"/>
+									<ObjectRef Name="TVMusic_01" ID="{9889CD88-8D0C-46EA-AEE2-38E15F8FF526}" WorkUnitID="{ED4086E7-678C-40D7-9223-B0CF3E123B4D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

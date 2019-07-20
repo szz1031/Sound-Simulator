@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{F7FC29C4-2793-4DE1-ABAF-29B6578FCA2E}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{2E3A2745-15BA-4462-92F9-6EB8F77B8DCD}"/>
 						<State Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>

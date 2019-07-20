@@ -273,7 +273,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}" ShortID="783071133">
+						<RandomSequenceContainer Name="CrakingWood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}" ShortID="783071133">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -434,7 +434,7 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+								<ItemRef Name="CrakingWood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}"/>
@@ -456,7 +456,7 @@
 							<Grouping>
 								<SwitchRef Name="WoodStair" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
 								<ItemList>
-									<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+									<ItemRef Name="CrakingWood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

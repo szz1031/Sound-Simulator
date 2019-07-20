@@ -26,7 +26,7 @@
 												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
+												<XPos>15</XPos>
 												<YPos>42</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -55,7 +55,7 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
+												<XPos>15</XPos>
 												<YPos>75</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -97,7 +97,7 @@
 												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
+												<XPos>15</XPos>
 												<YPos>-200</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -170,6 +170,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
@@ -183,10 +186,255 @@
 					<PositioningInfo>
 						<Panner Name="" ID="{F0C4D7A0-105A-4D2E-B468-BB970B40D8B1}"/>
 					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+								<CustomState Name="" ID="{9DBC455E-B5BA-436B-83D1-6884C6E6C3CA}" ShortID="252984737"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+								<CustomState Name="" ID="{E6DC5263-19F0-458A-BDA2-EC305DFA504D}" ShortID="5418301"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="open door" ID="{A3CB239E-9054-4A3E-ADEC-87827A476E2A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="TVmusic" ID="{CEA36B50-1CDF-45F4-B4F2-507050401F19}" ShortID="854366241">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{F7D9C0BB-D4A4-44EB-998D-4610BF2F2761}" ShortID="327730056">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2C21E3A5-EC25-4257-97D6-A412EC7B47B7}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>15</XPos>
+												<YPos>40</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{B0D85D41-4D50-4958-B674-B364521D7581}" ShortID="979000618">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{BA7B718B-7E4F-4449-BFAC-ED27BAA836BD}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>8.7519</XPos>
+												<YPos>15</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>15</XPos>
+												<YPos>45</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ObjectAttenuation_WithCone" ID="{856784D9-225E-443A-B124-4A63E350A97F}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Music" ID="{34510358-E2A0-4C5B-BB03-5EDB755C33FA}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ANW3184_03_Ases-Lament" ID="{50BA804C-D340-45E3-9E55-FB14F2451E66}" ShortID="194398363">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW3184_03_Ases-Lament" ID="{F48B17D0-B372-44E2-84B0-9F307A236BB5}" ShortID="630636767">
+									<Language>SFX</Language>
+									<AudioFile>ANW3184_03_Ases-Lament.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW3184_03_Ases-Lament" ID="{F48B17D0-B372-44E2-84B0-9F307A236BB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ANW3185_01_Cello-Prelude" ID="{0900F669-3117-43DB-BD11-6203E5638434}" ShortID="471558722">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW3185_01_Cello-Prelude" ID="{A14D4E1A-C4AF-4B81-A230-C6759D5D29CB}" ShortID="946331070">
+									<Language>SFX</Language>
+									<AudioFile>ANW3185_01_Cello-Prelude.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW3185_01_Cello-Prelude" ID="{A14D4E1A-C4AF-4B81-A230-C6759D5D29CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ANW3185_04_Nocturne" ID="{44227791-4F36-42DC-9C1A-E9D0A02EB378}" ShortID="898552244">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW3185_04_Nocturne" ID="{70B308E3-584E-4AB9-9E7A-A155387A2A1E}" ShortID="906098619">
+									<Language>SFX</Language>
+									<AudioFile>ANW3185_04_Nocturne.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW3185_04_Nocturne" ID="{70B308E3-584E-4AB9-9E7A-A155387A2A1E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ANW1838_10_Violins-Virus" ID="{F12519EB-C79E-4955-B40C-A4FF7634D92D}" ShortID="805357877">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW1838_10_Violins-Virus" ID="{8A6FB40D-672C-4BC2-8C84-087FB0386357}" ShortID="437759164">
+									<Language>SFX</Language>
+									<AudioFile>ANW1838_10_Violins-Virus.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW1838_10_Violins-Virus" ID="{8A6FB40D-672C-4BC2-8C84-087FB0386357}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ANW1546_04_Karma" ID="{B6D810B6-B1CD-4863-AF78-4EF44DD0EBD8}" ShortID="160002661">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW1546_04_Karma" ID="{B99D5E74-4CD7-489A-90A0-504CBAF6094A}" ShortID="551255860">
+									<Language>SFX</Language>
+									<AudioFile>ANW1546_04_Karma.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW1546_04_Karma" ID="{B99D5E74-4CD7-489A-90A0-504CBAF6094A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TVMusic_01" ID="{9889CD88-8D0C-46EA-AEE2-38E15F8FF526}" ShortID="997775689">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW3088_05_Fairground" ID="{62987125-FAC9-4DDE-868B-6136229B24EA}" ShortID="459131110">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.39918931638045"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.39918931638044"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="200.199019622413"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ANW3088_05_Fairground.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+										<CustomState Name="" ID="{6453BA77-41CC-46A7-8447-2A74B907FF03}" ShortID="31039689"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+										<CustomState Name="" ID="{6CFF01C1-FE02-416D-82A6-41DA53FA05AE}" ShortID="323141200"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW3088_05_Fairground" ID="{62987125-FAC9-4DDE-868B-6136229B24EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
