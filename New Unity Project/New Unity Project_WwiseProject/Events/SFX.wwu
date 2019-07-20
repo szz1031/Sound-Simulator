@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TV_01" ID="{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}">
+					<ChildrenList>
+						<Action Name="" ID="{9121CFE0-E52C-498F-9D10-B73BAF275CD1}" ShortID="15842988">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TVMusic_01" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" WorkUnitID="{ED4086E7-678C-40D7-9223-B0CF3E123B4D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -18,6 +18,7 @@
 			<IncludedEvents>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
 				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
+				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\SFX\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="126968948" Language="SFX">
@@ -59,6 +60,10 @@
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_A0DE41F1.wem</Path>
+				</File>
+				<File Id="911504740" Language="SFX">
+					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
+					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_106F8CFC.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>

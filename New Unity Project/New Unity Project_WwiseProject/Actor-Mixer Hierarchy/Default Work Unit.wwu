@@ -431,6 +431,27 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+								<CustomState Name="" ID="{38D6A87F-5F08-48CD-9977-B56F96D47B90}" ShortID="1050129828"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+								<CustomState Name="" ID="{F9FE09CA-09DB-4AA8-9445-3B57B6BFCE1B}" ShortID="373900420">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>

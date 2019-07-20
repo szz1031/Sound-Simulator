@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID TEST_DOOR = 4209493196U;
+        static const AkUniqueID TV_01 = 1652545419U;
     } // namespace EVENTS
 
     namespace STATES
