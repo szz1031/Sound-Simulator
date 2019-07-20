@@ -17,6 +17,21 @@ namespace AK
         static const AkUniqueID TEST_DOOR = 4209493196U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace WORLDSTATE
+        {
+            static const AkUniqueID GROUP = 1048369770U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A = 84696446U;
+                static const AkUniqueID B = 84696445U;
+            } // namespace STATE
+        } // namespace WORLDSTATE
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace GROUNDMATERIAL
@@ -27,11 +42,16 @@ namespace AK
             {
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID CURTAIN = 165088305U;
-                static const AkUniqueID WOOD = 2058049674U;
+                static const AkUniqueID WOODSTAIR = 2341482753U;
             } // namespace SWITCH
         } // namespace GROUNDMATERIAL
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID AUDIOSOURCEDISTANCE = 989232327U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

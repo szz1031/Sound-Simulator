@@ -2,6 +2,13 @@
 <WwiseDocument Type="WorkUnit" ID="{31ED1AE0-AD25-46BE-8FF6-276035B331A4}" SchemaVersion="94">
 	<InteractiveMusic>
 		<WorkUnit Name="test music" ID="{31ED1AE0-AD25-46BE-8FF6-276035B331A4}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
+			</PropertyList>
 			<ChildrenList>
 				<MusicSegment Name="FULLMIX STEREO_03" ID="{6942F6C1-4E03-45D9-95A3-6AC87B5F12C9}" ShortID="703092064">
 					<PropertyList>

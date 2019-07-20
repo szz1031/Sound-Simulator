@@ -454,7 +454,7 @@
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="Wood" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
+								<SwitchRef Name="WoodStair" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
 								<ItemList>
 									<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
 								</ItemList>

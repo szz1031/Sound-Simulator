@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5D0B2003-3946-458D-816F-EE77A83878C4}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5D0B2003-3946-458D-816F-EE77A83878C4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5D0B2003-3946-458D-816F-EE77A83878C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

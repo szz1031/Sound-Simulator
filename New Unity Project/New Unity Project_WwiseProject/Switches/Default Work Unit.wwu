@@ -6,7 +6,7 @@
 				<SwitchGroup Name="GroundMaterial" ID="{91475BC4-CBDA-4ACC-913A-ADB91BE014EC}">
 					<ChildrenList>
 						<Switch Name="Curtain" ID="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}"/>
-						<Switch Name="Wood" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
+						<Switch Name="WoodStair" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
 						<Switch Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}"/>
 					</ChildrenList>
 				</SwitchGroup>
