@@ -1,61 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}" SchemaVersion="94">
 	<Attenuations>
-		<WorkUnit Name="Default Work Unit" ID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}" PersistMode="Standalone">
-			<ChildrenList>
-				<Attenuation Name="ObjectAttenuation_WithCone" ID="{856784D9-225E-443A-B124-4A63E350A97F}" ShortID="14682293">
-					<PropertyList>
-						<Property Name="ConeUse" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="35"/>
-					</PropertyList>
-					<CurveUsageInfoList>
-						<VolumeDryUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-								<Curve Name="VolumeDry" ID="{AE14BEB4-FAB9-4C2D-8F07-05B626CA9708}">
-									<PropertyList>
-										<Property Name="Flags" Type="int32" Value="3"/>
-									</PropertyList>
-									<PointList>
-										<Point>
-											<XPos>0</XPos>
-											<YPos>0</YPos>
-											<Flags>5</Flags>
-											<SegmentShape>Log1</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>35</XPos>
-											<YPos>-200</YPos>
-											<Flags>37</Flags>
-										</Point>
-									</PointList>
-								</Curve>
-							</CurveUsageInfo>
-						</VolumeDryUsage>
-						<VolumeWetGameUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-						</VolumeWetGameUsage>
-						<VolumeWetUserUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-						</VolumeWetUserUsage>
-						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</LowPassFilterUsage>
-						<HighPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</HighPassFilterUsage>
-						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</SpreadUsage>
-						<FocusUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-						</FocusUsage>
-					</CurveUsageInfoList>
-				</Attenuation>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}" PersistMode="Standalone"/>
 	</Attenuations>
 </WwiseDocument>

@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9063e91af8c5bf642bdef3627bd80bb1, type: 3}
   m_Name: 4B21E167-3459-4C64-B598-0B9306D649A3
   m_EditorClassIdentifier: 
-  objectName: test_01
-  id: 3020476437
+  objectName: test_door
+  id: 4209493196
   guid: 4B21E167-3459-4C64-B598-0B9306D649A3

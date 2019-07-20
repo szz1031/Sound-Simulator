@@ -17,7 +17,7 @@
 			<Path>Bank_testSFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
-				<Event Id="3020476437" Name="test_01" ObjectPath="\Events\SFX\test_01" MaxAttenuation="35.000000" DurationType="Infinite"/>
+				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="126968948" Language="SFX">
@@ -36,9 +36,9 @@
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_5E124F05.wem</Path>
 				</File>
-				<File Id="459131110" Language="SFX">
-					<ShortName>ANW3088_05_Fairground.wav</ShortName>
-					<Path>SFX\ANW3088_05_Fairground_1614B467.wem</Path>
+				<File Id="398141459" Language="SFX">
+					<ShortName>开门－YS070511_爱给网_aigei_com.wav</ShortName>
+					<Path>SFX\开门－YS070511_爱给网_aigei_com_6296B0F9.wem</Path>
 				</File>
 				<File Id="519856163" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
