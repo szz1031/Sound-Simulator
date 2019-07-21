@@ -16,11 +16,11 @@
 			<ShortName>Bank_testSFX</ShortName>
 			<Path>Bank_testSFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1350431389" Name="Door_01_Close_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartA" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
-				<Event Id="1350431390" Name="Door_01_Close_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartB" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
-				<Event Id="1350431391" Name="Door_01_Close_PartC" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartC" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
-				<Event Id="255856401" Name="Door_01_Open_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartA" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
-				<Event Id="255856402" Name="Door_01_Open_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartB" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
+				<Event Id="1350431389" Name="Door_01_Close_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartA" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
+				<Event Id="1350431390" Name="Door_01_Close_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartB" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
+				<Event Id="1350431391" Name="Door_01_Close_PartC" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartC" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="255856401" Name="Door_01_Open_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartA" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
+				<Event Id="255856402" Name="Door_01_Open_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartB" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
 				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
 				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\SFX\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
