@@ -28444,7 +28444,19 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011459730600, guid: db173cf6b5c09764d8e951d2f0907c39,
     type: 2}
   m_PrefabInternal: {fileID: 2075553694}
---- !u!114 &1162815484
+--- !u!114 &1162815486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162815483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  E_Mateiral: -1
+--- !u!114 &1162815490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -28473,7 +28485,7 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!114 &1162815485
+--- !u!114 &1162815491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -28494,18 +28506,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1162815486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1162815483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!4 &1164593645 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442718, guid: a2a16cf9b5640454888bbf394eff39b9, type: 2}

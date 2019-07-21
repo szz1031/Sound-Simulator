@@ -26,7 +26,6 @@ State	ID	Name	State Group			Notes
 	84696446	A	WorldState			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	259995759	A	WorldState	\Actor-Mixer Hierarchy\testSFX\TVMusic		
 	373900420	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
 	647762099	B	WorldState	\Actor-Mixer Hierarchy\testSFX\TVMusic		
 
