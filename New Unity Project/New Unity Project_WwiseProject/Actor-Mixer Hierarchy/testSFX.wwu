@@ -313,6 +313,14 @@
 						</Sound>
 					</ChildrenList>
 					<StateInfo>
+						<StatePropertyList>
+							<Property Name="EnableAttenuation"/>
+							<Property Name="Highpass"/>
+							<Property Name="Lowpass"/>
+							<Property Name="MakeUpGain"/>
+							<Property Name="Pitch"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
 						<StateGroupList>
 							<StateGroupInfo>
 								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
@@ -327,6 +335,7 @@
 								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
 								<CustomState Name="" ID="{1473B2BD-9E96-40B5-90DE-DEE3DDAE8038}" ShortID="647762099">
 									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="Pitch" Type="int32" Value="-1260"/>
 									</PropertyList>
 								</CustomState>

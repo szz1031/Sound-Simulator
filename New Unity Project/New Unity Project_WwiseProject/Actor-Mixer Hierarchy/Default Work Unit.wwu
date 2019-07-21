@@ -483,6 +483,161 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<ActorMixer Name="Door" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" ShortID="873482629">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" ShortID="238106575">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.636931014307638"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.42202468778367"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.1908856850461"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" ShortID="864419390">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" ShortID="819079196">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.267189044287234"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.217091098483377"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.27386503039662"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.68220033365274"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" ShortID="420027433">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" ShortID="710131029">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.065984296829555"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.304520291782534"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="19.2760583545657"/>
+										<Property Name="TrimEnd" Type="Real64" Value="20.0357210448471"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" ShortID="200709232">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" ShortID="1041985487">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="17.4095364896326"/>
+										<Property Name="TrimEnd" Type="Real64" Value="17.8226588463665"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" ShortID="894751371">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" ShortID="243168692">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.69762415242392"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.69762415242392"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.73056324995491"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.42818740237883"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

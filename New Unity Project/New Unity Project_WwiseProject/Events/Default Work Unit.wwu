@@ -15,6 +15,65 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Door_01" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" ShortID="330608276">
+					<ChildrenList>
+						<Event Name="Door_01_Open_PartA" ID="{20F6D0F5-38C6-4C50-B52E-F138177B349D}">
+							<ChildrenList>
+								<Action Name="" ID="{31A2BD78-8087-44FD-8D85-8182A76B533B}" ShortID="820090788">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_01_Open_PartB" ID="{264BF452-D8EC-4785-9B9F-C6977F206BDD}">
+							<ChildrenList>
+								<Action Name="" ID="{98A5B1F8-8EC3-4A22-9583-2FC36BB93FF0}" ShortID="564543505">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_01_Close_PartA" ID="{6E22379D-F8BA-484E-8033-559EDB8F2D60}">
+							<ChildrenList>
+								<Action Name="" ID="{B710D6F4-7B59-4EDA-B380-C96FD97E54CB}" ShortID="149935927">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_01_Close_PartB" ID="{56EA13CE-221A-490B-AC7B-6A643C004E8E}">
+							<ChildrenList>
+								<Action Name="" ID="{0040CADF-7702-4B60-ACBC-E72564E0B463}" ShortID="750747275">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_01_Close_PartC" ID="{E579079E-2007-444F-B253-85FF608C0B3A}">
+							<ChildrenList>
+								<Action Name="" ID="{18A46304-B579-43A2-942B-9E782348694D}" ShortID="746832876">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

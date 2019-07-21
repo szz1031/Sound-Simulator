@@ -13,6 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DOOR_01_CLOSE_PARTA = 1350431389U;
+        static const AkUniqueID DOOR_01_CLOSE_PARTB = 1350431390U;
+        static const AkUniqueID DOOR_01_CLOSE_PARTC = 1350431391U;
+        static const AkUniqueID DOOR_01_OPEN_PARTA = 255856401U;
+        static const AkUniqueID DOOR_01_OPEN_PARTB = 255856402U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID TEST_DOOR = 4209493196U;
         static const AkUniqueID TV_01 = 1652545419U;

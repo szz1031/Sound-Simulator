@@ -4,11 +4,16 @@
 		<UserProjectSettings Name="" ID="{F27CA7FE-813D-47C9-845F-511981655205}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\SZZ\Downloads"/>
+				<Property Name="Event Action List\{20F6D0F5-38C6-4C50-B52E-F138177B349D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{264BF452-D8EC-4785-9B9F-C6977F206BDD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4B21E167-3459-4C64-B598-0B9306D649A3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{56EA13CE-221A-490B-AC7B-6A643C004E8E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6E22379D-F8BA-484E-8033-559EDB8F2D60}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{72AFD128-AAE7-4B62-B7F4-7EC50CB13B84}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7D54C127-D57E-4B8E-8C13-2F50678905D4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9A8C6D5F-C1A9-49FC-9F64-D61EC4A32C95}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E579079E-2007-444F-B253-85FF608C0B3A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

@@ -16,6 +16,11 @@
 			<ShortName>Bank_testSFX</ShortName>
 			<Path>Bank_testSFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1350431389" Name="Door_01_Close_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartA" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
+				<Event Id="1350431390" Name="Door_01_Close_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartB" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
+				<Event Id="1350431391" Name="Door_01_Close_PartC" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartC" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="255856401" Name="Door_01_Open_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartA" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
+				<Event Id="255856402" Name="Door_01_Open_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartB" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
 				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
 				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\SFX\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -28,6 +33,14 @@
 				<File Id="203117369" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_CB3C30A9.wem</Path>
+				</File>
+				<File Id="238106575" Language="SFX">
+					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_73F7C5FD.wem</Path>
+				</File>
+				<File Id="243168692" Language="SFX">
+					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_AEDBCD34.wem</Path>
 				</File>
 				<File Id="261043379" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -57,13 +70,21 @@
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_D797F303.wem</Path>
 				</File>
+				<File Id="710131029" Language="SFX">
+					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_D77A0ACA.wem</Path>
+				</File>
+				<File Id="819079196" Language="SFX">
+					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9988F5BF.wem</Path>
+				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_A0DE41F1.wem</Path>
 				</File>
 				<File Id="911504740" Language="SFX">
 					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
-					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_106F8CFC.wem</Path>
+					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_E51DEF32.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -72,6 +93,10 @@
 				<File Id="1038279815" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_206F4753.wem</Path>
+				</File>
+				<File Id="1041985487" Language="SFX">
+					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_02B8B90A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
