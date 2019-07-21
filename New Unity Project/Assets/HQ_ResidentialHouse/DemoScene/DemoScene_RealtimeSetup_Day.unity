@@ -513,22 +513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
---- !u!1 &14150317 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 115476, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-  m_PrefabInternal: {fileID: 1753600334}
---- !u!114 &14150320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 14150317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!4 &14889340 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000014152905298, guid: 4e3296c41f6ff79439012d136ca90bf8,
@@ -6859,21 +6843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
---- !u!1 &294371602 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 115476, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-  m_PrefabInternal: {fileID: 596837475}
---- !u!114 &294371605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 294371602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &295191449 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 178842, guid: 7145c83fa99c81843a5651c4e066b063, type: 2}
@@ -8663,22 +8632,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013830109254, guid: 68ed2f19d493efd42a942ecf7de5f0dd,
     type: 2}
   m_PrefabInternal: {fileID: 379104648}
---- !u!1 &379396135 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 137146, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
-  m_PrefabInternal: {fileID: 1339809345}
---- !u!114 &379396136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 379396135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!1001 &380485840
 Prefab:
   m_ObjectHideFlags: 0
@@ -11391,22 +11344,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013253754018, guid: 38f7365d0a12ac84fb6ded1e618aa3c0,
     type: 2}
   m_PrefabInternal: {fileID: 470485013}
---- !u!1 &473441067 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 122178, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
-  m_PrefabInternal: {fileID: 1339809345}
---- !u!114 &473441070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 473441067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!1001 &474073408
 Prefab:
   m_ObjectHideFlags: 0
@@ -14322,45 +14259,7 @@ Prefab:
       propertyPath: m_Name
       value: DoorRoom_wide 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11189298, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_PlayAutomatically
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 487350, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 55.55332
-      objectReference: {fileID: 0}
-    - target: {fileID: 473212, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 8.666443
-      objectReference: {fileID: 0}
-    - target: {fileID: 473212, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 473212, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11496544, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_soundEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: a0a05a8579a0c24448cac67588671f03,
-        type: 2}
-    - target: {fileID: 101744, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_Name
-      value: Body
-      objectReference: {fileID: 0}
-    - target: {fileID: 115476, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_Name
-      value: Joint
-      objectReference: {fileID: 0}
-    - target: {fileID: 107772, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_Name
-      value: Handle
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6501768, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &597680946 stripped
@@ -30182,22 +30081,6 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
---- !u!1 &1216774181 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 183562, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-  m_PrefabInternal: {fileID: 1753600334}
---- !u!114 &1216774182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216774181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!1 &1218326668 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000013697320204, guid: 2803e60db38d81745aa7348f50e9dd5d,
@@ -33331,14 +33214,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 64
       objectReference: {fileID: 0}
-    - target: {fileID: 137146, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
-      propertyPath: m_Name
-      value: DoorRoom_narrow 3
-      objectReference: {fileID: 0}
     - target: {fileID: 13717002, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 748548526}
+    - target: {fileID: 137146, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
+      propertyPath: m_Name
+      value: DoorRoom_narrow 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
   m_IsPrefabParent: 0
@@ -44322,14 +44205,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 69
       objectReference: {fileID: 0}
-    - target: {fileID: 183562, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
-      propertyPath: m_Name
-      value: DoorRoom_wide 4
-      objectReference: {fileID: 0}
     - target: {fileID: 13738348, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 708049539}
+    - target: {fileID: 183562, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
+      propertyPath: m_Name
+      value: DoorRoom_wide 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
   m_IsPrefabParent: 0
