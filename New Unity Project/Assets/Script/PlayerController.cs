@@ -39,11 +39,14 @@ public class PlayerController : MonoBehaviour {
     {
         delta.Normalize();
         m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)*F_MovementSpeed+Vector3.down*9.8f)*Time.deltaTime);
-        f_stepCheck += Time.deltaTime * (delta.y + delta.x);
+        f_stepCheck += Time.deltaTime * Mathf.Abs(delta.y);
         if (f_stepCheck > .5f)
         {
             f_stepCheck -= .5f;
             FPSCameraController.Instance.OnSprintAnimation(b_stepSwap ? 5 : -5);
+            b_stepSwap = !b_stepSwap;
+            AudioManager.PlayFootStep(GroundMaterial, gameObject);
         }
     }
+    enum_GroundMaterialType GroundMaterial => Physics.Raycast(tf_Head.position, Vector3.down, out hit, 2f, enum_HitCheckType.Static.ToCastLayer()) ? hit.collider.GetComponent<HitCheckStatic>().E_Mateiral : enum_GroundMaterialType.Invalid;
 }

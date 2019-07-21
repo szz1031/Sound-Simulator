@@ -14,6 +14,13 @@ namespace GameSetting
         Dynamic = 2,
         Entity = 3,
     }
+    public enum enum_GroundMaterialType
+    {
+        Invalid=-1,
+        Concrete,
+        Curtain,
+        WoodStairs,
+    }
     public static class GameLayer
     {
         public static readonly int I_Static = LayerMask.NameToLayer("static");

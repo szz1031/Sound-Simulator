@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592bd74a03a7d304dbcfe7af79f52803, type: 3}
+  m_Name: D893E8AE-0CCA-484F-86AC-FED17BADC6F5
+  m_EditorClassIdentifier: 
+  objectName: WoodStair
+  id: 2341482753
+  guid: D893E8AE-0CCA-484F-86AC-FED17BADC6F5
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 58650b886a916114cb81831c5246541b,
+    type: 2}
