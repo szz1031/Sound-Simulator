@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="25"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

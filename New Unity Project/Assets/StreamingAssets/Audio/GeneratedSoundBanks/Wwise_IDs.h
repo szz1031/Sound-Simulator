@@ -48,6 +48,7 @@ namespace AK
             {
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID CURTAIN = 165088305U;
+                static const AkUniqueID FLOOR = 1088209313U;
                 static const AkUniqueID WOODSTAIR = 2341482753U;
             } // namespace SWITCH
         } // namespace GROUNDMATERIAL

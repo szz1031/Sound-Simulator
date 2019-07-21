@@ -36,11 +36,11 @@
 				</File>
 				<File Id="238106575" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_73F7C5FD.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_E84F119B.wem</Path>
 				</File>
 				<File Id="243168692" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_AEDBCD34.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_9C91E9CB.wem</Path>
 				</File>
 				<File Id="261043379" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -72,11 +72,11 @@
 				</File>
 				<File Id="710131029" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_D77A0ACA.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_20B9484E.wem</Path>
 				</File>
 				<File Id="819079196" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9988F5BF.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_47AFEA7D.wem</Path>
 				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -96,7 +96,7 @@
 				</File>
 				<File Id="1041985487" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_02B8B90A.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_203BDCF4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

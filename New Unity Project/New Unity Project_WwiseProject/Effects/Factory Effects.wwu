@@ -1333,7 +1333,7 @@
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>25</XPos>
+																<XPos>20</XPos>
 																<YPos>2.25407</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1372,8 +1372,8 @@
 																<SegmentShape>Log3</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>25</XPos>
-																<YPos>1.11033</YPos>
+																<XPos>20</XPos>
+																<YPos>0.51107</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

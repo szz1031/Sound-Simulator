@@ -273,7 +273,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}" ShortID="783071133">
+						<RandomSequenceContainer Name="WoodStair" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}" ShortID="783071133">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -455,13 +455,19 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+								<ItemRef Name="WoodStair" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Concrete" ID="{9768342E-0D4A-473C-A50F-38947D0BF5C7}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Floor" ID="{B49FA122-7BBC-4BC7-958B-8492DBD8CE05}"/>
+								<ItemList>
+									<ItemRef Name="WoodStair" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Curtain" ID="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}"/>
 								<ItemList>
@@ -477,14 +483,67 @@
 							<Grouping>
 								<SwitchRef Name="WoodStair" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
 								<ItemList>
-									<ItemRef Name="Wood" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
+									<ItemRef Name="WoodStair" ID="{487CA62C-C804-47D5-8DF4-1B072B1E4DB7}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
 				<ActorMixer Name="Door" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{75671DDD-5B1C-4C79-A917-8C5A0CC91097}" ShortID="834812180">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="30"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{50C420AC-41E6-41AE-B772-318F31CEF43B}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>30</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>

@@ -26,7 +26,7 @@
 												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>25</XPos>
+												<XPos>20</XPos>
 												<YPos>42</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -55,7 +55,7 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>25</XPos>
+												<XPos>20</XPos>
 												<YPos>75</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -97,7 +97,7 @@
 												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>25</XPos>
+												<XPos>20</XPos>
 												<YPos>-200</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -210,7 +210,7 @@
 												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>25</XPos>
+												<XPos>20</XPos>
 												<YPos>31</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -239,7 +239,7 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>25</XPos>
+												<XPos>20</XPos>
 												<YPos>47</YPos>
 												<Flags>37</Flags>
 											</Point>
