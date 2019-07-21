@@ -24,18 +24,26 @@ public class PlayerController : MonoBehaviour {
     {
         if (CameraController.Instance.ForwardRayCheck( enum_HitCheckType.Dynamic.ToCastLayer(),GameConst.I_PlayerInteractDistance, ref hit))
         {
-            InteractorBase interact = hit.collider.GetComponent<InteractorBase>();
+            HitCheckDynamic interact = hit.collider.GetComponent<HitCheckDynamic>();
             if (interact != null)
-                interact.TryInteract();
+                interact.OnTryInteract();
         }
     }
     void OnRotate(Vector2 delta)
     {
         CameraController.Instance.RotateCamera(delta*F_CameraSensitivity);
     }
+    float f_stepCheck;
+    bool b_stepSwap;
     void OnMove(Vector2 delta)
     {
         delta.Normalize();
         m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)*F_MovementSpeed+Vector3.down*9.8f)*Time.deltaTime);
+        f_stepCheck += Time.deltaTime * (delta.y + delta.x);
+        if (f_stepCheck > .5f)
+        {
+            f_stepCheck -= .5f;
+            FPSCameraController.Instance.OnSprintAnimation(b_stepSwap ? 5 : -5);
+        }
     }
 }

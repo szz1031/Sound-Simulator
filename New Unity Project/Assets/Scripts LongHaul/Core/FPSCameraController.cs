@@ -26,7 +26,7 @@ public class FPSCameraController : CameraController
     protected override void Awake()
     {
         base.Awake();
-        ninstance = Instance as FPSCameraController;
+        ninstance = this;
         SetCameraOffset(Vector3.one);
         SetCameraYawClamp(I_YawMin,I_YawMax);
         B_CameraOffsetWallClip = false;

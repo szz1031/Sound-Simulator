@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : SimpleSingletonMono<AudioManager> {
-    public void Play(InteractorBase interactor, string clipName)
+
+    public static void Play(string clipName,GameObject obj)
     {
-        Debug.Log("Interactor:"+interactor.name+ " Player Clip:" + clipName );
+        AkSoundEngine.PostEvent(clipName,obj);
     }
 }
 
