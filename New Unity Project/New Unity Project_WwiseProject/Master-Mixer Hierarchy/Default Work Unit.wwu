@@ -9,6 +9,13 @@
 							<ObjectRef Name="System" ID="{E25FC998-E44D-4132-9653-8CDCDF112E47}" WorkUnitID="{32029102-6470-4511-9ABC-6DBCB8B0856A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Diegetic_sfx" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

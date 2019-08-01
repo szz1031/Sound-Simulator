@@ -1,0 +1,14 @@
+PBR Gramophone 3D model + animation.
+The material contain 3 textures(4K): diffuse (Albedo), normal map, metallic texture (with adjusted smoothness).
+The model has 3 main animations: power on (charge), play, power off. Animation made in Unity. So feel free to change them or make new.
+There are also some sounds that you can easily change to your own.
+All textures are applied and adjusted.
+
+	***How to use***
+1. Just drag and drop desired object from "Prefabs" folder into the scene view or hierarchy window. If necessary, add needed components, like rigidbody or collider.
+2. To start animation you need to call "StartGramophone()" function in script attached to model.
+3. If you want to force a power off animation, use the "StopGramophone()" function in script attached to model. Otherwise it will be called after 72 seconds of the playback animation automatically. Important: You can call it only during the playback animation!
+4. To change playback sound (spooky thing) you need to: A.Find in Hierarchy window Audiosource "MainSound" placed in Gramophone/Main/ and choose it. B. Drag your audio to "AudioClip" field (Audio Source component) in Inspector window. C. Choose Gramophone in Hierarchy window and in inspector window find "Gramophone Script" component. D. Drag your sound to Main Sound field (Gramophone Script) in Inspector window. That's all.
+5. In "Gramophone Script" I allowed myself to leave the lines (in brackets / * * /) that I checked to see how the animations work. Delete them if you want, it will not affect the operation of the model.
+
+If I made a mistake somewhere or you want me to improve the model, leave a review in asset store please.
