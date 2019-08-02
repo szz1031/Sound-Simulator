@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="Footsteps" ID="{3E0A5E58-9CEF-4699-BB2D-07FE16588C74}" ShortID="393174452">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
@@ -55,7 +58,7 @@
 							<ObjectRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Player" ID="{6D337768-8DE9-49C5-9BF3-6166344B7644}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="GroundMaterial" ID="{91475BC4-CBDA-4ACC-913A-ADB91BE014EC}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
@@ -495,15 +498,75 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{75671DDD-5B1C-4C79-A917-8C5A0CC91097}" ShortID="834812180">
+							<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+								<Attenuation Name="Attenuation_Object (Custom)" ID="{C6F7FDB4-C4A6-4522-BB6C-A7B15CF7819D}" ShortID="270223894">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="30"/>
+										<Property Name="ConeHighPassFilterValue" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{13F95B7D-0395-4CED-8113-D2A65A53FE93}" ShortID="319818">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{508BED06-ECD7-4936-9679-5A1C8F061641}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+										<Property Name="ConeLowPassFilterValue" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{A5630D99-FB7D-4197-B6BF-DAF0C24C3079}" ShortID="1359804">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{22CFB682-FB70-46AF-84BC-60A9B670E5D7}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+										<Property Name="RadiusMax" Type="Real64" Value="40"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{50C420AC-41E6-41AE-B772-318F31CEF43B}">
+												<Curve Name="VolumeDry" ID="{9FA6DD7F-6E48-461B-ABF3-C0CF918E0F8C}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -512,9 +575,16 @@
 															<XPos>0</XPos>
 															<YPos>0</YPos>
 															<Flags>5</Flags>
+															<SegmentShape>Log1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>30</XPos>
+															<XPos>12.96481</XPos>
+															<YPos>-8.55703</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>40</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -697,7 +767,7 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="TVMusic" ID="{B45A5B58-D2CB-4710-BB6B-4768D1E62802}" ShortID="535683725">
+				<ActorMixer Name="TV" ID="{B45A5B58-D2CB-4710-BB6B-4768D1E62802}" ShortID="535683725">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Highpass" Type="int16">
@@ -758,6 +828,7 @@
 								</RTPC>
 							</RTPCList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-3</Value>
@@ -769,7 +840,7 @@
 							<ObjectRef Name="Attenuation_TV" ID="{9BA20216-7F0E-42C2-AE6D-7E352F1FDDA5}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+							<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
 							<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -790,7 +861,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Diegetic_music" ID="{E5AB0A76-B2EB-47DB-901C-A0E2200F67D5}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -843,6 +914,115 @@
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Diegetic_sfx" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" ShortID="948681864">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuation_Object_close" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" ShortID="847065920">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2"/>
+										<Property Name="LoopEnd" Type="Real64" Value="185"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Rain on Window Sill-Mono.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rain_backgroundlayer" ID="{5F5F61B2-58F1-4C32-BDF0-B001C1BEAF59}" ShortID="448695720">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{761D730E-1E58-4866-9DD9-34AB8F88A4EF}" ShortID="620261131" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="160"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="2220"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="921"/>
+												<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
+												<Property Name="GainBand2" Type="Real32" Value="-8"/>
+												<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" ShortID="562544463">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2"/>
+										<Property Name="LoopEnd" Type="Real64" Value="185"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Rain on Window Sill-stereo.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

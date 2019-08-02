@@ -121,14 +121,14 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="Attenuation_Object" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" ShortID="639293718">
+				<Attenuation Name="Attenuation_Object_close" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" ShortID="639293718">
 					<PropertyList>
 						<Property Name="ConeHighPassFilterValue" Type="int32">
 							<RTPCList>
 								<RTPC Name="" ID="{064A9C49-C6D0-48F5-9FC7-CC7E631ED0CE}" ShortID="337781942">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="AudioSourceDistance_short" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{A223ECC5-EC92-4745-9DBB-9FCB021B2266}">
@@ -143,7 +143,7 @@
 												<SegmentShape>Exp1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>20</XPos>
+												<XPos>10</XPos>
 												<YPos>100</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -158,7 +158,7 @@
 								<RTPC Name="" ID="{C68586F6-3EBF-48F2-A573-1E441C0BFE14}" ShortID="358658603">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="AudioSourceDistance_short" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{2B52F5C5-01FD-465D-A31E-80741ADB0AF0}">
@@ -173,7 +173,7 @@
 												<SegmentShape>Exp1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>20</XPos>
+												<XPos>10</XPos>
 												<YPos>100</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -183,7 +183,7 @@
 							</RTPCList>
 						</Property>
 						<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-						<Property Name="RadiusMax" Type="Real64" Value="40"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -200,13 +200,13 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12.96481</XPos>
-											<YPos>-8.55703</YPos>
+											<XPos>3.96985</XPos>
+											<YPos>-11.05196</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>40</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

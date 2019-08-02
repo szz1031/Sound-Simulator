@@ -19,8 +19,9 @@ namespace AK
         static const AkUniqueID DOOR_01_OPEN_PARTA = 255856401U;
         static const AkUniqueID DOOR_01_OPEN_PARTB = 255856402U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
-        static const AkUniqueID TEST_DOOR = 4209493196U;
+        static const AkUniqueID PLAYER_RAIN = 990547651U;
         static const AkUniqueID TV_01 = 1652545419U;
+        static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 
     namespace STATES
@@ -58,19 +59,29 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID AUDIOSOURCEDISTANCE = 989232327U;
+        static const AkUniqueID AUDIOSOURCEDISTANCE_SHORT = 3250513656U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BANK_MUSIC = 2800366463U;
-        static const AkUniqueID BANK_TESTSFX = 833005275U;
+        static const AkUniqueID BANK_SFX = 4017023971U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID DIEGETIC_MUSIC = 1515175539U;
+        static const AkUniqueID DIEGETIC_SFX = 1758314175U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID LARGEROOM = 187046019U;
+        static const AkUniqueID SMALLROOM = 2933838247U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

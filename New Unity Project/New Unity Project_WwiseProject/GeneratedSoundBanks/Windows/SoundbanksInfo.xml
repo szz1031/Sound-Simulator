@@ -11,19 +11,30 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="833005275" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Bank_testSFX</ObjectPath>
-			<ShortName>Bank_testSFX</ShortName>
-			<Path>Bank_testSFX.bnk</Path>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2800366463" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
+			<ShortName>Bank_music</ShortName>
+			<Path>Bank_music.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4017023971" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
+			<ShortName>Bank_SFX</ShortName>
+			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1350431389" Name="Door_01_Close_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartA" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
-				<Event Id="1350431390" Name="Door_01_Close_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartB" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
-				<Event Id="1350431391" Name="Door_01_Close_PartC" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartC" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
-				<Event Id="255856401" Name="Door_01_Open_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartA" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
-				<Event Id="255856402" Name="Door_01_Open_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartB" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
-				<Event Id="4209493196" Name="test_door" ObjectPath="\Events\SFX\test_door" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.980730" DurationMax="1.100833"/>
-				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\SFX\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="1350431389" Name="Door_01_Close_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartA" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
+				<Event Id="1350431390" Name="Door_01_Close_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartB" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
+				<Event Id="1350431391" Name="Door_01_Close_PartC" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Close_PartC" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="255856401" Name="Door_01_Open_PartA" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartA" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
+				<Event Id="255856402" Name="Door_01_Open_PartB" ObjectPath="\Events\Default Work Unit\Door_01\Door_01_Open_PartB" MaxAttenuation="40.000000" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
+				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="Infinite"/>
+				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\Default Work Unit\Object\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
+				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Object\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="126968948" Language="SFX">
@@ -50,13 +61,13 @@
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_5E124F05.wem</Path>
 				</File>
-				<File Id="398141459" Language="SFX">
-					<ShortName>开门－YS070511_爱给网_aigei_com.wav</ShortName>
-					<Path>SFX\开门－YS070511_爱给网_aigei_com_6296B0F9.wem</Path>
-				</File>
 				<File Id="519856163" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_115CC112.wem</Path>
+				</File>
+				<File Id="562544463" Language="SFX">
+					<ShortName>Rain on Window Sill-stereo.wav</ShortName>
+					<Path>SFX\Rain on Window Sill-stereo_83C3D6FF.wem</Path>
 				</File>
 				<File Id="580121908" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -78,13 +89,17 @@
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_47AFEA7D.wem</Path>
 				</File>
+				<File Id="847065920" Language="SFX">
+					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
+					<Path>SFX\Rain on Window Sill-Mono_83C3D6FF.wem</Path>
+				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_A0DE41F1.wem</Path>
 				</File>
 				<File Id="911504740" Language="SFX">
 					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
-					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_E51DEF32.wem</Path>
+					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -99,16 +114,6 @@
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_203BDCF4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="2800366463" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
-			<ShortName>Bank_music</ShortName>
-			<Path>Bank_music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

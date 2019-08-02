@@ -8,7 +8,7 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Bank_testSFX" ID="{810A189E-E4F8-40E9-AD72-A21E7BC6EB83}">
+				<SoundBank Name="Bank_SFX" ID="{810A189E-E4F8-40E9-AD72-A21E7BC6EB83}">
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
 							<ValueList>
@@ -18,9 +18,8 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Door_01" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Player_Footsteps" ID="{72AFD128-AAE7-4B62-B7F4-7EC50CB13B84}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="test_door" ID="{4B21E167-3459-4C64-B598-0B9306D649A3}" WorkUnitID="{5FA3A30F-661F-4704-A398-A1BFD0E200BE}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="TV_01" ID="{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}" WorkUnitID="{5FA3A30F-661F-4704-A398-A1BFD0E200BE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
