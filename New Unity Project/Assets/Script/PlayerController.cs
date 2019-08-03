@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
     {
         delta.Normalize();
         m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)*F_MovementSpeed+Vector3.down*9.8f)*Time.deltaTime);
-        f_stepCheck += Time.deltaTime * Mathf.Abs(delta.y);
+        f_stepCheck += Time.deltaTime * Mathf.Abs(delta.y+delta.x);
         if (f_stepCheck > .5f)
         {
             f_stepCheck -= .5f;

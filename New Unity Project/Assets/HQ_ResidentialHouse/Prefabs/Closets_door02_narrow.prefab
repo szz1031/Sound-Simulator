@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445502}
   - component: {fileID: 6582406}
+  - component: {fileID: 114131711772033056}
   m_Layer: 0
   m_Name: ClosetsDoor03_L
   m_TagString: Untagged
@@ -25,7 +26,6 @@ GameObject:
   m_Component:
   - component: {fileID: 437240}
   - component: {fileID: 11116440}
-  - component: {fileID: 6525558}
   - component: {fileID: 11475782}
   m_Layer: 0
   m_Name: Closets_door02_narrow
@@ -99,13 +99,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5082, y: 2.87, z: -1.8103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407226}
   - {fileID: 451532}
   - {fileID: 480416}
+  - {fileID: 4962990495860882}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -133,6 +134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445502}
+  - {fileID: 4271940884566294}
   m_Father: {fileID: 437240}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,18 +151,6 @@ Transform:
   m_Father: {fileID: 437240}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6525558
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.98691934, y: 2.1196012, z: 0.3}
-  m_Center: {x: 0.029812813, y: 1.0660815, z: 0.000000029802322}
 --- !u!65 &6582406
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -199,35 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHeadTag: MainCamera
-  knob: {fileID: 0}
-  controls:
-    openingSpeed: 1
-    closingSpeed: 1
-    closeStartFrom: 0.193
-    openMethod: 0
-    openButton: 101
-    autoClose: 0
-  AnimationNames:
-    OpeningAnim: DoorClosetNarrow_open
-    LockedAnim: Door_locked
-  doorSounds:
-    enabled: 1
-    open: {fileID: 8300000, guid: 5d036f68d1afce346b68eaca16d6b6e8, type: 3}
-    close: {fileID: 8300000, guid: 9bce40df91dfe5c4d957ff0289db2ae4, type: 3}
-    closed: {fileID: 8300000, guid: 0cddfa79ad4fe064d8c71699bab862ac, type: 3}
-    volume: 0.665
-    pitchRandom: 0.2
-  doorTexts:
-    enabled: 1
-    openingText: Press [BUTTON] to open
-    closingText: Press [BUTTON] to close
-    lockText: You need a key!
-    TextPrefab: {fileID: 196946, guid: 449c88c761914d5428550f871a1d6272, type: 2}
-  keySystem:
-    enabled: 0
-    isUnlock: 0
-    LockPrefab: {fileID: 0}
+  KeyAudioName: Door_Closet_KeyAnim
 --- !u!137 &13742392
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -287,3 +249,96 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159180}
   m_IsPrefabParent: 1
+--- !u!1 &1186404425077998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4962990495860882}
+  - component: {fileID: 114813325976653022}
+  m_Layer: 0
+  m_Name: Axis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1923689612840592
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4271940884566294}
+  - component: {fileID: 114563437393410124}
+  m_Layer: 0
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4271940884566294
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923689612840592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 451532}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4962990495860882
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1186404425077998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0.216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437240}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114131711772033056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114563437393410124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923689612840592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Closet_Handle
+--- !u!114 &114813325976653022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1186404425077998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Closet_Axis

@@ -23,6 +23,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 487350}
+  - component: {fileID: 114017569373668364}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -40,7 +41,6 @@ GameObject:
   - component: {fileID: 473212}
   - component: {fileID: 6594724}
   - component: {fileID: 114307594438871738}
-  - component: {fileID: 114774760519625624}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 481148}
   - component: {fileID: 11189298}
   - component: {fileID: 11496544}
-  - component: {fileID: 114434548049695382}
   m_Layer: 0
   m_Name: DoorRoom_wide
   m_TagString: Untagged
@@ -159,9 +158,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183562}
-  m_LocalRotation: {x: 0.000000015454308, y: 0.7071068, z: 0.00000001545431, w: 0.7071067}
-  m_LocalPosition: {x: -1.254, y: 0.1944, z: -0.874}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000016292068}
+  m_LocalPosition: {x: 4.1610003, y: 2.8644, z: -0.045}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 448184}
   - {fileID: 407252}
@@ -219,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  I_DoorIndex: 1
+  KeyAudioName: Door_Wide_KeySound
 --- !u!137 &13738348
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -288,6 +287,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4906100206120316}
+  - component: {fileID: 114048259451976690}
   m_Layer: 0
   m_Name: Axis
   m_TagString: Untagged
@@ -308,30 +308,31 @@ Transform:
   m_Father: {fileID: 448184}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114017569373668364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Wide_Handle
+--- !u!114 &114048259451976690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1857137835144896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Wide_Axis
 --- !u!114 &114307594438871738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114434548049695382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  E_Mateiral: -1
---- !u!114 &114774760519625624
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
