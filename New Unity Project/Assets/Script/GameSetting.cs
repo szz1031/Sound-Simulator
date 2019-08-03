@@ -5,7 +5,7 @@ namespace GameSetting
 {
     public class GameConst
     {
-        public const int I_PlayerInteractDistance = 3;
+        public const int I_PlayerInteractDistance = 1;
     }
     public enum enum_HitCheckType
     {

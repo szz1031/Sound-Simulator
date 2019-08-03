@@ -4,7 +4,9 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class InteractDoor : InteractorBase,ISingleCoroutine {
+public class InteractDoor : InteractorBase,ISingleCoroutine
+{
+    protected AudioBase[] m_Audios;
     protected HitCheckDynamic[] m_HitCheck;
     protected Animation m_Animation;
     protected Transform tf_Axis, tf_handle;
@@ -15,6 +17,7 @@ public class InteractDoor : InteractorBase,ISingleCoroutine {
     protected override void Awake()
     {
         base.Awake();
+        m_Audios = GetComponentsInChildren<AudioBase>();
         m_HitCheck = GetComponentsInChildren<HitCheckDynamic>();
         m_HitCheck.Traversal((HitCheckDynamic hitcheck) => { hitcheck.Attach(TryInteract); });
         m_Animation = GetComponent<Animation>();
