@@ -23,6 +23,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 426070}
+  - component: {fileID: 65627630132141078}
+  - component: {fileID: 114630195946422174}
   m_Layer: 0
   m_Name: Door_L
   m_TagString: Untagged
@@ -38,6 +40,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 427374}
+  - component: {fileID: 65975338366139572}
+  - component: {fileID: 114505168803324848}
   m_Layer: 0
   m_Name: Door_R
   m_TagString: Untagged
@@ -56,6 +60,7 @@ GameObject:
   - component: {fileID: 3317304}
   - component: {fileID: 2355924}
   - component: {fileID: 6563970}
+  - component: {fileID: 114050526206145318}
   m_Layer: 0
   m_Name: BathroomSink
   m_TagString: Untagged
@@ -72,8 +77,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447276}
   - component: {fileID: 11157118}
-  - component: {fileID: 6581988}
-  - component: {fileID: 11483752}
+  - component: {fileID: 114468789572798098}
   m_Layer: 0
   m_Name: BathroomSink
   m_TagString: Untagged
@@ -130,8 +134,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.853, y: 0.2, z: 1.462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 453788}
@@ -234,18 +238,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.51767796, y: 0.8506681, z: 0.9353554}
   m_Center: {x: 0, y: 0.42533708, z: -0.000000018592074}
---- !u!65 &6581988
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65630066, y: 1.9510493, z: 1}
-  m_Center: {x: 0.5399411, y: 0.98266006, z: 0}
 --- !u!111 &11157118
 Animation:
   m_ObjectHideFlags: 1
@@ -261,46 +253,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &11483752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHeadTag: MainCamera
-  knob: {fileID: 0}
-  controls:
-    openingSpeed: 1
-    closingSpeed: 1.3
-    closeStartFrom: 0.25
-    openMethod: 0
-    openButton: 101
-    autoClose: 0
-  AnimationNames:
-    OpeningAnim: BathroomSink_open
-    LockedAnim: Door_locked
-  doorSounds:
-    enabled: 1
-    open: {fileID: 8300000, guid: 5d036f68d1afce346b68eaca16d6b6e8, type: 3}
-    close: {fileID: 8300000, guid: 9bce40df91dfe5c4d957ff0289db2ae4, type: 3}
-    closed: {fileID: 0}
-    volume: 0.4
-    pitchRandom: 0.2
-  doorTexts:
-    enabled: 1
-    openingText: Press [BUTTON] to open
-    closingText: Press [BUTTON] to close
-    lockText: You need a key!
-    TextPrefab: {fileID: 196946, guid: 449c88c761914d5428550f871a1d6272, type: 2}
-  keySystem:
-    enabled: 0
-    isUnlock: 0
-    LockPrefab: {fileID: 0}
 --- !u!137 &13731888
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -360,6 +312,75 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168126}
   m_IsPrefabParent: 1
+--- !u!65 &65627630132141078
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.5, z: 0.4}
+  m_Center: {x: 0, y: 0.25, z: 0.2}
+--- !u!65 &65975338366139572
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.5, z: 0.4}
+  m_Center: {x: 0, y: 0.25, z: -0.2}
+--- !u!114 &114050526206145318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  E_Mateiral: -1
+--- !u!114 &114468789572798098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114505168803324848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114630195946422174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!259 &259000013079160128
 LightProbeProxyVolume:
   m_ObjectHideFlags: 1

@@ -24,7 +24,6 @@ GameObject:
   m_Component:
   - component: {fileID: 413288}
   - component: {fileID: 11134164}
-  - component: {fileID: 6541664}
   - component: {fileID: 11489150}
   m_Layer: 0
   m_Name: LightSwitch
@@ -41,6 +40,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 425000}
+  - component: {fileID: 65906278925919892}
+  - component: {fileID: 114828033276530496}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -70,8 +71,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115328}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071071, z: -0, w: 0.70710653}
+  m_LocalPosition: {x: -4.0869, y: 4.125, z: -1.739}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425000}
@@ -119,18 +120,6 @@ Transform:
   m_Father: {fileID: 425000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6541664
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115328}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.77, y: 1.93, z: 0.55226696}
-  m_Center: {x: 0, y: 0, z: -0.26578236}
 --- !u!111 &11134164
 Animation:
   m_ObjectHideFlags: 1
@@ -159,18 +148,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lights:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ReflectionProbes:
   - {fileID: 0}
   - {fileID: 0}
+  EmissiveObjects:
   - {fileID: 0}
-  EmissiveObjects: []
-  PlayerHeadTag: MainCamera
-  LightsON: 0
-  SwithButton: 101
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  b_LightsOn: 1
   TextPrefab: {fileID: 147230, guid: de8f7002b410e3a418f6c6d677dcea35, type: 2}
-  AnimName: LightSwitch
-  SwitchSound: {fileID: 8300000, guid: 2a91d0613ad93ad4b83df044ce55c3c4, type: 3}
-  Volume: 0.6
 --- !u!137 &13789090
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -230,3 +222,26 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115328}
   m_IsPrefabParent: 1
+--- !u!65 &65906278925919892
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.15, z: 0.05}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114828033276530496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

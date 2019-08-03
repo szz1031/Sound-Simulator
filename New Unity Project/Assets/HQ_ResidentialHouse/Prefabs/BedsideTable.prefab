@@ -56,9 +56,8 @@ GameObject:
   m_Component:
   - component: {fileID: 485780}
   - component: {fileID: 11193856}
-  - component: {fileID: 11424400}
-  - component: {fileID: 6526278}
   - component: {fileID: 6512356}
+  - component: {fileID: 114258709124253786}
   m_Layer: 0
   m_Name: BedsideTable
   m_TagString: Untagged
@@ -74,6 +73,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 481216}
+  - component: {fileID: 65464607958321200}
+  - component: {fileID: 114594027396800486}
   m_Layer: 0
   m_Name: doorKnob
   m_TagString: Untagged
@@ -128,8 +129,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -6.978, y: 2.87, z: 0.575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466114}
@@ -162,18 +163,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.54363686, z: 0.38}
   m_Center: {x: 0, y: 0.2679813, z: 0}
---- !u!65 &6526278
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7, y: 1.8736873, z: 0.646805}
-  m_Center: {x: 0.0000000074067508, y: 0.94742465, z: 0.4378676}
 --- !u!111 &11193856
 Animation:
   m_ObjectHideFlags: 1
@@ -189,46 +178,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &11424400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHeadTag: MainCamera
-  knob: {fileID: 481216}
-  controls:
-    openingSpeed: 1
-    closingSpeed: 1
-    closeStartFrom: 1
-    openMethod: 0
-    openButton: 101
-    autoClose: 0
-  AnimationNames:
-    OpeningAnim: BedsideTable_open
-    LockedAnim: Door_locked
-  doorSounds:
-    enabled: 1
-    open: {fileID: 8300000, guid: 6427f56e53a25cb4baad158c6bd6aa67, type: 3}
-    close: {fileID: 8300000, guid: 6427f56e53a25cb4baad158c6bd6aa67, type: 3}
-    closed: {fileID: 0}
-    volume: 0.728
-    pitchRandom: 0.2
-  doorTexts:
-    enabled: 1
-    openingText: Press [BUTTON] to open
-    closingText: Press [BUTTON] to close
-    lockText: You need a key!
-    TextPrefab: {fileID: 196946, guid: 449c88c761914d5428550f871a1d6272, type: 2}
-  keySystem:
-    enabled: 0
-    isUnlock: 0
-    LockPrefab: {fileID: 0}
 --- !u!137 &13735450
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -288,6 +237,40 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184988}
   m_IsPrefabParent: 1
+--- !u!65 &65464607958321200
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.1, z: 0.03}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114258709124253786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114594027396800486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!259 &259000011931978048
 LightProbeProxyVolume:
   m_ObjectHideFlags: 1

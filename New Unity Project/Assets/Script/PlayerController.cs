@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     CharacterController m_Controller;
     public float F_CameraSensitivity=.5f;
     public float F_MovementSpeed=3;
+    bool b_crouching = false;
     private void Awake()
     {
         tf_Head = transform.Find("Head");
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour {
         PCInputManager.Instance.AddMovementDelta(OnMove);
         PCInputManager.Instance.AddMouseRotateDelta(OnRotate);
         PCInputManager.Instance.AddBinding<PlayerController>(enum_BindingsName.Interact,TryInterach);
+        PCInputManager.Instance.AddBinding<PlayerController>(enum_BindingsName.Crouch, (bool onCrouch) => { b_crouching = onCrouch; });
     }
     RaycastHit hit = new RaycastHit();
     void TryInterach()
@@ -37,8 +39,9 @@ public class PlayerController : MonoBehaviour {
     bool b_stepSwap;
     void OnMove(Vector2 delta)
     {
+        tf_Head.localPosition = new Vector3(0, Mathf.Lerp(tf_Head.localPosition.y,  !b_crouching?1.7f:1f,Time.deltaTime*5),0);
         delta.Normalize();
-        m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)*F_MovementSpeed+Vector3.down*9.8f)*Time.deltaTime);
+        m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)* (b_crouching?.5f:1f)*F_MovementSpeed + Vector3.down*9.8f)*Time.deltaTime);
         f_stepCheck += Time.deltaTime * Mathf.Abs(delta.magnitude);
         if (f_stepCheck > .5f)
         {

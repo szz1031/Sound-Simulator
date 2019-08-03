@@ -2,81 +2,40 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class LightSwitch : MonoBehaviour {
+public class LightSwitch : InteractorBase {
 	public GameObject[] Lights;
-	[Tooltip("Reflection probes, which will be refreshed after ON/OFF light.")]
 	public ReflectionProbe[] ReflectionProbes;
-	[Tooltip("Put your emissive objects here. For example, a bulb with emission map.")]
 	public Renderer[] EmissiveObjects;
 	private Color[] EmissColors;
-	[Tooltip("player's head with collider in trigger mode. Type your tag here (usually it is MainCamera)")]
-	public string PlayerHeadTag = "MainCamera";
-	[Tooltip ("Start state of the light (ON or OFF)")]
-	public bool LightsON = true;
-	[Tooltip("Button on the keyboard to switch the light")]
-	public KeyCode SwithButton = KeyCode.E;
-	[Tooltip("Prefab with the canvas and text object that will shown when the player looks at the light switch")]
-	public GameObject TextPrefab;
-	private Canvas TextObj;
-	private Text theText;
-	[Tooltip("Animation name")]
-	public string AnimName = "LightSwitch";
-
-	public AudioClip SwitchSound;
-	[Range(0, 1)]
-	public float Volume = 1;
-	private AudioSource SoundFX;
-
-	private bool inZone = false;
-	private Animation Anim;
+	public bool B_LightsOn = true;
+    public string MainAudioName = "LightSwitch";
+	private Animation m_Animation;
 	private float _timer = 0.5f;
-	private Vector3 forward;
-	private Vector3 thisTransform;
-	private Transform player;
-	
-	void Start () {
-		if (GameObject.FindWithTag (PlayerHeadTag) != null) {
-			player = GameObject.FindWithTag (PlayerHeadTag).transform;
-		} 
-		else {
-			Debug.LogWarning(gameObject.name + ": You need to set your player's camera tag to " + "'"+PlayerHeadTag+"'." + " The " + "'" + gameObject.name + "'" +" can't switch on/off if you don't set this tag");
-		}
+    string m_AnimName;
+	protected override void Awake () {
+	    m_Animation = GetComponent<Animation> ();
+        GetComponentInChildren<HitCheckDynamic>().Attach(TryInteract);
+        if(m_Animation)
+        m_AnimName = GetFistClip().name;
+		foreach (GameObject _light in Lights)
+        {
+            if (_light)
+            {
+                _light.SetActive(B_LightsOn);
+            }
+        }
 
-		if (TextPrefab == null) {
-			Debug.LogWarning (gameObject.name + ": Text prefab is missing. If you want see the text, please, put the text prefab in Text Prefab slot");
-		} else {
-			GameObject go = Instantiate (TextPrefab, Vector3.zero, new Quaternion (0, 0, 0, 0)) as GameObject;
-			TextObj = go.GetComponent<Canvas> ();
-			theText = TextObj.GetComponentInChildren<Text> ();
-			theText.text = "Press " + "'" + SwithButton + "'" + " button to toggle the light";
-			TextObj.gameObject.SetActive (false);
-		}
-
-		if(GetComponent<Animation>() != null){
-			Anim = GetComponent<Animation> ();
-		}
-		foreach (GameObject _light in Lights) {
-			if (_light) {
-				if (LightsON) {
-					_light.SetActive (true);
-
-				} else {
-					_light.SetActive (false);
-
-				}
-			}
-		}
-		if (LightsON) {
-			if (Anim != null) {
-				Anim [AnimName].normalizedTime = 0;
-				Anim [AnimName].speed = -1;
-				Anim.Play ();
+		if (B_LightsOn) {
+			if (m_Animation != null) {
+				m_Animation [m_AnimName].normalizedTime = 0;
+				m_Animation [m_AnimName].speed = -1;
+				m_Animation.Play ();
 			}
 		} else {
-			if (Anim != null) {
-				Anim [AnimName].normalizedTime = 1;
-				Anim [AnimName].speed = 1;
-				Anim.Play ();
+			if (m_Animation != null) {
+				m_Animation [m_AnimName].normalizedTime = 1;
+				m_Animation [m_AnimName].speed = 1;
+				m_Animation.Play ();
 			}
 		}
 
@@ -94,30 +53,14 @@ public class LightSwitch : MonoBehaviour {
 			EmissColors[i] = EmissiveObjects[i].material.GetColor("_EmissionColor");
 		}
 
-		if (!LightsON) {
+		if (!B_LightsOn) {
 			DisableEmission ();
 		} 
 		else {
 			StartCoroutine (EnableEmissionLate());
-			//Debug.Log("Emission enabled");
-		}
-		AddAudioSource ();
-	}
-
-	void AddAudioSource(){
-		GameObject go = new GameObject("SoundFX");
-		go.transform.position = transform.position;
-		go.transform.rotation = transform.rotation;
-		go.transform.parent = transform;
-		SoundFX = go.AddComponent<AudioSource>();
-		SoundFX.volume = Volume;
-		SoundFX.spatialBlend = 1;
-		SoundFX.playOnAwake = false;
-		if (SwitchSound != null) {
-			SoundFX.clip = SwitchSound;
 		}
 	}
-
+    
 	IEnumerator EnableEmissionLate () {
 		yield return null;
 		for(int i = 0; i < EmissiveObjects.Length; i++){
@@ -154,24 +97,14 @@ public class LightSwitch : MonoBehaviour {
 				_light.SetActive (false);
 			}
 		}
-		LightsON = false;
-		if (Anim != null) {
-			Anim [AnimName].normalizedTime = 1;
-			Anim [AnimName].speed = 1;
-			Anim.Play ();
-		}
-		if(SwitchSound != null){
-			SoundFX.Play();
+		B_LightsOn = false;
+		if (m_Animation != null) {
+			m_Animation [m_AnimName].normalizedTime = 1;
+			m_Animation [m_AnimName].speed = 1;
+			m_Animation.Play ();
 		}
 
 		Invoke("BakeProbes", _timer);
-		/*
-		foreach (ReflectionProbe _probe in ReflectionProbes) {
-			if (_probe) {
-				Invoke("BakeProbes", _timer);
-			}
-		}
-		*/
 
 	}
 	void Light_On(){
@@ -180,73 +113,36 @@ public class LightSwitch : MonoBehaviour {
 				_light.SetActive (true);
 			}
 		}
-		LightsON = true;
-		if (Anim != null) {
-			Anim [AnimName].normalizedTime = 0;
-			Anim [AnimName].speed = -1;
-			Anim.Play ();
-		}
-		if(SwitchSound != null){
-			SoundFX.Play();
+		B_LightsOn = true;
+		if (m_Animation != null) {
+			m_Animation [m_AnimName].normalizedTime = 0;
+			m_Animation [m_AnimName].speed = -1;
+			m_Animation.Play ();
 		}
 
 		Invoke("BakeProbes", _timer);
-		/*
-		foreach (ReflectionProbe _probe in ReflectionProbes) {
-			if (_probe) {
-				Invoke("BakeProbes", _timer);
-			}
-		}
-		*/
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(inZone){
-			forward = player.TransformDirection(Vector3.back);
-			thisTransform = transform.position - player.transform.position;
-			if (Vector3.Dot (forward.normalized, thisTransform.normalized) < 0 && Vector3.Dot (forward.normalized, thisTransform.normalized)< -0.9f) {
-				if(TextPrefab != null){
-					TextObj.gameObject.SetActive (true);
-				}
-				if(Input.GetKeyDown(SwithButton) && inZone){
-					if(LightsON){
-						Light_Off();
-						DisableEmission();
-						//Debug.Log("OFF");
-					}
-					else{
-						Light_On();
-						EnableEmission();
-						//Debug.Log("ON");
-					}
-				}
-			}
-			else if(TextPrefab != null){
-				TextObj.gameObject.SetActive (false);
-			}
+    public override bool TryInteract()
+    {
+        base.TryInteract();
+        if (B_LightsOn)
+        {
+            Light_Off();
+            DisableEmission();
+        }
+        else
+        {
+            Light_On();
+            EnableEmission();
+        }
+        AudioManager.Play(MainAudioName+(B_LightsOn?"_On":"_Off"),this.gameObject);
+        return true;
+    }
 
-
-
-		}
-	}
-	void OnTriggerEnter(Collider other){
-		if (other.tag != PlayerHeadTag) {
-			return;
-		}
-		
-		inZone = true;
-		//Debug.Log ("IN ZONE");
-	}
-	void OnTriggerExit(Collider other){
-		if (other.tag != PlayerHeadTag) {
-			return;
-		}
-		
-		inZone = false;
-		if (TextPrefab != null) {
-			TextObj.gameObject.SetActive (false);
-		}
-
-	}
+    AnimationState GetFistClip()
+    {
+        foreach (AnimationState state in m_Animation)
+            return state;
+        return null;
+    }
 }
