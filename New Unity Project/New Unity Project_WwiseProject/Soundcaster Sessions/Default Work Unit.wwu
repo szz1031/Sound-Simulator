@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EBE5F010-6F07-41BF-B79E-26AF00EC79FF}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{EBE5F010-6F07-41BF-B79E-26AF00EC79FF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EBE5F010-6F07-41BF-B79E-26AF00EC79FF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Fire" ID="{A16B9C48-23FA-43A7-8775-EA801D42D716}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TVMusic_01" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}"/>
+							<Value>20</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

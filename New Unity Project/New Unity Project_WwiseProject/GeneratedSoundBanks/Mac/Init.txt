@@ -1,0 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1048369770	WorldState			\Default Work Unit\WorldState	
+
+State	ID	Name	State Group			Notes
+	0	None	WorldState			
+	84696445	B	WorldState			
+	84696446	A	WorldState			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
+	1242965313	Distance_max20			\Default Work Unit\Distance_max20	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	752329608	Diegetic_Sfx&Music			\Default Work Unit\Master Audio Bus\Diegetic_Sfx&Music	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
+	1515175539	Diegetic_music			\Default Work Unit\Master Audio Bus\Diegetic_music	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	187046019	LargeRoom			\Default Work Unit\Master Audio Bus\LargeRoom	
+	2933838247	SmallRoom			\Default Work Unit\Master Audio Bus\SmallRoom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

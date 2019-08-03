@@ -10,7 +10,7 @@
 								<RTPC Name="" ID="{A153A223-1581-4576-919B-4DCFC608DE34}" ShortID="638480880">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{169255EF-9C24-432D-9812-ED907834873F}">
@@ -40,7 +40,7 @@
 								<RTPC Name="" ID="{A249B439-42B9-407F-B5D8-484FEF69C74C}" ShortID="576897807">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{2ACABBF2-AA03-4003-B79B-B653CB2721AC}">
@@ -121,14 +121,14 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="Attenuation_Object_close" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" ShortID="639293718">
+				<Attenuation Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" ShortID="639293718">
 					<PropertyList>
 						<Property Name="ConeHighPassFilterValue" Type="int32">
 							<RTPCList>
 								<RTPC Name="" ID="{064A9C49-C6D0-48F5-9FC7-CC7E631ED0CE}" ShortID="337781942">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance_short" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{A223ECC5-EC92-4745-9DBB-9FCB021B2266}">
@@ -158,7 +158,7 @@
 								<RTPC Name="" ID="{C68586F6-3EBF-48F2-A573-1E441C0BFE14}" ShortID="358658603">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance_short" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{2B52F5C5-01FD-465D-A31E-80741ADB0AF0}">
@@ -207,6 +207,119 @@
 										</Point>
 										<Point>
 											<XPos>10</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
+						</VolumeDryUsage>
+						<VolumeWetGameUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetGameUsage>
+						<VolumeWetUserUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetUserUsage>
+						<LowPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</LowPassFilterUsage>
+						<HighPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</HighPassFilterUsage>
+						<SpreadUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</SpreadUsage>
+						<FocusUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</FocusUsage>
+					</CurveUsageInfoList>
+				</Attenuation>
+				<Attenuation Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" ShortID="390156445">
+					<PropertyList>
+						<Property Name="ConeHighPassFilterValue" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{70C99AA4-9BDF-4615-B393-F5F58303F5A2}" ShortID="665981069">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{40BFA5E4-C19A-42EF-89DD-09216D816B63}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+						<Property Name="ConeLowPassFilterValue" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{A1B7767D-7BF6-4FAE-A746-F50F2C77E7F9}" ShortID="518168642">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5248F989-32BE-407D-8A43-7EC533AF8EF5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
+					</PropertyList>
+					<CurveUsageInfoList>
+						<VolumeDryUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeDry" ID="{8D0EC541-F172-4E43-95EC-129EEE66FAE3}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>5.954775</XPos>
+											<YPos>-11.05196</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Log2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

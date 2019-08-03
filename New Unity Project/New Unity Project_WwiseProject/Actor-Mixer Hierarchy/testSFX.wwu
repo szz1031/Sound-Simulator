@@ -11,7 +11,7 @@
 								<RTPC Name="" ID="{09AF7D6C-118C-4C7D-988A-E00BAB939ECB}" ShortID="38017593">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{64043537-4E84-4C2C-868C-B03B40AD8645}">
@@ -40,7 +40,7 @@
 								<RTPC Name="" ID="{67F298DF-4FD3-4888-9892-D362C66E315C}" ShortID="865621905">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{AC80BD7B-1D61-4F54-8DAD-35C3AC5EA03F}">
@@ -82,7 +82,7 @@
 								<RTPC Name="" ID="{5E545898-D0E2-4DE9-82F3-AF45D969E41E}" ShortID="734971036">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{BC93627B-ED70-4310-9DA3-D5A9E217537E}">

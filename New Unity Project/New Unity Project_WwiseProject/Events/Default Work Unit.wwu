@@ -3,65 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Door_01" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" ShortID="330608276">
-					<ChildrenList>
-						<Event Name="Door_01_Open_PartA" ID="{20F6D0F5-38C6-4C50-B52E-F138177B349D}">
-							<ChildrenList>
-								<Action Name="" ID="{31A2BD78-8087-44FD-8D85-8182A76B533B}" ShortID="820090788">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Door_01_Open_PartB" ID="{264BF452-D8EC-4785-9B9F-C6977F206BDD}">
-							<ChildrenList>
-								<Action Name="" ID="{98A5B1F8-8EC3-4A22-9583-2FC36BB93FF0}" ShortID="564543505">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Door_01_Close_PartA" ID="{6E22379D-F8BA-484E-8033-559EDB8F2D60}">
-							<ChildrenList>
-								<Action Name="" ID="{B710D6F4-7B59-4EDA-B380-C96FD97E54CB}" ShortID="149935927">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Door_01_Close_PartB" ID="{56EA13CE-221A-490B-AC7B-6A643C004E8E}">
-							<ChildrenList>
-								<Action Name="" ID="{0040CADF-7702-4B60-ACBC-E72564E0B463}" ShortID="750747275">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Door_01_Close_PartC" ID="{E579079E-2007-444F-B253-85FF608C0B3A}">
-							<ChildrenList>
-								<Action Name="" ID="{18A46304-B579-43A2-942B-9E782348694D}" ShortID="746832876">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" ShortID="367066880">
 					<ChildrenList>
 						<Event Name="Player_Footsteps" ID="{72AFD128-AAE7-4B62-B7F4-7EC50CB13B84}">
@@ -113,6 +54,204 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Gramophone" ID="{8F2D27A0-1661-4469-B5AA-6638C2C454D2}" ShortID="633672968">
+							<ChildrenList>
+								<Event Name="Gramophone_Squeak_3" ID="{962C1972-BE9B-4B9E-B5BE-AA5834070104}">
+									<ChildrenList>
+										<Action Name="" ID="{DC2DEF57-A210-4984-87B6-FAF588EB4868}" ShortID="775410364">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Squeak_3" ID="{0F319CD2-1DF9-4E8B-98AD-7018B3BE4A6E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_Squeak_1" ID="{DC917524-F966-413F-92AF-5D1D92B948A7}">
+									<ChildrenList>
+										<Action Name="" ID="{76D8F480-5CAE-4D41-B929-00C58E5DC456}" ShortID="116107829">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Squeak_1" ID="{962915D7-E882-4A86-AA26-49720C38A171}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_Squeak_2" ID="{9DCD6BF3-CE19-489F-97BF-0DA4353036C7}">
+									<ChildrenList>
+										<Action Name="" ID="{94CB83CD-C593-4597-9120-E84C23B0FE93}" ShortID="949398693">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Squeak_2" ID="{ABE7D8AC-D6F6-478B-A66A-81D357CBB14E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_MainNoise" ID="{CCF83DD9-FEBD-4C26-87D4-C88FF4008724}">
+									<ChildrenList>
+										<Action Name="" ID="{EDF8F7F7-8044-4343-86CF-B73855149EF7}" ShortID="545083010">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MainNoise" ID="{8A5F3C80-31BA-419E-BE11-8601468C5B73}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_NeedleTap" ID="{0421F5C4-92EA-4F51-A8EA-B55983C7BD00}">
+									<ChildrenList>
+										<Action Name="" ID="{AF1CCBD4-EEEE-4B63-88B5-3B1D22145DC2}" ShortID="491953755">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="NeedleTap" ID="{8E65CD76-CD36-41BA-8319-CDF86272CAFC}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_OnOffTap" ID="{B6D45E12-011D-42CC-AAB0-ACDBEB0A7C75}">
+									<ChildrenList>
+										<Action Name="" ID="{851FB6F0-E162-4BA3-9DC5-FA85FCD78141}" ShortID="1009375138">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="OnOffTap" ID="{357798B6-F7AB-4FEE-A977-B28EB322EF28}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_Charge" ID="{8A367745-A030-4070-B981-E67023565DFA}">
+									<ChildrenList>
+										<Action Name="" ID="{3B0F585F-58E5-4186-BF14-FC23DAFCE31E}" ShortID="22923994">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Charge" ID="{376AC7D9-F4C5-47FF-ADCB-201D647B55EC}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Gramophone_Mainghosty" ID="{72243D26-0FFF-4798-A28D-2DCB27810091}">
+									<ChildrenList>
+										<Action Name="" ID="{2CF79B1D-9938-4563-8A8F-09FD07176876}" ShortID="124645632">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mainghosty" ID="{BE437573-0226-40A5-8052-7D3276061D93}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Fireplace" ID="{3D2D6691-C024-4B05-B3D0-CA6510FA4193}">
+							<ChildrenList>
+								<Action Name="" ID="{F77DF09B-E6D6-47C9-ACD6-85C38A40E86B}" ShortID="615626627">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C582FBF9-87B7-4909-BC05-83DFB667E18D}" ShortID="924163228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C296A1E2-4327-4AE6-BA88-00FBA15C39EE}" ShortID="506987019">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LightSwitch_On" ID="{FB1963AB-4511-4794-A759-152823A7FAA3}">
+							<ChildrenList>
+								<Action Name="" ID="{CBAD4422-18B1-4A81-A7BD-E7F41C94527C}" ShortID="236826117">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Toggle on" ID="{5A985CB4-1D2F-4BA2-98D8-ADB07288C68F}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LightSwitch_Off" ID="{2CBE0F2B-7004-4A67-8FA1-C51D97139AB8}">
+							<ChildrenList>
+								<Action Name="" ID="{AD60CFBB-4C42-4D85-8269-2075454EC843}" ShortID="776825678">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Toggle off" ID="{8790BBDD-9B0A-47BA-905A-54E113F9512C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Door_Narrow" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" ShortID="330608276">
+							<ChildrenList>
+								<Event Name="Door_Narrow_Axis_Open" ID="{20F6D0F5-38C6-4C50-B52E-F138177B349D}">
+									<ChildrenList>
+										<Action Name="" ID="{31A2BD78-8087-44FD-8D85-8182A76B533B}" ShortID="820090788">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Narrow_Handle_Open" ID="{264BF452-D8EC-4785-9B9F-C6977F206BDD}">
+									<ChildrenList>
+										<Action Name="" ID="{98A5B1F8-8EC3-4A22-9583-2FC36BB93FF0}" ShortID="564543505">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Narrow_Axis_Close" ID="{6E22379D-F8BA-484E-8033-559EDB8F2D60}">
+									<ChildrenList>
+										<Action Name="" ID="{B710D6F4-7B59-4EDA-B380-C96FD97E54CB}" ShortID="149935927">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Narrow_Handle_Close" ID="{56EA13CE-221A-490B-AC7B-6A643C004E8E}">
+									<ChildrenList>
+										<Action Name="" ID="{0040CADF-7702-4B60-ACBC-E72564E0B463}" ShortID="750747275">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Narrow_KeySound" ID="{E579079E-2007-444F-B253-85FF608C0B3A}">
+									<ChildrenList>
+										<Action Name="" ID="{18A46304-B579-43A2-942B-9E782348694D}" ShortID="746832876">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

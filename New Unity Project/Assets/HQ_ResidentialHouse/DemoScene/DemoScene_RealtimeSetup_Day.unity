@@ -2773,7 +2773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &104569775
 Animation:
   m_ObjectHideFlags: 0
@@ -3227,7 +3227,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 121740234}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -3735,7 +3735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &145234677
 Animation:
   m_ObjectHideFlags: 0
@@ -5223,7 +5223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &195707563
 Animation:
   m_ObjectHideFlags: 0
@@ -7312,7 +7312,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279902105}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -11661,7 +11661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!1 &437698850
 GameObject:
   m_ObjectHideFlags: 0
@@ -12927,7 +12927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!4 &496870907 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000014088965736, guid: ea2e7cf021c7b3648aeac82271c07dec,
@@ -13777,7 +13777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
---- !u!114 &530548827
+--- !u!114 &530548824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -13785,48 +13785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 530548822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcd4765df380514a80a60f75340802c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reflectAuxBus:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  reflectionMaxPathLength: 1000
-  reflectionsAuxBusGain: 1
-  reflectionsOrder: 1
-  roomReverbAuxBusGain: 1
-  diffractionMaxEdges: 0
-  diffractionMaxPaths: 0
-  diffractionMaxPathLength: 0
-  drawFirstOrderReflections: 0
-  drawSecondOrderReflections: 0
-  drawHigherOrderReflections: 0
-  drawDiffractionPaths: 1
---- !u!54 &530548828
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530548822}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &530548829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530548822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238e120fa225166438201a300552de08, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -13847,10 +13806,21 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  LargeModePositions: []
-  multiPositionArray: []
+--- !u!54 &530548828
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530548822}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &530548830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15021,6 +14991,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a69f09f1dbf0144186606fd19308f03, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &582487329 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 180924, guid: 10a1d0b1898758146ba968a571deb062, type: 2}
+  m_PrefabInternal: {fileID: 372205608}
+--- !u!114 &582487331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582487329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &582487333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582487329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f41702ab57921534c873c6396fea555b,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!4 &582559667 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012529345094, guid: 55296f4399387b64b93f5f2139f363d2,
@@ -19888,7 +19912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!4 &788452405 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000014266334128, guid: 7699bffa9d874a74899ca904e6427c35,
@@ -20389,7 +20413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &819061994
 Animation:
   m_ObjectHideFlags: 0
@@ -20923,7 +20947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!4 &840849924 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010547092092, guid: f642ab1e5a0a857458f1099c48405685,
@@ -21473,7 +21497,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 867144475}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -21792,7 +21816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &871499949
 Animation:
   m_ObjectHideFlags: 0
@@ -24083,7 +24107,6 @@ GameObject:
   - component: {fileID: 952910591}
   - component: {fileID: 952910602}
   - component: {fileID: 952910603}
-  - component: {fileID: 952910604}
   - component: {fileID: 952910605}
   m_Layer: 0
   m_Name: MainCamera
@@ -24556,7 +24579,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 952910589}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -24579,17 +24602,6 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!114 &952910604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 952910589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7761838e52b65a4408330e12120c76ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &952910605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24950,7 +24962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &957260181
 Animation:
   m_ObjectHideFlags: 0
@@ -25997,7 +26009,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 985797248}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -27236,7 +27248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!1001 &1042822671
 Prefab:
   m_ObjectHideFlags: 0
@@ -27940,7 +27952,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066845968}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -30497,7 +30509,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1162815483}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -31272,35 +31284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
---- !u!1 &1182273792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1182273793}
-  m_Layer: 0
-  m_Name: SpatialAudio_Room and Portal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1182273793
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1182273792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7391276, y: 0.9383987, z: -4.14281}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1577704464}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182605082 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 152580, guid: 6a7fc75295a51f94c9774c45a3d025a8, type: 2}
@@ -33160,7 +33143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!1001 &1258194409
 Prefab:
   m_ObjectHideFlags: 0
@@ -35594,7 +35577,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344817071}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -40360,7 +40343,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524291351}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -40746,7 +40729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &1537099832
 Animation:
   m_ObjectHideFlags: 0
@@ -41698,133 +41681,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 442718, guid: a2a16cf9b5640454888bbf394eff39b9, type: 2}
   m_PrefabInternal: {fileID: 140659714}
---- !u!1 &1577704458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1577704464}
-  - component: {fileID: 1577704463}
-  - component: {fileID: 1577704462}
-  - component: {fileID: 1577704461}
-  - component: {fileID: 1577704460}
-  - component: {fileID: 1577704459}
-  m_Layer: 0
-  m_Name: Room101
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1577704459
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1577704460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77cf80ffca428c141b7053d33e004ba7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  priority: 0
-  reverbAuxBus:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a0aa7eafd95d7304e93d0a7910f25cbd,
-      type: 2}
-  reverbLevel: 1
-  wallOcclusion: 1
-  roomToneEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  roomToneAuxSend: 0
---- !u!23 &1577704461
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1577704462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1577704463
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1577704464
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577704458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4191275, y: 0.46160126, z: 0.5828099}
-  m_LocalScale: {x: 5.7039084, y: 2.4473228, z: 3.8733697}
-  m_Children: []
-  m_Father: {fileID: 1182273793}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578030244 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100862, guid: f05c89ebb4f25d54fa006b7d6fa41b31, type: 2}
@@ -42310,7 +42166,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590417931}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -42887,7 +42743,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1605112572}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -43444,7 +43300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!1001 &1622290174
 Prefab:
   m_ObjectHideFlags: 0
@@ -49868,7 +49724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!65 &1852524943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52183,7 +52039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!1 &1933634940 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 981a85e6b975cc743a50a9c9dc422efe, type: 3}
@@ -52423,7 +52279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &1940076964
 Animation:
   m_ObjectHideFlags: 0
@@ -53333,7 +53189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!114 &1963490176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53947,7 +53803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &1990646443
 Animation:
   m_ObjectHideFlags: 0
@@ -54883,7 +54739,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008625810}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 
@@ -54988,6 +54844,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2013271449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013271447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16508fc20d2d98e40abcaa2d90411d8e,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &2013271451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55009,65 +54894,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &2013271452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2013271447}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238e120fa225166438201a300552de08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 16508fc20d2d98e40abcaa2d90411d8e,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  LargeModePositions: []
-  multiPositionArray: []
---- !u!114 &2013271453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2013271447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcd4765df380514a80a60f75340802c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reflectAuxBus:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  reflectionMaxPathLength: 1000
-  reflectionsAuxBusGain: 1
-  reflectionsOrder: 1
-  roomReverbAuxBusGain: 1
-  diffractionMaxEdges: 0
-  diffractionMaxPaths: 0
-  diffractionMaxPathLength: 0
-  drawFirstOrderReflections: 0
-  drawSecondOrderReflections: 0
-  drawHigherOrderReflections: 0
-  drawDiffractionPaths: 1
 --- !u!1001 &2013985917
 Prefab:
   m_ObjectHideFlags: 0
@@ -56493,7 +56319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainAudioName: Cabinet
-  KeyAudioName: Cabinet_KeyAnim
+  CloseAudioName: Cabinet_KeySound
 --- !u!111 &2070876441
 Animation:
   m_ObjectHideFlags: 0
@@ -57702,7 +57528,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2128779916}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
   m_Name: 

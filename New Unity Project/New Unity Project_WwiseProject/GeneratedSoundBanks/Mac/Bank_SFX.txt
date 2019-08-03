@@ -1,0 +1,83 @@
+Event	ID	Name			Wwise Object Path	Notes
+	290976602	Window_Rain			\Default Work Unit\Object\Window_Rain	
+	435953925	Gramophone_OnOffTap			\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap	
+	501750955	Door_Narrow_Handle_Close			\Default Work Unit\Door_Narrow\Door_Narrow_Handle_Close	
+	850197956	Gramophone_Squeak_3			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3	
+	850197957	Gramophone_Squeak_2			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2	
+	850197958	Gramophone_Squeak_1			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1	
+	982290157	Door_Narrow_Handle_Open			\Default Work Unit\Door_Narrow\Door_Narrow_Handle_Open	
+	990547651	Player_Rain			\Default Work Unit\Player\Player_Rain	
+	1404152342	Fireplace			\Default Work Unit\Object\Fireplace	
+	1652545419	TV_01			\Default Work Unit\Object\TV_01	
+	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
+	2232826297	Gramophone_Mainghosty			\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty	
+	2407747538	Door_Narrow_Axis_Close			\Default Work Unit\Door_Narrow\Door_Narrow_Axis_Close	
+	2673340027	Gramophone_MainNoise			\Default Work Unit\Object\Gramophone\Gramophone_MainNoise	
+	2879668892	Gramophone_Charge			\Default Work Unit\Object\Gramophone\Gramophone_Charge	
+	2916866438	Door_Narrow_Axis_Open			\Default Work Unit\Door_Narrow\Door_Narrow_Axis_Open	
+	3041433330	Door_Narrow_KeySound			\Default Work Unit\Door_Narrow\Door_Narrow_KeySound	
+	3525613408	Gramophone_NeedleTap			\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	165088305	Curtain	GroundMaterial			
+	841620460	Concrete	GroundMaterial			
+	1088209313	Floor	GroundMaterial			
+	2341482753	WoodStair	GroundMaterial			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1048369770	WorldState			\Default Work Unit\WorldState	
+
+State	ID	Name	State Group			Notes
+	0	None	WorldState			
+	84696445	B	WorldState			
+	84696446	A	WorldState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	373900420	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
+	647762099	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\TV		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
+	1242965313	Distance_max20			\Default Work Unit\Distance_max20	
+
+Effect plug-ins	ID	Name	Type				Notes
+	620261131	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	45498057	Squeak_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_2_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\Squeak_2		6303
+	105157533	Mainghosty	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Mainghosty_37C139BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\Mainghosty		524447
+	112940681	Sub	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Fire Wind in Metal Stove 01_DC160399.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Sub		234688
+	126968948	fstp_concrete_06	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_E1886EBA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5428
+	203117369	fstp_wood_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_CB3C30A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_03		4977
+	229089504	Charge	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Charge_DCEDD8B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\Charge		36072
+	238106575	Door_01_Close_PartA	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_E84F119B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_01_Close_PartA		6952
+	243168692	Door_01_Open_PartA	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_9C91E9CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_01_Open_PartA		6554
+	261043379	fstp_wood_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_2EF8C4FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_02		3961
+	307543888	fstp_concrete_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_5E124F05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_02		3849
+	413701673	MainNoise	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\MainNoise_D7231DD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\MainNoise		837059
+	458629548	NeedleTap	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\NeedleTap_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\NeedleTap		2901
+	491382896	KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_FB8D8A48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457		1011802
+	513100812	Squeak_3	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_3_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\Squeak_3		7383
+	519856163	fstp_wood_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_115CC112.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_04		4813
+	562544463	Rain_backgroundlayer	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Rain on Window Sill-stereo_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_backgroundlayer		3166776
+	573201444	OnOffTap	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\OnOffTap_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\OnOffTap		4907
+	580121908	fstp_wood_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_CE738C36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_05		5030
+	653581658	fstp_concrete_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_993CC431.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_01		4416
+	653792465	fstp_concrete_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_D797F303.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_04		4825
+	710131029	Door_01_Close_PartC	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_20B9484E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_01_Close_PartC		11331
+	730283719	Squeak_1	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_1_8211B982.wem		\Actor-Mixer Hierarchy\Default Work Unit\gramophone\Squeak_1		8543
+	819079196	Door_01_Close_PartB	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_47AFEA7D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_01_Close_PartB		5813
+	847065920	Rain_smallwindow	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Rain on Window Sill-Mono_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_smallwindow		1684541
+	887034712	fstp_concrete_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_A0DE41F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_05		4717
+	911504740	TVMusic_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TVMusic_01		781011
+	924713307	main	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Wood Fire Crackle 02_0C98DDB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\main		2165774
+	945656954	fstp_concrete_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_6B7DD2E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_03		5337
+	1038279815	fstp_wood_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_206F4753.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_01		5708
+	1041985487	Door_01_Open_PartB	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_203BDCF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_01_Open_PartB		6777
+

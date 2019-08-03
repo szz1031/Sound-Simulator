@@ -10,22 +10,22 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Diegetic_sfx" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}">
+						<Bus Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 							</PropertyList>
+							<ReferenceList/>
 						</Bus>
 						<Bus Name="Player" ID="{6D337768-8DE9-49C5-9BF3-6166344B7644}"/>
 						<Bus Name="Diegetic_music" ID="{E5AB0A76-B2EB-47DB-901C-A0E2200F67D5}"/>
 						<AuxBus Name="SmallRoom" ID="{1DDCCB4F-EAE4-4A54-9211-F43038C6DA48}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Attenuation_Object_close" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
 								</Reference>
 								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
 									<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -35,15 +35,14 @@
 						<AuxBus Name="LargeRoom" ID="{9518783E-EF42-4CC8-8063-257EF29B80B7}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Attenuation_Object_close" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
 								</Reference>
-								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>

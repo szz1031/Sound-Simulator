@@ -1276,6 +1276,7 @@
 										<Property Name="DecayTime" Type="Real32" Value="0.7"/>
 										<Property Name="Density" Type="Real32" Value="44"/>
 										<Property Name="Diffusion" Type="Real32" Value="46"/>
+										<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="ERPattern" Type="int32" Value="22"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
@@ -1283,7 +1284,6 @@
 										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
 										<Property Name="HFDamping" Type="Real32" Value="2.7"/>
 										<Property Name="PreDelay" Type="Real32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="15"/>
 										<Property Name="StereoWidth" Type="Real32" Value="90"/>
@@ -1313,36 +1313,7 @@
 										<Property Name="DecayTime" Type="Real32" Value="1.1"/>
 										<Property Name="Density" Type="Real32" Value="37"/>
 										<Property Name="Diffusion" Type="Real32" Value="56"/>
-										<Property Name="DryLevel" Type="Real32" Value="-12.3">
-											<RTPCList>
-												<RTPC Name="" ID="{F91BDC76-67A5-4BE0-825E-2D4024EEF040}" ShortID="883296045">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{6A04B781-CD94-4771-9B66-5B133D490BEC}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>16.56047</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>20</XPos>
-																<YPos>2.25407</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="ERLevel" Type="Real32" Value="-26"/>
+										<Property Name="ERLevel" Type="Real32" Value="-10"/>
 										<Property Name="ERPattern" Type="int32" Value="22"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="10520"/>
@@ -1352,35 +1323,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="3.35"/>
 										<Property Name="PreDelay" Type="Real32" Value="7"/>
 										<Property Name="Quality" Type="int32" Value="10"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-16">
-											<RTPCList>
-												<RTPC Name="" ID="{E8B2960C-62D5-4AB9-A387-507C1038C356}" ShortID="466682798">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="AudioSourceDistance" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{F3AE8F44-9053-42C5-8DF7-463D1CE82083}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-96.3000030517578</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>20</XPos>
-																<YPos>0.51107</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
 										<Property Name="RoomShape" Type="Real32" Value="22"/>
 										<Property Name="RoomSize" Type="Real32" Value="12"/>
 										<Property Name="StereoWidth" Type="Real32" Value="0"/>

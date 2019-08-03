@@ -12,12 +12,12 @@
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
 							<ValueList>
-								<Value>10000000</Value>
+								<Value>20000000</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Door_01" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Door_Narrow" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
