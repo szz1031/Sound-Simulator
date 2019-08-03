@@ -11,14 +11,499 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dbbd52538f2c34481ab4b4ea6df328, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 47884a31071ee5479523d9b4c0d5a007
+    GuidInternal: 
+    m_lastTime: -8586396285692774525
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c1ffe7deaa0e614bb759bac74ccf6fde
+    GuidInternal: 
+    m_lastTime: -8586367861145337549
+    List:
+    - name: LargeRoom
+      guid: 3e78189542efc84c8063257ef29b80b7
+      id: 187046019
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: LargeRoom
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\LargeRoom
+    - name: SmallRoom
+      guid: 4fcbdc1de4ea544a9211f43038c6da48
+      id: 2933838247
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SmallRoom
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\SmallRoom
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 61471425322961458087885ce7ef58e4
+    GuidInternal: 
+    m_lastTime: -8586367844872754661
+    List:
+    - name: Bank_music
+      guid: a50a6c269192a14183974c359a6bc735
+      id: 2800366463
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bank_music
+        ObjectType: 7
+      Path: Default Work Unit\Bank_music
+    - name: Bank_SFX
+      guid: 9e180a81f8e4e940ad72a21e7bc6eb83
+      id: 4017023971
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bank_SFX
+        ObjectType: 7
+      Path: Default Work Unit\Bank_SFX
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d415b48cfe971f4394483401dcb078cf
+    GuidInternal: 
+    m_lastTime: -8586367844872834324
+    List:
+    - name: Door_Narrow_Axis_Close
+      guid: 9d37226ebaf84e488033559edb8f2d60
+      id: 2407747538
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Narrow_Axis_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close
+      maxAttenuation: 10
+      maxDuration: 0.768861
+      minDuration: 0.768861
+    - name: Door_Narrow_Axis_Open
+      guid: f5d0f620c638504cb52ef138177b349d
+      id: 2916866438
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Narrow_Axis_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open
+      maxAttenuation: 10
+      maxDuration: 0.697624
+      minDuration: 0.697624
+    - name: Door_Narrow_Handle_Close
+      guid: ce13ea561a220b49ac7b6a643c004e8e
+      id: 501750955
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Narrow_Handle_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close
+      maxAttenuation: 10
+      maxDuration: 0.408335
+      minDuration: 0.408335
+    - name: Door_Narrow_Handle_Open
+      guid: 52f44b26ecd885479b9fc6977f206bdd
+      id: 982290157
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Narrow_Handle_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open
+      maxAttenuation: 10
+      maxDuration: 0.413122
+      minDuration: 0.413122
+    - name: Door_Narrow_KeySound
+      guid: 9e0779e507204f44b25385ff608c0b3a
+      id: 3041433330
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Narrow_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound
+      maxAttenuation: 10
+      maxDuration: 0.759663
+      minDuration: 0.759663
+    - name: Fireplace
+      guid: 91662d3d24c0054bb3d0ca6510fa4193
+      id: 1404152342
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Fireplace
+        ObjectType: 3
+      Path: Default Work Unit\Object\Fireplace
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
+    - name: Gramophone_Charge
+      guid: 4577368a30a07040b981e67023565dfa
+      id: 2879668892
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_Charge
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_Charge
+      maxAttenuation: 15
+      maxDuration: 3.048447
+      minDuration: 3.048447
+    - name: Gramophone_Mainghosty
+      guid: 263d2472ff0f9847a28d2dcb27810091
+      id: 2232826297
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_Mainghosty
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_Mainghosty
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
+    - name: Gramophone_MainNoise
+      guid: d93df8ccbdfe264c87d4c88ff4008724
+      id: 2673340027
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_MainNoise
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_MainNoise
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
+    - name: Gramophone_NeedleTap
+      guid: c4f52104ea92514fa8eab55983c7bd00
+      id: 3525613408
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_NeedleTap
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_NeedleTap
+      maxAttenuation: 15
+      maxDuration: 0.239478
+      minDuration: 0.239478
+    - name: Gramophone_OnOffTap
+      guid: 125ed4b61d01cc42aab0acdbeb0a7c75
+      id: 435953925
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_OnOffTap
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_OnOffTap
+      maxAttenuation: 15
+      maxDuration: 0.663492
+      minDuration: 0.663492
+    - name: Gramophone_Squeak_1
+      guid: 247591dc66f93f4192af5d1d92b948a7
+      id: 850197958
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_Squeak_1
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
+      maxAttenuation: 15
+      maxDuration: 1.221451
+      minDuration: 1.221451
+    - name: Gramophone_Squeak_2
+      guid: f36bcd9d19ce9f4897bf0da4353036c7
+      id: 850197957
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_Squeak_2
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
+      maxAttenuation: 15
+      maxDuration: 0.666395
+      minDuration: 0.666395
+    - name: Gramophone_Squeak_3
+      guid: 72192c969bbe9e4bb5beaa5834070104
+      id: 850197956
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Gramophone
+        ObjectType: 4
+      - ElementName: Gramophone_Squeak_3
+        ObjectType: 3
+      Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_3
+      maxAttenuation: 15
+      maxDuration: 0.803243
+      minDuration: 0.803243
+    - name: LightSwitch_Off
+      guid: 2b0fbe2c0470674a8fa1c51d97139ab8
+      id: 280670697
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: LightSwitch_Off
+        ObjectType: 3
+      Path: Default Work Unit\Object\LightSwitch_Off
+      maxAttenuation: 0
+      maxDuration: 0.269499
+      minDuration: 0.139262
+    - name: LightSwitch_On
+      guid: ab6319fb11459447a759152823a7faa3
+      id: 2253880733
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: LightSwitch_On
+        ObjectType: 3
+      Path: Default Work Unit\Object\LightSwitch_On
+      maxAttenuation: 0
+      maxDuration: 0.269499
+      minDuration: 0.105875
+    - name: Player_Footsteps
+      guid: 28d1af72e7aa624bb7f47ec50cb13b84
+      id: 1730208058
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\Player\Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.646816
+      minDuration: 0.390872
+    - name: Player_Rain
+      guid: 4a72b13907f50d4bbf2792438823718e
+      id: 990547651
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Rain
+        ObjectType: 3
+      Path: Default Work Unit\Player\Player_Rain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TV_01
+      guid: 4eaa5f948d6c444e93a5aaa40db072ef
+      id: 1652545419
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_01
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_01
+      maxAttenuation: 40
+      maxDuration: -1
+      minDuration: -1
+    - name: Window_Rain
+      guid: 06137eeee76f7545a03550e0c55db924
+      id: 290976602
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Window_Rain
+        ObjectType: 3
+      Path: Default Work Unit\Object\Window_Rain
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 03200b5d46398d45816fee77a83878c4
+    GuidInternal: 
+    m_lastTime: -8586367885481701115
+    List:
+    - name: Distance_max10
+      guid: de04529eca98be4188ef592bccc7bd11
+      id: 1192632456
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Distance_max10
+        ObjectType: 13
+      Path: Default Work Unit\Distance_max10
+    - name: Distance_max20
+      guid: b7d76e118a78b7498a3fd1448d632f62
+      id: 1242965313
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Distance_max20
+        ObjectType: 13
+      Path: Default Work Unit\Distance_max20
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c429fcf79327e14dabaf29b6578fca2e
+    GuidInternal: 
+    m_lastTime: -8586379833092552420
+    List:
+    - name: WorldState
+      guid: 6295a6714a52744abaf200702a8bab1c
+      id: 1048369770
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: WorldState
+        ObjectType: 9
+      Path: Default Work Unit\WorldState
+      values:
+      - name: A
+        guid: 0c57fe1adf1b284088019ff9686d4bc8
+        id: 84696446
+        PathAndIcons:
+        - ElementName: A
+          ObjectType: 8
+      - name: B
+        guid: 753152911120e84d85ab0b04872b7c6e
+        id: 84696445
+        PathAndIcons:
+        - ElementName: B
+          ObjectType: 8
+      - name: None
+        guid: 45273a2eba15624492f96eb8f77b8dcd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fce25eada189f14890b8b07b8874a80d
+    GuidInternal: 
+    m_lastTime: -8586379058796723770
+    List:
+    - name: GroundMaterial
+      guid: c45b4791dacbcc4a913aadb91be014ec
+      id: 3072116243
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GroundMaterial
+        ObjectType: 11
+      Path: Default Work Unit\GroundMaterial
+      values:
+      - name: Concrete
+        guid: ae0be76b9735394b9c3b2a40ccc18d65
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Concrete
+          ObjectType: 10
+      - name: Curtain
+        guid: 572754a95acc404f92784c4327dff4fb
+        id: 165088305
+        PathAndIcons:
+        - ElementName: Curtain
+          ObjectType: 10
+      - name: Floor
+        guid: 22a19fb4bc7bc74b958b8492dbd8ce05
+        id: 1088209313
+        PathAndIcons:
+        - ElementName: Floor
+          ObjectType: 10
+      - name: WoodStair
+        guid: aee893d8ca0c4f4886acfed17badc6f5
+        id: 2341482753
+        PathAndIcons:
+        - ElementName: WoodStair
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c13710bade14d643b7344a7706171b58
+    GuidInternal: 
+    m_lastTime: -8586395675313467173
+    List: []
+  ExpandedItems:
+  - /New Unity Project_WwiseProject
+  - /New Unity Project_WwiseProject/Events
+  - /New Unity Project_WwiseProject/Events/Default Work Unit
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Door_Narrow
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

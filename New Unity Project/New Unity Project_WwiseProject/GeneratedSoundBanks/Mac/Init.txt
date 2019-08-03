@@ -8,7 +8,6 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
-	1242965313	Distance_max20			\Default Work Unit\Distance_max20	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	752329608	Diegetic_Sfx&Music			\Default Work Unit\Master Audio Bus\Diegetic_Sfx&Music	

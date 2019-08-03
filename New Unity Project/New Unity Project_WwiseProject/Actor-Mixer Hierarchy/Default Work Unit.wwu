@@ -775,12 +775,17 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="BypassEffect2" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Highpass" Type="int16">
 							<RTPCList>
 								<RTPC Name="" ID="{2A216CE7-380E-47B4-A615-DD268E06BA18}" ShortID="898924181">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{CE186D10-3AE6-48DB-92D8-799AADD8C5FC}">
@@ -792,11 +797,10 @@
 												<XPos>0</XPos>
 												<YPos>-100</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>20</XPos>
-												<YPos>31</YPos>
+												<XPos>10</XPos>
+												<YPos>36</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -809,7 +813,7 @@
 								<RTPC Name="" ID="{4F8193E7-7E4A-4939-BE8F-13C0BD9074F8}" ShortID="620200966">
 									<ReferenceList>
 										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 										</Reference>
 									</ReferenceList>
 									<Curve Name="" ID="{FDF1C3ED-3610-45DF-9D4D-BF6F0F37D15E}">
@@ -821,11 +825,10 @@
 												<XPos>0</XPos>
 												<YPos>-100</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>20</XPos>
-												<YPos>47</YPos>
+												<XPos>10</XPos>
+												<YPos>37</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -854,13 +857,13 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>2.50475</XPos>
-												<YPos>-1.02324999999999</YPos>
+												<XPos>3.82354</XPos>
+												<YPos>-3.011</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>4.89421999999999</YPos>
+												<YPos>3.43805</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -1673,13 +1676,13 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>2.50475</XPos>
-												<YPos>-1.02325</YPos>
+												<XPos>4.63947</XPos>
+												<YPos>-4.39143</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>4.89422</YPos>
+												<YPos>-0.80689</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -1852,7 +1855,7 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>1</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2002,6 +2005,7 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-3</Value>
@@ -2010,18 +2014,18 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<Custom CreatedFrom="{97D6212A-C457-4962-B76A-7A00CF710EDB}">
-										<Attenuation Name="Attenuation_Object_max15 (Custom)" ID="{11CDDDD9-884F-49A4-A597-CAAB02262379}" ShortID="635841782">
+									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{185F971A-F00D-47B5-B386-0E55922AE9F4}" ShortID="781385477">
 											<PropertyList>
 												<Property Name="ConeHighPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{FF55A2E9-B95E-4D39-821C-38C5AD4DECB7}" ShortID="273683427">
+														<RTPC Name="" ID="{B87B3E95-8911-4685-B90E-89508026A433}" ShortID="138834462">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{5AA739BD-CBA9-4A91-80E7-E4A3C8A8D6D5}">
+															<Curve Name="" ID="{9D4F4D8F-48F2-466A-9284-4AE963BEA8D3}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -2045,13 +2049,13 @@
 												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 												<Property Name="ConeLowPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{B8A1D4ED-3E3D-4518-8A2D-523E8E58D8E6}" ShortID="881155687">
+														<RTPC Name="" ID="{525FB390-5C20-4ECF-AECE-2E24286BF43A}" ShortID="537496174">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{16EECA89-81C4-4E1F-8183-35BD63BDB82E}">
+															<Curve Name="" ID="{D0C5F201-548A-4E34-9AE9-C887EEEC572B}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -2073,12 +2077,12 @@
 													</RTPCList>
 												</Property>
 												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-												<Property Name="RadiusMax" Type="Real64" Value="15"/>
+												<Property Name="RadiusMax" Type="Real64" Value="10"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{1B38153F-ABAA-43A3-AC8B-3A948CA3AFD1}">
+														<Curve Name="VolumeDry" ID="{C1FE1653-3AF0-4BE3-888E-652914625EF6}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -2090,13 +2094,13 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>5.954775</XPos>
+																	<XPos>3.96985</XPos>
 																	<YPos>-11.05196</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
+																	<XPos>10</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>

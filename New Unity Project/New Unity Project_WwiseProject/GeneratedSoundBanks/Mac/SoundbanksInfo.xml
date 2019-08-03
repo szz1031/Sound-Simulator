@@ -26,11 +26,11 @@
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Door_Narrow\Door_Narrow_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
-				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Door_Narrow\Door_Narrow_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
-				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Door_Narrow\Door_Narrow_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
-				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Door_Narrow\Door_Narrow_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
-				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Door_Narrow\Door_Narrow_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
+				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
+				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
+				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
+				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
 				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Object\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
 				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447"/>
 				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="15.000000" DurationType="Infinite"/>
@@ -40,6 +40,8 @@
 				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.221451" DurationMax="1.221451"/>
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.666395" DurationMax="0.666395"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
+				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
+				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
 				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="Infinite"/>
 				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\Default Work Unit\Object\TV_01" MaxAttenuation="40.000000" DurationType="Infinite"/>
@@ -56,7 +58,7 @@
 				</File>
 				<File Id="112940681" Language="SFX">
 					<ShortName>EFX INT Fire Wind in Metal Stove 01.wav</ShortName>
-					<Path>SFX\EFX INT Fire Wind in Metal Stove 01_DC160399.wem</Path>
+					<Path>SFX\EFX INT Fire Wind in Metal Stove 01_55B351D9.wem</Path>
 				</File>
 				<File Id="126968948" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -65,6 +67,10 @@
 				<File Id="203117369" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_CB3C30A9.wem</Path>
+				</File>
+				<File Id="219789314" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_6D19739F.wem</Path>
 				</File>
 				<File Id="229089504" Language="SFX">
 					<ShortName>REAPER Media\Charge.wav</ShortName>
@@ -94,9 +100,13 @@
 					<ShortName>REAPER Media\NeedleTap.wav</ShortName>
 					<Path>SFX\REAPER Media\NeedleTap_6296B0F9.wem</Path>
 				</File>
+				<File Id="484742700" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_DDA2A76E.wem</Path>
+				</File>
 				<File Id="491382896" Language="SFX">
 					<ShortName>KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457.wav</ShortName>
-					<Path>SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_FB8D8A48.wem</Path>
+					<Path>SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_74B07E08.wem</Path>
 				</File>
 				<File Id="513100812" Language="SFX">
 					<ShortName>REAPER Media\Squeak_3.wav</ShortName>
@@ -117,6 +127,10 @@
 				<File Id="580121908" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_CE738C36.wem</Path>
+				</File>
+				<File Id="651713173" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_0AE5A027.wem</Path>
 				</File>
 				<File Id="653581658" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -142,6 +156,10 @@
 					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
 					<Path>SFX\Rain on Window Sill-Mono_83C3D6FF.wem</Path>
 				</File>
+				<File Id="854222693" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_F3DF57DF.wem</Path>
+				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_A0DE41F1.wem</Path>
@@ -152,11 +170,19 @@
 				</File>
 				<File Id="924713307" Language="SFX">
 					<ShortName>EFX INT Wood Fire Crackle 02.wav</ShortName>
-					<Path>SFX\EFX INT Wood Fire Crackle 02_0C98DDB1.wem</Path>
+					<Path>SFX\EFX INT Wood Fire Crackle 02_A8F5CEF1.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_6B7DD2E3.wem</Path>
+				</File>
+				<File Id="967272807" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_BED3955B.wem</Path>
+				</File>
+				<File Id="1002441243" Language="SFX">
+					<ShortName>Buttons_Switches_031.wav</ShortName>
+					<Path>SFX\Buttons_Switches_031_9DBD08F7.wem</Path>
 				</File>
 				<File Id="1038279815" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>

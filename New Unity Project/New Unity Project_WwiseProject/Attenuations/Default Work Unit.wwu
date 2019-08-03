@@ -5,66 +5,13 @@
 			<ChildrenList>
 				<Attenuation Name="Attenuation_TV" ID="{9BA20216-7F0E-42C2-AE6D-7E352F1FDDA5}" ShortID="1004567962">
 					<PropertyList>
-						<Property Name="ConeHighPassFilterValue" Type="int32">
-							<RTPCList>
-								<RTPC Name="" ID="{A153A223-1581-4576-919B-4DCFC608DE34}" ShortID="638480880">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{169255EF-9C24-432D-9812-ED907834873F}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Exp1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>20</XPos>
-												<YPos>100</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
 						</Property>
 						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-						<Property Name="ConeLowPassFilterValue" Type="int32">
-							<RTPCList>
-								<RTPC Name="" ID="{A249B439-42B9-407F-B5D8-484FEF69C74C}" ShortID="576897807">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{2ACABBF2-AA03-4003-B79B-B653CB2721AC}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Exp1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>20</XPos>
-												<YPos>100</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+						<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
 						<Property Name="ConeUse" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -76,6 +23,37 @@
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="VolumeDry" ID="{8A061AA5-9B51-4046-905C-56A3D30FF0DB}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>14.06757</XPos>
+											<YPos>-6.72828</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Log2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>40</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
+						</VolumeDryUsage>
+						<VolumeWetGameUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetGameUsage>
+						<VolumeWetUserUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
+								<Curve Name="VolumeWetUser" ID="{14EF252E-7BEE-411E-9D7C-FCFF7FC8785A}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -100,12 +78,6 @@
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
-						</VolumeDryUsage>
-						<VolumeWetGameUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-						</VolumeWetGameUsage>
-						<VolumeWetUserUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
