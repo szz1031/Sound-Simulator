@@ -82,16 +82,13 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID DIEGETIC_MUSIC = 1515175539U;
-        static const AkUniqueID DIEGETIC_SFX_MUSIC = 752329608U;
+        static const AkUniqueID AURO_3D = 2857125394U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID LARGEROOM = 187046019U;
-        static const AkUniqueID SMALLROOM = 2933838247U;
+        static const AkUniqueID LARGEROOMREVERB = 1409684747U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
