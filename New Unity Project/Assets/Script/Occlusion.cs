@@ -14,9 +14,8 @@ public class Occlusion : MonoBehaviour
     public float HightDistance;
     public float BlockedPercentage;
     
-    float obs;
     public float FinalOcclu;
-    
+    float obs;
 
     // Use this for initialization
     void Start()

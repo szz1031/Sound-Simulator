@@ -21,7 +21,6 @@ public class InteractGramophone : InteractorBase {
     }
     public void OnEvent(string eventName)
     {
-        Debug.Log(eventName);
         switch (eventName)
         {
             case "NeedleTap":
