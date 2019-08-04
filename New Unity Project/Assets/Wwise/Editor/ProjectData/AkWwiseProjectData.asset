@@ -23,30 +23,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c1ffe7deaa0e614bb759bac74ccf6fde
     GuidInternal: 
-    m_lastTime: -8586367861145337549
+    m_lastTime: -8586366742504006585
     List:
-    - name: LargeRoom
-      guid: 3e78189542efc84c8063257ef29b80b7
-      id: 187046019
+    - name: LargeRoomReverb
+      guid: 0857c94ebf2a0a4e826a84eb10531e6f
+      id: 1409684747
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: LargeRoom
-        ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\LargeRoom
-    - name: SmallRoom
-      guid: 4fcbdc1de4ea544a9211f43038c6da48
-      id: 2933838247
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
+      - ElementName: Auro-3D
         ObjectType: 2
-      - ElementName: SmallRoom
+      - ElementName: LargeRoomReverb
         ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\SmallRoom
+      Path: Default Work Unit\Master Audio Bus\Auro-3D\LargeRoomReverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -501,6 +492,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /New Unity Project_WwiseProject
+  - /New Unity Project_WwiseProject/Auxiliary Busses
+  - /New Unity Project_WwiseProject/Auxiliary Busses/Default Work Unit
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object

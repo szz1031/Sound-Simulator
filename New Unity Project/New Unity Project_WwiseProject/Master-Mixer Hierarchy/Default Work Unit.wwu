@@ -10,42 +10,29 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}">
+						<Bus Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>803467534</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
-							<ReferenceList/>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
+									<ObjectRef Name="Medium_Room_AHP" ID="{084C1341-345B-44C4-88FE-89EA007AEDB3}" WorkUnitID="{B3C352EE-53F0-4C95-BAA9-B8ECC0034D25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
 						</Bus>
-						<Bus Name="Player" ID="{6D337768-8DE9-49C5-9BF3-6166344B7644}"/>
-						<Bus Name="Diegetic_music" ID="{E5AB0A76-B2EB-47DB-901C-A0E2200F67D5}"/>
-						<AuxBus Name="SmallRoom" ID="{1DDCCB4F-EAE4-4A54-9211-F43038C6DA48}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
-								</Reference>
-								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-							</ReferenceList>
-						</AuxBus>
-						<AuxBus Name="LargeRoom" ID="{9518783E-EF42-4CC8-8063-257EF29B80B7}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
-								</Reference>
-								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-							</ReferenceList>
-						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
