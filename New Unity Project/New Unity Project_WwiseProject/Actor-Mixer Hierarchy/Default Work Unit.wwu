@@ -58,7 +58,7 @@
 							<ObjectRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Player" ID="{6D337768-8DE9-49C5-9BF3-6166344B7644}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="GroundMaterial" ID="{91475BC4-CBDA-4ACC-913A-ADB91BE014EC}" WorkUnitID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}"/>
@@ -618,7 +618,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -903,10 +903,10 @@
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Auro-3D" ID="{2B398ECB-91B2-4E8E-8D86-C2B227F7BEF4}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="LargeRoom" ID="{9518783E-EF42-4CC8-8063-257EF29B80B7}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="LargeRoomReverb" ID="{BBB2E492-259B-4051-AC10-FC78E72D6EB3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -974,7 +974,7 @@
 							<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -984,6 +984,12 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -998,7 +1004,10 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Auro-3D" ID="{2B398ECB-91B2-4E8E-8D86-C2B227F7BEF4}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LargeRoomReverb" ID="{BBB2E492-259B-4051-AC10-FC78E72D6EB3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1053,7 +1062,7 @@
 									<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Player" ID="{6D337768-8DE9-49C5-9BF3-6166344B7644}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1200,7 +1209,10 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Auro-3D" ID="{2B398ECB-91B2-4E8E-8D86-C2B227F7BEF4}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="LargeRoomReverb" ID="{BBB2E492-259B-4051-AC10-FC78E72D6EB3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1398,7 +1410,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1813,10 +1825,10 @@
 							<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Diegetic_Sfx&amp;Music" ID="{3A8F3FA0-0BB2-4976-90A9-74C50E470B6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Auro-3D" ID="{2B398ECB-91B2-4E8E-8D86-C2B227F7BEF4}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="LargeRoom" ID="{9518783E-EF42-4CC8-8063-257EF29B80B7}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="LargeRoomReverb" ID="{BBB2E492-259B-4051-AC10-FC78E72D6EB3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

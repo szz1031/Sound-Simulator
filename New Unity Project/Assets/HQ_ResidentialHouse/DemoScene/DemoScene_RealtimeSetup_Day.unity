@@ -3621,7 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 0}
+  Camera: {fileID: 952910590}
   DisToListener: 0
   CalculateUnder: 0
   BlockedDistance: 0
@@ -19738,7 +19738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 0}
+  Camera: {fileID: 952910590}
   DisToListener: 0
   CalculateUnder: 0
   BlockedDistance: 0
