@@ -27,9 +27,10 @@ public class InteractGramophone : InteractorBase {
             case "NeedleTap":
                 b_playing = true;
                 break;
-            case "OffSound":
+            case "OnOffTap":
                 b_playing = false;
                 break;
         }
+        AudioManager.Play("Gramophone_"+eventName,this.gameObject);
     }
 }
