@@ -7,7 +7,7 @@ public class UIManager : SimpleSingletonMono<UIManager> {
     protected override void Awake()
     {
         base.Awake();
-        m_SubTitle = transform.Find("Subtitle").GetComponent<UI_Subtitle>();
+        m_SubTitle = transform.Find("UI_Subtitle").GetComponent<UI_Subtitle>();
     }
     public void AddSubtitle(string subTitle)
     {
