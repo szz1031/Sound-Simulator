@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586366466965266718
+    m_lastTime: -8586366393526781984
     List:
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
@@ -211,7 +211,7 @@ MonoBehaviour:
       - ElementName: Door_Narrow_Axis_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.768861
       minDuration: 0.768861
     - name: Door_Narrow_Axis_Open
@@ -227,7 +227,7 @@ MonoBehaviour:
       - ElementName: Door_Narrow_Axis_Open
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.697624
       minDuration: 0.697624
     - name: Door_Narrow_Handle_Close
@@ -243,7 +243,7 @@ MonoBehaviour:
       - ElementName: Door_Narrow_Handle_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.408335
       minDuration: 0.408335
     - name: Door_Narrow_Handle_Open
@@ -259,7 +259,7 @@ MonoBehaviour:
       - ElementName: Door_Narrow_Handle_Open
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.413122
       minDuration: 0.413122
     - name: Door_Narrow_KeySound
@@ -275,7 +275,7 @@ MonoBehaviour:
       - ElementName: Door_Narrow_KeySound
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.759663
       minDuration: 0.759663
     - name: Door_Wide_Axis_Close
@@ -500,6 +500,38 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.803243
       minDuration: 0.803243
+    - name: Key_Collect
+      guid: 07f59962f7233d4e96e1f977cccbf2c1
+      id: 2053434189
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Key
+        ObjectType: 4
+      - ElementName: Key_Collect
+        ObjectType: 3
+      Path: Default Work Unit\Object\Key\Key_Collect
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Key_Uncollected
+      guid: dc2bd66d5ea17e4c9cad94b0aa4f1b21
+      id: 2382010549
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Key
+        ObjectType: 4
+      - ElementName: Key_Uncollected
+        ObjectType: 3
+      Path: Default Work Unit\Object\Key\Key_Uncollected
+      maxAttenuation: 5
+      maxDuration: -1
+      minDuration: -1
     - name: LightSwitch_Off
       guid: 2b0fbe2c0470674a8fa1c51d97139ab8
       id: 280670697

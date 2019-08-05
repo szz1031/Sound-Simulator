@@ -495,71 +495,10 @@
 				<ActorMixer Name="Object with Adaptive Reverb" ID="{B45A5B58-D2CB-4710-BB6B-4768D1E62802}" ShortID="535683725">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="BypassEffect1" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 						<Property Name="BypassEffect2" Type="bool">
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
-						</Property>
-						<Property Name="Highpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{2A216CE7-380E-47B4-A615-DD268E06BA18}" ShortID="898924181">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{CE186D10-3AE6-48DB-92D8-799AADD8C5FC}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>36</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{4F8193E7-7E4A-4939-BE8F-13C0BD9074F8}" ShortID="620200966">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{FDF1C3ED-3610-45DF-9D4D-BF6F0F37D15E}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>37</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
@@ -608,9 +547,6 @@
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-						</Reference>
-						<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-							<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="Effect2">
 							<Custom>
@@ -710,6 +646,11 @@
 						<ActorMixer Name="gramophone" ID="{ECCAD31B-19F8-45A0-8D32-0E98C7A7A0EE}" ShortID="465528862">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -878,7 +819,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -902,6 +843,27 @@
 											<AudioFile>REAPER Media\Mainghosty.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+												<CustomState Name="" ID="{78AD3F47-FD2F-4DF8-AA2A-565982ADA716}" ShortID="433782185">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+												<CustomState Name="" ID="{7237E579-8CE3-4991-9934-22A48C02A4B7}" ShortID="244147596"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Mainghosty" ID="{1720772E-873C-4FC0-8B96-1B5E83C84FA8}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -911,7 +873,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -988,6 +950,11 @@
 								</Sound>
 								<Sound Name="Squeak_1" ID="{962915D7-E882-4A86-AA26-49720C38A171}" ShortID="880523522">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-150</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
@@ -1005,9 +972,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="Squeak_1" ID="{68B10FAE-4DF6-4BF3-A1E7-06524B7D5F62}" ShortID="730283719">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.206675282250103"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.124279782873882"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.551823003607776"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.205988748440553"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.22145091809811"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -1020,9 +988,14 @@
 								</Sound>
 								<Sound Name="Squeak_2" ID="{ABE7D8AC-D6F6-478B-A66A-81D357CBB14E}" ShortID="383284103">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-510</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1036,6 +1009,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Squeak_2" ID="{681D2050-0DF2-4E90-9567-DF8BCD8CDA42}" ShortID="45498057">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.68938163500694E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.19904903137725E-02"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.134662429677753"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Squeak_2.wav</AudioFile>
 										</AudioFileSource>
@@ -1233,8 +1212,8 @@
 								<CustomState Name="" ID="{040EEF10-1761-4EA5-87BE-C33C0ED60D2A}" ShortID="343836973">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16" Value="24"/>
-										<Property Name="Pitch" Type="int32" Value="-2070"/>
-										<Property Name="Volume" Type="Real64" Value="4"/>
+										<Property Name="Pitch" Type="int32" Value="-2270"/>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
@@ -2311,6 +2290,83 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="WorldB Hint Object" ID="{716C1F06-7CF3-4EA0-ACF8-C9A8E20C418D}" ShortID="420450560">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation_max5" ID="{EF4D7CB3-D28B-4CF2-9BB0-512144BD1EF1}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Key_Hint Sound" ID="{271A6A92-3486-4344-94F5-6325E15E6B70}" ShortID="45897627">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sci_fi_loop_12" ID="{B7A9F039-5896-4562-A60F-4DFBDB3A51C8}" ShortID="50123170">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="20"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.02893"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.7"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sci_fi_loop_12.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sci_fi_loop_12" ID="{B7A9F039-5896-4562-A60F-4DFBDB3A51C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+								<CustomState Name="" ID="{BEAB2996-A37E-4946-8E5A-CD817049C439}" ShortID="431703738">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+								<CustomState Name="" ID="{2D69DD0E-91C2-453C-ADBF-14CABF6C754A}" ShortID="249057128"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

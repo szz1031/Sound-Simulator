@@ -40,6 +40,8 @@ namespace AK
         static const AkUniqueID GRAMOPHONE_SQUEAK_1 = 850197958U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_2 = 850197957U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_3 = 850197956U;
+        static const AkUniqueID KEY_COLLECT = 2053434189U;
+        static const AkUniqueID KEY_UNCOLLECTED = 2382010549U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;

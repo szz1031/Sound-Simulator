@@ -18,10 +18,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
 	1948672150	Cabinet_Close			\Default Work Unit\Object\Cabinet\Cabinet_Close	
 	2043156035	Door_Wide_Handle_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close	
+	2053434189	Key_Collect			\Default Work Unit\Object\Key\Key_Collect	
 	2116863413	Door_Wide_Handle_Open			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open	
 	2141172849	Door_Closet_KeySound			\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound	
 	2232826297	Gramophone_Mainghosty			\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty	
 	2253880733	LightSwitch_On			\Default Work Unit\Object\LightSwitch_On	
+	2382010549	Key_Uncollected			\Default Work Unit\Object\Key\Key_Uncollected	
 	2407747538	Door_Narrow_Axis_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close	
 	2458915778	Cabinet_Open			\Default Work Unit\Object\Cabinet\Cabinet_Open	
 	2673340027	Gramophone_MainNoise			\Default Work Unit\Object\Gramophone\Gramophone_MainNoise	
@@ -53,6 +55,8 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	343836973	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Rain		
 	373900420	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
+	431703738	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object		
+	433782185	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Mainghosty		
 	647762099	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb		
 	1048250915	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Fire		
 
@@ -63,11 +67,11 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	620261131	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
-	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	45498057	Squeak_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_2_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_2		6303
+	45498057	Squeak_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_2_BCB74249.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_2		5210
+	50123170	Key_Hint Sound	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\sci_fi_loop_12_D3814A97.wem		\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object\Key_Hint Sound		43340
 	105157533	Mainghosty	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Mainghosty_37C139BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Mainghosty		524447
 	112940681	Sub	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT Fire Wind in Metal Stove 01_55B351D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Sub		219881
 	126968948	fstp_concrete_06	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_E1886EBA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5428
@@ -91,7 +95,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	653581658	fstp_concrete_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_993CC431.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_01		4416
 	653792465	fstp_concrete_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_D797F303.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_04		4825
 	710131029	Door_01_Close_PartC	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_20B9484E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Close_PartC		11331
-	730283719	Squeak_1	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_1_8211B982.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_1		8543
+	730283719	Squeak_1	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_1_22F64DD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_1		7570
 	819079196	Door_01_Close_PartB	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_47AFEA7D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Close_PartB		5813
 	847065920	Rain_smallwindow	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Rain on Window Sill-Mono_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_smallwindow		1684541
 	854222693	On_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Buttons_Switches_031_F3DF57DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Light\Toggle on\On_2		2695

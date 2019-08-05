@@ -401,6 +401,35 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Key" ID="{DD0CDF2E-B9B2-465A-BE4E-277873A5C62A}" ShortID="1010040332">
+							<ChildrenList>
+								<Event Name="Key_Uncollected" ID="{6DD62BDC-A15E-4C7E-9CAD-94B0AA4F1B21}">
+									<ChildrenList>
+										<Action Name="" ID="{E173720B-C07E-4F17-93E6-8A633758B755}" ShortID="752359854">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Key_Hint Sound" ID="{271A6A92-3486-4344-94F5-6325E15E6B70}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Key_Collect" ID="{6299F507-23F7-4E3D-96E1-F977CCCBF2C1}">
+									<ChildrenList>
+										<Action Name="" ID="{E270FC1D-9101-4EE2-B707-90B660879377}" ShortID="243602699">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Key_Hint Sound" ID="{271A6A92-3486-4344-94F5-6325E15E6B70}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

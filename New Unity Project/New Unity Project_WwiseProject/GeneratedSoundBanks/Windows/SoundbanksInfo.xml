@@ -50,9 +50,11 @@
 				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="3525613408" Name="Gramophone_NeedleTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.129533" DurationMax="0.129533"/>
 				<Event Id="435953925" Name="Gramophone_OnOffTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.663492" DurationMax="0.663492"/>
-				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="1.221451" DurationMax="1.221451"/>
-				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.666395" DurationMax="0.666395"/>
+				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369"/>
+				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
+				<Event Id="2053434189" Name="Key_Collect" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Collect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="5.000000" DurationType="Infinite"/>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
 				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
@@ -63,7 +65,11 @@
 			<IncludedMemoryFiles>
 				<File Id="45498057" Language="SFX">
 					<ShortName>REAPER Media\Squeak_2.wav</ShortName>
-					<Path>SFX\REAPER Media\Squeak_2_6296B0F9.wem</Path>
+					<Path>SFX\REAPER Media\Squeak_2_BCB74249.wem</Path>
+				</File>
+				<File Id="50123170" Language="SFX">
+					<ShortName>sci_fi_loop_12.wav</ShortName>
+					<Path>SFX\sci_fi_loop_12_D3814A97.wem</Path>
 				</File>
 				<File Id="105157533" Language="SFX">
 					<ShortName>REAPER Media\Mainghosty.wav</ShortName>
@@ -159,7 +165,7 @@
 				</File>
 				<File Id="730283719" Language="SFX">
 					<ShortName>REAPER Media\Squeak_1.wav</ShortName>
-					<Path>SFX\REAPER Media\Squeak_1_8211B982.wem</Path>
+					<Path>SFX\REAPER Media\Squeak_1_22F64DD3.wem</Path>
 				</File>
 				<File Id="819079196" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
