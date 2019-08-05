@@ -4,9 +4,7 @@ using UnityEngine;
 using GameSetting;
 public class AudioManager : SimpleSingletonMono<AudioManager> {
     public AK.Wwise.Event Ww_FootStep;
-    public AK.Wwise.Switch Ww_FootStepSwitchConcrete;
-    public AK.Wwise.Switch Ww_FootStepSwitchCurtain;
-    public AK.Wwise.Switch Ww_FootStepSwitchWoodStairs;
+    public AK.Wwise.Switch Ww_FootStepSwitchConcrete, Ww_FootStepSwitchCarpet, Ww_FootStepSwitchStair, Ww_FootStepSwitchFloor;
     public static void Play(string clipName,GameObject obj)
     {
         AkSoundEngine.PostEvent(clipName,obj);
@@ -20,11 +18,14 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
             case enum_GroundMaterialType.Concrete:
                 Instance.Ww_FootStepSwitchConcrete.SetValue(obj);
                 break;
-            case enum_GroundMaterialType.Curtain:
-                Instance.Ww_FootStepSwitchCurtain.SetValue(obj);
+            case enum_GroundMaterialType.Floor:
+                Instance.Ww_FootStepSwitchFloor.SetValue(obj);
                 break;
-            case enum_GroundMaterialType.WoodStairs:
-                Instance.Ww_FootStepSwitchWoodStairs.SetValue(obj);
+            case enum_GroundMaterialType.Carpet:
+                Instance.Ww_FootStepSwitchCarpet.SetValue(obj);
+                break;
+            case enum_GroundMaterialType.Stair:
+                Instance.Ww_FootStepSwitchStair.SetValue(obj);
                 break;
         }
         Instance.Ww_FootStep.Post(obj);

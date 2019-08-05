@@ -18,8 +18,9 @@ namespace GameSetting
     {
         Invalid=-1,
         Concrete,
-        Curtain,
-        WoodStairs,
+        Floor,
+        Carpet,
+        Stair,
     }
     public static class GameLayer
     {

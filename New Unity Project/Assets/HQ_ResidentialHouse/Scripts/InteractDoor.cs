@@ -10,9 +10,11 @@ public class InteractDoor : InteractorBase,ISingleCoroutine
     protected HitCheckDynamic[] m_HitCheck;
     protected Animation m_Animation;
     public string KeyAudioName;
+    public int I_KeyIndex = 0;
     public bool b_Opening { get; private set; } = false;
     public bool b_Opened { get; private set; } = false;
     string m_clipName;
+
     protected override void Awake()
     {
         base.Awake();
@@ -24,6 +26,13 @@ public class InteractDoor : InteractorBase,ISingleCoroutine
     }
     public override bool TryInteract()
     {
+        if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
+        {
+            AudioManager.Play("Door_Locked",this.gameObject);
+            UIManager.Instance.AddTips("Door Locked!");
+            return false;
+        }
+
         if (b_Opening)
             return false;
         b_Opening = true;

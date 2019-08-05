@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 public class UI_Subtitle : MonoBehaviour,ISingleCoroutine {
+    public float F_Offset;
+    public float F_TipsLastTime = 2f;
     class SubtitleItem
     {
         public float m_startTime;
@@ -25,8 +27,12 @@ public class UI_Subtitle : MonoBehaviour,ISingleCoroutine {
     int textIndex = 0;
     private void Awake()
     {
-        m_Background = transform.Find("Background").GetComponent<Image>();
-        m_StartBackgroundColor = m_Background.color;
+        if (transform.Find("Background"))
+        {
+            m_Background = transform.Find("Background").GetComponent<Image>();
+            m_StartBackgroundColor = m_Background.color;
+        }
+
         Text text= transform.Find("Text").GetComponent<Text>();
         
         m_texts.Add(text);
@@ -49,7 +55,7 @@ public class UI_Subtitle : MonoBehaviour,ISingleCoroutine {
             int dequeCount = 0;
             foreach (SubtitleItem subtitle in m_subTitles)
             {
-                if (Time.time - subtitle.m_startTime > 2)
+                if (Time.time - subtitle.m_startTime > F_TipsLastTime)
                 {
                     m_texts[subtitle.m_text].SetActivate(false);
                     dequeCount++;
@@ -82,8 +88,9 @@ public class UI_Subtitle : MonoBehaviour,ISingleCoroutine {
     {
         int index = 0;
         foreach (SubtitleItem subtitle in m_subTitles)
-            m_texts[ subtitle.m_text].GetComponent<RectTransform>().anchoredPosition = new Vector3(20,index++*75,0);
+            m_texts[ subtitle.m_text].GetComponent<RectTransform>().anchoredPosition = new Vector3(20,index++* F_Offset, 0);
 
+        if(m_Background)
         m_Background.color = m_subTitles.Count == 0 ? new Color(0, 0, 0, 0) : m_StartBackgroundColor;
     }
 }

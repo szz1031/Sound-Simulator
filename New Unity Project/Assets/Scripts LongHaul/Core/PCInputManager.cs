@@ -20,6 +20,7 @@ public enum enum_BindingsName
     Jump,
     FlashLight,
     Crouch,
+    Helps,
 }
 public enum enum_PressStatus
 {
@@ -47,6 +48,7 @@ public class PCInputManager : SingletonMono<PCInputManager>
         KeyBindings.CreatePresetBinding(enum_BindingsName.Jump, enum_PressStatus.Down, KeyCode.Space);
         KeyBindings.CreatePresetBinding(enum_BindingsName.FlashLight, enum_PressStatus.Down, KeyCode.F);
         KeyBindings.CreatePresetBinding(enum_BindingsName.Crouch, enum_PressStatus.Both, KeyCode.LeftControl);
+        KeyBindings.CreatePresetBinding(enum_BindingsName.Helps, enum_PressStatus.Down, KeyCode.Tab);
     }
     Action<Vector2> OnKeyBoardMovement;
     Action<Vector2> OnMouseRotate;
