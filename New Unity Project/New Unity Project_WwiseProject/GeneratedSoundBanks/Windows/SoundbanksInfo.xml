@@ -34,6 +34,7 @@
 				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
 				<Event Id="541226684" Name="Door_Closet_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
 				<Event Id="2141172849" Name="Door_Closet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="3333554874" Name="Door_Locked" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Locked" DurationType="OneShot" DurationMin="0.445325" DurationMax="0.445325"/>
 				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
 				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
 				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
@@ -53,11 +54,11 @@
 				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369"/>
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
-				<Event Id="2053434189" Name="Key_Collect" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Collect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
 				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="5.000000" DurationType="Infinite"/>
-				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
-				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.390872" DurationMax="0.646816"/>
+				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
+				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
 				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="Infinite"/>
 				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\Default Work Unit\Object\TV_01" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Object\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
@@ -65,11 +66,19 @@
 			<IncludedMemoryFiles>
 				<File Id="45498057" Language="SFX">
 					<ShortName>REAPER Media\Squeak_2.wav</ShortName>
-					<Path>SFX\REAPER Media\Squeak_2_BCB74249.wem</Path>
+					<Path>SFX\REAPER Media\Squeak_2_C04097C5.wem</Path>
 				</File>
 				<File Id="50123170" Language="SFX">
 					<ShortName>sci_fi_loop_12.wav</ShortName>
 					<Path>SFX\sci_fi_loop_12_D3814A97.wem</Path>
+				</File>
+				<File Id="50177702" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_28F4E354.wem</Path>
+				</File>
+				<File Id="50253643" Language="SFX">
+					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
+					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_B2B88A46.wem</Path>
 				</File>
 				<File Id="105157533" Language="SFX">
 					<ShortName>REAPER Media\Mainghosty.wav</ShortName>
@@ -77,15 +86,15 @@
 				</File>
 				<File Id="112940681" Language="SFX">
 					<ShortName>EFX INT Fire Wind in Metal Stove 01.wav</ShortName>
-					<Path>SFX\EFX INT Fire Wind in Metal Stove 01_55B351D9.wem</Path>
+					<Path>SFX\EFX INT Fire Wind in Metal Stove 01_4A89F9BD.wem</Path>
 				</File>
 				<File Id="126968948" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_E1886EBA.wem</Path>
+					<Path>SFX\fstepConcreteMono_BAB6C276.wem</Path>
 				</File>
 				<File Id="203117369" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
-					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_CB3C30A9.wem</Path>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_EDB45005.wem</Path>
 				</File>
 				<File Id="219789314" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -97,27 +106,43 @@
 				</File>
 				<File Id="238106575" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_E84F119B.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_2FFD71C7.wem</Path>
 				</File>
 				<File Id="243168692" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_9C91E9CB.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_7D05A17F.wem</Path>
+				</File>
+				<File Id="255800652" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_2629DED4.wem</Path>
 				</File>
 				<File Id="261043379" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
-					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_2EF8C4FF.wem</Path>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_980882C4.wem</Path>
 				</File>
 				<File Id="307543888" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_5E124F05.wem</Path>
+					<Path>SFX\fstepConcreteMono_C8C0CF49.wem</Path>
+				</File>
+				<File Id="405076756" Language="SFX">
+					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
+					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_7B030611.wem</Path>
 				</File>
 				<File Id="413701673" Language="SFX">
 					<ShortName>REAPER Media\MainNoise.wav</ShortName>
 					<Path>SFX\REAPER Media\MainNoise_D7231DD6.wem</Path>
 				</File>
+				<File Id="424000544" Language="SFX">
+					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
+					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_41D71720.wem</Path>
+				</File>
+				<File Id="451088547" Language="SFX">
+					<ShortName>Key ring carabineer pick up_BLASTWAVEFX_02006.wav</ShortName>
+					<Path>SFX\Key ring carabineer pick up_BLASTWAVEFX_02006_911EEA20.wem</Path>
+				</File>
 				<File Id="458629548" Language="SFX">
 					<ShortName>REAPER Media\NeedleTap.wav</ShortName>
-					<Path>SFX\REAPER Media\NeedleTap_34A0CF6E.wem</Path>
+					<Path>SFX\REAPER Media\NeedleTap_4129FCCA.wem</Path>
 				</File>
 				<File Id="484742700" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -125,7 +150,7 @@
 				</File>
 				<File Id="491382896" Language="SFX">
 					<ShortName>KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457.wav</ShortName>
-					<Path>SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_74B07E08.wem</Path>
+					<Path>SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_AD60680C.wem</Path>
 				</File>
 				<File Id="513100812" Language="SFX">
 					<ShortName>REAPER Media\Squeak_3.wav</ShortName>
@@ -133,7 +158,7 @@
 				</File>
 				<File Id="519856163" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
-					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_115CC112.wem</Path>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_EB782CB6.wem</Path>
 				</File>
 				<File Id="562544463" Language="SFX">
 					<ShortName>Rain on Window Sill-stereo.wav</ShortName>
@@ -143,9 +168,9 @@
 					<ShortName>REAPER Media\OnOffTap.wav</ShortName>
 					<Path>SFX\REAPER Media\OnOffTap_6296B0F9.wem</Path>
 				</File>
-				<File Id="580121908" Language="SFX">
+				<File Id="646110042" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
-					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_CE738C36.wem</Path>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_E89B8153.wem</Path>
 				</File>
 				<File Id="651713173" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -153,23 +178,47 @@
 				</File>
 				<File Id="653581658" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_993CC431.wem</Path>
+					<Path>SFX\fstepConcreteMono_BA6AAD55.wem</Path>
 				</File>
 				<File Id="653792465" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_D797F303.wem</Path>
+					<Path>SFX\fstepConcreteMono_2F1C59CF.wem</Path>
+				</File>
+				<File Id="704428846" Language="SFX">
+					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
+					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_9EF101D9.wem</Path>
 				</File>
 				<File Id="710131029" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_20B9484E.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_C9FED90A.wem</Path>
 				</File>
 				<File Id="730283719" Language="SFX">
 					<ShortName>REAPER Media\Squeak_1.wav</ShortName>
-					<Path>SFX\REAPER Media\Squeak_1_22F64DD3.wem</Path>
+					<Path>SFX\REAPER Media\Squeak_1_44E2C6CF.wem</Path>
+				</File>
+				<File Id="740920542" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_2209AF93.wem</Path>
+				</File>
+				<File Id="744698158" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_A22946FA.wem</Path>
+				</File>
+				<File Id="756349642" Language="SFX">
+					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_1FA75AF1.wem</Path>
+				</File>
+				<File Id="813244428" Language="SFX">
+					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_40EB35DD.wem</Path>
 				</File>
 				<File Id="819079196" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_47AFEA7D.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_A859F4E9.wem</Path>
+				</File>
+				<File Id="830186802" Language="SFX">
+					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_DE34FA7F.wem</Path>
 				</File>
 				<File Id="847065920" Language="SFX">
 					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
@@ -181,7 +230,11 @@
 				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_A0DE41F1.wem</Path>
+					<Path>SFX\fstepConcreteMono_9838A50D.wem</Path>
+				</File>
+				<File Id="888892161" Language="SFX">
+					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
+					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_876437FB.wem</Path>
 				</File>
 				<File Id="911504740" Language="SFX">
 					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
@@ -189,11 +242,11 @@
 				</File>
 				<File Id="924713307" Language="SFX">
 					<ShortName>EFX INT Wood Fire Crackle 02.wav</ShortName>
-					<Path>SFX\EFX INT Wood Fire Crackle 02_A8F5CEF1.wem</Path>
+					<Path>SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
-					<Path>SFX\fstepConcreteMono_6B7DD2E3.wem</Path>
+					<Path>SFX\fstepConcreteMono_76439697.wem</Path>
 				</File>
 				<File Id="967272807" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -205,11 +258,11 @@
 				</File>
 				<File Id="1038279815" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
-					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_206F4753.wem</Path>
+					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_C6DCA0C3.wem</Path>
 				</File>
 				<File Id="1041985487" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_203BDCF4.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_F5C7CC38.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

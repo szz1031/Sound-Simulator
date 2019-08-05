@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592bd74a03a7d304dbcfe7af79f52803, type: 3}
   m_Name: D893E8AE-0CCA-484F-86AC-FED17BADC6F5
   m_EditorClassIdentifier: 
-  objectName: WoodStair
-  id: 2341482753
+  objectName: Stair
+  id: 1164367372
   guid: D893E8AE-0CCA-484F-86AC-FED17BADC6F5
   WwiseSwitchGroupReference: {fileID: 11400000, guid: 58650b886a916114cb81831c5246541b,
     type: 2}

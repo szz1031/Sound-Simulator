@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592bd74a03a7d304dbcfe7af79f52803, type: 3}
   m_Name: A9542757-CC5A-4F40-9278-4C4327DFF4FB
   m_EditorClassIdentifier: 
-  objectName: Curtain
-  id: 165088305
+  objectName: Carpet
+  id: 2412606308
   guid: A9542757-CC5A-4F40-9278-4C4327DFF4FB
   WwiseSwitchGroupReference: {fileID: 11400000, guid: 58650b886a916114cb81831c5246541b,
     type: 2}

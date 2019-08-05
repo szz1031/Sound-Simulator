@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID DOOR_CLOSET_HANDLE_CLOSE = 711857016U;
         static const AkUniqueID DOOR_CLOSET_HANDLE_OPEN = 541226684U;
         static const AkUniqueID DOOR_CLOSET_KEYSOUND = 2141172849U;
+        static const AkUniqueID DOOR_LOCKED = 3333554874U;
         static const AkUniqueID DOOR_NARROW_AXIS_CLOSE = 2407747538U;
         static const AkUniqueID DOOR_NARROW_AXIS_OPEN = 2916866438U;
         static const AkUniqueID DOOR_NARROW_HANDLE_CLOSE = 501750955U;
@@ -40,7 +41,7 @@ namespace AK
         static const AkUniqueID GRAMOPHONE_SQUEAK_1 = 850197958U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_2 = 850197957U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_3 = 850197956U;
-        static const AkUniqueID KEY_COLLECT = 2053434189U;
+        static const AkUniqueID KEY_PICKUP = 761761105U;
         static const AkUniqueID KEY_UNCOLLECTED = 2382010549U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
@@ -73,10 +74,10 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID CARPET = 2412606308U;
                 static const AkUniqueID CONCRETE = 841620460U;
-                static const AkUniqueID CURTAIN = 165088305U;
                 static const AkUniqueID FLOOR = 1088209313U;
-                static const AkUniqueID WOODSTAIR = 2341482753U;
+                static const AkUniqueID STAIR = 1164367372U;
             } // namespace SWITCH
         } // namespace GROUNDMATERIAL
 

@@ -274,6 +274,24 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Door_Locked" ID="{44415FB4-D95E-480C-BC1A-F44E9CEA05EE}">
+									<ChildrenList>
+										<Action Name="" ID="{5874CBB8-6BE8-42DA-909E-06EF0B733303}" ShortID="841626203">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Lock1" ID="{4F31B967-CAE9-463F-9BE8-38B013451CFB}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CC135701-9BD8-4AD9-8C3A-1CC54E71F608}" ShortID="501689217">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Lock1_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Door_Wide" ID="{DBE1A76F-05A0-4A36-B0F9-FDC7BCA27FB2}" ShortID="968136457">
@@ -414,7 +432,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Key_Collect" ID="{6299F507-23F7-4E3D-96E1-F977CCCBF2C1}">
+								<Event Name="Key_Pickup" ID="{6299F507-23F7-4E3D-96E1-F977CCCBF2C1}">
 									<ChildrenList>
 										<Action Name="" ID="{E270FC1D-9101-4EE2-B707-90B660879377}" ShortID="243602699">
 											<PropertyList>
@@ -423,6 +441,13 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Key_Hint Sound" ID="{271A6A92-3486-4344-94F5-6325E15E6B70}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{80633835-A3F2-4B6F-8A95-31CAD26EC0F4}" ShortID="928165758">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Key_Collect" ID="{2D0DEC58-D228-4311-AE7C-EEFB733FD23C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -15,10 +15,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+						<CurrentStateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}"/>
+						<CurrentSwitchRef Name="Floor" ID="{B49FA122-7BBC-4BC7-958B-8492DBD8CE05}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

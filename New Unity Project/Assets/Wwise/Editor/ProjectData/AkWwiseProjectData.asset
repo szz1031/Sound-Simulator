@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586366393526781984
+    m_lastTime: -8586365689032258208
     List:
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
@@ -198,6 +198,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.759663
       minDuration: 0.759663
+    - name: Door_Locked
+      guid: b45f41445ed90c48bc1af44e9cea05ee
+      id: 3333554874
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Narrow
+        ObjectType: 4
+      - ElementName: Door_Locked
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Narrow\Door_Locked
+      maxAttenuation: 0
+      maxDuration: 0.445325
+      minDuration: 0.445325
     - name: Door_Narrow_Axis_Close
       guid: 9d37226ebaf84e488033559edb8f2d60
       id: 2407747538
@@ -466,8 +482,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
       maxAttenuation: 20
-      maxDuration: 1.161754
-      minDuration: 1.161754
+      maxDuration: 1.107369
+      minDuration: 1.107369
     - name: Gramophone_Squeak_2
       guid: f36bcd9d19ce9f4897bf0da4353036c7
       id: 850197957
@@ -482,8 +498,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
       maxAttenuation: 20
-      maxDuration: 0.624337
-      minDuration: 0.624337
+      maxDuration: 0.713889
+      minDuration: 0.713889
     - name: Gramophone_Squeak_3
       guid: 72192c969bbe9e4bb5beaa5834070104
       id: 850197956
@@ -500,9 +516,9 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.803243
       minDuration: 0.803243
-    - name: Key_Collect
+    - name: Key_Pickup
       guid: 07f59962f7233d4e96e1f977cccbf2c1
-      id: 2053434189
+      id: 761761105
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -510,12 +526,12 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Key
         ObjectType: 4
-      - ElementName: Key_Collect
+      - ElementName: Key_Pickup
         ObjectType: 3
-      Path: Default Work Unit\Object\Key\Key_Collect
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      Path: Default Work Unit\Object\Key\Key_Pickup
+      maxAttenuation: 10
+      maxDuration: 0.360857
+      minDuration: 0.360857
     - name: Key_Uncollected
       guid: dc2bd66d5ea17e4c9cad94b0aa4f1b21
       id: 2382010549
@@ -543,7 +559,7 @@ MonoBehaviour:
       - ElementName: LightSwitch_Off
         ObjectType: 3
       Path: Default Work Unit\Object\LightSwitch_Off
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 0.269499
       minDuration: 0.139262
     - name: LightSwitch_On
@@ -557,7 +573,7 @@ MonoBehaviour:
       - ElementName: LightSwitch_On
         ObjectType: 3
       Path: Default Work Unit\Object\LightSwitch_On
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 0.269499
       minDuration: 0.105875
     - name: Player_Footsteps
@@ -573,7 +589,7 @@ MonoBehaviour:
       Path: Default Work Unit\Player\Player_Footsteps
       maxAttenuation: 0
       maxDuration: 0.646816
-      minDuration: 0.390872
+      minDuration: 0.298879
     - name: Player_Rain
       guid: 4a72b13907f50d4bbf2792438823718e
       id: 990547651
@@ -684,7 +700,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fce25eada189f14890b8b07b8874a80d
     GuidInternal: 
-    m_lastTime: -8586379058796723770
+    m_lastTime: -8586365828412012941
     List:
     - name: GroundMaterial
       guid: c45b4791dacbcc4a913aadb91be014ec
@@ -696,17 +712,17 @@ MonoBehaviour:
         ObjectType: 11
       Path: Default Work Unit\GroundMaterial
       values:
+      - name: Carpet
+        guid: 572754a95acc404f92784c4327dff4fb
+        id: 2412606308
+        PathAndIcons:
+        - ElementName: Carpet
+          ObjectType: 10
       - name: Concrete
         guid: ae0be76b9735394b9c3b2a40ccc18d65
         id: 841620460
         PathAndIcons:
         - ElementName: Concrete
-          ObjectType: 10
-      - name: Curtain
-        guid: 572754a95acc404f92784c4327dff4fb
-        id: 165088305
-        PathAndIcons:
-        - ElementName: Curtain
           ObjectType: 10
       - name: Floor
         guid: 22a19fb4bc7bc74b958b8492dbd8ce05
@@ -714,11 +730,11 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: Floor
           ObjectType: 10
-      - name: WoodStair
+      - name: Stair
         guid: aee893d8ca0c4f4886acfed17badc6f5
-        id: 2341482753
+        id: 1164367372
         PathAndIcons:
-        - ElementName: WoodStair
+        - ElementName: Stair
           ObjectType: 10
       ValueGuids: []
       ValueIcons: []
@@ -736,6 +752,5 @@ MonoBehaviour:
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Cabinet
-  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Gramophone
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
