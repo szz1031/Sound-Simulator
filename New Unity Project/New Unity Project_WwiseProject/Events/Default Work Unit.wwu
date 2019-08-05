@@ -109,6 +109,20 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{A3D5234A-3441-400D-A83E-593C2375A309}" ShortID="38978939">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Toggle on" ID="{5A985CB4-1D2F-4BA2-98D8-ADB07288C68F}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Gramophone_OnOffTap" ID="{B6D45E12-011D-42CC-AAB0-ACDBEB0A7C75}">
@@ -117,6 +131,16 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="OnOffTap" ID="{357798B6-F7AB-4FEE-A977-B28EB322EF28}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EBF7208F-508C-4215-9A26-457065B89EE0}" ShortID="1000951776">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MainNoise" ID="{8A5F3C80-31BA-419E-BE11-8601468C5B73}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -242,6 +266,131 @@
 								<Event Name="Door_Narrow_KeySound" ID="{E579079E-2007-444F-B253-85FF608C0B3A}">
 									<ChildrenList>
 										<Action Name="" ID="{18A46304-B579-43A2-942B-9E782348694D}" ShortID="746832876">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Door_Wide" ID="{DBE1A76F-05A0-4A36-B0F9-FDC7BCA27FB2}" ShortID="968136457">
+							<ChildrenList>
+								<Event Name="Door_Wide_Axis_Open" ID="{6025DB90-FA6C-4D81-871F-59F2C09B7E77}">
+									<ChildrenList>
+										<Action Name="" ID="{7DBFD862-76E4-4914-8704-38810960AAAA}" ShortID="885402348">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Wide_Handle_Open" ID="{909E380A-9A50-44D9-BEA5-B830FBD1BD34}">
+									<ChildrenList>
+										<Action Name="" ID="{78EA4F4E-CA78-4E25-8B3E-AA8CBF211477}" ShortID="956499441">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Wide_Axis_Close" ID="{06DA2A96-036A-477D-B3A3-62643BE573E7}">
+									<ChildrenList>
+										<Action Name="" ID="{91987B58-986C-4834-AF52-9D802DFD82AC}" ShortID="426726716">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Wide_Handle_Close" ID="{531E33A3-DCFA-4F04-A8C5-FC8B2F42AE4C}">
+									<ChildrenList>
+										<Action Name="" ID="{91D1A4AA-3788-4083-917A-6A947D3B3444}" ShortID="975758997">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Wide_KeySound" ID="{08525E5A-4709-4EAA-9B90-A8958C1A5E52}">
+									<ChildrenList>
+										<Action Name="" ID="{4625E22A-9B7C-48EB-A4AB-F41DA71EDE1F}" ShortID="618733036">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cabinet" ID="{4A83DEE7-1287-4E7B-AB90-8123057782EA}" ShortID="435125296">
+							<ChildrenList>
+								<Event Name="Cabinet_Open" ID="{C3F04180-B91F-4F05-B9D8-9E7AAAF28E70}"/>
+								<Event Name="Cabinet_Close" ID="{ECEDEE87-E393-4799-9B24-C35FE2AF3CCB}"/>
+								<Event Name="Cabinet_KeySound" ID="{7CD310E7-D95E-4FF2-A76B-5278FC828604}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Door_Closet" ID="{EE804BA5-804A-4EB5-9CA0-890C6DC1C150}" ShortID="380847484">
+							<ChildrenList>
+								<Event Name="Door_Closet_Axis_Open" ID="{C27170E8-E05C-4AA5-BBC0-6FE416669C1C}">
+									<ChildrenList>
+										<Action Name="" ID="{1907D2C5-FFF5-4DF6-990A-E8946E13FA02}" ShortID="407005995">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Closet_Handle_Open" ID="{7FF94C9E-A880-4FCB-A68C-EFEF9F59DA64}">
+									<ChildrenList>
+										<Action Name="" ID="{29269BC0-D16A-404D-8514-D3504DC79643}" ShortID="169966114">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Closet_Axis_Close" ID="{E4A2BEE2-A32A-4F03-919A-D7985192E12E}">
+									<ChildrenList>
+										<Action Name="" ID="{6203BD36-434D-4E2D-8351-EF36EE207777}" ShortID="585231938">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Closet_Handle_Close" ID="{409A43E4-D44E-4ABA-8BB4-E6633ED4B4D3}">
+									<ChildrenList>
+										<Action Name="" ID="{956923C8-1451-485D-9A6B-1FF99A660536}" ShortID="94744029">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Door_Closet_KeySound" ID="{0E4B699C-44E3-442C-8A11-A70E4747E1CA}">
+									<ChildrenList>
+										<Action Name="" ID="{B2F57189-0B8C-47D9-939D-9828C828DE98}" ShortID="1043881465">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>

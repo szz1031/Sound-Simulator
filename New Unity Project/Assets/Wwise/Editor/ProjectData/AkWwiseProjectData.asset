@@ -23,7 +23,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c1ffe7deaa0e614bb759bac74ccf6fde
     GuidInternal: 
-    m_lastTime: -8586366742504006585
+    m_lastTime: -8586366620679969995
     List:
     - name: LargeRoomReverb
       guid: 0857c94ebf2a0a4e826a84eb10531e6f
@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8586367844872754661
+    m_lastTime: -8586366636160199940
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -68,8 +68,136 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586367844872834324
+    m_lastTime: -8586366466965266718
     List:
+    - name: Cabinet_Close
+      guid: 87eeedec93e399479b24c35fe2af3ccb
+      id: 1948672150
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Cabinet_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Cabinet_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Cabinet_KeySound
+      guid: e710d37c5ed9f24fa76b5278fc828604
+      id: 3463217684
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Cabinet_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Cabinet_KeySound
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Cabinet_Open
+      guid: 8041f0c31fb9054fb9d89e7aaaf28e70
+      id: 2458915778
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Cabinet_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Cabinet_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Door_Closet_Axis_Close
+      guid: e2bea2e42aa3034f919ad7985192e12e
+      id: 3498272821
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Closet
+        ObjectType: 4
+      - ElementName: Door_Closet_Axis_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close
+      maxAttenuation: 0
+      maxDuration: 0.768861
+      minDuration: 0.768861
+    - name: Door_Closet_Axis_Open
+      guid: e87071c25ce0a54abbc06fe416669c1c
+      id: 1301402079
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Closet
+        ObjectType: 4
+      - ElementName: Door_Closet_Axis_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open
+      maxAttenuation: 0
+      maxDuration: 0.697624
+      minDuration: 0.697624
+    - name: Door_Closet_Handle_Close
+      guid: e4439a404ed4ba4a8bb4e6633ed4b4d3
+      id: 711857016
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Closet
+        ObjectType: 4
+      - ElementName: Door_Closet_Handle_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close
+      maxAttenuation: 0
+      maxDuration: 0.408335
+      minDuration: 0.408335
+    - name: Door_Closet_Handle_Open
+      guid: 9e4cf97f80a8cb4fa68cefef9f59da64
+      id: 541226684
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Closet
+        ObjectType: 4
+      - ElementName: Door_Closet_Handle_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open
+      maxAttenuation: 0
+      maxDuration: 0.413122
+      minDuration: 0.413122
+    - name: Door_Closet_KeySound
+      guid: 9c694b0ee3442c448a11a70e4747e1ca
+      id: 2141172849
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Closet
+        ObjectType: 4
+      - ElementName: Door_Closet_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Closet\Door_Closet_KeySound
+      maxAttenuation: 0
+      maxDuration: 0.759663
+      minDuration: 0.759663
     - name: Door_Narrow_Axis_Close
       guid: 9d37226ebaf84e488033559edb8f2d60
       id: 2407747538
@@ -150,6 +278,86 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 0.759663
       minDuration: 0.759663
+    - name: Door_Wide_Axis_Close
+      guid: 962ada066a037d47b3a362643be573e7
+      id: 2853512794
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Wide
+        ObjectType: 4
+      - ElementName: Door_Wide_Axis_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close
+      maxAttenuation: 0
+      maxDuration: 0.768861
+      minDuration: 0.768861
+    - name: Door_Wide_Axis_Open
+      guid: 90db25606cfa814d871f59f2c09b7e77
+      id: 64215390
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Wide
+        ObjectType: 4
+      - ElementName: Door_Wide_Axis_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open
+      maxAttenuation: 0
+      maxDuration: 0.697624
+      minDuration: 0.697624
+    - name: Door_Wide_Handle_Close
+      guid: a3331e53fadc044fa8c5fc8b2f42ae4c
+      id: 2043156035
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Wide
+        ObjectType: 4
+      - ElementName: Door_Wide_Handle_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close
+      maxAttenuation: 0
+      maxDuration: 0.408335
+      minDuration: 0.408335
+    - name: Door_Wide_Handle_Open
+      guid: 0a389e90509ad944bea5b830fbd1bd34
+      id: 2116863413
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Wide
+        ObjectType: 4
+      - ElementName: Door_Wide_Handle_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open
+      maxAttenuation: 0
+      maxDuration: 0.413122
+      minDuration: 0.413122
+    - name: Door_Wide_KeySound
+      guid: 5a5e52080947aa4e9b90a8958c1a5e52
+      id: 996249450
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Door_Wide
+        ObjectType: 4
+      - ElementName: Door_Wide_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Door_Wide\Door_Wide_KeySound
+      maxAttenuation: 0
+      maxDuration: 0.759663
+      minDuration: 0.759663
     - name: Fireplace
       guid: 91662d3d24c0054bb3d0ca6510fa4193
       id: 1404152342
@@ -177,7 +385,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Charge
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Charge
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 3.048447
       minDuration: 3.048447
     - name: Gramophone_Mainghosty
@@ -193,7 +401,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Mainghosty
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Mainghosty
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_MainNoise
@@ -209,7 +417,7 @@ MonoBehaviour:
       - ElementName: Gramophone_MainNoise
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_MainNoise
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_NeedleTap
@@ -225,9 +433,9 @@ MonoBehaviour:
       - ElementName: Gramophone_NeedleTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_NeedleTap
-      maxAttenuation: 15
-      maxDuration: 0.239478
-      minDuration: 0.239478
+      maxAttenuation: 20
+      maxDuration: 0.129533
+      minDuration: 0.129533
     - name: Gramophone_OnOffTap
       guid: 125ed4b61d01cc42aab0acdbeb0a7c75
       id: 435953925
@@ -241,7 +449,7 @@ MonoBehaviour:
       - ElementName: Gramophone_OnOffTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_OnOffTap
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 0.663492
       minDuration: 0.663492
     - name: Gramophone_Squeak_1
@@ -257,7 +465,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_1
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 1.221451
       minDuration: 1.221451
     - name: Gramophone_Squeak_2
@@ -273,7 +481,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_2
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 0.666395
       minDuration: 0.666395
     - name: Gramophone_Squeak_3
@@ -289,7 +497,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_3
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_3
-      maxAttenuation: 15
+      maxAttenuation: 20
       maxDuration: 0.803243
       minDuration: 0.803243
     - name: LightSwitch_Off
@@ -359,7 +567,7 @@ MonoBehaviour:
       - ElementName: TV_01
         ObjectType: 3
       Path: Default Work Unit\Object\TV_01
-      maxAttenuation: 40
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Window_Rain

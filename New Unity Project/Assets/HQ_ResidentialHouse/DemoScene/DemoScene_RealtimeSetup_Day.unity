@@ -3302,8 +3302,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &121740239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3675,8 +3674,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!4 &136837441 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000014088965736, guid: ea2e7cf021c7b3648aeac82271c07dec,
@@ -5982,7 +5980,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &205445649 stripped
 Transform:
@@ -7655,6 +7653,60 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26836c61d0c83914d80c96faddc88f91, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &277095265
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.3202
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2155
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9665929
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0078040436
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.25447726
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.02964246
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -176.943
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -29.54599
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.7319946
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+  m_IsPrefabParent: 0
 --- !u!4 &278500826 stripped
 Transform:
   m_PrefabParentObject: {fileID: 438516, guid: 88dbcc48155f7064fa9537a4eee6126f, type: 2}
@@ -7741,8 +7793,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!1 &288942496
 GameObject:
   m_ObjectHideFlags: 0
@@ -14339,8 +14390,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!54 &530548828
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14632,7 +14682,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543089931 stripped
 Transform:
@@ -15600,8 +15650,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!4 &582559667 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012529345094, guid: 55296f4399387b64b93f5f2139f363d2,
@@ -16098,7 +16147,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &604803061 stripped
 Transform:
@@ -20132,8 +20181,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!1 &767051275 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012790193584, guid: 9119e3de2e0230f46a5c83a47451efa6,
@@ -22280,8 +22328,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &867144480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23074,7 +23121,7 @@ Transform:
   m_LocalScale: {x: 60, y: 60, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &888881945
 MonoBehaviour:
@@ -26838,8 +26885,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &985797253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27715,7 +27761,7 @@ Transform:
   m_Children:
   - {fileID: 209747564}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028556563 stripped
 GameObject:
@@ -28803,8 +28849,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1066845973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31406,8 +31451,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1162815486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31480,6 +31524,7 @@ GameObject:
   - component: {fileID: 1163912037}
   - component: {fileID: 1163912038}
   - component: {fileID: 1163912039}
+  - component: {fileID: 1163912040}
   m_Layer: 0
   m_Name: Gramophone
   m_TagString: Untagged
@@ -31534,6 +31579,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1163912040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163912036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  HightDistance: 0
+  OcclusionPercentage: 0
 --- !u!4 &1164593645 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442718, guid: a2a16cf9b5640454888bbf394eff39b9, type: 2}
@@ -35682,6 +35744,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 6423258, guid: 84325db7e8abf894492dad456bd95e0d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84325db7e8abf894492dad456bd95e0d, type: 2}
   m_IsPrefabParent: 0
@@ -36517,8 +36583,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1344817076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38215,7 +38280,7 @@ Transform:
   m_Children:
   - {fileID: 952910590}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
 --- !u!1001 &1408907753
 Prefab:
@@ -41525,8 +41590,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1524291356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43414,8 +43478,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1590417936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44029,8 +44092,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &1605112577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45855,7 +45917,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1668089916 stripped
 GameObject:
@@ -49960,7 +50022,7 @@ RectTransform:
   m_Children:
   - {fileID: 2043917208}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -56235,8 +56297,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &2008625815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59049,8 +59110,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
-  BlockedPercentage: 0
-  FinalOcclu: 0
+  OcclusionPercentage: 0
 --- !u!114 &2128779921
 MonoBehaviour:
   m_ObjectHideFlags: 0

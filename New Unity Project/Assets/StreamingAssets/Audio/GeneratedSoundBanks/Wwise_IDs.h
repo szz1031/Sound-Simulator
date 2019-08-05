@@ -13,11 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CABINET_CLOSE = 1948672150U;
+        static const AkUniqueID CABINET_KEYSOUND = 3463217684U;
+        static const AkUniqueID CABINET_OPEN = 2458915778U;
+        static const AkUniqueID DOOR_CLOSET_AXIS_CLOSE = 3498272821U;
+        static const AkUniqueID DOOR_CLOSET_AXIS_OPEN = 1301402079U;
+        static const AkUniqueID DOOR_CLOSET_HANDLE_CLOSE = 711857016U;
+        static const AkUniqueID DOOR_CLOSET_HANDLE_OPEN = 541226684U;
+        static const AkUniqueID DOOR_CLOSET_KEYSOUND = 2141172849U;
         static const AkUniqueID DOOR_NARROW_AXIS_CLOSE = 2407747538U;
         static const AkUniqueID DOOR_NARROW_AXIS_OPEN = 2916866438U;
         static const AkUniqueID DOOR_NARROW_HANDLE_CLOSE = 501750955U;
         static const AkUniqueID DOOR_NARROW_HANDLE_OPEN = 982290157U;
         static const AkUniqueID DOOR_NARROW_KEYSOUND = 3041433330U;
+        static const AkUniqueID DOOR_WIDE_AXIS_CLOSE = 2853512794U;
+        static const AkUniqueID DOOR_WIDE_AXIS_OPEN = 64215390U;
+        static const AkUniqueID DOOR_WIDE_HANDLE_CLOSE = 2043156035U;
+        static const AkUniqueID DOOR_WIDE_HANDLE_OPEN = 2116863413U;
+        static const AkUniqueID DOOR_WIDE_KEYSOUND = 996249450U;
         static const AkUniqueID FIREPLACE = 1404152342U;
         static const AkUniqueID GRAMOPHONE_CHARGE = 2879668892U;
         static const AkUniqueID GRAMOPHONE_MAINGHOSTY = 2232826297U;
