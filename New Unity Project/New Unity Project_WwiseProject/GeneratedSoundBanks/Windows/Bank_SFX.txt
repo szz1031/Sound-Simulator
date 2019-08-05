@@ -68,6 +68,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	620261131	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	2995775460	Room_Small	Wwise RoomVerb			
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	45498057	Squeak_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_2_BCB74249.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_2		5210

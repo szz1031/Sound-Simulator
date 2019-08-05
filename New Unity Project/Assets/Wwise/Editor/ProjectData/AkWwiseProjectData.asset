@@ -466,8 +466,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
       maxAttenuation: 20
-      maxDuration: 1.221451
-      minDuration: 1.221451
+      maxDuration: 1.161754
+      minDuration: 1.161754
     - name: Gramophone_Squeak_2
       guid: f36bcd9d19ce9f4897bf0da4353036c7
       id: 850197957
@@ -482,8 +482,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
       maxAttenuation: 20
-      maxDuration: 0.666395
-      minDuration: 0.666395
+      maxDuration: 0.624337
+      minDuration: 0.624337
     - name: Gramophone_Squeak_3
       guid: 72192c969bbe9e4bb5beaa5834070104
       id: 850197956
@@ -732,11 +732,10 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /New Unity Project_WwiseProject
-  - /New Unity Project_WwiseProject/Auxiliary Busses
-  - /New Unity Project_WwiseProject/Auxiliary Busses/Default Work Unit
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
-  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Door_Narrow
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Cabinet
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Gramophone
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

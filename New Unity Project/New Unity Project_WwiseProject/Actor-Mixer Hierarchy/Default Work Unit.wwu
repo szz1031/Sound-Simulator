@@ -817,9 +817,14 @@
 								<Sound Name="Mainghosty" ID="{BE437573-0226-40A5-8052-7D3276061D93}" ShortID="833118141">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1010</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1213,7 +1218,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16" Value="24"/>
 										<Property Name="Pitch" Type="int32" Value="-2270"/>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
@@ -2310,20 +2315,24 @@
 						<Sound Name="Key_Hint Sound" ID="{271A6A92-3486-4344-94F5-6325E15E6B70}" ShortID="45897627">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>200</Value>
+										<Value>1040</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="New_Wwise_Parametric_EQ" ID="{A2589EC0-6050-4F4B-9B73-97AF7141318A}" WorkUnitID="{A42E9FD3-E38B-47F9-AC45-BE439DB06E93}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
