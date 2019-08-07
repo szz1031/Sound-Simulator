@@ -7,6 +7,11 @@ namespace GameSetting
     {
         public const int I_PlayerInteractDistance = 1;
     }
+    public enum enum_Storyline
+    {
+        Invalid = -1,
+        Test,
+    }
     public enum enum_HitCheckType
     {
         Invalid = -1,

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractCabinet : InteractorBase,ISingleCoroutine {
-    protected HitCheckDynamic[] m_HitCheck;
     protected Animation m_Animation;
     public string MainAudioName="Cabinet";
     public string CloseAudioName="Cabinet_KeySound";
@@ -13,8 +12,6 @@ public class InteractCabinet : InteractorBase,ISingleCoroutine {
     protected override void Awake()
     {
         base.Awake();
-        m_HitCheck = GetComponentsInChildren<HitCheckDynamic>();
-        m_HitCheck.Traversal((HitCheckDynamic hitcheck) => { hitcheck.Attach(TryInteract); });
         m_Animation = GetComponent<Animation>();
         m_clipName = GetFistClip().name;
     }

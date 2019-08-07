@@ -11,7 +11,6 @@ public class InteractGramophone : InteractorBase {
     {
         base.Awake();
         m_Animator = GetComponent<Animator>();
-        GetComponentInChildren<HitCheckDynamic>().Attach(TryInteract);
     }
     public override bool TryInteract()
     {

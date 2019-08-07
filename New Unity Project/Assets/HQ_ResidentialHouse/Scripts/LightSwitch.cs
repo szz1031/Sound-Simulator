@@ -13,8 +13,8 @@ public class LightSwitch : InteractorBase {
 	private float _timer = 0.5f;
     string m_AnimName;
 	protected override void Awake () {
+        base.Awake();
 	    m_Animation = GetComponent<Animation> ();
-        GetComponentInChildren<HitCheckDynamic>().Attach(TryInteract);
         if(m_Animation)
         m_AnimName = GetFistClip().name;
 		foreach (GameObject _light in Lights)

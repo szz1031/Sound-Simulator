@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class InteractDoor : InteractorBase,ISingleCoroutine
 {
     protected AudioBase[] m_Audios;
-    protected HitCheckDynamic[] m_HitCheck;
     protected Animation m_Animation;
     public string KeyAudioName;
     public int I_KeyIndex = 0;
@@ -19,8 +18,6 @@ public class InteractDoor : InteractorBase,ISingleCoroutine
     {
         base.Awake();
         m_Audios = GetComponentsInChildren<AudioBase>();
-        m_HitCheck = GetComponentsInChildren<HitCheckDynamic>();
-        m_HitCheck.Traversal((HitCheckDynamic hitcheck) => { hitcheck.Attach(TryInteract); });
         m_Animation = GetComponent<Animation>();
         m_clipName = GetFistClip().name;
     }
