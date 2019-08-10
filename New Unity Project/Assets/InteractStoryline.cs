@@ -3,15 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameSetting;
-public class InteractStoryline : InteractorBase {
+public class InteractStoryline : InteractItemBase {
 
     public bool B_HideOnAwake;
-    public string S_InteractTips, S_InteractSubtitle,S_AudioKey;
-    Action<enum_Storyline> OnInteract;
+    public string S_InteractTips,E_InInteractableTips, S_InteractSubtitle,S_AudioKey;
+    Action<enum_Branch> OnInteract;
     public bool B_Interactable { get; private set; } = false;
     public bool B_Interacted { get; private set; } = false;
-    public enum_Storyline E_Storyline { get; private set; } = enum_Storyline.Invalid;
-    public void Init(enum_Storyline storyline,Action<enum_Storyline> _OnInteract)
+    public enum_Branch E_Storyline { get; private set; } = enum_Branch.Invalid;
+    public void Init(enum_Branch storyline,Action<enum_Branch> _OnInteract)
     {
         gameObject.SetActivate(!B_HideOnAwake);
         E_Storyline = storyline;
@@ -24,16 +24,22 @@ public class InteractStoryline : InteractorBase {
         B_Interactable = true;
         gameObject.SetActivate(true);
     }
-    public override bool TryInteract()
+    public override void  TryInteract()
     {
-        if (!B_Interactable|| B_Interacted)
-            return false;
+        if (B_Interacted)
+            return;
+
+        if (!B_Interactable)
+        {
+            if (E_InInteractableTips != null)
+                UIManager.Instance.AddTips(E_InInteractableTips);
+            return;
+        }
 
         B_Interacted = true;
         UIManager.Instance.AddTips(S_InteractTips);
         UIManager.Instance.AddSubtitle(S_InteractSubtitle);
         AudioManager.Play(S_AudioKey,this.gameObject);
         OnInteract(E_Storyline);
-        return base.TryInteract();
     }
 }

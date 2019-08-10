@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractCabinet : InteractorBase,ISingleCoroutine {
+public class InteractCabinet : InteractItemBase,ISingleCoroutine {
     protected Animation m_Animation;
     public string MainAudioName="Cabinet";
     public string CloseAudioName="Cabinet_KeySound";
     public bool b_Opening { get; private set; } = false;
     public bool b_Opened { get; private set; } = false;
     string m_clipName;
-    protected override void Awake()
+    protected void Awake()
     {
-        base.Awake();
         m_Animation = GetComponent<Animation>();
         m_clipName = GetFistClip().name;
     }
-    public override bool TryInteract()
+    public override void TryInteract()
     {
         if (b_Opening)
-            return false;
+            return;
         b_Opening = true;
         string name = MainAudioName +  (b_Opened ? "_Close" : "_Open");
         AudioManager.Play(name,this.gameObject);
@@ -30,9 +29,8 @@ public class InteractCabinet : InteractorBase,ISingleCoroutine {
             b_Opened = !b_Opened;
             b_Opening = false;
         }));
-        return true;
     }
-    protected void CloseSound()
+    protected void OnKeyAnim()
     {
         if (b_Opened)
             AudioManager.Play(CloseAudioName, gameObject);

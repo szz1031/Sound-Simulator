@@ -7,10 +7,11 @@ namespace GameSetting
     {
         public const int I_PlayerInteractDistance = 1;
     }
-    public enum enum_Storyline
+    public enum enum_Branch
     {
         Invalid = -1,
-        Test,
+        Main,
+        BranchBear,
     }
     public enum enum_HitCheckType
     {

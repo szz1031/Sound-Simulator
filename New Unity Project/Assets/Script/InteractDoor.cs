@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class InteractDoor : InteractorBase,ISingleCoroutine
+public class InteractDoor : InteractItemBase, ISingleCoroutine
 {
     protected AudioBase[] m_Audios;
     protected Animation m_Animation;
@@ -14,24 +14,23 @@ public class InteractDoor : InteractorBase,ISingleCoroutine
     public bool b_Opened { get; private set; } = false;
     string m_clipName;
 
-    protected override void Awake()
+    protected void Awake()
     {
-        base.Awake();
         m_Audios = GetComponentsInChildren<AudioBase>();
         m_Animation = GetComponent<Animation>();
         m_clipName = GetFistClip().name;
     }
-    public override bool TryInteract()
+    public override void TryInteract()
     {
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
             AudioManager.Play("Door_Locked",this.gameObject);
             UIManager.Instance.AddTips("Door Locked!");
-            return false;
+            return;
         }
 
         if (b_Opening)
-            return false;
+            return;
         b_Opening = true;
         string subName = b_Opened ? "Close" : "Open";
         m_Audios.Traversal((AudioBase audio) => { audio.Play(subName); });
@@ -43,7 +42,6 @@ public class InteractDoor : InteractorBase,ISingleCoroutine
             b_Opened = !b_Opened;
             b_Opening = false;
         }));
-        return true;
     }
     protected void OnKeyAnim()
     {

@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class GameManager : SimpleSingletonMono<GameManager> {
 
-    Dictionary<enum_Storyline, List<InteractStoryline>> m_Storylines = new Dictionary<enum_Storyline, List<InteractStoryline>>();
+    Dictionary<enum_Branch, List<InteractStoryline>> m_Storylines = new Dictionary<enum_Branch, List<InteractStoryline>>();
     private void Start()
     {
         PCInputManager.Instance.AddBinding<GameManager>(enum_BindingsName.Helps, UIManager.Instance.SwitchHelpsShow);
-        TCommon.TraversalEnum((enum_Storyline value) =>
+        TCommon.TraversalEnum((enum_Branch value) =>
         {
             List<InteractStoryline> stories = new List<InteractStoryline>();
-            Transform storylineParent = EnviormentManager.Instance.tf_InteractStoryline.Find(value.ToString());
+            Transform storylineParent = EnviormentManager.Instance.tf_Branches.Find(value.ToString());
+
             for (int i = 0; i < storylineParent.childCount; i++)
             {
                 InteractStoryline story = storylineParent.GetChild(i).GetComponent<InteractStoryline>();
@@ -27,7 +28,7 @@ public class GameManager : SimpleSingletonMono<GameManager> {
     }
     List<int> m_KeyObtained = new List<int>();
     public bool B_CanDoorOpen(int requireKeyIndex) => m_KeyObtained.Contains(requireKeyIndex);
-    void OnStorylineInteract(enum_Storyline storyline)
+    void OnStorylineInteract(enum_Branch storyline)
     {
         bool storyAllInteracted = true;
         for (int i = 0; i < m_Storylines[storyline].Count; i++)

@@ -2949,7 +2949,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 0.083333336
-    functionName: CloseSound
+    functionName: OnKeyAnim
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
