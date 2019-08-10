@@ -12,6 +12,7 @@ public class Occlusion : MonoBehaviour
     public float CalculateUnder;
     public float BlockedDistance;
     public float HightDistance;
+    public bool PassFloor;
     public float OcclusionPercentage;
     
  //   public float FinalOcclu;
@@ -28,6 +29,7 @@ public class Occlusion : MonoBehaviour
     {
         SourcePosition = transform.position;
         RaycastHit HitInfo1, HitInfo2;
+        RaycastHit[] HitArrary;
         Vector3 RayDirection1 = Camera.position - SourcePosition;
         Vector3 RayDirection2 = SourcePosition - Camera.position;
         
@@ -40,19 +42,35 @@ public class Occlusion : MonoBehaviour
 
         if (DisToListener <= CalculateUnder)
         {
+
             Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
             Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
-            if (HitInfo2.distance < 1 && DisToListener - HitInfo1.distance >= 1)
+
+            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener);
+
+            PassFloor = false;
+
+            for (int i=0; i< HitArrary.Length; i++)
             {
-                BlockedDistance = DisToListener - HitInfo1.distance - 1;
+                if (HitArrary[i].transform.tag == "Floor")
+                {
+                    PassFloor = true;
+                }
+            }
+
+
+            // avoid camera being blocked
+            if (HitInfo2.distance < 0.8 && DisToListener - HitInfo1.distance >= 0.8)
+            {
+                BlockedDistance = DisToListener - HitInfo1.distance - 0.8f;
             }
             else
             {
                 BlockedDistance = DisToListener - HitInfo1.distance - HitInfo2.distance;
             }
 
-            HightDistance = Mathf.Abs(transform.position.y - Camera.position.y);
+            HightDistance = Mathf.Abs(transform.position.y - Camera.position.y);  //Add heigh distance to extra occlu floor
 
             if (BlockedDistance <= 0.5)
             {
@@ -75,17 +93,25 @@ public class Occlusion : MonoBehaviour
                 OcclusionPercentage = BlockedDistance / DisToListener ;
                 Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
             }
-        
-            if (HightDistance >=1.5 && HightDistance <= 3.5)
-            {
-                OcclusionPercentage = OcclusionPercentage + 0.2f * HightDistance - 0.3f;              
-            }
 
-            if (HightDistance > 3.5)
-            {
-                OcclusionPercentage = OcclusionPercentage + 0.4f;                
-            }
+        //   /*
+             if (HightDistance >=1.5 && HightDistance <= 3.5)
+                    {
+                        OcclusionPercentage = OcclusionPercentage + 0.2f * HightDistance - 0.3f;              
+                    }
 
+                    if (HightDistance > 3.5)
+                    {
+                        OcclusionPercentage = OcclusionPercentage + 0.4f;                
+                    }
+
+         //  */
+
+            //extra occlu added on floor
+            if (PassFloor)
+            {
+                OcclusionPercentage = OcclusionPercentage + 0.8f;
+            }
 
             if (OcclusionPercentage > 1) { OcclusionPercentage = 1; }
             if (OcclusionPercentage < 0) { OcclusionPercentage = 0; }

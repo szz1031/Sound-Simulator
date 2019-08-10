@@ -2563,6 +2563,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &98397610
 MonoBehaviour:
@@ -3502,6 +3503,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &121740239
 MonoBehaviour:
@@ -4562,7 +4564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252c09c8bf031a94398fb7884e160d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_PickupTips: Key Garage Pickuped
+  S_PickupTips: 
   I_KeyIndex: 5
 --- !u!1 &152443926 stripped
 GameObject:
@@ -5441,7 +5443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252c09c8bf031a94398fb7884e160d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_PickupTips: Key Second Bed Room Pickuped
+  S_PickupTips: 
   I_KeyIndex: 3
 --- !u!114 &188868335
 MonoBehaviour:
@@ -11781,6 +11783,7 @@ Transform:
   - {fileID: 2112864959}
   - {fileID: 133658873}
   - {fileID: 1427448453}
+  - {fileID: 1026497060}
   - {fileID: 322232737}
   - {fileID: 1008471519}
   - {fileID: 902803643}
@@ -11883,7 +11886,6 @@ Transform:
   - {fileID: 635164186}
   - {fileID: 1231743039}
   - {fileID: 269846264}
-  - {fileID: 1026497060}
   - {fileID: 543541467}
   - {fileID: 957004526}
   - {fileID: 1253208715}
@@ -15481,6 +15483,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!1001 &546126976
 Prefab:
@@ -16442,6 +16445,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!4 &582559667 stripped
 Transform:
@@ -18069,6 +18073,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &642495766
 MonoBehaviour:
@@ -18878,7 +18883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252c09c8bf031a94398fb7884e160d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_PickupTips: Laundry Room Key Pickup
+  S_PickupTips: 
   I_KeyIndex: 2
 --- !u!4 &671649383 stripped
 Transform:
@@ -20653,6 +20658,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &729130396
 MonoBehaviour:
@@ -23736,73 +23742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
---- !u!114 &867144477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 867144475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Camera: {fileID: 952910590}
-  DisToListener: 0
-  CalculateUnder: 0
-  BlockedDistance: 0
-  HightDistance: 0
-  OcclusionPercentage: 0
---- !u!114 &867144480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 867144475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 16508fc20d2d98e40abcaa2d90411d8e,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
---- !u!114 &867144481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 867144475}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 1
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &867260188
 Prefab:
   m_ObjectHideFlags: 0
@@ -28060,6 +27999,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &967000543
 MonoBehaviour:
@@ -29496,7 +29436,7 @@ Transform:
   - {fileID: 931719634}
   - {fileID: 1066098952}
   m_Father: {fileID: 417420899}
-  m_RootOrder: 223
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027737344
 GameObject:
@@ -30277,6 +30217,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1045915955
 MonoBehaviour:
@@ -30392,6 +30333,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1048380633
 MonoBehaviour:
@@ -30615,6 +30557,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1051674861
 MonoBehaviour:
@@ -31821,6 +31764,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1099705794
 MonoBehaviour:
@@ -32290,6 +32234,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1108372681
 MonoBehaviour:
@@ -32924,6 +32869,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1129614763
 MonoBehaviour:
@@ -33916,6 +33862,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1163912041
 MonoBehaviour:
@@ -35217,6 +35164,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1205010868
 MonoBehaviour:
@@ -37881,6 +37829,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1312742595
 MonoBehaviour:
@@ -38590,6 +38539,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1328943974
 MonoBehaviour:
@@ -39323,6 +39273,58 @@ Prefab:
     - target: {fileID: 2300022, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b34dc267e64b6e40aecec5de029b9d2, type: 3}
@@ -45563,6 +45565,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1559992259
 MonoBehaviour:
@@ -45797,8 +45800,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566917653}
   m_LocalRotation: {x: 0.6064264, y: 0.3636578, z: -0.3636578, w: 0.6064264}
-  m_LocalPosition: {x: -14.983, y: -0.725, z: 4.258}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1}
+  m_LocalPosition: {x: -5.289, y: -0.8547, z: -1.602}
+  m_LocalScale: {x: 1.09, y: 1.0899997, z: 1.0899997}
   m_Children:
   - {fileID: 1822909411}
   m_Father: {fileID: 482753873}
@@ -45865,7 +45868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252c09c8bf031a94398fb7884e160d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_PickupTips: Key Study Pickuped
+  S_PickupTips: 
   I_KeyIndex: 4
 --- !u!1 &1567943298 stripped
 GameObject:
@@ -50816,6 +50819,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1726431923
 MonoBehaviour:
@@ -52868,6 +52872,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &1798472762
 MonoBehaviour:
@@ -55396,7 +55401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252c09c8bf031a94398fb7884e160d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_PickupTips: Master Bedroom Key Pickuped
+  S_PickupTips: 
   I_KeyIndex: 1
 --- !u!1 &1872481032 stripped
 GameObject:
@@ -63001,6 +63006,7 @@ MonoBehaviour:
   CalculateUnder: 0
   BlockedDistance: 0
   HightDistance: 0
+  PassFloor: 0
   OcclusionPercentage: 0
 --- !u!114 &2127194311
 MonoBehaviour:
@@ -63272,7 +63278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   B_HideOnAwake: 0
   S_InteractTips: Guitar Fixed
-  E_InInteractableTips: Screws Required
+  E_InInteractableTips: 
   S_InteractSubtitle: (Guitaer Playing)
   S_AudioKey: Guitar_Sound
 --- !u!114 &2133828045

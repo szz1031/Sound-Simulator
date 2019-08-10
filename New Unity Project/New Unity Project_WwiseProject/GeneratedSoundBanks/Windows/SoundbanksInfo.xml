@@ -55,12 +55,18 @@
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
 				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
-				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="5.000000" DurationType="Infinite"/>
+				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="4.000000" DurationType="Infinite"/>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
 				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
 				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="Infinite"/>
-				<Event Id="1652545419" Name="TV_01" ObjectPath="\Events\Default Work Unit\Object\TV_01" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="779286979" Name="TV_1_Music_01" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="779286976" Name="TV_1_Music_02" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="779286977" Name="TV_1_Music_03" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="779286982" Name="TV_1_Music_04" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="779286983" Name="TV_1_Music_05" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="779286980" Name="TV_1_Music_06" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
+				<Event Id="2436769663" Name="TV_1_StopAll" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Object\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -236,10 +242,6 @@
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
 					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_876437FB.wem</Path>
 				</File>
-				<File Id="911504740" Language="SFX">
-					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
-					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_E51DEF32.wem</Path>
-				</File>
 				<File Id="924713307" Language="SFX">
 					<ShortName>EFX INT Wood Fire Crackle 02.wav</ShortName>
 					<Path>SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem</Path>
@@ -263,6 +265,10 @@
 				<File Id="1041985487" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_F5C7CC38.wem</Path>
+				</File>
+				<File Id="1066902147" Language="SFX">
+					<ShortName>ANW3174_04_Arturos-Waltz.wav</ShortName>
+					<Path>SFX\ANW3174_04_Arturos-Waltz_27020439.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

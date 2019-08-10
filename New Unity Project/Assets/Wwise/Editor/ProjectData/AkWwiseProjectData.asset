@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586365689032258208
+    m_lastTime: -8586361319097335611
     List:
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
@@ -545,7 +545,7 @@ MonoBehaviour:
       - ElementName: Key_Uncollected
         ObjectType: 3
       Path: Default Work Unit\Object\Key\Key_Uncollected
-      maxAttenuation: 5
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: LightSwitch_Off
@@ -604,20 +604,118 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: TV_01
+    - name: TV_1_Music_01
       guid: 4eaa5f948d6c444e93a5aaa40db072ef
-      id: 1652545419
+      id: 779286979
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Object
         ObjectType: 4
-      - ElementName: TV_01
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_01
         ObjectType: 3
-      Path: Default Work Unit\Object\TV_01
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_01
       maxAttenuation: 20
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_Music_02
+      guid: eda1bc84de036f46a0f24f6cd4ddec6f
+      id: 779286976
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_02
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_02
+      maxAttenuation: 20
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_Music_03
+      guid: 73b4b9c497cbde4e9feb6909e68a3352
+      id: 779286977
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_03
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_03
+      maxAttenuation: 20
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_Music_04
+      guid: 8560fd55c499b0409c30e0b12d599a9e
+      id: 779286982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_04
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_04
+      maxAttenuation: 20
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_Music_05
+      guid: 8451f9ce4a65224386aef4f193e311b0
+      id: 779286983
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_05
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_05
+      maxAttenuation: 20
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_Music_06
+      guid: a7af949c2ca24544a832dfec9dcf8767
+      id: 779286980
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Music_06
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Music_06
+      maxAttenuation: 20
+      maxDuration: 147
+      minDuration: 147
+    - name: TV_1_StopAll
+      guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
+      id: 2436769663
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_StopAll
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_StopAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Window_Rain
       guid: 06137eeee76f7545a03550e0c55db924
       id: 290976602

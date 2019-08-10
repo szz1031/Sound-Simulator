@@ -43,17 +43,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="TV_01" ID="{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}">
-							<ChildrenList>
-								<Action Name="" ID="{9121CFE0-E52C-498F-9D10-B73BAF275CD1}" ShortID="15842988">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="TVMusic_01" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Folder Name="Gramophone" ID="{8F2D27A0-1661-4469-B5AA-6638C2C454D2}" ShortID="633672968">
 							<ChildrenList>
 								<Event Name="Gramophone_Squeak_3" ID="{962C1972-BE9B-4B9E-B5BE-AA5834070104}">
@@ -455,6 +444,87 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="TV_1" ID="{39490963-6E8E-4A4C-9BE1-35BDCB54B066}" ShortID="280248935">
+							<ChildrenList>
+								<Event Name="TV_1_Music_01" ID="{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}">
+									<ChildrenList>
+										<Action Name="" ID="{9121CFE0-E52C-498F-9D10-B73BAF275CD1}" ShortID="15842988">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_StopAll" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">
+									<ChildrenList>
+										<Action Name="" ID="{C50FFE4D-F955-4DC2-9C9B-505C01F6A696}" ShortID="573299876">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Music_02" ID="{84BCA1ED-03DE-466F-A0F2-4F6CD4DDEC6F}">
+									<ChildrenList>
+										<Action Name="" ID="{E34E2608-17AE-4FE3-96A5-A095539504A5}" ShortID="941060829">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Music_03" ID="{C4B9B473-CB97-4EDE-9FEB-6909E68A3352}">
+									<ChildrenList>
+										<Action Name="" ID="{78AC7C5D-E486-43D4-95EA-C44D511AF40B}" ShortID="645843798">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Music_04" ID="{55FD6085-99C4-40B0-9C30-E0B12D599A9E}">
+									<ChildrenList>
+										<Action Name="" ID="{824FF4C6-6A33-4F4A-84B6-A28EC6E764D1}" ShortID="464643610">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Music_05" ID="{CEF95184-654A-4322-86AE-F4F193E311B0}">
+									<ChildrenList>
+										<Action Name="" ID="{0FF2C13D-B042-4644-AD27-09C29815D868}" ShortID="610836872">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Music_06" ID="{9C94AFA7-A22C-4445-A832-DFEC9DCF8767}">
+									<ChildrenList>
+										<Action Name="" ID="{C9B80009-AC1F-4F38-9B66-E1CD4387CC5E}" ShortID="751353113">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

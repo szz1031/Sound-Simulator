@@ -47,7 +47,13 @@ namespace AK
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_RAIN = 990547651U;
-        static const AkUniqueID TV_01 = 1652545419U;
+        static const AkUniqueID TV_1_MUSIC_01 = 779286979U;
+        static const AkUniqueID TV_1_MUSIC_02 = 779286976U;
+        static const AkUniqueID TV_1_MUSIC_03 = 779286977U;
+        static const AkUniqueID TV_1_MUSIC_04 = 779286982U;
+        static const AkUniqueID TV_1_MUSIC_05 = 779286983U;
+        static const AkUniqueID TV_1_MUSIC_06 = 779286980U;
+        static const AkUniqueID TV_1_STOPALL = 2436769663U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

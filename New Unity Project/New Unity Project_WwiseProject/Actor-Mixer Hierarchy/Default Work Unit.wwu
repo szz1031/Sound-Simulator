@@ -1424,14 +1424,20 @@
 						<ActorMixer Name="TV" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" ShortID="191161182">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<ObjectRef Name="Attenuation_TV" ID="{9BA20216-7F0E-42C2-AE6D-7E352F1FDDA5}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+									<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -1489,6 +1495,120 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="ANW3194_33_Coral-Oceans-3-(60)" ID="{ED588395-1300-4ADC-9D3D-1712DE5B87A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW3088_05_Fairground" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" ShortID="586220262">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW3088_05_Fairground" ID="{22A8A3EA-E054-4D24-8A41-87F7E98CC68B}" ShortID="643296694">
+											<Language>SFX</Language>
+											<AudioFile>ANW3088_05_Fairground.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW3088_05_Fairground" ID="{22A8A3EA-E054-4D24-8A41-87F7E98CC68B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW3185_01_Cello-Prelude" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" ShortID="1057085930">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW3185_01_Cello-Prelude" ID="{28DE0B39-3457-4EBE-BF74-3574D1C0B630}" ShortID="335077997">
+											<Language>SFX</Language>
+											<AudioFile>ANW3185_01_Cello-Prelude.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW3185_01_Cello-Prelude" ID="{28DE0B39-3457-4EBE-BF74-3574D1C0B630}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW3185_04_Nocturne" ID="{D4917C54-A11B-4301-8D1C-B5E15F4CF808}" ShortID="676153236">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW3185_04_Nocturne" ID="{17F73DD2-4416-4D96-9476-794BCCDF02BA}" ShortID="916475379">
+											<Language>SFX</Language>
+											<AudioFile>ANW3185_04_Nocturne.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW3185_04_Nocturne" ID="{17F73DD2-4416-4D96-9476-794BCCDF02BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW1546_04_Karma" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" ShortID="350914709">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW1546_04_Karma" ID="{A02BBDE8-AEA5-4072-89B5-8D948036AB5F}" ShortID="873524984">
+											<Language>SFX</Language>
+											<AudioFile>ANW1546_04_Karma.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW1546_04_Karma" ID="{A02BBDE8-AEA5-4072-89B5-8D948036AB5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW1838_10_Violins-Virus" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" ShortID="615320519">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW1838_10_Violins-Virus" ID="{BCF16D01-FF08-456F-811C-55DFE9E5FF27}" ShortID="323133469">
+											<Language>SFX</Language>
+											<AudioFile>ANW1838_10_Violins-Virus.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW1838_10_Violins-Virus" ID="{BCF16D01-FF08-456F-811C-55DFE9E5FF27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" ShortID="338240600">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ANW3174_04_Arturos-Waltz" ID="{B93A4979-E908-450C-8CA2-8DB788776443}" ShortID="1066902147">
+											<Language>SFX</Language>
+											<AudioFile>ANW3174_04_Arturos-Waltz.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ANW3174_04_Arturos-Waltz" ID="{B93A4979-E908-450C-8CA2-8DB788776443}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -2424,121 +2544,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{97D6212A-C457-4962-B76A-7A00CF710EDB}">
-								<Attenuation Name="Attenuation_Object_max15 (Custom)" ID="{9E17FAA6-B4E7-4C6C-A1F4-6EE256EDE573}" ShortID="590717882">
-									<PropertyList>
-										<Property Name="ConeHighPassFilterValue" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{BBAC59B7-4173-4093-8B76-0E3F649935D4}" ShortID="997496108">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{18E927C2-E558-4B2C-9D97-827A92F3035A}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-100</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>10</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-										<Property Name="ConeLowPassFilterValue" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{B312FEF2-61C3-41A5-9952-1755D9520E32}" ShortID="545692295">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{3240A1C2-D1A9-4F2B-9988-92EAD6BF8ABA}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-100</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>10</XPos>
-																<YPos>100</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-										<Property Name="RadiusMax" Type="Real64" Value="15"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{04077A5A-EB37-46EB-AD2E-1FDD468C2D04}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>5.954775</XPos>
-															<YPos>-11.05196</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Log2</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>15</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
+							<ObjectRef Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -2583,7 +2589,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-1</Value>
@@ -2736,27 +2741,26 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
-										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{185F971A-F00D-47B5-B386-0E55922AE9F4}" ShortID="781385477">
+										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{024FCC5A-CEE4-4747-95BE-A819D12F7D97}" ShortID="1014258576">
 											<PropertyList>
 												<Property Name="ConeHighPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{B87B3E95-8911-4685-B90E-89508026A433}" ShortID="138834462">
+														<RTPC Name="" ID="{213D27C1-4E9A-40BE-B473-78776DF8021B}" ShortID="604733745">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{9D4F4D8F-48F2-466A-9284-4AE963BEA8D3}">
+															<Curve Name="" ID="{E840A282-D4EE-4CB4-83E8-BA6A830ADFF5}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -2780,13 +2784,13 @@
 												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 												<Property Name="ConeLowPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{525FB390-5C20-4ECF-AECE-2E24286BF43A}" ShortID="537496174">
+														<RTPC Name="" ID="{AD390571-5D08-469D-BAB7-7299873F729E}" ShortID="939115420">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{D0C5F201-548A-4E34-9AE9-C887EEEC572B}">
+															<Curve Name="" ID="{92F36C05-C1DB-4596-9EE8-5C85566548AE}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -2813,7 +2817,7 @@
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{C1FE1653-3AF0-4BE3-888E-652914625EF6}">
+														<Curve Name="VolumeDry" ID="{9E38A839-51B1-449D-871E-D6837078EDA9}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -2846,10 +2850,46 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 												</VolumeWetUserUsage>
 												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{B2CA9012-8ECC-4DCD-809E-05FB72ABF8AE}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>10</XPos>
+																	<YPos>62</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</LowPassFilterUsage>
 												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="HighPassFilter" ID="{78680761-3B52-476C-8095-85CE10C37F3A}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>10</XPos>
+																	<YPos>57</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</HighPassFilterUsage>
 												<SpreadUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
