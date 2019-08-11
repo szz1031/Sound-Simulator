@@ -16,6 +16,12 @@ namespace AK
         static const AkUniqueID CABINET_CLOSE = 1948672150U;
         static const AkUniqueID CABINET_KEYSOUND = 3463217684U;
         static const AkUniqueID CABINET_OPEN = 2458915778U;
+        static const AkUniqueID COMPUTER_PLOT_01 = 3429306074U;
+        static const AkUniqueID COMPUTER_PLOT_02 = 3429306073U;
+        static const AkUniqueID COMPUTER_PLOT_03 = 3429306072U;
+        static const AkUniqueID COMPUTER_PLOT_04 = 3429306079U;
+        static const AkUniqueID COMPUTER_PLOT_05 = 3429306078U;
+        static const AkUniqueID COMPUTER_PLOT_06 = 3429306077U;
         static const AkUniqueID DOOR_CLOSET_AXIS_CLOSE = 3498272821U;
         static const AkUniqueID DOOR_CLOSET_AXIS_OPEN = 1301402079U;
         static const AkUniqueID DOOR_CLOSET_HANDLE_CLOSE = 711857016U;
@@ -45,15 +51,25 @@ namespace AK
         static const AkUniqueID KEY_UNCOLLECTED = 2382010549U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
+        static const AkUniqueID NEW_EVENT = 3050945240U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_RAIN = 990547651U;
+        static const AkUniqueID STOPOBJECT = 2199697068U;
         static const AkUniqueID TV_1_MUSIC_01 = 779286979U;
         static const AkUniqueID TV_1_MUSIC_02 = 779286976U;
         static const AkUniqueID TV_1_MUSIC_03 = 779286977U;
         static const AkUniqueID TV_1_MUSIC_04 = 779286982U;
         static const AkUniqueID TV_1_MUSIC_05 = 779286983U;
         static const AkUniqueID TV_1_MUSIC_06 = 779286980U;
-        static const AkUniqueID TV_1_STOPALL = 2436769663U;
+        static const AkUniqueID TV_1_PLOT_01 = 1395680911U;
+        static const AkUniqueID TV_1_PLOT_02 = 1395680908U;
+        static const AkUniqueID TV_1_PLOT_03 = 1395680909U;
+        static const AkUniqueID TV_1_PLOT_04 = 1395680906U;
+        static const AkUniqueID TV_1_SETVOLUME = 2532082576U;
+        static const AkUniqueID TV_2_PLOT_01 = 3892119440U;
+        static const AkUniqueID TV_2_PLOT_02 = 3892119443U;
+        static const AkUniqueID TV_2_PLOT_03 = 3892119442U;
+        static const AkUniqueID TV_2_PLOT_04 = 3892119445U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

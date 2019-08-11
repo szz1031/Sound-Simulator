@@ -457,16 +457,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="TV_1_StopAll" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">
-									<ChildrenList>
-										<Action Name="" ID="{C50FFE4D-F955-4DC2-9C9B-505C01F6A696}" ShortID="573299876">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="3"/>
-											</PropertyList>
-											<ReferenceList/>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="TV_1_Music_02" ID="{84BCA1ED-03DE-466F-A0F2-4F6CD4DDEC6F}">
 									<ChildrenList>
 										<Action Name="" ID="{E34E2608-17AE-4FE3-96A5-A095539504A5}" ShortID="941060829">
@@ -522,11 +512,57 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="TV_1_SetVolume" ID="{FBCB12B8-270E-42B4-96C4-9A4E0342BB17}">
+									<ChildrenList>
+										<Action Name="" ID="{7BFFC88E-C873-437A-824C-A6EB9E691FAD}" ShortID="778244572">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_1_Plot_01" ID="{8A53F70D-5706-442D-9D04-483993380CDA}"/>
+								<Event Name="TV_1_Plot_02" ID="{A713AF13-C4C0-40D8-AC79-C259291D9397}"/>
+								<Event Name="TV_1_Plot_03" ID="{B2F32A42-69D9-4FCB-90C0-578028AB5418}"/>
+								<Event Name="TV_1_Plot_04" ID="{EB2929AB-CDBC-441E-BF7F-B127A9860992}"/>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706"/>
+						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706">
+							<ChildrenList>
+								<Event Name="TV_2_Plot_01" ID="{CAA49FCB-8795-470C-B9C5-7260FF9A38DD}"/>
+								<Event Name="New_Event" ID="{AE0EDA6C-FBB9-4784-858B-0E66E8641F92}"/>
+								<Event Name="TV_2_Plot_02" ID="{E724A561-6CE1-4415-A699-185FC7BBEB9A}"/>
+								<Event Name="TV_2_Plot_03" ID="{4D45292A-5D01-4170-9AA5-A8B8D874AEBB}"/>
+								<Event Name="TV_2_Plot_04" ID="{9CF946FA-F765-44A4-AACD-9943FBD987D4}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Computer" ID="{EF250F90-FA59-48A6-8B13-E94111CE99C8}" ShortID="38149173">
+							<ChildrenList>
+								<Event Name="Computer_Plot_01" ID="{C96AAD72-0DF2-4D73-8861-7E3D58FA1F7E}"/>
+								<Event Name="Computer_Plot_02" ID="{F07717DC-D8FF-4EAB-85A7-4710472CB69C}"/>
+								<Event Name="Computer_Plot_03" ID="{3AC4872A-14A4-47AC-AAC1-CB473AF9E3E8}"/>
+								<Event Name="Computer_Plot_04" ID="{4C9D0419-C73F-4137-9870-2CF041915C41}"/>
+								<Event Name="Computer_Plot_05" ID="{95611AA3-1145-4406-B1C7-999EC7E43CDF}"/>
+								<Event Name="Computer_Plot_06" ID="{5DD8C404-D458-4DD8-8142-810079A27423}"/>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">
+					<ChildrenList>
+						<Action Name="" ID="{C50FFE4D-F955-4DC2-9C9B-505C01F6A696}" ShortID="573299876">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

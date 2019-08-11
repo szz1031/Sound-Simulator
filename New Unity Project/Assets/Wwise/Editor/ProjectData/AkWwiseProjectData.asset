@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8586366636160199940
+    m_lastTime: -8586361196024165788
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586361319097335611
+    m_lastTime: -8586361196024418777
     List:
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
@@ -115,6 +115,102 @@ MonoBehaviour:
       - ElementName: Cabinet_Open
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_01
+      guid: 72ad6ac9f20d734d88617e3d58fa1f7e
+      id: 3429306074
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_01
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_01
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_02
+      guid: dc1777f0ffd8ab4e85a74710472cb69c
+      id: 3429306073
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_02
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_02
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_03
+      guid: 2a87c43aa414ac47aac1cb473af9e3e8
+      id: 3429306072
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_03
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_03
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_04
+      guid: 19049d4c3fc7374198702cf041915c41
+      id: 3429306079
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_04
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_04
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_05
+      guid: a31a619545110644b1c7999ec7e43cdf
+      id: 3429306078
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_05
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_05
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Computer_Plot_06
+      guid: 04c4d85d58d4d84d8142810079a27423
+      id: 3429306077
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Computer_Plot_06
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Computer_Plot_06
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -576,6 +672,22 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: 0.269499
       minDuration: 0.105875
+    - name: New_Event
+      guid: 6cda0eaeb9fb8447858b0e66e8641f92
+      id: 3050945240
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: New_Event
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\New_Event
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Footsteps
       guid: 28d1af72e7aa624bb7f47ec50cb13b84
       id: 1730208058
@@ -604,6 +716,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopObject
+      guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
+      id: 2199697068
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopObject
+        ObjectType: 3
+      Path: Default Work Unit\StopObject
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TV_1_Music_01
       guid: 4eaa5f948d6c444e93a5aaa40db072ef
       id: 779286979
@@ -700,9 +824,9 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 147
       minDuration: 147
-    - name: TV_1_StopAll
-      guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
-      id: 2436769663
+    - name: TV_1_Plot_01
+      guid: 0df7538a06572d449d04483993380cda
+      id: 1395680911
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -710,9 +834,137 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: TV_1
         ObjectType: 4
-      - ElementName: TV_1_StopAll
+      - ElementName: TV_1_Plot_01
         ObjectType: 3
-      Path: Default Work Unit\Object\TV_1\TV_1_StopAll
+      Path: Default Work Unit\Object\TV_1\TV_1_Plot_01
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_1_Plot_02
+      guid: 13af13a7c0c4d840ac79c259291d9397
+      id: 1395680908
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Plot_02
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Plot_02
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_1_Plot_03
+      guid: 422af3b2d969cb4f90c0578028ab5418
+      id: 1395680909
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Plot_03
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Plot_03
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_1_Plot_04
+      guid: ab2929ebbccd1e44bf7fb127a9860992
+      id: 1395680906
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Plot_04
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Plot_04
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_1_SetVolume
+      guid: b812cbfb0e27b44296c49a4e0342bb17
+      id: 2532082576
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_SetVolume
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_SetVolume
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_2_Plot_01
+      guid: cb9fa4ca95870c47b9c57260ff9a38dd
+      id: 3892119440
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: TV_2_Plot_01
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\TV_2_Plot_01
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_2_Plot_02
+      guid: 61a524e7e16c1544a699185fc7bbeb9a
+      id: 3892119443
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: TV_2_Plot_02
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\TV_2_Plot_02
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_2_Plot_03
+      guid: 2a29454d015d70419aa5a8b8d874aebb
+      id: 3892119442
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: TV_2_Plot_03
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\TV_2_Plot_03
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_2_Plot_04
+      guid: fa46f99c65f7a444aacd9943fbd987d4
+      id: 3892119445
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: TV_2_Plot_04
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\TV_2_Plot_04
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
