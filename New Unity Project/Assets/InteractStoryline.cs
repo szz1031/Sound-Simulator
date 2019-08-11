@@ -37,9 +37,15 @@ public class InteractStoryline : InteractItemBase {
         }
 
         B_Interacted = true;
+        if(S_InteractTips!="")
         UIManager.Instance.AddTips(S_InteractTips);
+
+        if(S_InteractSubtitle!="")
         UIManager.Instance.AddSubtitle(S_InteractSubtitle);
+
+        if(S_AudioKey!="")
         AudioManager.Play(S_AudioKey,this.gameObject);
+
         OnInteract(E_Storyline);
     }
 }

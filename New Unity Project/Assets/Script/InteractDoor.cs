@@ -10,8 +10,10 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
     protected Animation m_Animation;
     public string KeyAudioName;
     public int I_KeyIndex = 0;
+    public bool B_InteractOnce = false;
     public bool b_Opening { get; private set; } = false;
     public bool b_Opened { get; private set; } = false;
+    bool b_onceInteracted = false;
     string m_clipName;
 
     protected void Awake()
@@ -28,6 +30,11 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
             UIManager.Instance.AddTips("Door Locked!");
             return;
         }
+
+        if (b_onceInteracted)
+            return;
+        if (B_InteractOnce)
+            b_onceInteracted = true;
 
         if (b_Opening)
             return;

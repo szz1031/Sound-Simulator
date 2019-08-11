@@ -13,7 +13,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &138596
 GameObject:
@@ -28,7 +28,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &139296
 GameObject:
@@ -44,7 +44,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &172366
 GameObject:
@@ -55,12 +55,13 @@ GameObject:
   m_Component:
   - component: {fileID: 446158}
   - component: {fileID: 6506390}
+  - component: {fileID: 114839418135839910}
   m_Layer: 0
   m_Name: DoorMain_joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &180122
 GameObject:
@@ -75,7 +76,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &192752
 GameObject:
@@ -86,14 +87,14 @@ GameObject:
   m_Component:
   - component: {fileID: 400202}
   - component: {fileID: 11102034}
-  - component: {fileID: 6549366}
   - component: {fileID: 11429534}
+  - component: {fileID: 114361613014528806}
   m_Layer: 0
   m_Name: Door_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!1 &194894
 GameObject:
@@ -103,12 +104,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 415072}
+  - component: {fileID: 114850133658368040}
   m_Layer: 0
   m_Name: DoorMain_handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 22
   m_IsActive: 1
 --- !u!4 &400202
 Transform:
@@ -116,12 +118,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192752}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.76500034, y: 0.2, z: 4.317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490448}
   - {fileID: 429822}
+  - {fileID: 4908535891888014}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -219,18 +222,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.97086716, y: 2.081156, z: 0.04}
   m_Center: {x: 0.49364156, y: 1.0390745, z: 0.019999783}
---- !u!65 &6549366
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.46, y: 2.27, z: 2.5107222}
-  m_Center: {x: 0, y: 1.06, z: -0.12205553}
 --- !u!111 &11102034
 Animation:
   m_ObjectHideFlags: 1
@@ -257,35 +248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHeadTag: MainCamera
-  knob: {fileID: 476518}
-  controls:
-    openingSpeed: 1
-    closingSpeed: 1.3
-    closeStartFrom: 0.3
-    openMethod: 0
-    openButton: 101
-    autoClose: 0
-  AnimationNames:
-    OpeningAnim: DoorMain_open
-    LockedAnim: Door_locked
-  doorSounds:
-    enabled: 1
-    open: {fileID: 8300000, guid: 5d036f68d1afce346b68eaca16d6b6e8, type: 3}
-    close: {fileID: 8300000, guid: 9bce40df91dfe5c4d957ff0289db2ae4, type: 3}
-    closed: {fileID: 8300000, guid: 0cddfa79ad4fe064d8c71699bab862ac, type: 3}
-    volume: 1
-    pitchRandom: 0.2
-  doorTexts:
-    enabled: 1
-    openingText: Press [BUTTON] to open
-    closingText: Press [BUTTON] to close
-    lockText: You need a key!
-    TextPrefab: {fileID: 196946, guid: 449c88c761914d5428550f871a1d6272, type: 2}
-  keySystem:
-    enabled: 0
-    isUnlock: 0
-    LockPrefab: {fileID: 0}
+  KeyAudioName: 
+  I_KeyIndex: 0
+  B_InteractOnce: 0
 --- !u!137 &13726360
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -347,3 +312,78 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192752}
   m_IsPrefabParent: 1
+--- !u!1 &1604996323463676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4908535891888014}
+  - component: {fileID: 114233914627806506}
+  m_Layer: 0
+  m_Name: Axis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4908535891888014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604996323463676}
+  m_LocalRotation: {x: 0.000000030908616, y: 0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.444, y: 1.138, z: 0}
+  m_LocalScale: {x: -0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 400202}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114233914627806506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604996323463676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Wide_Axis
+--- !u!114 &114361613014528806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114839418135839910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114850133658368040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8204130465c1d645bb9c4fb11eeb784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioName: Door_Wide_Handle

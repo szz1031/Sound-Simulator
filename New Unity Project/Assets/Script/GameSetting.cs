@@ -10,8 +10,9 @@ namespace GameSetting
     public enum enum_Branch
     {
         Invalid = -1,
-        Main,
+        BranchGuitar,
         BranchBear,
+        BranchRemote,
     }
     public enum enum_HitCheckType
     {

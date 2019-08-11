@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour {
     RaycastHit hit = new RaycastHit();
     void TryInterach()
     {
-        if (Physics.SphereCast(CameraController.Instance.MainCamera.transform.position, .2f, CameraController.Instance.MainCamera.transform.forward,out hit,GameConst.I_PlayerInteractDistance,enum_HitCheckType.Dynamic.ToCastLayer() ))
+        if (Physics.SphereCast(CameraController.Instance.MainCamera.transform.position, .1f, CameraController.Instance.MainCamera.transform.forward,out hit,GameConst.I_PlayerInteractDistance,enum_HitCheckType.Dynamic.ToCastLayer() ))
         {
             HitCheckDynamic interact = hit.collider.GetComponent<HitCheckDynamic>();
             if (interact != null)
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
     {
         tf_Head.localPosition = new Vector3(0, Mathf.Lerp(tf_Head.localPosition.y,  !b_crouching?1.7f:1f,Time.deltaTime*5),0);
         delta.Normalize();
-        m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)* (b_crouching?.5f:1f)*F_MovementSpeed + Vector3.down*9.8f)*Time.deltaTime);
+        m_Controller.Move(((CameraController.Instance.CameraXZForward*delta.y+CameraController.Instance.CameraXZRightward*delta.x)* (b_crouching?.3f:1f)*F_MovementSpeed + Vector3.down*9.8f)*Time.deltaTime);
         f_stepCheck += Time.deltaTime * Mathf.Abs(delta.magnitude);
         if (f_stepCheck > .5f)
         {
