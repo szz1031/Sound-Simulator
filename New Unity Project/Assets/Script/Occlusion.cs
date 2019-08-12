@@ -47,7 +47,7 @@ public class Occlusion : MonoBehaviour
             Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
 
-            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener);
+            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
             PassFloor = false;
 
@@ -56,6 +56,7 @@ public class Occlusion : MonoBehaviour
                 if (HitArrary[i].transform.tag == "Floor")
                 {
                     PassFloor = true;
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
                 }
             }
 
@@ -75,23 +76,23 @@ public class Occlusion : MonoBehaviour
             if (BlockedDistance <= 0.5)
             {
                 OcclusionPercentage = BlockedDistance / DisToListener;
-                Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
+               // Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
             }
 
             else if (BlockedDistance <=2)
             {
                 OcclusionPercentage = (BlockedDistance - 0.5f)/DisToListener;
-                Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
+               // Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
             }
             else if (BlockedDistance <= 4)
             {
                 OcclusionPercentage = (1.25f * BlockedDistance - 1.0f)/DisToListener;
-                Debug.DrawRay(SourcePosition, RayDirection1, Color.cyan);
+              //  Debug.DrawRay(SourcePosition, RayDirection1, Color.cyan);
             } 
             else 
             {
                 OcclusionPercentage = BlockedDistance / DisToListener ;
-                Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+               // Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
             }
 
         //   /*
@@ -112,6 +113,7 @@ public class Occlusion : MonoBehaviour
             {
                 OcclusionPercentage = OcclusionPercentage + 0.8f;
             }
+           
 
             if (OcclusionPercentage > 1) { OcclusionPercentage = 1; }
             if (OcclusionPercentage < 0) { OcclusionPercentage = 0; }

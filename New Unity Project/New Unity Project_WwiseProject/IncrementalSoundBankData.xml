@@ -18,14 +18,14 @@
 	<Platform GUID="{DBAC9456-690E-4F2B-BC30-AB462CB4BC6B}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Bank_SFX" Hash="2792775283" Timestamp="1565477009"/>
+				<File Name="Bank_SFX" Hash="4110691308" Timestamp="1565579871"/>
 				<File Name="Bank_music" Hash="2808116759" Timestamp="1564819183"/>
 				<File Name="Init" Hash="410864876" Timestamp="1564970871"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3313741201" Timestamp="1565477010"/>
+				<File Name="" Hash="1751651210" Timestamp="1565579871"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
