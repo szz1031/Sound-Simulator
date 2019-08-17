@@ -68,8 +68,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586361196024418777
+    m_lastTime: -8586355971017539301
     List:
+    - name: Bear_Music
+      guid: f4785d4f2ed65b4595bc692b56cd3359
+      id: 4254255911
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Bear_Music
+        ObjectType: 3
+      Path: Default Work Unit\Object\Bear_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
       id: 1948672150
@@ -470,6 +484,54 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.759663
       minDuration: 0.759663
+    - name: Drawer_Close
+      guid: b37333b1ce21974e932184d9035a7c43
+      id: 3753111523
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Drawer_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Drawer_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Drawer_KeySound
+      guid: 5333a662410de5419c0b8fba24cd6aa0
+      id: 3173784171
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Drawer_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Drawer_KeySound
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Drawer_Open
+      guid: ce766e292830a74aa0a2532e29a23dde
+      id: 850583253
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Drawer_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Drawer_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Fireplace
       guid: 91662d3d24c0054bb3d0ca6510fa4193
       id: 1404152342
@@ -484,6 +546,54 @@ MonoBehaviour:
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
+    - name: GlassCabinet_Close
+      guid: bc3542fe9158d14e9bc9443ddcf7ad52
+      id: 554578976
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: GlassCabinet_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\GlassCabinet_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: GlassCabinet_KeySound
+      guid: f4ad97fbd7451540a2936d8077ce3d28
+      id: 1066855742
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: GlassCabinet_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\GlassCabinet_KeySound
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: GlassCabinet_Open
+      guid: e2b6cc95f3417f4999229818755e5bf8
+      id: 3721891028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: GlassCabinet_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\GlassCabinet_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Gramophone_Charge
       guid: 4577368a30a07040b981e67023565dfa
       id: 2879668892
@@ -612,6 +722,20 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.803243
       minDuration: 0.803243
+    - name: Guitar_Music
+      guid: 8cfc4a5d329dcb4a9d4167b6d2c9ff92
+      id: 2080917547
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Guitar_Music
+        ObjectType: 3
+      Path: Default Work Unit\Object\Guitar_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Key_Pickup
       guid: 07f59962f7233d4e96e1f977cccbf2c1
       id: 761761105
@@ -716,6 +840,54 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Safe_Close
+      guid: 03fd1714ce3cb34eb1dc50f3936a2794
+      id: 1474002183
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Safe_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Safe_Close
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Safe_KeySound
+      guid: adc53e098772bb44a14cd2e28276fd64
+      id: 2314026839
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Safe_KeySound
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Safe_KeySound
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Safe_Open
+      guid: adc30e7c8c58924db5fb273428c403cc
+      id: 189348657
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: Safe_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\Safe_Open
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StopObject
       guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
       id: 2199697068
@@ -968,6 +1140,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: TV_2_Plot_05
+      guid: 77cec56f6dbf8f47af3d0b5588b93432
+      id: 3892119444
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_2
+        ObjectType: 4
+      - ElementName: TV_2_Plot_05
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_2\TV_2_Plot_05
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Window_Rain
       guid: 06137eeee76f7545a03550e0c55db924
       id: 290976602
@@ -1101,6 +1289,6 @@ MonoBehaviour:
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
-  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/Cabinet
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
