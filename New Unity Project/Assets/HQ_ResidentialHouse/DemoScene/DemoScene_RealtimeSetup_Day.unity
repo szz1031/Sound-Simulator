@@ -3015,8 +3015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!111 &104569775
 Animation:
   m_ObjectHideFlags: 0
@@ -3972,8 +3972,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: GlassCabinet
+  CloseAudioName: GlassCabinet_KeySound
 --- !u!114 &145234676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12787,8 +12787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!114 &437141123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14804,6 +14804,36 @@ Prefab:
       propertyPath: m_ProbeAnchor
       value: 
       objectReference: {fileID: 1229578190}
+    - target: {fileID: 114353231425605286, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114353231425605286, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114831835017890406, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114831835017890406, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431180878678600, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431180878678600, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a69f09f1dbf0144186606fd19308f03, type: 2}
   m_IsPrefabParent: 0
@@ -15435,10 +15465,11 @@ MonoBehaviour:
   E_InInteractableTips: 
   S_InteractSubtitle: 
   S_AudioKey: 
-  DialogTips: Music?
+  DialogTips: Which Music do you want to play?
   Dialogues:
   - Music 1
   - Music 2
+  - Music 3
   I_RightSelections: 0
 --- !u!114 &544981212
 MonoBehaviour:
@@ -16366,6 +16397,36 @@ Prefab:
     - target: {fileID: 419432, guid: 2a69f09f1dbf0144186606fd19308f03, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114353231425605286, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114353231425605286, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114831835017890406, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114831835017890406, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431180878678600, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431180878678600, guid: 2a69f09f1dbf0144186606fd19308f03,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a69f09f1dbf0144186606fd19308f03, type: 2}
@@ -24168,8 +24229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!111 &871499949
 Animation:
   m_ObjectHideFlags: 0
@@ -27548,8 +27609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!111 &957260181
 Animation:
   m_ObjectHideFlags: 0
@@ -32175,7 +32236,7 @@ MonoBehaviour:
   S_InteractTips: Bear Interacted
   E_InInteractableTips: 
   S_InteractSubtitle: (Bear Playing Sounds)
-  S_AudioKey: Bear_Sound
+  S_AudioKey: Bear_Music
 --- !u!65 &1102973372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44741,6 +44802,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 36
       objectReference: {fileID: 0}
+    - target: {fileID: 114258709124253786, guid: 1250cf9420b56d0498bc0f6250f1403d,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258709124253786, guid: 1250cf9420b56d0498bc0f6250f1403d,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1250cf9420b56d0498bc0f6250f1403d, type: 2}
   m_IsPrefabParent: 0
@@ -55168,8 +55239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!65 &1852524943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57893,8 +57964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!114 &1933150730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57996,6 +58067,16 @@ Prefab:
     - target: {fileID: 184988, guid: 1250cf9420b56d0498bc0f6250f1403d, type: 2}
       propertyPath: m_Name
       value: BedsideTable 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258709124253786, guid: 1250cf9420b56d0498bc0f6250f1403d,
+        type: 2}
+      propertyPath: MainAudioName
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258709124253786, guid: 1250cf9420b56d0498bc0f6250f1403d,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: Drawer_KeySound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1250cf9420b56d0498bc0f6250f1403d, type: 2}
@@ -58145,8 +58226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!111 &1940076964
 Animation:
   m_ObjectHideFlags: 0
@@ -62273,8 +62354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!111 &2070876441
 Animation:
   m_ObjectHideFlags: 0
@@ -63710,7 +63791,7 @@ MonoBehaviour:
   S_InteractTips: Guitar Fixed
   E_InInteractableTips: Guitar Seems Broken,Screws Required For Fixing
   S_InteractSubtitle: (Guitar Playing)
-  S_AudioKey: Guitar_Sound
+  S_AudioKey: Guitar_Music
 --- !u!114 &2133828045
 MonoBehaviour:
   m_ObjectHideFlags: 0

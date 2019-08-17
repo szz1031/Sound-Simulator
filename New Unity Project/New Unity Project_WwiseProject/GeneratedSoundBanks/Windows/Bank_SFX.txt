@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	64215390	Door_Wide_Axis_Open			\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open	
+	189348657	Safe_Open			\Default Work Unit\Object\Cabinet\Safe_Open	
 	280670697	LightSwitch_Off			\Default Work Unit\Object\LightSwitch_Off	
 	290976602	Window_Rain			\Default Work Unit\Object\Window_Rain	
 	435953925	Gramophone_OnOffTap			\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap	
 	501750955	Door_Narrow_Handle_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close	
 	541226684	Door_Closet_Handle_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open	
+	554578976	GlassCabinet_Close			\Default Work Unit\Object\Cabinet\GlassCabinet_Close	
 	711857016	Door_Closet_Handle_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close	
 	761761105	Key_Pickup			\Default Work Unit\Object\Key\Key_Pickup	
 	779286976	TV_1_Music_02			\Default Work Unit\Object\TV_1\TV_1_Music_02	
@@ -16,23 +18,28 @@ Event	ID	Name			Wwise Object Path	Notes
 	850197956	Gramophone_Squeak_3			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3	
 	850197957	Gramophone_Squeak_2			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2	
 	850197958	Gramophone_Squeak_1			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1	
+	850583253	Drawer_Open			\Default Work Unit\Object\Cabinet\Drawer_Open	
 	982290157	Door_Narrow_Handle_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open	
 	990547651	Player_Rain			\Default Work Unit\Player\Player_Rain	
 	996249450	Door_Wide_KeySound			\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound	
+	1066855742	GlassCabinet_KeySound			\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound	
 	1301402079	Door_Closet_Axis_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open	
 	1395680906	TV_1_Plot_04			\Default Work Unit\Object\TV_1\TV_1_Plot_04	
 	1395680908	TV_1_Plot_02			\Default Work Unit\Object\TV_1\TV_1_Plot_02	
 	1395680909	TV_1_Plot_03			\Default Work Unit\Object\TV_1\TV_1_Plot_03	
 	1395680911	TV_1_Plot_01			\Default Work Unit\Object\TV_1\TV_1_Plot_01	
 	1404152342	Fireplace			\Default Work Unit\Object\Fireplace	
+	1474002183	Safe_Close			\Default Work Unit\Object\Cabinet\Safe_Close	
 	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
 	1948672150	Cabinet_Close			\Default Work Unit\Object\Cabinet\Cabinet_Close	
 	2043156035	Door_Wide_Handle_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close	
+	2080917547	Guitar_Music			\Default Work Unit\Object\Guitar_Music	
 	2116863413	Door_Wide_Handle_Open			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open	
 	2141172849	Door_Closet_KeySound			\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound	
 	2199697068	StopObject			\Default Work Unit\StopObject	
 	2232826297	Gramophone_Mainghosty			\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty	
 	2253880733	LightSwitch_On			\Default Work Unit\Object\LightSwitch_On	
+	2314026839	Safe_KeySound			\Default Work Unit\Object\Cabinet\Safe_KeySound	
 	2382010549	Key_Uncollected			\Default Work Unit\Object\Key\Key_Uncollected	
 	2407747538	Door_Narrow_Axis_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close	
 	2458915778	Cabinet_Open			\Default Work Unit\Object\Cabinet\Cabinet_Open	
@@ -43,6 +50,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2916866438	Door_Narrow_Axis_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open	
 	3041433330	Door_Narrow_KeySound			\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound	
 	3050945240	New_Event			\Default Work Unit\Object\TV_2\New_Event	
+	3173784171	Drawer_KeySound			\Default Work Unit\Object\Cabinet\Drawer_KeySound	
 	3333554874	Door_Locked			\Default Work Unit\Object\Door_Narrow\Door_Locked	
 	3429306072	Computer_Plot_03			\Default Work Unit\Object\Computer\Computer_Plot_03	
 	3429306073	Computer_Plot_02			\Default Work Unit\Object\Computer\Computer_Plot_02	
@@ -53,10 +61,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	3463217684	Cabinet_KeySound			\Default Work Unit\Object\Cabinet\Cabinet_KeySound	
 	3498272821	Door_Closet_Axis_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close	
 	3525613408	Gramophone_NeedleTap			\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap	
+	3721891028	GlassCabinet_Open			\Default Work Unit\Object\Cabinet\GlassCabinet_Open	
+	3753111523	Drawer_Close			\Default Work Unit\Object\Cabinet\Drawer_Close	
 	3892119440	TV_2_Plot_01			\Default Work Unit\Object\TV_2\TV_2_Plot_01	
 	3892119442	TV_2_Plot_03			\Default Work Unit\Object\TV_2\TV_2_Plot_03	
 	3892119443	TV_2_Plot_02			\Default Work Unit\Object\TV_2\TV_2_Plot_02	
+	3892119444	TV_2_Plot_05			\Default Work Unit\Object\TV_2\TV_2_Plot_05	
 	3892119445	TV_2_Plot_04			\Default Work Unit\Object\TV_2\TV_2_Plot_04	
+	4254255911	Bear_Music			\Default Work Unit\Object\Bear_Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	

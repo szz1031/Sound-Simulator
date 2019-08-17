@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BEAR_MUSIC = 4254255911U;
         static const AkUniqueID CABINET_CLOSE = 1948672150U;
         static const AkUniqueID CABINET_KEYSOUND = 3463217684U;
         static const AkUniqueID CABINET_OPEN = 2458915778U;
@@ -38,7 +39,13 @@ namespace AK
         static const AkUniqueID DOOR_WIDE_HANDLE_CLOSE = 2043156035U;
         static const AkUniqueID DOOR_WIDE_HANDLE_OPEN = 2116863413U;
         static const AkUniqueID DOOR_WIDE_KEYSOUND = 996249450U;
+        static const AkUniqueID DRAWER_CLOSE = 3753111523U;
+        static const AkUniqueID DRAWER_KEYSOUND = 3173784171U;
+        static const AkUniqueID DRAWER_OPEN = 850583253U;
         static const AkUniqueID FIREPLACE = 1404152342U;
+        static const AkUniqueID GLASSCABINET_CLOSE = 554578976U;
+        static const AkUniqueID GLASSCABINET_KEYSOUND = 1066855742U;
+        static const AkUniqueID GLASSCABINET_OPEN = 3721891028U;
         static const AkUniqueID GRAMOPHONE_CHARGE = 2879668892U;
         static const AkUniqueID GRAMOPHONE_MAINGHOSTY = 2232826297U;
         static const AkUniqueID GRAMOPHONE_MAINNOISE = 2673340027U;
@@ -47,6 +54,7 @@ namespace AK
         static const AkUniqueID GRAMOPHONE_SQUEAK_1 = 850197958U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_2 = 850197957U;
         static const AkUniqueID GRAMOPHONE_SQUEAK_3 = 850197956U;
+        static const AkUniqueID GUITAR_MUSIC = 2080917547U;
         static const AkUniqueID KEY_PICKUP = 761761105U;
         static const AkUniqueID KEY_UNCOLLECTED = 2382010549U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
@@ -54,6 +62,9 @@ namespace AK
         static const AkUniqueID NEW_EVENT = 3050945240U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_RAIN = 990547651U;
+        static const AkUniqueID SAFE_CLOSE = 1474002183U;
+        static const AkUniqueID SAFE_KEYSOUND = 2314026839U;
+        static const AkUniqueID SAFE_OPEN = 189348657U;
         static const AkUniqueID STOPOBJECT = 2199697068U;
         static const AkUniqueID TV_1_MUSIC_01 = 779286979U;
         static const AkUniqueID TV_1_MUSIC_02 = 779286976U;
@@ -70,6 +81,7 @@ namespace AK
         static const AkUniqueID TV_2_PLOT_02 = 3892119443U;
         static const AkUniqueID TV_2_PLOT_03 = 3892119442U;
         static const AkUniqueID TV_2_PLOT_04 = 3892119445U;
+        static const AkUniqueID TV_2_PLOT_05 = 3892119444U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

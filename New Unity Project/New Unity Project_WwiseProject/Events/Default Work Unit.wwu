@@ -347,6 +347,15 @@
 								<Event Name="Cabinet_Open" ID="{C3F04180-B91F-4F05-B9D8-9E7AAAF28E70}"/>
 								<Event Name="Cabinet_Close" ID="{ECEDEE87-E393-4799-9B24-C35FE2AF3CCB}"/>
 								<Event Name="Cabinet_KeySound" ID="{7CD310E7-D95E-4FF2-A76B-5278FC828604}"/>
+								<Event Name="Drawer_Open" ID="{296E76CE-3028-4AA7-A0A2-532E29A23DDE}"/>
+								<Event Name="Drawer_Close" ID="{B13373B3-21CE-4E97-9321-84D9035A7C43}"/>
+								<Event Name="Drawer_KeySound" ID="{62A63353-0D41-41E5-9C0B-8FBA24CD6AA0}"/>
+								<Event Name="GlassCabinet_Open" ID="{95CCB6E2-41F3-497F-9922-9818755E5BF8}"/>
+								<Event Name="GlassCabinet_Close" ID="{FE4235BC-5891-4ED1-9BC9-443DDCF7AD52}"/>
+								<Event Name="GlassCabinet_KeySound" ID="{FB97ADF4-45D7-4015-A293-6D8077CE3D28}"/>
+								<Event Name="Safe_Open" ID="{7C0EC3AD-588C-4D92-B5FB-273428C403CC}"/>
+								<Event Name="Safe_Close" ID="{1417FD03-3CCE-4EB3-B1DC-50F3936A2794}"/>
+								<Event Name="Safe_KeySound" ID="{093EC5AD-7287-44BB-A14C-D2E28276FD64}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Door_Closet" ID="{EE804BA5-804A-4EB5-9CA0-890C6DC1C150}" ShortID="380847484">
@@ -448,6 +457,12 @@
 							<ChildrenList>
 								<Event Name="TV_1_Music_01" ID="{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}">
 									<ChildrenList>
+										<Action Name="" ID="{1E0CBBEB-DB5C-494F-B6A0-E23BB71EC7A3}" ShortID="806350196">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{9121CFE0-E52C-498F-9D10-B73BAF275CD1}" ShortID="15842988">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -459,6 +474,12 @@
 								</Event>
 								<Event Name="TV_1_Music_02" ID="{84BCA1ED-03DE-466F-A0F2-4F6CD4DDEC6F}">
 									<ChildrenList>
+										<Action Name="" ID="{B5E8FB1A-31C5-4EC8-A628-1552652AF23E}" ShortID="919367906">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{E34E2608-17AE-4FE3-96A5-A095539504A5}" ShortID="941060829">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -470,6 +491,12 @@
 								</Event>
 								<Event Name="TV_1_Music_03" ID="{C4B9B473-CB97-4EDE-9FEB-6909E68A3352}">
 									<ChildrenList>
+										<Action Name="" ID="{35A14FD6-81D2-465B-8EC9-A279CEEF1CBC}" ShortID="101588686">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{78AC7C5D-E486-43D4-95EA-C44D511AF40B}" ShortID="645843798">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -481,6 +508,12 @@
 								</Event>
 								<Event Name="TV_1_Music_04" ID="{55FD6085-99C4-40B0-9C30-E0B12D599A9E}">
 									<ChildrenList>
+										<Action Name="" ID="{E7892349-663B-4181-8449-35A36809F9D8}" ShortID="264178095">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{824FF4C6-6A33-4F4A-84B6-A28EC6E764D1}" ShortID="464643610">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -492,6 +525,12 @@
 								</Event>
 								<Event Name="TV_1_Music_05" ID="{CEF95184-654A-4322-86AE-F4F193E311B0}">
 									<ChildrenList>
+										<Action Name="" ID="{AD4B643C-0C41-48CE-8FC2-75E317DD5EB5}" ShortID="908291439">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{0FF2C13D-B042-4644-AD27-09C29815D868}" ShortID="610836872">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -503,6 +542,12 @@
 								</Event>
 								<Event Name="TV_1_Music_06" ID="{9C94AFA7-A22C-4445-A832-DFEC9DCF8767}">
 									<ChildrenList>
+										<Action Name="" ID="{46691CAA-5CC4-426D-B9FA-0C4D01FAA8FD}" ShortID="789669915">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
 										<Action Name="" ID="{C9B80009-AC1F-4F38-9B66-E1CD4387CC5E}" ShortID="751353113">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -539,6 +584,7 @@
 								<Event Name="TV_2_Plot_02" ID="{E724A561-6CE1-4415-A699-185FC7BBEB9A}"/>
 								<Event Name="TV_2_Plot_03" ID="{4D45292A-5D01-4170-9AA5-A8B8D874AEBB}"/>
 								<Event Name="TV_2_Plot_04" ID="{9CF946FA-F765-44A4-AACD-9943FBD987D4}"/>
+								<Event Name="TV_2_Plot_05" ID="{6FC5CE77-BF6D-478F-AF3D-0B5588B93432}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Computer" ID="{EF250F90-FA59-48A6-8B13-E94111CE99C8}" ShortID="38149173">
@@ -551,6 +597,8 @@
 								<Event Name="Computer_Plot_06" ID="{5DD8C404-D458-4DD8-8142-810079A27423}"/>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Guitar_Music" ID="{5D4AFC8C-9D32-4ACB-9D41-67B6D2C9FF92}"/>
+						<Event Name="Bear_Music" ID="{4F5D78F4-D62E-455B-95BC-692B56CD3359}"/>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">
