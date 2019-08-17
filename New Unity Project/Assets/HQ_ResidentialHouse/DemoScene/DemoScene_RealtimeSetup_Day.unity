@@ -38772,10 +38772,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8adbd9fb8c32c4eb933841f007374d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  S_InteractTips: 
+  S_InteractTips: Laptop Interacted
   E_InInteractableTips: 
   S_InteractSubtitle: 
-  S_AudioKey: 
+  S_AudioKey: Laptop_Interact
 --- !u!114 &1326811161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40601,6 +40601,11 @@ Prefab:
         type: 2}
       propertyPath: F_Offset
       value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190391681930576, guid: 285ac0a48522be24cbc54b5f4db971a6,
+        type: 2}
+      propertyPath: F_TipsLastTime
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 285ac0a48522be24cbc54b5f4db971a6, type: 2}
