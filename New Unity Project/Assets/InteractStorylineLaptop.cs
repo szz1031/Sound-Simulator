@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractStorylineL : InteractStoryline {
+public class InteractStorylineL : InteractStoryItem {
 
 }

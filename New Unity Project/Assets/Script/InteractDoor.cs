@@ -27,6 +27,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
             AudioManager.Play("Door_Locked",this.gameObject);
+            UIManager.Instance.AddSubtitle("Door_Locked");
             UIManager.Instance.AddTips("Door Locked!");
             return;
         }
@@ -40,6 +41,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
             return;
         b_Opening = true;
         string subName = b_Opened ? "Close" : "Open";
+        UIManager.Instance.AddSubtitle("Door " + subName);
         m_Audios.Traversal((AudioBase audio) => { audio.Play(subName); });
         m_Animation[m_clipName].normalizedTime = b_Opened ? .4f : 0;
         m_Animation[m_clipName].speed = b_Opened ? -1 : 1;

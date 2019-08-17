@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractItemBase : MonoBehaviour {
+public class InteractItemBase : MonoBehaviour
+{
     public virtual void TryInteract()
     {
 

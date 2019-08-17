@@ -8,8 +8,6 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
     public static void Play(string clipName,GameObject obj)
     {
         AkSoundEngine.PostEvent(clipName,obj);
-
-        UIManager.Instance.AddSubtitle(clipName);
     }
     public static void PlayFootStep(enum_GroundMaterialType mat, GameObject obj)
     {

@@ -11,8 +11,20 @@ namespace GameSetting
     {
         Invalid = -1,
         BranchGuitar,
-        BranchBear,
-        BranchRemote,
+    }
+    public enum enum_Stage
+    {
+        Invalid=-1,
+        Stage1=1,
+        Stage2,
+        Stage3,
+        Stage4,
+        Stage5,
+    }
+    public enum enum_BC_Game
+    {
+        Invalid=-1,
+        OnStageStart,
     }
     public enum enum_HitCheckType
     {

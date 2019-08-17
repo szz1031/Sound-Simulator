@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Linq;
 public class UI_Subtitle : MonoBehaviour,ISingleCoroutine {
     public float F_Offset;
-    public float F_TipsLastTime = 2f;
+    public float F_TipsLastTime = 4f;
     class SubtitleItem
     {
         public float m_startTime;
