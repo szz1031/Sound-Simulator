@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GameSetting;
-public class InteractStoryItem : InteractItemBase {
+public class InteractStoryItem: InteractItemBase{
 
     public string S_InteractTips,E_InInteractableTips, S_InteractSubtitle,S_AudioKey;
     public bool B_Interactable { get; protected set; } = true;
@@ -22,6 +22,7 @@ public class InteractStoryItem : InteractItemBase {
     }
     public override void  TryInteract()
     {
+        base.TryInteract();
         if (!B_Interactable)
         {
             if (E_InInteractableTips != null)

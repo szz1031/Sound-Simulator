@@ -4,7 +4,17 @@ using System.Collections.Generic;
 using GameSetting;
 using UnityEngine;
 
-public class InteractStoryLaptop : InteractStoryItem,ISingleCoroutine {
+public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISingleCoroutine {
+
+    bool b_bearInteracted = false;
+    bool b_RemoteInteracted = false;
+    protected override void Awake()
+    {
+        base.Awake();
+        b_bearInteracted = false;
+        b_RemoteInteracted = false;
+    }
+
     protected override void OnStageStart(enum_Stage stage)
     {
         base.OnStageStart(stage);
@@ -23,7 +33,7 @@ public class InteractStoryLaptop : InteractStoryItem,ISingleCoroutine {
     }
     public override void TryInteract()
     {
-        switch(GameManager.Instance.m_CurrentStage)
+        switch (GameManager.Instance.m_CurrentStage)
         {
             case enum_Stage.Stage2:
                 AudioManager.Play("Laptop_Plot_02", gameObject);
@@ -32,13 +42,8 @@ public class InteractStoryLaptop : InteractStoryItem,ISingleCoroutine {
                 break;
 
             case enum_Stage.Stage3:
-                if (GameManager.Instance.B_BearInteracted){
-                    this.StartSingleCoroutine(0,TIEnumerators.PauseDel(1f,()=> {
-                        AudioManager.Play("Laptop_Plot_03", gameObject);
-                        UIManager.Instance.AddSubtitle("Laptop_Plot_03");
-                    }));
-                }
-                else if (GameManager.Instance.B_RemoteInteracted){
+                if (b_RemoteInteracted)
+                {
                     AudioManager.Play("Laptop_Plot_04", gameObject);
                     UIManager.Instance.AddSubtitle("Laptop_Plot_04");
                 }
@@ -50,10 +55,25 @@ public class InteractStoryLaptop : InteractStoryItem,ISingleCoroutine {
             case enum_Stage.Stage4:
                 AudioManager.Play("Laptop_Plot_07", gameObject);
                 UIManager.Instance.AddSubtitle("Laptop_Plot_07");
-                GameManager.Instance.OnStagePush( enum_Stage.Stage5);
                 GameManager.Instance.PickupKey(9);
                 break;
         }
         base.TryInteract();
+    }
+
+    public void BearInteract()
+    {
+        if (b_bearInteracted||GameManager.Instance.m_CurrentStage!= enum_Stage.Stage3)
+            return;
+
+        b_bearInteracted = true;
+        this.StartSingleCoroutine(0, TIEnumerators.PauseDel(1f, () => {
+            AudioManager.Play("Laptop_Plot_03", gameObject);
+            UIManager.Instance.AddSubtitle("Laptop_Plot_03");
+        }));
+    }
+    public void RemoteInteract()
+    {
+        b_RemoteInteracted = true;
     }
 }

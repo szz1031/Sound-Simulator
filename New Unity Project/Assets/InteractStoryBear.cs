@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractStoryBear : InteractStoryItem {
+public class InteractStoryBear : InteractStorySpecial<InteractStoryBear> {
     public override void TryInteract()
     {
         base.TryInteract();
-        GameManager.Instance.BearInteract();
+        InteractStoryLaptop.Instance.BearInteract();
     }
 }

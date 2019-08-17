@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GameSetting;
-public class InteractStoryTV2 : InteractStoryItem {
+public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
     protected override void OnStageStart(enum_Stage stage)
     {
         switch (stage)

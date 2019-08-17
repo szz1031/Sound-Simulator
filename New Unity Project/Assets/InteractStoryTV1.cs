@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GameSetting;
-public class InteractStoryTV1 : InteractStoryItem {
+public class InteractStoryTV1 : InteractStorySpecial<InteractStoryTV1> {
     public string DialogTips;
     public string[] Dialogues;
 
@@ -18,5 +18,10 @@ public class InteractStoryTV1 : InteractStoryItem {
         UIManager.Instance.AddSubtitle("TV_Switch_Music");
         UIManager.Instance.AddTips("Music Switched");
         base.TryInteract();
+    }
+    public void RemoteInteract()
+    {
+        AudioManager.Play("TV_1_SwitchVolume", this.gameObject);
+        UIManager.Instance.AddSubtitle("Volume_Up");
     }
 }

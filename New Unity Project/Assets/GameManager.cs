@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
 
-    public bool B_BearInteracted { get; private set; } = false;
-    public bool B_RemoteInteracted { get; private set; } = false;
-    List<StoryBranch> m_Branches=new List<StoryBranch>();
+    List<StoryBranch> m_Branches = new List<StoryBranch>();
     List<int> m_KeyObtained = new List<int>();
     public enum_Stage m_CurrentStage;
     protected override void Awake()
@@ -26,33 +24,28 @@ public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
             for (int i = 0; i < storylineParent.childCount; i++)
             {
                 InteractBranch story = storylineParent.GetChild(i).GetComponent<InteractBranch>();
-                story.Init(value,OnBranchInteract);
+                story.Init(value, OnBranchInteract);
                 stories.Add(story);
             }
-            StoryBranch branch=new StoryBranch(value, stories);
+            StoryBranch branch = new StoryBranch(value, stories);
             branch.Begin();
             m_Branches.Add(branch);
         });
-        B_BearInteracted = false;
-        B_RemoteInteracted = false;
-        OnStagePush( enum_Stage.Stage1);
+        OnStagePush(enum_Stage.Stage1);
     }
     public void OnStagePush(enum_Stage stage)
     {
-            m_CurrentStage = stage;
+        m_CurrentStage = stage;
         Debug.Log(m_CurrentStage);
         TBroadCaster<enum_BC_Game>.Trigger(enum_BC_Game.OnStageStart, m_CurrentStage);
     }
-    public void BearInteract()
+    public bool B_CanDoorOpen(int requireKeyIndex) => m_KeyObtained.Contains(requireKeyIndex);
+    public void PickupKey(int keyIndex) 
     {
-        B_BearInteracted = true;
-    }
-    public void RemoteInteract()
-    {
-        B_RemoteInteracted = true;
-    }
-    public bool B_CanDoorOpen(int requireKeyIndex) =>    m_KeyObtained.Contains(requireKeyIndex);
-    public void PickupKey(int keyIndex)=>m_KeyObtained.Add(keyIndex);
+        m_KeyObtained.Add(keyIndex);
+        if (keyIndex == 10)
+            OnStagePush(enum_Stage.Stage5);
+    } 
 
     public class StoryBranch
     {
@@ -99,5 +92,10 @@ public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
     {
         if (branch == enum_Branch.BranchGuitar)
             OnStagePush( enum_Stage.Stage4);
+    }
+
+    public void OnSafeCodeAcquired()
+    {
+        PickupKey(9);
     }
 }

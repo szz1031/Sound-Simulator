@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class InteractItemBase : MonoBehaviour
 {
+    public float F_InteractCooldown=1f;
+    public bool B_CanInteract => f_interactCheck <= 0;
+    float f_interactCheck=-1;
+
+    private void Update()
+    {
+        if (!B_CanInteract)
+            f_interactCheck -= Time.deltaTime;
+    }
     public virtual void TryInteract()
     {
-
+        f_interactCheck = F_InteractCooldown;
     }
 }

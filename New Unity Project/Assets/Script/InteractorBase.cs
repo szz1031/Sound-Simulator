@@ -13,7 +13,9 @@ public class InteractorBase : MonoBehaviour
     }
     public virtual bool TryInteract()
     {
-        m_Items.Traversal((InteractItemBase item) => { item.TryInteract(); });
+        m_Items.Traversal((InteractItemBase item) => {
+            if (item.B_CanInteract)
+                item.TryInteract(); });
         return true;
     }
 
