@@ -3010,6 +3010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!111 &104569775
@@ -3967,6 +3968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: GlassCabinet
   CloseAudioName: GlassCabinet_KeySound
 --- !u!114 &145234676
@@ -5716,6 +5718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!111 &195707563
@@ -5842,6 +5845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   KeyAudioName: 
   I_KeyIndex: 0
   B_InteractOnce: 0
@@ -7147,6 +7151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44010105f2f189c44b1addb2b92687da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: 
   E_InInteractableTips: 
   S_InteractSubtitle: 
@@ -12851,6 +12856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!114 &437141123
@@ -14184,6 +14190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!65 &496835645
@@ -15528,6 +15535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e5af3d2533820408526666b7fdb693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: TV Interacted
   E_InInteractableTips: 
   S_InteractSubtitle: TV_Switch_Sound
@@ -20427,6 +20435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93796bd1e266bad4296885817124cef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: Pickup Scews
   E_InInteractableTips: 
   S_InteractSubtitle: Screws_Sound
@@ -22229,6 +22238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!65 &786705547
@@ -22828,6 +22838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!114 &819061993
@@ -23414,6 +23425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!65 &839527350
@@ -24272,6 +24284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!111 &871499949
@@ -24483,7 +24496,8 @@ Prefab:
       propertyPath: m_Name
       value: Laptop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64000011454507508, guid: fa22196249df16e419f1109f8cb0f7a1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fa22196249df16e419f1109f8cb0f7a1, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &879366479 stripped
@@ -24507,6 +24521,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &879366483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879366480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39300013, y: 0.263749, z: 0.33819395}
+  m_Center: {x: 0.000000074505806, y: 0.13187447, z: 0.0008925274}
 --- !u!1 &881574321 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 152580, guid: 6a7fc75295a51f94c9774c45a3d025a8, type: 2}
@@ -27652,6 +27678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!111 &957260181
@@ -30102,6 +30129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!65 &1041349963
@@ -30720,6 +30748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4377db0e23f7ba04e887a13484676184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: Remote Interacted
   E_InInteractableTips: 
   S_InteractSubtitle: Remote_Sound
@@ -32273,6 +32302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3119afde84dfe9842900536bf673056f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: Bear Touched
   E_InInteractableTips: 
   S_InteractSubtitle: Bear_Sound
@@ -36932,6 +36962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!65 &1257233221
@@ -38772,6 +38803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8adbd9fb8c32c4eb933841f007374d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 4
   S_InteractTips: Laptop Interacted
   E_InInteractableTips: 
   S_InteractSubtitle: 
@@ -45271,6 +45303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!114 &1537099831
@@ -48192,6 +48225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!114 &1621555731
@@ -55232,6 +55266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!65 &1852524943
@@ -57957,6 +57992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!114 &1933150730
@@ -58219,6 +58255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!111 &1940076964
@@ -59805,6 +59842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Cabinet
   CloseAudioName: Cabinet_KeySound
 --- !u!114 &1990646442
@@ -62381,6 +62419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   MainAudioName: Drawer
   CloseAudioName: Drawer_KeySound
 --- !u!111 &2070876441
@@ -63789,6 +63828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdddc89464080dc418f5ebeeb0e0ca70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: 
   E_InInteractableTips: 
   S_InteractSubtitle: 
@@ -63883,6 +63923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93796bd1e266bad4296885817124cef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
   S_InteractTips: Guitar Fixed
   E_InInteractableTips: Screws Required
   S_InteractSubtitle: Guitar_Sound
