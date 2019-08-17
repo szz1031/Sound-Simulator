@@ -6,7 +6,7 @@ public class InteractStoryRemote : InteractStorySpecial<InteractStoryRemote> {
 
     public override void TryInteract()
     {
-        if (GameManager.Instance.m_CurrentStage != GameSetting.enum_Stage.Stage3&&!B_Interacted)
+        if (B_Interacted||GameManager.Instance.m_CurrentStage != GameSetting.enum_Stage.Stage3)
             return;
 
         InteractStoryLaptop.Instance.RemoteInteract();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractStoryTrigger : InteractStoryItem {
+public class InteractStoryTrigger1 : InteractStoryItem {
 
     private void OnTriggerEnter(Collider other)
     {

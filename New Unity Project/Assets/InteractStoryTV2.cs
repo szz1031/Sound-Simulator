@@ -17,4 +17,14 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
                 break;
         }
     }
+    public override void TryInteract()
+    {
+        if (B_Interacted || GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
+            return;
+
+        AudioManager.Play("TV_2_Plot_5", gameObject);
+        UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
+
+        base.TryInteract();
+    }
 }

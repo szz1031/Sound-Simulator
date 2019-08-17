@@ -7136,10 +7136,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 237397465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!114 &237397467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7156,6 +7155,17 @@ MonoBehaviour:
   E_InInteractableTips: 
   S_InteractSubtitle: 
   S_AudioKey: 
+--- !u!114 &237397468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237397465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &237834572
 GameObject:
   m_ObjectHideFlags: 0
@@ -26154,6 +26164,76 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9841004c0169eea4bb0d98931f43a575, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &931360164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 931360165}
+  - component: {fileID: 931360168}
+  - component: {fileID: 931360167}
+  - component: {fileID: 931360166}
+  m_Layer: 0
+  m_Name: GameEndTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931360165
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931360164}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.425, y: 1.104, z: -4.908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2041875166}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931360166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931360164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42181edad3afbe4682b1ad4b0027b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
+  S_InteractTips: 
+  E_InInteractableTips: 
+  S_InteractSubtitle: 
+  S_AudioKey: 
+--- !u!114 &931360167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931360164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f1f11285a2b1b448281c806e121cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &931360168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931360164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &931719633
 GameObject:
   m_ObjectHideFlags: 0
@@ -61621,6 +61701,7 @@ Transform:
   - {fileID: 1050439370}
   - {fileID: 879366479}
   - {fileID: 2129431057}
+  - {fileID: 931360165}
   m_Father: {fileID: 1608493869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63787,7 +63868,7 @@ GameObject:
   - component: {fileID: 2129431059}
   - component: {fileID: 2129431058}
   m_Layer: 0
-  m_Name: StageTrigger
+  m_Name: StageTrigger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
