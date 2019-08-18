@@ -26,15 +26,10 @@
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306074" Name="Computer_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_01" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306073" Name="Computer_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_02" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306072" Name="Computer_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_03" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306079" Name="Computer_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_04" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306078" Name="Computer_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_05" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3429306077" Name="Computer_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Computer_Plot_06" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" DurationType="OneShot" DurationMin="0.768861" DurationMax="0.768861"/>
 				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" DurationType="OneShot" DurationMin="0.697624" DurationMax="0.697624"/>
 				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
@@ -51,7 +46,13 @@
 				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
 				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
 				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
+				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Object\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
+				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447"/>
 				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="20.000000" DurationType="Infinite"/>
@@ -60,29 +61,40 @@
 				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369"/>
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
+				<Event Id="2080917547" Name="Guitar_Music" ObjectPath="\Events\Default Work Unit\Object\Guitar_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
 				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="4.000000" DurationType="Infinite"/>
+				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_04" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
 				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
-				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\Object\TV_2\New_Event" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
 				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="Infinite"/>
+				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Safe_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2314026839" Name="Safe_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Safe_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="189348657" Name="Safe_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Safe_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="779286979" Name="TV_1_Music_01" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="779286976" Name="TV_1_Music_02" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="779286977" Name="TV_1_Music_03" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="779286982" Name="TV_1_Music_04" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="779286983" Name="TV_1_Music_05" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="779286980" Name="TV_1_Music_06" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="147.000000" DurationMax="147.000000"/>
-				<Event Id="1395680911" Name="TV_1_Plot_01" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_01" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1395680908" Name="TV_1_Plot_02" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_02" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1395680909" Name="TV_1_Plot_03" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_03" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1395680906" Name="TV_1_Plot_04" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_04" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="326737287" Name="TV_1_Music_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="326737282" Name="TV_1_Music_4" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_4" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="727756043" Name="TV_1_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
+				<Event Id="727756040" Name="TV_1_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3892119440" Name="TV_2_Plot_01" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_01" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3892119443" Name="TV_2_Plot_02" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_02" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3892119442" Name="TV_2_Plot_03" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_03" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3892119445" Name="TV_2_Plot_04" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_04" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456376" Name="TV_2_Plot_3" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_3" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456383" Name="TV_2_Plot_4" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_4" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456381" Name="TV_2_Plot_6" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_6" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1865526238" Name="TV_Switch_Sound" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_Switch_Sound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Object\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -146,6 +158,14 @@
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_C8C0CF49.wem</Path>
 				</File>
+				<File Id="323133469" Language="SFX">
+					<ShortName>ANW1838_10_Violins-Virus.wav</ShortName>
+					<Path>SFX\ANW1838_10_Violins-Virus_4EA6E607.wem</Path>
+				</File>
+				<File Id="335077997" Language="SFX">
+					<ShortName>ANW3185_01_Cello-Prelude.wav</ShortName>
+					<Path>SFX\ANW3185_01_Cello-Prelude_4EA6E607.wem</Path>
+				</File>
 				<File Id="405076756" Language="SFX">
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
 					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_7B030611.wem</Path>
@@ -189,6 +209,10 @@
 				<File Id="573201444" Language="SFX">
 					<ShortName>REAPER Media\OnOffTap.wav</ShortName>
 					<Path>SFX\REAPER Media\OnOffTap_6296B0F9.wem</Path>
+				</File>
+				<File Id="643296694" Language="SFX">
+					<ShortName>ANW3088_05_Fairground.wav</ShortName>
+					<Path>SFX\ANW3088_05_Fairground_4EA6E607.wem</Path>
 				</File>
 				<File Id="646110042" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -250,6 +274,10 @@
 					<ShortName>Buttons_Switches_031.wav</ShortName>
 					<Path>SFX\Buttons_Switches_031_F3DF57DF.wem</Path>
 				</File>
+				<File Id="873524984" Language="SFX">
+					<ShortName>ANW1546_04_Karma.wav</ShortName>
+					<Path>SFX\ANW1546_04_Karma_4EA6E607.wem</Path>
+				</File>
 				<File Id="887034712" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_9838A50D.wem</Path>
@@ -257,6 +285,10 @@
 				<File Id="888892161" Language="SFX">
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
 					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_876437FB.wem</Path>
+				</File>
+				<File Id="911504740" Language="SFX">
+					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
+					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem</Path>
 				</File>
 				<File Id="924713307" Language="SFX">
 					<ShortName>EFX INT Wood Fire Crackle 02.wav</ShortName>
@@ -284,7 +316,7 @@
 				</File>
 				<File Id="1066902147" Language="SFX">
 					<ShortName>ANW3174_04_Arturos-Waltz.wav</ShortName>
-					<Path>SFX\ANW3174_04_Arturos-Waltz_27020439.wem</Path>
+					<Path>SFX\ANW3174_04_Arturos-Waltz_4EA6E607.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

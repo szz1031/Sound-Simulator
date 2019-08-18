@@ -1371,13 +1371,13 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>3.82354</XPos>
-												<YPos>-3.011</YPos>
+												<XPos>4.07092</XPos>
+												<YPos>-1.65772</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>3.43805</YPos>
+												<YPos>4.33762</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -1448,6 +1448,7 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1456,9 +1457,6 @@
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-										</Reference>
-										<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="Effect2">
 											<Custom>
@@ -1498,6 +1496,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW3088_05_Fairground" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" ShortID="586220262">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1517,6 +1518,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW3185_01_Cello-Prelude" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" ShortID="1057085930">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1536,6 +1540,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW3185_04_Nocturne" ID="{D4917C54-A11B-4301-8D1C-B5E15F4CF808}" ShortID="676153236">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1555,6 +1562,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW1546_04_Karma" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" ShortID="350914709">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1574,6 +1584,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW1838_10_Violins-Virus" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" ShortID="615320519">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1593,6 +1606,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" ShortID="338240600">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>

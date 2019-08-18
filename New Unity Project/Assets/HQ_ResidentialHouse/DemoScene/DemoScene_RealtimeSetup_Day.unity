@@ -15490,7 +15490,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 544981208}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
   m_Name: 
@@ -15505,35 +15505,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &544981210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 544981208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5b72a14e688e70c46a6f39aae5b9dc17,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &544981211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32385,8 +32356,8 @@ MonoBehaviour:
   F_InteractCooldown: 1
   S_InteractTips: Bear Touched
   E_InInteractableTips: 
-  S_InteractSubtitle: Bear_Sound
-  S_AudioKey: Bear_Sound
+  S_InteractSubtitle: A Music is played
+  S_AudioKey: Bear_Music
 --- !u!65 &1102973372
 BoxCollider:
   m_ObjectHideFlags: 0
