@@ -3,18 +3,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	189348657	Safe_Open			\Default Work Unit\Object\Cabinet\Safe_Open	
 	280670697	LightSwitch_Off			\Default Work Unit\Object\LightSwitch_Off	
 	290976602	Window_Rain			\Default Work Unit\Object\Window_Rain	
+	326737280	TV_1_Music_6			\Default Work Unit\Object\TV_1\TV_1_Music_6	
+	326737282	TV_1_Music_4			\Default Work Unit\Object\TV_1\TV_1_Music_4	
+	326737283	TV_1_Music_5			\Default Work Unit\Object\TV_1\TV_1_Music_5	
+	326737284	TV_1_Music_2			\Default Work Unit\Object\TV_1\TV_1_Music_2	
+	326737285	TV_1_Music_3			\Default Work Unit\Object\TV_1\TV_1_Music_3	
+	326737287	TV_1_Music_1			\Default Work Unit\Object\TV_1\TV_1_Music_1	
 	435953925	Gramophone_OnOffTap			\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap	
 	501750955	Door_Narrow_Handle_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close	
 	541226684	Door_Closet_Handle_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open	
 	554578976	GlassCabinet_Close			\Default Work Unit\Object\Cabinet\GlassCabinet_Close	
 	711857016	Door_Closet_Handle_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close	
+	727756040	TV_1_Plot_2			\Default Work Unit\Object\TV_1\TV_1_Plot_2	
+	727756043	TV_1_Plot_1			\Default Work Unit\Object\TV_1\TV_1_Plot_1	
 	761761105	Key_Pickup			\Default Work Unit\Object\Key\Key_Pickup	
-	779286976	TV_1_Music_02			\Default Work Unit\Object\TV_1\TV_1_Music_02	
-	779286977	TV_1_Music_03			\Default Work Unit\Object\TV_1\TV_1_Music_03	
-	779286979	TV_1_Music_01			\Default Work Unit\Object\TV_1\TV_1_Music_01	
-	779286980	TV_1_Music_06			\Default Work Unit\Object\TV_1\TV_1_Music_06	
-	779286982	TV_1_Music_04			\Default Work Unit\Object\TV_1\TV_1_Music_04	
-	779286983	TV_1_Music_05			\Default Work Unit\Object\TV_1\TV_1_Music_05	
 	850197956	Gramophone_Squeak_3			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3	
 	850197957	Gramophone_Squeak_2			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2	
 	850197958	Gramophone_Squeak_1			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1	
@@ -24,13 +26,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	996249450	Door_Wide_KeySound			\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound	
 	1066855742	GlassCabinet_KeySound			\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound	
 	1301402079	Door_Closet_Axis_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open	
-	1395680906	TV_1_Plot_04			\Default Work Unit\Object\TV_1\TV_1_Plot_04	
-	1395680908	TV_1_Plot_02			\Default Work Unit\Object\TV_1\TV_1_Plot_02	
-	1395680909	TV_1_Plot_03			\Default Work Unit\Object\TV_1\TV_1_Plot_03	
-	1395680911	TV_1_Plot_01			\Default Work Unit\Object\TV_1\TV_1_Plot_01	
 	1404152342	Fireplace			\Default Work Unit\Object\Fireplace	
 	1474002183	Safe_Close			\Default Work Unit\Object\Cabinet\Safe_Close	
 	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
+	1865526238	TV_Switch_Sound			\Default Work Unit\Object\TV_1\TV_Switch_Sound	
 	1948672150	Cabinet_Close			\Default Work Unit\Object\Cabinet\Cabinet_Close	
 	2043156035	Door_Wide_Handle_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close	
 	2080917547	Guitar_Music			\Default Work Unit\Object\Guitar_Music	
@@ -45,29 +44,30 @@ Event	ID	Name			Wwise Object Path	Notes
 	2458915778	Cabinet_Open			\Default Work Unit\Object\Cabinet\Cabinet_Open	
 	2532082576	TV_1_SetVolume			\Default Work Unit\Object\TV_1\TV_1_SetVolume	
 	2673340027	Gramophone_MainNoise			\Default Work Unit\Object\Gramophone\Gramophone_MainNoise	
+	2807456376	TV_2_Plot_3			\Default Work Unit\Object\TV_2\TV_2_Plot_3	
+	2807456377	TV_2_Plot_2			\Default Work Unit\Object\TV_2\TV_2_Plot_2	
+	2807456378	TV_2_Plot_1			\Default Work Unit\Object\TV_2\TV_2_Plot_1	
+	2807456381	TV_2_Plot_6			\Default Work Unit\Object\TV_2\TV_2_Plot_6	
+	2807456382	TV_2_Plot_5			\Default Work Unit\Object\TV_2\TV_2_Plot_5	
+	2807456383	TV_2_Plot_4			\Default Work Unit\Object\TV_2\TV_2_Plot_4	
 	2853512794	Door_Wide_Axis_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close	
 	2879668892	Gramophone_Charge			\Default Work Unit\Object\Gramophone\Gramophone_Charge	
+	2890816672	Laptop_Plot_04			\Default Work Unit\Object\Computer\Laptop_Plot_04	
+	2890816673	Laptop_Plot_05			\Default Work Unit\Object\Computer\Laptop_Plot_05	
+	2890816674	Laptop_Plot_06			\Default Work Unit\Object\Computer\Laptop_Plot_06	
+	2890816677	Laptop_Plot_01			\Default Work Unit\Object\Computer\Laptop_Plot_01	
+	2890816678	Laptop_Plot_02			\Default Work Unit\Object\Computer\Laptop_Plot_02	
+	2890816679	Laptop_Plot_03			\Default Work Unit\Object\Computer\Laptop_Plot_03	
 	2916866438	Door_Narrow_Axis_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open	
 	3041433330	Door_Narrow_KeySound			\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound	
-	3050945240	New_Event			\Default Work Unit\Object\TV_2\New_Event	
 	3173784171	Drawer_KeySound			\Default Work Unit\Object\Cabinet\Drawer_KeySound	
 	3333554874	Door_Locked			\Default Work Unit\Object\Door_Narrow\Door_Locked	
-	3429306072	Computer_Plot_03			\Default Work Unit\Object\Computer\Computer_Plot_03	
-	3429306073	Computer_Plot_02			\Default Work Unit\Object\Computer\Computer_Plot_02	
-	3429306074	Computer_Plot_01			\Default Work Unit\Object\Computer\Computer_Plot_01	
-	3429306077	Computer_Plot_06			\Default Work Unit\Object\Computer\Computer_Plot_06	
-	3429306078	Computer_Plot_05			\Default Work Unit\Object\Computer\Computer_Plot_05	
-	3429306079	Computer_Plot_04			\Default Work Unit\Object\Computer\Computer_Plot_04	
 	3463217684	Cabinet_KeySound			\Default Work Unit\Object\Cabinet\Cabinet_KeySound	
 	3498272821	Door_Closet_Axis_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close	
 	3525613408	Gramophone_NeedleTap			\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap	
 	3721891028	GlassCabinet_Open			\Default Work Unit\Object\Cabinet\GlassCabinet_Open	
 	3753111523	Drawer_Close			\Default Work Unit\Object\Cabinet\Drawer_Close	
-	3892119440	TV_2_Plot_01			\Default Work Unit\Object\TV_2\TV_2_Plot_01	
-	3892119442	TV_2_Plot_03			\Default Work Unit\Object\TV_2\TV_2_Plot_03	
-	3892119443	TV_2_Plot_02			\Default Work Unit\Object\TV_2\TV_2_Plot_02	
-	3892119444	TV_2_Plot_05			\Default Work Unit\Object\TV_2\TV_2_Plot_05	
-	3892119445	TV_2_Plot_04			\Default Work Unit\Object\TV_2\TV_2_Plot_04	
+	4140245326	Laptop_Interact			\Default Work Unit\Object\Computer\Laptop_Interact	
 	4254255911	Bear_Music			\Default Work Unit\Object\Bear_Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -100,6 +100,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1242965313	Distance_max20			\Default Work Unit\Distance_max20	
 
 Effect plug-ins	ID	Name	Type				Notes
+	486191333	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	620261131	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	2995775460	Room_Small	Wwise RoomVerb			
@@ -121,6 +122,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	255800652	fstp_wood_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_2629DED4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_03		3572
 	261043379	fstp_wood_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_980882C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_02		1979
 	307543888	fstp_concrete_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_C8C0CF49.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_02		3849
+	323133469	ANW1838_10_Violins-Virus	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW1838_10_Violins-Virus_4EA6E607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW1838_10_Violins-Virus		1810592
+	335077997	ANW3185_01_Cello-Prelude	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW3185_01_Cello-Prelude_4EA6E607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW3185_01_Cello-Prelude		1807891
 	405076756	fstp_carpet_02	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_7B030611.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_02		3195
 	413701673	MainNoise	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\MainNoise_D7231DD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\MainNoise		837059
 	424000544	fstp_carpet_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_41D71720.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_04		3476
@@ -132,6 +135,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	519856163	fstp_wood_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_EB782CB6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_04		4813
 	562544463	Rain_backgroundlayer	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Rain on Window Sill-stereo_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_backgroundlayer		3166776
 	573201444	OnOffTap	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\REAPER Media\OnOffTap_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\OnOffTap		4907
+	643296694	ANW3088_05_Fairground	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW3088_05_Fairground_4EA6E607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW3088_05_Fairground		2433199
 	646110042	fstp_wood_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_E89B8153.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_05		3527
 	651713173	On_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Buttons_Switches_031_0AE5A027.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_01		3286
 	653581658	fstp_concrete_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_BA6AAD55.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_01		4416
@@ -147,13 +151,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	830186802	Door_01_Lock1_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_DE34FA7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Lock1_01		4156
 	847065920	Rain_smallwindow	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Rain on Window Sill-Mono_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_smallwindow		1684541
 	854222693	On_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Buttons_Switches_031_F3DF57DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\On_2		2695
+	873524984	ANW1546_04_Karma	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW1546_04_Karma_4EA6E607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW1546_04_Karma		2805488
 	887034712	fstp_concrete_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_9838A50D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_05		4717
 	888892161	fstp_carpet_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_876437FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_03		3433
+	911504740	TVMusic_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\TVMusic_01		781011
 	924713307	main	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\main		1286744
 	945656954	fstp_concrete_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_76439697.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_03		5337
 	967272807	On_3	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Buttons_Switches_031_BED3955B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_3		2539
 	1002441243	New Sound SFX	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\Buttons_Switches_031_9DBD08F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\New Sound SFX		1900
 	1038279815	fstp_wood_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_C6DCA0C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_01		2391
 	1041985487	Door_01_Open_PartB	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_F5C7CC38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Open_PartB		4261
-	1066902147	ANW3174_04_Arturos-Waltz	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW3174_04_Arturos-Waltz_27020439.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW3174_04_Arturos-Waltz		2228177
+	1066902147	ANW3174_04_Arturos-Waltz	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Windows\SFX\ANW3174_04_Arturos-Waltz_4EA6E607.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV\ANW3174_04_Arturos-Waltz		2228177
 

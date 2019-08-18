@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{25144761-2932-4561-8087-885CE7EF58E4}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Bank_music" ID="{266C0AA5-9291-41A1-8397-4C359A6BC735}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>15000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -12,12 +19,11 @@
 					<PropertyList>
 						<Property Name="Maximum" Type="int32">
 							<ValueList>
-								<Value>20000000</Value>
+								<Value>30000000</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Door_Narrow" ID="{082F1705-E38B-45DC-96E7-1CE559AB1337}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>

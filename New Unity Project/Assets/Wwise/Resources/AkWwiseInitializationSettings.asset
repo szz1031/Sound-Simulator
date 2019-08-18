@@ -63,6 +63,7 @@ MonoBehaviour:
     m_SpatialAudioSettings:
       m_DiffractionShadowAttenuationFactor: 2
       m_DiffractionShadowDegrees: 30
+    m_RenderDuringFocusLoss: 0
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

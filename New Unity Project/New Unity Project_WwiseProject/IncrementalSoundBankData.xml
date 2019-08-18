@@ -3,7 +3,7 @@
 	<Platform GUID="{878853CE-EEE3-491C-B63F-5B9ABB301CBD}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Bank_SFX" Hash="627300368" Timestamp="1566009554"/>
+				<File Name="Bank_SFX" Hash="3135256013" Timestamp="1566093205"/>
 				<File Name="Bank_music" Hash="2808116759" Timestamp="1564819193"/>
 				<File Name="Bank_testSFX" Hash="126651906" Timestamp="1563703856"/>
 				<File Name="Init" Hash="1427336786" Timestamp="1564968121"/>
@@ -11,21 +11,21 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2580711129" Timestamp="1566009555"/>
+				<File Name="" Hash="4256565490" Timestamp="1566093205"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{DBAC9456-690E-4F2B-BC30-AB462CB4BC6B}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Bank_SFX" Hash="4110691308" Timestamp="1565579871"/>
+				<File Name="Bank_SFX" Hash="3135256013" Timestamp="1566093205"/>
 				<File Name="Bank_music" Hash="2808116759" Timestamp="1564819183"/>
 				<File Name="Init" Hash="410864876" Timestamp="1564970871"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1751651210" Timestamp="1565579871"/>
+				<File Name="" Hash="3805639256" Timestamp="1566093205"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
