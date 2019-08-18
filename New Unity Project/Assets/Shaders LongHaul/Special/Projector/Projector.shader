@@ -28,6 +28,7 @@ Shader "Special/Projector" {
 
 		struct appdata_t {
 			float4 vertex : POSITION;
+			float3 normal:NORMAL;
 			float2 texcoord: TEXCOORD0;
 			fixed4 color : COLOR;
 		};
@@ -50,7 +51,8 @@ Shader "Special/Projector" {
 			v2f vert(appdata_t v)
 			{
 				v2f o;
-				o.vertex = UnityObjectToClipPos(v.vertex);
+				
+				o.vertex = UnityObjectToClipPos(v.vertex+v.normal*0.001);
 				o.uvMainTex = mul(unity_Projector, v.vertex);
 				o.uvFalloff = mul(unity_ProjectorClip, v.vertex);
 				o.texcoord = TRANSFORM_TEX(o.uvMainTex.xyz,_MainTex);

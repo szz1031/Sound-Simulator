@@ -1,4 +1,4 @@
-﻿Shader "Game/Effect/BloomSpecific/Dissolve_BloomLine"
+﻿Shader "Game/Effect/BloomSpecific/Bloom_DissolveEdge"
 {
 	Properties
 	{
@@ -9,7 +9,8 @@
 	}
 	SubShader
 	{
-		Tags { "RenderType"="BloomDissolve" "Queue" = "Transparent" }
+		Name "MAIN"
+		Tags { "RenderType"="BloomDissolveEdge" "Queue" = "Transparent" }
 		Blend SrcAlpha OneMinusSrcAlpha
 			CGINCLUDE
 		#include "UnityCG.cginc"

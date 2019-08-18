@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BloomSpecific_Unlit
-  m_Shader: {fileID: 4800000, guid: b687ec3c46774764ba097482cb08eb5d, type: 3}
+  m_Name: BloomSpecific_Color_ViewDirDraw
+  m_Shader: {fileID: 4800000, guid: 478d1291ab26bb344b36f873596a6e07, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

@@ -1,4 +1,4 @@
-﻿Shader "Game/Realistic/Diffuse_Texture"
+﻿Shader "Game/Common/Diffuse_Texture"
 {
 	Properties
 	{
@@ -8,7 +8,7 @@
 	}
 	SubShader
 	{
-		Tags { "RenderType"="Opaque"  "LightMode"="ForwardBase"}
+		Tags { "RenderType"="Opaque"  }
 			Cull Back
 
 			CGINCLUDE
@@ -18,11 +18,15 @@
 			ENDCG
 		Pass		//Base Pass
 		{
+			Tags{"LightMode" = "ForwardBase"}
+			Cull Back
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma multi_compile_fwdbase
 
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -39,8 +43,6 @@
 				SHADOW_COORDS(3)
 			};
 
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
 			float4 _Color;
 			float _Lambert;
 
@@ -69,6 +71,50 @@
 			ENDCG
 		}
 
-		USEPASS "Game/Realistic/Diffuse_Texture_Normalmap/SHADOWCASTER"
+		Pass
+		{
+			Name "ForwardAdd"
+			Tags{"LightMode" = "ForwardAdd"}
+			Blend One One
+			CGPROGRAM
+			#pragma multi_compile_fwdadd
+			#pragma vertex vertAdd
+			#pragma fragment fragAdd
+
+			struct appdata
+			{
+				float4 vertex : POSITION;
+				float3 normal:NORMAL;
+			};
+
+			struct v2f
+			{
+				float4 pos : SV_POSITION;
+				float3 worldPos:TEXCOORD1;
+				float diffuse : TEXCOORD2;
+			};
+
+			v2f vertAdd(appdata v)
+			{
+				v2f o;
+				o.pos = UnityObjectToClipPos(v.vertex);
+				o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+				fixed3 worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject)); //法线方向n
+				fixed3 worldLightDir = normalize(UnityWorldSpaceLightDir(o.worldPos));
+				o.diffuse = saturate(dot(worldLightDir, worldNormal));
+				return o;
+			}
+
+			fixed4 fragAdd(v2f i) :SV_TARGET
+			{
+				fixed3 diffuse = i.diffuse*_LightColor0.rgb;
+				UNITY_LIGHT_ATTENUATION(atten,i,i.worldPos);
+				return fixed4(diffuse * atten,1);
+			}
+				ENDCG
+		}
+
+		USEPASS "Game/Common/Diffuse_Texture_Normalmap/SHADOWCASTER"
 	}
+
 }

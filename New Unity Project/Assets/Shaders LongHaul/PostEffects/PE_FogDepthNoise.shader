@@ -8,7 +8,8 @@
 		_FogStart("Fog Start",Float) = 0
 		_FogEnd("Fog End",Float) = 1
 		_NoiseTex("Noise Tex",2D) = "white"{}
-		_NoiseAmount("Noise Amount",Range(0,3)) = 1
+		_NoisePow("Noise Pow",Float) = 1
+		_NoiseLambert("Noise Lambert",Range(0,1))= 0
 		_FogSpeedX("Fog Speed Horizontal",Range(-.5,.5)) = .5
 		_FogSpeedY("Fog Speed Vertical",Range(-.5,.5)) = .5
 	}
@@ -29,19 +30,21 @@
 				half4 _MainTex_TexelSize;
 				sampler2D _CameraDepthTexture;
 				half _FogDensity;
+				float _FogPow;
 				fixed4 _FogColor;
 				float _FogStart;
 				float _FogEnd;
 				sampler2D _NoiseTex;
-				half _FogSpeedX;
-				half _FogSpeedY;
-				half _NoiseAmount;
+				float _NoisePow;
+				float _NoiseLambert;
+				float _FogSpeedX;
+				float _FogSpeedY;
 
 			struct v2f
 			{
 				float2 uv : TEXCOORD0;
 				float4 vertex : SV_POSITION;
-				half2 uv_depth:TEXCOORD1;
+				float2 uv_depth:TEXCOORD1;
 				float4 interpolatedRay:TEXCOORD2;
 			};
 
@@ -69,14 +72,11 @@
 				float linearDepth = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture,i.uv_depth));
 				float3 worldPos = _WorldSpaceCameraPos+ i.interpolatedRay.xyz*linearDepth;
 				float2 speed = _Time.y*float2(_FogSpeedX, _FogSpeedY);
-				float noise = (tex2D(_NoiseTex, worldPos.xz/50 + speed).r - .5)*_NoiseAmount;
-				float fogDensity;
-
-			    fogDensity = saturate((_FogEnd - worldPos.y)*_FogDensity*(1+noise) /(_FogEnd - _FogStart));
+				float noise = pow((tex2D(_NoiseTex, worldPos.xz/20 + speed).r), _NoisePow)*(1- _NoiseLambert) + _NoiseLambert;
+				float fogDensity = saturate((_FogEnd - worldPos.y)*_FogDensity*noise /(_FogEnd - _FogStart));
 				fixed3 col = tex2D(_MainTex, i.uv).rgb;
 				fogDensity = fogDensity==1 ? _FogColor.a : fogDensity;
-				col.rgb = lerp(col.rgb, col.rgb+_FogColor.rgb, fogDensity);
-
+				col.rgb += _FogColor.rgb*fogDensity;
 				return fixed4( col,1);
 			}
 			ENDCG

@@ -124,8 +124,6 @@ Shader "Game/Toon/Diffuse_Ramp" {
 
 				float4 lightColor = _LightColor0 * (diff);
 				c = c * _Color * lightColor ;
-				//c = lightColor;
-				//c = (1, 1, 1, 1);
 				return c;
 			}
 			ENDCG

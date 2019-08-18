@@ -1,4 +1,4 @@
-﻿Shader "Game/Realistic/Diffuse_Color"
+﻿Shader "Game/Common/Diffuse_Color"
 {
 	Properties
 	{
@@ -58,7 +58,7 @@
 			}
 			ENDCG
 		}
-		USEPASS "Game/Realistic/Diffuse_Texture_Normalmap/SHADOWCASTER"
+		USEPASS "Game/Common/Diffuse_Texture_Normalmap/SHADOWCASTER"
 
 	}
 }
