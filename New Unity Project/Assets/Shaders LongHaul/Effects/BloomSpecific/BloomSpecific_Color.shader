@@ -2,7 +2,6 @@
 {
 	Properties
 	{
-	    _MainTex("Texture", 2D) = "white" {}
 	    _Color("_Color",Color)=(1,1,1,1)
 	}
 
@@ -22,18 +21,19 @@
 			#include "UnityCG.cginc"
 			struct appdata
 			{
+				float4 vertex : POSITION;
 			};
 
 			struct v2f
 			{
+				float4 vertex : POSITION;
 			};
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
 			float4 _Color;
 
 			v2f vert(appdata v)
 			{
 				v2f o;
+				o.vertex = UnityObjectToClipPos(v.vertex);
 				return o;
 			}
 
