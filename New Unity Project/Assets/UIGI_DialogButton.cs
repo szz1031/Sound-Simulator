@@ -10,6 +10,8 @@ public class UIGI_DialogButton : UIT_GridItem {
     protected override void Init()
     {
         base.Init();
+        if (m_Text)
+            return;
         GetComponentInChildren<Button>().onClick.AddListener(Trigger);
         m_Text=GetComponentInChildren<Text>();
     }
