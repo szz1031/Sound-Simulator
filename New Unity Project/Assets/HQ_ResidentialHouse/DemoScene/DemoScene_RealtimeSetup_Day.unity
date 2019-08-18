@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 541489020}
-  m_IndirectSpecularColor: {r: 0.06639521, g: 0.07051813, b: 0.071752585, a: 1}
+  m_IndirectSpecularColor: {r: 0.066395216, g: 0.07051801, b: 0.07175254, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112001254, guid: 062f03964cad7f6469589a82d238387f,
+  m_LightingDataAsset: {fileID: 112001244, guid: 062f03964cad7f6469589a82d238387f,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &5
@@ -15490,7 +15490,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 544981208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
   m_Name: 
