@@ -8,6 +8,7 @@ public class InteractStoryItem: InteractItemBase{
     public string S_InteractTips,E_InInteractableTips, S_InteractSubtitle,S_AudioKey;
     public bool B_Interactable { get; protected set; } = true;
     public bool B_Interacted { get; protected set; } = false;
+
     private void Start()
     {
         TBroadCaster<enum_BC_Game>.Add<enum_Stage>(enum_BC_Game.OnStageStart, OnStageStart);

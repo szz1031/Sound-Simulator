@@ -97,7 +97,7 @@ public class LightSwitch : InteractorBase {
 				_light.SetActive (false);
 			}
 		}
-		B_LightsOn = false;
+
 		if (m_Animation != null) {
 			m_Animation [m_AnimName].normalizedTime = 1;
 			m_Animation [m_AnimName].speed = 1;
@@ -113,7 +113,7 @@ public class LightSwitch : InteractorBase {
 				_light.SetActive (true);
 			}
 		}
-		B_LightsOn = true;
+
 		if (m_Animation != null) {
 			m_Animation [m_AnimName].normalizedTime = 0;
 			m_Animation [m_AnimName].speed = -1;
@@ -125,18 +125,28 @@ public class LightSwitch : InteractorBase {
     public override bool TryInteract()
     {
         base.TryInteract();
-        if (B_LightsOn)
-        {
-            Light_Off();
-            DisableEmission();
-        }
-        else
+        B_LightsOn = !B_LightsOn;
+        Switch(B_LightsOn);
+        return true;
+    }
+
+    public void Switch(bool on)
+    {
+        if (B_LightsOn == on)
+            return;
+
+        B_LightsOn = on;
+        if (on)
         {
             Light_On();
             EnableEmission();
         }
-        AudioManager.Play(MainAudioName+(B_LightsOn?"_On":"_Off"),this.gameObject);
-        return true;
+        else
+        {
+            Light_Off();
+            DisableEmission();
+        }
+        AudioManager.Play(MainAudioName + (B_LightsOn ? "_On" : "_Off"), this.gameObject);
     }
 
     AnimationState GetFistClip()

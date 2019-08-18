@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class InteractDoor : InteractItemBase, ISingleCoroutine
 {
+    protected override bool B_IgnoreSearchMode => true;
     protected AudioBase[] m_Audios;
     protected Animation m_Animation;
     public string KeyAudioName;
@@ -24,6 +25,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
     }
     public override void TryInteract()
     {
+        base.TryInteract();
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
             AudioManager.Play("Door_Locked",this.gameObject);

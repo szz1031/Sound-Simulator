@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GameSetting;
 public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
+    protected override bool B_IgnoreSearchMode => true;
     protected override void OnStageStart(enum_Stage stage)
     {
         switch (stage)
@@ -19,9 +20,13 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
     }
     public override void TryInteract()
     {
-        if (B_Interacted || GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
+        if ( GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
+        {
+            if (!B_Interacted)
+                GameManager.Instance.SwitchSearchMode();
             return;
-
+        }
+        
         AudioManager.Play("TV_2_Plot_5", gameObject);
         UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
 

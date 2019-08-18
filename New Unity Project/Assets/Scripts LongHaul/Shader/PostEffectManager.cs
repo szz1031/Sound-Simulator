@@ -20,6 +20,15 @@ public class PostEffectManager : SingletonMono<PostEffectManager> {
         instance.m_PostEffects.Traversal((PostEffectBase effect)=> { effect.OnDestroy(); });
         instance.m_PostEffects.Clear();
     }
+    public static void RemovePostEffect<T>()
+    {
+        PostEffectBase effect = instance.m_PostEffects.Find(p => p.GetType() == typeof(T));
+        if (effect == null)
+            return;
+
+        effect.OnDestroy();
+        instance.m_PostEffects.Remove(effect);
+    }
 
     List<PostEffectBase> m_PostEffects=new List<PostEffectBase>();
     Camera cam_cur;

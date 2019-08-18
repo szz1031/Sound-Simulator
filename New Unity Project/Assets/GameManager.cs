@@ -8,13 +8,16 @@ public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
     List<StoryBranch> m_Branches = new List<StoryBranch>();
     List<int> m_KeyObtained = new List<int>();
     public enum_Stage m_CurrentStage;
+    public bool B_SearchMode = false;
     protected override void Awake()
     {
         base.Awake();
         TBroadCaster<enum_BC_Game>.Init();
     }
     private void Start()
-    {
+    {PostEffectManager.AddPostEffect<PE_BSC>();
+        B_SearchMode = true;
+        SwitchSearchMode();
         PCInputManager.Instance.AddBinding<GameManager>(enum_BindingsName.Helps, UIManager.Instance.SwitchHelpsShow);
         TCommon.TraversalEnum((enum_Branch value) =>
         {
@@ -36,7 +39,6 @@ public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
     public void OnStagePush(enum_Stage stage)
     {
         m_CurrentStage = stage;
-        Debug.Log(m_CurrentStage);
         TBroadCaster<enum_BC_Game>.Trigger(enum_BC_Game.OnStageStart, m_CurrentStage);
     }
     public bool B_CanDoorOpen(int requireKeyIndex) => m_KeyObtained.Contains(requireKeyIndex);
@@ -97,5 +99,26 @@ public class GameManager : SimpleSingletonMono<GameManager>, ISingleCoroutine {
     public void OnSafeCodeAcquired()
     {
         PickupKey(9);
+    }
+
+    public void SwitchSearchMode()
+    {
+        B_SearchMode = !B_SearchMode;
+        AudioManager.SwitchGameStatus(B_SearchMode);
+        PE_BSC bsc = PostEffectManager.GetPostEffect<PE_BSC>();
+        EnviormentManager.Instance.m_switches.Traversal((LightSwitch ls)=>{ ls.Switch(!B_SearchMode); });
+        this.StartSingleCoroutine(0, TIEnumerators.ChangeValueTo((float value) => { bsc.SetEffect(0.6f+value*0.4f, value, .8f+value*0.2f); }, B_SearchMode?1f:0f,B_SearchMode?0f:1f, 2f));
+        if (B_SearchMode)
+        {
+
+            PostEffectManager.AddPostEffect<PE_DepthOutline>().SetEffect(Color.white,.5f,0f);
+            PostEffectManager.AddPostEffect<PE_BloomSpecific>();
+        }
+        else
+        {
+            PostEffectManager.RemovePostEffect<PE_DepthOutline>();
+            PostEffectManager.RemovePostEffect<PE_BloomSpecific>();
+
+        }
     }
 }

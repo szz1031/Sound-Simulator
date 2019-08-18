@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractCabinet : InteractItemBase,ISingleCoroutine {
+    protected override bool B_IgnoreSearchMode => true;
     protected Animation m_Animation;
     public string MainAudioName="Cabinet";
     public string CloseAudioName="Cabinet_KeySound";
@@ -21,6 +22,8 @@ public class InteractCabinet : InteractItemBase,ISingleCoroutine {
         b_Opening = true;
         string name = MainAudioName +  (b_Opened ? "_Close" : "_Open");
         AudioManager.Play(name,this.gameObject);
+        UIManager.Instance.AddSubtitle(name);
+        
         m_Animation[m_clipName].normalizedTime = b_Opened ? .4f : 0;
         m_Animation[m_clipName].speed = b_Opened ? -1 : 1;
         m_Animation.Play(m_clipName);

@@ -28,4 +28,15 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         }
         Instance.Ww_FootStep.Post(obj);
     }
+    public static void SwitchGameStatus(bool searchMode)
+    {
+        if (!searchMode)
+        {
+            AkSoundEngine.SetState("WorldState", "A");
+        }
+        else
+        {
+            AkSoundEngine.SetState("WorldState", "B");
+        }
+    }
 }

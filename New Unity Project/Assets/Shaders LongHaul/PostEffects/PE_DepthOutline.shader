@@ -48,7 +48,7 @@
 				half2 diffNormal = abs(centerNormal - sampleNormal);
 				half diffDepth = abs(centerDepth - sampleDepth);
 
-				bool isSameNormal = (diffNormal.x + diffNormal.y) < .1;
+				bool isSameNormal = (diffNormal.x + diffNormal.y) < .1f;
 
 				return  isSameNormal?0:(diffDepth> _DepthBias ?1:0);
 			}

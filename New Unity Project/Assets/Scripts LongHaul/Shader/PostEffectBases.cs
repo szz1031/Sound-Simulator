@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PostEffectBase  {
     const string S_ParentPath = "Hidden/PostEffect/";
-    Camera cam_Cur;
+    Camera m_Camera;
     public Material mat_Cur { get; private set; }
     Shader sd_Cur;
     bool b_supported;
@@ -44,11 +44,48 @@ public class PostEffectBase  {
     }
     public virtual void OnSetEffect(Camera cam)
     {
-        cam_Cur = cam;
+        m_Camera = cam;
     }
     public virtual void OnDestroy()
     {
         GameObject.Destroy(mat_Cur);
+    }
+    protected Matrix4x4 ViewProjectionMatrixInverse => (Cam_Cur.projectionMatrix * Cam_Cur.worldToCameraMatrix).inverse;
+    protected Matrix4x4 FrustumCornorsRay()
+    {
+        float fov = Cam_Cur.fieldOfView;
+        float near = Cam_Cur.nearClipPlane;
+        float far = Cam_Cur.farClipPlane;
+        float aspect = Cam_Cur.aspect;
+
+        Transform cameraTrans = m_Camera.transform;
+        float halfHeight = near * Mathf.Tan(fov * .5f * Mathf.Deg2Rad);
+        Vector3 toRight = cameraTrans.right * halfHeight * aspect;
+        Vector3 toTop = cameraTrans.up * halfHeight;
+
+        Vector3 topLeft = cameraTrans.forward * near + toTop - toRight;
+        float scale = topLeft.magnitude / near;
+        topLeft.Normalize();
+        topLeft *= scale;
+
+        Vector3 topRight = cameraTrans.forward * near + toTop + toRight;
+        topRight.Normalize();
+        topRight *= scale;
+
+        Vector3 bottomLeft = cameraTrans.forward * near - toTop - toRight;
+        bottomLeft.Normalize();
+        bottomLeft *= scale;
+        Vector3 bottomRight = cameraTrans.forward * near - toTop + toRight;
+        bottomRight.Normalize();
+        bottomRight *= scale;
+
+        Matrix4x4 frustumCornersRay = Matrix4x4.identity;
+        frustumCornersRay.SetRow(0, bottomLeft);
+        frustumCornersRay.SetRow(1, bottomRight);
+        frustumCornersRay.SetRow(2, topLeft);
+        frustumCornersRay.SetRow(3, topRight);
+
+        return frustumCornersRay;
     }
     #region Get
     protected Material Mat_Cur
@@ -76,7 +113,7 @@ public class PostEffectBase  {
     {
         get
         {
-            return cam_Cur;
+            return m_Camera;
         }
     }
     #endregion
@@ -86,7 +123,7 @@ public class PE_ViewNormal : PostEffectBase
     public override void OnSetEffect(Camera cam)
     {
         base.OnSetEffect(cam);
-        cam.depthTextureMode |= DepthTextureMode.DepthNormals;
+        cam.depthTextureMode = DepthTextureMode.DepthNormals;
     }
 }
 public class PE_ViewDepth : PostEffectBase
@@ -108,19 +145,6 @@ public class PE_BSC : PostEffectBase {      //Brightness Saturation Contrast
         Mat_Cur.SetFloat("_Brightness", _brightness);
         Mat_Cur.SetFloat("_Saturation", _saturation);
         Mat_Cur.SetFloat("_Contrast", _contrast);
-    }
-}
-public class PE_EdgeDetection : PostEffectBase  //Edge Detection Easiest
-{
-    public void SetCamera(Camera _cam)
-    {
-        base.OnSetEffect(_cam);
-        SetEffect(Color.green);
-    }
-    public void SetEffect(Color _edgeColor,float _showEdge = 1f )
-    {
-        Mat_Cur.SetColor("_EdgeColor", _edgeColor);
-        Mat_Cur.SetFloat("_ShowEdge", _showEdge);
     }
 }
 public class PE_GaussianBlur : PostEffectBase       //Gassuain Blur
@@ -284,12 +308,10 @@ public class PE_MotionBlurDepth:PE_MotionBlur
 }
 public class PE_FogDepth : PostEffectBase
 {
-    Transform tra_Cam;
     public override void OnSetEffect(Camera cam)
     {
         base.OnSetEffect(cam);
         cam.depthTextureMode |= DepthTextureMode.Depth;
-        tra_Cam = Cam_Cur.transform;
         SetEffect(TCommon.ColorAlpha( Color.white,.5f));
     }
     public PE_FogDepth SetEffect(Color _fogColor,  float _fogDensity = .5f, float _fogYStart = -1f, float _fogYEnd = 5f)
@@ -300,64 +322,35 @@ public class PE_FogDepth : PostEffectBase
         Mat_Cur.SetFloat("_FogEnd", _fogYEnd);
         return this;
     }
-    public void SetTexture(Texture noise)
+    public void SetTexture(Texture noise,float _noiseLambert=.3f,float _noisePow=1f)
     {
         Mat_Cur.SetTexture("_NoiseTex", noise);
+        Mat_Cur.SetFloat("_NoiseLambert", _noiseLambert);
+        Mat_Cur.SetFloat("_NoisePow", _noisePow);
     }
     public override void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         if (RenderDefaultImage(source,destination))
             return;
-
-        float fov = Cam_Cur.fieldOfView;
-        float near = Cam_Cur.nearClipPlane;
-        float far = Cam_Cur.farClipPlane;
-        float aspect = Cam_Cur.aspect;
-
-        float halfHeight = near * Mathf.Tan(fov * .5f * Mathf.Deg2Rad) ;
-        Vector3 toRight = tra_Cam.right * halfHeight * aspect;
-        Vector3 toTop = tra_Cam.up * halfHeight ;
-
-        Vector3 topLeft = tra_Cam.forward * near + toTop - toRight;
-        float scale = topLeft.magnitude / near;
-        topLeft.Normalize();
-        topLeft *= scale;
-
-        Vector3 topRight = tra_Cam.forward * near + toTop + toRight;
-        topRight.Normalize();
-        topRight *= scale;
-
-        Vector3 bottomLeft = tra_Cam.forward * near - toTop - toRight;
-        bottomLeft.Normalize();
-        bottomLeft *= scale;
-        Vector3 bottomRight = tra_Cam.forward * near - toTop + toRight;
-        bottomRight.Normalize();
-        bottomRight *= scale;
-
-        Matrix4x4 frustumCornersRay = Matrix4x4.identity;
-        frustumCornersRay.SetRow(0, bottomLeft);
-        frustumCornersRay.SetRow(1, bottomRight);
-        frustumCornersRay.SetRow(2, topLeft);
-        frustumCornersRay.SetRow(3, topRight);
-
-        Mat_Cur.SetMatrix("_FrustumCornersRay", frustumCornersRay);
-        Mat_Cur.SetMatrix("_VPMatrixInverse", (Cam_Cur.projectionMatrix * Cam_Cur.worldToCameraMatrix).inverse);
+        
+        Mat_Cur.SetMatrix("_FrustumCornersRay", FrustumCornorsRay());
+        Mat_Cur.SetMatrix("_VPMatrixInverse",ViewProjectionMatrixInverse);
         Graphics.Blit(source,destination,Mat_Cur);
     }
 }
-public class PE_EdgeDetectionDepth:PE_EdgeDetection
+public class PE_DepthOutline:PostEffectBase
 {
     public override void OnSetEffect(Camera cam)
     {
         base.OnSetEffect(cam);
         cam.depthTextureMode |= DepthTextureMode.DepthNormals;
-        SetEffect();
+        SetEffect(Color.black);
     }
-    public void SetEffect(float _sampleDistance = 1f, float _sensitivityDepth = 1f, float _sensitivityNormal = 1f)
+    public void SetEffect(Color _edgeColor, float _sampleDistance = 1f, float _depthBias=.001f)
     {
+        Mat_Cur.SetColor("_EdgeColor", _edgeColor);
         Mat_Cur.SetFloat("_SampleDistance", _sampleDistance);
-        Mat_Cur.SetFloat("_SensitivityDepth", _sensitivityDepth);
-        Mat_Cur.SetFloat("_SensitivityNormals", _sensitivityNormal);
+        Mat_Cur.SetFloat("_DepthBias", _depthBias);
     }
 }
 public class PE_FogDepthNoise : PE_FogDepth
@@ -395,6 +388,8 @@ public class PE_BloomSpecific : PostEffectBase //Need To Bind Shader To Specific
         GameObject temp = new GameObject("Render Camera");
         temp.transform.SetParent(Cam_Cur.transform);
         temp.transform.localPosition = Vector3.zero;
+        temp.transform.localRotation = Quaternion.identity;
+        temp.transform.localScale = Vector3.one;
         m_RenderCamera = temp.AddComponent<Camera>();
         m_RenderCamera.clearFlags = CameraClearFlags.SolidColor;
         m_RenderCamera.backgroundColor = Color.black;
@@ -404,7 +399,7 @@ public class PE_BloomSpecific : PostEffectBase //Need To Bind Shader To Specific
         m_RenderCamera.farClipPlane = Cam_Cur.farClipPlane;
         m_RenderCamera.fieldOfView = Cam_Cur.fieldOfView;
         m_RenderCamera.enabled = false;
-        m_RenderTexture = new RenderTexture(Screen.width, Screen.height, 1);
+        m_RenderTexture = new RenderTexture(Cam_Cur.scaledPixelWidth, Cam_Cur.scaledPixelHeight, 1);
         m_RenderCamera.targetTexture = m_RenderTexture;
         SetEffect();
     }
@@ -420,5 +415,13 @@ public class PE_BloomSpecific : PostEffectBase //Need To Bind Shader To Specific
         m_GaussianBlur.OnRenderImage(m_RenderTexture, m_RenderTexture);     //Blur
         Mat_Cur.SetTexture("_RenderTex", m_RenderTexture);
         Graphics.Blit(source, destination, Mat_Cur, 1);        //Mix
+    }
+}
+public class PE_DepthSSAO : PostEffectBase
+{
+    public override void OnSetEffect(Camera cam)
+    {
+        base.OnSetEffect(cam);
+        Cam_Cur.depthTextureMode |= DepthTextureMode.Depth;
     }
 }
