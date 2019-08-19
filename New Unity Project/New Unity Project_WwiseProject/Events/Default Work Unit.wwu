@@ -566,7 +566,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="TV" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="TV_Music" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

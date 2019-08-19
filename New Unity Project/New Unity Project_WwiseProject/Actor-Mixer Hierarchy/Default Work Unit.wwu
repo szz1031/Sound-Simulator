@@ -1421,7 +1421,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="TV" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" ShortID="191161182">
+						<ActorMixer Name="TV_Music" ID="{74B33CC8-6A8D-4AE0-AD13-6FF94D4AEE8E}" ShortID="191161182">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
