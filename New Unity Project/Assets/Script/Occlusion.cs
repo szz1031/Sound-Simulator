@@ -57,9 +57,11 @@ public class Occlusion : MonoBehaviour
                 {
                     PassFloor = true;
                     Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                    break;
                 }
             }
 
+            if (!PassFloor) { Debug.DrawRay(SourcePosition, RayDirection1, Color.green); }
 
             // avoid camera being blocked
             if (HitInfo2.distance < 0.8 && DisToListener - HitInfo1.distance >= 0.8)

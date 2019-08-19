@@ -35749,6 +35749,18 @@ Prefab:
       propertyPath: m_TagString
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 981a85e6b975cc743a50a9c9dc422efe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 981a85e6b975cc743a50a9c9dc422efe, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2105217
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 981a85e6b975cc743a50a9c9dc422efe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000023842
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 981a85e6b975cc743a50a9c9dc422efe, type: 3}
   m_IsPrefabParent: 0
@@ -61170,7 +61182,7 @@ GameObject:
   - component: {fileID: 1992699074}
   m_Layer: 0
   m_Name: Ceiling_garage
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
