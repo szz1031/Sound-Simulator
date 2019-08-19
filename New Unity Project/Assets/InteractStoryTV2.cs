@@ -26,7 +26,9 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
                 GameManager.Instance.SwitchSearchMode();
             return;
         }
-        
+
+        if (B_Interacted)
+            return;
         AudioManager.Play("TV_2_Plot_5", gameObject);
         UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
 
