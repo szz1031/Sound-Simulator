@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
         PCInputManager.Instance.AddMovementDelta(OnMove);
         PCInputManager.Instance.AddMouseRotateDelta(OnRotate);
         PCInputManager.Instance.AddBinding<PlayerController>(enum_BindingsName.Interact,TryInterach);
+        PCInputManager.Instance.AddBinding<PlayerController>(enum_BindingsName.Switch,GameManager.Instance.SwitchSearchMode);
         PCInputManager.Instance.AddBinding<PlayerController>(enum_BindingsName.Crouch, (bool onCrouch) => { b_crouching = onCrouch; });
     }
     RaycastHit hit = new RaycastHit();

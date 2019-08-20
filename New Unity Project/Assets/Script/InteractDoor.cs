@@ -9,6 +9,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
     protected override bool B_IgnoreSearchMode => true;
     protected AudioBase[] m_Audios;
     protected Animation m_Animation;
+    public string MainAudioName = "Door";
     public string KeyAudioName;
     public int I_KeyIndex = 0;
     public bool B_InteractOnce = false;
@@ -28,9 +29,9 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
         base.TryInteract();
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
-            AudioManager.Play("Door_Locked",this.gameObject);
-            UIManager.Instance.AddSubtitle("Door_Locked");
-            UIManager.Instance.AddTips("Door Locked!");
+            AudioManager.Play(MainAudioName+"_Locked",this.gameObject);
+            UIManager.Instance.AddSubtitle(MainAudioName+" Locked");
+            UIManager.Instance.AddTips(MainAudioName+" Locked!");
             return;
         }
 
@@ -43,7 +44,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
             return;
         b_Opening = true;
         string subName = b_Opened ? "Close" : "Open";
-        UIManager.Instance.AddSubtitle("Door " + subName);
+        UIManager.Instance.AddSubtitle(MainAudioName+"_" + subName);
         m_Audios.Traversal((AudioBase audio) => { audio.Play(subName); });
         m_Animation[m_clipName].normalizedTime = b_Opened ? .4f : 0;
         m_Animation[m_clipName].speed = b_Opened ? -1 : 1;

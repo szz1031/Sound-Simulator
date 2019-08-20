@@ -20,15 +20,9 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
     }
     public override void TryInteract()
     {
-        if ( GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
-        {
-            if (!B_Interacted)
-                GameManager.Instance.SwitchSearchMode();
+        if (B_Interactable|| GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
             return;
-        }
-
-        if (B_Interacted)
-            return;
+        
         AudioManager.Play("TV_2_Plot_5", gameObject);
         UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
 
