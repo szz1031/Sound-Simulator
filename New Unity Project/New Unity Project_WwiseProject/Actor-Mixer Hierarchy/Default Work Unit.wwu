@@ -1371,13 +1371,13 @@
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
 											<Point>
-												<XPos>4.07092</XPos>
-												<YPos>-1.65772</YPos>
+												<XPos>3.71887</XPos>
+												<YPos>-0.73397</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>4.33762</YPos>
+												<YPos>4.1501</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -1769,9 +1769,10 @@
 							<ChildrenList>
 								<Sound Name="Charge" ID="{376AC7D9-F4C5-47FF-ADCB-201D647B55EC}" ShortID="41692453">
 									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1896,6 +1897,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="NeedleTap" ID="{8E65CD76-CD36-41BA-8319-CDF86272CAFC}" ShortID="118778000">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1921,6 +1925,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="OnOffTap" ID="{357798B6-F7AB-4FEE-A977-B28EB322EF28}" ShortID="217019418">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -1941,6 +1948,7 @@
 								</Sound>
 								<Sound Name="Squeak_1" ID="{962915D7-E882-4A86-AA26-49720C38A171}" ShortID="880523522">
 									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-150</Value>
@@ -1979,6 +1987,7 @@
 								</Sound>
 								<Sound Name="Squeak_2" ID="{ABE7D8AC-D6F6-478B-A66A-81D357CBB14E}" ShortID="383284103">
 									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-510</Value>
@@ -2016,6 +2025,7 @@
 								</Sound>
 								<Sound Name="Squeak_3" ID="{0F319CD2-1DF9-4E8B-98AD-7018B3BE4A6E}" ShortID="676291968">
 									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -2062,6 +2072,53 @@
 								</Reference>
 							</ReferenceList>
 						</Sound>
+						<ActorMixer Name="Dialogue" ID="{80F812B8-D207-4C3B-A7E3-9446B11B27D7}" ShortID="874793418">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="TV2" ID="{9E0C40D5-194B-406E-9F55-73A5973AD1D6}" ShortID="729219664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="New Sound Voice" ID="{1D0AF225-AFE1-41D2-B753-02B01B8413F5}" ShortID="978494114">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Laptop" ID="{06401A8C-C13F-4286-B0A0-A5C728DDCD55}" ShortID="678607951">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -2154,6 +2211,11 @@
 						<Sound Name="Rain_backgroundlayer" ID="{5F5F61B2-58F1-4C32-BDF0-B001C1BEAF59}" ShortID="448695720">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>

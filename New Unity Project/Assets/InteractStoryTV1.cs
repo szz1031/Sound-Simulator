@@ -21,7 +21,7 @@ public class InteractStoryTV1 : InteractStorySpecial<InteractStoryTV1> {
     }
     public void RemoteInteract()
     {
-        AudioManager.Play("TV_1_SwitchVolume", this.gameObject);
-        UIManager.Instance.AddSubtitle("Volume_Up");
+        AudioManager.Play("TV_1_SetVolume", this.gameObject);
+        UIManager.Instance.AddSubtitle("The Volume is turned up now");
     }
 }

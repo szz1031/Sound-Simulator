@@ -356,6 +356,7 @@
 								<Event Name="Safe_Open" ID="{7C0EC3AD-588C-4D92-B5FB-273428C403CC}"/>
 								<Event Name="Safe_Close" ID="{1417FD03-3CCE-4EB3-B1DC-50F3936A2794}"/>
 								<Event Name="Safe_KeySound" ID="{093EC5AD-7287-44BB-A14C-D2E28276FD64}"/>
+								<Event Name="Safe_Locked" ID="{0A7CDACA-3E8D-4641-A362-880E4F5434E6}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Door_Closet" ID="{EE804BA5-804A-4EB5-9CA0-890C6DC1C150}" ShortID="380847484">
@@ -584,7 +585,7 @@
 									</ChildrenList>
 								</Event>
 								<Event Name="TV_1_Plot_2" ID="{A713AF13-C4C0-40D8-AC79-C259291D9397}"/>
-								<Event Name="TV_Switch_Sound" ID="{9AE4359A-344B-4715-8C7C-F494807EE0FD}"/>
+								<Event Name="TV_1_Switch" ID="{9AE4359A-344B-4715-8C7C-F494807EE0FD}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706">
@@ -606,10 +607,13 @@
 								<Event Name="Laptop_Plot_05" ID="{210B21E1-3C77-4845-BE03-307D7D7B72FE}"/>
 								<Event Name="Laptop_Plot_06" ID="{11A148BB-ED2F-42D5-B525-0E506AC16DA5}"/>
 								<Event Name="Laptop_Interact" ID="{0B149056-1F2D-4AB6-9B55-EDE0CBBFEE5A}"/>
+								<Event Name="Laptop_Plot_07" ID="{55E79E2C-7389-4471-B480-308C2BB16664}"/>
 							</ChildrenList>
 						</Folder>
 						<Event Name="Guitar_Music" ID="{5D4AFC8C-9D32-4ACB-9D41-67B6D2C9FF92}"/>
 						<Event Name="Bear_Music" ID="{4F5D78F4-D62E-455B-95BC-692B56CD3359}"/>
+						<Event Name="Remote_Interact" ID="{9890BC8C-2B3A-4C1C-8BF6-CA4C98C53806}"/>
+						<Event Name="Screws_Pickup" ID="{E511330B-8E0B-49E2-B4E5-A38ACCE939BF}"/>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">

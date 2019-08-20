@@ -58,13 +58,17 @@ namespace AK
         static const AkUniqueID LAPTOP_PLOT_04 = 2890816672U;
         static const AkUniqueID LAPTOP_PLOT_05 = 2890816673U;
         static const AkUniqueID LAPTOP_PLOT_06 = 2890816674U;
+        static const AkUniqueID LAPTOP_PLOT_07 = 2890816675U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_RAIN = 990547651U;
+        static const AkUniqueID REMOTE_INTERACT = 2054288328U;
         static const AkUniqueID SAFE_CLOSE = 1474002183U;
         static const AkUniqueID SAFE_KEYSOUND = 2314026839U;
+        static const AkUniqueID SAFE_LOCKED = 2854523811U;
         static const AkUniqueID SAFE_OPEN = 189348657U;
+        static const AkUniqueID SCREWS_PICKUP = 1311816845U;
         static const AkUniqueID STOPOBJECT = 2199697068U;
         static const AkUniqueID TV_1_MUSIC_1 = 326737287U;
         static const AkUniqueID TV_1_MUSIC_2 = 326737284U;
@@ -75,13 +79,13 @@ namespace AK
         static const AkUniqueID TV_1_PLOT_1 = 727756043U;
         static const AkUniqueID TV_1_PLOT_2 = 727756040U;
         static const AkUniqueID TV_1_SETVOLUME = 2532082576U;
+        static const AkUniqueID TV_1_SWITCH = 4238930762U;
         static const AkUniqueID TV_2_PLOT_1 = 2807456378U;
         static const AkUniqueID TV_2_PLOT_2 = 2807456377U;
         static const AkUniqueID TV_2_PLOT_3 = 2807456376U;
         static const AkUniqueID TV_2_PLOT_4 = 2807456383U;
         static const AkUniqueID TV_2_PLOT_5 = 2807456382U;
         static const AkUniqueID TV_2_PLOT_6 = 2807456381U;
-        static const AkUniqueID TV_SWITCH_SOUND = 1865526238U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

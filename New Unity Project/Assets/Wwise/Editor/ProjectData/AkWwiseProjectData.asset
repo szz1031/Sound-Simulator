@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586355135638535695
+    m_lastTime: -8586353462367234268
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -511,7 +511,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Charge
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Charge
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 3.048447
       minDuration: 3.048447
     - name: Gramophone_Mainghosty
@@ -527,7 +527,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Mainghosty
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Mainghosty
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_MainNoise
@@ -543,7 +543,7 @@ MonoBehaviour:
       - ElementName: Gramophone_MainNoise
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_MainNoise
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_NeedleTap
@@ -559,7 +559,7 @@ MonoBehaviour:
       - ElementName: Gramophone_NeedleTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_NeedleTap
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 0.129533
       minDuration: 0.129533
     - name: Gramophone_OnOffTap
@@ -575,7 +575,7 @@ MonoBehaviour:
       - ElementName: Gramophone_OnOffTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_OnOffTap
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 0.663492
       minDuration: 0.663492
     - name: Gramophone_Squeak_1
@@ -591,7 +591,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_1
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 1.107369
       minDuration: 1.107369
     - name: Gramophone_Squeak_2
@@ -607,7 +607,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_2
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 0.713889
       minDuration: 0.713889
     - name: Gramophone_Squeak_3
@@ -623,7 +623,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_3
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_3
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: 0.803243
       minDuration: 0.803243
     - name: Guitar_Music
@@ -784,6 +784,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Laptop_Plot_07
+      guid: 2c9ee75589737144b480308c2bb16664
+      id: 2890816675
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Computer
+        ObjectType: 4
+      - ElementName: Laptop_Plot_07
+        ObjectType: 3
+      Path: Default Work Unit\Object\Computer\Laptop_Plot_07
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: LightSwitch_Off
       guid: 2b0fbe2c0470674a8fa1c51d97139ab8
       id: 280670697
@@ -840,6 +856,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Remote_Interact
+      guid: 8cbc90983a2b1c4c8bf6ca4c98c53806
+      id: 2054288328
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Remote_Interact
+        ObjectType: 3
+      Path: Default Work Unit\Object\Remote_Interact
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Safe_Close
       guid: 03fd1714ce3cb34eb1dc50f3936a2794
       id: 1474002183
@@ -888,6 +918,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Screws_Pickup
+      guid: 0b3311e50b8ee249b4e5a38acce939bf
+      id: 1311816845
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Screws_Pickup
+        ObjectType: 3
+      Path: Default Work Unit\Object\Screws_Pickup
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StopObject
       guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
       id: 2199697068
@@ -913,7 +957,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_1
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_1
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_2
@@ -929,7 +973,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_2
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_2
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_3
@@ -945,7 +989,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_3
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_3
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_4
@@ -961,7 +1005,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_4
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_4
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_5
@@ -977,7 +1021,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_5
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_5
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_6
@@ -993,7 +1037,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_6
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_6
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Plot_1
@@ -1009,7 +1053,7 @@ MonoBehaviour:
       - ElementName: TV_1_Plot_1
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Plot_1
-      maxAttenuation: 20
+      maxAttenuation: 18
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Plot_2
@@ -1041,6 +1085,22 @@ MonoBehaviour:
       - ElementName: TV_1_SetVolume
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_SetVolume
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TV_1_Switch
+      guid: 9a35e49a4b3415478c7cf494807ee0fd
+      id: 4238930762
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: TV_1
+        ObjectType: 4
+      - ElementName: TV_1_Switch
+        ObjectType: 3
+      Path: Default Work Unit\Object\TV_1\TV_1_Switch
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1137,22 +1197,6 @@ MonoBehaviour:
       - ElementName: TV_2_Plot_6
         ObjectType: 3
       Path: Default Work Unit\Object\TV_2\TV_2_Plot_6
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: TV_Switch_Sound
-      guid: 9a35e49a4b3415478c7cf494807ee0fd
-      id: 1865526238
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_1
-        ObjectType: 4
-      - ElementName: TV_Switch_Sound
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_1\TV_Switch_Sound
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
