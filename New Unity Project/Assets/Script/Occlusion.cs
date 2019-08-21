@@ -11,12 +11,13 @@ public class Occlusion : MonoBehaviour
     public float DisToListener;
     public float CalculateUnder;
     public float BlockedDistance;
-    public float HightDistance;
+   // public float HightDistance;
     public bool PassFloor;
+    public bool PassWall;
     public float OcclusionPercentage;
+    public float hit1;
+    public float hit2;
     
- //   public float FinalOcclu;
- //   float obs;
 
     // Use this for initialization
     void Start()
@@ -43,86 +44,105 @@ public class Occlusion : MonoBehaviour
         if (DisToListener <= CalculateUnder)
         {
 
-            Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
+         //   Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
             Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
 
             HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
+            HitInfo1 = HitArrary[0];
 
+            hit1 = HitInfo1.distance;
+            hit2 = HitInfo2.distance;
             PassFloor = false;
+            PassWall = false;
 
-            for (int i=0; i< HitArrary.Length; i++)
+            if (HitInfo1.distance + HitInfo2.distance >= DisToListener) // if not blocked then don't calculate
             {
-                if (HitArrary[i].transform.tag == "Floor")
-                {
-                    PassFloor = true;
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
-                    break;
-                }
-            }
-
-            if (!PassFloor) { Debug.DrawRay(SourcePosition, RayDirection1, Color.green); }
-
-            // avoid camera being blocked
-            if (HitInfo2.distance < 0.8 && DisToListener - HitInfo1.distance >= 0.8)
-            {
-                BlockedDistance = DisToListener - HitInfo1.distance - 0.8f;
-            }
-            else
-            {
-                BlockedDistance = DisToListener - HitInfo1.distance - HitInfo2.distance;
-            }
-
-            HightDistance = Mathf.Abs(transform.position.y - Camera.position.y);  //Add heigh distance to extra occlu floor
-
-            if (BlockedDistance <= 0.5)
-            {
-                OcclusionPercentage = BlockedDistance / DisToListener;
-               // Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
-            }
-
-            else if (BlockedDistance <=2)
-            {
-                OcclusionPercentage = (BlockedDistance - 0.5f)/DisToListener;
-               // Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
-            }
-            else if (BlockedDistance <= 4)
-            {
-                OcclusionPercentage = (1.25f * BlockedDistance - 1.0f)/DisToListener;
-              //  Debug.DrawRay(SourcePosition, RayDirection1, Color.cyan);
+                AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, 0.0f);
             } 
-            else 
-            {
-                OcclusionPercentage = BlockedDistance / DisToListener ;
-               // Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
-            }
-
-        //   /*
-             if (HightDistance >=1.5 && HightDistance <= 3.5)
+            else  //calculate of occlusion
+            {                
+                
+                for (int i = 0; i < HitArrary.Length; i++)
+                {
+                    if (HitArrary[i].transform.tag == "Floor")
                     {
-                        OcclusionPercentage = OcclusionPercentage + 0.2f * HightDistance - 0.3f;              
+                        PassFloor = true;
+                        Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                        
                     }
 
-                    if (HightDistance > 3.5)
-                    {
-                        OcclusionPercentage = OcclusionPercentage + 0.4f;                
-                    }
+                    if (HitArrary[i].transform.tag == "MeshWall")
+                        PassWall = true;
 
-         //  */
+                    if (PassFloor && PassWall)
+                        break;
+                }
 
-            //extra occlu added on floor
-            if (PassFloor)
-            {
-                OcclusionPercentage = OcclusionPercentage + 0.8f;
+                if (!PassFloor)
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.green); 
+
+                // avoid camera being blocked
+                if (HitInfo2.distance < 0.5 && DisToListener - HitInfo1.distance >= 0.5)
+                {
+                    BlockedDistance = DisToListener - HitInfo1.distance - 0.5f;
+                }
+                else
+                {
+                    BlockedDistance = DisToListener - HitInfo1.distance - HitInfo2.distance;
+                }
+                
+
+                if (BlockedDistance <= 0.5)
+                {
+                    OcclusionPercentage = BlockedDistance / DisToListener;
+                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
+                }
+
+                else if (BlockedDistance <= 2)
+                {
+                    OcclusionPercentage = (BlockedDistance - 0.5f) / DisToListener;
+                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
+                }
+                else if (BlockedDistance <= 4)
+                {
+                    OcclusionPercentage = (1.25f * BlockedDistance - 1.0f) / DisToListener;
+                    //  Debug.DrawRay(SourcePosition, RayDirection1, Color.cyan);
+                }
+                else
+                {
+                    OcclusionPercentage = BlockedDistance / DisToListener;
+                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                }
+
+                /*
+                  if (HightDistance >=1.5 && HightDistance <= 3.5)
+                         {
+                             OcclusionPercentage = OcclusionPercentage + 0.2f * HightDistance - 0.3f;              
+                         }
+
+                         if (HightDistance > 3.5)
+                         {
+                             OcclusionPercentage = OcclusionPercentage + 0.4f;                
+                         }
+
+                */
+
+                //extra occlu added on floor and wall
+                if (PassFloor)
+                    OcclusionPercentage = OcclusionPercentage + 0.75f;
+
+                if (PassWall)
+                    OcclusionPercentage = OcclusionPercentage + 0.15f;
+
+                if (OcclusionPercentage > 1)
+                    OcclusionPercentage = 1; 
+
+
+
+                AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
+                //AkSoundEngine.GetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, out obs, out FinalOcclu);
             }
-           
-
-            if (OcclusionPercentage > 1) { OcclusionPercentage = 1; }
-            if (OcclusionPercentage < 0) { OcclusionPercentage = 0; }
-
-
-            AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
-//            AkSoundEngine.GetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, out obs, out FinalOcclu);
         }
 
 

@@ -347,16 +347,65 @@
 								<Event Name="Cabinet_Open" ID="{C3F04180-B91F-4F05-B9D8-9E7AAAF28E70}"/>
 								<Event Name="Cabinet_Close" ID="{ECEDEE87-E393-4799-9B24-C35FE2AF3CCB}"/>
 								<Event Name="Cabinet_KeySound" ID="{7CD310E7-D95E-4FF2-A76B-5278FC828604}"/>
-								<Event Name="Drawer_Open" ID="{296E76CE-3028-4AA7-A0A2-532E29A23DDE}"/>
-								<Event Name="Drawer_Close" ID="{B13373B3-21CE-4E97-9321-84D9035A7C43}"/>
+								<Event Name="Drawer_Open" ID="{296E76CE-3028-4AA7-A0A2-532E29A23DDE}">
+									<ChildrenList>
+										<Action Name="" ID="{00CFD0E2-7CD4-46A2-868C-FA85FF63D180}" ShortID="63462860">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Drawer Slide" ID="{96AC1407-096E-4C31-9281-97AB27B7FC4C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Drawer_Close" ID="{B13373B3-21CE-4E97-9321-84D9035A7C43}">
+									<ChildrenList>
+										<Action Name="" ID="{5293D621-A688-49FA-BC02-C6963E97EAD8}" ShortID="623040860">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Drawer Close" ID="{7317075F-2F65-4D51-99F2-A408FEB6CA3E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F42091F5-1AAD-43B5-B027-89D246211816}" ShortID="92347858">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Drawer Slide" ID="{96AC1407-096E-4C31-9281-97AB27B7FC4C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="Drawer_KeySound" ID="{62A63353-0D41-41E5-9C0B-8FBA24CD6AA0}"/>
 								<Event Name="GlassCabinet_Open" ID="{95CCB6E2-41F3-497F-9922-9818755E5BF8}"/>
-								<Event Name="GlassCabinet_Close" ID="{FE4235BC-5891-4ED1-9BC9-443DDCF7AD52}"/>
+								<Event Name="GlassCabinet_Close" ID="{FE4235BC-5891-4ED1-9BC9-443DDCF7AD52}">
+									<ChildrenList>
+										<Action Name="" ID="{748FEA2B-FC33-40E6-B458-B5ECFADC10D8}" ShortID="422781856">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="close glass" ID="{FE544B0C-640D-40AD-9E21-657BE82FB259}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EACE8776-85CE-4E35-A843-80B93FDE2FE5}" ShortID="119158166">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="close glass 2" ID="{BAEF0C8A-CBDC-4675-8893-0CCA43799037}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="GlassCabinet_KeySound" ID="{FB97ADF4-45D7-4015-A293-6D8077CE3D28}"/>
-								<Event Name="Safe_Open" ID="{7C0EC3AD-588C-4D92-B5FB-273428C403CC}"/>
-								<Event Name="Safe_Close" ID="{1417FD03-3CCE-4EB3-B1DC-50F3936A2794}"/>
-								<Event Name="Safe_KeySound" ID="{093EC5AD-7287-44BB-A14C-D2E28276FD64}"/>
-								<Event Name="Safe_Locked" ID="{0A7CDACA-3E8D-4641-A362-880E4F5434E6}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Door_Closet" ID="{EE804BA5-804A-4EB5-9CA0-890C6DC1C150}" ShortID="380847484">
@@ -600,20 +649,162 @@
 						</Folder>
 						<Folder Name="Computer" ID="{EF250F90-FA59-48A6-8B13-E94111CE99C8}" ShortID="38149173">
 							<ChildrenList>
-								<Event Name="Laptop_Plot_01" ID="{C96AAD72-0DF2-4D73-8861-7E3D58FA1F7E}"/>
-								<Event Name="Laptop_Plot_02" ID="{7FF9E199-23FD-4428-B53E-0639FF08363A}"/>
-								<Event Name="Laptop_Plot_03" ID="{82380A80-DE98-41EA-BE7C-6965AD7C483D}"/>
-								<Event Name="Laptop_Plot_04" ID="{9BF05467-D0DA-4087-83E9-5677B51BD88C}"/>
-								<Event Name="Laptop_Plot_05" ID="{210B21E1-3C77-4845-BE03-307D7D7B72FE}"/>
-								<Event Name="Laptop_Plot_06" ID="{11A148BB-ED2F-42D5-B525-0E506AC16DA5}"/>
+								<Event Name="Laptop_Plot_01" ID="{C96AAD72-0DF2-4D73-8861-7E3D58FA1F7E}">
+									<ChildrenList>
+										<Action Name="" ID="{285B858F-C172-4779-99D9-2128C3970819}" ShortID="424094169">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_1" ID="{80C0530D-C820-4FAE-A947-C061C4DB0CF9}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Laptop_Plot_02" ID="{7FF9E199-23FD-4428-B53E-0639FF08363A}">
+									<ChildrenList>
+										<Action Name="" ID="{D802E69B-592C-45B7-803A-C177A61F3F04}" ShortID="139483410">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_2" ID="{600495D8-474F-47B1-BFEE-1479B857FA2C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Laptop_Plot_03" ID="{82380A80-DE98-41EA-BE7C-6965AD7C483D}">
+									<ChildrenList>
+										<Action Name="" ID="{64E29107-FA34-405C-92A9-0D226206A0ED}" ShortID="697997167">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_3" ID="{0FA4245D-7C56-49C2-9F8A-1DEF14358E03}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Laptop_Plot_04" ID="{9BF05467-D0DA-4087-83E9-5677B51BD88C}">
+									<ChildrenList>
+										<Action Name="" ID="{DB8510F4-9DCA-49EA-83BD-CEBA21939A43}" ShortID="474020372">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_4" ID="{44A3985F-E045-4D28-8725-8A0330F7704E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Laptop_Plot_05" ID="{210B21E1-3C77-4845-BE03-307D7D7B72FE}">
+									<ChildrenList>
+										<Action Name="" ID="{BF527995-25FD-44B2-B7F4-E2EE9BA528B1}" ShortID="661702879">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_5" ID="{B3970F15-3736-4444-90AD-5901148AC1ED}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Laptop_Plot_06" ID="{11A148BB-ED2F-42D5-B525-0E506AC16DA5}">
+									<ChildrenList>
+										<Action Name="" ID="{034B202A-1199-4C62-A21F-36F61C5B66FB}" ShortID="162081898">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_6" ID="{33902572-437B-43EE-B737-BEB4AC56C566}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="Laptop_Interact" ID="{0B149056-1F2D-4AB6-9B55-EDE0CBBFEE5A}"/>
-								<Event Name="Laptop_Plot_07" ID="{55E79E2C-7389-4471-B480-308C2BB16664}"/>
+								<Event Name="Laptop_Plot_07" ID="{55E79E2C-7389-4471-B480-308C2BB16664}">
+									<ChildrenList>
+										<Action Name="" ID="{7ADF3E26-4577-4284-B56F-4953077790DE}" ShortID="667795069">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Laptop_Plot_7" ID="{6BD553EF-80D5-4409-8E23-701A928EF710}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Guitar_Music" ID="{5D4AFC8C-9D32-4ACB-9D41-67B6D2C9FF92}"/>
-						<Event Name="Bear_Music" ID="{4F5D78F4-D62E-455B-95BC-692B56CD3359}"/>
+						<Event Name="Guitar_Music" ID="{5D4AFC8C-9D32-4ACB-9D41-67B6D2C9FF92}">
+							<ChildrenList>
+								<Action Name="" ID="{3C5CDFBE-1604-46E1-94CE-D57BE3DBAC37}" ShortID="192278158">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Guitar" ID="{7672C10F-5382-4254-8D60-BD8A93B89903}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bear_Music" ID="{4F5D78F4-D62E-455B-95BC-692B56CD3359}">
+							<ChildrenList>
+								<Action Name="" ID="{60580DD1-9624-4E49-B8C7-2DF555645347}" ShortID="248257372">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bear" ID="{D8BC696C-ADC2-4CFF-8033-AD49D02C6460}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Remote_Interact" ID="{9890BC8C-2B3A-4C1C-8BF6-CA4C98C53806}"/>
 						<Event Name="Screws_Pickup" ID="{E511330B-8E0B-49E2-B4E5-A38ACCE939BF}"/>
+						<Folder Name="safe" ID="{F8B47DC9-9A97-4B7B-9098-8C0A841665E5}" ShortID="146761065">
+							<ChildrenList>
+								<Event Name="Safe_Handle_Open" ID="{5E3DC7B8-5F1B-4AE0-9E75-F3C706C80E17}">
+									<ChildrenList>
+										<Action Name="" ID="{58F96C5D-6F7D-497F-8CAF-F5D09BCDDCE4}" ShortID="328213667">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Safe_Axis_Open" ID="{A1A9AC71-C5A5-434E-8E2A-B4AD7EFBE2B3}">
+									<ChildrenList>
+										<Action Name="" ID="{914625EC-1E53-4015-8FC3-AFC831BE237F}" ShortID="850846479">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Safe_Handle_Close" ID="{F9B8D6AE-4E83-45A1-829B-E8245E4A8D50}">
+									<ChildrenList>
+										<Action Name="" ID="{FD3C342A-31FF-4D3F-8B7E-A2DE9BBD8D79}" ShortID="112686724">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Safe_Axis_Close" ID="{ED82526B-BCDB-4029-8A55-8257229FFDA4}">
+									<ChildrenList>
+										<Action Name="" ID="{2C6312A2-D5E1-48C6-B9C2-21D0EADABD5E}" ShortID="374126433">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Safe_KeySound" ID="{093EC5AD-7287-44BB-A14C-D2E28276FD64}"/>
+								<Event Name="Safe_Locked" ID="{0A7CDACA-3E8D-4641-A362-880E4F5434E6}"/>
+								<Event Name="Safe_Close" ID="{1417FD03-3CCE-4EB3-B1DC-50F3936A2794}"/>
+								<Event Name="Safe_Open" ID="{7C0EC3AD-588C-4D92-B5FB-273428C403CC}"/>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}">

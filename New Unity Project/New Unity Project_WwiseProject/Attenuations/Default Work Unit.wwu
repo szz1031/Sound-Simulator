@@ -449,7 +449,7 @@
 				</Attenuation>
 				<Attenuation Name="Attenuation_max5" ID="{EF4D7CB3-D28B-4CF2-9BB0-512144BD1EF1}" ShortID="673277705">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="4"/>
+						<Property Name="RadiusMax" Type="Real64" Value="5"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -461,18 +461,18 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-2.43891</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1.51439</XPos>
-											<YPos>-9.57329</YPos>
+											<XPos>1.79877</XPos>
+											<YPos>-15.16536</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4</XPos>
+											<XPos>5</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -500,8 +500,8 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4</XPos>
-											<YPos>74</YPos>
+											<XPos>5</XPos>
+											<YPos>86</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -522,8 +522,8 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4</XPos>
-											<YPos>52</YPos>
+											<XPos>5</XPos>
+											<YPos>86</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

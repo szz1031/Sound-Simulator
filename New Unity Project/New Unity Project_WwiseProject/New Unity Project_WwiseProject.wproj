@@ -31,22 +31,7 @@
 						<Value Platform="Mac">256</Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjczMDEiIG1hc2s9IkJUWEwyODYyIiBlbmM9IjAiPjxsaWNl
-bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEw
-IiBleHBpcmVzPSIyMDE5LTEwLTAxIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9
-Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjQsMTAiIGV4cGlyZXM9
-IjIwMTktMTAtMDEiICAvPjxsaWNlbnNlIGlkPSIyMiIgbmFtZT0iTGV2ZWwgQSBM
-aWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjQsMTAiIGV4cGlyZXM9IjIwMTkt
-MTAtMDEiICAvPjxsaWNlbnNlIGlkPSI0MyIgbmFtZT0iQXVyby1IZWFkcGhvbmUi
-IHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAxOS0xMC0wMSIg
-IC8+PHBsdWdpbiBpZD0iNzIwOTM4MTEiIG5hbWU9IkF1cm8tSGVhZHBob25lIiBs
-aWNlbnNlPSI0MyIgLz48L3Byb2plY3Q+|xYfG6BH6bM35WBHkr76TzBtQ6YZybdv
-2wUudYchAb61K7152jLPqJWxbXbexIlOLu86v3VpA6VOXlIRp9gfLV35sVJVHrOk
-WmwlKKGUeXuFMGtNgk2eG/eCI8o6ru3vK9Kq9WB4dmfxaN2d2y6Q6YMahyjWJxe9
-X2fnA46V3EMP40jtgzw3biMZjH5gzGkT2rgXkAZC6S3XifNTSyUrENmIxyxY+/BV
-IQBDtAhVrkNG/YDu27LzelinstAQi/P2srVbO20iHODlz/vgNuwLLDS50nIMgkCu
-0i+R+T+X3gbaQX/rlf8AVkQA8R8lSbAAkla/9BETIa0u2hPmm2Vhkmg==
-"/>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjczMDEiIG1hc2s9IkJUWEwyODYyIiBlbmM9IjAiPjxsaWNl bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEw IiBleHBpcmVzPSIyMDE5LTEwLTAxIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9 Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjQsMTAiIGV4cGlyZXM9 IjIwMTktMTAtMDEiICAvPjxsaWNlbnNlIGlkPSIyMiIgbmFtZT0iTGV2ZWwgQSBM aWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjQsMTAiIGV4cGlyZXM9IjIwMTkt MTAtMDEiICAvPjxsaWNlbnNlIGlkPSI0MyIgbmFtZT0iQXVyby1IZWFkcGhvbmUi IHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAxOS0xMC0wMSIg IC8+PHBsdWdpbiBpZD0iNzIwOTM4MTEiIG5hbWU9IkF1cm8tSGVhZHBob25lIiBs aWNlbnNlPSI0MyIgLz48L3Byb2plY3Q+|xYfG6BH6bM35WBHkr76TzBtQ6YZybdv 2wUudYchAb61K7152jLPqJWxbXbexIlOLu86v3VpA6VOXlIRp9gfLV35sVJVHrOk WmwlKKGUeXuFMGtNgk2eG/eCI8o6ru3vK9Kq9WB4dmfxaN2d2y6Q6YMahyjWJxe9 X2fnA46V3EMP40jtgzw3biMZjH5gzGkT2rgXkAZC6S3XifNTSyUrENmIxyxY+/BV IQBDtAhVrkNG/YDu27LzelinstAQi/P2srVbO20iHODlz/vgNuwLLDS50nIMgkCu 0i+R+T+X3gbaQX/rlf8AVkQA8R8lSbAAkla/9BETIa0u2hPmm2Vhkmg== "/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
@@ -12323,13 +12308,13 @@ IQBDtAhVrkNG/YDu27LzelinstAQi/P2srVbO20iHODlz/vgNuwLLDS50nIMgkCu
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
-										<SegmentShape>Exp2</SegmentShape>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
-										<XPos>38.41202</XPos>
-										<YPos>-1.45383</YPos>
+										<XPos>16.09443</XPos>
+										<YPos>-0.86813</YPos>
 										<Flags>0</Flags>
-										<SegmentShape>Log1</SegmentShape>
+										<SegmentShape>Exp1</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>60.51502</XPos>
@@ -12383,15 +12368,17 @@ IQBDtAhVrkNG/YDu27LzelinstAQi/P2srVbO20iHODlz/vgNuwLLDS50nIMgkCu
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
-										<XPos>41.20172</XPos>
-										<YPos>17.82916</YPos>
+										<XPos>15.66524</XPos>
+										<YPos>12.54966</YPos>
 										<Flags>0</Flags>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>48.13665</YPos>
+										<YPos>46.2733</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
