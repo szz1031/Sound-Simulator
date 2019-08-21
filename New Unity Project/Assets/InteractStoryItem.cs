@@ -39,7 +39,7 @@ public class InteractStoryItem: InteractItemBase{
         UIManager.Instance.AddSubtitle(S_InteractSubtitle);
 
         if(S_AudioKey!="")
-        AudioManager.Play(S_AudioKey,this.gameObject);
+        AudioManager.PostEvent(S_AudioKey,this.gameObject);
 
     }
 }

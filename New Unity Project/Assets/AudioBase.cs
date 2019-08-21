@@ -9,6 +9,6 @@ public class AudioBase : MonoBehaviour {
         string jointName = AudioName;
         if (audioNameSub != "")
             jointName += ("_" + audioNameSub);
-        AudioManager.Play(jointName, gameObject);
+        AudioManager.PostEvent(jointName, gameObject);
     }
 }

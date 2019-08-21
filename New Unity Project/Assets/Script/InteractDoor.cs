@@ -29,7 +29,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
         base.TryInteract();
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
-            AudioManager.Play(MainAudioName+"_Locked",this.gameObject);
+            AudioManager.PostEvent(MainAudioName+"_Locked",this.gameObject);
             UIManager.Instance.AddSubtitle(MainAudioName+" Locked");
             UIManager.Instance.AddTips(MainAudioName+" Locked!");
             return;
@@ -58,7 +58,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
     protected void OnKeyAnim()
     {
         if (b_Opened)
-            AudioManager.Play(KeyAudioName,gameObject);
+            AudioManager.PostEvent(KeyAudioName,gameObject);
     }
     AnimationState GetFistClip()
     {

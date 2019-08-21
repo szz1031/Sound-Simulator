@@ -147,7 +147,7 @@ public class LightSwitch : InteractorBase {
             Light_Off();
             DisableEmission();
         }
-        AudioManager.Play(MainAudioName + (B_LightsOn ? "_On" : "_Off"), this.gameObject);
+        AudioManager.PostEvent(MainAudioName + (B_LightsOn ? "_On" : "_Off"), this.gameObject);
     }
 
     AnimationState GetFistClip()

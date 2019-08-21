@@ -5,9 +5,9 @@ using GameSetting;
 public class AudioManager : SimpleSingletonMono<AudioManager> {
     public AK.Wwise.Event Ww_FootStep;
     public AK.Wwise.Switch Ww_FootStepSwitchConcrete, Ww_FootStepSwitchCarpet, Ww_FootStepSwitchStair, Ww_FootStepSwitchFloor;
-    public static void Play(string clipName,GameObject obj)
+    public static void PostEvent(string eventName,GameObject obj)
     {
-        AkSoundEngine.PostEvent(clipName,obj);
+        AkSoundEngine.PostEvent(eventName,obj);
     }
     public static void PlayFootStep(enum_GroundMaterialType mat, GameObject obj)
     {

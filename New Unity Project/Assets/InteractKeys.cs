@@ -11,7 +11,7 @@ public class InteractKeys : InteractItemBase {
 
         GameManager.Instance.PickupKey(I_KeyIndex);
         UIManager.Instance.AddTips(S_PickupTips);
-        AudioManager.Play("Key_Pickup",this.gameObject);
+        AudioManager.PostEvent("Key_Pickup",this.gameObject);
         UIManager.Instance.AddSubtitle("Key_Pickup");
         UIManager.Instance.AddTips("Key Pickup");
         transform.SetActivate(false);

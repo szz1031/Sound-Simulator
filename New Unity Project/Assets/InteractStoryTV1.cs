@@ -6,7 +6,12 @@ public class InteractStoryTV1 : InteractStorySpecial<InteractStoryTV1> {
     public string DialogTips;
     public string[] Dialogues;
 
-
+    protected override void OnStageStart(enum_Stage stage)
+    {
+        base.OnStageStart(stage);
+        if (stage == enum_Stage.Stage4)
+            AudioManager.PostEvent("StopObject", this.gameObject);
+    }
     public override void TryInteract()
     {
         UIManager.Instance.ShowDialog(DialogTips, Dialogues, OnDialogInteracted);
@@ -14,14 +19,14 @@ public class InteractStoryTV1 : InteractStorySpecial<InteractStoryTV1> {
     protected virtual void OnDialogInteracted(int index)
     {
         index++;
-        AudioManager.Play("TV_1_Music_"+index.ToString(),this.gameObject);
+        AudioManager.PostEvent("TV_1_Music_"+index.ToString(),this.gameObject);
         UIManager.Instance.AddSubtitle("Playing Music" + index.ToString());
         UIManager.Instance.AddTips("Music Switched");
         base.TryInteract();
     }
     public void RemoteInteract()
     {
-        AudioManager.Play("TV_1_SetVolume", this.gameObject);
+        AudioManager.PostEvent("TV_1_SetVolume", this.gameObject);
         UIManager.Instance.AddSubtitle("The Volume is turned up now");
     }
 }

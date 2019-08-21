@@ -17,7 +17,7 @@ public class InteractTrigger : InteractorBase {
 
         triggerCheck = TriggerDuration;
         i_count++;
-        AudioManager.Play(EventName ,TriggerObject);
+        AudioManager.PostEvent(EventName ,TriggerObject);
         if (Subtitle != "")
             UIManager.Instance.AddSubtitle(Subtitle);
     }

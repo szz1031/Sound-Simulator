@@ -9,21 +9,21 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
         switch (stage)
         {
             case enum_Stage.Stage1:
-                AudioManager.Play("TV_2_Plot_1",gameObject);
+                AudioManager.PostEvent("TV_2_Plot_1",gameObject);
                 UIManager.Instance.AddSubtitle("TV2_Plot_1_Subtitle");
                 break;
             case enum_Stage.Stage5:
-                AudioManager.Play("TV_2_Plot_2", gameObject);
+                AudioManager.PostEvent("TV_2_Plot_2", gameObject);
                 UIManager.Instance.AddSubtitle("TV2_Plot_2_Subtitle");
                 break;
         }
     }
     public override void TryInteract()
     {
-        if (B_Interactable|| GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
+        if (B_Interacted || GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
             return;
         
-        AudioManager.Play("TV_2_Plot_5", gameObject);
+        AudioManager.PostEvent("TV_2_Plot_5", gameObject);
         UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
 
         base.TryInteract();
