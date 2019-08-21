@@ -1425,7 +1425,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -2053,6 +2052,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<Sound Name="Bear" ID="{D8BC696C-ADC2-4CFF-8033-AD49D02C6460}" ShortID="170740299">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -2061,8 +2067,31 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW2097_34_London-Bridge-Is-Falling-9-(30)" ID="{0DF323B6-6189-4252-BE22-8EFB7E46A6B3}" ShortID="613669782">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.352941176470587"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.560553633217992"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="3.34256055363321"/>
+										<Property Name="TrimEnd" Type="Real64" Value="13.1456432840516"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ANW2097_34_London-Bridge-Is-Falling-9-(30).wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW2097_34_London-Bridge-Is-Falling-9-(30)" ID="{0DF323B6-6189-4252-BE22-8EFB7E46A6B3}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Guitar" ID="{7672C10F-5382-4254-8D60-BD8A93B89903}" ShortID="635100500">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -2071,6 +2100,40 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ANW3088_06_Romantica" ID="{16F634C7-32EE-489C-A9AE-A89400D66057}" ShortID="883149415">
+									<Language>SFX</Language>
+									<AudioFile>ANW3088_06_Romantica.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Pitch"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+										<CustomState Name="" ID="{C42EF79F-8F17-4A0A-A881-6FBD241A9584}" ShortID="158547821"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+										<CustomState Name="" ID="{5E65146C-D2DB-4B37-B99C-DF2541A4A241}" ShortID="538150654">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32" Value="1260"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="ANW3088_06_Romantica" ID="{16F634C7-32EE-489C-A9AE-A89400D66057}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<ActorMixer Name="Dialogue" ID="{80F812B8-D207-4C3B-A7E3-9446B11B27D7}" ShortID="874793418">
 							<ReferenceList>
@@ -2108,6 +2171,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Laptop" ID="{06401A8C-C13F-4286-B0A0-A5C728DDCD55}" ShortID="678607951">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -2116,11 +2186,172 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Laptop_Plot_1" ID="{80C0530D-C820-4FAE-A947-C061C4DB0CF9}" ShortID="877579987">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_1" ID="{E4921655-0040-4DEB-AE8E-F7047853E1ED}" ShortID="313207460">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_1" ID="{E4921655-0040-4DEB-AE8E-F7047853E1ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_2" ID="{600495D8-474F-47B1-BFEE-1479B857FA2C}" ShortID="910367284">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_2" ID="{CB156B14-3689-4B32-A00B-3964A2DFC110}" ShortID="959428209">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_2" ID="{CB156B14-3689-4B32-A00B-3964A2DFC110}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_3" ID="{0FA4245D-7C56-49C2-9F8A-1DEF14358E03}" ShortID="380228534">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_3" ID="{A9D39099-103A-4CE1-A0E7-9E5F2924B212}" ShortID="63094858">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_3" ID="{A9D39099-103A-4CE1-A0E7-9E5F2924B212}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_4" ID="{44A3985F-E045-4D28-8725-8A0330F7704E}" ShortID="147241052">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_4" ID="{DC81E2E6-B516-40FB-9AFB-A5AA4A68DE34}" ShortID="923806345">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_4" ID="{DC81E2E6-B516-40FB-9AFB-A5AA4A68DE34}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_5" ID="{B3970F15-3736-4444-90AD-5901148AC1ED}" ShortID="837942513">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_5" ID="{356EEA62-61B7-4B7C-8270-D50184C69526}" ShortID="842987559">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_5" ID="{356EEA62-61B7-4B7C-8270-D50184C69526}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_6" ID="{33902572-437B-43EE-B737-BEB4AC56C566}" ShortID="439478797">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_6" ID="{AD843D89-FC3A-4033-B34D-862E0351289C}" ShortID="1047502463">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_6" ID="{AD843D89-FC3A-4033-B34D-862E0351289C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Laptop_Plot_7" ID="{6BD553EF-80D5-4409-8E23-701A928EF710}" ShortID="728478438">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laptop_Plot_7" ID="{4C818FE0-87BB-4390-B7AB-AD4056BE047E}" ShortID="958317034">
+													<Language>English(US)</Language>
+													<AudioFile>Laptop_Plot_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Laptop_Plot_7" ID="{4C818FE0-87BB-4390-B7AB-AD4056BE047E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 					<StateInfo>
+						<StatePropertyList>
+							<Property Name="MakeUpGain"/>
+							<Property Name="Pitch"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
 						<StateGroupList>
 							<StateGroupInfo>
 								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
@@ -2542,6 +2773,550 @@
 								<ActiveSource Name="Key ring carabineer pick up_BLASTWAVEFX_02006" ID="{24098BDD-5B92-4FC7-8BD0-51D3D7B709E9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<ActorMixer Name="Drawer&amp;Carbinet" ID="{2A9ABE28-9557-4BAB-87D9-60737B6F5650}" ShortID="399526757">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="close glass" ID="{FE544B0C-640D-40AD-9E21-657BE82FB259}" ShortID="851298787">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{84C7D5A0-B3A8-44F3-87A6-FABE505D9376}" ShortID="271723756">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.37411210278859"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{5580A1A7-51F6-42E5-A270-29994DA7F8BD}" ShortID="342448925">
+											<Language>SFX</Language>
+											<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{B194AB9B-0E33-400B-90F3-5B46DE38A3BE}" ShortID="128979257">
+											<Language>SFX</Language>
+											<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{D71FF477-A422-4A92-8D95-3AC122CE3949}" ShortID="861027327">
+											<Language>SFX</Language>
+											<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{91CCAA45-D466-4AAE-9BB0-7C382BAF2A0B}" ShortID="565478242">
+											<Language>SFX</Language>
+											<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{84C7D5A0-B3A8-44F3-87A6-FABE505D9376}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Carbinet Open" ID="{18DA40EA-92BA-47BA-BF7F-79B5FD8B9CA9}" ShortID="946036131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Drawer Close" ID="{7317075F-2F65-4D51-99F2-A408FEB6CA3E}" ShortID="289162953">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="drawer close_02" ID="{0CA8F112-822E-41A2-A78A-A8A1125D089B}" ShortID="180169781">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E0FE6EAD-AC20-4579-A617-1F733A473031}" ShortID="578918507">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.207897227355534"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.415794454711065"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="13.3455024541241"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.8793631163973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="37444667"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{E0FE6EAD-AC20-4579-A617-1F733A473031}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer close_01" ID="{86A37DB5-655F-464E-8A8C-E274CA68A4F8}" ShortID="386149509">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E712E5D2-EE3B-4851-837D-C205FC0EA593}" ShortID="78539637">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.156196263978611"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.425989810850758"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.98282698536627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.61706265605207"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{E712E5D2-EE3B-4851-837D-C205FC0EA593}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer close_03" ID="{A04B6A96-0B1E-43B8-8C56-BE63B632E319}" ShortID="710372476">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{D0525D82-F673-49C0-8E8A-38470EB09D37}" ShortID="193542715">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="7.80981319893057E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.249914022365778"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.20981571994715"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.77901067811539"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="578918507"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{D0525D82-F673-49C0-8E8A-38470EB09D37}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="close glass 2" ID="{BAEF0C8A-CBDC-4675-8893-0CCA43799037}" ShortID="199204946">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{61EBB5DB-BDB0-4252-B5EA-228EC0777E87}" ShortID="871371833">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.37411210278859"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="271723756"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{3496F9F9-03F9-4ED1-AB38-FC4EBAAFA719}" ShortID="489743754">
+											<Language>SFX</Language>
+											<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="342448925"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{D20A81CE-31D5-4436-9732-F018DCEE6750}" ShortID="426613505">
+											<Language>SFX</Language>
+											<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="128979257"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{0F9CF3CE-8A14-455F-BB3D-5315DF5934DA}" ShortID="876868247">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="8.23554463892555E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.50382155438133"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.46097451563188"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.42501768218846"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{988C0341-C18C-4275-BB1B-44C91D212DD4}" ShortID="1044615298">
+											<Language>SFX</Language>
+											<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="565478242"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="INT_closet_door_wood_open_close_04" ID="{0F9CF3CE-8A14-455F-BB3D-5315DF5934DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Drawer Slide" ID="{96AC1407-096E-4C31-9281-97AB27B7FC4C}" ShortID="47739795">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="drawer slide_01" ID="{82A70D56-A598-483B-B9E8-022CA39E3FBF}" ShortID="761075111">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{42CE2A53-4C16-4E71-A6D4-6DC5E5D5FAC3}" ShortID="999271713">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.348537117968802"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.678178755736151"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.45441103003886"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{42CE2A53-4C16-4E71-A6D4-6DC5E5D5FAC3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer slide_02" ID="{706E0AAE-6399-4DBE-84EF-CECB277CE1BB}" ShortID="907525796">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{76C91A2C-D264-43F9-8155-1F108C7D51E8}" ShortID="734492731">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.348537117968802"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.15288813587148"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.8723509330363"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{76C91A2C-D264-43F9-8155-1F108C7D51E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer slide_03" ID="{CD32BCA3-AAFF-48A3-97DF-FB33FD2D6B0E}" ShortID="1040138697">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{9332C6A2-13FD-47C1-A666-5E4DAEE0DB53}" ShortID="396493397">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.06176999854379"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.9619250241628"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{9332C6A2-13FD-47C1-A666-5E4DAEE0DB53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer slide_04" ID="{6F8B6DAD-A62E-492D-BE9B-43080F914A75}" ShortID="161905374">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{FEF721AF-57E2-4BC3-94A9-CE610DB3001B}" ShortID="355509078">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.9036678613885"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.61482540759339"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Drawer Wooden Vanity_01" ID="{FEF721AF-57E2-4BC3-94A9-CE610DB3001B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Carbinet Close" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" ShortID="17237786">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="car clo" ID="{EAB6B6A6-A00B-4C60-90E2-8B9B09BF83F1}" ShortID="879114887">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{44550A58-ED2C-4FEA-AAED-B9AC5844DB1A}" ShortID="1040844536">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.37411210278859"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="271723756"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{BB3F22E1-DDEE-4919-8EE6-A55C94BEA52C}" ShortID="414675760">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="342448925"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{8BBA5260-C891-4AA0-AA26-860906FC3E4E}" ShortID="155837603">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.245393961911052"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.449259714883312"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.037752917217085"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.585170216864818"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+												</AudioFileSource>
+												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C2A6117D-916B-4E58-9D79-3BA67AEE62B1}" ShortID="4103429">
+													<Language>SFX</Language>
+													<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="861027327"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E7EAE9E9-0148-4058-8F62-913CD3DE4E70}" ShortID="665122418">
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="565478242"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoorWoodCabinetClose (1)" ID="{8BBA5260-C891-4AA0-AA26-860906FC3E4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="drawer close" ID="{60355F7F-9505-48E2-8932-199022032EB2}" ShortID="111892914">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{A9044CD6-934C-49F0-BC36-D484AAD9D509}" ShortID="623791931">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.37411210278859"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="271723756"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{D0EDBCA8-7A31-4615-B8AD-74243C018891}" ShortID="443641820">
+													<Language>SFX</Language>
+													<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="342448925"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{53D64F3F-D199-475C-A3D4-E5243455BEC2}" ShortID="234902722">
+													<Language>SFX</Language>
+													<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="128979257"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C7BDC10E-0047-4339-9ABE-60EBA964A22D}" ShortID="372938619">
+													<Language>SFX</Language>
+													<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="861027327"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{14960210-BDFF-4D20-AAB5-64B90A41E1AE}" ShortID="37444667">
+													<Language>SFX</Language>
+													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="565478242"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{D0EDBCA8-7A31-4615-B8AD-74243C018891}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Fire" ID="{E4682EF8-C717-4C84-ADE5-F59C262233C9}" ShortID="752416174">
@@ -3420,7 +4195,7 @@
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>1040</Value>
+										<Value>630</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
@@ -3451,9 +4226,19 @@
 									<Language>SFX</Language>
 									<AudioFile>sci_fi_loop_12.wav</AudioFile>
 								</AudioFileSource>
+								<AudioFileSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{6F8138D6-545D-44AC-A109-18E4CCB63235}" ShortID="538976337">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="116.203"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.929"/>
+										<Property Name="LoopEnd" Type="Real64" Value="8.366"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="sci_fi_loop_12" ID="{B7A9F039-5896-4562-A60F-4DFBDB3A51C8}" Platform="Linked"/>
+								<ActiveSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{6F8138D6-545D-44AC-A109-18E4CCB63235}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

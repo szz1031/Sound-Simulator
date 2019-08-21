@@ -15,7 +15,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+						<CurrentStateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Carpet" ID="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}"/>

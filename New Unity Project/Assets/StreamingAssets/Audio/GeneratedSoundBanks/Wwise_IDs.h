@@ -64,7 +64,11 @@ namespace AK
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_RAIN = 990547651U;
         static const AkUniqueID REMOTE_INTERACT = 2054288328U;
+        static const AkUniqueID SAFE_AXIS_CLOSE = 3555319575U;
+        static const AkUniqueID SAFE_AXIS_OPEN = 203066849U;
         static const AkUniqueID SAFE_CLOSE = 1474002183U;
+        static const AkUniqueID SAFE_HANDLE_CLOSE = 601288178U;
+        static const AkUniqueID SAFE_HANDLE_OPEN = 1189764390U;
         static const AkUniqueID SAFE_KEYSOUND = 2314026839U;
         static const AkUniqueID SAFE_LOCKED = 2854523811U;
         static const AkUniqueID SAFE_OPEN = 189348657U;
