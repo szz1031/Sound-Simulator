@@ -9,12 +9,12 @@
 				<File Name="Init" Hash="3818363571" Timestamp="1566376804"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Bank_SFX" Hash="3455517569" Timestamp="1566380254"/>
+				<File Name="Bank_SFX" Hash="2356006253" Timestamp="1566445353"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4124452025" Timestamp="1566380254"/>
+				<File Name="" Hash="610576540" Timestamp="1566445353"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -26,12 +26,12 @@
 				<File Name="Init" Hash="508045809" Timestamp="1566376804"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Bank_SFX" Hash="3455517569" Timestamp="1566380249"/>
+				<File Name="Bank_SFX" Hash="2356006253" Timestamp="1566445353"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3367174463" Timestamp="1566380249"/>
+				<File Name="" Hash="3595082330" Timestamp="1566445353"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -80,16 +80,12 @@ namespace AK
         static const AkUniqueID TV_1_MUSIC_4 = 326737282U;
         static const AkUniqueID TV_1_MUSIC_5 = 326737283U;
         static const AkUniqueID TV_1_MUSIC_6 = 326737280U;
-        static const AkUniqueID TV_1_PLOT_1 = 727756043U;
-        static const AkUniqueID TV_1_PLOT_2 = 727756040U;
         static const AkUniqueID TV_1_SETVOLUME = 2532082576U;
         static const AkUniqueID TV_1_SWITCH = 4238930762U;
         static const AkUniqueID TV_2_PLOT_1 = 2807456378U;
         static const AkUniqueID TV_2_PLOT_2 = 2807456377U;
         static const AkUniqueID TV_2_PLOT_3 = 2807456376U;
         static const AkUniqueID TV_2_PLOT_4 = 2807456383U;
-        static const AkUniqueID TV_2_PLOT_5 = 2807456382U;
-        static const AkUniqueID TV_2_PLOT_6 = 2807456381U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

@@ -26,7 +26,7 @@
 			<ShortName>Bank_SFX</ShortName>
 			<Path>English(US)\Bank_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082"/>
+				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082"/>
 				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -46,9 +46,9 @@
 				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" DurationType="OneShot" DurationMin="0.408335" DurationMax="0.408335"/>
 				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" DurationType="OneShot" DurationMin="0.413122" DurationMax="0.413122"/>
 				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" DurationType="OneShot" DurationMin="0.759663" DurationMax="0.759663"/>
-				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.833861" DurationMax="0.934236"/>
+				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.583861" DurationMax="0.684236"/>
 				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.711158" DurationMax="0.900155"/>
+				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.367632" DurationMax="0.487105"/>
 				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Object\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
 				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.297233" DurationMax="2.297233"/>
 				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -65,13 +65,13 @@
 				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
 				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="5.000000" DurationType="Infinite"/>
 				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667"/>
-				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="7.146667" DurationMax="7.146667"/>
-				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333"/>
-				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_04" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000"/>
-				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000"/>
-				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="1.450667" DurationMax="1.450667"/>
-				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="18.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333"/>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667"/>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333"/>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333"/>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_04" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000"/>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000"/>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000"/>
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333"/>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
 				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
@@ -93,22 +93,18 @@
 				<Event Id="326737282" Name="TV_1_Music_4" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_4" MaxAttenuation="18.000000" DurationType="Infinite"/>
 				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="18.000000" DurationType="Infinite"/>
 				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="18.000000" DurationType="Infinite"/>
-				<Event Id="727756043" Name="TV_1_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_1" MaxAttenuation="18.000000" DurationType="Infinite"/>
-				<Event Id="727756040" Name="TV_1_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Plot_2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456376" Name="TV_2_Plot_3" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_3" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432"/>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218"/>
+				<Event Id="2807456376" Name="TV_2_Plot_3" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_3" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404"/>
 				<Event Id="2807456383" Name="TV_2_Plot_4" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_4" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456381" Name="TV_2_Plot_6" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_6" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Object\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="37444667" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_DDEC1211.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_13564301.wem</Path>
 				</File>
 				<File Id="45498057" Language="SFX">
 					<ShortName>REAPER Media\Squeak_2.wav</ShortName>
@@ -122,13 +118,13 @@
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
 					<Path>SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_B2B88A46.wem</Path>
 				</File>
-				<File Id="63094858" Language="English(US)">
-					<ShortName>Laptop_Plot_3.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_3_6296B0F9.wem</Path>
-				</File>
 				<File Id="78539637" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_B0F40B74.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_9A61751E.wem</Path>
+				</File>
+				<File Id="84328202" Language="English(US)">
+					<ShortName>TV2_Plot_3.wav</ShortName>
+					<Path>Voices\English(US)\TV2_Plot_3_6296B0F9.wem</Path>
 				</File>
 				<File Id="105157533" Language="SFX">
 					<ShortName>REAPER Media\Mainghosty.wav</ShortName>
@@ -141,6 +137,10 @@
 				<File Id="126968948" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_BAB6C276.wem</Path>
+				</File>
+				<File Id="147397618" Language="English(US)">
+					<ShortName>Laptop_Plot2_6.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_6_6296B0F9.wem</Path>
 				</File>
 				<File Id="203117369" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -172,15 +172,11 @@
 				</File>
 				<File Id="271723756" Language="SFX">
 					<ShortName>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE Mud Room Cabinet O_C Action 03_5A468011.wem</Path>
+					<Path>SFX\EFX INT HOUSE Mud Room Cabinet O_C Action 03_0D6DA407.wem</Path>
 				</File>
 				<File Id="307543888" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_C8C0CF49.wem</Path>
-				</File>
-				<File Id="313207460" Language="English(US)">
-					<ShortName>Laptop_Plot_1.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_1_6296B0F9.wem</Path>
 				</File>
 				<File Id="323133469" Language="SFX">
 					<ShortName>ANW1838_10_Violins-Virus.wav</ShortName>
@@ -192,11 +188,11 @@
 				</File>
 				<File Id="355509078" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_32A97AB2.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_F3867425.wem</Path>
 				</File>
 				<File Id="396493397" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_8B79D197.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_9174EDE9.wem</Path>
 				</File>
 				<File Id="405076756" Language="SFX">
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
@@ -234,6 +230,10 @@
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_EB782CB6.wem</Path>
 				</File>
+				<File Id="535477832" Language="English(US)">
+					<ShortName>TV2_Plot_2.wav</ShortName>
+					<Path>Voices\English(US)\TV2_Plot_2_6296B0F9.wem</Path>
+				</File>
 				<File Id="538976337" Language="SFX">
 					<ShortName>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</ShortName>
 					<Path>SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_F9848A12.wem</Path>
@@ -244,11 +244,11 @@
 				</File>
 				<File Id="578918507" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_5089DC1D.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_0E99107D.wem</Path>
 				</File>
 				<File Id="613669782" Language="SFX">
 					<ShortName>ANW2097_34_London-Bridge-Is-Falling-9-(30).wav</ShortName>
-					<Path>SFX\ANW2097_34_London-Bridge-Is-Falling-9-(30)_B2AD87CF.wem</Path>
+					<Path>SFX\ANW2097_34_London-Bridge-Is-Falling-9-(30)_D46F603B.wem</Path>
 				</File>
 				<File Id="643296694" Language="SFX">
 					<ShortName>ANW3088_05_Fairground.wav</ShortName>
@@ -284,7 +284,7 @@
 				</File>
 				<File Id="734492731" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_DDE80981.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_BE4B2C22.wem</Path>
 				</File>
 				<File Id="740920542" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -298,6 +298,10 @@
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_1FA75AF1.wem</Path>
 				</File>
+				<File Id="776440994" Language="English(US)">
+					<ShortName>Laptop_Plot2_3.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_3_6296B0F9.wem</Path>
+				</File>
 				<File Id="813244428" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
 					<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_40EB35DD.wem</Path>
@@ -306,13 +310,13 @@
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_A859F4E9.wem</Path>
 				</File>
+				<File Id="823992559" Language="English(US)">
+					<ShortName>Laptop_Plot2_7.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_7_6296B0F9.wem</Path>
+				</File>
 				<File Id="830186802" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_DE34FA7F.wem</Path>
-				</File>
-				<File Id="842987559" Language="English(US)">
-					<ShortName>Laptop_Plot_5.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_5_6296B0F9.wem</Path>
 				</File>
 				<File Id="847065920" Language="SFX">
 					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
@@ -322,13 +326,21 @@
 					<ShortName>Buttons_Switches_031.wav</ShortName>
 					<Path>SFX\Buttons_Switches_031_F3DF57DF.wem</Path>
 				</File>
+				<File Id="854516349" Language="English(US)">
+					<ShortName>Laptop_Plot2_2.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_2_6296B0F9.wem</Path>
+				</File>
+				<File Id="867338695" Language="English(US)">
+					<ShortName>Laptop_Plot2_1.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_1_6296B0F9.wem</Path>
+				</File>
 				<File Id="873524984" Language="SFX">
 					<ShortName>ANW1546_04_Karma.wav</ShortName>
 					<Path>SFX\ANW1546_04_Karma_4EA6E607.wem</Path>
 				</File>
 				<File Id="876868247" Language="SFX">
 					<ShortName>INT_closet_door_wood_open_close_04.wav</ShortName>
-					<Path>SFX\INT_closet_door_wood_open_close_04_F6DE8804.wem</Path>
+					<Path>SFX\INT_closet_door_wood_open_close_04_CA00E68C.wem</Path>
 				</File>
 				<File Id="883149415" Language="SFX">
 					<ShortName>ANW3088_06_Romantica.wav</ShortName>
@@ -346,33 +358,29 @@
 					<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
 					<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem</Path>
 				</File>
-				<File Id="923806345" Language="English(US)">
-					<ShortName>Laptop_Plot_4.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_4_6296B0F9.wem</Path>
-				</File>
 				<File Id="924713307" Language="SFX">
 					<ShortName>EFX INT Wood Fire Crackle 02.wav</ShortName>
 					<Path>SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem</Path>
+				</File>
+				<File Id="931284556" Language="English(US)">
+					<ShortName>TV2_Plot_1.wav</ShortName>
+					<Path>Voices\English(US)\TV2_Plot_1_6296B0F9.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_76439697.wem</Path>
 				</File>
-				<File Id="958317034" Language="English(US)">
-					<ShortName>Laptop_Plot_7.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_7_6296B0F9.wem</Path>
-				</File>
-				<File Id="959428209" Language="English(US)">
-					<ShortName>Laptop_Plot_2.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_2_6296B0F9.wem</Path>
-				</File>
 				<File Id="967272807" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
 					<Path>SFX\Buttons_Switches_031_BED3955B.wem</Path>
 				</File>
+				<File Id="990318294" Language="English(US)">
+					<ShortName>Laptop_Plot2_4.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_4_6296B0F9.wem</Path>
+				</File>
 				<File Id="999271713" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_01E0A2DD.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_18ECB639.wem</Path>
 				</File>
 				<File Id="1002441243" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -386,9 +394,9 @@
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
 					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_F5C7CC38.wem</Path>
 				</File>
-				<File Id="1047502463" Language="English(US)">
-					<ShortName>Laptop_Plot_6.wav</ShortName>
-					<Path>Voices\English(US)\Laptop_Plot_6_6296B0F9.wem</Path>
+				<File Id="1062165984" Language="English(US)">
+					<ShortName>Laptop_Plot2_5.wav</ShortName>
+					<Path>Voices\English(US)\Laptop_Plot2_5_6296B0F9.wem</Path>
 				</File>
 				<File Id="1066902147" Language="SFX">
 					<ShortName>ANW3174_04_Arturos-Waltz.wav</ShortName>

@@ -362,11 +362,11 @@
 									<ChildrenList>
 										<Action Name="" ID="{5293D621-A688-49FA-BC02-C6963E97EAD8}" ShortID="623040860">
 											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="0.3"/>
+												<Property Name="Delay" Type="Real64" Value="0.05"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Drawer Close" ID="{7317075F-2F65-4D51-99F2-A408FEB6CA3E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Drawer Shut" ID="{7317075F-2F65-4D51-99F2-A408FEB6CA3E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -622,29 +622,60 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="TV_1_Plot_1" ID="{8A53F70D-5706-442D-9D04-483993380CDA}">
-									<ChildrenList>
-										<Action Name="" ID="{C2DAB93E-C341-4C3B-9427-794B537EBA34}" ShortID="517275616">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="TV_1_Plot_2" ID="{A713AF13-C4C0-40D8-AC79-C259291D9397}"/>
 								<Event Name="TV_1_Switch" ID="{9AE4359A-344B-4715-8C7C-F494807EE0FD}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706">
 							<ChildrenList>
-								<Event Name="TV_2_Plot_1" ID="{CAA49FCB-8795-470C-B9C5-7260FF9A38DD}"/>
-								<Event Name="TV_2_Plot_2" ID="{E724A561-6CE1-4415-A699-185FC7BBEB9A}"/>
-								<Event Name="TV_2_Plot_3" ID="{4D45292A-5D01-4170-9AA5-A8B8D874AEBB}"/>
+								<Event Name="TV_2_Plot_1" ID="{CAA49FCB-8795-470C-B9C5-7260FF9A38DD}">
+									<ChildrenList>
+										<Action Name="" ID="{78D59930-69C6-4217-84EB-8C3AFFC382C4}" ShortID="954921113">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV2_Plot_1" ID="{37C16D16-A14F-4B49-94D9-8F6B00D5AD91}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_2_Plot_2" ID="{E724A561-6CE1-4415-A699-185FC7BBEB9A}">
+									<ChildrenList>
+										<Action Name="" ID="{4C758868-316B-4265-8AEB-8C383B63CF7B}" ShortID="615586937">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+										<Action Name="" ID="{B867E0CB-E62A-4C1D-8036-3543162FBCC8}" ShortID="160923601">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV2_Plot_2" ID="{63950091-4522-43FF-A8D4-E9A809480734}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="TV_2_Plot_3" ID="{4D45292A-5D01-4170-9AA5-A8B8D874AEBB}">
+									<ChildrenList>
+										<Action Name="" ID="{F0933367-A1AF-405B-8829-3126582F443F}" ShortID="1000339727">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+										<Action Name="" ID="{1EE54BF2-0CA3-4FD0-A5F2-A4C2052975A6}" ShortID="560385541">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="TV2_Plot_3" ID="{DB4F1633-56DC-44F4-BB2D-3E5516901113}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="TV_2_Plot_4" ID="{9CF946FA-F765-44A4-AACD-9943FBD987D4}"/>
-								<Event Name="TV_2_Plot_5" ID="{6FC5CE77-BF6D-478F-AF3D-0B5588B93432}"/>
-								<Event Name="TV_2_Plot_6" ID="{8EFE872B-B17A-4331-A87B-E71E659F5DE4}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Computer" ID="{EF250F90-FA59-48A6-8B13-E94111CE99C8}" ShortID="38149173">
@@ -654,7 +685,7 @@
 										<Action Name="" ID="{285B858F-C172-4779-99D9-2128C3970819}" ShortID="424094169">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_1" ID="{80C0530D-C820-4FAE-A947-C061C4DB0CF9}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_1" ID="{9B590B7E-989E-404C-AE8B-9F62AB4CD075}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -665,7 +696,7 @@
 										<Action Name="" ID="{D802E69B-592C-45B7-803A-C177A61F3F04}" ShortID="139483410">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_2" ID="{600495D8-474F-47B1-BFEE-1479B857FA2C}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_2" ID="{87BE9E7A-25EC-442D-8DF8-07CBEF5DA20E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -676,7 +707,7 @@
 										<Action Name="" ID="{64E29107-FA34-405C-92A9-0D226206A0ED}" ShortID="697997167">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_3" ID="{0FA4245D-7C56-49C2-9F8A-1DEF14358E03}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_3" ID="{4EDF90E9-600D-429D-A039-D2BB2EDB83F0}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -687,7 +718,7 @@
 										<Action Name="" ID="{DB8510F4-9DCA-49EA-83BD-CEBA21939A43}" ShortID="474020372">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_4" ID="{44A3985F-E045-4D28-8725-8A0330F7704E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_4" ID="{E1C6EC2D-DACB-4338-85B8-0509F303FA46}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -698,7 +729,7 @@
 										<Action Name="" ID="{BF527995-25FD-44B2-B7F4-E2EE9BA528B1}" ShortID="661702879">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_5" ID="{B3970F15-3736-4444-90AD-5901148AC1ED}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_5" ID="{19B994E8-C057-4D62-A207-7B34B0CC4D0E}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -707,9 +738,12 @@
 								<Event Name="Laptop_Plot_06" ID="{11A148BB-ED2F-42D5-B525-0E506AC16DA5}">
 									<ChildrenList>
 										<Action Name="" ID="{034B202A-1199-4C62-A21F-36F61C5B66FB}" ShortID="162081898">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="3"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_6" ID="{33902572-437B-43EE-B737-BEB4AC56C566}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_6" ID="{259EF749-B40F-4E58-B0DC-9184BD56BD57}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -721,7 +755,7 @@
 										<Action Name="" ID="{7ADF3E26-4577-4284-B56F-4953077790DE}" ShortID="667795069">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Laptop_Plot_7" ID="{6BD553EF-80D5-4409-8E23-701A928EF710}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Laptop_Plot2_7" ID="{1838105A-63E7-498C-A32D-F8FBBBA24F51}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -742,6 +776,12 @@
 						</Event>
 						<Event Name="Bear_Music" ID="{4F5D78F4-D62E-455B-95BC-692B56CD3359}">
 							<ChildrenList>
+								<Action Name="" ID="{F429AA82-C07C-417B-B39E-9FF2C7EDA1D3}" ShortID="398322952">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
 								<Action Name="" ID="{60580DD1-9624-4E49-B8C7-2DF555645347}" ShortID="248257372">
 									<ReferenceList>
 										<Reference Name="Target">
