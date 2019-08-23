@@ -17,6 +17,12 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="DecreaseVolume" ID="{9BF5255F-F602-410A-806A-21BA9448D092}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

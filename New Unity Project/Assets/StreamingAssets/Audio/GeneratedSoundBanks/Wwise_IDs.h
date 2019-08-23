@@ -122,6 +122,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DECREASEVOLUME = 1848266011U;
         static const AkUniqueID DISTANCE_MAX10 = 1192632456U;
         static const AkUniqueID DISTANCE_MAX20 = 1242965313U;
     } // namespace GAME_PARAMETERS

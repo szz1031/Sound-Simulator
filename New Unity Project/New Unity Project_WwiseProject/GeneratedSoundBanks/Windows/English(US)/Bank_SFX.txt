@@ -104,6 +104,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
 	1242965313	Distance_max20			\Default Work Unit\Distance_max20	
+	1848266011	DecreaseVolume			\Default Work Unit\DecreaseVolume	
 
 Effect plug-ins	ID	Name	Type				Notes
 	486191333	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			

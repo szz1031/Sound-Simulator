@@ -1389,6 +1389,33 @@
 							<ValueList>
 								<Value>-3</Value>
 							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{7EAC17AC-2F62-42F6-BB55-F813A3789E58}" ShortID="36715677">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="DecreaseVolume" ID="{9BF5255F-F602-410A-806A-21BA9448D092}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{51AF1CB0-1965-4A05-BC5F-06DCFA52E769}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-6</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -2202,6 +2229,35 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{37971B07-A3E0-4569-A049-B4785397D1BF}" ShortID="569543041">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DecreaseVolume" ID="{9BF5255F-F602-410A-806A-21BA9448D092}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{9EC8EE47-5583-4B14-97AE-CA221AC64246}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>-6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2220,7 +2276,7 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
-												<Property Name="RadiusMax" Type="Real64" Value="12"/>
+												<Property Name="RadiusMax" Type="Real64" Value="15"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -2237,13 +2293,13 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>6.300672</XPos>
+																	<XPos>7.87584</XPos>
 																	<YPos>-10.24731</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>12</XPos>
+																	<XPos>15</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -2268,13 +2324,13 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>3.889443</XPos>
+																	<XPos>4.86180375</XPos>
 																	<YPos>-8.55703</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>12</XPos>
+																	<XPos>15</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -2296,7 +2352,7 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>12</XPos>
+																	<XPos>15</XPos>
 																	<YPos>76</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -2318,7 +2374,7 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>12</XPos>
+																	<XPos>15</XPos>
 																	<YPos>57</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -2339,7 +2395,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>12</XPos>
+																	<XPos>15</XPos>
 																	<YPos>0</YPos>
 																	<Flags>37</Flags>
 																</Point>
