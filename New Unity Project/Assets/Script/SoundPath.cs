@@ -27,12 +27,12 @@ public class SoundPath : MonoBehaviour {
 	void Update () {
         IsPassFloor = gameObject.GetComponent<Occlusion>().PassFloor;
         InTheRoom = Room.gameObject.GetComponent<Room>().InRoom;
-        SelectedDoor = Room.gameObject.GetComponent<Room>().CloserDoor;
+        SelectedDoor = Room.gameObject.GetComponent<Room>().ClosestDoor;
 
        
 
 
-        if (!InTheRoom)
+        if (!InTheRoom && !IsPassFloor)
         {
             //calculate the MoveAmount
             DistanceToDoor = Vector3.Distance(Camera.position, SelectedDoor.position);
@@ -62,6 +62,12 @@ public class SoundPath : MonoBehaviour {
             VirtualAudioSource.position = transform.position;
             VirtualAudioSource.rotation = transform.rotation;
             AkSoundEngine.SetObjectPosition(gameObject, transform);
+            if (IsPassFloor)
+            {                
+                VolumeDecreased = 0;
+                AkSoundEngine.SetRTPCValue("DecreaseVolume", VolumeDecreased, gameObject);
+            }
+                
         }
     }
 }

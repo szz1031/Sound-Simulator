@@ -7,7 +7,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="DecreaseVolume" ID="{9BF5255F-F602-410A-806A-21BA9448D092}"/>
-							<Value>3.80589914367269</Value>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}"/>

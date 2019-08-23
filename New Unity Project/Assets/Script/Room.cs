@@ -6,9 +6,10 @@ public class Room : MonoBehaviour {
     public Transform Camera;
     public Transform[] Door;
     public bool InRoom;
-    public Transform CloserDoor;
+    public Transform ClosestDoor;
     float MinDistance;
     int Num;
+    int count;
 
 	// Use this for initialization
 	void Start () {
@@ -17,27 +18,41 @@ public class Room : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        InRoom = true;
-        Debug.Log("Get in the room" + name);
+        count++;  
     }
 
     private void OnTriggerExit(Collider other)
     {
-        InRoom = false;
-        Debug.Log("Get out the room" + name);
+        count--;
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update ()
+    {
+        //whether in the room
+        if (count == 0)
+        {
+            InRoom = false;
+        //    Debug.Log("EXIT " + name);
+        }
+        else
+        {
+            InRoom = true;
+        //    Debug.Log("Enter " + name);
+        }
+            
+
+
+        //search for the closet door
         if (Door.Length == 0) //only have one door
-            CloserDoor = Door[0];
+            ClosestDoor = Door[0];
         else
         {
             Num = 0;
             for (int i = 0; i < Door.Length;i++)  //sort for the cloest door
                 if (Vector3.Distance(Door[i].position, Camera.position) < Vector3.Distance(Door[Num].position, Camera.position))
                     Num = i;
-            CloserDoor = Door[Num];
+            ClosestDoor = Door[Num];
         }
 	}
 }

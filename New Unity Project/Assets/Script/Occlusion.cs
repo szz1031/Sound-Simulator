@@ -119,7 +119,7 @@ public class Occlusion : MonoBehaviour
                 if (PassFloor)
                     OcclusionPercentage = OcclusionPercentage + 0.70f;
 
-                if (PassWall)
+                if (PassWall && !PassFloor)
                     OcclusionPercentage = OcclusionPercentage + 0.15f;
 
                 if (OcclusionPercentage > 1)

@@ -6,15 +6,15 @@
 				<File Name="Bank_SFX" Hash="1218661843" Timestamp="1566263892"/>
 				<File Name="Bank_music" Hash="971259322" Timestamp="1566259046"/>
 				<File Name="Bank_testSFX" Hash="126651906" Timestamp="1563703856"/>
-				<File Name="Init" Hash="1820672017" Timestamp="1566544491"/>
+				<File Name="Init" Hash="2668396481" Timestamp="1566549309"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Bank_SFX" Hash="585878011" Timestamp="1566545501"/>
+				<File Name="Bank_SFX" Hash="1097562145" Timestamp="1566549579"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2244649735" Timestamp="1566545501"/>
+				<File Name="" Hash="2531528324" Timestamp="1566549579"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -23,15 +23,15 @@
 			<Language ID="393239870">
 				<File Name="Bank_SFX" Hash="1218661843" Timestamp="1566263890"/>
 				<File Name="Bank_music" Hash="971259322" Timestamp="1566259044"/>
-				<File Name="Init" Hash="78142871" Timestamp="1566544490"/>
+				<File Name="Init" Hash="3178365895" Timestamp="1566549306"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Bank_SFX" Hash="585878011" Timestamp="1566545497"/>
+				<File Name="Bank_SFX" Hash="1097562145" Timestamp="1566549576"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1350580357" Timestamp="1566545498"/>
+				<File Name="" Hash="4257502438" Timestamp="1566549576"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
