@@ -12311,10 +12311,10 @@
 										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
-										<XPos>16.09443</XPos>
-										<YPos>-0.86813</YPos>
+										<XPos>8.15451</XPos>
+										<YPos>-1.39029</YPos>
 										<Flags>0</Flags>
-										<SegmentShape>Exp1</SegmentShape>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>60.51502</XPos>
@@ -12342,10 +12342,11 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>Log1</SegmentShape>
 									</Point>
 									<Point>
-										<XPos>42.91846</XPos>
-										<YPos>18.11173</YPos>
+										<XPos>26.39485</XPos>
+										<YPos>15.62726</YPos>
 										<Flags>0</Flags>
 									</Point>
 									<Point>

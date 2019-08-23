@@ -84,8 +84,7 @@ namespace AK
         static const AkUniqueID TV_1_SWITCH = 4238930762U;
         static const AkUniqueID TV_2_PLOT_1 = 2807456378U;
         static const AkUniqueID TV_2_PLOT_2 = 2807456377U;
-        static const AkUniqueID TV_2_PLOT_3 = 2807456376U;
-        static const AkUniqueID TV_2_PLOT_4 = 2807456383U;
+        static const AkUniqueID TV_2_PLOT_5 = 2807456382U;
         static const AkUniqueID WINDOW_RAIN = 290976602U;
     } // namespace EVENTS
 

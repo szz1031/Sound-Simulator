@@ -44,12 +44,11 @@ public class Occlusion : MonoBehaviour
         if (DisToListener <= CalculateUnder)
         {
 
-         //   Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
+            Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
             Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
 
-            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
-            HitInfo1 = HitArrary[0];
+            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);        
 
             hit1 = HitInfo1.distance;
             hit2 = HitInfo2.distance;
@@ -58,7 +57,7 @@ public class Occlusion : MonoBehaviour
 
             if (HitInfo1.distance + HitInfo2.distance >= DisToListener) // if not blocked then don't calculate
             {
-                AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, 0.0f);
+                AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, 0.0f);
             } 
             else  //calculate of occlusion
             {                
@@ -82,15 +81,15 @@ public class Occlusion : MonoBehaviour
                 if (!PassFloor)
                     Debug.DrawRay(SourcePosition, RayDirection1, Color.green); 
 
-                // avoid camera being blocked
-                if (HitInfo2.distance < 0.5 && DisToListener - HitInfo1.distance >= 0.5)
-                {
-                    BlockedDistance = DisToListener - HitInfo1.distance - 0.5f;
-                }
-                else
-                {
-                    BlockedDistance = DisToListener - HitInfo1.distance - HitInfo2.distance;
-                }
+                // avoid camera and object being blocked by themself
+                if (hit2 < 0.2 && DisToListener - hit1 >= 0.2)                
+                    hit2 = 0.5f;
+                if (hit1 < 0.1 && DisToListener - hit2 >= 0.1)
+                    hit1 = 0.1f;
+                
+                
+                BlockedDistance = DisToListener - hit1 - hit2;
+                
                 
 
                 if (BlockedDistance <= 0.5)
@@ -114,23 +113,11 @@ public class Occlusion : MonoBehaviour
                     OcclusionPercentage = BlockedDistance / DisToListener;
                     // Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
                 }
+             
 
-                /*
-                  if (HightDistance >=1.5 && HightDistance <= 3.5)
-                         {
-                             OcclusionPercentage = OcclusionPercentage + 0.2f * HightDistance - 0.3f;              
-                         }
-
-                         if (HightDistance > 3.5)
-                         {
-                             OcclusionPercentage = OcclusionPercentage + 0.4f;                
-                         }
-
-                */
-
-                //extra occlu added on floor and wall
+                //extra occlusion added on floor and wall
                 if (PassFloor)
-                    OcclusionPercentage = OcclusionPercentage + 0.75f;
+                    OcclusionPercentage = OcclusionPercentage + 0.70f;
 
                 if (PassWall)
                     OcclusionPercentage = OcclusionPercentage + 0.15f;

@@ -62,6 +62,6 @@ namespace GameSetting
         {
             return 1 << ToObjectLayer(type);
         }
-        public static readonly int I_SoundCastAll = 1 << I_Static | 1 << I_Dynamic;
+        public static readonly int I_SoundCastAll = 1 << I_Static;
     }
 }
