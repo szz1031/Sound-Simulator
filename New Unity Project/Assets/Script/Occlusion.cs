@@ -48,35 +48,43 @@ public class Occlusion : MonoBehaviour
             Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
 
-            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);        
+            HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener);        
 
             hit1 = HitInfo1.distance;
             hit2 = HitInfo2.distance;
             PassFloor = false;
             PassWall = false;
 
-            if (HitInfo1.distance + HitInfo2.distance >= DisToListener) // if not blocked then don't calculate
+            for (int i = 0; i < HitArrary.Length; i++)
             {
-                AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, 0.0f);
+                if (HitArrary[i].transform.tag == "Floor")
+                {
+                    PassFloor = true;
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+
+                }
+
+                if (HitArrary[i].transform.tag == "MeshWall")
+                    PassWall = true;
+
+                if (PassFloor && PassWall)
+                    break;
+            }
+
+            if (hit1 + hit2 >= DisToListener) // if not blocked then only simple calculate
+            {
+                if (PassFloor)
+                    OcclusionPercentage = 0.7f;
+                else if (PassWall)
+                    OcclusionPercentage = 0.2f;
+                else
+                    OcclusionPercentage = 0.0f;
+
+                AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
             } 
             else  //calculate of occlusion
             {                
-                
-                for (int i = 0; i < HitArrary.Length; i++)
-                {
-                    if (HitArrary[i].transform.tag == "Floor")
-                    {
-                        PassFloor = true;
-                        Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
-                        
-                    }
-
-                    if (HitArrary[i].transform.tag == "MeshWall")
-                        PassWall = true;
-
-                    if (PassFloor && PassWall)
-                        break;
-                }
+                                
 
                 if (!PassFloor)
                     Debug.DrawRay(SourcePosition, RayDirection1, Color.green); 

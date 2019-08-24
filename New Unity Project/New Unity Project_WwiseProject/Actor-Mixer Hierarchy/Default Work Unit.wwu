@@ -2739,13 +2739,11 @@
 				<ActorMixer Name="Interact" ID="{E1D9E071-06A8-4E0A-B1F2-29F3929A5B1B}" ShortID="875873099">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
-						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+							<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -2986,6 +2984,21 @@
 							</ActiveSourceList>
 						</Sound>
 						<ActorMixer Name="Drawer&amp;Carbinet" ID="{2A9ABE28-9557-4BAB-87D9-60737B6F5650}" ShortID="399526757">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{46608411-1CCE-4F5B-99F9-9796A14C5406}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -3017,11 +3030,14 @@
 												<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.43876614344549"/>
 												<Property Name="TrimEnd" Type="Real64" Value="6.37411210278859"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="623791931"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{5580A1A7-51F6-42E5-A270-29994DA7F8BD}" ShortID="342448925">
 											<Language>SFX</Language>
@@ -3044,7 +3060,7 @@
 										<ActiveSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{84C7D5A0-B3A8-44F3-87A6-FABE505D9376}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<RandomSequenceContainer Name="Carbinet Open" ID="{18DA40EA-92BA-47BA-BF7F-79B5FD8B9CA9}" ShortID="946036131">
+								<RandomSequenceContainer Name="Carbinet crack" ID="{18DA40EA-92BA-47BA-BF7F-79B5FD8B9CA9}" ShortID="946036131">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -3053,6 +3069,278 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Door_01_Open_PartA_02" ID="{AE6E1790-3A31-4532-8DF0-F5B254AD0B05}" ShortID="813939405">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1C09BDD3-1BF2-4C80-A80E-D1B5B1EBFAC3}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{094A72BD-AA2A-4466-A468-0E75FD61AAF5}" ShortID="989414167">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.278205672473813"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.309031596566067"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.2977948725099"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.6768393648484"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{094A72BD-AA2A-4466-A468-0E75FD61AAF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Door_01_Open_PartA_04" ID="{9A1FBAE6-C9F5-4AD7-BED3-59082B322C0B}" ShortID="794916989">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{FB8D2359-92DC-4F14-B6F0-0461E659373E}" ShortID="46440598">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.278205672473813"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.309031596566067"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.37040713733319"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.01940662505707"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{FB8D2359-92DC-4F14-B6F0-0461E659373E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="cabinet open" ID="{97AA547E-C279-4A34-B520-343026297054}" ShortID="8677408">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="car crack1" ID="{92D4FD09-7F39-409B-B7C9-C4CB265B2A67}" ShortID="394349061">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{4516C8D6-902D-49DC-BEA7-3AA7060448D8}" ShortID="712503341">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.446271393263343"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.446271393263343"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.65030225558038"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.10852858630914"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{4516C8D6-902D-49DC-BEA7-3AA7060448D8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="car crack1_01" ID="{071D9657-2C43-433A-B6BB-28F645BA0A1D}" ShortID="125123263">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>150</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{414F51E9-BA32-4E69-B5AA-7381ADE7EF85}" ShortID="689672388">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.208368137701561"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.208368137701561"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.09741691678695"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.36496199494232"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{414F51E9-BA32-4E69-B5AA-7381ADE7EF85}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="car crack1_02" ID="{725B5C4F-4429-4E8C-A9CD-6F9F6E06C64D}" ShortID="1007417755">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{89753D83-7FA4-45AC-BEC7-C97646CDE7DD}" ShortID="441170689">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.182216824269982"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.182216824269982"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.40729320721284"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.63441963879092"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{89753D83-7FA4-45AC-BEC7-C97646CDE7DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="close" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" ShortID="526091993">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="car lowcrak_01" ID="{43373530-BB8E-4151-B9BA-AEE16EC41ED1}" ShortID="557158462">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{E5A04A96-7B8B-4F29-B2F8-F258EC8AC093}" ShortID="176976218">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.131159441712259"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.131159441712259"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.78747097575978"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.15810174275526"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{E5A04A96-7B8B-4F29-B2F8-F258EC8AC093}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Drawer Shut" ID="{7317075F-2F65-4D51-99F2-A408FEB6CA3E}" ShortID="289162953">
 									<ReferenceList>
@@ -3222,7 +3510,7 @@
 												<Property Name="FadeInDuration" Type="Real64" Value="8.23554463892555E-02"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.50382155438133"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="2.46097451563188"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.6063076563188"/>
 												<Property Name="TrimEnd" Type="Real64" Value="3.42501768218846"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -3277,7 +3565,7 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.137302501018013"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.713384525227949"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.08101650512585"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.02627066747956"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
@@ -3311,10 +3599,10 @@
 												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{76C91A2C-D264-43F9-8155-1F108C7D51E8}" ShortID="734492731">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.348537117968802"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.295635886576168"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="3.15288813587148"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.63999285439043"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.46799"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
@@ -3351,7 +3639,7 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.14767794373203"/>
-														<Property Name="TrimEnd" Type="Real64" Value="6.61320718324394"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.51321"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
@@ -3388,7 +3676,7 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.9036678613885"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.33367213243189"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.23367"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
@@ -3401,6 +3689,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Carbinet Close" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" ShortID="17237786">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -3549,6 +3844,1128 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="Door" ID="{557B874D-0B12-46B7-BF5A-409CE5D2C583}" ShortID="370930877">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F96DEC57-811E-4260-9A62-27F6581617B6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Door_narrow" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+												<Attenuation Name="Attenuation_Object_close (Custom)" ID="{F282C6A1-79C9-43BB-8E14-6EEBF465A2CA}" ShortID="774097301">
+													<PropertyList>
+														<Property Name="ConeHighPassFilterValue" Type="int32">
+															<RTPCList>
+																<RTPC Name="" ID="{FCB783C1-69D5-46F1-A798-75B942D69F53}" ShortID="618650691">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{72333A4A-B5A2-472F-B749-BA2C145A56DB}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+														<Property Name="ConeLowPassFilterValue" Type="int32">
+															<RTPCList>
+																<RTPC Name="" ID="{63B2760F-3B9F-4046-B9F1-F61D99CD7FCD}" ShortID="258502141">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{4F4C843D-DC39-42B8-84C7-A57D1D57D3D5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-100</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>10</XPos>
+																				<YPos>100</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+														<Property Name="RadiusMax" Type="Real64" Value="10"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{5A730E56-DA29-4039-928E-9171BEAB66AA}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>3.96985</XPos>
+																			<YPos>-11.05196</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" ShortID="864419390">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" ShortID="819079196">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.267189044287234"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.217091098483377"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.27386503039662"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.68220033365274"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Door_Close_KeySound" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" ShortID="420027433">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{15EE3A98-2F8E-4CF6-85A7-E860011847FF}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" ShortID="710131029">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.065984296829555"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.304520291782534"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="19.2760583545657"/>
+														<Property Name="TrimEnd" Type="Real64" Value="20.0357210448471"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Door_01_Lock1_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" ShortID="718073736">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}" ShortID="830186802">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="16.5292943940887"/>
+														<Property Name="TrimEnd" Type="Real64" Value="16.9746193451865"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Closet_Close" ID="{606C3E79-E8A9-48E5-8EB9-E02F9939023F}" ShortID="594538843">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-50</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="New_Wwise_Parametric_EQ_01" ID="{E1E2A427-609A-4CD4-BEFA-E88E5AA84C2A}" WorkUnitID="{A42E9FD3-E38B-47F9-AC45-BE439DB06E93}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Closet _Close" ID="{5756C927-A226-4A6C-A4D5-D959ADB41A8F}" ShortID="695572963">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{27648E5E-1DEF-4599-ABA6-815F231A050B}" ShortID="567029194">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="28.1125733084368"/>
+																<Property Name="TrimEnd" Type="Real64" Value="29.0353469733265"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{27648E5E-1DEF-4599-ABA6-815F231A050B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Closet _Close_01" ID="{16646543-3A29-4C24-B38A-A8547128309B}" ShortID="227972070">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{DD2AC913-F63F-407E-AC55-37120B5C3083}" ShortID="534002572">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="23.3854405592987"/>
+																<Property Name="TrimEnd" Type="Real64" Value="24.3870139566417"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{DD2AC913-F63F-407E-AC55-37120B5C3083}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Closet _Close_02" ID="{7BE85B09-4525-47DA-888F-BB1DC061435F}" ShortID="1300794">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="New_Wwise_Parametric_EQ_01" ID="{E1E2A427-609A-4CD4-BEFA-E88E5AA84C2A}" WorkUnitID="{A42E9FD3-E38B-47F9-AC45-BE439DB06E93}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{A209B11C-3265-4DB5-B12A-367A37634418}" ShortID="435878783">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="18.7116489968241"/>
+																<Property Name="TrimEnd" Type="Real64" Value="19.8690154462495"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{A209B11C-3265-4DB5-B12A-367A37634418}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Door_Open_Handle" ID="{78F8E7F8-A557-49D0-81B1-49EA501396B9}" ShortID="479647071">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Door_Open_Handle" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" ShortID="200709232">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" ShortID="1041985487">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="17.4095364896326"/>
+																<Property Name="TrimEnd" Type="Real64" Value="17.8226588463665"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Open_Handle_02" ID="{4F31B967-CAE9-463F-9BE8-38B013451CFB}" ShortID="637892327">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}" ShortID="756349642">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.25710224384179"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.66977975464501"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Open_Handle_01" ID="{8E9D1F1E-78E9-4F0D-9F1F-BB76D253E66D}" ShortID="565353225">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{B8B08BCF-9BAC-4E95-8EEB-7E7D0F1FF53B}" ShortID="6940699">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.68859197909204E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.77560705417675"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.19898535234977"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{B8B08BCF-9BAC-4E95-8EEB-7E7D0F1FF53B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Door_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" ShortID="745841489">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{96A8EA9F-F4BA-400D-97F9-CC688504217D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="50"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Door_Close_Axis" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" ShortID="873482629">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BF68934A-6F61-4A64-9EE9-2529334CE4FD}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" ShortID="238106575">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.636931014307638"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.42202468778367"/>
+																<Property Name="TrimEnd" Type="Real64" Value="10.1908856850461"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Close_Axis_01" ID="{61AC404C-1B45-4884-8374-48579EAFABBD}" ShortID="814458026">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{91AB6657-9D82-458E-A040-17E9B5CB39DA}" ShortID="233146622">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.603774251335528"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.03179216204315"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.70955411305138"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{91AB6657-9D82-458E-A040-17E9B5CB39DA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Close_Axis_02" ID="{E87031D4-0E4A-4C5E-A000-6E6B19BB6997}" ShortID="266563211">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{65A61453-53B1-49A6-AB66-51716312DAE3}" ShortID="729219625">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.500595035131208"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.1487283425613"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.79377428037855"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{65A61453-53B1-49A6-AB66-51716312DAE3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Door_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" ShortID="777730729">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Door_Open_Axis" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" ShortID="894751371">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" ShortID="243168692">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.69762415242392"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.69762415242392"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.73056324995491"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.42818740237883"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Open_Axis_01" ID="{19CD247D-9CEF-4DCF-8719-343708438750}" ShortID="831844864">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{899467ED-664C-4F3E-A230-04381412026A}" ShortID="997959073">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.615080779460471"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.615080779460471"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.3496385471808"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.06789854284559"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{899467ED-664C-4F3E-A230-04381412026A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Door_Open_Axis_02" ID="{5202AE4D-203E-449A-9A26-01C281A30FA5}" ShortID="850899419">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>130</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{71C6D4CE-BFB5-4ACE-AD0E-8EA76D7A0CEA}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{9CC5E255-B7D7-4D48-9D75-69CFECCCC6CB}" ShortID="624987087">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.615080779460471"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.615080779460471"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.94807800116583"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.64570215358975"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{9CC5E255-B7D7-4D48-9D75-69CFECCCC6CB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Door_01_Lock1" ID="{FBF37A88-4765-4476-B853-9E81F4381907}" ShortID="117817030">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7A18041D-5D2B-40ED-AD69-5E893F0C930A}" ShortID="949220488">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.25710224384179"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.66977975464501"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="756349642"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7A18041D-5D2B-40ED-AD69-5E893F0C930A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Safe" ID="{E5F748E9-B92F-42D8-9462-E80779E2C319}" ShortID="160581337">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="REFRIGERATOR DOOR CLOSE" ID="{BD973BDF-528B-46E0-84FE-13184C8AA1B8}" ShortID="993350265">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="REFRIGERATOR DOOR CLOSE" ID="{6FB3D406-CF18-4F6F-AEE5-C18E5EB0AF5B}" ShortID="942554569">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.81241743725231E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.21144870101277"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.06208718626156E-03"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.33831792162043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>REFRIGERATOR DOOR CLOSE.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="REFRIGERATOR DOOR CLOSE" ID="{6FB3D406-CF18-4F6F-AEE5-C18E5EB0AF5B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="open" ID="{57DAD61F-5065-4BBD-AC4F-4E41A9A29043}" ShortID="673634250">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{E77415F1-4DDD-404E-A568-FBDFC97291EF}" ShortID="483574875">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.62553940995156E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.284195508586526"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.235075297225891"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.636223690004403"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Door-Metal-Large Chunk-Close.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door-Metal-Large Chunk-Close" ID="{E77415F1-4DDD-404E-A568-FBDFC97291EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Fridge door opening lightly 6" ID="{F2490E21-7908-4707-B117-2FD148604AC2}" ShortID="106025048">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Fridge door opening lightly 6" ID="{0E28F730-CDB0-4143-8CA3-ABA274712551}" ShortID="52557723">
+													<Language>SFX</Language>
+													<AudioFile>Fridge door opening lightly 6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Fridge door opening lightly 6" ID="{0E28F730-CDB0-4143-8CA3-ABA274712551}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FRIDGE DOOR OPEN" ID="{A12BAE84-6395-4254-BE1A-EB82AB7DEB1B}" ShortID="453144528">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-50</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FRIDGE DOOR OPEN" ID="{A2CEFF37-EBD9-4D50-9F1B-9EDEFFEC416C}" ShortID="20227617">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.35974240422721E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.212783685601057"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.195051711800969"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FRIDGE DOOR OPEN.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FRIDGE DOOR OPEN" ID="{A2CEFF37-EBD9-4D50-9F1B-9EDEFFEC416C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="locked" ID="{C71F8422-0C6B-4E86-A0B4-B489B2E63291}" ShortID="643178009">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{DBCC2D75-90A7-4C4C-BFA4-98011E092227}" ShortID="1026426294">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.62553940995156E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="8.88841919859094E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.178937912813738"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Door-Metal-Large Chunk-Close.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Door-Metal-Large Chunk-Close" ID="{DBCC2D75-90A7-4C4C-BFA4-98011E092227}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<Sound Name="Screw_Pickup" ID="{DE4D6C01-AC4B-49E7-9860-1553520F5C37}" ShortID="661480329">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-150</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="C-Clamp tool" ID="{39142F8C-2301-4342-A7D9-E8B3A4CF3D2D}" ShortID="140838182">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="13.5722773469805"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>C-Clamp tool.wav</AudioFile>
+								</AudioFileSource>
+								<AudioFileSource Name="Ancient_Game_Metal_Game_Pick_Up_Snag_Grab" ID="{7F873F02-04E4-4584-B25D-AF32FB57E4C9}" ShortID="924911790">
+									<Language>SFX</Language>
+									<AudioFile>Ancient_Game_Metal_Game_Pick_Up_Snag_Grab.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ancient_Game_Metal_Game_Pick_Up_Snag_Grab" ID="{7F873F02-04E4-4584-B25D-AF32FB57E4C9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_1" ID="{B6E8511F-3872-4F93-BF31-85716F79B037}" ShortID="658559765">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-230</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hologram_small_engage_10" ID="{6AD29B73-2932-4B1B-AB3D-7D3BA8535298}" ShortID="363234277">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3.93315444738002E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0786630889476"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.289001348524879"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hologram_small_engage_10.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hologram_small_engage_10" ID="{6AD29B73-2932-4B1B-AB3D-7D3BA8535298}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_2" ID="{8A6467AC-A5BE-4468-AC7F-99B9F0B528A5}" ShortID="634134650">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-50</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="menu_glass_various_effected_05" ID="{214A508E-752B-40A2-8211-224068F2F3DB}" ShortID="46191334">
+									<Language>SFX</Language>
+									<AudioFile>menu_glass_various_effected_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="menu_glass_various_effected_05" ID="{214A508E-752B-40A2-8211-224068F2F3DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_3" ID="{FEEBB71D-7671-4DDF-812A-FBB751D47FD6}" ShortID="452214033">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-300</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="New_Wwise_Parametric_EQ_02" ID="{BE30B0C3-ED0D-424F-B2FE-625B5EA7AD41}" WorkUnitID="{A42E9FD3-E38B-47F9-AC45-BE439DB06E93}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="calculations_n_text_spaced_33" ID="{6B84547C-BE70-441F-907D-1C02AFFBBDE5}" ShortID="846134701">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.129949058784677"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.172094699471598"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.3802697324967"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.51820203104359"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>calculations_n_text_spaced_33.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="calculations_n_text_spaced_33" ID="{6B84547C-BE70-441F-907D-1C02AFFBBDE5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Environmental Object" ID="{E4682EF8-C717-4C84-ADE5-F59C262233C9}" ShortID="752416174">
@@ -3571,7 +4988,166 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Fire" ID="{07F2CE74-77A1-480D-957C-95BA6A7CB892}" ShortID="414296320">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{97D6212A-C457-4962-B76A-7A00CF710EDB}">
+										<Attenuation Name="Attenuation_Object_max15 (Custom)" ID="{9A2C3AD9-C5E5-44B3-BC31-CF2069405893}" ShortID="425755025">
+											<PropertyList>
+												<Property Name="ConeHighPassFilterValue" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{CE983847-DB8D-4F5A-BE25-63701EEF03C3}" ShortID="452222572">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1A54E483-0E6B-48DC-BF0D-E545CE7ADC90}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+												<Property Name="ConeLowPassFilterValue" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{FD863257-34D7-404E-B6C2-C113CEB33246}" ShortID="744813941">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{8906F44D-9FB6-45E7-A06F-875F4A0E7F15}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+												<Property Name="RadiusMax" Type="Real64" Value="15"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{68272887-DCA9-4445-907A-992D65A9AFB0}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>5.954775</XPos>
+																	<YPos>-11.05196</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log2</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>15</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{2CFC6DD2-899C-4496-B871-DA58E9938A9B}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>15</XPos>
+																	<YPos>64</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="HighPassFilter" ID="{874B10B2-D4B0-4AD4-9245-5B1BC7A0C5C4}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>15</XPos>
+																	<YPos>56</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
@@ -3697,18 +5273,194 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+										<CustomState Name="" ID="{632163A4-9CB6-4EC4-A14C-C7E3EE122080}" ShortID="979653866"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+										<CustomState Name="" ID="{55107C96-ACC9-402F-97C5-B6B7D5F32000}" ShortID="889955736">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{4E07FF61-AEF5-4BC5-AECC-239F96C776BA}" ShortID="695569811">
+											<PropertyList>
+												<Property Name="ConeHighPassFilterValue" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{DBDBD24B-2B02-4588-9944-3ABF69783719}" ShortID="165284633">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{058ABD9E-B724-40FE-B4CA-0559FF6D4027}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+												<Property Name="ConeLowPassFilterValue" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{743F7CB5-2306-4A56-80E0-A413C1A6859C}" ShortID="773691077">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7E21C6D8-A888-48B7-B12A-1982C5B2382F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+												<Property Name="RadiusMax" Type="Real64" Value="8"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{F74287F0-C5AE-47E4-8C20-D157F5BFF6B2}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>3.17588</XPos>
+																	<YPos>-11.05196</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log2</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>8</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{D93B2369-52D1-4D95-B969-06C026BF4591}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>8</XPos>
+																	<YPos>62</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="HighPassFilter" ID="{47CB3259-4E7F-4528-BAB8-E354619A6F59}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>8</XPos>
+																	<YPos>57</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
@@ -3825,6 +5577,303 @@
 										<ActiveSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Thunder" ID="{1A8172C8-7A2C-4636-9291-6162EB18F0B6}" ShortID="316739426">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{0ABA2262-AAA2-4E6E-82B3-612308D0FDED}" ShortID="802624484">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="30"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{C48EBF28-59DB-43D9-AE3C-88368108C0FA}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>-100</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="thunder 02" ID="{F7932C18-7AAA-46BA-9D9A-A8F823994B83}" ShortID="848751436">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder 02" ID="{B03A779A-D85A-411F-8A4C-7E9D3732A48C}" ShortID="1019518702">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.34143549097314"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.11404667547336"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.32998678996037"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.6599735799207"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder 02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder 02" ID="{B03A779A-D85A-411F-8A4C-7E9D3732A48C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="thunder low boom dist rain" ID="{CB1B0996-116F-4EBC-B2DD-EA5BD3AFC983}" ShortID="295672424">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder low boom dist rain" ID="{147844A2-3E56-4774-A2AA-507CE33878DD}" ShortID="206318304">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.499825627476882"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.43699867899604"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.80977542932629"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.5577701453104"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder low boom dist rain.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder low boom dist rain" ID="{147844A2-3E56-4774-A2AA-507CE33878DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lightning cracks dry_03" ID="{3B2AADFB-CEA2-44EF-A3F4-C0EDB81D4310}" ShortID="828978956">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lightning cracks dry_03" ID="{1C762E23-9B77-4790-8F5F-DCB857FC25F3}" ShortID="492614535">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.211205636283576"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.49301629238221"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.74795244385733E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.30367591369442"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lightning cracks dry_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lightning cracks dry_03" ID="{1C762E23-9B77-4790-8F5F-DCB857FC25F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder clap big with no rain in the distance" ID="{8F39AAEB-EF85-4F75-9CDC-206E6DEA4416}" ShortID="822758182">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder clap big with no rain in the distance" ID="{92DA487A-2D15-4C14-BD60-F1F667521886}" ShortID="439346027">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.701491086967592"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.145592489747991"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Thunder clap big with no rain in the distance.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder clap big with no rain in the distance" ID="{92DA487A-2D15-4C14-BD60-F1F667521886}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lightning cracks_05" ID="{564BD791-E1B0-4EAE-AF8B-6BEF3A5871B6}" ShortID="1071755133">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>29</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lightning cracks_05" ID="{4BAF2F3F-A259-4D5C-BE8D-9F78F6F27BD9}" ShortID="473023217">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.967608982826948"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.48325495376486"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.45031439894319"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lightning cracks_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lightning cracks_05" ID="{4BAF2F3F-A259-4D5C-BE8D-9F78F6F27BD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder rumbling and rolling with no rain" ID="{D5A9C92E-1CF3-4322-8F3A-7AA36854EA40}" ShortID="834230235">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder rumbling and rolling with no rain" ID="{BE8B1F06-51FF-4053-9B76-B64C22561723}" ShortID="355367746">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="174.167096805372"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Thunder rumbling and rolling with no rain.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder rumbling and rolling with no rain" ID="{BE8B1F06-51FF-4053-9B76-B64C22561723}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="thunder 19" ID="{8D5C6765-C420-43C9-91F8-3C1421CB12E4}" ShortID="840763936">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder 19" ID="{C563527E-4370-4BE9-840E-4665071DD535}" ShortID="808117506">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.644184940554821"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.10431704095112"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.2272232496698"/>
+														<Property Name="TrimEnd" Type="Real64" Value="18.1292047556143"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder 19.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder 19" ID="{C563527E-4370-4BE9-840E-4665071DD535}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+												<CustomState Name="" ID="{E74C85B0-B257-40AD-91F9-330A419B15E4}" ShortID="356087814"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+												<CustomState Name="" ID="{7443D75C-E8E1-4142-8FAF-9516F1641362}" ShortID="505675011">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32" Value="3030"/>
+														<Property Name="Volume" Type="Real64" Value="9"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -3850,57 +5899,26 @@
 								</CustomStateList>
 							</StateInfo>
 						</ActorMixer>
-					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
-								<CustomState Name="" ID="{8E88EC9A-6135-405D-86D0-F0765D90906F}" ShortID="578873629"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
-								<CustomState Name="" ID="{253A91A7-7F13-49D2-BC62-1D11D94529EF}" ShortID="1048250915">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
-				</ActorMixer>
-				<ActorMixer Name="Door" ID="{557B874D-0B12-46B7-BF5A-409CE5D2C583}" ShortID="370930877">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<ActorMixer Name="Door_narrow" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
+						<ActorMixer Name="Laundray machine" ID="{32A89410-56B2-43AB-98BC-6BE8A437860F}" ShortID="861927255">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
-										<Attenuation Name="Attenuation_Object_close (Custom)" ID="{F282C6A1-79C9-43BB-8E14-6EEBF465A2CA}" ShortID="774097301">
+										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{3E2E6BA0-23F2-46ED-A36D-4CE2689442F4}" ShortID="746921757">
 											<PropertyList>
 												<Property Name="ConeHighPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{FCB783C1-69D5-46F1-A798-75B942D69F53}" ShortID="618650691">
+														<RTPC Name="" ID="{950498CF-7C9F-4BEB-8BF0-C7C8E9BA2A57}" ShortID="567199917">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{72333A4A-B5A2-472F-B749-BA2C145A56DB}">
+															<Curve Name="" ID="{CB359AF7-63D8-4E5B-A7AD-0597325C283B}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -3924,13 +5942,13 @@
 												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 												<Property Name="ConeLowPassFilterValue" Type="int32">
 													<RTPCList>
-														<RTPC Name="" ID="{63B2760F-3B9F-4046-B9F1-F61D99CD7FCD}" ShortID="258502141">
+														<RTPC Name="" ID="{0017B9F3-9A30-4D8D-AF87-B9E5F4A8D800}" ShortID="847611793">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{4F4C843D-DC39-42B8-84C7-A57D1D57D3D5}">
+															<Curve Name="" ID="{5D9018B3-EC09-4F9A-862B-78DB4602477E}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -3952,12 +5970,12 @@
 													</RTPCList>
 												</Property>
 												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-												<Property Name="RadiusMax" Type="Real64" Value="10"/>
+												<Property Name="RadiusMax" Type="Real64" Value="8"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{5A730E56-DA29-4039-928E-9171BEAB66AA}">
+														<Curve Name="VolumeDry" ID="{3587DE61-14FA-4CB2-881E-2384CE5F58F1}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3969,14 +5987,14 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>3.96985</XPos>
-																	<YPos>-11.05196</YPos>
+																	<XPos>2.68341</XPos>
+																	<YPos>-8.9992</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>10</XPos>
-																	<YPos>-200</YPos>
+																	<XPos>8</XPos>
+																	<YPos>-100</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>
@@ -3990,10 +6008,48 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 												</VolumeWetUserUsage>
 												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{ABA0FF6D-D6E1-49D1-BECA-35976D8329CB}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>8</XPos>
+																	<YPos>62</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</LowPassFilterUsage>
 												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="HighPassFilter" ID="{C33EB51A-EB96-4976-8736-470F1E0C2C8F}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>8</XPos>
+																	<YPos>57</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</HighPassFilterUsage>
 												<SpreadUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -4009,41 +6065,21 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Door_01_Close_PartA" ID="{363D17ED-83A2-4B7D-A10B-24F1599BB279}" ShortID="873482629">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" ShortID="238106575">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.636931014307638"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="9.42202468778367"/>
-												<Property Name="TrimEnd" Type="Real64" Value="10.1908856850461"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" ShortID="864419390">
+								<Sound Name="Gas laundry dryer running rhythmically and tumbling" ID="{3C3A9C9C-633C-4054-9A38-91C35428FDF3}" ShortID="222020380">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4056,23 +6092,31 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" ShortID="819079196">
+										<AudioFileSource Name="Gas laundry dryer running rhythmically and tumbling" ID="{0E1390DA-3000-4AA1-8F9F-25D261B797D7}" ShortID="595218375">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.267189044287234"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.217091098483377"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="2.77305151915456"/>
+												<Property Name="LoopBegin" Type="Real64" Value="5"/>
+												<Property Name="LoopEnd" Type="Real64" Value="206.605"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="5.27386503039662"/>
-												<Property Name="TrimEnd" Type="Real64" Value="5.68220033365274"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+											<AudioFile>Gas laundry dryer running rhythmically and tumbling.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" Platform="Linked"/>
+										<ActiveSource Name="Gas laundry dryer running rhythmically and tumbling" ID="{0E1390DA-3000-4AA1-8F9F-25D261B797D7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Door_01_Close_PartC" ID="{EE0BE719-6B57-450B-9E4A-731203F47380}" ShortID="420027433">
+								<Sound Name="LM4 - Electric Belt Drive - Full Run 11 - SBcontact" ID="{A5A243CC-A093-4CD0-AC69-5E19F4D43235}" ShortID="437441359">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -4082,27 +6126,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" ShortID="710131029">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.065984296829555"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.304520291782534"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="19.2760583545657"/>
-												<Property Name="TrimEnd" Type="Real64" Value="20.0357210448471"/>
-											</PropertyList>
+										<AudioFileSource Name="LM4 - Electric Belt Drive - Full Run 11 - SBcontact" ID="{696E56F1-9E20-4463-920B-AEA0216D683A}" ShortID="423935674">
 											<Language>SFX</Language>
-											<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+											<AudioFile>LM4 - Electric Belt Drive - Full Run 11 - SBcontact.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" Platform="Linked"/>
+										<ActiveSource Name="LM4 - Electric Belt Drive - Full Run 11 - SBcontact" ID="{696E56F1-9E20-4463-920B-AEA0216D683A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Door_01_Open_PartB" ID="{6366290C-D91D-4DB6-A4BF-8FD654C892D5}" ShortID="200709232">
+								<Sound Name="Washing machine draining subtly and humming" ID="{68F4DCE3-055D-4846-8C8D-051A3DC451D2}" ShortID="503222302">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4115,116 +6153,42 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" ShortID="1041985487">
+										<AudioFileSource Name="Washing machine draining subtly and humming" ID="{9716561A-8F96-4628-87D2-1111580AC9A6}" ShortID="381684206">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.24976608344791"/>
+												<Property Name="LoopBegin" Type="Real64" Value="5"/>
+												<Property Name="LoopEnd" Type="Real64" Value="34.7295896818807"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="17.4095364896326"/>
-												<Property Name="TrimEnd" Type="Real64" Value="17.8226588463665"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+											<AudioFile>Washing machine draining subtly and humming.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Door_01_Open_PartA" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" ShortID="894751371">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" ShortID="243168692">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.69762415242392"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.69762415242392"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.73056324995491"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.42818740237883"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Door_01_Lock1" ID="{4F31B967-CAE9-463F-9BE8-38B013451CFB}" ShortID="637892327">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}" ShortID="756349642">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="5.27765136615849"/>
-												<Property Name="TrimEnd" Type="Real64" Value="5.57086189024861"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Door_01_Lock1_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" ShortID="718073736">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>11</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}" ShortID="830186802">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="16.5292943940887"/>
-												<Property Name="TrimEnd" Type="Real64" Value="16.9746193451865"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}" Platform="Linked"/>
+										<ActiveSource Name="Washing machine draining subtly and humming" ID="{9716561A-8F96-4628-87D2-1111580AC9A6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+								<CustomState Name="" ID="{8E88EC9A-6135-405D-86D0-F0765D90906F}" ShortID="578873629"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+								<CustomState Name="" ID="{253A91A7-7F13-49D2-BC62-1D11D94529EF}" ShortID="1048250915"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="WorldB Hint Object" ID="{716C1F06-7CF3-4EA0-ACF8-C9A8E20C418D}" ShortID="420450560">
 					<PropertyList>

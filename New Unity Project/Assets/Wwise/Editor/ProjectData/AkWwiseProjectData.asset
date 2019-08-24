@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8586355135637996812
+    m_lastTime: -8586350014457986714
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586350036146706460
+    m_lastTime: -8586349842894251638
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -98,8 +98,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_Close
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.528209
+      minDuration: 0.49267
     - name: Cabinet_KeySound
       guid: e710d37c5ed9f24fa76b5278fc828604
       id: 3463217684
@@ -114,8 +114,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_KeySound
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.563458
+      minDuration: 0.516693
     - name: Cabinet_Open
       guid: 8041f0c31fb9054fb9d89e7aaaf28e70
       id: 2458915778
@@ -130,8 +130,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_Open
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.471653
+      minDuration: 0.19099
     - name: Door_Closet_Axis_Close
       guid: e2bea2e42aa3034f919ad7985192e12e
       id: 3498272821
@@ -146,8 +146,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close
       maxAttenuation: 0
-      maxDuration: 0.768861
-      minDuration: 0.768861
+      maxDuration: 0.79139
+      minDuration: 0.59151
     - name: Door_Closet_Axis_Open
       guid: e87071c25ce0a54abbc06fe416669c1c
       id: 1301402079
@@ -162,8 +162,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open
       maxAttenuation: 0
-      maxDuration: 0.697624
-      minDuration: 0.697624
+      maxDuration: 0.739307
+      minDuration: 0.610835
     - name: Door_Closet_Handle_Close
       guid: e4439a404ed4ba4a8bb4e6633ed4b4d3
       id: 711857016
@@ -178,8 +178,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close
       maxAttenuation: 0
-      maxDuration: 0.408335
-      minDuration: 0.408335
+      maxDuration: 1.8991
+      minDuration: 1.549813
     - name: Door_Closet_Handle_Open
       guid: 9e4cf97f80a8cb4fa68cefef9f59da64
       id: 541226684
@@ -194,8 +194,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open
       maxAttenuation: 0
-      maxDuration: 0.413122
-      minDuration: 0.413122
+      maxDuration: 0.450028
+      minDuration: 0.389936
     - name: Door_Closet_KeySound
       guid: 9c694b0ee3442c448a11a70e4747e1ca
       id: 2141172849
@@ -210,8 +210,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Closet\Door_Closet_KeySound
       maxAttenuation: 0
-      maxDuration: 0.759663
-      minDuration: 0.759663
+      maxDuration: 0
+      minDuration: 0
     - name: Door_Locked
       guid: b45f41445ed90c48bc1af44e9cea05ee
       id: 3333554874
@@ -226,8 +226,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Locked
       maxAttenuation: 0
-      maxDuration: 0.445325
-      minDuration: 0.445325
+      maxDuration: 0.458374
+      minDuration: 0.420331
     - name: Door_Narrow_Axis_Close
       guid: 9d37226ebaf84e488033559edb8f2d60
       id: 2407747538
@@ -242,8 +242,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close
       maxAttenuation: 0
-      maxDuration: 0.768861
-      minDuration: 0.768861
+      maxDuration: 0.79139
+      minDuration: 0.59151
     - name: Door_Narrow_Axis_Open
       guid: f5d0f620c638504cb52ef138177b349d
       id: 2916866438
@@ -258,8 +258,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open
       maxAttenuation: 0
-      maxDuration: 0.697624
-      minDuration: 0.697624
+      maxDuration: 0.739307
+      minDuration: 0.610835
     - name: Door_Narrow_Handle_Close
       guid: ce13ea561a220b49ac7b6a643c004e8e
       id: 501750955
@@ -274,8 +274,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close
       maxAttenuation: 0
-      maxDuration: 0.408335
-      minDuration: 0.408335
+      maxDuration: 0.4203
+      minDuration: 0.385417
     - name: Door_Narrow_Handle_Open
       guid: 52f44b26ecd885479b9fc6977f206bdd
       id: 982290157
@@ -290,8 +290,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open
       maxAttenuation: 0
-      maxDuration: 0.413122
-      minDuration: 0.413122
+      maxDuration: 0.450028
+      minDuration: 0.389936
     - name: Door_Narrow_KeySound
       guid: 9e0779e507204f44b25385ff608c0b3a
       id: 3041433330
@@ -306,8 +306,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound
       maxAttenuation: 0
-      maxDuration: 0.759663
-      minDuration: 0.759663
+      maxDuration: 0.781923
+      minDuration: 0.717026
     - name: Door_Wide_Axis_Close
       guid: 962ada066a037d47b3a362643be573e7
       id: 2853512794
@@ -322,8 +322,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close
       maxAttenuation: 0
-      maxDuration: 0.768861
-      minDuration: 0.768861
+      maxDuration: 0.79139
+      minDuration: 0.59151
     - name: Door_Wide_Axis_Open
       guid: 90db25606cfa814d871f59f2c09b7e77
       id: 64215390
@@ -338,8 +338,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open
       maxAttenuation: 0
-      maxDuration: 0.697624
-      minDuration: 0.697624
+      maxDuration: 0.739307
+      minDuration: 0.610835
     - name: Door_Wide_Handle_Close
       guid: a3331e53fadc044fa8c5fc8b2f42ae4c
       id: 2043156035
@@ -354,8 +354,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close
       maxAttenuation: 0
-      maxDuration: 0.408335
-      minDuration: 0.408335
+      maxDuration: 0.4203
+      minDuration: 0.385417
     - name: Door_Wide_Handle_Open
       guid: 0a389e90509ad944bea5b830fbd1bd34
       id: 2116863413
@@ -370,8 +370,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open
       maxAttenuation: 0
-      maxDuration: 0.413122
-      minDuration: 0.413122
+      maxDuration: 0.450028
+      minDuration: 0.389936
     - name: Door_Wide_KeySound
       guid: 5a5e52080947aa4e9b90a8958c1a5e52
       id: 996249450
@@ -386,8 +386,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Door_Wide\Door_Wide_KeySound
       maxAttenuation: 0
-      maxDuration: 0.759663
-      minDuration: 0.759663
+      maxDuration: 0.781923
+      minDuration: 0.717026
     - name: Drawer_Close
       guid: b37333b1ce21974e932184d9035a7c43
       id: 3753111523
@@ -401,9 +401,9 @@ MonoBehaviour:
       - ElementName: Drawer_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Drawer_Close
-      maxAttenuation: 10
-      maxDuration: 0.684236
-      minDuration: 0.583861
+      maxAttenuation: 0
+      maxDuration: 0.65282
+      minDuration: 0.503897
     - name: Drawer_KeySound
       guid: 5333a662410de5419c0b8fba24cd6aa0
       id: 3173784171
@@ -433,20 +433,20 @@ MonoBehaviour:
       - ElementName: Drawer_Open
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Drawer_Open
-      maxAttenuation: 10
-      maxDuration: 0.487105
-      minDuration: 0.367632
+      maxAttenuation: 0
+      maxDuration: 0.376243
+      minDuration: 0.295325
     - name: Fireplace
       guid: 91662d3d24c0054bb3d0ca6510fa4193
       id: 1404152342
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Object
+      - ElementName: Environment
         ObjectType: 4
       - ElementName: Fireplace
         ObjectType: 3
-      Path: Default Work Unit\Object\Fireplace
+      Path: Default Work Unit\Environment\Fireplace
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
@@ -463,9 +463,9 @@ MonoBehaviour:
       - ElementName: GlassCabinet_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_Close
-      maxAttenuation: 10
-      maxDuration: 2.297233
-      minDuration: 2.297233
+      maxAttenuation: 0
+      maxDuration: 0.528209
+      minDuration: 0.49267
     - name: GlassCabinet_KeySound
       guid: f4ad97fbd7451540a2936d8077ce3d28
       id: 1066855742
@@ -480,8 +480,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_KeySound
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.992056
+      minDuration: 1.826723
     - name: GlassCabinet_Open
       guid: e2b6cc95f3417f4999229818755e5bf8
       id: 3721891028
@@ -496,8 +496,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_Open
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.768017
+      minDuration: 0.712574
     - name: Gramophone_Charge
       guid: 4577368a30a07040b981e67023565dfa
       id: 2879668892
@@ -653,7 +653,7 @@ MonoBehaviour:
       - ElementName: Key_Pickup
         ObjectType: 3
       Path: Default Work Unit\Object\Key\Key_Pickup
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.360857
       minDuration: 0.360857
     - name: Key_Uncollected
@@ -686,8 +686,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Interact
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.353237
+      minDuration: 1.353237
     - name: Laptop_Plot_01
       guid: 72ad6ac9f20d734d88617e3d58fa1f7e
       id: 2890816677
@@ -806,14 +806,14 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Object
+      - ElementName: Environment
         ObjectType: 4
       - ElementName: Laundary
         ObjectType: 3
-      Path: Default Work Unit\Object\Laundary
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      Path: Default Work Unit\Environment\Laundary
+      maxAttenuation: 8
+      maxDuration: -1
+      minDuration: -1
     - name: LightSwitch_Off
       guid: 2b0fbe2c0470674a8fa1c51d97139ab8
       id: 280670697
@@ -825,7 +825,7 @@ MonoBehaviour:
       - ElementName: LightSwitch_Off
         ObjectType: 3
       Path: Default Work Unit\Object\LightSwitch_Off
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.269499
       minDuration: 0.139262
     - name: LightSwitch_On
@@ -839,7 +839,7 @@ MonoBehaviour:
       - ElementName: LightSwitch_On
         ObjectType: 3
       Path: Default Work Unit\Object\LightSwitch_On
-      maxAttenuation: 10
+      maxAttenuation: 0
       maxDuration: 0.269499
       minDuration: 0.105875
     - name: Player_Footsteps
@@ -898,8 +898,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\safe\Safe_Axis_Close
       maxAttenuation: 0
-      maxDuration: 0.768861
-      minDuration: 0.768861
+      maxDuration: 0.79139
+      minDuration: 0.705049
     - name: Safe_Axis_Open
       guid: 71aca9a1a5c54e438e2ab4ad7efbe2b3
       id: 203066849
@@ -914,8 +914,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\safe\Safe_Axis_Open
       maxAttenuation: 0
-      maxDuration: 0.697624
-      minDuration: 0.697624
+      maxDuration: 0.718066
+      minDuration: 0.658469
     - name: Safe_Close
       guid: 03fd1714ce3cb34eb1dc50f3936a2794
       id: 1474002183
@@ -946,8 +946,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\safe\Safe_Handle_Close
       maxAttenuation: 0
-      maxDuration: 0.408335
-      minDuration: 0.408335
+      maxDuration: 0.4203
+      minDuration: 0.385417
     - name: Safe_Handle_Open
       guid: b8c73d5e1b5fe04a9e75f3c706c80e17
       id: 1189764390
@@ -962,8 +962,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\safe\Safe_Handle_Open
       maxAttenuation: 0
-      maxDuration: 0.413122
-      minDuration: 0.413122
+      maxDuration: 0.541839
+      minDuration: 0.496868
     - name: Safe_KeySound
       guid: adc53e098772bb44a14cd2e28276fd64
       id: 2314026839
@@ -978,8 +978,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\safe\Safe_KeySound
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.8427
+      minDuration: 0.772759
     - name: Safe_Locked
       guid: cada7c0a8d3e4146a362880e4f5434e6
       id: 2854523811
@@ -1024,8 +1024,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Screws_Pickup
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.40894
+      minDuration: 0.40894
     - name: StopObject
       guid: 5ece5b1ccebb2d4abe0b4b99e0b44df0
       id: 2199697068
@@ -1038,6 +1038,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Thunder
+      guid: 6c654f4fbcca3c4591a83b96f46538aa
+      id: 186852181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Thunder
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Thunder
+      maxAttenuation: 30
+      maxDuration: 12.450315
+      minDuration: 0
+    - name: ToiletCabinet_Close
+      guid: 075a8475353d18418233e7920237b2bf
+      id: 3727742371
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: ToiletCabinet_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\ToiletCabinet_Close
+      maxAttenuation: 0
+      maxDuration: 1.663458
+      minDuration: 1.616693
+    - name: ToiletCabinet_Open
+      guid: 2646643d35c1fd4e9baac2134fde0dd3
+      id: 75187861
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Cabinet
+        ObjectType: 4
+      - ElementName: ToiletCabinet_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\Cabinet\ToiletCabinet_Open
+      maxAttenuation: 0
+      maxDuration: 0.471653
+      minDuration: 0.19099
     - name: TV_1_Music_1
       guid: 4eaa5f948d6c444e93a5aaa40db072ef
       id: 326737287
@@ -1164,7 +1210,7 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Switch
       maxAttenuation: 0
-      maxDuration: 0
+      maxDuration: 0.254881
       minDuration: 0
     - name: TV_2_Plot_1
       guid: cb9fa4ca95870c47b9c57260ff9a38dd
@@ -1220,11 +1266,11 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Object
+      - ElementName: Environment
         ObjectType: 4
       - ElementName: Window_Rain
         ObjectType: 3
-      Path: Default Work Unit\Object\Window_Rain
+      Path: Default Work Unit\Environment\Window_Rain
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
@@ -1356,6 +1402,5 @@ MonoBehaviour:
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
-  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

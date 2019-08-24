@@ -379,6 +379,77 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dcfa5d58fc471fe46b0947e1928c6f4a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &8088569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 8088572}
+  - component: {fileID: 8088571}
+  - component: {fileID: 8088570}
+  m_Layer: 0
+  m_Name: Thunder (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8088570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8088569}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
+--- !u!114 &8088571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8088569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!4 &8088572
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8088569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.15, y: 5.15, z: 11.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9909857
 Prefab:
   m_ObjectHideFlags: 0
@@ -3243,6 +3314,16 @@ Prefab:
     - target: {fileID: 447276, guid: 2c90bf975d6512945898bf7706a5ebd5, type: 2}
       propertyPath: m_RootOrder
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: MainAudioName
+      value: ToiletCabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: ToiletCabinet_Close
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c90bf975d6512945898bf7706a5ebd5, type: 2}
@@ -9746,7 +9827,6 @@ Transform:
   m_Children:
   - {fileID: 1163912037}
   - {fileID: 800370491}
-  - {fileID: 1459155518}
   m_Father: {fileID: 1608493869}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11026,6 +11106,76 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10a1d0b1898758146ba968a571deb062, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &372478806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 372478807}
+  - component: {fileID: 372478810}
+  - component: {fileID: 372478809}
+  - component: {fileID: 372478808}
+  m_Layer: 0
+  m_Name: ThunderTrigger (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372478807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372478806}
+  m_LocalRotation: {x: -0, y: 0.9999946, z: -0, w: 0.003306223}
+  m_LocalPosition: {x: 4.51, y: 3.29, z: 5.78}
+  m_LocalScale: {x: 1.367465, y: 1.31373, z: 1.8647914}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 179.621, z: 0}
+--- !u!114 &372478808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372478806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421316c25ec89804ebdc277982096827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObject: {fileID: 445115260}
+  EventName: Thunder
+  Subtitle: play thunder
+  TriggerDuration: 20
+  TriggerTimes: 30
+--- !u!114 &372478809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372478806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f1f11285a2b1b448281c806e121cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &372478810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372478806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &373231877 stripped
 Transform:
   m_PrefabParentObject: {fileID: 446810, guid: 9a8c309db96bbe34d862db3028f4aa9f, type: 2}
@@ -14031,6 +14181,77 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011606373730, guid: a69309a5f76672e418267dccfb70be9d,
     type: 2}
   m_PrefabInternal: {fileID: 1346158085}
+--- !u!1 &445115260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 445115261}
+  - component: {fileID: 445115263}
+  - component: {fileID: 445115262}
+  m_Layer: 0
+  m_Name: Thunder (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445115261
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445115260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.68, y: 9.88, z: 9.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445115262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445115260}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
+--- !u!114 &445115263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445115260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &445733778 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011737657254, guid: dc8f348e3fd0bca43947013ff3441bed,
@@ -14065,6 +14286,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   E_Mateiral: -1
+--- !u!1 &449032658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 449032659}
+  - component: {fileID: 449032662}
+  - component: {fileID: 449032661}
+  - component: {fileID: 449032660}
+  m_Layer: 0
+  m_Name: ThunderTrigger (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449032659
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449032658}
+  m_LocalRotation: {x: -0, y: 0.9999946, z: -0, w: 0.003306223}
+  m_LocalPosition: {x: -4.31, y: 3.29, z: 5.48}
+  m_LocalScale: {x: 1.5090834, y: 1.31373, z: 3.1866634}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 179.621, z: 0}
+--- !u!114 &449032660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449032658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421316c25ec89804ebdc277982096827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObject: {fileID: 896567645}
+  EventName: Thunder
+  Subtitle: play thunder
+  TriggerDuration: 20
+  TriggerTimes: 30
+--- !u!114 &449032661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449032658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f1f11285a2b1b448281c806e121cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &449032662
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 449032658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &451818789
 GameObject:
   m_ObjectHideFlags: 0
@@ -15151,10 +15442,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 491247632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!1001 &492203566
 Prefab:
   m_ObjectHideFlags: 0
@@ -19746,6 +20036,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 33
       objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: MainAudioName
+      value: ToiletCabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: ToiletCabinet_Close
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c90bf975d6512945898bf7706a5ebd5, type: 2}
   m_IsPrefabParent: 0
@@ -23937,6 +24237,13 @@ Transform:
   - {fileID: 98397608}
   - {fileID: 1798472760}
   - {fileID: 833822885}
+  - {fileID: 8088572}
+  - {fileID: 445115261}
+  - {fileID: 896567648}
+  - {fileID: 1459155518}
+  - {fileID: 1357264609}
+  - {fileID: 372478807}
+  - {fileID: 449032659}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24141,7 +24448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerObject: {fileID: 568439992}
-  EventName: Door_Open
+  EventName: 
   Subtitle: Test
   TriggerDuration: 2
   TriggerTimes: 2
@@ -25121,7 +25428,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833822884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 4.128, z: -3.612}
+  m_LocalPosition: {x: 0.35, y: 5.15, z: -3.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 792027000}
@@ -25133,7 +25440,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833822884}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
   m_Name: 
@@ -26936,6 +27243,77 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d005ffd82a112e41a4eadc56613f261, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &896567645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 896567648}
+  - component: {fileID: 896567647}
+  - component: {fileID: 896567646}
+  m_Layer: 0
+  m_Name: Thunder (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &896567646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896567645}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
+--- !u!114 &896567647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896567645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a29cb032c4fab4098b3a243bbfb7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!4 &896567648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896567645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.18, y: 6.31, z: 11.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &896626750 stripped
 MeshRenderer:
   m_PrefabParentObject: {fileID: 2305000, guid: 98389bafd8319ef428d9b94ee023a9f4,
@@ -27231,6 +27609,18 @@ Prefab:
     - target: {fileID: 4000011453605860, guid: aad7dc751f80d364a959516dbf170d76, type: 2}
       propertyPath: m_RootOrder
       value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012934701546, guid: aad7dc751f80d364a959516dbf170d76, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011418084254, guid: aad7dc751f80d364a959516dbf170d76, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012808420128, guid: aad7dc751f80d364a959516dbf170d76, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aad7dc751f80d364a959516dbf170d76, type: 2}
@@ -31444,6 +31834,18 @@ Prefab:
     - target: {fileID: 4000013571004480, guid: 52c224f1986dc6548b965d461f65f2a2, type: 2}
       propertyPath: m_RootOrder
       value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011629216620, guid: 52c224f1986dc6548b965d461f65f2a2, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011439807604, guid: 52c224f1986dc6548b965d461f65f2a2, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013649921002, guid: 52c224f1986dc6548b965d461f65f2a2, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52c224f1986dc6548b965d461f65f2a2, type: 2}
@@ -36250,6 +36652,18 @@ Prefab:
     - target: {fileID: 122178, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
       propertyPath: m_TagString
       value: MeshWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 177586, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 122178, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 187024, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
@@ -41545,10 +41959,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1328607902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
+  m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  E_Mateiral: -1
 --- !u!1 &1328943971
 GameObject:
   m_ObjectHideFlags: 0
@@ -42950,6 +43363,76 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c73bd4f401d1b6747bab256421f49d16, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1357264608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1357264609}
+  - component: {fileID: 1357264612}
+  - component: {fileID: 1357264611}
+  - component: {fileID: 1357264610}
+  m_Layer: 0
+  m_Name: ThunderTrigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1357264609
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357264608}
+  m_LocalRotation: {x: -0, y: 0.9999946, z: -0, w: 0.003306223}
+  m_LocalPosition: {x: 5.65, y: 0.4, z: 6.11}
+  m_LocalScale: {x: 1.9316703, y: 1.3137292, z: 1.8647847}
+  m_Children: []
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 179.621, z: 0}
+--- !u!114 &1357264610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357264608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421316c25ec89804ebdc277982096827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObject: {fileID: 8088569}
+  EventName: Thunder
+  Subtitle: play thunder
+  TriggerDuration: 20
+  TriggerTimes: 30
+--- !u!114 &1357264611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357264608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f1f11285a2b1b448281c806e121cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1357264612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357264608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1357574814
 GameObject:
   m_ObjectHideFlags: 0
@@ -45865,7 +46348,7 @@ GameObject:
   - component: {fileID: 1459155520}
   - component: {fileID: 1459155519}
   m_Layer: 0
-  m_Name: TestTrigger (1)
+  m_Name: ThunderTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45878,11 +46361,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459155517}
   m_LocalRotation: {x: -0, y: 0.9999946, z: -0, w: 0.003306223}
-  m_LocalPosition: {x: 0.849, y: 1.11, z: -3.247}
-  m_LocalScale: {x: 1.3049178, y: 1, z: 1.5315531}
+  m_LocalPosition: {x: 0.765418, y: 0.1607039, z: 0.5741656}
+  m_LocalScale: {x: 1.304919, y: 1, z: 2.4975903}
   m_Children: []
-  m_Father: {fileID: 324587527}
-  m_RootOrder: 2
+  m_Father: {fileID: 792027000}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 179.621, z: 0}
 --- !u!114 &1459155519
 MonoBehaviour:
@@ -45898,8 +46381,8 @@ MonoBehaviour:
   TriggerObject: {fileID: 833822884}
   EventName: Thunder
   Subtitle: play thunder
-  TriggerDuration: 10
-  TriggerTimes: 5
+  TriggerDuration: 20
+  TriggerTimes: 30
 --- !u!114 &1459155520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46684,6 +47167,16 @@ Prefab:
     - target: {fileID: 447276, guid: 2c90bf975d6512945898bf7706a5ebd5, type: 2}
       propertyPath: m_RootOrder
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: CloseAudioName
+      value: ToiletCabinet_Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468789572798098, guid: 2c90bf975d6512945898bf7706a5ebd5,
+        type: 2}
+      propertyPath: MainAudioName
+      value: ToiletCabinet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c90bf975d6512945898bf7706a5ebd5, type: 2}
