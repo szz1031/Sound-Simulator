@@ -59,6 +59,7 @@ namespace AK
         static const AkUniqueID LAPTOP_PLOT_05 = 2890816673U;
         static const AkUniqueID LAPTOP_PLOT_06 = 2890816674U;
         static const AkUniqueID LAPTOP_PLOT_07 = 2890816675U;
+        static const AkUniqueID LAUNDARY = 3130091867U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;

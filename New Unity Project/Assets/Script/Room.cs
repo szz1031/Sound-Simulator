@@ -7,13 +7,13 @@ public class Room : MonoBehaviour {
     public Transform[] Door;
     public bool InRoom;
     public Transform ClosestDoor;
-    float MinDistance;
     int Num;
-    int count;
+    public int count;
+    public int InitialCount;
 
 	// Use this for initialization
 	void Start () {
-		
+        count = -InitialCount;
 	}
 
     private void OnTriggerEnter(Collider other)

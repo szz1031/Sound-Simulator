@@ -72,6 +72,7 @@
 				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000"/>
 				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000"/>
 				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333"/>
+				<Event Id="3130091867" Name="Laundary" ObjectPath="\Events\Default Work Unit\Object\Laundary" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
 				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
@@ -319,7 +320,7 @@
 				</File>
 				<File Id="847065920" Language="SFX">
 					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
-					<Path>SFX\Rain on Window Sill-Mono_83C3D6FF.wem</Path>
+					<Path>SFX\Rain on Window Sill-Mono_FE00C8FB.wem</Path>
 				</File>
 				<File Id="854222693" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>

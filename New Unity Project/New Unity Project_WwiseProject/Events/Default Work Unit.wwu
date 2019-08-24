@@ -32,17 +32,6 @@
 				</Folder>
 				<Folder Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" ShortID="516963388">
 					<ChildrenList>
-						<Event Name="Window_Rain" ID="{EE7E1306-6FE7-4575-A035-50E0C55DB924}">
-							<ChildrenList>
-								<Action Name="" ID="{D16F7C87-DB49-49FA-BA10-C3C9BD909EEB}" ShortID="668938935">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Folder Name="Gramophone" ID="{8F2D27A0-1661-4469-B5AA-6638C2C454D2}" ShortID="633672968">
 							<ChildrenList>
 								<Event Name="Gramophone_Squeak_3" ID="{962C1972-BE9B-4B9E-B5BE-AA5834070104}">
@@ -159,31 +148,6 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Fireplace" ID="{3D2D6691-C024-4B05-B3D0-CA6510FA4193}">
-							<ChildrenList>
-								<Action Name="" ID="{F77DF09B-E6D6-47C9-ACD6-85C38A40E86B}" ShortID="615626627">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{C582FBF9-87B7-4909-BC05-83DFB667E18D}" ShortID="924163228">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{C296A1E2-4327-4AE6-BA88-00FBA15C39EE}" ShortID="506987019">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="LightSwitch_On" ID="{FB1963AB-4511-4794-A759-152823A7FAA3}">
 							<ChildrenList>
 								<Action Name="" ID="{CBAD4422-18B1-4A81-A7BD-E7F41C94527C}" ShortID="236826117">
@@ -856,6 +820,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Environment" ID="{48E2632B-8599-40A2-A979-F1A7345DFDFC}" ShortID="1018247528">
+					<ChildrenList>
+						<Event Name="Window_Rain" ID="{EE7E1306-6FE7-4575-A035-50E0C55DB924}">
+							<ChildrenList>
+								<Action Name="" ID="{D16F7C87-DB49-49FA-BA10-C3C9BD909EEB}" ShortID="668938935">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Thunder" ID="{4F4F656C-CABC-453C-91A8-3B96F46538AA}"/>
+						<Event Name="Laundary" ID="{E3A00ABF-0EF3-412A-A042-71CF91A3F0D1}"/>
+						<Event Name="Fireplace" ID="{3D2D6691-C024-4B05-B3D0-CA6510FA4193}">
+							<ChildrenList>
+								<Action Name="" ID="{F77DF09B-E6D6-47C9-ACD6-85C38A40E86B}" ShortID="615626627">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C582FBF9-87B7-4909-BC05-83DFB667E18D}" ShortID="924163228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C296A1E2-4327-4AE6-BA88-00FBA15C39EE}" ShortID="506987019">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586353462367234268
+    m_lastTime: -8586350036146706460
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -81,9 +81,9 @@ MonoBehaviour:
       - ElementName: Bear_Music
         ObjectType: 3
       Path: Default Work Unit\Object\Bear_Music
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 10
+      maxDuration: 9.803082
+      minDuration: 9.803082
     - name: Cabinet_Close
       guid: 87eeedec93e399479b24c35fe2af3ccb
       id: 1948672150
@@ -401,9 +401,9 @@ MonoBehaviour:
       - ElementName: Drawer_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Drawer_Close
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 10
+      maxDuration: 0.684236
+      minDuration: 0.583861
     - name: Drawer_KeySound
       guid: 5333a662410de5419c0b8fba24cd6aa0
       id: 3173784171
@@ -433,9 +433,9 @@ MonoBehaviour:
       - ElementName: Drawer_Open
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Drawer_Open
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 10
+      maxDuration: 0.487105
+      minDuration: 0.367632
     - name: Fireplace
       guid: 91662d3d24c0054bb3d0ca6510fa4193
       id: 1404152342
@@ -463,9 +463,9 @@ MonoBehaviour:
       - ElementName: GlassCabinet_Close
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_Close
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 10
+      maxDuration: 2.297233
+      minDuration: 2.297233
     - name: GlassCabinet_KeySound
       guid: f4ad97fbd7451540a2936d8077ce3d28
       id: 1066855742
@@ -511,7 +511,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Charge
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Charge
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 3.048447
       minDuration: 3.048447
     - name: Gramophone_Mainghosty
@@ -527,7 +527,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Mainghosty
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Mainghosty
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_MainNoise
@@ -543,7 +543,7 @@ MonoBehaviour:
       - ElementName: Gramophone_MainNoise
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_MainNoise
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Gramophone_NeedleTap
@@ -559,7 +559,7 @@ MonoBehaviour:
       - ElementName: Gramophone_NeedleTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_NeedleTap
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 0.129533
       minDuration: 0.129533
     - name: Gramophone_OnOffTap
@@ -575,7 +575,7 @@ MonoBehaviour:
       - ElementName: Gramophone_OnOffTap
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_OnOffTap
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 0.663492
       minDuration: 0.663492
     - name: Gramophone_Squeak_1
@@ -591,7 +591,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_1
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_1
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 1.107369
       minDuration: 1.107369
     - name: Gramophone_Squeak_2
@@ -607,7 +607,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_2
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_2
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 0.713889
       minDuration: 0.713889
     - name: Gramophone_Squeak_3
@@ -623,7 +623,7 @@ MonoBehaviour:
       - ElementName: Gramophone_Squeak_3
         ObjectType: 3
       Path: Default Work Unit\Object\Gramophone\Gramophone_Squeak_3
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: 0.803243
       minDuration: 0.803243
     - name: Guitar_Music
@@ -637,9 +637,9 @@ MonoBehaviour:
       - ElementName: Guitar_Music
         ObjectType: 3
       Path: Default Work Unit\Object\Guitar_Music
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 144.29167
+      minDuration: 144.29167
     - name: Key_Pickup
       guid: 07f59962f7233d4e96e1f977cccbf2c1
       id: 761761105
@@ -669,7 +669,7 @@ MonoBehaviour:
       - ElementName: Key_Uncollected
         ObjectType: 3
       Path: Default Work Unit\Object\Key\Key_Uncollected
-      maxAttenuation: 4
+      maxAttenuation: 5
       maxDuration: -1
       minDuration: -1
     - name: Laptop_Interact
@@ -701,9 +701,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_01
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_01
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 2.730667
+      minDuration: 2.730667
     - name: Laptop_Plot_02
       guid: 99e1f97ffd232844b53e0639ff08363a
       id: 2890816678
@@ -717,9 +717,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_02
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_02
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 10.005333
+      minDuration: 10.005333
     - name: Laptop_Plot_03
       guid: 800a388298deea41be7c6965ad7c483d
       id: 2890816679
@@ -733,9 +733,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_03
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_03
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 2.453333
+      minDuration: 2.453333
     - name: Laptop_Plot_04
       guid: 6754f09bdad0874083e95677b51bd88c
       id: 2890816672
@@ -749,9 +749,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_04
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_04
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 5.696
+      minDuration: 5.696
     - name: Laptop_Plot_05
       guid: e1210b21773c4548be03307d7d7b72fe
       id: 2890816673
@@ -765,9 +765,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_05
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_05
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 2.944
+      minDuration: 2.944
     - name: Laptop_Plot_06
       guid: bb48a1112fedd542b5250e506ac16da5
       id: 2890816674
@@ -781,9 +781,9 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_06
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_06
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 5.56
+      minDuration: 5.56
     - name: Laptop_Plot_07
       guid: 2c9ee75589737144b480308c2bb16664
       id: 2890816675
@@ -797,6 +797,20 @@ MonoBehaviour:
       - ElementName: Laptop_Plot_07
         ObjectType: 3
       Path: Default Work Unit\Object\Computer\Laptop_Plot_07
+      maxAttenuation: 20
+      maxDuration: 4.469333
+      minDuration: 4.469333
+    - name: Laundary
+      guid: bf0aa0e3f30e2a41a04271cf91a3f0d1
+      id: 3130091867
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: Laundary
+        ObjectType: 3
+      Path: Default Work Unit\Object\Laundary
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -854,8 +868,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Player\Player_Rain
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Remote_Interact
       guid: 8cbc90983a2b1c4c8bf6ca4c98c53806
       id: 2054288328
@@ -870,6 +884,38 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Safe_Axis_Close
+      guid: 6b5282eddbbc29408a558257229ffda4
+      id: 3555319575
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: safe
+        ObjectType: 4
+      - ElementName: Safe_Axis_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\safe\Safe_Axis_Close
+      maxAttenuation: 0
+      maxDuration: 0.768861
+      minDuration: 0.768861
+    - name: Safe_Axis_Open
+      guid: 71aca9a1a5c54e438e2ab4ad7efbe2b3
+      id: 203066849
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: safe
+        ObjectType: 4
+      - ElementName: Safe_Axis_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\safe\Safe_Axis_Open
+      maxAttenuation: 0
+      maxDuration: 0.697624
+      minDuration: 0.697624
     - name: Safe_Close
       guid: 03fd1714ce3cb34eb1dc50f3936a2794
       id: 1474002183
@@ -878,14 +924,46 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Object
         ObjectType: 4
-      - ElementName: Cabinet
+      - ElementName: safe
         ObjectType: 4
       - ElementName: Safe_Close
         ObjectType: 3
-      Path: Default Work Unit\Object\Cabinet\Safe_Close
+      Path: Default Work Unit\Object\safe\Safe_Close
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Safe_Handle_Close
+      guid: aed6b8f9834ea145829be8245e4a8d50
+      id: 601288178
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: safe
+        ObjectType: 4
+      - ElementName: Safe_Handle_Close
+        ObjectType: 3
+      Path: Default Work Unit\Object\safe\Safe_Handle_Close
+      maxAttenuation: 0
+      maxDuration: 0.408335
+      minDuration: 0.408335
+    - name: Safe_Handle_Open
+      guid: b8c73d5e1b5fe04a9e75f3c706c80e17
+      id: 1189764390
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: safe
+        ObjectType: 4
+      - ElementName: Safe_Handle_Open
+        ObjectType: 3
+      Path: Default Work Unit\Object\safe\Safe_Handle_Open
+      maxAttenuation: 0
+      maxDuration: 0.413122
+      minDuration: 0.413122
     - name: Safe_KeySound
       guid: adc53e098772bb44a14cd2e28276fd64
       id: 2314026839
@@ -894,11 +972,27 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Object
         ObjectType: 4
-      - ElementName: Cabinet
+      - ElementName: safe
         ObjectType: 4
       - ElementName: Safe_KeySound
         ObjectType: 3
-      Path: Default Work Unit\Object\Cabinet\Safe_KeySound
+      Path: Default Work Unit\Object\safe\Safe_KeySound
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Safe_Locked
+      guid: cada7c0a8d3e4146a362880e4f5434e6
+      id: 2854523811
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Object
+        ObjectType: 4
+      - ElementName: safe
+        ObjectType: 4
+      - ElementName: Safe_Locked
+        ObjectType: 3
+      Path: Default Work Unit\Object\safe\Safe_Locked
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -910,11 +1004,11 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Object
         ObjectType: 4
-      - ElementName: Cabinet
+      - ElementName: safe
         ObjectType: 4
       - ElementName: Safe_Open
         ObjectType: 3
-      Path: Default Work Unit\Object\Cabinet\Safe_Open
+      Path: Default Work Unit\Object\safe\Safe_Open
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -957,7 +1051,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_1
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_1
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_2
@@ -973,7 +1067,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_2
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_2
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_3
@@ -989,7 +1083,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_3
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_3
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_4
@@ -1005,7 +1099,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_4
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_4
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_5
@@ -1021,7 +1115,7 @@ MonoBehaviour:
       - ElementName: TV_1_Music_5
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_5
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: TV_1_Music_6
@@ -1037,41 +1131,9 @@ MonoBehaviour:
       - ElementName: TV_1_Music_6
         ObjectType: 3
       Path: Default Work Unit\Object\TV_1\TV_1_Music_6
-      maxAttenuation: 18
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
-    - name: TV_1_Plot_1
-      guid: 0df7538a06572d449d04483993380cda
-      id: 727756043
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_1
-        ObjectType: 4
-      - ElementName: TV_1_Plot_1
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_1\TV_1_Plot_1
-      maxAttenuation: 18
-      maxDuration: -1
-      minDuration: -1
-    - name: TV_1_Plot_2
-      guid: 13af13a7c0c4d840ac79c259291d9397
-      id: 727756040
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_1
-        ObjectType: 4
-      - ElementName: TV_1_Plot_2
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_1\TV_1_Plot_2
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: TV_1_SetVolume
       guid: b812cbfb0e27b44296c49a4e0342bb17
       id: 2532082576
@@ -1117,9 +1179,9 @@ MonoBehaviour:
       - ElementName: TV_2_Plot_1
         ObjectType: 3
       Path: Default Work Unit\Object\TV_2\TV_2_Plot_1
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 32.998432
+      minDuration: 32.998432
     - name: TV_2_Plot_2
       guid: 61a524e7e16c1544a699185fc7bbeb9a
       id: 2807456377
@@ -1133,43 +1195,11 @@ MonoBehaviour:
       - ElementName: TV_2_Plot_2
         ObjectType: 3
       Path: Default Work Unit\Object\TV_2\TV_2_Plot_2
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: TV_2_Plot_3
-      guid: 2a29454d015d70419aa5a8b8d874aebb
-      id: 2807456376
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_2
-        ObjectType: 4
-      - ElementName: TV_2_Plot_3
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_2\TV_2_Plot_3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: TV_2_Plot_4
-      guid: fa46f99c65f7a444aacd9943fbd987d4
-      id: 2807456383
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_2
-        ObjectType: 4
-      - ElementName: TV_2_Plot_4
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_2\TV_2_Plot_4
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 2.543218
+      minDuration: 2.543218
     - name: TV_2_Plot_5
-      guid: 77cec56f6dbf8f47af3d0b5588b93432
+      guid: 2a29454d015d70419aa5a8b8d874aebb
       id: 2807456382
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -1181,25 +1211,9 @@ MonoBehaviour:
       - ElementName: TV_2_Plot_5
         ObjectType: 3
       Path: Default Work Unit\Object\TV_2\TV_2_Plot_5
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: TV_2_Plot_6
-      guid: 2b87fe8e7ab13143a87be71e659f5de4
-      id: 2807456381
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Object
-        ObjectType: 4
-      - ElementName: TV_2
-        ObjectType: 4
-      - ElementName: TV_2_Plot_6
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_2\TV_2_Plot_6
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 20
+      maxDuration: 9.644404
+      minDuration: 9.644404
     - name: Window_Rain
       guid: 06137eeee76f7545a03550e0c55db924
       id: 290976602
@@ -1219,8 +1233,17 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 03200b5d46398d45816fee77a83878c4
     GuidInternal: 
-    m_lastTime: -8586367885481701115
+    m_lastTime: -8586350613934697418
     List:
+    - name: DecreaseVolume
+      guid: 5f25f59b02f60a41806a21ba9448d092
+      id: 1848266011
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DecreaseVolume
+        ObjectType: 13
+      Path: Default Work Unit\DecreaseVolume
     - name: Distance_max10
       guid: de04529eca98be4188ef592bccc7bd11
       id: 1192632456

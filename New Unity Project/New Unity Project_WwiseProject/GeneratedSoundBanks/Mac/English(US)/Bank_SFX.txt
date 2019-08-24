@@ -61,6 +61,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2890816679	Laptop_Plot_03			\Default Work Unit\Object\Computer\Laptop_Plot_03	
 	2916866438	Door_Narrow_Axis_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open	
 	3041433330	Door_Narrow_KeySound			\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound	
+	3130091867	Laundary			\Default Work Unit\Object\Laundary	
 	3173784171	Drawer_KeySound			\Default Work Unit\Object\Cabinet\Drawer_KeySound	
 	3333554874	Door_Locked			\Default Work Unit\Object\Door_Narrow\Door_Locked	
 	3463217684	Cabinet_KeySound			\Default Work Unit\Object\Cabinet\Cabinet_KeySound	
@@ -93,13 +94,13 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	293607552	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Bear		
 	321874459	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue		
-	343836973	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Rain		
+	343836973	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain		
 	373900420	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
 	431703738	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object		
 	433782185	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Mainghosty		
 	620045730	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb		
 	1022236422	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Guitar		
-	1048250915	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Fire		
+	1048250915	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
@@ -119,7 +120,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	78539637	drawer close_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_9A61751E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer&Carbinet\Drawer Shut\drawer close_01		5225
 	84328202	TV2_Plot_3	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\TV2_Plot_3_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\TV2\TV2_Plot_3		97196
 	105157533	Mainghosty	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Mainghosty_37C139BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Mainghosty		524447
-	112940681	Sub	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Fire Wind in Metal Stove 01_4A89F9BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Sub		142829
+	112940681	Sub	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Fire Wind in Metal Stove 01_4A89F9BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\Sub		142829
 	126968948	fstp_concrete_06	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_BAB6C276.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5428
 	147397618	Laptop_Plot2_6	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\Laptop_Plot2_6_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\Laptop\Laptop_Plot2_6		24123
 	203117369	fstp_wood_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_EDB45005.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_03		4977
@@ -141,7 +142,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	451088547	Key_Collect	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Key ring carabineer pick up_BLASTWAVEFX_02006_911EEA20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Key_Collect		6402
 	458629548	NeedleTap	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\NeedleTap_4129FCCA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\NeedleTap		2157
 	484742700	On_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_DDA2A76E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\On_01		2199
-	491382896	KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_AD60680C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457		535653
+	491382896	KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_AD60680C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457		535653
 	513100812	Squeak_3	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_3_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\gramophone\Squeak_3		7383
 	519856163	fstp_wood_04	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_EB782CB6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_04		4813
 	535477832	TV2_Plot_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\TV2_Plot_2_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\TV2\TV2_Plot_2		25200
@@ -166,7 +167,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	819079196	Door_01_Close_PartB	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_A859F4E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Close_PartB		3672
 	823992559	Laptop_Plot2_7	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\Laptop_Plot2_7_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\Laptop\Laptop_Plot2_7		40551
 	830186802	Door_01_Lock1_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_DE34FA7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\Door_narrow\Door_01_Lock1_01		4156
-	847065920	Rain_smallwindow	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Rain on Window Sill-Mono_83C3D6FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_smallwindow		1684541
+	847065920	Rain_smallwindow	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Rain on Window Sill-Mono_FE00C8FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Rain_smallwindow		1740975
 	854222693	On_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_F3DF57DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\On_2		2695
 	854516349	Laptop_Plot2_2	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\Laptop_Plot2_2_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\Laptop\Laptop_Plot2_2		90588
 	867338695	Laptop_Plot2_1	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\Laptop_Plot2_1_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\Laptop\Laptop_Plot2_1		21140
@@ -176,7 +177,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	887034712	fstp_concrete_05	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_9838A50D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_05		4717
 	888892161	fstp_carpet_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_876437FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_03		3433
 	911504740	TVMusic_01	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\ANW3194_33_Coral-Oceans-3-(60)_67115DF2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\TV_Music\TVMusic_01		781011
-	924713307	main	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\main		1286744
+	924713307	main	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\EFX INT Wood Fire Crackle 02_87AA2EB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\main		1286744
 	931284556	TV2_Plot_1	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\Voices\English(US)\TV2_Plot_1_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb\Dialogue\TV2\TV2_Plot_1		252603
 	945656954	fstp_concrete_03	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_76439697.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_03		5337
 	967272807	On_3	C:\Users\SZZ\Documents\GitHub\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_BED3955B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_3		2539

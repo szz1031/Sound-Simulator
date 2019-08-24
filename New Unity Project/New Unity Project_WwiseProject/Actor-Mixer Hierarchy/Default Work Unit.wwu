@@ -1405,7 +1405,7 @@
 												<XPos>0</XPos>
 												<YPos>0</YPos>
 												<Flags>5</Flags>
-												<SegmentShape>Log3</SegmentShape>
+												<SegmentShape>Log2</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
@@ -2245,7 +2245,7 @@
 														<XPos>0</XPos>
 														<YPos>0</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log3</SegmentShape>
+														<SegmentShape>Log2</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>10</XPos>
@@ -2730,157 +2730,6 @@
 								<CustomState Name="" ID="{9881CF69-CD50-4571-A3BF-EC87442A4387}" ShortID="620045730">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32" Value="-1200"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
-				</ActorMixer>
-				<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" ShortID="948681864">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-								<Property Name="UserAuxSendVolume0" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" ShortID="847065920">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-										<Property Name="LoopBegin" Type="Real64" Value="2"/>
-										<Property Name="LoopEnd" Type="Real64" Value="185"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Rain on Window Sill-Mono.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Rain_backgroundlayer" ID="{5F5F61B2-58F1-4C32-BDF0-B001C1BEAF59}" ShortID="448695720">
-							<PropertyList>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{761D730E-1E58-4866-9DD9-34AB8F88A4EF}" ShortID="620261131" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-											<PropertyList>
-												<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
-												<Property Name="FrequencyBand1" Type="Real32" Value="160"/>
-												<Property Name="FrequencyBand2" Type="Real32" Value="878"/>
-												<Property Name="FrequencyBand3" Type="Real32" Value="921"/>
-												<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
-												<Property Name="GainBand2" Type="Real32" Value="-10.5"/>
-												<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
-											</PropertyList>
-										</Effect>
-									</Custom>
-								</Reference>
-								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" ShortID="562544463">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-										<Property Name="LoopBegin" Type="Real64" Value="2"/>
-										<Property Name="LoopEnd" Type="Real64" Value="185"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Rain on Window Sill-stereo.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
-								<CustomState Name="" ID="{A4F36737-F7CB-488E-A464-5340F16EF9B7}" ShortID="395964030"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
-								<CustomState Name="" ID="{040EEF10-1761-4EA5-87BE-C33C0ED60D2A}" ShortID="343836973">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="24"/>
-										<Property Name="Pitch" Type="int32" Value="-2270"/>
-										<Property Name="Volume" Type="Real64" Value="-6"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
@@ -3702,101 +3551,9 @@
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Fire" ID="{E4682EF8-C717-4C84-ADE5-F59C262233C9}" ShortID="752416174">
+				<ActorMixer Name="Environmental Object" ID="{E4682EF8-C717-4C84-ADE5-F59C262233C9}" ShortID="752416174">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="Highpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{AD9E0843-A319-48A0-8E71-69C687B748A9}" ShortID="404461546">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{65788A68-F8CE-4111-BF3A-2DAB042E3934}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log2</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>20</XPos>
-												<YPos>31</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{8F425425-949A-46E5-B494-A9971DFFF222}" ShortID="285758329">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{52121F45-EACA-4E3E-886F-BB3B0CC49285}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>20</XPos>
-												<YPos>47</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="UserAuxSendVolume0" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{0CB1BF75-3E4D-4D59-B08B-26EA186D5DC2}" ShortID="145551867">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{313D5130-2AC1-49B7-8F25-BABF065FD337}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>4.63947</XPos>
-												<YPos>-4.39143</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>-0.80689</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -3813,10 +3570,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" ShortID="214450115">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
+						<ActorMixer Name="Fire" ID="{07F2CE74-77A1-480D-957C-95BA6A7CB892}" ShortID="414296320">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -3826,177 +3580,128 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}" ShortID="924713307">
+								<Sound Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" ShortID="503006265">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="334.821"/>
-										<Property Name="LoopBegin" Type="Real64" Value="4.017"/>
-										<Property Name="LoopEnd" Type="Real64" Value="123.2141"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>EFX INT Wood Fire Crackle 02.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Sub" ID="{7A6DE18F-20D9-43AB-87B5-5E94DB39EA13}" ShortID="503006265">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
-										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{6AD8FC7D-4390-4D07-963D-D99A8A454BD9}" ShortID="5295404">
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}" ShortID="112940681">
 											<PropertyList>
-												<Property Name="ConeHighPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{299E162D-518A-4552-B423-2EAA22892DF2}" ShortID="1021223645">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{44632D60-8B2C-4E44-8124-C85E22B8E369}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-												<Property Name="ConeLowPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{B3BAE26C-7950-4B4A-8712-372583620BF5}" ShortID="703492209">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{92FAF3C1-3253-429F-B7C5-48D92FB0AABA}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-												<Property Name="RadiusMax" Type="Real64" Value="10"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="175.939"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.116"/>
+												<Property Name="LoopEnd" Type="Real64" Value="17.12459"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="18.845732973285"/>
 											</PropertyList>
-											<CurveUsageInfoList>
-												<VolumeDryUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{262DFB17-3015-4117-A460-BAB4F893F637}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="3"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>3.96985</XPos>
-																	<YPos>-11.05196</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>10</XPos>
-																	<YPos>-200</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</VolumeDryUsage>
-												<VolumeWetGameUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetGameUsage>
-												<VolumeWetUserUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetUserUsage>
-												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</LowPassFilterUsage>
-												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</HighPassFilterUsage>
-												<SpreadUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</SpreadUsage>
-												<FocusUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</FocusUsage>
-											</CurveUsageInfoList>
-										</Attenuation>
-									</Custom>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}" ShortID="112940681">
+											<Language>SFX</Language>
+											<AudioFile>EFX INT Fire Wind in Metal Stove 01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" ShortID="346536054">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="175.939"/>
-										<Property Name="LoopBegin" Type="Real64" Value="0.116"/>
-										<Property Name="LoopEnd" Type="Real64" Value="17.12459"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="18.845732973285"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>EFX INT Fire Wind in Metal Stove 01.wav</AudioFile>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}" ShortID="491382896">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="125.249"/>
+												<Property Name="LoopBegin" Type="Real64" Value="3.757"/>
+												<Property Name="LoopEnd" Type="Real64" Value="44.83867"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="main" ID="{B67EDE9F-2BDF-4317-9973-022B79AEA87A}" ShortID="214450115">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}" ShortID="924713307">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="334.821"/>
+												<Property Name="LoopBegin" Type="Real64" Value="4.017"/>
+												<Property Name="LoopEnd" Type="Real64" Value="123.2141"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EFX INT Wood Fire Crackle 02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{897D2B88-224E-45DA-8792-0791C4566034}" ShortID="346536054">
+						</ActorMixer>
+						<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>
@@ -4004,182 +3709,147 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
-										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{024FCC5A-CEE4-4747-95BE-A819D12F7D97}" ShortID="1014258576">
-											<PropertyList>
-												<Property Name="ConeHighPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{213D27C1-4E9A-40BE-B473-78776DF8021B}" ShortID="604733745">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{E840A282-D4EE-4CB4-83E8-BA6A830ADFF5}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-												<Property Name="ConeLowPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{AD390571-5D08-469D-BAB7-7299873F729E}" ShortID="939115420">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{92F36C05-C1DB-4596-9EE8-5C85566548AE}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-												<Property Name="RadiusMax" Type="Real64" Value="10"/>
-											</PropertyList>
-											<CurveUsageInfoList>
-												<VolumeDryUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{9E38A839-51B1-449D-871E-D6837078EDA9}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="3"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>3.96985</XPos>
-																	<YPos>-11.05196</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>10</XPos>
-																	<YPos>-200</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</VolumeDryUsage>
-												<VolumeWetGameUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetGameUsage>
-												<VolumeWetUserUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetUserUsage>
-												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="LowPassFilter" ID="{B2CA9012-8ECC-4DCD-809E-05FB72ABF8AE}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>10</XPos>
-																	<YPos>62</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</LowPassFilterUsage>
-												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="HighPassFilter" ID="{78680761-3B52-476C-8095-85CE10C37F3A}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>10</XPos>
-																	<YPos>57</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</HighPassFilterUsage>
-												<SpreadUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</SpreadUsage>
-												<FocusUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</FocusUsage>
-											</CurveUsageInfoList>
-										</Attenuation>
-									</Custom>
-								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+									<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}" ShortID="491382896">
+								<Sound Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" ShortID="948681864">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="125.249"/>
-										<Property Name="LoopBegin" Type="Real64" Value="3.757"/>
-										<Property Name="LoopEnd" Type="Real64" Value="44.83867"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457.wav</AudioFile>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" ShortID="847065920">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2"/>
+												<Property Name="LoopEnd" Type="Real64" Value="185"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Rain on Window Sill-Mono.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rain_backgroundlayer" ID="{5F5F61B2-58F1-4C32-BDF0-B001C1BEAF59}" ShortID="448695720">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{761D730E-1E58-4866-9DD9-34AB8F88A4EF}" ShortID="620261131" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
+														<Property Name="FrequencyBand1" Type="Real32" Value="160"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="878"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="921"/>
+														<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
+														<Property Name="GainBand2" Type="Real32" Value="-10.5"/>
+														<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" ShortID="562544463">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2"/>
+												<Property Name="LoopEnd" Type="Real64" Value="185"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Rain on Window Sill-stereo.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="WorldState" ID="{71A69562-524A-4A74-BAF2-00702A8BAB1C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="A" ID="{1AFE570C-1BDF-4028-8801-9FF9686D4BC8}"/>
+										<CustomState Name="" ID="{A4F36737-F7CB-488E-A464-5340F16EF9B7}" ShortID="395964030"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="B" ID="{91523175-2011-4DE8-85AB-0B04872B7C6E}"/>
+										<CustomState Name="" ID="{040EEF10-1761-4EA5-87BE-C33C0ED60D2A}" ShortID="343836973">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="Pitch" Type="int32" Value="-2270"/>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</ActorMixer>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -4559,6 +4229,98 @@
 				<ActorMixer Name="WorldB Hint Object" ID="{716C1F06-7CF3-4EA0-ACF8-C9A8E20C418D}" ShortID="420450560">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{4033C956-11D3-439B-957A-C5705F5DC855}" ShortID="471283720">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5C31CAD2-C7FB-4CC3-A753-CD7154068606}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>31</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{8C22194B-268C-4CFA-8243-157E143FC4DD}" ShortID="733947330">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance_max20" ID="{116ED7B7-788A-49B7-8A3F-D1448D632F62}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0D269B9C-D6E9-41E6-82A5-90304E2EA26D}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>47</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{2298038E-1006-44A9-B14D-21E4AE95420A}" ShortID="229875765">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{FD598A7B-922E-41EB-B5ED-E68B73776149}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>4.63947</XPos>
+												<YPos>-4.39143000000001</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-0.80689000000001</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
