@@ -10,11 +10,11 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
         {
             case enum_Stage.Stage1:
                 AudioManager.PostEvent("TV_2_Plot_1",gameObject);
-                UIManager.Instance.AddSubtitle("TV2_Plot_1_Subtitle");
+                UIManager.Instance.AddSubtitle("Press E to interact with Objects, Hold Ctrl to squat, Press Q to switch between normal world and dark world");
                 break;
             case enum_Stage.Stage5:
                 AudioManager.PostEvent("TV_2_Plot_2", gameObject);
-                UIManager.Instance.AddSubtitle("TV2_Plot_2_Subtitle");
+                UIManager.Instance.AddSubtitle("Hey! Did you get the final key?");
                 break;
         }
     }
@@ -24,7 +24,7 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
             return;
         
         AudioManager.PostEvent("TV_2_Plot_5", gameObject);
-        UIManager.Instance.AddSubtitle("TV2_Plot_5_Subtitle");
+        UIManager.Instance.AddSubtitle("Congradulations! Now you can open the front door and finish the game. Hope your like this game, and i am very happy to hear some feedback afterwards.");
 
         base.TryInteract();
     }

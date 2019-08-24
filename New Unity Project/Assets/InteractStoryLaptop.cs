@@ -22,11 +22,11 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         {
             case enum_Stage.Stage2:
                 AudioManager.PostEvent("Laptop_Plot_01",gameObject);
-                UIManager.Instance.AddSubtitle("Laptop_Plot_01");
+                UIManager.Instance.AddSubtitle("“Who's that? Can you come here?”");
                 break;
             case enum_Stage.Stage4:
                 AudioManager.PostEvent("Laptop_Plot_06", gameObject);
-                UIManager.Instance.AddSubtitle("Laptop_Plot_06");
+                UIManager.Instance.AddSubtitle("“That's sounds great!”");
                 break;
 
         }
@@ -37,24 +37,24 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         {
             case enum_Stage.Stage2:
                 AudioManager.PostEvent("Laptop_Plot_02", gameObject);
-                UIManager.Instance.AddSubtitle("Laptop_Plot_02");
+                UIManager.Instance.AddSubtitle("“I have the key of the main door but i don't want to tell you....unless you play a wonderful music.”");
                 GameManager.Instance.OnStagePush( enum_Stage.Stage3);
                 break;
 
             case enum_Stage.Stage3:
                 if (b_RemoteInteracted)
                 {
-                    AudioManager.PostEvent("Laptop_Plot_04", gameObject);
+                    AudioManager.PostEvent("“I've been tired of listening to the music on that TV.”", gameObject);
                     UIManager.Instance.AddSubtitle("Laptop_Plot_04");
                 }
                 else {
                     AudioManager.PostEvent("Laptop_Plot_05", gameObject);
-                    UIManager.Instance.AddSubtitle("Laptop_Plot_05");
+                    UIManager.Instance.AddSubtitle("“Did you play the music? I can't hear anything.”");
                 }
               break;
             case enum_Stage.Stage4:
                 AudioManager.PostEvent("Laptop_Plot_07", gameObject);
-                UIManager.Instance.AddSubtitle("Laptop_Plot_07");
+                UIManager.Instance.AddSubtitle("“I have unlock the safe，you can get the key and go now.”");
                 GameManager.Instance.PickupKey(9);
                 break;
         }
@@ -69,7 +69,7 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         b_bearInteracted = true;
         this.StartSingleCoroutine(0, TIEnumerators.PauseDel(1f, () => {
             AudioManager.PostEvent("Laptop_Plot_03", gameObject);
-            UIManager.Instance.AddSubtitle("Laptop_Plot_03");
+            UIManager.Instance.AddSubtitle("“Are you kidding me?”");
         }));
     }
     public void RemoteInteract()
