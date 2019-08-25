@@ -22,7 +22,7 @@ public class InteractCabinet : InteractItemBase,ISingleCoroutine {
         b_Opening = true;
         string name = MainAudioName +  (b_Opened ? "_Close" : "_Open");
         AudioManager.PostEvent(name,this.gameObject);
-        UIManager.Instance.AddSubtitle(name);
+        //UIManager.Instance.AddSubtitle(name);
         
         m_Animation[m_clipName].normalizedTime = b_Opened ? .4f : 0;
         m_Animation[m_clipName].speed = b_Opened ? -1 : 1;

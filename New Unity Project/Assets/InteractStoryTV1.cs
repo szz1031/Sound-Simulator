@@ -20,7 +20,7 @@ public class InteractStoryTV1 : InteractStorySpecial<InteractStoryTV1> {
     {
         index++;
         AudioManager.PostEvent("TV_1_Music_"+index.ToString(),this.gameObject);
-        UIManager.Instance.AddSubtitle("Playing Music" + index.ToString());
+        //UIManager.Instance.AddSubtitle("Playing Music" + index.ToString());
         UIManager.Instance.AddTips("Music Switched");
         base.TryInteract();
     }

@@ -44,7 +44,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
             return;
         b_Opening = true;
         string subName = b_Opened ? "Close" : "Open";
-        UIManager.Instance.AddSubtitle(MainAudioName+"_" + subName);
+        //UIManager.Instance.AddSubtitle(MainAudioName+"_" + subName);
         m_Audios.Traversal((AudioBase audio) => { audio.Play(subName); });
         m_Animation[m_clipName].normalizedTime = b_Opened ? .4f : 0;
         m_Animation[m_clipName].speed = b_Opened ? -1 : 1;

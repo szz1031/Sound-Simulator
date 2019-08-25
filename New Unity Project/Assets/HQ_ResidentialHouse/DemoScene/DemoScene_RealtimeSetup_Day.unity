@@ -9615,7 +9615,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 313999496}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11150,8 +11150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObject: {fileID: 445115260}
   EventName: Thunder
-  Subtitle: play thunder
-  TriggerDuration: 20
+  Subtitle: 
+  TriggerDuration: 18
   TriggerTimes: 30
 --- !u!114 &372478809
 MonoBehaviour:
@@ -12456,7 +12456,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409980162}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13298,7 +13298,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421483955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14330,8 +14330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObject: {fileID: 896567645}
   EventName: Thunder
-  Subtitle: play thunder
-  TriggerDuration: 20
+  Subtitle: 
+  TriggerDuration: 18
   TriggerTimes: 30
 --- !u!114 &449032661
 MonoBehaviour:
@@ -21780,7 +21780,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 704437456}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36461,7 +36461,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1151794684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36928,7 +36928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb4cd9a1734e664f8e104cbd850bbcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  F_InteractCooldown: 1
+  F_InteractCooldown: 5
   S_InteractTips: 
   E_InInteractableTips: 
   S_InteractSubtitle: 
@@ -40902,7 +40902,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1299720804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -41654,15 +41654,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5847
+      value: -14.904
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2487
+      value: -0.4494
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.9304
+      value: -2.4978
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalRotation.x
@@ -43407,8 +43407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObject: {fileID: 8088569}
   EventName: Thunder
-  Subtitle: play thunder
-  TriggerDuration: 20
+  Subtitle: 
+  TriggerDuration: 18
   TriggerTimes: 30
 --- !u!114 &1357264611
 MonoBehaviour:
@@ -43897,12 +43897,21 @@ Prefab:
     - target: {fileID: 114190391681930576, guid: 285ac0a48522be24cbc54b5f4db971a6,
         type: 2}
       propertyPath: F_Offset
-      value: 75
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 114190391681930576, guid: 285ac0a48522be24cbc54b5f4db971a6,
         type: 2}
       propertyPath: F_TipsLastTime
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098985556753212, guid: 285ac0a48522be24cbc54b5f4db971a6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114986416169521634, guid: 285ac0a48522be24cbc54b5f4db971a6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 285ac0a48522be24cbc54b5f4db971a6, type: 2}
@@ -46380,8 +46389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerObject: {fileID: 833822884}
   EventName: Thunder
-  Subtitle: play thunder
-  TriggerDuration: 20
+  Subtitle: 
+  TriggerDuration: 18
   TriggerTimes: 30
 --- !u!114 &1459155520
 MonoBehaviour:
@@ -55959,7 +55968,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press E To Interact With Items
+  m_Text: 'Press E To Interact With Items
+
+    Hold CTRL to Squat
+
+    Press Q to switch between normal world and dark world'
 --- !u!222 &1757366881
 CanvasRenderer:
   m_ObjectHideFlags: 0

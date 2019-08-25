@@ -891,10 +891,13 @@
 								</Event>
 								<Event Name="Safe_Axis_Open" ID="{A1A9AC71-C5A5-434E-8E2A-B4AD7EFBE2B3}">
 									<ChildrenList>
-										<Action Name="" ID="{914625EC-1E53-4015-8FC3-AFC831BE237F}" ShortID="850846479">
+										<Action Name="" ID="{FF41A0F8-153A-469C-814E-F0C42B105C09}" ShortID="140932903">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.05"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Open_Axis" ID="{65624334-2EA4-49E1-8AA8-1B5AF0AA936B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="metal_door_hinge_squeak_1ft_02" ID="{0E87DD7D-4DA2-4244-BEFC-2E5CE5BF6309}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -940,9 +943,18 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Safe_Locked" ID="{0A7CDACA-3E8D-4641-A362-880E4F5434E6}"/>
+								<Event Name="Safe_Locked" ID="{0A7CDACA-3E8D-4641-A362-880E4F5434E6}">
+									<ChildrenList>
+										<Action Name="" ID="{625067AB-A409-4516-A9C5-FAD02614D328}" ShortID="417345619">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="locked" ID="{C71F8422-0C6B-4E86-A0B4-B489B2E63291}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="Safe_Close" ID="{1417FD03-3CCE-4EB3-B1DC-50F3936A2794}"/>
-								<Event Name="Safe_Open" ID="{7C0EC3AD-588C-4D92-B5FB-273428C403CC}"/>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -975,7 +987,7 @@
 								<Action Name="" ID="{4A39FB5F-C7D3-4A53-BFAC-116F600F2DB6}" ShortID="550743575">
 									<PropertyList>
 										<Property Name="Delay" Type="Real64" Value="3"/>
-										<Property Name="Probability" Type="Real64" Value="50"/>
+										<Property Name="Probability" Type="Real64" Value="60"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

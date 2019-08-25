@@ -44,8 +44,8 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
             case enum_Stage.Stage3:
                 if (b_RemoteInteracted)
                 {
-                    AudioManager.PostEvent("“I've been tired of listening to the music on that TV.”", gameObject);
-                    UIManager.Instance.AddSubtitle("Laptop_Plot_04");
+                    AudioManager.PostEvent("Laptop_Plot_04", gameObject);
+                    UIManager.Instance.AddSubtitle("“I've been tired of listening to music on that TV.”");
                 }
                 else {
                     AudioManager.PostEvent("Laptop_Plot_05", gameObject);

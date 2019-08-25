@@ -72,7 +72,6 @@ namespace AK
         static const AkUniqueID SAFE_HANDLE_OPEN = 1189764390U;
         static const AkUniqueID SAFE_KEYSOUND = 2314026839U;
         static const AkUniqueID SAFE_LOCKED = 2854523811U;
-        static const AkUniqueID SAFE_OPEN = 189348657U;
         static const AkUniqueID SCREWS_PICKUP = 1311816845U;
         static const AkUniqueID STOPOBJECT = 2199697068U;
         static const AkUniqueID THUNDER = 186852181U;

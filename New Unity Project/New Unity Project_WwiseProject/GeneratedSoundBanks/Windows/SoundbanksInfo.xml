@@ -27,32 +27,32 @@
 			<Path>English(US)\Bank_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082"/>
-				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
-				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" DurationType="OneShot" DurationMin="0.516693" DurationMax="0.563458"/>
-				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
-				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
-				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
-				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" DurationType="OneShot" DurationMin="1.549813" DurationMax="1.899100"/>
-				<Event Id="541226684" Name="Door_Closet_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
+				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
+				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.516693" DurationMax="0.563458"/>
+				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
+				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
+				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
+				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.549813" DurationMax="1.899100"/>
+				<Event Id="541226684" Name="Door_Closet_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
 				<Event Id="2141172849" Name="Door_Closet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3333554874" Name="Door_Locked" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Locked" DurationType="OneShot" DurationMin="0.420331" DurationMax="0.458374"/>
-				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
-				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
-				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
-				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
-				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923"/>
-				<Event Id="2853512794" Name="Door_Wide_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
-				<Event Id="64215390" Name="Door_Wide_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
-				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
-				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
-				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923"/>
-				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" DurationType="OneShot" DurationMin="0.503897" DurationMax="0.652820"/>
+				<Event Id="3333554874" Name="Door_Locked" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Locked" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.420331" DurationMax="0.458374"/>
+				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
+				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
+				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
+				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
+				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923"/>
+				<Event Id="2853512794" Name="Door_Wide_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
+				<Event Id="64215390" Name="Door_Wide_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
+				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
+				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028"/>
+				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923"/>
+				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.503897" DurationMax="0.652820"/>
 				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243"/>
+				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243"/>
 				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Environment\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
-				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
-				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056"/>
-				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" DurationType="OneShot" DurationMin="0.712574" DurationMax="0.768017"/>
+				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
+				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056"/>
+				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.712574" DurationMax="0.768017"/>
 				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447"/>
 				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="20.000000" DurationType="Infinite"/>
@@ -62,9 +62,9 @@
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889"/>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243"/>
 				<Event Id="2080917547" Name="Guitar_Music" ObjectPath="\Events\Default Work Unit\Object\Guitar_Music" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="144.291672" DurationMax="144.291672"/>
-				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
+				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857"/>
 				<Event Id="2382010549" Name="Key_Uncollected" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Uncollected" MaxAttenuation="5.000000" DurationType="Infinite"/>
-				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" DurationType="OneShot" DurationMin="1.353237" DurationMax="1.353237"/>
+				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.353237" DurationMax="1.353237"/>
 				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667"/>
 				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333"/>
 				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333"/>
@@ -73,24 +73,23 @@
 				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000"/>
 				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333"/>
 				<Event Id="3130091867" Name="Laundary" ObjectPath="\Events\Default Work Unit\Environment\Laundary" MaxAttenuation="8.000000" DurationType="Infinite"/>
-				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
-				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
+				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499"/>
+				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499"/>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816"/>
 				<Event Id="990547651" Name="Player_Rain" ObjectPath="\Events\Default Work Unit\Player\Player_Rain" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2054288328" Name="Remote_Interact" ObjectPath="\Events\Default Work Unit\Object\Remote_Interact" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3555319575" Name="Safe_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Close" DurationType="OneShot" DurationMin="0.705049" DurationMax="0.791390"/>
-				<Event Id="203066849" Name="Safe_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Open" DurationType="OneShot" DurationMin="0.658469" DurationMax="0.718066"/>
+				<Event Id="3555319575" Name="Safe_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.705049" DurationMax="0.791390"/>
+				<Event Id="203066849" Name="Safe_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.438209" DurationMax="0.473345"/>
 				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="601288178" Name="Safe_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Close" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
-				<Event Id="1189764390" Name="Safe_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Open" DurationType="OneShot" DurationMin="0.496868" DurationMax="0.541839"/>
-				<Event Id="2314026839" Name="Safe_KeySound" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_KeySound" DurationType="OneShot" DurationMin="0.772759" DurationMax="0.842700"/>
-				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Locked" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="189348657" Name="Safe_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1311816845" Name="Screws_Pickup" ObjectPath="\Events\Default Work Unit\Object\Screws_Pickup" DurationType="OneShot" DurationMin="0.408940" DurationMax="0.408940"/>
+				<Event Id="601288178" Name="Safe_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300"/>
+				<Event Id="1189764390" Name="Safe_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.496868" DurationMax="0.541839"/>
+				<Event Id="2314026839" Name="Safe_KeySound" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.772759" DurationMax="0.842700"/>
+				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Locked" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.168895" DurationMax="0.184181"/>
+				<Event Id="1311816845" Name="Screws_Pickup" ObjectPath="\Events\Default Work Unit\Object\Screws_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.408940" DurationMax="0.408940"/>
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="186852181" Name="Thunder" ObjectPath="\Events\Default Work Unit\Environment\Thunder" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="12.450315"/>
-				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458"/>
-				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
+				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458"/>
+				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
 				<Event Id="326737287" Name="TV_1_Music_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="20.000000" DurationType="Infinite"/>
@@ -98,7 +97,7 @@
 				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.254881"/>
+				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.254881"/>
 				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432"/>
 				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218"/>
 				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404"/>
@@ -107,11 +106,11 @@
 			<IncludedMemoryFiles>
 				<File Id="6940699" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_C4E67D82.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_946C212C.wem</Path>
 				</File>
 				<File Id="20227617" Language="SFX">
 					<ShortName>FRIDGE DOOR OPEN.wav</ShortName>
-					<Path>SFX\FRIDGE DOOR OPEN_20B86590.wem</Path>
+					<Path>SFX\FRIDGE DOOR OPEN_A6F244B9.wem</Path>
 				</File>
 				<File Id="37444667" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
@@ -127,7 +126,7 @@
 				</File>
 				<File Id="46440598" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_BA81CD21.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_BC875A85.wem</Path>
 				</File>
 				<File Id="50177702" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -167,7 +166,7 @@
 				</File>
 				<File Id="176976218" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_97549227.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_7688E8E0.wem</Path>
 				</File>
 				<File Id="203117369" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -175,7 +174,7 @@
 				</File>
 				<File Id="206318304" Language="SFX">
 					<ShortName>thunder low boom dist rain.wav</ShortName>
-					<Path>SFX\thunder low boom dist rain_643B268A.wem</Path>
+					<Path>SFX\thunder low boom dist rain_921EBBCB.wem</Path>
 				</File>
 				<File Id="219789314" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -187,7 +186,7 @@
 				</File>
 				<File Id="233146622" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_D697ADCD.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_E244FDC7.wem</Path>
 				</File>
 				<File Id="238106575" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -209,6 +208,10 @@
 					<ShortName>fstepConcreteMono.wav</ShortName>
 					<Path>SFX\fstepConcreteMono_C8C0CF49.wem</Path>
 				</File>
+				<File Id="307565909" Language="SFX">
+					<ShortName>EXT_shipping_container_metal_door_hinge_squeak_1ft_02.wav</ShortName>
+					<Path>SFX\EXT_shipping_container_metal_door_hinge_squeak_1ft_02_0C9BA49C.wem</Path>
+				</File>
 				<File Id="323133469" Language="SFX">
 					<ShortName>ANW1838_10_Violins-Virus.wav</ShortName>
 					<Path>SFX\ANW1838_10_Violins-Virus_4EA6E607.wem</Path>
@@ -223,7 +226,7 @@
 				</File>
 				<File Id="381684206" Language="SFX">
 					<ShortName>Washing machine draining subtly and humming.wav</ShortName>
-					<Path>SFX\Washing machine draining subtly and humming_83C67FBA.wem</Path>
+					<Path>SFX\Washing machine draining subtly and humming_3F4F911C.wem</Path>
 				</File>
 				<File Id="396493397" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
@@ -243,11 +246,11 @@
 				</File>
 				<File Id="435878783" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_4AD5545B.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_338320A4.wem</Path>
 				</File>
 				<File Id="441170689" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_8C3F394B.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_7A4F4293.wem</Path>
 				</File>
 				<File Id="451088547" Language="SFX">
 					<ShortName>Key ring carabineer pick up_BLASTWAVEFX_02006.wav</ShortName>
@@ -259,11 +262,11 @@
 				</File>
 				<File Id="473023217" Language="SFX">
 					<ShortName>Lightning cracks_05.wav</ShortName>
-					<Path>SFX\Lightning cracks_05_DE2D9F34.wem</Path>
+					<Path>SFX\Lightning cracks_05_63C116B5.wem</Path>
 				</File>
 				<File Id="483574875" Language="SFX">
 					<ShortName>Door-Metal-Large Chunk-Close.wav</ShortName>
-					<Path>SFX\Door-Metal-Large Chunk-Close_C9BA9F63.wem</Path>
+					<Path>SFX\Door-Metal-Large Chunk-Close_23CA6A1E.wem</Path>
 				</File>
 				<File Id="484742700" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -275,7 +278,7 @@
 				</File>
 				<File Id="492614535" Language="SFX">
 					<ShortName>Lightning cracks dry_03.wav</ShortName>
-					<Path>SFX\Lightning cracks dry_03_03EC1A71.wem</Path>
+					<Path>SFX\Lightning cracks dry_03_F067CBDE.wem</Path>
 				</File>
 				<File Id="513100812" Language="SFX">
 					<ShortName>REAPER Media\Squeak_3.wav</ShortName>
@@ -287,7 +290,7 @@
 				</File>
 				<File Id="534002572" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_0A5FFD02.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_34EF81FE.wem</Path>
 				</File>
 				<File Id="535477832" Language="English(US)">
 					<ShortName>TV2_Plot_2.wav</ShortName>
@@ -299,7 +302,7 @@
 				</File>
 				<File Id="567029194" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_3F7DD616.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_6A4BFD9E.wem</Path>
 				</File>
 				<File Id="573201444" Language="SFX">
 					<ShortName>REAPER Media\OnOffTap.wav</ShortName>
@@ -311,7 +314,7 @@
 				</File>
 				<File Id="595218375" Language="SFX">
 					<ShortName>Gas laundry dryer running rhythmically and tumbling.wav</ShortName>
-					<Path>SFX\Gas laundry dryer running rhythmically and tumbling_1D27CCA7.wem</Path>
+					<Path>SFX\Gas laundry dryer running rhythmically and tumbling_31D8BB7F.wem</Path>
 				</File>
 				<File Id="613669782" Language="SFX">
 					<ShortName>ANW2097_34_London-Bridge-Is-Falling-9-(30).wav</ShortName>
@@ -319,11 +322,11 @@
 				</File>
 				<File Id="623791931" Language="SFX">
 					<ShortName>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE Mud Room Cabinet O_C Action 03_3FA19CC2.wem</Path>
+					<Path>SFX\EFX INT HOUSE Mud Room Cabinet O_C Action 03_601F55B2.wem</Path>
 				</File>
 				<File Id="624987087" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_546E774B.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_869B12CB.wem</Path>
 				</File>
 				<File Id="643296694" Language="SFX">
 					<ShortName>ANW3088_05_Fairground.wav</ShortName>
@@ -347,7 +350,7 @@
 				</File>
 				<File Id="689672388" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_740463BC.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_FD434D14.wem</Path>
 				</File>
 				<File Id="704428846" Language="SFX">
 					<ShortName>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</ShortName>
@@ -359,11 +362,11 @@
 				</File>
 				<File Id="712503341" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_2D46726D.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_C9E3E687.wem</Path>
 				</File>
 				<File Id="729219625" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_0751E6FA.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_D4F83270.wem</Path>
 				</File>
 				<File Id="730283719" Language="SFX">
 					<ShortName>REAPER Media\Squeak_1.wav</ShortName>
@@ -371,7 +374,7 @@
 				</File>
 				<File Id="734492731" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_FFAA670C.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_92C49745.wem</Path>
 				</File>
 				<File Id="740920542" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -383,7 +386,7 @@
 				</File>
 				<File Id="756349642" Language="SFX">
 					<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
-					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_69B9AD51.wem</Path>
+					<Path>SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_C23FB972.wem</Path>
 				</File>
 				<File Id="776440994" Language="English(US)">
 					<ShortName>Laptop_Plot2_3.wav</ShortName>
@@ -391,7 +394,7 @@
 				</File>
 				<File Id="808117506" Language="SFX">
 					<ShortName>thunder 19.wav</ShortName>
-					<Path>SFX\thunder 19_3B620AAE.wem</Path>
+					<Path>SFX\thunder 19_95FEE437.wem</Path>
 				</File>
 				<File Id="813244428" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
@@ -411,7 +414,7 @@
 				</File>
 				<File Id="846134701" Language="SFX">
 					<ShortName>calculations_n_text_spaced_33.wav</ShortName>
-					<Path>SFX\calculations_n_text_spaced_33_7116D86D.wem</Path>
+					<Path>SFX\calculations_n_text_spaced_33_9F3B3B5B.wem</Path>
 				</File>
 				<File Id="847065920" Language="SFX">
 					<ShortName>Rain on Window Sill-Mono.wav</ShortName>
@@ -435,7 +438,7 @@
 				</File>
 				<File Id="876868247" Language="SFX">
 					<ShortName>INT_closet_door_wood_open_close_04.wav</ShortName>
-					<Path>SFX\INT_closet_door_wood_open_close_04_C00DCCC9.wem</Path>
+					<Path>SFX\INT_closet_door_wood_open_close_04_78EBE13C.wem</Path>
 				</File>
 				<File Id="883149415" Language="SFX">
 					<ShortName>ANW3088_06_Romantica.wav</ShortName>
@@ -467,7 +470,7 @@
 				</File>
 				<File Id="942554569" Language="SFX">
 					<ShortName>REFRIGERATOR DOOR CLOSE.wav</ShortName>
-					<Path>SFX\REFRIGERATOR DOOR CLOSE_F94B9EA4.wem</Path>
+					<Path>SFX\REFRIGERATOR DOOR CLOSE_AA37E5E7.wem</Path>
 				</File>
 				<File Id="945656954" Language="SFX">
 					<ShortName>fstepConcreteMono.wav</ShortName>
@@ -483,11 +486,11 @@
 				</File>
 				<File Id="997959073" Language="SFX">
 					<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
-					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_CCE95BFC.wem</Path>
+					<Path>SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_944313D3.wem</Path>
 				</File>
 				<File Id="999271713" Language="SFX">
 					<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
-					<Path>SFX\Drawer Wooden Vanity_01_56DF6354.wem</Path>
+					<Path>SFX\Drawer Wooden Vanity_01_A3DA3462.wem</Path>
 				</File>
 				<File Id="1002441243" Language="SFX">
 					<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -495,7 +498,11 @@
 				</File>
 				<File Id="1019518702" Language="SFX">
 					<ShortName>thunder 02.wav</ShortName>
-					<Path>SFX\thunder 02_FB1F7B55.wem</Path>
+					<Path>SFX\thunder 02_77FC9F5C.wem</Path>
+				</File>
+				<File Id="1026426294" Language="SFX">
+					<ShortName>Door-Metal-Large Chunk-Close.wav</ShortName>
+					<Path>SFX\Door-Metal-Large Chunk-Close_AEF0A45F.wem</Path>
 				</File>
 				<File Id="1038279815" Language="SFX">
 					<ShortName>WoodfloorbarefootstepssqueakINT01-MS.wav</ShortName>
