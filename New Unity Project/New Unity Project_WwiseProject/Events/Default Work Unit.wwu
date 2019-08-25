@@ -311,6 +311,9 @@
 								<Event Name="Cabinet_Open" ID="{C3F04180-B91F-4F05-B9D8-9E7AAAF28E70}">
 									<ChildrenList>
 										<Action Name="" ID="{490380A7-AF37-48AC-AB58-752A1068FA91}" ShortID="202428969">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.05"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="cabinet open" ID="{97AA547E-C279-4A34-B520-343026297054}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>

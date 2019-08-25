@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8586349170655398431
+    m_lastTime: -8586348813767369829
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -98,8 +98,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_Close
       maxAttenuation: 10
-      maxDuration: 0.528209
-      minDuration: 0.49267
+      maxDuration: 0.540757
+      minDuration: 0.481491
     - name: Cabinet_KeySound
       guid: e710d37c5ed9f24fa76b5278fc828604
       id: 3463217684
@@ -130,8 +130,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\Cabinet_Open
       maxAttenuation: 10
-      maxDuration: 0.471653
-      minDuration: 0.19099
+      maxDuration: 0.541115
+      minDuration: 0.233421
     - name: Door_Closet_Axis_Close
       guid: e2bea2e42aa3034f919ad7985192e12e
       id: 3498272821
@@ -464,8 +464,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_Close
       maxAttenuation: 10
-      maxDuration: 0.528209
-      minDuration: 0.49267
+      maxDuration: 0.540757
+      minDuration: 0.481491
     - name: GlassCabinet_KeySound
       guid: f4ad97fbd7451540a2936d8077ce3d28
       id: 1066855742
@@ -496,8 +496,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\GlassCabinet_Open
       maxAttenuation: 10
-      maxDuration: 0.768017
-      minDuration: 0.712574
+      maxDuration: 0.787591
+      minDuration: 0.695135
     - name: Gramophone_Charge
       guid: 4577368a30a07040b981e67023565dfa
       id: 2879668892
@@ -1066,8 +1066,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Object\Cabinet\ToiletCabinet_Open
       maxAttenuation: 10
-      maxDuration: 0.471653
-      minDuration: 0.19099
+      maxDuration: 0.491115
+      minDuration: 0.183421
     - name: TV_1_Music_1
       guid: 4eaa5f948d6c444e93a5aaa40db072ef
       id: 326737287
@@ -1386,5 +1386,6 @@ MonoBehaviour:
   - /New Unity Project_WwiseProject/Events
   - /New Unity Project_WwiseProject/Events/Default Work Unit
   - /New Unity Project_WwiseProject/Events/Default Work Unit/Object
+  - /New Unity Project_WwiseProject/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

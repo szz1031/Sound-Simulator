@@ -27,9 +27,9 @@
 			<Path>English(US)\Bank_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082"/>
-				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
+				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757"/>
 				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.516693" DurationMax="0.563458"/>
-				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
+				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.233421" DurationMax="0.541115"/>
 				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390"/>
 				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307"/>
 				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.549813" DurationMax="1.899100"/>
@@ -50,9 +50,9 @@
 				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243"/>
 				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Environment\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
-				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.492670" DurationMax="0.528209"/>
+				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757"/>
 				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056"/>
-				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.712574" DurationMax="0.768017"/>
+				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.695135" DurationMax="0.787591"/>
 				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447"/>
 				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="20.000000" DurationType="Infinite"/>
@@ -89,7 +89,7 @@
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="186852181" Name="Thunder" ObjectPath="\Events\Default Work Unit\Environment\Thunder" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="12.450315"/>
 				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458"/>
-				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.190990" DurationMax="0.471653"/>
+				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.183421" DurationMax="0.491115"/>
 				<Event Id="326737287" Name="TV_1_Music_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_1" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="20.000000" DurationType="Infinite"/>
 				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="20.000000" DurationType="Infinite"/>
@@ -210,7 +210,7 @@
 				</File>
 				<File Id="307565909" Language="SFX">
 					<ShortName>EXT_shipping_container_metal_door_hinge_squeak_1ft_02.wav</ShortName>
-					<Path>SFX\EXT_shipping_container_metal_door_hinge_squeak_1ft_02_0C9BA49C.wem</Path>
+					<Path>SFX\EXT_shipping_container_metal_door_hinge_squeak_1ft_02_D34319D9.wem</Path>
 				</File>
 				<File Id="323133469" Language="SFX">
 					<ShortName>ANW1838_10_Violins-Virus.wav</ShortName>
