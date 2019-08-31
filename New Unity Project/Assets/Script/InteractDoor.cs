@@ -10,6 +10,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
     protected AudioBase[] m_Audios;
     protected Animation m_Animation;
     public string MainAudioName = "Door";
+    public string LockedSubtitle = "Door Locked";
     public string KeyAudioName;
     public int I_KeyIndex = 0;
     public bool B_InteractOnce = false;
@@ -30,7 +31,7 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
         if (I_KeyIndex > 0 && !GameManager.Instance.B_CanDoorOpen(I_KeyIndex))
         {
             AudioManager.PostEvent(MainAudioName+"_Locked",this.gameObject);
-            UIManager.Instance.AddSubtitle(MainAudioName+" Locked");
+            UIManager.Instance.AddSubtitle(LockedSubtitle);
             UIManager.Instance.AddTips(MainAudioName+" Locked!");
             return;
         }

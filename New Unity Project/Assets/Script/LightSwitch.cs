@@ -125,8 +125,6 @@ public class LightSwitch : InteractorBase {
     public override bool TryInteract()
     {
         base.TryInteract();
-        if (GameManager.Instance.B_SearchMode)
-            return false;
         Switch(!B_LightsOn);
         return true;
     }

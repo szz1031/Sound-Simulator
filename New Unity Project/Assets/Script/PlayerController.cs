@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour {
     RaycastHit hit = new RaycastHit();
     void TryInterach()
     {
+        if (GameManager.Instance.B_SearchMode)
+            return;
+
         if (Physics.SphereCast(CameraController.Instance.MainCamera.transform.position, .1f, CameraController.Instance.MainCamera.transform.forward,out hit,GameConst.I_PlayerInteractDistance,enum_HitCheckType.Dynamic.ToCastLayer() ))
         {
             HitCheckDynamic interact = hit.collider.GetComponent<HitCheckDynamic>();

@@ -13,6 +13,8 @@ public class HitCheckDynamic : HitCheckBase {
     }
     public bool OnTryInteract()
     {
-        return TryInteract();
+        if (TryInteract != null)
+            return TryInteract();
+        return false;
     }
 }
