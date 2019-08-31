@@ -49,7 +49,7 @@
 				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.503897" DurationMax="0.652820"/>
 				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243"/>
-				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Environment\Fireplace" MaxAttenuation="15.000000" DurationType="Infinite"/>
+				<Event Id="1404152342" Name="Fireplace" ObjectPath="\Events\Default Work Unit\Environment\Fireplace" MaxAttenuation="18.000000" DurationType="Infinite"/>
 				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757"/>
 				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056"/>
 				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.695135" DurationMax="0.787591"/>
@@ -101,7 +101,7 @@
 				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432"/>
 				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218"/>
 				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404"/>
-				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite"/>
+				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="9.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="6940699" Language="SFX">

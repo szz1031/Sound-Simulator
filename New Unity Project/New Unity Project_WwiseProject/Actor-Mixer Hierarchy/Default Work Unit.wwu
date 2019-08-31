@@ -9,7 +9,7 @@
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5020,67 +5020,9 @@
 									<Custom CreatedFrom="{97D6212A-C457-4962-B76A-7A00CF710EDB}">
 										<Attenuation Name="Attenuation_Object_max15 (Custom)" ID="{9A2C3AD9-C5E5-44B3-BC31-CF2069405893}" ShortID="425755025">
 											<PropertyList>
-												<Property Name="ConeHighPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{CE983847-DB8D-4F5A-BE25-63701EEF03C3}" ShortID="452222572">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1A54E483-0E6B-48DC-BF0D-E545CE7ADC90}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-												<Property Name="ConeLowPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{FD863257-34D7-404E-B6C2-C113CEB33246}" ShortID="744813941">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{8906F44D-9FB6-45E7-A06F-875F4A0E7F15}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-												<Property Name="RadiusMax" Type="Real64" Value="15"/>
+												<Property Name="RadiusMax" Type="Real64" Value="18"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -5097,14 +5039,14 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>5.954775</XPos>
+																	<XPos>7.14573</XPos>
 																	<YPos>-11.05196</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
-																	<YPos>-200</YPos>
+																	<XPos>18</XPos>
+																	<YPos>-90</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>
@@ -5131,7 +5073,7 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
+																	<XPos>18</XPos>
 																	<YPos>64</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -5153,7 +5095,7 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
+																	<XPos>18</XPos>
 																	<YPos>56</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -5321,7 +5263,6 @@
 						<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -5505,13 +5446,105 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+											<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+												<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{66D56E92-1FE3-4A68-BE47-9CB1696ECDF1}" ShortID="782089599">
+													<PropertyList>
+														<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+														<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+														<Property Name="RadiusMax" Type="Real64" Value="9"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{E81C7681-F277-4F54-A953-9DC340D1B2E9}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>-2</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>4.00251</XPos>
+																			<YPos>-10.43144</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{FDBC5A9B-5542-4B5F-A3C2-8A0F38214E96}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>62</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{9B5CB303-BD41-4EC4-B351-59864E23EED8}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>57</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -5937,65 +5970,7 @@
 									<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
 										<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{3E2E6BA0-23F2-46ED-A36D-4CE2689442F4}" ShortID="746921757">
 											<PropertyList>
-												<Property Name="ConeHighPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{950498CF-7C9F-4BEB-8BF0-C7C8E9BA2A57}" ShortID="567199917">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{CB359AF7-63D8-4E5B-A7AD-0597325C283B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-												<Property Name="ConeLowPassFilterValue" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{0017B9F3-9A30-4D8D-AF87-B9E5F4A8D800}" ShortID="847611793">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{5D9018B3-EC09-4F9A-862B-78DB4602477E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
 												<Property Name="RadiusMax" Type="Real64" Value="8"/>
 											</PropertyList>
@@ -6009,13 +5984,13 @@
 															<PointList>
 																<Point>
 																	<XPos>0</XPos>
-																	<YPos>0</YPos>
+																	<YPos>-1.19595</YPos>
 																	<Flags>5</Flags>
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>2.68341</XPos>
-																	<YPos>-8.9992</YPos>
+																	<XPos>1.64823</XPos>
+																	<YPos>-7.34003</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>

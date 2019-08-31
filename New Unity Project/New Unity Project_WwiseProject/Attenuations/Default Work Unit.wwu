@@ -237,65 +237,7 @@
 				</Attenuation>
 				<Attenuation Name="Attenuation_Object_max15" ID="{97D6212A-C457-4962-B76A-7A00CF710EDB}" ShortID="390156445">
 					<PropertyList>
-						<Property Name="ConeHighPassFilterValue" Type="int32">
-							<RTPCList>
-								<RTPC Name="" ID="{70C99AA4-9BDF-4615-B393-F5F58303F5A2}" ShortID="665981069">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{40BFA5E4-C19A-42EF-89DD-09216D816B63}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Exp1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>100</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-						<Property Name="ConeLowPassFilterValue" Type="int32">
-							<RTPCList>
-								<RTPC Name="" ID="{A1B7767D-7BF6-4FAE-A746-F50F2C77E7F9}" ShortID="518168642">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{5248F989-32BE-407D-8A43-7EC533AF8EF5}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-100</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Exp1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>100</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 						<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
 						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
@@ -348,7 +290,7 @@
 										</Point>
 										<Point>
 											<XPos>15</XPos>
-											<YPos>49</YPos>
+											<YPos>60</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -369,7 +311,7 @@
 										</Point>
 										<Point>
 											<XPos>15</XPos>
-											<YPos>51</YPos>
+											<YPos>60</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

@@ -60,7 +60,6 @@ public class Occlusion : MonoBehaviour
                 if (HitArrary[i].transform.tag == "Floor")
                 {
                     PassFloor = true;
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
 
                 }
 
@@ -76,7 +75,7 @@ public class Occlusion : MonoBehaviour
                 if (PassFloor)
                     OcclusionPercentage = 0.7f;
                 else if (PassWall)
-                    OcclusionPercentage = 0.2f;
+                    OcclusionPercentage = 0.25f;
                 else
                     OcclusionPercentage = 0.0f;
 
@@ -85,10 +84,6 @@ public class Occlusion : MonoBehaviour
             else  //calculate of occlusion
             {                
                                 
-
-                if (!PassFloor)
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.green); 
-
                 // avoid camera and object being blocked by themself
                 if (hit2 < 0.2 && DisToListener - hit1 >= 0.2)                
                     hit2 = 0.5f;
@@ -103,23 +98,19 @@ public class Occlusion : MonoBehaviour
                 if (BlockedDistance <= 0.5)
                 {
                     OcclusionPercentage = BlockedDistance / DisToListener;
-                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
                 }
 
                 else if (BlockedDistance <= 2)
                 {
                     OcclusionPercentage = (BlockedDistance - 0.5f) / DisToListener;
-                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
                 }
                 else if (BlockedDistance <= 4)
                 {
                     OcclusionPercentage = (1.25f * BlockedDistance - 1.0f) / DisToListener;
-                    //  Debug.DrawRay(SourcePosition, RayDirection1, Color.cyan);
                 }
                 else
                 {
                     OcclusionPercentage = BlockedDistance / DisToListener;
-                    // Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
                 }
              
 
@@ -128,11 +119,21 @@ public class Occlusion : MonoBehaviour
                     OcclusionPercentage = OcclusionPercentage + 0.70f;
 
                 if (PassWall && !PassFloor)
-                    OcclusionPercentage = OcclusionPercentage + 0.15f;
+                    OcclusionPercentage = OcclusionPercentage + 0.2f;
 
                 if (OcclusionPercentage > 1)
-                    OcclusionPercentage = 1; 
+                    OcclusionPercentage = 1;
 
+                if (OcclusionPercentage < 0)
+                    OcclusionPercentage = 0;
+
+                //debug
+                if (OcclusionPercentage >=0.7)
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                else if (OcclusionPercentage >= 0.3)
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
+                else
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
 
 
                 AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
