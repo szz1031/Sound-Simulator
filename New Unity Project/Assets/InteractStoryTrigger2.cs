@@ -8,6 +8,6 @@ public class InteractStoryTrigger2 : InteractStoryItem {
         if (B_Interacted)
             return;
         base.TryInteract();
-        UIManager.Instance.AddSubtitle("Game_Finished");
+        UIManager.Instance.AddSubtitle("The Game is completed. Thank you!");
     }
 }

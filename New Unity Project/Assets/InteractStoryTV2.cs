@@ -24,7 +24,7 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
             return;
         
         AudioManager.PostEvent("TV_2_Plot_5", gameObject);
-        UIManager.Instance.AddSubtitle("Congradulations! Hope your like this game, and i am very happy to hear some feedback afterwards.");
+        UIManager.Instance.AddSubtitle("Congradulations! Hope your like this game. I am very happy to hear some feedbacks afterwards. Thank you!");
 
         base.TryInteract();
     }

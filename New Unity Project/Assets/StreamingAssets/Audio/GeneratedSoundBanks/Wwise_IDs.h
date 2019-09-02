@@ -63,7 +63,6 @@ namespace AK
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
-        static const AkUniqueID PLAYER_RAIN = 990547651U;
         static const AkUniqueID REMOTE_INTERACT = 2054288328U;
         static const AkUniqueID SAFE_AXIS_CLOSE = 3555319575U;
         static const AkUniqueID SAFE_AXIS_OPEN = 203066849U;

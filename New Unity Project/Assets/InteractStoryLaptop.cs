@@ -22,7 +22,7 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         {
             case enum_Stage.Stage2:
                 AudioManager.PostEvent("Laptop_Plot_01",gameObject);
-                UIManager.Instance.AddSubtitle("“Who's that? Can you come here?”");
+                UIManager.Instance.AddSubtitle("“Who's that? Can you come here? I am in the study room right in front of you.”");
                 break;
             case enum_Stage.Stage4:
                 AudioManager.PostEvent("Laptop_Plot_06", gameObject);
@@ -37,7 +37,7 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         {
             case enum_Stage.Stage2:
                 AudioManager.PostEvent("Laptop_Plot_02", gameObject);
-                UIManager.Instance.AddSubtitle("“I have the key of the main door but i don't want to tell you....unless you play a wonderful music.”");
+                UIManager.Instance.AddSubtitle("“I have the key of the main door but I don't want to give you....unless you play a wonderful music for me.”");
                 GameManager.Instance.OnStagePush( enum_Stage.Stage3);
                 break;
 
@@ -45,11 +45,11 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
                 if (b_RemoteInteracted)
                 {
                     AudioManager.PostEvent("Laptop_Plot_04", gameObject);
-                    UIManager.Instance.AddSubtitle("“I've been tired of listening to music on that TV.”");
+                    UIManager.Instance.AddSubtitle("“I've been tired of listening to that TV. Try to find other ones.”");
                 }
                 else {
                     AudioManager.PostEvent("Laptop_Plot_05", gameObject);
-                    UIManager.Instance.AddSubtitle("“Did you play the music? I can't hear anything.”");
+                    UIManager.Instance.AddSubtitle("“Did you play a music? I can't hear it.”");
                 }
               break;
             case enum_Stage.Stage4:
@@ -69,7 +69,7 @@ public class InteractStoryLaptop : InteractStorySpecial<InteractStoryLaptop>,ISi
         b_bearInteracted = true;
         this.StartSingleCoroutine(0, TIEnumerators.PauseDel(1f, () => {
             AudioManager.PostEvent("Laptop_Plot_03", gameObject);
-            UIManager.Instance.AddSubtitle("“Are you kidding me?”");
+            UIManager.Instance.AddSubtitle("“Are you kidding me? I don't like this one.”");
         }));
     }
     public void RemoteInteract()

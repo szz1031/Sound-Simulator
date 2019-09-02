@@ -2330,7 +2330,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11496544, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
       propertyPath: LockedSubtitle
-      value: Garage Door Locked
+      value: Garage Locked
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
@@ -4534,6 +4534,7 @@ GameObject:
   - component: {fileID: 151035225}
   - component: {fileID: 151035227}
   - component: {fileID: 151035224}
+  - component: {fileID: 151035228}
   m_Layer: 0
   m_Name: Key_Garage_5
   m_TagString: Untagged
@@ -4548,8 +4549,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 151035222}
   m_LocalRotation: {x: 0.6064264, y: 0.3636578, z: -0.3636578, w: 0.6064264}
-  m_LocalPosition: {x: -4.412, y: 2.9619, z: 0.296}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.447, y: 2.9611, z: 0.2682}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 531138061}
   m_Father: {fileID: 482753873}
@@ -4630,6 +4631,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &151035228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151035222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
 --- !u!1 &152443926 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000013884812740, guid: 2534a13b13afe324d81baf63d5279c88,
@@ -5627,6 +5648,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &188868338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188868332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
 --- !u!1 &190035202 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 184590, guid: 089de592d2336c64d98bf03c668e3602, type: 2}
@@ -5788,6 +5829,7 @@ GameObject:
   - component: {fileID: 195707569}
   - component: {fileID: 195707568}
   - component: {fileID: 195707577}
+  - component: {fileID: 195707578}
   m_Layer: 0
   m_Name: Drawer
   m_TagString: Untagged
@@ -6039,7 +6081,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 195707555}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c6531421bd49bc4ba44e586502382a5, type: 3}
   m_Name: 
@@ -6156,6 +6198,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &195707578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 195707555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cd6f2d87035ef44a2258f00880ff31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  F_InteractCooldown: 1
+  MainAudioName: Drawer
+  CloseAudioName: Drawer_KeySound
 --- !u!1 &196117341
 GameObject:
   m_ObjectHideFlags: 0
@@ -20850,6 +20906,7 @@ GameObject:
   - component: {fileID: 671336025}
   - component: {fileID: 671336024}
   - component: {fileID: 671336027}
+  - component: {fileID: 671336028}
   m_Layer: 0
   m_Name: KeyLaundryRoom_2
   m_TagString: Untagged
@@ -20865,7 +20922,7 @@ Transform:
   m_GameObject: {fileID: 671336022}
   m_LocalRotation: {x: -0.56417525, y: -0.4328975, z: -0.43524224, w: 0.5521506}
   m_LocalPosition: {x: -0.5055, y: -0.1048, z: 0.2727}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1099999, y: 1.1099999, z: 1.1099999}
   m_Children:
   - {fileID: 1048847858}
   m_Father: {fileID: 482753873}
@@ -20946,6 +21003,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &671336028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671336022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
 --- !u!1 &671746537 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014172135578, guid: 915a74cef5755594aa262f842d8ac445,
@@ -29875,8 +29952,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ed48d16e73000b243aa9e091ac8fc930,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -41938,15 +42014,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0000007
+      value: 1.1660008
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0000008
+      value: 1.166001
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
       propertyPath: m_Name
       value: Key_SecondBedRoom_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.166
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7160c7432d5bbf541b9c614c4b828f85, type: 3}
@@ -50137,7 +50217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11496544, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
       propertyPath: LockedSubtitle
-      value: Second Bedroom Door Locked
+      value: Second Bedroom Locked
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f38c661e1ca78ab409eda72d74c6e797, type: 2}
@@ -51906,7 +51986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   F_InteractCooldown: 1
   MainAudioName: Cabinet
-  CloseAudioName: Cabinet_KeySound
+  CloseAudioName: ToiletCabinet_Close
 --- !u!114 &1621555731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55014,7 +55094,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484436, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
       propertyPath: LockedSubtitle
-      value: First Bedroom Door Locked
+      value: First Bedroom Locked
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e489021bb0233b7438cf0c8ad022362b, type: 2}
@@ -59448,7 +59528,12 @@ Prefab:
     - target: {fileID: 114166053060515334, guid: bcfa2819e381ab74b9137e2754410b5c,
         type: 2}
       propertyPath: LockedSubtitle
-      value: Safee Locked
+      value: Safe Locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 114166053060515334, guid: bcfa2819e381ab74b9137e2754410b5c,
+        type: 2}
+      propertyPath: F_InteractCooldown
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114793464116556762, guid: bcfa2819e381ab74b9137e2754410b5c, type: 2}
@@ -60017,6 +60102,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1869604626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869604620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c08591fad0835d4eb0181c77c416548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 952910590}
+  DisToListener: 0
+  CalculateUnder: 0
+  BlockedDistance: 0
+  PassFloor: 0
+  PassWall: 0
+  OcclusionPercentage: 0
+  hit1: 0
+  hit2: 0
 --- !u!1 &1872481032 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014172135578, guid: 915a74cef5755594aa262f842d8ac445,
