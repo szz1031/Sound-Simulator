@@ -1476,7 +1476,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="TVMusic_01" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" ShortID="735169988">
+								<Sound Name="6" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" ShortID="735169988">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -1527,7 +1527,7 @@
 										<ActiveSource Name="ANW3194_33_Coral-Oceans-3-(60)" ID="{ED588395-1300-4ADC-9D3D-1712DE5B87A9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ANW3088_05_Fairground" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" ShortID="586220262">
+								<Sound Name="4" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" ShortID="586220262">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1549,7 +1549,7 @@
 										<ActiveSource Name="ANW3088_05_Fairground" ID="{22A8A3EA-E054-4D24-8A41-87F7E98CC68B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ANW3185_01_Cello-Prelude" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" ShortID="1057085930">
+								<Sound Name="5" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" ShortID="1057085930">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1573,6 +1573,11 @@
 								</Sound>
 								<Sound Name="ANW3185_04_Nocturne" ID="{D4917C54-A11B-4301-8D1C-B5E15F4CF808}" ShortID="676153236">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1593,7 +1598,7 @@
 										<ActiveSource Name="ANW3185_04_Nocturne" ID="{17F73DD2-4416-4D96-9476-794BCCDF02BA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ANW1546_04_Karma" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" ShortID="350914709">
+								<Sound Name="2" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" ShortID="350914709">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1615,7 +1620,7 @@
 										<ActiveSource Name="ANW1546_04_Karma" ID="{A02BBDE8-AEA5-4072-89B5-8D948036AB5F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ANW1838_10_Violins-Virus" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" ShortID="615320519">
+								<Sound Name="3" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" ShortID="615320519">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1637,7 +1642,7 @@
 										<ActiveSource Name="ANW1838_10_Violins-Virus" ID="{BCF16D01-FF08-456F-811C-55DFE9E5FF27}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" ShortID="338240600">
+								<Sound Name="1" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" ShortID="338240600">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -2149,7 +2154,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2933,7 +2938,7 @@
 								<ActiveSource Name="Key ring carabineer pick up_BLASTWAVEFX_02006" ID="{24098BDD-5B92-4FC7-8BD0-51D3D7B709E9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<ActorMixer Name="Drawer&amp;Carbinet" ID="{2A9ABE28-9557-4BAB-87D9-60737B6F5650}" ShortID="399526757">
+						<ActorMixer Name="Drawer, Carbinet" ID="{2A9ABE28-9557-4BAB-87D9-60737B6F5650}" ShortID="399526757">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -3044,6 +3049,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>0.1</Value>
@@ -3087,7 +3097,7 @@
 												<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{094A72BD-AA2A-4466-A468-0E75FD61AAF5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Door_01_Open_PartA_04" ID="{9A1FBAE6-C9F5-4AD7-BED3-59082B322C0B}" ShortID="794916989">
+										<Sound Name="Glass Cabinet Open" ID="{9A1FBAE6-C9F5-4AD7-BED3-59082B322C0B}" ShortID="794916989">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -3127,7 +3137,7 @@
 												<ActiveSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{FB8D2359-92DC-4F14-B6F0-0461E659373E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<RandomSequenceContainer Name="cabinet open" ID="{97AA547E-C279-4A34-B520-343026297054}" ShortID="8677408">
+										<RandomSequenceContainer Name="open crack" ID="{97AA547E-C279-4A34-B520-343026297054}" ShortID="8677408">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -3269,7 +3279,7 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="close" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" ShortID="526091993">
+										<RandomSequenceContainer Name="close crack" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" ShortID="526091993">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -3685,7 +3695,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Carbinet Close" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" ShortID="17237786">
+								<RandomSequenceContainer Name="Carbinet Shut" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" ShortID="17237786">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -3841,7 +3851,7 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
-						<ActorMixer Name="Door" ID="{557B874D-0B12-46B7-BF5A-409CE5D2C583}" ShortID="370930877">
+						<ActorMixer Name="Door, Closet, Safe" ID="{557B874D-0B12-46B7-BF5A-409CE5D2C583}" ShortID="370930877">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -3868,7 +3878,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="Door_narrow" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
+								<ActorMixer Name="Door, Closet" ID="{7B1D2558-9C5D-4A94-BEC8-A1D02AD943DA}" ShortID="197353316">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 									</PropertyList>
@@ -3998,7 +4008,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" ShortID="864419390">
+										<Sound Name="Door_Close_Handle" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" ShortID="864419390">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -4066,7 +4076,7 @@
 												<ActiveSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Door_01_Lock1_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" ShortID="718073736">
+										<Sound Name="Door_Locked_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" ShortID="718073736">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -4366,7 +4376,7 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Door_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" ShortID="745841489">
+										<RandomSequenceContainer Name="Door&amp;Closet_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" ShortID="745841489">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -4494,7 +4504,7 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Door_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" ShortID="777730729">
+										<RandomSequenceContainer Name="Door&amp;Closet_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" ShortID="777730729">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -4606,7 +4616,7 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<Sound Name="Door_01_Lock1" ID="{FBF37A88-4765-4476-B853-9E81F4381907}" ShortID="117817030">
+										<Sound Name="Door_Locked_02" ID="{FBF37A88-4765-4476-B853-9E81F4381907}" ShortID="117817030">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -4716,6 +4726,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Fridge door opening lightly 6" ID="{F2490E21-7908-4707-B117-2FD148604AC2}" ShortID="106025048">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
@@ -4881,6 +4898,11 @@
 						</Sound>
 						<Sound Name="UI_1" ID="{B6E8511F-3872-4F93-BF31-85716F79B037}" ShortID="658559765">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-230</Value>
@@ -4918,6 +4940,11 @@
 						</Sound>
 						<Sound Name="UI_2" ID="{8A6467AC-A5BE-4468-AC7F-99B9F0B528A5}" ShortID="634134650">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-50</Value>

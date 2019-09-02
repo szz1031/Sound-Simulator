@@ -17,17 +17,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Rain" ID="{39B1724A-F507-4B0D-BF27-92438823718E}">
-							<ChildrenList>
-								<Action Name="" ID="{2A651951-2988-4BB1-AA78-64174C5BE5BB}" ShortID="596417569">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Rain_backgroundlayer" ID="{5F5F61B2-58F1-4C32-BDF0-B001C1BEAF59}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" ShortID="516963388">
@@ -177,7 +166,7 @@
 										<Action Name="" ID="{BA34693D-52D8-4C25-99A0-053F83CB5E1C}" ShortID="879544727">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -199,7 +188,7 @@
 										<Action Name="" ID="{172830BD-DEF8-427B-9871-B7FD6BA1F406}" ShortID="270241705">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -210,7 +199,7 @@
 										<Action Name="" ID="{0040CADF-7702-4B60-ACBC-E72564E0B463}" ShortID="750747275">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Close_Handle" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -232,14 +221,14 @@
 										<Action Name="" ID="{5874CBB8-6BE8-42DA-909E-06EF0B733303}" ShortID="841626203">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Lock1" ID="{FBF37A88-4765-4476-B853-9E81F4381907}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Locked_02" ID="{FBF37A88-4765-4476-B853-9E81F4381907}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{CC135701-9BD8-4AD9-8C3A-1CC54E71F608}" ShortID="501689217">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Lock1_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Locked_01" ID="{72E9C7DD-D770-43E5-8BA5-201A97C813B0}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -254,7 +243,7 @@
 										<Action Name="" ID="{7DBFD862-76E4-4914-8704-38810960AAAA}" ShortID="885402348">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -276,7 +265,7 @@
 										<Action Name="" ID="{91987B58-986C-4834-AF52-9D802DFD82AC}" ShortID="426726716">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -287,7 +276,7 @@
 										<Action Name="" ID="{91D1A4AA-3788-4083-917A-6A947D3B3444}" ShortID="975758997">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Close_Handle" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -316,7 +305,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="cabinet open" ID="{97AA547E-C279-4A34-B520-343026297054}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="open crack" ID="{97AA547E-C279-4A34-B520-343026297054}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -327,7 +316,7 @@
 										<Action Name="" ID="{648C4C37-8CFE-481D-94F6-2A59D18E7692}" ShortID="465448432">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="close" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="close crack" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -338,7 +327,7 @@
 										<Action Name="" ID="{CD000700-8068-42F4-A741-F9A06D11C6D0}" ShortID="807431115">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Carbinet Close" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Carbinet Shut" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -379,7 +368,7 @@
 										<Action Name="" ID="{3B968114-6E20-462D-B876-9732695A72A2}" ShortID="104409569">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Open_PartA_04" ID="{9A1FBAE6-C9F5-4AD7-BED3-59082B322C0B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Glass Cabinet Open" ID="{9A1FBAE6-C9F5-4AD7-BED3-59082B322C0B}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -390,7 +379,7 @@
 										<Action Name="" ID="{84F4E2EE-8213-440D-A1DB-C7B4DF541AAA}" ShortID="517849696">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="close" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="close crack" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -422,7 +411,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Carbinet Close" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Carbinet Shut" ID="{5A5EA4A4-6F1F-41EF-A8AE-D2D9BE66EDD8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -432,7 +421,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="close" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="close crack" ID="{A9FFAFC7-B686-4869-8C3F-E3E956818B87}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -443,7 +432,7 @@
 										<Action Name="" ID="{866E8C1E-34F8-4667-B86D-EE9305CCD4DF}" ShortID="1069203054">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="cabinet open" ID="{97AA547E-C279-4A34-B520-343026297054}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="open crack" ID="{97AA547E-C279-4A34-B520-343026297054}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -458,7 +447,7 @@
 										<Action Name="" ID="{1907D2C5-FFF5-4DF6-990A-E8946E13FA02}" ShortID="407005995">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Open_Axis" ID="{11B41D77-B35A-495C-A99B-57A333AEE557}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -480,7 +469,7 @@
 										<Action Name="" ID="{6203BD36-434D-4E2D-8351-EF36EE207777}" ShortID="585231938">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door&amp;Closet_Close_Axis" ID="{2EE4DCAC-DC36-498D-BC35-C88D72FF2534}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -494,7 +483,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Close_Handle" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -562,7 +551,7 @@
 										<Action Name="" ID="{9121CFE0-E52C-498F-9D10-B73BAF275CD1}" ShortID="15842988">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="ANW3174_04_Arturos-Waltz" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="1" ID="{38A5D80D-1B1D-4408-A140-75C9234BD3F8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -579,7 +568,7 @@
 										<Action Name="" ID="{E34E2608-17AE-4FE3-96A5-A095539504A5}" ShortID="941060829">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="ANW1546_04_Karma" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="2" ID="{1B137084-ED42-4303-810F-4AAC18A8CDCC}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -596,7 +585,7 @@
 										<Action Name="" ID="{78AC7C5D-E486-43D4-95EA-C44D511AF40B}" ShortID="645843798">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="ANW1838_10_Violins-Virus" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="3" ID="{04EF78B9-D6FC-4C5A-838D-469CFE50D9BA}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -613,7 +602,7 @@
 										<Action Name="" ID="{824FF4C6-6A33-4F4A-84B6-A28EC6E764D1}" ShortID="464643610">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="ANW3088_05_Fairground" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="4" ID="{4FB4D9B5-D867-4952-A47C-10C21DC66585}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -630,7 +619,7 @@
 										<Action Name="" ID="{0FF2C13D-B042-4644-AD27-09C29815D868}" ShortID="610836872">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="ANW3185_01_Cello-Prelude" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="5" ID="{05FD9028-93AA-486F-A009-0B57AF121E09}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -647,7 +636,7 @@
 										<Action Name="" ID="{C9B80009-AC1F-4F38-9B66-E1CD4387CC5E}" ShortID="751353113">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="TVMusic_01" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="6" ID="{A53E906E-D52A-4414-91B8-3048AD853122}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -669,20 +658,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="TV_1_Switch" ID="{9AE4359A-344B-4715-8C7C-F494807EE0FD}">
-									<ChildrenList>
-										<Action Name="" ID="{8560C14E-A7F1-49A6-A303-D5EED7D67B34}" ShortID="447873521">
-											<PropertyList>
-												<Property Name="Probability" Type="Real64" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="UI_2" ID="{8A6467AC-A5BE-4468-AC7F-99B9F0B528A5}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Event Name="TV_1_Switch" ID="{9AE4359A-344B-4715-8C7C-F494807EE0FD}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="TV_2" ID="{1790F50A-2872-4E11-AD5B-247257626A33}" ShortID="558364706">
@@ -911,7 +887,7 @@
 										<Action Name="" ID="{FD3C342A-31FF-4D3F-8B7E-A2DE9BBD8D79}" ShortID="112686724">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Door_01_Close_PartB" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+													<ObjectRef Name="Door_Close_Handle" ID="{1138719E-0453-42C7-A135-9AF5295F1FC8}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
