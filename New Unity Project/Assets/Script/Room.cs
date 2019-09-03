@@ -33,12 +33,10 @@ public class Room : MonoBehaviour {
         if (count == 0)
         {
             InRoom = false;
-        //    Debug.Log("EXIT " + name);
         }
         else
         {
             InRoom = true;
-        //    Debug.Log("Enter " + name);
         }
             
 

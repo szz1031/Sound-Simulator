@@ -85,8 +85,8 @@ public class Occlusion : MonoBehaviour
             {                
                                 
                 // avoid camera and object being blocked by themself
-                if (hit2 < 0.2 && DisToListener - hit1 >= 0.2)                
-                    hit2 = 0.5f;
+                if (hit2 < 0.4 && DisToListener - hit1 >= 0.4)                
+                    hit2 = 0.4f;
                 if (hit1 < 0.1 && DisToListener - hit2 >= 0.1)
                     hit1 = 0.1f;
                 
