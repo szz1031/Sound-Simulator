@@ -19,17 +19,17 @@ public class AkEmitterObstructionOcclusion : AkObstructionOcclusion
 		m_gameObj = GetComponent<AkGameObj>();
 	}
 
-	protected override void UpdateObstructionOcclusionValuesForListeners()
+	protected override void UpdateCurrentListenerList()
 	{
 		if (AkRoom.IsSpatialAudioEnabled)
-			UpdateObstructionOcclusionValues(AkSpatialAudioListener.TheSpatialAudioListener);
-		else
 		{
-			if (m_gameObj.IsUsingDefaultListeners)
-				UpdateObstructionOcclusionValues(AkAudioListener.DefaultListeners.ListenerList);
-
-			UpdateObstructionOcclusionValues(m_gameObj.ListenerList);
+			currentListenerList.Add(AkSpatialAudioListener.TheSpatialAudioListener);
+			return;
 		}
+
+		if (m_gameObj.IsUsingDefaultListeners)
+			currentListenerList.AddRange(AkAudioListener.DefaultListeners.ListenerList);
+		currentListenerList.AddRange(m_gameObj.ListenerList);
 	}
 
 	protected override void SetObstructionOcclusion(

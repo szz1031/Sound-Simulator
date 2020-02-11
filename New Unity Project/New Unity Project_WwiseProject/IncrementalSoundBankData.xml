@@ -4,17 +4,17 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Bank_SFX" Hash="1218661843" Timestamp="1566263892"/>
-				<File Name="Bank_music" Hash="971259322" Timestamp="1566259046"/>
+				<File Name="Bank_music" Hash="971259322" Timestamp="1581422216"/>
 				<File Name="Bank_testSFX" Hash="126651906" Timestamp="1563703856"/>
-				<File Name="Init" Hash="1245150709" Timestamp="1567239098"/>
+				<File Name="Init" Hash="3591845334" Timestamp="1581422216"/>
 			</Language>
 			<Language ID="684519430">
-				<File Name="Bank_SFX" Hash="2386768947" Timestamp="1567613044"/>
+				<File Name="Bank_SFX" Hash="3329949525" Timestamp="1581422216"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2198484856" Timestamp="1567613044"/>
+				<File Name="" Hash="4141506996" Timestamp="1581422216"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

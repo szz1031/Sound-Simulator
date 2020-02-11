@@ -42,11 +42,10 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 		None = 0,
 		Playback = 1 << 0,
 		Retrigger = 1 << 1,
-		//Stop = 1 << 2,
-		DelayedStop = 1 << 3,
-		Seek = 1 << 4,
-		FadeIn = 1 << 5,
-		FadeOut = 1 << 6
+		DelayedStop = 1 << 2,
+		Seek = 1 << 3,
+		FadeIn = 1 << 4,
+		FadeOut = 1 << 5
 	}
 	private Actions requiredActions;
 
@@ -68,6 +67,7 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 	public UnityEngine.GameObject eventObject;
 
 	public bool retriggerEvent;
+	private bool wasScrubbingAndRequiresRetrigger;
 	public bool StopEventAtClipEnd;
 
 	public bool overrideTrackEmitterObject;
@@ -130,6 +130,7 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 
 		if (IsScrubbing(info))
 		{
+			wasScrubbingAndRequiresRetrigger = true;
 			// If we've explicitly set the playhead, only play a small snippet.
 			requiredActions |= Actions.DelayedStop;
 		}
@@ -144,6 +145,8 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 
 	public override void OnBehaviourPause(UnityEngine.Playables.Playable playable, UnityEngine.Playables.FrameData info)
 	{
+		wasScrubbingAndRequiresRetrigger = false;
+
 		base.OnBehaviourPause(playable, info);
 		if (eventObject != null && akEvent != null && StopEventAtClipEnd)
 		{
@@ -174,7 +177,7 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 		if ((requiredActions & Actions.Seek) != 0)
 			SeekToTime(playable);
 
-		if (retriggerEvent && (requiredActions & Actions.Retrigger) != 0)
+		if ((retriggerEvent || wasScrubbingAndRequiresRetrigger) && (requiredActions & Actions.Retrigger) != 0)
 			RetriggerEvent(playable);
 
 		if ((requiredActions & Actions.DelayedStop) != 0)
@@ -293,6 +296,8 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 
 	private void RetriggerEvent(UnityEngine.Playables.Playable playable)
 	{
+		wasScrubbingAndRequiresRetrigger = false;
+
 		if (!PostEvent())
 			return;
 

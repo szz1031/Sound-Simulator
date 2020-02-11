@@ -5,7 +5,7 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-/// This class is an example of how to load banks in Wwise, if the bank data was preloaded in memory.  
+/// @brief This class is an example of how to load banks in Wwise, if the bank data was preloaded in memory.  
 /// This would be useful for situations where you use the WWW class
 public class AkMemBankLoader : UnityEngine.MonoBehaviour
 {
@@ -16,7 +16,7 @@ public class AkMemBankLoader : UnityEngine.MonoBehaviour
 	/// Name of the bank to load
 	public string bankName = "";
 
-	/// Is the bank localized (situated in the language specific folders)
+	/// Is the bank localized (situated in the language-specific folders)
 	public bool isLocalizedBank = false;
 
 	private string m_bankPath;
@@ -41,7 +41,7 @@ public class AkMemBankLoader : UnityEngine.MonoBehaviour
 			LoadNonLocalizedBank(bankName);
 	}
 
-	/// Load a sound bank from WWW object
+	/// Load a SoundBank from WWW object
 	public void LoadNonLocalizedBank(string in_bankFilename)
 	{
 		var bankPath = "file://" + System.IO.Path.Combine(AkBasePathGetter.GetPlatformBasePath(), in_bankFilename);

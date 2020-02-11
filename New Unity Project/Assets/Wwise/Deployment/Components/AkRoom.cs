@@ -67,7 +67,7 @@ public class AkRoom : AkTriggerHandler
 		RoomCount++;
 		AkSoundEngine.SetRoom(GetID(), roomParams, name);
 
-		/// In case a room is disbled and re-enabled. 
+		/// In case a room is disabled and re-enabled. 
 		AkRoomPortalManager.RegisterRoomUpdate(this);
 	}
 

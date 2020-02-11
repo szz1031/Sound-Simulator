@@ -24,9 +24,11 @@ public partial class AkBuildPreprocessor
 			case UnityEditor.BuildTarget.tvOS:
 				return "iOS";
 
+#if !UNITY_2019_2_OR_NEWER
 			case UnityEditor.BuildTarget.StandaloneLinux:
-			case UnityEditor.BuildTarget.StandaloneLinux64:
 			case UnityEditor.BuildTarget.StandaloneLinuxUniversal:
+#endif
+			case UnityEditor.BuildTarget.StandaloneLinux64:
 				return "Linux";
 
 #if UNITY_2017_3_OR_NEWER
@@ -58,6 +60,11 @@ public partial class AkBuildPreprocessor
 
 			case UnityEditor.BuildTarget.Switch:
 				return "Switch";
+
+#if UNITY_2019_3_OR_NEWER
+			case UnityEditor.BuildTarget.Stadia:
+				return "Stadia";
+#endif
 		}
 
 		return target.ToString();

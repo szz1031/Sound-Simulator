@@ -19,9 +19,9 @@ public class AkRoomPortalObstruction : AkObstructionOcclusion
 		m_portal = GetComponent<AkRoomPortal>();
 	}
 
-	protected override void UpdateObstructionOcclusionValuesForListeners()
+	protected override void UpdateCurrentListenerList()
 	{
-		UpdateObstructionOcclusionValues(AkSpatialAudioListener.TheSpatialAudioListener);
+		currentListenerList.Add(AkSpatialAudioListener.TheSpatialAudioListener);
 	}
 
 	protected override void SetObstructionOcclusion(

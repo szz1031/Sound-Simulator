@@ -11,10 +11,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1409684747	LargeRoomReverb			\Default Work Unit\Master Audio Bus\Auro-3D\LargeRoomReverb	
+	1409684747	LargeRoomReverb			\Default Work Unit\Master Audio Bus\LargeRoomReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	270226430	Medium_Room_AHP	Auro Headphone			
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

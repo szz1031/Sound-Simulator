@@ -369,7 +369,9 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 			{
 				m_filterString = UnityEngine.GUILayout.TextField(m_filterString, m_filterBoxStyle);
 				if (UnityEngine.GUILayout.Button("", m_filterBoxCancelButtonStyle))
+				{
 					m_filterString = "";
+				}
 			}
 
 			if (!m_filterString.Equals(filterString))
@@ -390,10 +392,10 @@ public class AkWwiseTreeView : AK.Wwise.TreeView.TreeViewControl
 		}
 		else
 		{
-			UnityEngine.GUILayout.Label("Wwise Project not found at path:");
-			UnityEngine.GUILayout.Label(AkUtilities.GetFullPath(UnityEngine.Application.dataPath,
-				WwiseSetupWizard.Settings.WwiseProjectPath));
-			UnityEngine.GUILayout.Label("Wwise Picker will not be usable.");
+			var saveWordWrap = UnityEngine.GUI.skin.label.wordWrap;
+			UnityEngine.GUI.skin.label.wordWrap = true;
+			UnityEngine.GUILayout.Label(string.Format("Wwise Project not found at path:\n{0}\n\nWwise Picker will not be usable.", AkUtilities.GetFullPath(UnityEngine.Application.dataPath, WwiseSetupWizard.Settings.WwiseProjectPath)), UnityEngine.GUILayout.ExpandHeight(true));
+			UnityEngine.GUI.skin.label.wordWrap = saveWordWrap;
 		}
 	}
 

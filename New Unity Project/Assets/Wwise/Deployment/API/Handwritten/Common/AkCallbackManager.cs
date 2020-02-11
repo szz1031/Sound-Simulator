@@ -95,12 +95,6 @@ public static class AkCallbackManager
 
 			return evt;
 		}
-
-		~EventCallbackPackage()
-		{
-			if (m_Cookie != null)
-				RemoveEventCallbackCookie(m_Cookie);
-		}
 	}
 
 	/// <summary>

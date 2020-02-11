@@ -92,6 +92,9 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		"AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor",
 		"AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowDegrees",
 		"AdvancedSettings.m_RenderDuringFocusLoss",
+		"AdvancedSettings.m_UseAsyncOpen",
+		"AdvancedSettings.m_DebugOutOfRangeCheckEnabled",
+		"AdvancedSettings.m_DebugOutOfRangeLimit"
 	};
 
 	public abstract class PlatformSettings : AkCommonPlatformSettings
@@ -278,6 +281,13 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		Instance.ActiveSettingsHash = GetHashOfActiveSettings();
 		Instance.ActiveSettingsHaveChanged = true;
 #endif
+		var majorMinor = AkSoundEngine.GetMajorMinorVersion();
+		var subminorBuild = AkSoundEngine.GetSubminorBuildVersion();
+		var major = majorMinor >> 16;
+		var minor = majorMinor & 0xFFFF;
+		var subMinor = subminorBuild >> 16;
+		var build = subminorBuild & 0xFFFF;
+		UnityEngine.Debug.LogFormat("Wwise(R) SDK Version {0}.{1}.{2} Build {3}.Copyright(c) 2006-{0} Audiokinetic Inc.", major, minor, subMinor, build);
 
 		if (AkSoundEngine.Init(ActivePlatformSettings.AkInitializationSettings) != AKRESULT.AK_Success)
 		{

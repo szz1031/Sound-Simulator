@@ -99,7 +99,7 @@ public class AkEventPlayableInspector : UnityEditor.Editor
 
 	private static void UpdateAllClips()
 	{
-		var guids = UnityEditor.AssetDatabase.FindAssets("t:UnityEngine.Playables.PlayableAsset", new[] { "Assets" });
+		var guids = UnityEditor.AssetDatabase.FindAssets("t:AkEventPlayable", new[] { "Assets" });
 		if (guids.Length < 1)
 			return;
 

@@ -149,7 +149,9 @@ public partial class AkSoundEngine {
 
   public static AKRESULT RenderAudio() { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RenderAudio__SWIG_1(); }
 
-  public static AKRESULT RegisterPluginDLL(string in_DllName) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL(in_DllName); }
+  public static AKRESULT RegisterPluginDLL(string in_DllName, string in_DllPath) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL__SWIG_0(in_DllName, in_DllPath); }
+
+  public static AKRESULT RegisterPluginDLL(string in_DllName) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL__SWIG_1(in_DllName); }
 
   public static uint GetIDFromString(string in_pszString) { return AkSoundEnginePINVOKE.CSharp_GetIDFromString__SWIG_0(in_pszString); }
 
@@ -1401,6 +1403,16 @@ public partial class AkSoundEngine {
 
   public static AKRESULT QueryWetDiffraction(ulong in_portal, out float out_wetDiffraction) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_QueryWetDiffraction(in_portal, out out_wetDiffraction); }
 
+  public static uint GetDeviceIDFromName(string in_szToken) { return AkSoundEnginePINVOKE.CSharp_GetDeviceIDFromName(in_szToken); }
+
+  public static string GetWindowsDeviceName(int index, out uint out_uDeviceID, AkAudioDeviceState uDeviceStateMask) { return AkSoundEngine.StringFromIntPtrWString(AkSoundEnginePINVOKE.CSharp_GetWindowsDeviceName__SWIG_0(index, out out_uDeviceID, (int)uDeviceStateMask)); }
+
+  public static string GetWindowsDeviceName(int index, out uint out_uDeviceID) { return AkSoundEngine.StringFromIntPtrWString(AkSoundEnginePINVOKE.CSharp_GetWindowsDeviceName__SWIG_1(index, out out_uDeviceID)); }
+
+  public static uint GetWindowsDeviceCount(AkAudioDeviceState uDeviceStateMask) { return AkSoundEnginePINVOKE.CSharp_GetWindowsDeviceCount__SWIG_0((int)uDeviceStateMask); }
+
+  public static uint GetWindowsDeviceCount() { return AkSoundEnginePINVOKE.CSharp_GetWindowsDeviceCount__SWIG_1(); }
+
   public static void SetErrorLogger(AkLogger.ErrorLoggerInteropDelegate logger) { AkSoundEnginePINVOKE.CSharp_SetErrorLogger__SWIG_0(logger); }
 
   public static void SetErrorLogger() { AkSoundEnginePINVOKE.CSharp_SetErrorLogger__SWIG_1(); }
@@ -1472,10 +1484,6 @@ public partial class AkSoundEngine {
   public static uint GetMajorMinorVersion() { return AkSoundEnginePINVOKE.CSharp_GetMajorMinorVersion(); }
 
   public static uint GetSubminorBuildVersion() { return AkSoundEnginePINVOKE.CSharp_GetSubminorBuildVersion(); }
-
-  public static uint GetDeviceIDFromName(string in_szToken) { return AkSoundEnginePINVOKE.CSharp_GetDeviceIDFromName(in_szToken); }
-
-  public static string GetWindowsDeviceName(int index, out uint out_uDeviceID) { return AkSoundEngine.StringFromIntPtrWString(AkSoundEnginePINVOKE.CSharp_GetWindowsDeviceName(index, out out_uDeviceID)); }
 
   public static AKRESULT QueryIndirectPaths(UnityEngine.GameObject in_gameObjectID, AkPathParams arg1, AkReflectionPathInfoArray paths, uint numPaths) {
 

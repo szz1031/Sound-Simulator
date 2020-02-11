@@ -25,21 +25,15 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList/>
+						</Bus>
+						<AuxBus Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}">
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
-									<ObjectRef Name="Medium_Room_AHP" ID="{084C1341-345B-44C4-88FE-89EA007AEDB3}" WorkUnitID="{B3C352EE-53F0-4C95-BAA9-B8ECC0034D25}"/>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<AuxBus Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Room_Medium_High_Absorbtion" ID="{E22DBBB6-7656-4B93-A28D-C003FD416889}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-								</AuxBus>
-							</ChildrenList>
-						</Bus>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -10,7 +10,7 @@ public abstract class WwiseObjectReference : UnityEngine.ScriptableObject
 	#region Serialized fields
 	[AkShowOnly]
 	[UnityEngine.SerializeField]
-	private string objectName;
+	private string objectName = string.Empty;
 
 	[AkShowOnly]
 	[UnityEngine.SerializeField]
@@ -18,7 +18,7 @@ public abstract class WwiseObjectReference : UnityEngine.ScriptableObject
 
 	[AkShowOnly]
 	[UnityEngine.SerializeField]
-	private string guid;
+	private string guid = string.Empty;
 	#endregion
 
 	#region Properties
@@ -94,13 +94,18 @@ public abstract class WwiseObjectReference : UnityEngine.ScriptableObject
 		var path = AssetFilePath(wwiseObjectType, guid, true);
 		var loadedAsset = UnityEditor.AssetDatabase.LoadAssetAtPath<WwiseObjectReference>(path);
 		var asset = loadedAsset ? loadedAsset : Create(wwiseObjectType);
-		asset.objectName = name;
-		asset.id = AkUtilities.ShortIDGenerator.Compute(name);
-		asset.guid = guid.ToString().ToUpper();
+		var id = AkUtilities.ShortIDGenerator.Compute(name);
+		if (asset.objectName != name || asset.id != id)
+		{
+			asset.objectName = name;
+			asset.id = id;
+			asset.guid = guid.ToString().ToUpper();
 
-		if (loadedAsset)
-			UnityEditor.EditorUtility.SetDirty(asset);
-		else
+			if (loadedAsset)
+				UnityEditor.EditorUtility.SetDirty(asset);
+		}
+
+		if (!loadedAsset)
 			UnityEditor.AssetDatabase.CreateAsset(asset, path);
 
 		return asset;
@@ -113,10 +118,13 @@ public abstract class WwiseObjectReference : UnityEngine.ScriptableObject
 		if (!asset)
 			return;
 
-		asset.objectName = name;
-		asset.id = AkUtilities.ShortIDGenerator.Compute(name);
-
-		UnityEditor.EditorUtility.SetDirty(asset);
+		var id = AkUtilities.ShortIDGenerator.Compute(name);
+		if (asset.objectName != name || asset.id != id)
+		{
+			asset.objectName = name;
+			asset.id = id;
+			UnityEditor.EditorUtility.SetDirty(asset);
+		}
 	}
 
 	public static void DeleteWwiseObject(WwiseObjectType wwiseObjectType, System.Guid guid)
@@ -281,7 +289,12 @@ public abstract class WwiseGroupValueObjectReference : WwiseObjectReference
 #if UNITY_EDITOR
 	public void SetupGroupObjectReference(string name, System.Guid guid)
 	{
-		GroupObjectReference = FindOrCreateWwiseObject(GroupWwiseObjectType, name, guid);
+		var objectReference = FindOrCreateWwiseObject(GroupWwiseObjectType, name, guid);
+		if (objectReference != GroupObjectReference)
+		{
+			GroupObjectReference = objectReference;
+			UnityEditor.EditorUtility.SetDirty(this);
+		}
 	}
 
 	#region WwiseMigration

@@ -98,6 +98,12 @@ public class AkInitSettings : global::System.IDisposable {
   public AkFloorPlane eFloorPlane { set { AkSoundEnginePINVOKE.CSharp_AkInitSettings_eFloorPlane_set(swigCPtr, (int)value); }  get { return (AkFloorPlane)AkSoundEnginePINVOKE.CSharp_AkInitSettings_eFloorPlane_get(swigCPtr); } 
   }
 
+  public float fDebugOutOfRangeLimit { set { AkSoundEnginePINVOKE.CSharp_AkInitSettings_fDebugOutOfRangeLimit_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitSettings_fDebugOutOfRangeLimit_get(swigCPtr); } 
+  }
+
+  public bool bDebugOutOfRangeCheckEnabled { set { AkSoundEnginePINVOKE.CSharp_AkInitSettings_bDebugOutOfRangeCheckEnabled_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitSettings_bDebugOutOfRangeCheckEnabled_get(swigCPtr); } 
+  }
+
   public AkInitSettings() : this(AkSoundEnginePINVOKE.CSharp_new_AkInitSettings(), true) {
   }
 

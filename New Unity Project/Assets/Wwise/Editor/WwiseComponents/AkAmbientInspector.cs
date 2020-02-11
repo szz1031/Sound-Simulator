@@ -81,12 +81,33 @@ public class AkAmbientInspector : AkEventInspector
 		{
 			UnityEditor.EditorGUILayout.PropertyField(multiPositionTypeProperty, new UnityEngine.GUIContent("Position Type: ", "Simple Mode: Only one position is used.\nLarge Mode: Children of AkAmbient with AkAmbientLargeModePositioner component will be used as position source for multi-positioning.\nMultiple Position Mode: Every AkAmbient using the same event will be used as position source for multi-positioning."));
 
+			var multiPositionType = (MultiPositionTypeLabel)multiPositionTypeProperty.intValue;
+			if (multiPositionType == MultiPositionTypeLabel.Large_Mode || multiPositionType == MultiPositionTypeLabel.MultiPosition_Mode)
+			{
+				var allTargetsAreStatic = true;
+
+				foreach (AkAmbient ambient in targets)
+				{
+					if (!ambient.gameObject.isStatic)
+					{
+						allTargetsAreStatic = false;
+						break;
+					}
+				}
+
+				if (!allTargetsAreStatic)
+				{
+					UnityEngine.GUILayout.Space(UnityEditor.EditorGUIUtility.standardVerticalSpacing);
+					UnityEditor.EditorGUILayout.HelpBox(string.Format("Position Type <{0}> requires an AkGameObj that does not move. Consider setting the associated GameObject to static.", multiPositionType), UnityEditor.MessageType.Warning);
+				}
+			}
+
 			UnityEngine.GUILayout.Space(UnityEditor.EditorGUIUtility.standardVerticalSpacing);
 
 			currentAttSphereOp = (AttenuationSphereOptions) UnityEditor.EditorGUILayout.EnumPopup("Show Attenuation Sphere: ", currentAttSphereOp);
 			attSphereProperties[target] = currentAttSphereOp;
 
-			if (multiPositionTypeProperty.intValue == (int)MultiPositionTypeLabel.Large_Mode)
+			if (multiPositionType == MultiPositionTypeLabel.Large_Mode)
 			{
 				UnityEngine.GUILayout.BeginHorizontal();
 				if (UnityEngine.GUILayout.Button("Add Large Mode position object"))
@@ -94,7 +115,7 @@ public class AkAmbientInspector : AkEventInspector
 					int insertIndex = largeModePositionArrayProperty.arraySize;
 					largeModePositionArrayProperty.InsertArrayElementAtIndex(insertIndex);
 
-					UnityEngine.GameObject newPoint = new UnityEngine.GameObject(string.Format("AkAmbientPoint{0}", insertIndex));
+					var newPoint = new UnityEngine.GameObject(string.Format("AkAmbientPoint{0}", insertIndex));
 					UnityEditor.Undo.RegisterCreatedObjectUndo(newPoint, "CreateNewLargeModePositionObject");
 					UnityEditor.Undo.AddComponent<AkAmbientLargeModePositioner>(newPoint);
 					UnityEditor.Undo.SetTransformParent(newPoint.transform, m_AkAmbient.transform, "CreateNewLargeModePositionObjectSetParent");

@@ -37,7 +37,7 @@ public partial class AkBasePathGetter
 #elif UNITY_STANDALONE_LINUX
 		platformSubDir = "Linux";
 #elif UNITY_XBOXONE
-		platformSubDir = "XBoxOne";
+		platformSubDir = "XboxOne";
 #elif UNITY_IOS || UNITY_TVOS
 		platformSubDir = "iOS";
 #elif UNITY_ANDROID
@@ -50,6 +50,8 @@ public partial class AkBasePathGetter
 		platformSubDir = "WindowsPhone";
 #elif UNITY_SWITCH
 		platformSubDir = "Switch";
+#elif UNITY_STADIA
+		platformSubDir = "Stadia";
 #elif UNITY_PSP2
 #if AK_ARCH_VITA_SW || !AK_ARCH_VITA_HW
 		platformSubDir = "VitaSW";

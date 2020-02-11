@@ -149,7 +149,9 @@ public partial class AkSoundEngine {
 
   public static AKRESULT RenderAudio() { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RenderAudio__SWIG_1(); }
 
-  public static AKRESULT RegisterPluginDLL(string in_DllName) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL(in_DllName); }
+  public static AKRESULT RegisterPluginDLL(string in_DllName, string in_DllPath) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL__SWIG_0(in_DllName, in_DllPath); }
+
+  public static AKRESULT RegisterPluginDLL(string in_DllName) { return (AKRESULT)AkSoundEnginePINVOKE.CSharp_RegisterPluginDLL__SWIG_1(in_DllName); }
 
   public static uint GetIDFromString(string in_pszString) { return AkSoundEnginePINVOKE.CSharp_GetIDFromString__SWIG_0(in_pszString); }
 
