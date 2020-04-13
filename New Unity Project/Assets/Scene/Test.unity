@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &698194583
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &1139275494
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +521,6 @@ MonoBehaviour:
   defaultPoolSize: 0
   lowerPoolSize: 0
   streamingPoolSize: 0
-  preparePoolSize: 0
   memoryCutoffThreshold: 0
   monitorPoolSize: 0
   monitorQueuePoolSize: 0
@@ -629,8 +630,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a0a05a8579a0c24448cac67588671f03,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -756,6 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &1232008061
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &1518921140
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +944,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee14c7e972faf934197c7f8968a845be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ww_FootStep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Ww_FootStepSwitchConcrete:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Ww_FootStepSwitchCarpet:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Ww_FootStepSwitchStair:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Ww_FootStepSwitchFloor:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1518921142
 Transform:
   m_ObjectHideFlags: 0
@@ -1106,6 +1136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &1700149120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1
 --- !u!1 &1807515048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,3 +1590,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa898d4741bbb0040bd5fbb7d11ffa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E_Mateiral: -1

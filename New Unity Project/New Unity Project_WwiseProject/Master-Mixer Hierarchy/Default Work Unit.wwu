@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}" SchemaVersion="97">
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}" PersistMode="Standalone">
 			<ChildrenList>
@@ -25,7 +25,6 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
-							<ReferenceList/>
 						</Bus>
 						<AuxBus Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}">
 							<ReferenceList>

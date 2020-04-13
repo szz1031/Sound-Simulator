@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{25144761-2932-4561-8087-885CE7EF58E4}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{25144761-2932-4561-8087-885CE7EF58E4}" SchemaVersion="97">
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{25144761-2932-4561-8087-885CE7EF58E4}" PersistMode="Standalone">
 			<ChildrenList>
@@ -24,10 +24,10 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Environment" ID="{48E2632B-8599-40A2-A979-F1A7345DFDFC}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Environment" ID="{48E2632B-8599-40A2-A979-F1A7345DFDFC}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{AB9834B8-0CC7-4798-8636-DB6D15A7447D}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopObject" ID="{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Object" ID="{6E223AB8-DCC5-4CCD-9318-62ACD486B5E9}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

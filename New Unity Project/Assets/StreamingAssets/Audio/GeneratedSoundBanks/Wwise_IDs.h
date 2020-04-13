@@ -100,6 +100,7 @@ namespace AK
             {
                 static const AkUniqueID A = 84696446U;
                 static const AkUniqueID B = 84696445U;
+                static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace WORLDSTATE
 

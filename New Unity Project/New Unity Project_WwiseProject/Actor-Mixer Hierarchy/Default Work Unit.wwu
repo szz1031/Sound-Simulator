@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" SchemaVersion="97">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}" PersistMode="Standalone">
 			<ChildrenList>
@@ -107,18 +107,18 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{3BF35554-386F-48C0-BF5B-63A3AF8329C6}" ShortID="126968948">
+										<AudioFileSource Name="fstepConcreteMono" ID="{3BF35554-386F-48C0-BF5B-63A3AF8329C6}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0262933170152649"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.41780080737256"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.48170517954204"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="653581658"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="653581658"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<PositioningInfo>
@@ -143,9 +143,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{9E10F779-0E8E-48B3-BCF7-AD20F59195A9}" ShortID="307543888">
+										<AudioFileSource Name="fstepConcreteMono" ID="{9E10F779-0E8E-48B3-BCF7-AD20F59195A9}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0262933170152649"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.173370193460737"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.742292491381019"/>
@@ -153,6 +153,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="307543888"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -176,9 +179,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{EDDE04AF-FB72-4D54-9A17-3604842E1D61}" ShortID="945656954">
+										<AudioFileSource Name="fstepConcreteMono" ID="{EDDE04AF-FB72-4D54-9A17-3604842E1D61}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0262933170152649"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.250981662418438"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.41824558445975"/>
@@ -186,6 +189,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="945656954"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -209,9 +215,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{4D26872C-1793-40F6-AC1D-B563753ECAD7}" ShortID="653792465">
+										<AudioFileSource Name="fstepConcreteMono" ID="{4D26872C-1793-40F6-AC1D-B563753ECAD7}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0262933170152649"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.282852349709669"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="2.13533604851243"/>
@@ -219,6 +225,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653792465"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -235,9 +244,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{375919CA-B718-4091-9BBE-32B8D48B9DA5}" ShortID="887034712">
+										<AudioFileSource Name="fstepConcreteMono" ID="{375919CA-B718-4091-9BBE-32B8D48B9DA5}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.62933170152649E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0262933170152649"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.319793373615413"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="2.89009187027293"/>
@@ -245,6 +254,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887034712"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -261,7 +273,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="fstepConcreteMono" ID="{49EF654C-75B4-47AB-A393-2EB86A80752F}" ShortID="653581658">
+										<AudioFileSource Name="fstepConcreteMono" ID="{49EF654C-75B4-47AB-A393-2EB86A80752F}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.137840722534571"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.298787693355283"/>
@@ -271,9 +283,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>fstepConcreteMono.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="126968948"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="126968948"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -334,7 +346,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A17A4321-9219-46B1-B65F-A8A82D9E3FB2}" ShortID="1038279815">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A17A4321-9219-46B1-B65F-A8A82D9E3FB2}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.251465692750014"/>
@@ -344,6 +356,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1038279815"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -367,7 +382,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{26CA7194-92C2-45C6-9A82-186D018A0863}" ShortID="261043379">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{26CA7194-92C2-45C6-9A82-186D018A0863}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.191556800884929"/>
@@ -377,6 +392,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261043379"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -400,7 +418,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{12DC24CC-A802-496E-8F1C-1D50A0925909}" ShortID="203117369">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{12DC24CC-A802-496E-8F1C-1D50A0925909}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.265363276089824"/>
@@ -410,9 +428,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="255800652"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="255800652"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -480,7 +498,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{CBA0D0C1-F81E-4CD0-BF84-BA0D747E0588}" ShortID="646110042">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{CBA0D0C1-F81E-4CD0-BF84-BA0D747E0588}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.265363276089824"/>
@@ -490,6 +508,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="646110042"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -557,7 +578,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{E922CDE3-09F8-4B69-A536-888449FF7833}" ShortID="50177702">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{E922CDE3-09F8-4B69-A536-888449FF7833}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.224570966252689"/>
@@ -567,6 +588,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="50177702"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -634,7 +658,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{6B371F09-0C83-4683-8AEF-20B0EE9388C8}" ShortID="67340430">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{6B371F09-0C83-4683-8AEF-20B0EE9388C8}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.224570966252689"/>
@@ -644,9 +668,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="50177702"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="50177702"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -683,7 +707,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{AD143F06-AD3A-4C5E-A76A-DE1507B8ACCD}" ShortID="607753429">
+										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{AD143F06-AD3A-4C5E-A76A-DE1507B8ACCD}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113216038097021"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.181145660955234"/>
@@ -693,8 +717,11 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="607753429"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{E13CA206-E17D-46CB-BBD7-F8EC430DE8AD}" ShortID="704428846">
+										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{E13CA206-E17D-46CB-BBD7-F8EC430DE8AD}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.082298615916955"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.195459212802768"/>
@@ -704,6 +731,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="704428846"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -766,7 +796,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{79A1E073-645F-43C3-A42E-D573C666326A}" ShortID="714063386">
+										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{79A1E073-645F-43C3-A42E-D573C666326A}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113216038097021"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.181145660955234"/>
@@ -776,11 +806,11 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="607753429"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="607753429"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{C0659612-A96B-4DD4-892F-361A820CC4B2}" ShortID="405076756">
+										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{C0659612-A96B-4DD4-892F-361A820CC4B2}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.082298615916955"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.195459212802768"/>
@@ -790,6 +820,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="405076756"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -852,7 +885,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{C508C1E3-B145-40BB-83F2-FD309C0B85B8}" ShortID="700912331">
+										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{C508C1E3-B145-40BB-83F2-FD309C0B85B8}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113216038097021"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.181145660955234"/>
@@ -862,11 +895,11 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="607753429"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="607753429"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{9FD2D0DA-585E-49EE-B243-EA729709C055}" ShortID="888892161">
+										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{9FD2D0DA-585E-49EE-B243-EA729709C055}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.102873269896194"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.195459212802768"/>
@@ -876,6 +909,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="888892161"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -938,7 +974,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{E456BCC6-8129-4E83-A19D-7A5A9817F7C4}" ShortID="351793158">
+										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{E456BCC6-8129-4E83-A19D-7A5A9817F7C4}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113216038097021"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.181145660955234"/>
@@ -948,11 +984,11 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="607753429"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="607753429"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{6FD86056-2639-422C-AA16-A989C284EFFE}" ShortID="424000544">
+										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{6FD86056-2639-422C-AA16-A989C284EFFE}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.102873269896194"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.195459212802768"/>
@@ -962,6 +998,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="424000544"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1024,7 +1063,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{A95FDF28-4B03-4195-A42B-AE3F3883F877}" ShortID="790125833">
+										<AudioFileSource Name="358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance" ID="{A95FDF28-4B03-4195-A42B-AE3F3883F877}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113216038097021"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.181145660955234"/>
@@ -1034,11 +1073,11 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>358_Foley_Footsteps_Carpet_Boot_Walk_Slow_Distance.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="607753429"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="607753429"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{691927BF-CC0E-4AD2-A1BE-F243724508B3}" ShortID="50253643">
+										<AudioFileSource Name="422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance" ID="{691927BF-CC0E-4AD2-A1BE-F243724508B3}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.102873269896194"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.195459212802768"/>
@@ -1048,6 +1087,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="50253643"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1148,7 +1190,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{F4611E5F-D7EA-4BD0-BBC6-ED75A1C2232D}" ShortID="813244428">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{F4611E5F-D7EA-4BD0-BBC6-ED75A1C2232D}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.282856696210221"/>
@@ -1158,6 +1200,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="813244428"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1174,7 +1219,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{CC7E6FD6-84F2-4760-BBBE-E31841E36235}" ShortID="740920542">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{CC7E6FD6-84F2-4760-BBBE-E31841E36235}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.113722040654012"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.191556800884929"/>
@@ -1183,6 +1228,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="740920542"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1199,7 +1247,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{593CB85E-4BDC-4D8B-8411-974F1CAE2DAA}" ShortID="283473791">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{593CB85E-4BDC-4D8B-8411-974F1CAE2DAA}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.265363276089824"/>
@@ -1209,9 +1257,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="203117369"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="203117369"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1228,7 +1276,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A51B4563-1066-4657-B53B-81D7CCA70FEB}" ShortID="255800652">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{A51B4563-1066-4657-B53B-81D7CCA70FEB}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.154081902245707"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.136961690885069"/>
@@ -1238,9 +1286,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="519856163"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="519856163"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1264,7 +1312,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{C3644CA0-E2E6-40F2-A655-7BB6D315033C}" ShortID="744698158">
+										<AudioFileSource Name="WoodfloorbarefootstepssqueakINT01-MS" ID="{C3644CA0-E2E6-40F2-A655-7BB6D315033C}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.103947525517316"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.239682959048877"/>
@@ -1274,6 +1322,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>WoodfloorbarefootstepssqueakINT01-MS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="744698158"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1513,7 +1564,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW3194_33_Coral-Oceans-3-(60)" ID="{ED588395-1300-4ADC-9D3D-1712DE5B87A9}" ShortID="911504740">
+										<AudioFileSource Name="ANW3194_33_Coral-Oceans-3-(60)" ID="{ED588395-1300-4ADC-9D3D-1712DE5B87A9}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.474934036939314"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.474934036939317"/>
@@ -1521,6 +1572,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ANW3194_33_Coral-Oceans-3-(60).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="911504740"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1540,9 +1594,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW3088_05_Fairground" ID="{22A8A3EA-E054-4D24-8A41-87F7E98CC68B}" ShortID="643296694">
+										<AudioFileSource Name="ANW3088_05_Fairground" ID="{22A8A3EA-E054-4D24-8A41-87F7E98CC68B}">
 											<Language>SFX</Language>
 											<AudioFile>ANW3088_05_Fairground.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643296694"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1562,9 +1619,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW3185_01_Cello-Prelude" ID="{28DE0B39-3457-4EBE-BF74-3574D1C0B630}" ShortID="335077997">
+										<AudioFileSource Name="ANW3185_01_Cello-Prelude" ID="{28DE0B39-3457-4EBE-BF74-3574D1C0B630}">
 											<Language>SFX</Language>
 											<AudioFile>ANW3185_01_Cello-Prelude.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="335077997"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1589,9 +1649,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW3185_04_Nocturne" ID="{17F73DD2-4416-4D96-9476-794BCCDF02BA}" ShortID="916475379">
+										<AudioFileSource Name="ANW3185_04_Nocturne" ID="{17F73DD2-4416-4D96-9476-794BCCDF02BA}">
 											<Language>SFX</Language>
 											<AudioFile>ANW3185_04_Nocturne.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916475379"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1611,9 +1674,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW1546_04_Karma" ID="{A02BBDE8-AEA5-4072-89B5-8D948036AB5F}" ShortID="873524984">
+										<AudioFileSource Name="ANW1546_04_Karma" ID="{A02BBDE8-AEA5-4072-89B5-8D948036AB5F}">
 											<Language>SFX</Language>
 											<AudioFile>ANW1546_04_Karma.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="873524984"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1633,9 +1699,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW1838_10_Violins-Virus" ID="{BCF16D01-FF08-456F-811C-55DFE9E5FF27}" ShortID="323133469">
+										<AudioFileSource Name="ANW1838_10_Violins-Virus" ID="{BCF16D01-FF08-456F-811C-55DFE9E5FF27}">
 											<Language>SFX</Language>
 											<AudioFile>ANW1838_10_Violins-Virus.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="323133469"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1655,9 +1724,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ANW3174_04_Arturos-Waltz" ID="{B93A4979-E908-450C-8CA2-8DB788776443}" ShortID="1066902147">
+										<AudioFileSource Name="ANW3174_04_Arturos-Waltz" ID="{B93A4979-E908-450C-8CA2-8DB788776443}">
 											<Language>SFX</Language>
 											<AudioFile>ANW3174_04_Arturos-Waltz.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1066902147"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1822,7 +1894,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Charge" ID="{7B7EB555-6CC9-425C-A4E6-00E6F93C89C9}" ShortID="229089504">
+										<AudioFileSource Name="Charge" ID="{7B7EB555-6CC9-425C-A4E6-00E6F93C89C9}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.159122257522182"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.393618215975925"/>
@@ -1832,6 +1904,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Charge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="229089504"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1861,7 +1936,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Mainghosty" ID="{1720772E-873C-4FC0-8B96-1B5E83C84FA8}" ShortID="105157533">
+										<AudioFileSource Name="Mainghosty" ID="{1720772E-873C-4FC0-8B96-1B5E83C84FA8}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="567.279"/>
 												<Property Name="LoopBegin" Type="Real64" Value="2.268"/>
@@ -1870,6 +1945,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Mainghosty.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="105157533"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<StateInfo>
@@ -1920,18 +1998,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="MainNoise" ID="{73601141-A29D-4D48-9F75-69FFF8CBD3BA}" ShortID="413701673">
+										<AudioFileSource Name="MainNoise" ID="{73601141-A29D-4D48-9F75-69FFF8CBD3BA}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="191.365"/>
 												<Property Name="FadeInDuration" Type="Real64" Value="2.59024581336492"/>
 												<Property Name="LoopBegin" Type="Real64" Value="1.913"/>
 												<Property Name="LoopEnd" Type="Real64" Value="71.95375"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="9.59350301246271E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0959350301246271"/>
 												<Property Name="TrimEnd" Type="Real64" Value="72.4309477440932"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\MainNoise.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="413701673"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1951,15 +2032,18 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="NeedleTap" ID="{29557D80-312C-46F9-B51E-2FAE60EF75D8}" ShortID="458629548">
+										<AudioFileSource Name="NeedleTap" ID="{29557D80-312C-46F9-B51E-2FAE60EF75D8}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="3.82280915884384E-02"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="4.01236994357989E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0382280915884384"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0401236994357989"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.129533202902973"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\NeedleTap.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="458629548"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1979,9 +2063,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="OnOffTap" ID="{0371A1C5-6887-4194-BDCD-0856CB604E4C}" ShortID="573201444">
+										<AudioFileSource Name="OnOffTap" ID="{0371A1C5-6887-4194-BDCD-0856CB604E4C}">
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\OnOffTap.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573201444"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2011,7 +2098,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Squeak_1" ID="{68B10FAE-4DF6-4BF3-A1E7-06524B7D5F62}" ShortID="730283719">
+										<AudioFileSource Name="Squeak_1" ID="{68B10FAE-4DF6-4BF3-A1E7-06524B7D5F62}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.124279782873882"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.551823003607776"/>
@@ -2021,6 +2108,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Squeak_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="730283719"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2050,15 +2140,18 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Squeak_2" ID="{681D2050-0DF2-4E90-9567-DF8BCD8CDA42}" ShortID="45498057">
+										<AudioFileSource Name="Squeak_2" ID="{681D2050-0DF2-4E90-9567-DF8BCD8CDA42}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="3.68938163500694E-02"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.19904903137725E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0368938163500694"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0119904903137725"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.134662429677753"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Squeak_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="45498057"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2083,9 +2176,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Squeak_3" ID="{F381D2A6-D0AC-42D6-9393-7458C443D9C2}" ShortID="513100812">
+										<AudioFileSource Name="Squeak_3" ID="{F381D2A6-D0AC-42D6-9393-7458C443D9C2}">
 											<Language>SFX</Language>
 											<AudioFile>REAPER Media\Squeak_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="513100812"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2116,7 +2212,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="ANW2097_34_London-Bridge-Is-Falling-9-(30)" ID="{0DF323B6-6189-4252-BE22-8EFB7E46A6B3}" ShortID="613669782">
+								<AudioFileSource Name="ANW2097_34_London-Bridge-Is-Falling-9-(30)" ID="{0DF323B6-6189-4252-BE22-8EFB7E46A6B3}">
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.352941176470587"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.560553633217992"/>
@@ -2126,6 +2222,9 @@
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>ANW2097_34_London-Bridge-Is-Falling-9-(30).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613669782"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<StateInfo>
@@ -2319,9 +2418,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="ANW3088_06_Romantica" ID="{16F634C7-32EE-489C-A9AE-A89400D66057}" ShortID="883149415">
+								<AudioFileSource Name="ANW3088_06_Romantica" ID="{16F634C7-32EE-489C-A9AE-A89400D66057}">
 									<Language>SFX</Language>
 									<AudioFile>ANW3088_06_Romantica.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="883149415"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<StateInfo>
@@ -2408,9 +2510,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TV2_Plot_1" ID="{CDB1990C-0FFF-4314-A793-659FEEF6E08E}" ShortID="931284556">
+												<AudioFileSource Name="TV2_Plot_1" ID="{CDB1990C-0FFF-4314-A793-659FEEF6E08E}">
 													<Language>English(US)</Language>
 													<AudioFile>TV2_Plot_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="931284556"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2430,9 +2535,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TV2_Plot_2" ID="{2D0C3AA4-907A-49AB-A1FF-16674FA54789}" ShortID="535477832">
+												<AudioFileSource Name="TV2_Plot_2" ID="{2D0C3AA4-907A-49AB-A1FF-16674FA54789}">
 													<Language>English(US)</Language>
 													<AudioFile>TV2_Plot_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="535477832"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2452,9 +2560,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TV2_Plot_3" ID="{D38E368B-9391-48EC-BFF3-0B4A0D46ED1F}" ShortID="84328202">
+												<AudioFileSource Name="TV2_Plot_3" ID="{D38E368B-9391-48EC-BFF3-0B4A0D46ED1F}">
 													<Language>English(US)</Language>
 													<AudioFile>TV2_Plot_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84328202"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2493,9 +2604,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_1" ID="{E4921655-0040-4DEB-AE8E-F7047853E1ED}" ShortID="313207460">
+												<AudioFileSource Name="Laptop_Plot_1" ID="{E4921655-0040-4DEB-AE8E-F7047853E1ED}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313207460"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2515,9 +2629,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_2" ID="{CB156B14-3689-4B32-A00B-3964A2DFC110}" ShortID="959428209">
+												<AudioFileSource Name="Laptop_Plot_2" ID="{CB156B14-3689-4B32-A00B-3964A2DFC110}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="959428209"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2537,9 +2654,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_3" ID="{A9D39099-103A-4CE1-A0E7-9E5F2924B212}" ShortID="63094858">
+												<AudioFileSource Name="Laptop_Plot_3" ID="{A9D39099-103A-4CE1-A0E7-9E5F2924B212}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="63094858"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2559,9 +2679,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_4" ID="{DC81E2E6-B516-40FB-9AFB-A5AA4A68DE34}" ShortID="923806345">
+												<AudioFileSource Name="Laptop_Plot_4" ID="{DC81E2E6-B516-40FB-9AFB-A5AA4A68DE34}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="923806345"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2581,9 +2704,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_5" ID="{356EEA62-61B7-4B7C-8270-D50184C69526}" ShortID="842987559">
+												<AudioFileSource Name="Laptop_Plot_5" ID="{356EEA62-61B7-4B7C-8270-D50184C69526}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="842987559"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2603,9 +2729,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_6" ID="{AD843D89-FC3A-4033-B34D-862E0351289C}" ShortID="1047502463">
+												<AudioFileSource Name="Laptop_Plot_6" ID="{AD843D89-FC3A-4033-B34D-862E0351289C}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1047502463"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2625,9 +2754,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot_7" ID="{4C818FE0-87BB-4390-B7AB-AD4056BE047E}" ShortID="958317034">
+												<AudioFileSource Name="Laptop_Plot_7" ID="{4C818FE0-87BB-4390-B7AB-AD4056BE047E}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="958317034"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2647,9 +2779,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_1" ID="{7EF9913C-161D-4C49-956A-8ED550879D76}" ShortID="867338695">
+												<AudioFileSource Name="Laptop_Plot2_1" ID="{7EF9913C-161D-4C49-956A-8ED550879D76}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="867338695"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2669,9 +2804,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_2" ID="{49013253-73E8-41A9-8A0D-C587B8680695}" ShortID="854516349">
+												<AudioFileSource Name="Laptop_Plot2_2" ID="{49013253-73E8-41A9-8A0D-C587B8680695}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854516349"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2691,9 +2829,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_3" ID="{BF478963-B921-4ABD-88FC-D5E3A80647C3}" ShortID="776440994">
+												<AudioFileSource Name="Laptop_Plot2_3" ID="{BF478963-B921-4ABD-88FC-D5E3A80647C3}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776440994"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2713,9 +2854,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_4" ID="{A5D97010-F9A8-4616-BAD2-88CE5092F9F1}" ShortID="990318294">
+												<AudioFileSource Name="Laptop_Plot2_4" ID="{A5D97010-F9A8-4616-BAD2-88CE5092F9F1}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="990318294"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2735,9 +2879,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_5" ID="{B559C9C2-3F5A-4D00-BF4A-6BA79E3C6C6B}" ShortID="1062165984">
+												<AudioFileSource Name="Laptop_Plot2_5" ID="{B559C9C2-3F5A-4D00-BF4A-6BA79E3C6C6B}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1062165984"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2757,9 +2904,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_6" ID="{76388571-5B5F-4F8A-9FC1-F589C1B090B2}" ShortID="147397618">
+												<AudioFileSource Name="Laptop_Plot2_6" ID="{76388571-5B5F-4F8A-9FC1-F589C1B090B2}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="147397618"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2779,9 +2929,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Laptop_Plot2_7" ID="{4E4C8CA3-006E-47DF-B394-58F05EFC94D9}" ShortID="823992559">
+												<AudioFileSource Name="Laptop_Plot2_7" ID="{4E4C8CA3-006E-47DF-B394-58F05EFC94D9}">
 													<Language>English(US)</Language>
 													<AudioFile>Laptop_Plot2_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823992559"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2904,16 +3057,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{C6A925FC-ADCF-4C79-BBA6-635AF3A002FB}" ShortID="967272807">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{C6A925FC-ADCF-4C79-BBA6-635AF3A002FB}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="5.93734970280452E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="7.42168712850565E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0593734970280452"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0742168712850565"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.184622561124357"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.323884645160784"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="967272807"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2930,16 +3086,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{BC9F5856-092B-4D4A-826E-780465674A53}" ShortID="651713173">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{BC9F5856-092B-4D4A-826E-780465674A53}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="2.88749175461742E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="6.57398573553136E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0288749175461742"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0657398573553136"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.09260760224275"/>
 														<Property Name="TrimEnd" Type="Real64" Value="6.3621068326737"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="651713173"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2956,9 +3115,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{0B755934-C032-40FA-B0D9-A52008836FF8}" ShortID="219789314">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{0B755934-C032-40FA-B0D9-A52008836FF8}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="6.93927746515275E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0693927746515275"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.044901207127459"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="1.99438727772981"/>
@@ -2966,6 +3125,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="219789314"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -2997,16 +3159,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{0B01FD89-0FFA-4CCA-BED2-A2D7CFCB2900}" ShortID="854222693">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{0B01FD89-0FFA-4CCA-BED2-A2D7CFCB2900}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="2.88749175461742E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="6.57398573553136E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0288749175461742"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0657398573553136"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="4.696986587511"/>
 														<Property Name="TrimEnd" Type="Real64" Value="4.96648581794195"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854222693"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3023,7 +3188,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{6C82351D-A7AA-4CA8-9C18-7919AD7C4A87}" ShortID="1002441243">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{6C82351D-A7AA-4CA8-9C18-7919AD7C4A87}">
 													<PropertyList>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.952872279023748"/>
@@ -3031,6 +3196,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1002441243"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3047,16 +3215,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Buttons_Switches_031" ID="{5548BD76-5162-47AA-A41A-BCDE030883C3}" ShortID="484742700">
+												<AudioFileSource Name="Buttons_Switches_031" ID="{5548BD76-5162-47AA-A41A-BCDE030883C3}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="2.88749175461742E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="6.57398573553136E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0288749175461742"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0657398573553136"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="3.98473862137204"/>
 														<Property Name="TrimEnd" Type="Real64" Value="4.19648801671064"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Buttons_Switches_031.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="484742700"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3077,13 +3248,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="keys_pick_up" ID="{26B8DCBB-3634-4FC9-BB96-01B2B19B2E69}" ShortID="391170035">
+								<AudioFileSource Name="keys_pick_up" ID="{26B8DCBB-3634-4FC9-BB96-01B2B19B2E69}">
 									<Language>SFX</Language>
 									<AudioFile>keys_pick_up.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="391170035"/>
+									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="Key ring carabineer pick up_BLASTWAVEFX_02006" ID="{24098BDD-5B92-4FC7-8BD0-51D3D7B709E9}" ShortID="451088547">
+								<AudioFileSource Name="Key ring carabineer pick up_BLASTWAVEFX_02006" ID="{24098BDD-5B92-4FC7-8BD0-51D3D7B709E9}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="3.77014335145823E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0377014335145823"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.262114728244239"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.482937410258221"/>
@@ -3091,6 +3265,9 @@
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Key ring carabineer pick up_BLASTWAVEFX_02006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="451088547"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -3139,9 +3316,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{84C7D5A0-B3A8-44F3-87A6-FABE505D9376}" ShortID="271723756">
+										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{84C7D5A0-B3A8-44F3-87A6-FABE505D9376}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0864568627450977"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="4.43876614344549"/>
@@ -3149,25 +3326,37 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="623791931"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="623791931"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{5580A1A7-51F6-42E5-A270-29994DA7F8BD}" ShortID="342448925">
+										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{5580A1A7-51F6-42E5-A270-29994DA7F8BD}">
 											<Language>SFX</Language>
 											<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342448925"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{B194AB9B-0E33-400B-90F3-5B46DE38A3BE}" ShortID="128979257">
+										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{B194AB9B-0E33-400B-90F3-5B46DE38A3BE}">
 											<Language>SFX</Language>
 											<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="128979257"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{D71FF477-A422-4A92-8D95-3AC122CE3949}" ShortID="861027327">
+										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{D71FF477-A422-4A92-8D95-3AC122CE3949}">
 											<Language>SFX</Language>
 											<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="861027327"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{91CCAA45-D466-4AAE-9BB0-7C382BAF2A0B}" ShortID="565478242">
+										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{91CCAA45-D466-4AAE-9BB0-7C382BAF2A0B}">
 											<Language>SFX</Language>
 											<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="565478242"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -3240,7 +3429,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{094A72BD-AA2A-4466-A468-0E75FD61AAF5}" ShortID="989414167">
+												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{094A72BD-AA2A-4466-A468-0E75FD61AAF5}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.278205672473813"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.309031596566067"/>
@@ -3250,6 +3439,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="989414167"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3280,7 +3472,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{FB8D2359-92DC-4F14-B6F0-0461E659373E}" ShortID="46440598">
+												<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{FB8D2359-92DC-4F14-B6F0-0461E659373E}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.278205672473813"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.309031596566067"/>
@@ -3290,6 +3482,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="46440598"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3340,7 +3535,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{4516C8D6-902D-49DC-BEA7-3AA7060448D8}" ShortID="712503341">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{4516C8D6-902D-49DC-BEA7-3AA7060448D8}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.446271393263343"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.446271393263343"/>
@@ -3350,6 +3545,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="712503341"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3380,7 +3578,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{414F51E9-BA32-4E69-B5AA-7381ADE7EF85}" ShortID="689672388">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{414F51E9-BA32-4E69-B5AA-7381ADE7EF85}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.208368137701561"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.208368137701561"/>
@@ -3390,6 +3588,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="689672388"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3420,7 +3621,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{89753D83-7FA4-45AC-BEC7-C97646CDE7DD}" ShortID="441170689">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{89753D83-7FA4-45AC-BEC7-C97646CDE7DD}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.182216824269982"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.182216824269982"/>
@@ -3430,6 +3631,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="441170689"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3481,7 +3685,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{E5A04A96-7B8B-4F29-B2F8-F258EC8AC093}" ShortID="176976218">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{E5A04A96-7B8B-4F29-B2F8-F258EC8AC093}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.131159441712259"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.131159441712259"/>
@@ -3491,6 +3695,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="176976218"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -3534,7 +3741,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E0FE6EAD-AC20-4579-A617-1F733A473031}" ShortID="578918507">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E0FE6EAD-AC20-4579-A617-1F733A473031}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.207897227355534"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.415794454711065"/>
@@ -3544,9 +3751,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="37444667"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="37444667"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3569,7 +3776,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E712E5D2-EE3B-4851-837D-C205FC0EA593}" ShortID="78539637">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E712E5D2-EE3B-4851-837D-C205FC0EA593}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.156196263978611"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.425989810850758"/>
@@ -3579,6 +3786,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78539637"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3601,9 +3811,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{D0525D82-F673-49C0-8E8A-38470EB09D37}" ShortID="193542715">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{D0525D82-F673-49C0-8E8A-38470EB09D37}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="7.80981319893057E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0780981319893057"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.249914022365778"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="2.20981571994715"/>
@@ -3611,9 +3821,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="578918507"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="578918507"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3643,9 +3853,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{61EBB5DB-BDB0-4252-B5EA-228EC0777E87}" ShortID="871371833">
+										<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{61EBB5DB-BDB0-4252-B5EA-228EC0777E87}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0864568627450977"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
@@ -3653,27 +3863,27 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="271723756"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="271723756"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{3496F9F9-03F9-4ED1-AB38-FC4EBAAFA719}" ShortID="489743754">
+										<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{3496F9F9-03F9-4ED1-AB38-FC4EBAAFA719}">
 											<Language>SFX</Language>
 											<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="342448925"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="342448925"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{D20A81CE-31D5-4436-9732-F018DCEE6750}" ShortID="426613505">
+										<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{D20A81CE-31D5-4436-9732-F018DCEE6750}">
 											<Language>SFX</Language>
 											<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="128979257"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="128979257"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{0F9CF3CE-8A14-455F-BB3D-5315DF5934DA}" ShortID="876868247">
+										<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{0F9CF3CE-8A14-455F-BB3D-5315DF5934DA}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="8.23554463892555E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0823554463892555"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.50382155438133"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="2.6063076563188"/>
@@ -3681,13 +3891,16 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="876868247"/>
+											</MediaIDList>
 										</AudioFileSource>
-										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{988C0341-C18C-4275-BB1B-44C91D212DD4}" ShortID="1044615298">
+										<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{988C0341-C18C-4275-BB1B-44C91D212DD4}">
 											<Language>SFX</Language>
 											<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="565478242"/>
-											</ConvertedFileIDList>
+											<MediaIDList>
+												<MediaID ID="565478242"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -3732,9 +3945,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{42CE2A53-4C16-4E71-A6D4-6DC5E5D5FAC3}" ShortID="999271713">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{42CE2A53-4C16-4E71-A6D4-6DC5E5D5FAC3}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0916523532436481"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.137302501018013"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.713384525227949"/>
@@ -3742,6 +3955,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="999271713"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3769,9 +3985,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{76C91A2C-D264-43F9-8155-1F108C7D51E8}" ShortID="734492731">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{76C91A2C-D264-43F9-8155-1F108C7D51E8}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0916523532436481"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.295635886576168"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="3.15288813587148"/>
@@ -3779,6 +3995,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="734492731"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3806,9 +4025,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{9332C6A2-13FD-47C1-A666-5E4DAEE0DB53}" ShortID="396493397">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{9332C6A2-13FD-47C1-A666-5E4DAEE0DB53}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0916523532436481"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.14767794373203"/>
@@ -3816,6 +4035,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="396493397"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3843,9 +4065,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{FEF721AF-57E2-4BC3-94A9-CE610DB3001B}" ShortID="355509078">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{FEF721AF-57E2-4BC3-94A9-CE610DB3001B}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.16523532436481E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0916523532436481"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.192340853990191"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.9036678613885"/>
@@ -3853,6 +4075,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="355509078"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3894,9 +4119,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{44550A58-ED2C-4FEA-AAED-B9AC5844DB1A}" ShortID="1040844536">
+												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{44550A58-ED2C-4FEA-AAED-B9AC5844DB1A}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0864568627450977"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
@@ -3904,18 +4129,18 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="271723756"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="271723756"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{BB3F22E1-DDEE-4919-8EE6-A55C94BEA52C}" ShortID="414675760">
+												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{BB3F22E1-DDEE-4919-8EE6-A55C94BEA52C}">
 													<Language>SFX</Language>
 													<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="342448925"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="342448925"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{8BBA5260-C891-4AA0-AA26-860906FC3E4E}" ShortID="155837603">
+												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{8BBA5260-C891-4AA0-AA26-860906FC3E4E}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.245393961911052"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.449259714883312"/>
@@ -3925,20 +4150,23 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="155837603"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C2A6117D-916B-4E58-9D79-3BA67AEE62B1}" ShortID="4103429">
+												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C2A6117D-916B-4E58-9D79-3BA67AEE62B1}">
 													<Language>SFX</Language>
 													<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="861027327"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="861027327"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E7EAE9E9-0148-4058-8F62-913CD3DE4E70}" ShortID="665122418">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{E7EAE9E9-0148-4058-8F62-913CD3DE4E70}">
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="565478242"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="565478242"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -3966,9 +4194,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{A9044CD6-934C-49F0-BC36-D484AAD9D509}" ShortID="623791931">
+												<AudioFileSource Name="EFX INT HOUSE Mud Room Cabinet O_C Action 03" ID="{A9044CD6-934C-49F0-BC36-D484AAD9D509}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="8.64568627450977E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0864568627450977"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.02083015564202"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="4.37687867647059"/>
@@ -3976,37 +4204,37 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="271723756"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="271723756"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{D0EDBCA8-7A31-4615-B8AD-74243C018891}" ShortID="443641820">
+												<AudioFileSource Name="FOLEY CABINET DOOR CLOSE BOUNCE 01" ID="{D0EDBCA8-7A31-4615-B8AD-74243C018891}">
 													<Language>SFX</Language>
 													<AudioFile>FOLEY CABINET DOOR CLOSE BOUNCE 01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="342448925"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="342448925"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{53D64F3F-D199-475C-A3D4-E5243455BEC2}" ShortID="234902722">
+												<AudioFileSource Name="DoorWoodCabinetClose (1)" ID="{53D64F3F-D199-475C-A3D4-E5243455BEC2}">
 													<Language>SFX</Language>
 													<AudioFile>DoorWoodCabinetClose (1).wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="128979257"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="128979257"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C7BDC10E-0047-4339-9ABE-60EBA964A22D}" ShortID="372938619">
+												<AudioFileSource Name="INT_closet_door_wood_open_close_04" ID="{C7BDC10E-0047-4339-9ABE-60EBA964A22D}">
 													<Language>SFX</Language>
 													<AudioFile>INT_closet_door_wood_open_close_04.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="861027327"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="861027327"/>
+													</MediaIDList>
 												</AudioFileSource>
-												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{14960210-BDFF-4D20-AAB5-64B90A41E1AE}" ShortID="37444667">
+												<AudioFileSource Name="Drawer Wooden Vanity_01" ID="{14960210-BDFF-4D20-AAB5-64B90A41E1AE}">
 													<Language>SFX</Language>
 													<AudioFile>Drawer Wooden Vanity_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="565478242"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="565478242"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4191,7 +4419,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}" ShortID="819079196">
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{3F484F01-DF39-49C3-ACE9-C4607B5A47A3}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.267189044287234"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.217091098483377"/>
@@ -4201,6 +4429,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819079196"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4226,7 +4457,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}" ShortID="710131029">
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7805CA8B-1D88-4E4C-8A68-CCC6B45993A1}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.065984296829555"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.304520291782534"/>
@@ -4236,6 +4467,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="710131029"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4259,7 +4493,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}" ShortID="830186802">
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{4281E676-8E63-44E0-9F2E-FB2E099247AA}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
@@ -4269,6 +4503,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="830186802"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4320,7 +4557,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{27648E5E-1DEF-4599-ABA6-815F231A050B}" ShortID="567029194">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{27648E5E-1DEF-4599-ABA6-815F231A050B}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
@@ -4330,6 +4567,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="567029194"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4360,7 +4600,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{DD2AC913-F63F-407E-AC55-37120B5C3083}" ShortID="534002572">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{DD2AC913-F63F-407E-AC55-37120B5C3083}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
@@ -4370,6 +4610,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="534002572"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4403,7 +4646,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{A209B11C-3265-4DB5-B12A-367A37634418}" ShortID="435878783">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{A209B11C-3265-4DB5-B12A-367A37634418}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.18877560670618"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.568526754406435"/>
@@ -4413,6 +4656,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="435878783"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4450,7 +4696,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}" ShortID="1041985487">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{C8E01A82-C447-4F87-B08E-D839BF4E988D}">
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -4459,6 +4705,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1041985487"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4489,7 +4738,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}" ShortID="756349642">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{BF2C87EA-B8B2-4A8E-9933-78206830386A}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
@@ -4499,6 +4748,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="756349642"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4524,9 +4776,9 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{B8B08BCF-9BAC-4E95-8EEB-7E7D0F1FF53B}" ShortID="6940699">
+														<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{B8B08BCF-9BAC-4E95-8EEB-7E7D0F1FF53B}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="4.68859197909204E-02"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0468859197909204"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.398379626528762"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="7.77560705417675"/>
@@ -4534,6 +4786,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="6940699"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4587,7 +4842,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}" ShortID="238106575">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{2CA1D5C4-4029-48B7-80CD-C597AF3C13B6}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.636931014307638"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
@@ -4597,6 +4852,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="238106575"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4617,7 +4875,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{91AB6657-9D82-458E-A040-17E9B5CB39DA}" ShortID="233146622">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{91AB6657-9D82-458E-A040-17E9B5CB39DA}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.603774251335528"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
@@ -4627,6 +4885,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="233146622"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4652,7 +4913,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{65A61453-53B1-49A6-AB66-51716312DAE3}" ShortID="729219625">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{65A61453-53B1-49A6-AB66-51716312DAE3}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.500595035131208"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.195078280024163"/>
@@ -4662,6 +4923,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="729219625"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4694,7 +4958,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}" ShortID="243168692">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{BAAD161B-5DE7-4862-AE14-FFA1136391F1}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.69762415242392"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.69762415242392"/>
@@ -4704,6 +4968,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="243168692"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4724,7 +4991,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{899467ED-664C-4F3E-A230-04381412026A}" ShortID="997959073">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{899467ED-664C-4F3E-A230-04381412026A}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.615080779460471"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.615080779460471"/>
@@ -4734,6 +5001,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="997959073"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4764,7 +5034,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{9CC5E255-B7D7-4D48-9D75-69CFECCCC6CB}" ShortID="624987087">
+														<AudioFileSource Name="Door-Wood-Worn-Creaks-Swing Mvs 3" ID="{9CC5E255-B7D7-4D48-9D75-69CFECCCC6CB}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.615080779460471"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.615080779460471"/>
@@ -4774,6 +5044,9 @@
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="624987087"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
@@ -4801,7 +5074,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7A18041D-5D2B-40ED-AD69-5E893F0C930A}" ShortID="949220488">
+												<AudioFileSource Name="EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01" ID="{7A18041D-5D2B-40ED-AD69-5E893F0C930A}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.113878929169827"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.210238023082757"/>
@@ -4811,9 +5084,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="756349642"/>
-													</ConvertedFileIDList>
+													<MediaIDList>
+														<MediaID ID="756349642"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4842,16 +5115,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="REFRIGERATOR DOOR CLOSE" ID="{6FB3D406-CF18-4F6F-AEE5-C18E5EB0AF5B}" ShortID="942554569">
+												<AudioFileSource Name="REFRIGERATOR DOOR CLOSE" ID="{6FB3D406-CF18-4F6F-AEE5-C18E5EB0AF5B}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.81241743725231E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0181241743725231"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.21144870101277"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="9.06208718626156E-03"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00906208718626156"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.33831792162043"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>REFRIGERATOR DOOR CLOSE.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="942554569"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4875,9 +5151,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{E77415F1-4DDD-404E-A568-FBDFC97291EF}" ShortID="483574875">
+												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{E77415F1-4DDD-404E-A568-FBDFC97291EF}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.62553940995156E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0362553940995156"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.284195508586526"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.235075297225891"/>
@@ -4885,6 +5161,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Door-Metal-Large Chunk-Close.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="483574875"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4908,9 +5187,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Fridge door opening lightly 6" ID="{0E28F730-CDB0-4143-8CA3-ABA274712551}" ShortID="52557723">
+												<AudioFileSource Name="Fridge door opening lightly 6" ID="{0E28F730-CDB0-4143-8CA3-ABA274712551}">
 													<Language>SFX</Language>
 													<AudioFile>Fridge door opening lightly 6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52557723"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4939,15 +5221,18 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="FRIDGE DOOR OPEN" ID="{A2CEFF37-EBD9-4D50-9F1B-9EDEFFEC416C}" ShortID="20227617">
+												<AudioFileSource Name="FRIDGE DOOR OPEN" ID="{A2CEFF37-EBD9-4D50-9F1B-9EDEFFEC416C}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.35974240422721E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0335974240422721"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.212783685601057"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.195051711800969"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>FRIDGE DOOR OPEN.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="20227617"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4973,15 +5258,18 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{DBCC2D75-90A7-4C4C-BFA4-98011E092227}" ShortID="1026426294">
+												<AudioFileSource Name="Door-Metal-Large Chunk-Close" ID="{DBCC2D75-90A7-4C4C-BFA4-98011E092227}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="3.62553940995156E-02"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="8.88841919859094E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0362553940995156"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0888841919859094"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.178937912813738"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Door-Metal-Large Chunk-Close.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1026426294"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -4998,9 +5286,9 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="EXT_shipping_container_metal_door_hinge_squeak_1ft_02" ID="{83FB90B9-9147-4E33-8862-7EFAC4C9B002}" ShortID="307565909">
+												<AudioFileSource Name="EXT_shipping_container_metal_door_hinge_squeak_1ft_02" ID="{83FB90B9-9147-4E33-8862-7EFAC4C9B002}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="9.90149851387054E-02"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0990149851387054"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.205646507595773"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.266578806142668"/>
@@ -5008,6 +5296,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>EXT_shipping_container_metal_door_hinge_squeak_1ft_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="307565909"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5045,17 +5336,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="C-Clamp tool" ID="{39142F8C-2301-4342-A7D9-E8B3A4CF3D2D}" ShortID="140838182">
+								<AudioFileSource Name="C-Clamp tool" ID="{39142F8C-2301-4342-A7D9-E8B3A4CF3D2D}">
 									<PropertyList>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimBegin" Type="Real64" Value="13.5722773469805"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>C-Clamp tool.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="140838182"/>
+									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="Ancient_Game_Metal_Game_Pick_Up_Snag_Grab" ID="{7F873F02-04E4-4584-B25D-AF32FB57E4C9}" ShortID="924911790">
+								<AudioFileSource Name="Ancient_Game_Metal_Game_Pick_Up_Snag_Grab" ID="{7F873F02-04E4-4584-B25D-AF32FB57E4C9}">
 									<Language>SFX</Language>
 									<AudioFile>Ancient_Game_Metal_Game_Pick_Up_Snag_Grab.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="924911790"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -5089,15 +5386,18 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="hologram_small_engage_10" ID="{6AD29B73-2932-4B1B-AB3D-7D3BA8535298}" ShortID="363234277">
+								<AudioFileSource Name="hologram_small_engage_10" ID="{6AD29B73-2932-4B1B-AB3D-7D3BA8535298}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="3.93315444738002E-02"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0393315444738002"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.0786630889476"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimEnd" Type="Real64" Value="0.289001348524879"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>hologram_small_engage_10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="363234277"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -5131,9 +5431,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="menu_glass_various_effected_05" ID="{214A508E-752B-40A2-8211-224068F2F3DB}" ShortID="46191334">
+								<AudioFileSource Name="menu_glass_various_effected_05" ID="{214A508E-752B-40A2-8211-224068F2F3DB}">
 									<Language>SFX</Language>
 									<AudioFile>menu_glass_various_effected_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="46191334"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -5166,7 +5469,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="calculations_n_text_spaced_33" ID="{6B84547C-BE70-441F-907D-1C02AFFBBDE5}" ShortID="846134701">
+								<AudioFileSource Name="calculations_n_text_spaced_33" ID="{6B84547C-BE70-441F-907D-1C02AFFBBDE5}">
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.129949058784677"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="0.172094699471598"/>
@@ -5176,6 +5479,9 @@
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>calculations_n_text_spaced_33.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="846134701"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -5339,7 +5645,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}" ShortID="112940681">
+										<AudioFileSource Name="EFX INT Fire Wind in Metal Stove 01" ID="{E2FBF61C-23F2-4352-A732-9CB5F201F9E8}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="175.939"/>
 												<Property Name="LoopBegin" Type="Real64" Value="0.116"/>
@@ -5349,6 +5655,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EFX INT Fire Wind in Metal Stove 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="112940681"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5380,7 +5689,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}" ShortID="491382896">
+										<AudioFileSource Name="KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457" ID="{B8C8EFCE-53EC-4462-B8C6-D07C2FA86B31}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="125.249"/>
 												<Property Name="LoopBegin" Type="Real64" Value="3.757"/>
@@ -5389,6 +5698,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491382896"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5415,7 +5727,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}" ShortID="924713307">
+										<AudioFileSource Name="EFX INT Wood Fire Crackle 02" ID="{A5831F71-5139-412B-88F5-BCAFFDEDB1AB}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="334.821"/>
 												<Property Name="LoopBegin" Type="Real64" Value="4.017"/>
@@ -5424,6 +5736,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EFX INT Wood Fire Crackle 02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="924713307"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5750,7 +6065,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}" ShortID="847065920">
+										<AudioFileSource Name="Rain on Window Sill-Mono" ID="{1985F2D3-C72F-4D8B-8245-7DA6655B8CC1}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
 												<Property Name="LoopBegin" Type="Real64" Value="2"/>
@@ -5759,6 +6074,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Rain on Window Sill-Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="847065920"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5810,7 +6128,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}" ShortID="562544463">
+										<AudioFileSource Name="Rain on Window Sill-stereo" ID="{3A334156-393D-42A5-A17D-83E226CAD4FC}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
 												<Property Name="LoopBegin" Type="Real64" Value="2"/>
@@ -5819,6 +6137,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Rain on Window Sill-stereo.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="562544463"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -5906,7 +6227,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="thunder 02" ID="{B03A779A-D85A-411F-8A4C-7E9D3732A48C}" ShortID="1019518702">
+												<AudioFileSource Name="thunder 02" ID="{B03A779A-D85A-411F-8A4C-7E9D3732A48C}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="1.34143549097314"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="3.11404667547336"/>
@@ -5916,6 +6237,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>thunder 02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019518702"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5932,7 +6256,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="thunder low boom dist rain" ID="{147844A2-3E56-4774-A2AA-507CE33878DD}" ShortID="206318304">
+												<AudioFileSource Name="thunder low boom dist rain" ID="{147844A2-3E56-4774-A2AA-507CE33878DD}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.499825627476882"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.43699867899604"/>
@@ -5942,6 +6266,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>thunder low boom dist rain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="206318304"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5958,16 +6285,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Lightning cracks dry_03" ID="{1C762E23-9B77-4790-8F5F-DCB857FC25F3}" ShortID="492614535">
+												<AudioFileSource Name="Lightning cracks dry_03" ID="{1C762E23-9B77-4790-8F5F-DCB857FC25F3}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.211205636283576"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="3.49301629238221"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="9.74795244385733E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0974795244385733"/>
 														<Property Name="TrimEnd" Type="Real64" Value="6.30367591369442"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Lightning cracks dry_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="492614535"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -5991,7 +6321,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Thunder clap big with no rain in the distance" ID="{92DA487A-2D15-4C14-BD60-F1F667521886}" ShortID="439346027">
+												<AudioFileSource Name="Thunder clap big with no rain in the distance" ID="{92DA487A-2D15-4C14-BD60-F1F667521886}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.701491086967592"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -5999,6 +6329,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Thunder clap big with no rain in the distance.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="439346027"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6027,7 +6360,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Lightning cracks_05" ID="{4BAF2F3F-A259-4D5C-BE8D-9F78F6F27BD9}" ShortID="473023217">
+												<AudioFileSource Name="Lightning cracks_05" ID="{4BAF2F3F-A259-4D5C-BE8D-9F78F6F27BD9}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.967608982826948"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="4.48325495376486"/>
@@ -6036,6 +6369,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Lightning cracks_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="473023217"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6059,13 +6395,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Thunder rumbling and rolling with no rain" ID="{BE8B1F06-51FF-4053-9B76-B64C22561723}" ShortID="355367746">
+												<AudioFileSource Name="Thunder rumbling and rolling with no rain" ID="{BE8B1F06-51FF-4053-9B76-B64C22561723}">
 													<PropertyList>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="174.167096805372"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Thunder rumbling and rolling with no rain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="355367746"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6082,7 +6421,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="thunder 19" ID="{C563527E-4370-4BE9-840E-4665071DD535}" ShortID="808117506">
+												<AudioFileSource Name="thunder 19" ID="{C563527E-4370-4BE9-840E-4665071DD535}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.644184940554821"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="1.10431704095112"/>
@@ -6092,6 +6431,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>thunder 19.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="808117506"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -6287,7 +6629,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Gas laundry dryer running rhythmically and tumbling" ID="{0E1390DA-3000-4AA1-8F9F-25D261B797D7}" ShortID="595218375">
+										<AudioFileSource Name="Gas laundry dryer running rhythmically and tumbling" ID="{0E1390DA-3000-4AA1-8F9F-25D261B797D7}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
 												<Property Name="FadeInDuration" Type="Real64" Value="2.77305151915456"/>
@@ -6297,6 +6639,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Gas laundry dryer running rhythmically and tumbling.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="595218375"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6321,9 +6666,12 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="LM4 - Electric Belt Drive - Full Run 11 - SBcontact" ID="{696E56F1-9E20-4463-920B-AEA0216D683A}" ShortID="423935674">
+										<AudioFileSource Name="LM4 - Electric Belt Drive - Full Run 11 - SBcontact" ID="{696E56F1-9E20-4463-920B-AEA0216D683A}">
 											<Language>SFX</Language>
 											<AudioFile>LM4 - Electric Belt Drive - Full Run 11 - SBcontact.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423935674"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6348,7 +6696,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Washing machine draining subtly and humming" ID="{9716561A-8F96-4628-87D2-1111580AC9A6}" ShortID="381684206">
+										<AudioFileSource Name="Washing machine draining subtly and humming" ID="{9716561A-8F96-4628-87D2-1111580AC9A6}">
 											<PropertyList>
 												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
 												<Property Name="FadeInDuration" Type="Real64" Value="3.24976608344791"/>
@@ -6358,6 +6706,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Washing machine draining subtly and humming.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381684206"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -6449,7 +6800,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sci_fi_loop_12" ID="{B7A9F039-5896-4562-A60F-4DFBDB3A51C8}" ShortID="50123170">
+								<AudioFileSource Name="sci_fi_loop_12" ID="{B7A9F039-5896-4562-A60F-4DFBDB3A51C8}">
 									<PropertyList>
 										<Property Name="CrossfadeDuration" Type="Real64" Value="20"/>
 										<Property Name="LoopBegin" Type="Real64" Value="0.02893"/>
@@ -6458,8 +6809,11 @@
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sci_fi_loop_12.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="50123170"/>
+									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{6F8138D6-545D-44AC-A109-18E4CCB63235}" ShortID="538976337">
+								<AudioFileSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{6F8138D6-545D-44AC-A109-18E4CCB63235}">
 									<PropertyList>
 										<Property Name="CrossfadeDuration" Type="Real64" Value="116.203"/>
 										<Property Name="LoopBegin" Type="Real64" Value="0.929"/>
@@ -6468,6 +6822,9 @@
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="538976337"/>
+									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
