@@ -35,5 +35,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-New Unity Project/New Unity Project_WwiseProject/New Unity Project_WwiseProject.SZZ.validationcache
-New Unity Project/New Unity Project_WwiseProject/New Unity Project_WwiseProject.SZZ.validationcache
+
+#Wwise
+*.validationcache
+*.wsettings
+xml
+*.prof
+.cache
