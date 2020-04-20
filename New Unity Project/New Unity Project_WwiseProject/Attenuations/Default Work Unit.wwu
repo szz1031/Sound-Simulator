@@ -7,12 +7,7 @@
 					<PropertyList>
 						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 						<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
-						<Property Name="ConeUse" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -29,13 +24,13 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7.033785</XPos>
-											<YPos>-6.72828</YPos>
+											<XPos>18.838375</XPos>
+											<YPos>-3.86005</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>50</XPos>
 											<YPos>-30</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -60,13 +55,13 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>6.482405</XPos>
+											<XPos>16.2060125</XPos>
 											<YPos>-8.55703</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>50</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -88,7 +83,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>50</XPos>
 											<YPos>76</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -110,7 +105,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>50</XPos>
 											<YPos>57</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -131,7 +126,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>50</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
