@@ -766,6 +766,22 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4161389291" Name="Test_Roomtune" ObjectPath="\Events\Default Work Unit\Test_Roomtune" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="413701673" Language="SFX">
+							<ShortName>REAPER Media\MainNoise.wav</ShortName>
+							<Path>SFX\REAPER Media\MainNoise_ABC59516.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3712553433" Name="Test_SFX" ObjectPath="\Events\Default Work Unit\Test_SFX" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="538976337" Language="SFX">
+							<ShortName>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</ShortName>
+							<Path>SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="186852181" Name="Thunder" ObjectPath="\Events\Default Work Unit\Environment\Thunder" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="12.450315">
 					<IncludedMemoryFiles>
 						<File Id="206318304" Language="SFX">

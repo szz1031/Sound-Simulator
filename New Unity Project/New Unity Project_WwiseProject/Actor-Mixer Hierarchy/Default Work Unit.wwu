@@ -1498,7 +1498,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -3006,7 +3006,7 @@
 							<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -5502,7 +5502,7 @@
 							<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -6853,6 +6853,245 @@
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="test" ID="{67B04D37-DB0A-49BC-B6B4-CDFC613A3CA7}" ShortID="74262389">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{4467D0FC-2119-4757-B9ED-42D883B5FC57}" ShortID="160877411">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="50"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{2965289F-F514-4FC0-BCF8-0F148C8F85F9}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>50</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MainNoise" ID="{16793613-2866-4F2A-BB60-3DA4CAC5B4D3}" ShortID="844640265">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuation_Object_max10" ID="{AF6C862B-24B9-419B-881F-FBD48DDF921E}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{9359F354-8082-4898-87D2-B33AABD2BD66}" ShortID="539221386" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FilterTypeBand1" Type="int32" Value="3"/>
+												<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="1646"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="3368"/>
+												<Property Name="OnOffBand3" Type="bool" Value="False"/>
+												<Property Name="QFactorBand1" Type="Real32" Value="0.5"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MainNoise" ID="{E1713D15-B153-4999-B44A-1E25491C6271}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="191.365"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.59024581336492"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.913"/>
+										<Property Name="LoopEnd" Type="Real64" Value="71.95375"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0959350301246271"/>
+										<Property Name="TrimEnd" Type="Real64" Value="72.4309477440932"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>REAPER Media\MainNoise.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413701673"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MainNoise" ID="{E1713D15-B153-4999-B44A-1E25491C6271}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Key_Hint Sound" ID="{DE55067F-E811-402A-A0D6-50122C7B36C6}" ShortID="602146092">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>630</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{DE17A96F-C448-4D41-8F90-8F0F70F4B0E4}" ShortID="20899248">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="50"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{7395BFC5-D13E-4DDC-AF27-AFD290AF7C3F}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sci_fi_loop_12" ID="{F6C5C0AD-67DA-4066-86F6-AB61E504093C}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="20"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.02893"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.7"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sci_fi_loop_12.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="50123170"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{F7F73DDC-F044-4E99-A259-D03B2E7774EA}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="116.203"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.929"/>
+										<Property Name="LoopEnd" Type="Real64" Value="8.366"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="538976337"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RE201 027A SIGNAL GENERATOR 1K _MONO" ID="{F7F73DDC-F044-4E99-A259-D03B2E7774EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

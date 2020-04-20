@@ -8,6 +8,8 @@ public class Occlusion : MonoBehaviour
 {
     Vector3 SourcePosition;
     public Transform Camera;
+
+    [Header("Debug Info:")]
     public float DisToListener;
     public float CalculateUnder;
     public float BlockedDistance;
@@ -79,7 +81,7 @@ public class Occlusion : MonoBehaviour
                 else
                     OcclusionPercentage = 0.0f;
 
-                AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
+               // AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
             } 
             else  //calculate of occlusion
             {                
@@ -136,8 +138,8 @@ public class Occlusion : MonoBehaviour
                     Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
 
 
-                AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
-                //AkSoundEngine.GetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, out obs, out FinalOcclu);
+               // AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
+                
             }
         }
 

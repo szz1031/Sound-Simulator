@@ -1021,6 +1021,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Test_SFX" ID="{4E5F8F1A-5163-4AE7-8D9C-25A98F1EE18A}">
+					<ChildrenList>
+						<Action Name="" ID="{D9AF6AC9-960B-44D3-BAE7-ED7B5E9354E3}" ShortID="696667892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Key_Hint Sound" ID="{DE55067F-E811-402A-A0D6-50122C7B36C6}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Test_Roomtune" ID="{C6597DFF-46EE-4474-8859-98613858CA4F}">
+					<ChildrenList>
+						<Action Name="" ID="{9D253A37-1F4F-47FA-A397-314F62E40D61}" ShortID="149319382">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainNoise" ID="{16793613-2866-4F2A-BB60-3DA4CAC5B4D3}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

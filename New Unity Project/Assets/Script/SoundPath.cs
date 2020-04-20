@@ -7,8 +7,11 @@ public class SoundPath : MonoBehaviour {
     public Transform Room;
     public Transform VirtualAudioSource;
     public Transform SelectedDoor;
+
+    [Header("Debug Info:")]
     public bool IsPassFloor;
     public bool IsActive;
+    
     public float MoveAmount;
     public float VolumeDecreased;
     // MoveAmount [0,1] is the most improtant var which determines how much do we want the audio source to move.
@@ -17,13 +20,13 @@ public class SoundPath : MonoBehaviour {
     public bool InTheRoom;
     float DistanceToDoor;
 
-	// Use this for initialization
+	
 	void Start () {
         VirtualAudioSource.position = transform.position;
         VirtualAudioSource.rotation = transform.rotation;
 	}
 	
-	// Update is called once per frame
+	/*   Custom popagation path
 	void Update () {
         IsPassFloor = gameObject.GetComponent<Occlusion>().PassFloor;
         InTheRoom = Room.gameObject.GetComponent<Room>().InRoom;
@@ -70,4 +73,6 @@ public class SoundPath : MonoBehaviour {
                 
         }
     }
+
+    */
 }
