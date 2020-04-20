@@ -34,6 +34,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Bank_VO" ID="{5015B6E1-E3AE-4DDD-8F7F-7D763CD9E2EB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="VO" ID="{F209E8AD-D341-4932-9776-2F9CA0D4541A}" WorkUnitID="{8CB415D4-97FE-431F-9448-3401DCB078CF}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -11,6 +11,7 @@
 				<Language Name="External" ID="{1AE569AC-2338-4A11-98DF-0313F2098CFD}"/>
 				<Language Name="Mixed" ID="{C75F4E8D-D15F-45D6-BCCB-AAC686B6AF67}"/>
 				<Language Name="SFX" ID="{93896CAE-66FA-413E-8742-6AB8E528CFC1}"/>
+				<Language Name="Simplified Chinese" ID="{EC4B15E8-A9B9-4665-8B33-79DDE344B36A}"/>
 			</LanguageList>
 			<PropertyList>
 				<Property Name="ExternalSourcesInputPath" Type="string">

@@ -137,6 +137,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BANK_MUSIC = 2800366463U;
         static const AkUniqueID BANK_SFX = 4017023971U;
+        static const AkUniqueID BANK_VO = 322030223U;
     } // namespace BANKS
 
     namespace BUSSES

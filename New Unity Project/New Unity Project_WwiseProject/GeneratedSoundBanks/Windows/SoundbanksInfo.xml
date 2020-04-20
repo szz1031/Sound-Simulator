@@ -11,6 +11,188 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="322030223" Language="Simplified Chinese">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
+			<ShortName>Bank_VO</ShortName>
+			<Path>Simplified Chinese\Bank_VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+					<IncludedMemoryFiles>
+						<File Id="867338695" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_1.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+					<IncludedMemoryFiles>
+						<File Id="854516349" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_2.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+					<IncludedMemoryFiles>
+						<File Id="776440994" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_3.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+					<IncludedMemoryFiles>
+						<File Id="990318294" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_4.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+					<IncludedMemoryFiles>
+						<File Id="1062165984" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_5.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+					<IncludedMemoryFiles>
+						<File Id="147397618" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_6.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+					<IncludedMemoryFiles>
+						<File Id="823992559" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_7.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+					<IncludedMemoryFiles>
+						<File Id="931284556" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_1.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+					<IncludedMemoryFiles>
+						<File Id="535477832" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_2.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+					<IncludedMemoryFiles>
+						<File Id="84328202" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_3.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
+				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="322030223" Language="English(US)">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
+			<ShortName>Bank_VO</ShortName>
+			<Path>English(US)\Bank_VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+					<IncludedMemoryFiles>
+						<File Id="867338695" Language="English(US)">
+							<ShortName>Laptop_Plot2_1.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+					<IncludedMemoryFiles>
+						<File Id="854516349" Language="English(US)">
+							<ShortName>Laptop_Plot2_2.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+					<IncludedMemoryFiles>
+						<File Id="776440994" Language="English(US)">
+							<ShortName>Laptop_Plot2_3.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+					<IncludedMemoryFiles>
+						<File Id="990318294" Language="English(US)">
+							<ShortName>Laptop_Plot2_4.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+					<IncludedMemoryFiles>
+						<File Id="1062165984" Language="English(US)">
+							<ShortName>Laptop_Plot2_5.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+					<IncludedMemoryFiles>
+						<File Id="147397618" Language="English(US)">
+							<ShortName>Laptop_Plot2_6.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+					<IncludedMemoryFiles>
+						<File Id="823992559" Language="English(US)">
+							<ShortName>Laptop_Plot2_7.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+					<IncludedMemoryFiles>
+						<File Id="931284556" Language="English(US)">
+							<ShortName>TV2_Plot_1.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+					<IncludedMemoryFiles>
+						<File Id="535477832" Language="English(US)">
+							<ShortName>TV2_Plot_2.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+					<IncludedMemoryFiles>
+						<File Id="84328202" Language="English(US)">
+							<ShortName>TV2_Plot_3.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
+				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
+			</GameParameters>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -24,10 +206,10 @@
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="English(US)">
+		<SoundBank Id="4017023971" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
-			<Path>English(US)\Bank_SFX.bnk</Path>
+			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082">
 					<IncludedMemoryFiles>
@@ -471,62 +653,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
-					<IncludedMemoryFiles>
-						<File Id="867338695" Language="English(US)">
-							<ShortName>Laptop_Plot2_1.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
-					<IncludedMemoryFiles>
-						<File Id="854516349" Language="English(US)">
-							<ShortName>Laptop_Plot2_2.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
-					<IncludedMemoryFiles>
-						<File Id="776440994" Language="English(US)">
-							<ShortName>Laptop_Plot2_3.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
-					<IncludedMemoryFiles>
-						<File Id="990318294" Language="English(US)">
-							<ShortName>Laptop_Plot2_4.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
-					<IncludedMemoryFiles>
-						<File Id="1062165984" Language="English(US)">
-							<ShortName>Laptop_Plot2_5.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
-					<IncludedMemoryFiles>
-						<File Id="147397618" Language="English(US)">
-							<ShortName>Laptop_Plot2_6.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
-					<IncludedMemoryFiles>
-						<File Id="823992559" Language="English(US)">
-							<ShortName>Laptop_Plot2_7.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="3130091867" Name="Laundary" ObjectPath="\Events\Default Work Unit\Environment\Laundary" MaxAttenuation="8.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="381684206" Language="SFX">
@@ -884,30 +1010,6 @@
 				</Event>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
-					<IncludedMemoryFiles>
-						<File Id="931284556" Language="English(US)">
-							<ShortName>TV2_Plot_1.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
-					<IncludedMemoryFiles>
-						<File Id="535477832" Language="English(US)">
-							<ShortName>TV2_Plot_2.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
-					<IncludedMemoryFiles>
-						<File Id="84328202" Language="English(US)">
-							<ShortName>TV2_Plot_3.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="9.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="847065920" Language="SFX">
