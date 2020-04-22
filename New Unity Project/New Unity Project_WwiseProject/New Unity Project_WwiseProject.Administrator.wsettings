@@ -3,13 +3,36 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{05A8D3AB-DD18-4FCC-ADB7-636A36469506}">
 			<PropertyList>
+				<Property Name="Event Action List\{0B149056-1F2D-4AB6-9B55-EDE0CBBFEE5A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{11A148BB-ED2F-42D5-B525-0E506AC16DA5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1C5BCE5E-BBCE-4A2D-BE0B-4B99E0B44DF0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{210B21E1-3C77-4845-BE03-307D7D7B72FE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2CBE0F2B-7004-4A67-8FA1-C51D97139AB8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4D45292A-5D01-4170-9AA5-A8B8D874AEBB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E5F8F1A-5163-4AE7-8D9C-25A98F1EE18A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4F5D78F4-D62E-455B-95BC-692B56CD3359}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{55E79E2C-7389-4471-B480-308C2BB16664}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{55FD6085-99C4-40B0-9C30-E0B12D599A9E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5D4AFC8C-9D32-4ACB-9D41-67B6D2C9FF92}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7FF9E199-23FD-4428-B53E-0639FF08363A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{82380A80-DE98-41EA-BE7C-6965AD7C483D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{84BCA1ED-03DE-466F-A0F2-4F6CD4DDEC6F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{945FAA4E-6C8D-4E44-93A5-AAA40DB072EF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9890BC8C-2B3A-4C1C-8BF6-CA4C98C53806}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9AE4359A-344B-4715-8C7C-F494807EE0FD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9BF05467-D0DA-4087-83E9-5677B51BD88C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9C94AFA7-A22C-4445-A832-DFEC9DCF8767}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A8D81B63-6C37-481A-9DDA-45B1165C9037}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C27170E8-E05C-4AA5-BBC0-6FE416669C1C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C4B9B473-CB97-4EDE-9FEB-6909E68A3352}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C6597DFF-46EE-4474-8859-98613858CA4F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C96AAD72-0DF2-4D73-8861-7E3D58FA1F7E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CAA49FCB-8795-470C-B9C5-7260FF9A38DD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CEF95184-654A-4322-86AE-F4F193E311B0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E511330B-8E0B-49E2-B4E5-A38ACCE939BF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E724A561-6CE1-4415-A699-185FC7BBEB9A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FB1963AB-4511-4794-A759-152823A7FAA3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FBCB12B8-270E-42B4-96C4-9A4E0342BB17}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -46,8 +69,8 @@
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{B3970F15-3736-4444-90AD-5901148AC1ED}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{C4B9B473-CB97-4EDE-9FEB-6909E68A3352}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
@@ -64,7 +87,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ88H/596qDmFLt1m6x0zPb94="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="1UAMnksZbkCfVXOllzrR1uybtrLfnEdBlLA4cFrCLUSMGkAGP8GGQrCgpcco3c1VWFtatMvSEEe7a0do0eYoAjdNsGcK27xJtrTN/GE6PKfIPLN0jWrgSq0Tb/lNSu6OuBL4gAfSO0yn45RGsRsn1w=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="1UAMnksZbkCfVXOllzrR1uybtrLfnEdBlLA4cFrCLUS8BYs0wJGzQaoHBdXven/rjBpABj/BhkKwoKXHKN3NVRCUqDKyVqtDmLxr6KQ3hg8b08rs+BmgRY0yDpjHp6DuWFtatMvSEEe7a0do0eYoAjdNsGcK27xJtrTN/GE6PKfIPLN0jWrgSq0Tb/lNSu6OuBL4gAfSO0yn45RGsRsn1/guaOQXx4RMreX1nCYiM8k="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="1BW0jP6XH0OUSDQB3LB4z5APJe9Z+qZIixPpQRHOmcit6AnyQdMySZd2L5yg1FQaYwlJOY5uTEqb4TW9y1SwZrg6Im7F3M1MkxhirNSGtek="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>

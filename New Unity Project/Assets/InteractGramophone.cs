@@ -8,6 +8,7 @@ public class InteractGramophone : InteractStorySpecial<InteractGramophone> {
     readonly int HS_Start = Animator.StringToHash("Start");
     readonly int HS_Stop = Animator.StringToHash("Stop");
     bool b_playing;
+    public GameObject Target;
     protected override void Awake()
     {
         m_Animator = GetComponent<Animator>();
@@ -16,7 +17,7 @@ public class InteractGramophone : InteractStorySpecial<InteractGramophone> {
     {
         base.OnStageStart(stage);
         if (stage == enum_Stage.Stage4)
-            AudioManager.PostEvent("StopObject", this.gameObject);
+            AudioManager.PostEvent("StopObject", Target);
     }
     public override void TryInteract()
     {
@@ -33,6 +34,6 @@ public class InteractGramophone : InteractStorySpecial<InteractGramophone> {
                 b_playing = false;
                 break;
         }
-        AudioManager.PostEvent("Gramophone_"+eventName,this.gameObject);
+        AudioManager.PostEvent("Gramophone_"+eventName,Target);
     }
 }

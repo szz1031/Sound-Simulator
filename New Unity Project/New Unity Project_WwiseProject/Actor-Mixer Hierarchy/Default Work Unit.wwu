@@ -1915,6 +1915,7 @@
 								<Sound Name="MainNoise" ID="{8A5F3C80-31BA-419E-BE11-8601468C5B73}" ShortID="89743428">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -2130,6 +2131,7 @@
 						<Sound Name="Bear" ID="{D8BC696C-ADC2-4CFF-8033-AD49D02C6460}" ShortID="170740299">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2194,7 +2196,7 @@
 						<Sound Name="Guitar" ID="{7672C10F-5382-4254-8D60-BD8A93B89903}" ShortID="635100500">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>
@@ -2395,7 +2397,11 @@
 						<ActorMixer Name="Dialogue" ID="{80F812B8-D207-4C3B-A7E3-9446B11B27D7}" ShortID="874793418">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2406,9 +2412,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2530,6 +2533,11 @@
 									<ChildrenList>
 										<Sound Name="Laptop_Plot_1" ID="{80C0530D-C820-4FAE-A947-C061C4DB0CF9}" ShortID="877579987">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2555,6 +2563,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_2" ID="{600495D8-474F-47B1-BFEE-1479B857FA2C}" ShortID="910367284">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2580,6 +2593,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_3" ID="{0FA4245D-7C56-49C2-9F8A-1DEF14358E03}" ShortID="380228534">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2605,6 +2623,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_4" ID="{44A3985F-E045-4D28-8725-8A0330F7704E}" ShortID="147241052">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2630,6 +2653,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_5" ID="{B3970F15-3736-4444-90AD-5901148AC1ED}" ShortID="837942513">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2655,6 +2683,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_6" ID="{33902572-437B-43EE-B737-BEB4AC56C566}" ShortID="439478797">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2680,6 +2713,11 @@
 										</Sound>
 										<Sound Name="Laptop_Plot_7" ID="{6BD553EF-80D5-4409-8E23-701A928EF710}" ShortID="728478438">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -5430,6 +5468,8 @@
 				<ActorMixer Name="Environmental Object" ID="{E4682EF8-C717-4C84-ADE5-F59C262233C9}" ShortID="752416174">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -5441,14 +5481,12 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Fire" ID="{07F2CE74-77A1-480D-957C-95BA6A7CB892}" ShortID="414296320">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -5708,6 +5746,7 @@
 						<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -5871,7 +5910,7 @@
 									</Custom>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -5881,8 +5920,8 @@
 								<Sound Name="Rain_smallwindow" ID="{7C54640A-F4D2-4C5D-A4A0-961B781DD47F}" ShortID="948681864">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
@@ -5891,7 +5930,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5902,7 +5941,7 @@
 													<PropertyList>
 														<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 														<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-														<Property Name="RadiusMax" Type="Real64" Value="9"/>
+														<Property Name="RadiusMax" Type="Real64" Value="10"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -5914,18 +5953,18 @@
 																	<PointList>
 																		<Point>
 																			<XPos>0</XPos>
-																			<YPos>-2</YPos>
+																			<YPos>-0</YPos>
 																			<Flags>5</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4.00251</XPos>
-																			<YPos>-10.43144</YPos>
+																			<XPos>4.00836</XPos>
+																			<YPos>-8.59049</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>9</XPos>
+																			<XPos>10</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5952,8 +5991,8 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>9</XPos>
-																			<YPos>62</YPos>
+																			<XPos>10</XPos>
+																			<YPos>50</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -5973,8 +6012,8 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>9</XPos>
-																			<YPos>57</YPos>
+																			<XPos>10</XPos>
+																			<YPos>50</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -5995,7 +6034,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -6086,6 +6125,7 @@
 								<RandomSequenceContainer Name="Thunder" ID="{1A8172C8-7A2C-4636-9291-6162EB18F0B6}" ShortID="316739426">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -6429,6 +6469,7 @@
 						<ActorMixer Name="Laundray machine" ID="{32A89410-56B2-43AB-98BC-6BE8A437860F}" ShortID="861927255">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -6697,6 +6738,8 @@
 				<ActorMixer Name="WorldB Hint Object" ID="{716C1F06-7CF3-4EA0-ACF8-C9A8E20C418D}" ShortID="420450560">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -6795,6 +6838,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

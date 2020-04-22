@@ -16,7 +16,7 @@
 			<ShortName>Bank_VO</ShortName>
 			<Path>Simplified Chinese\Bank_VO.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
 					<IncludedMemoryFiles>
 						<File Id="867338695" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_1.wav</ShortName>
@@ -24,7 +24,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
 					<IncludedMemoryFiles>
 						<File Id="854516349" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_2.wav</ShortName>
@@ -32,7 +32,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
 					<IncludedMemoryFiles>
 						<File Id="776440994" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_3.wav</ShortName>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
 					<IncludedMemoryFiles>
 						<File Id="990318294" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_4.wav</ShortName>
@@ -48,7 +48,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
 					<IncludedMemoryFiles>
 						<File Id="1062165984" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_5.wav</ShortName>
@@ -56,7 +56,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
 					<IncludedMemoryFiles>
 						<File Id="147397618" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_6.wav</ShortName>
@@ -64,7 +64,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
 					<IncludedMemoryFiles>
 						<File Id="823992559" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>Laptop_Plot2_7.wav</ShortName>
@@ -72,7 +72,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
 					<IncludedMemoryFiles>
 						<File Id="931284556" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>TV2_Plot_1.wav</ShortName>
@@ -80,7 +80,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
 					<IncludedMemoryFiles>
 						<File Id="535477832" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>TV2_Plot_2.wav</ShortName>
@@ -88,7 +88,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
 					<IncludedMemoryFiles>
 						<File Id="84328202" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
 							<ShortName>TV2_Plot_3.wav</ShortName>
@@ -103,7 +103,7 @@
 			<ShortName>Bank_VO</ShortName>
 			<Path>English(US)\Bank_VO.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
 					<IncludedMemoryFiles>
 						<File Id="867338695" Language="English(US)">
 							<ShortName>Laptop_Plot2_1.wav</ShortName>
@@ -111,7 +111,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
 					<IncludedMemoryFiles>
 						<File Id="854516349" Language="English(US)">
 							<ShortName>Laptop_Plot2_2.wav</ShortName>
@@ -119,7 +119,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
 					<IncludedMemoryFiles>
 						<File Id="776440994" Language="English(US)">
 							<ShortName>Laptop_Plot2_3.wav</ShortName>
@@ -127,7 +127,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
 					<IncludedMemoryFiles>
 						<File Id="990318294" Language="English(US)">
 							<ShortName>Laptop_Plot2_4.wav</ShortName>
@@ -135,7 +135,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
 					<IncludedMemoryFiles>
 						<File Id="1062165984" Language="English(US)">
 							<ShortName>Laptop_Plot2_5.wav</ShortName>
@@ -143,7 +143,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
 					<IncludedMemoryFiles>
 						<File Id="147397618" Language="English(US)">
 							<ShortName>Laptop_Plot2_6.wav</ShortName>
@@ -151,7 +151,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
 					<IncludedMemoryFiles>
 						<File Id="823992559" Language="English(US)">
 							<ShortName>Laptop_Plot2_7.wav</ShortName>
@@ -159,7 +159,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
 					<IncludedMemoryFiles>
 						<File Id="931284556" Language="English(US)">
 							<ShortName>TV2_Plot_1.wav</ShortName>
@@ -167,7 +167,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
 					<IncludedMemoryFiles>
 						<File Id="535477832" Language="English(US)">
 							<ShortName>TV2_Plot_2.wav</ShortName>
@@ -175,7 +175,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
 					<IncludedMemoryFiles>
 						<File Id="84328202" Language="English(US)">
 							<ShortName>TV2_Plot_3.wav</ShortName>
@@ -203,7 +203,7 @@
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082">
+				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082">
 					<IncludedMemoryFiles>
 						<File Id="613669782" Language="SFX">
 							<ShortName>ANW2097_34_London-Bridge-Is-Falling-9-(30).wav</ShortName>
@@ -211,7 +211,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
+				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
 					<IncludedMemoryFiles>
 						<File Id="176976218" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -219,7 +219,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.516693" DurationMax="0.563458">
+				<Event Id="3463217684" Name="Cabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_KeySound" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.516693" DurationMax="0.563458">
 					<IncludedMemoryFiles>
 						<File Id="155837603" Language="SFX">
 							<ShortName>DoorWoodCabinetClose (1).wav</ShortName>
@@ -227,7 +227,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.233421" DurationMax="0.541115">
+				<Event Id="2458915778" Name="Cabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.233421" DurationMax="0.541115">
 					<IncludedMemoryFiles>
 						<File Id="441170689" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -243,7 +243,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
+				<Event Id="3498272821" Name="Door_Closet_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
 					<IncludedMemoryFiles>
 						<File Id="233146622" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -259,7 +259,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
+				<Event Id="1301402079" Name="Door_Closet_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
 					<IncludedMemoryFiles>
 						<File Id="243168692" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -275,7 +275,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.549813" DurationMax="1.899100">
+				<Event Id="711857016" Name="Door_Closet_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.549813" DurationMax="1.899100">
 					<IncludedMemoryFiles>
 						<File Id="435878783" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -295,7 +295,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="541226684" Name="Door_Closet_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
+				<Event Id="541226684" Name="Door_Closet_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
 					<IncludedMemoryFiles>
 						<File Id="6940699" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -312,7 +312,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2141172849" Name="Door_Closet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3333554874" Name="Door_Locked" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Locked" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.420331" DurationMax="0.458374">
+				<Event Id="3333554874" Name="Door_Locked" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Locked" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.420331" DurationMax="0.458374">
 					<IncludedMemoryFiles>
 						<File Id="756349642" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -324,7 +324,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
+				<Event Id="2407747538" Name="Door_Narrow_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
 					<IncludedMemoryFiles>
 						<File Id="233146622" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -340,7 +340,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
+				<Event Id="2916866438" Name="Door_Narrow_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
 					<IncludedMemoryFiles>
 						<File Id="243168692" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -356,7 +356,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
+				<Event Id="501750955" Name="Door_Narrow_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
 					<IncludedMemoryFiles>
 						<File Id="819079196" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -364,7 +364,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
+				<Event Id="982290157" Name="Door_Narrow_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
 					<IncludedMemoryFiles>
 						<File Id="6940699" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -380,7 +380,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923">
+				<Event Id="3041433330" Name="Door_Narrow_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923">
 					<IncludedMemoryFiles>
 						<File Id="710131029" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -388,7 +388,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2853512794" Name="Door_Wide_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
+				<Event Id="2853512794" Name="Door_Wide_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.591510" DurationMax="0.791390">
 					<IncludedMemoryFiles>
 						<File Id="233146622" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -404,7 +404,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="64215390" Name="Door_Wide_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
+				<Event Id="64215390" Name="Door_Wide_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.610835" DurationMax="0.739307">
 					<IncludedMemoryFiles>
 						<File Id="243168692" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -420,7 +420,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
+				<Event Id="2043156035" Name="Door_Wide_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
 					<IncludedMemoryFiles>
 						<File Id="819079196" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -428,7 +428,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
+				<Event Id="2116863413" Name="Door_Wide_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.389936" DurationMax="0.450028">
 					<IncludedMemoryFiles>
 						<File Id="6940699" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -444,7 +444,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923">
+				<Event Id="996249450" Name="Door_Wide_KeySound" ObjectPath="\Events\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.717026" DurationMax="0.781923">
 					<IncludedMemoryFiles>
 						<File Id="710131029" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -452,7 +452,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.503897" DurationMax="0.652820">
+				<Event Id="3753111523" Name="Drawer_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.503897" DurationMax="0.652820">
 					<IncludedMemoryFiles>
 						<File Id="37444667" Language="SFX">
 							<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
@@ -485,7 +485,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3173784171" Name="Drawer_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_KeySound" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243">
+				<Event Id="850583253" Name="Drawer_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Drawer_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.295325" DurationMax="0.376243">
 					<IncludedMemoryFiles>
 						<File Id="355509078" Language="SFX">
 							<ShortName>Drawer Wooden Vanity_01.wav</ShortName>
@@ -521,7 +521,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
+				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
 					<IncludedMemoryFiles>
 						<File Id="176976218" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -529,7 +529,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056">
+				<Event Id="1066855742" Name="GlassCabinet_KeySound" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.826723" DurationMax="1.992056">
 					<IncludedMemoryFiles>
 						<File Id="623791931" Language="SFX">
 							<ShortName>EFX INT HOUSE Mud Room Cabinet O_C Action 03.wav</ShortName>
@@ -541,7 +541,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.695135" DurationMax="0.787591">
+				<Event Id="3721891028" Name="GlassCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.695135" DurationMax="0.787591">
 					<IncludedMemoryFiles>
 						<File Id="46440598" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -549,7 +549,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447">
+				<Event Id="2879668892" Name="Gramophone_Charge" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Charge" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="3.048447" DurationMax="3.048447">
 					<IncludedMemoryFiles>
 						<File Id="229089504" Language="SFX">
 							<ShortName>REAPER Media\Charge.wav</ShortName>
@@ -557,7 +557,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="105157533" Language="SFX">
 							<ShortName>REAPER Media\Mainghosty.wav</ShortName>
@@ -565,7 +565,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="10.000000" DurationType="Infinite">
+				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="413701673" Language="SFX">
 							<ShortName>REAPER Media\MainNoise.wav</ShortName>
@@ -573,7 +573,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3525613408" Name="Gramophone_NeedleTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.129533" DurationMax="0.129533">
+				<Event Id="3525613408" Name="Gramophone_NeedleTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.129533" DurationMax="0.129533">
 					<IncludedMemoryFiles>
 						<File Id="458629548" Language="SFX">
 							<ShortName>REAPER Media\NeedleTap.wav</ShortName>
@@ -581,7 +581,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="435953925" Name="Gramophone_OnOffTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.663492" DurationMax="0.663492">
+				<Event Id="435953925" Name="Gramophone_OnOffTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.663492" DurationMax="0.663492">
 					<IncludedMemoryFiles>
 						<File Id="573201444" Language="SFX">
 							<ShortName>REAPER Media\OnOffTap.wav</ShortName>
@@ -589,7 +589,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369">
+				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369">
 					<IncludedMemoryFiles>
 						<File Id="730283719" Language="SFX">
 							<ShortName>REAPER Media\Squeak_1.wav</ShortName>
@@ -597,7 +597,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889">
+				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889">
 					<IncludedMemoryFiles>
 						<File Id="45498057" Language="SFX">
 							<ShortName>REAPER Media\Squeak_2.wav</ShortName>
@@ -605,7 +605,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243">
+				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243">
 					<IncludedMemoryFiles>
 						<File Id="513100812" Language="SFX">
 							<ShortName>REAPER Media\Squeak_3.wav</ShortName>
@@ -613,7 +613,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2080917547" Name="Guitar_Music" ObjectPath="\Events\Default Work Unit\Object\Guitar_Music" MaxAttenuation="17.000000" DurationType="OneShot" DurationMin="144.291672" DurationMax="144.291672">
+				<Event Id="2080917547" Name="Guitar_Music" ObjectPath="\Events\Default Work Unit\Object\Guitar_Music" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="144.291672" DurationMax="144.291672">
 					<IncludedMemoryFiles>
 						<File Id="883149415" Language="SFX">
 							<ShortName>ANW3088_06_Romantica.wav</ShortName>
@@ -621,7 +621,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857">
+				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857">
 					<IncludedMemoryFiles>
 						<File Id="451088547" Language="SFX">
 							<ShortName>Key ring carabineer pick up_BLASTWAVEFX_02006.wav</ShortName>
@@ -637,7 +637,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.353237" DurationMax="1.353237">
+				<Event Id="4140245326" Name="Laptop_Interact" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Interact" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.353237" DurationMax="1.353237">
 					<IncludedMemoryFiles>
 						<File Id="846134701" Language="SFX">
 							<ShortName>calculations_n_text_spaced_33.wav</ShortName>
@@ -657,7 +657,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499">
+				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499">
 					<IncludedMemoryFiles>
 						<File Id="219789314" Language="SFX">
 							<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -673,7 +673,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499">
+				<Event Id="2253880733" Name="LightSwitch_On" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_On" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.105875" DurationMax="0.269499">
 					<IncludedMemoryFiles>
 						<File Id="484742700" Language="SFX">
 							<ShortName>Buttons_Switches_031.wav</ShortName>
@@ -818,7 +818,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="2054288328" Name="Remote_Interact" ObjectPath="\Events\Default Work Unit\Object\Remote_Interact" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3555319575" Name="Safe_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.705049" DurationMax="0.791390">
+				<Event Id="3555319575" Name="Safe_Axis_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.705049" DurationMax="0.791390">
 					<IncludedMemoryFiles>
 						<File Id="238106575" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -826,7 +826,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="203066849" Name="Safe_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.438209" DurationMax="0.473345">
+				<Event Id="203066849" Name="Safe_Axis_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Axis_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.438209" DurationMax="0.473345">
 					<IncludedMemoryFiles>
 						<File Id="307565909" Language="SFX">
 							<ShortName>EXT_shipping_container_metal_door_hinge_squeak_1ft_02.wav</ShortName>
@@ -835,7 +835,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="601288178" Name="Safe_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
+				<Event Id="601288178" Name="Safe_Handle_Close" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.385417" DurationMax="0.420300">
 					<IncludedMemoryFiles>
 						<File Id="819079196" Language="SFX">
 							<ShortName>EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01.wav</ShortName>
@@ -843,7 +843,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1189764390" Name="Safe_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.496868" DurationMax="0.541839">
+				<Event Id="1189764390" Name="Safe_Handle_Open" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Handle_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.496868" DurationMax="0.541839">
 					<IncludedMemoryFiles>
 						<File Id="20227617" Language="SFX">
 							<ShortName>FRIDGE DOOR OPEN.wav</ShortName>
@@ -855,7 +855,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2314026839" Name="Safe_KeySound" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_KeySound" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.772759" DurationMax="0.842700">
+				<Event Id="2314026839" Name="Safe_KeySound" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_KeySound" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.772759" DurationMax="0.842700">
 					<IncludedMemoryFiles>
 						<File Id="876868247" Language="SFX">
 							<ShortName>INT_closet_door_wood_open_close_04.wav</ShortName>
@@ -867,7 +867,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Locked" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.168895" DurationMax="0.184181">
+				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\Object\safe\Safe_Locked" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.168895" DurationMax="0.184181">
 					<IncludedMemoryFiles>
 						<File Id="1026426294" Language="SFX">
 							<ShortName>Door-Metal-Large Chunk-Close.wav</ShortName>
@@ -875,7 +875,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1311816845" Name="Screws_Pickup" ObjectPath="\Events\Default Work Unit\Object\Screws_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.408940" DurationMax="0.408940">
+				<Event Id="1311816845" Name="Screws_Pickup" ObjectPath="\Events\Default Work Unit\Object\Screws_Pickup" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.408940" DurationMax="0.408940">
 					<IncludedMemoryFiles>
 						<File Id="924911790" Language="SFX">
 							<ShortName>Ancient_Game_Metal_Game_Pick_Up_Snag_Grab.wav</ShortName>
@@ -884,47 +884,31 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="4161389291" Name="Test_Roomtune" ObjectPath="\Events\Default Work Unit\Test_Roomtune" MaxAttenuation="50.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="413701673" Language="SFX">
-							<ShortName>REAPER Media\MainNoise.wav</ShortName>
-							<Path>SFX\REAPER Media\MainNoise_ABC59516.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3712553433" Name="Test_SFX" ObjectPath="\Events\Default Work Unit\Test_SFX" MaxAttenuation="50.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="538976337" Language="SFX">
-							<ShortName>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</ShortName>
-							<Path>SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="186852181" Name="Thunder" ObjectPath="\Events\Default Work Unit\Environment\Thunder" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="12.450315">
 					<IncludedMemoryFiles>
 						<File Id="206318304" Language="SFX">
 							<ShortName>thunder low boom dist rain.wav</ShortName>
-							<Path>SFX\thunder low boom dist rain_0CD0E34B.wem</Path>
+							<Path>SFX\thunder low boom dist rain_A2E41E2F.wem</Path>
 						</File>
 						<File Id="473023217" Language="SFX">
 							<ShortName>Lightning cracks_05.wav</ShortName>
-							<Path>SFX\Lightning cracks_05_D5352E35.wem</Path>
+							<Path>SFX\Lightning cracks_05_3F197481.wem</Path>
 						</File>
 						<File Id="492614535" Language="SFX">
 							<ShortName>Lightning cracks dry_03.wav</ShortName>
-							<Path>SFX\Lightning cracks dry_03_AC48A35E.wem</Path>
+							<Path>SFX\Lightning cracks dry_03_23D8CADA.wem</Path>
 						</File>
 						<File Id="808117506" Language="SFX">
 							<ShortName>thunder 19.wav</ShortName>
-							<Path>SFX\thunder 19_75B973B7.wem</Path>
+							<Path>SFX\thunder 19_A38E756B.wem</Path>
 						</File>
 						<File Id="1019518702" Language="SFX">
 							<ShortName>thunder 02.wav</ShortName>
-							<Path>SFX\thunder 02_834824DC.wem</Path>
+							<Path>SFX\thunder 02_AFF0A9D8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458">
+				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458">
 					<IncludedMemoryFiles>
 						<File Id="155837603" Language="SFX">
 							<ShortName>DoorWoodCabinetClose (1).wav</ShortName>
@@ -936,7 +920,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.183421" DurationMax="0.491115">
+				<Event Id="75187861" Name="ToiletCabinet_Open" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Open" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.183421" DurationMax="0.491115">
 					<IncludedMemoryFiles>
 						<File Id="441170689" Language="SFX">
 							<ShortName>Door-Wood-Worn-Creaks-Swing Mvs 3.wav</ShortName>
@@ -952,7 +936,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737287" Name="TV_1_Music_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_1" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737287" Name="TV_1_Music_1" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_1" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1066902147" Language="SFX">
 							<ShortName>ANW3174_04_Arturos-Waltz.wav</ShortName>
@@ -960,7 +944,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="873524984" Language="SFX">
 							<ShortName>ANW1546_04_Karma.wav</ShortName>
@@ -968,7 +952,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="323133469" Language="SFX">
 							<ShortName>ANW1838_10_Violins-Virus.wav</ShortName>
@@ -976,7 +960,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737282" Name="TV_1_Music_4" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_4" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737282" Name="TV_1_Music_4" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_4" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="643296694" Language="SFX">
 							<ShortName>ANW3088_05_Fairground.wav</ShortName>
@@ -984,7 +968,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="335077997" Language="SFX">
 							<ShortName>ANW3185_01_Cello-Prelude.wav</ShortName>
@@ -992,7 +976,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="911504740" Language="SFX">
 							<ShortName>ANW3194_33_Coral-Oceans-3-(60).wav</ShortName>
@@ -1002,11 +986,11 @@
 				</Event>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="9.000000" DurationType="Infinite">
+				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="847065920" Language="SFX">
 							<ShortName>Rain on Window Sill-Mono.wav</ShortName>
-							<Path>SFX\Rain on Window Sill-Mono_31EA8D7B.wem</Path>
+							<Path>SFX\Rain on Window Sill-Mono_ED38187F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

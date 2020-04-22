@@ -73,8 +73,6 @@ namespace AK
         static const AkUniqueID SAFE_LOCKED = 2854523811U;
         static const AkUniqueID SCREWS_PICKUP = 1311816845U;
         static const AkUniqueID STOPOBJECT = 2199697068U;
-        static const AkUniqueID TEST_ROOMTUNE = 4161389291U;
-        static const AkUniqueID TEST_SFX = 3712553433U;
         static const AkUniqueID THUNDER = 186852181U;
         static const AkUniqueID TOILETCABINET_CLOSE = 3727742371U;
         static const AkUniqueID TOILETCABINET_OPEN = 75187861U;

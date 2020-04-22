@@ -9,7 +9,7 @@ public class InteractItemBase : MonoBehaviour
     protected virtual bool B_IgnoreSearchMode => false;
     float f_interactCheck=-1;
 
-    private void Update()
+    protected virtual void Update()
     {
         if (!B_CanInteract)
             f_interactCheck -= Time.deltaTime;
