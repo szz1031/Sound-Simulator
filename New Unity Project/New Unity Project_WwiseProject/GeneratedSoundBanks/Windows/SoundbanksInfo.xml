@@ -191,6 +191,8 @@
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+				<AuxBus Id="1745374996" Name="EnvironmentReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\EnvironmentReverb"/>
+				<AuxBus Id="3370640258" Name="OutsideReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\OutsideReverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="2800366463" Language="SFX">
@@ -986,7 +988,7 @@
 				</Event>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="10.000000" DurationType="Infinite">
+				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="8.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="847065920" Language="SFX">
 							<ShortName>Rain on Window Sill-Mono.wav</ShortName>

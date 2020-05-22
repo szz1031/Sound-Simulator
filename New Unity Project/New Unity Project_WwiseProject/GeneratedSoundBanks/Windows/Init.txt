@@ -12,9 +12,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1409684747	LargeRoomReverb			\Default Work Unit\Master Audio Bus\LargeRoomReverb	
+	1745374996	EnvironmentReverb			\Default Work Unit\Master Audio Bus\EnvironmentReverb	
+	3370640258	OutsideReverb			\Default Work Unit\Master Audio Bus\OutsideReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	3701691487	Hall_Large_Bright	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-4</Value>
@@ -1448,7 +1449,7 @@
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -5941,7 +5942,7 @@
 													<PropertyList>
 														<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
 														<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
-														<Property Name="RadiusMax" Type="Real64" Value="10"/>
+														<Property Name="RadiusMax" Type="Real64" Value="8"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -5953,18 +5954,18 @@
 																	<PointList>
 																		<Point>
 																			<XPos>0</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>5</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>4.00836</XPos>
+																			<XPos>3.206688</XPos>
 																			<YPos>-8.59049</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log2</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>10</XPos>
+																			<XPos>8</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -5991,7 +5992,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>10</XPos>
+																			<XPos>8</XPos>
 																			<YPos>50</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -6012,7 +6013,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>10</XPos>
+																			<XPos>8</XPos>
 																			<YPos>50</YPos>
 																			<Flags>37</Flags>
 																		</Point>

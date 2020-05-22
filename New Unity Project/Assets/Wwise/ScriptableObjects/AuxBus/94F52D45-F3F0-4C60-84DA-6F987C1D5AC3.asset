@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f566e7083edfa0f43975e610034e5287, type: 3}
+  m_Name: 94F52D45-F3F0-4C60-84DA-6F987C1D5AC3
+  m_EditorClassIdentifier: 
+  objectName: EnvironmentReverb
+  id: 1745374996
+  guid: 94F52D45-F3F0-4C60-84DA-6F987C1D5AC3

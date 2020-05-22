@@ -146,7 +146,9 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID ENVIRONMENTREVERB = 1745374996U;
         static const AkUniqueID LARGEROOMREVERB = 1409684747U;
+        static const AkUniqueID OUTSIDEREVERB = 3370640258U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
