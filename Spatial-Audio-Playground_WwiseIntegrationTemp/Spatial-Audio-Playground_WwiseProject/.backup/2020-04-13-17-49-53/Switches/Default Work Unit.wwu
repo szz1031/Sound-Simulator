@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{AD5EE2FC-89A1-48F1-90B8-B07B8874A80D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="GroundMaterial" ID="{91475BC4-CBDA-4ACC-913A-ADB91BE014EC}">
+					<ChildrenList>
+						<Switch Name="Carpet" ID="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}"/>
+						<Switch Name="Stair" ID="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}"/>
+						<Switch Name="Concrete" ID="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}"/>
+						<Switch Name="Floor" ID="{B49FA122-7BBC-4BC7-958B-8492DBD8CE05}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

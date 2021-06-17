@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../../Spatial-Audio-Playground/Spatial-Audio-Playground_WwiseProject/Spatial-Audio-Playground.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>F:\Wwise\Wwise 2019.2.11.7512</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
