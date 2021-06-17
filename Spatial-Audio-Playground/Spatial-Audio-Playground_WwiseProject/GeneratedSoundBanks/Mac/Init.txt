@@ -1,0 +1,22 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1048369770	WorldState			\Default Work Unit\WorldState	
+
+State	ID	Name	State Group			Notes
+	84696445	B	WorldState			
+	84696446	A	WorldState			
+	748895195	None	WorldState			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	2857125394	Auro-3D			\Default Work Unit\Master Audio Bus\Auro-3D	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1409684747	LargeRoomReverb			\Default Work Unit\Master Audio Bus\LargeRoomReverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
