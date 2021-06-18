@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 981a85e6b975cc743a50a9c9dc422efe
+timeCreated: 1443006707
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Ceiling01
+    100004: Ceiling02
+    100006: Ceiling03
+    100008: Ceiling04
+    100010: Ceiling05
+    100012: Ceiling06
+    100014: Ceiling07
+    100016: Ceiling08
+    100018: Ceiling09
+    100020: Ceiling10
+    100022: Ceiling11
+    100024: Ceiling12
+    100026: Ceiling13
+    100028: Ceiling14
+    400000: //RootNode
+    400002: Ceiling01
+    400004: Ceiling02
+    400006: Ceiling03
+    400008: Ceiling04
+    400010: Ceiling05
+    400012: Ceiling06
+    400014: Ceiling07
+    400016: Ceiling08
+    400018: Ceiling09
+    400020: Ceiling10
+    400022: Ceiling11
+    400024: Ceiling12
+    400026: Ceiling13
+    400028: Ceiling14
+    2300000: //RootNode
+    2300002: Ceiling01
+    2300004: Ceiling02
+    2300006: Ceiling03
+    2300008: Ceiling04
+    2300010: Ceiling05
+    2300012: Ceiling06
+    2300014: Ceiling07
+    2300016: Ceiling08
+    2300018: Ceiling09
+    2300020: Ceiling10
+    2300022: Ceiling11
+    2300024: Ceiling12
+    2300026: Ceiling13
+    2300028: Ceiling14
+    3300000: //RootNode
+    3300002: Ceiling01
+    3300004: Ceiling02
+    3300006: Ceiling03
+    3300008: Ceiling04
+    3300010: Ceiling05
+    3300012: Ceiling06
+    3300014: Ceiling07
+    3300016: Ceiling08
+    3300018: Ceiling09
+    3300020: Ceiling10
+    3300022: Ceiling11
+    3300024: Ceiling12
+    3300026: Ceiling13
+    3300028: Ceiling14
+    4300000: Ceiling
+    4300002: Ceiling01
+    4300004: Ceiling02
+    4300006: Ceiling03
+    4300008: Ceiling04
+    4300010: Ceiling05
+    4300012: Ceiling06
+    4300014: Ceiling07
+    4300016: Ceiling08
+    4300018: Ceiling09
+    4300020: Ceiling10
+    4300022: Ceiling11
+    4300024: Ceiling12
+    4300026: Ceiling13
+    4300028: Ceiling14
+    6400000: //RootNode
+    6400002: Ceiling01
+    6400004: Ceiling02
+    6400006: Ceiling03
+    6400008: Ceiling04
+    6400010: Ceiling05
+    6400012: Ceiling06
+    6400014: Ceiling07
+    6400016: Ceiling08
+    6400018: Ceiling09
+    6400020: Ceiling10
+    6400022: Ceiling11
+    6400024: Ceiling12
+    6400026: Ceiling13
+    6400028: Ceiling14
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
