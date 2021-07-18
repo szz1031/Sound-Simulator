@@ -67,4 +67,11 @@ public class InteractDoor : InteractItemBase, ISingleCoroutine
             return state;
         return null;
     }
+
+    public override void Update()
+    {
+        base.Update();
+        if (Input.GetKeyDown(KeyCode.F1))
+            I_KeyIndex = 0;
+    }
 }

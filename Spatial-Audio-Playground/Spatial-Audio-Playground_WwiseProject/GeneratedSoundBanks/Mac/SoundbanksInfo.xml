@@ -1,17 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\Github\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Github\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Github\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Github\Sound-Simulator\New Unity Project\New Unity Project_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX">
+		<SoundBank Id="322030223" Language="Simplified Chinese" Hash="1916224656">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
+			<ShortName>Bank_VO</ShortName>
+			<Path>Simplified Chinese\Bank_VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+					<IncludedMemoryFiles>
+						<File Id="867338695" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_1.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+					<IncludedMemoryFiles>
+						<File Id="854516349" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_2.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+					<IncludedMemoryFiles>
+						<File Id="776440994" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_3.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+					<IncludedMemoryFiles>
+						<File Id="990318294" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_4.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+					<IncludedMemoryFiles>
+						<File Id="1062165984" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_5.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+					<IncludedMemoryFiles>
+						<File Id="147397618" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_6.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+					<IncludedMemoryFiles>
+						<File Id="823992559" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>Laptop_Plot2_7.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+					<IncludedMemoryFiles>
+						<File Id="931284556" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_1.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+					<IncludedMemoryFiles>
+						<File Id="535477832" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_2.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+					<IncludedMemoryFiles>
+						<File Id="84328202" Language="Simplified Chinese" UsingReferenceLanguageAsStandIn="true">
+							<ShortName>TV2_Plot_3.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
+				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="322030223" Language="English(US)" Hash="3759375679">
+			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
+			<ShortName>Bank_VO</ShortName>
+			<Path>English(US)\Bank_VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
+					<IncludedMemoryFiles>
+						<File Id="867338695" Language="English(US)">
+							<ShortName>Laptop_Plot2_1.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
+					<IncludedMemoryFiles>
+						<File Id="854516349" Language="English(US)">
+							<ShortName>Laptop_Plot2_2.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
+					<IncludedMemoryFiles>
+						<File Id="776440994" Language="English(US)">
+							<ShortName>Laptop_Plot2_3.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
+					<IncludedMemoryFiles>
+						<File Id="990318294" Language="English(US)">
+							<ShortName>Laptop_Plot2_4.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
+					<IncludedMemoryFiles>
+						<File Id="1062165984" Language="English(US)">
+							<ShortName>Laptop_Plot2_5.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
+					<IncludedMemoryFiles>
+						<File Id="147397618" Language="English(US)">
+							<ShortName>Laptop_Plot2_6.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\VO\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
+					<IncludedMemoryFiles>
+						<File Id="823992559" Language="English(US)">
+							<ShortName>Laptop_Plot2_7.wav</ShortName>
+							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
+					<IncludedMemoryFiles>
+						<File Id="931284556" Language="English(US)">
+							<ShortName>TV2_Plot_1.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
+					<IncludedMemoryFiles>
+						<File Id="535477832" Language="English(US)">
+							<ShortName>TV2_Plot_2.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\VO\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
+					<IncludedMemoryFiles>
+						<File Id="84328202" Language="English(US)">
+							<ShortName>TV2_Plot_3.wav</ShortName>
+							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
+				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3734273768">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,15 +261,15 @@
 				<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2800366463" Language="SFX">
+		<SoundBank Id="2800366463" Language="SFX" Hash="735334218">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="English(US)">
+		<SoundBank Id="4017023971" Language="SFX" Hash="2983779757">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
-			<Path>English(US)\Bank_SFX.bnk</Path>
+			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4254255911" Name="Bear_Music" ObjectPath="\Events\Default Work Unit\Object\Bear_Music" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="9.803082" DurationMax="9.803082">
 					<IncludedMemoryFiles>
@@ -36,6 +278,9 @@
 							<Path>SFX\ANW2097_34_London-Bridge-Is-Falling-9-(30)_F2443EFB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1948672150" Name="Cabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\Cabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
 					<IncludedMemoryFiles>
@@ -346,6 +591,9 @@
 							<Path>SFX\EFX INT Wood Fire Crackle 02_D2854335.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="554578976" Name="GlassCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\GlassCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.481491" DurationMax="0.540757">
 					<IncludedMemoryFiles>
@@ -382,6 +630,9 @@
 							<Path>SFX\REAPER Media\Charge_B9A9F170.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2232826297" Name="Gramophone_Mainghosty" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -390,6 +641,9 @@
 							<Path>SFX\REAPER Media\Mainghosty_29A541FA.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2673340027" Name="Gramophone_MainNoise" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_MainNoise" MaxAttenuation="10.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -398,6 +652,9 @@
 							<Path>SFX\REAPER Media\MainNoise_ABC59516.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3525613408" Name="Gramophone_NeedleTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.129533" DurationMax="0.129533">
 					<IncludedMemoryFiles>
@@ -406,6 +663,9 @@
 							<Path>SFX\REAPER Media\NeedleTap_7C001F0A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="435953925" Name="Gramophone_OnOffTap" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.663492" DurationMax="0.663492">
 					<IncludedMemoryFiles>
@@ -414,6 +674,9 @@
 							<Path>SFX\REAPER Media\OnOffTap_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="850197958" Name="Gramophone_Squeak_1" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="1.107369" DurationMax="1.107369">
 					<IncludedMemoryFiles>
@@ -422,6 +685,9 @@
 							<Path>SFX\REAPER Media\Squeak_1_DA7F328F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="850197957" Name="Gramophone_Squeak_2" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.713889" DurationMax="0.713889">
 					<IncludedMemoryFiles>
@@ -430,6 +696,9 @@
 							<Path>SFX\REAPER Media\Squeak_2_42AB6E05.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="850197956" Name="Gramophone_Squeak_3" ObjectPath="\Events\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.803243" DurationMax="0.803243">
 					<IncludedMemoryFiles>
@@ -438,6 +707,9 @@
 							<Path>SFX\REAPER Media\Squeak_3_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2080917547" Name="Guitar_Music" ObjectPath="\Events\Default Work Unit\Object\Guitar_Music" MaxAttenuation="17.000000" DurationType="OneShot" DurationMin="144.291672" DurationMax="144.291672">
 					<IncludedMemoryFiles>
@@ -446,6 +718,9 @@
 							<Path>SFX\ANW3088_06_Romantica_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="761761105" Name="Key_Pickup" ObjectPath="\Events\Default Work Unit\Object\Key\Key_Pickup" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.360857" DurationMax="0.360857">
 					<IncludedMemoryFiles>
@@ -471,62 +746,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2890816677" Name="Laptop_Plot_01" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_01" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.730667" DurationMax="2.730667">
-					<IncludedMemoryFiles>
-						<File Id="867338695" Language="English(US)">
-							<ShortName>Laptop_Plot2_1.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_1_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816678" Name="Laptop_Plot_02" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_02" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="10.005333" DurationMax="10.005333">
-					<IncludedMemoryFiles>
-						<File Id="854516349" Language="English(US)">
-							<ShortName>Laptop_Plot2_2.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_2_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816679" Name="Laptop_Plot_03" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_03" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.453333" DurationMax="2.453333">
-					<IncludedMemoryFiles>
-						<File Id="776440994" Language="English(US)">
-							<ShortName>Laptop_Plot2_3.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_3_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816672" Name="Laptop_Plot_04" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_04" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.696000" DurationMax="5.696000">
-					<IncludedMemoryFiles>
-						<File Id="990318294" Language="English(US)">
-							<ShortName>Laptop_Plot2_4.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_4_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816673" Name="Laptop_Plot_05" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_05" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.944000" DurationMax="2.944000">
-					<IncludedMemoryFiles>
-						<File Id="1062165984" Language="English(US)">
-							<ShortName>Laptop_Plot2_5.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_5_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816674" Name="Laptop_Plot_06" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_06" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="5.560000" DurationMax="5.560000">
-					<IncludedMemoryFiles>
-						<File Id="147397618" Language="English(US)">
-							<ShortName>Laptop_Plot2_6.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_6_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2890816675" Name="Laptop_Plot_07" ObjectPath="\Events\Default Work Unit\Object\Computer\Laptop_Plot_07" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="4.469333" DurationMax="4.469333">
-					<IncludedMemoryFiles>
-						<File Id="823992559" Language="English(US)">
-							<ShortName>Laptop_Plot2_7.wav</ShortName>
-							<Path>Voices\English(US)\Laptop_Plot2_7_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="3130091867" Name="Laundary" ObjectPath="\Events\Default Work Unit\Environment\Laundary" MaxAttenuation="8.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="381684206" Language="SFX">
@@ -538,6 +757,9 @@
 							<Path>SFX\Gas laundry dryer running rhythmically and tumbling_E00C9CFF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="280670697" Name="LightSwitch_Off" ObjectPath="\Events\Default Work Unit\Object\LightSwitch_Off" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.139262" DurationMax="0.269499">
 					<IncludedMemoryFiles>
@@ -658,43 +880,43 @@
 							<Path>SFX\WoodfloorbarefootstepssqueakINT01-MS_26C52F43.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{A9542757-CC5A-4F40-9278-4C4327DFF4FB}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{6BE70BAE-3597-4B39-9C3B-2A40CCC18D65}">
 							<Media>
-								<File Id="653581658"/>
+								<File Id="126968948"/>
 								<File Id="307543888"/>
-								<File Id="945656954"/>
+								<File Id="653581658"/>
 								<File Id="653792465"/>
 								<File Id="887034712"/>
-								<File Id="126968948"/>
+								<File Id="945656954"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{D893E8AE-0CCA-484F-86AC-FED17BADC6F5}">
 							<Media>
-								<File Id="1038279815"/>
-								<File Id="261043379"/>
+								<File Id="50177702"/>
 								<File Id="255800652"/>
+								<File Id="261043379"/>
 								<File Id="646110042"/>
-								<File Id="50177702"/>
-								<File Id="50177702"/>
+								<File Id="1038279815"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{A9542757-CC5A-4F40-9278-4C4327DFF4FB}">
 							<Media>
-								<File Id="704428846"/>
-								<File Id="405076756"/>
-								<File Id="888892161"/>
-								<File Id="424000544"/>
 								<File Id="50253643"/>
+								<File Id="405076756"/>
+								<File Id="424000544"/>
+								<File Id="704428846"/>
+								<File Id="888892161"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{B49FA122-7BBC-4BC7-958B-8492DBD8CE05}">
 							<Media>
-								<File Id="813244428"/>
-								<File Id="740920542"/>
 								<File Id="203117369"/>
 								<File Id="519856163"/>
+								<File Id="740920542"/>
 								<File Id="744698158"/>
+								<File Id="813244428"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -766,6 +988,25 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2199697068" Name="StopObject" ObjectPath="\Events\Default Work Unit\StopObject" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4161389291" Name="Test_Roomtune" ObjectPath="\Events\Default Work Unit\Test_Roomtune" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="413701673" Language="SFX">
+							<ShortName>REAPER Media\MainNoise.wav</ShortName>
+							<Path>SFX\REAPER Media\MainNoise_ABC59516.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3712553433" Name="Test_SFX" ObjectPath="\Events\Default Work Unit\Test_SFX" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="538976337" Language="SFX">
+							<ShortName>RE201 027A SIGNAL GENERATOR 1K _MONO.wav</ShortName>
+							<Path>SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="186852181" Name="Thunder" ObjectPath="\Events\Default Work Unit\Environment\Thunder" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="12.450315">
 					<IncludedMemoryFiles>
 						<File Id="206318304" Language="SFX">
@@ -789,6 +1030,9 @@
 							<Path>SFX\thunder 02_834824DC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3727742371" Name="ToiletCabinet_Close" ObjectPath="\Events\Default Work Unit\Object\Cabinet\ToiletCabinet_Close" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.616693" DurationMax="1.663458">
 					<IncludedMemoryFiles>
@@ -825,6 +1069,9 @@
 							<Path>SFX\ANW3174_04_Arturos-Waltz_CC241EC7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="326737284" Name="TV_1_Music_2" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_2" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -833,6 +1080,9 @@
 							<Path>SFX\ANW1546_04_Karma_CC241EC7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="326737285" Name="TV_1_Music_3" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_3" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -841,6 +1091,9 @@
 							<Path>SFX\ANW1838_10_Violins-Virus_CC241EC7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="326737282" Name="TV_1_Music_4" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_4" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -849,6 +1102,9 @@
 							<Path>SFX\ANW3088_05_Fairground_CC241EC7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="326737283" Name="TV_1_Music_5" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_5" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -857,6 +1113,9 @@
 							<Path>SFX\ANW3185_01_Cello-Prelude_CC241EC7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="326737280" Name="TV_1_Music_6" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Music_6" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -865,33 +1124,12 @@
 							<Path>SFX\ANW3194_33_Coral-Oceans-3-(60)_B25BA132.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2532082576" Name="TV_1_SetVolume" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_SetVolume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4238930762" Name="TV_1_Switch" ObjectPath="\Events\Default Work Unit\Object\TV_1\TV_1_Switch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2807456378" Name="TV_2_Plot_1" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_1" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="32.998432" DurationMax="32.998432">
-					<IncludedMemoryFiles>
-						<File Id="931284556" Language="English(US)">
-							<ShortName>TV2_Plot_1.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_1_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2807456377" Name="TV_2_Plot_2" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_2" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.543218" DurationMax="2.543218">
-					<IncludedMemoryFiles>
-						<File Id="535477832" Language="English(US)">
-							<ShortName>TV2_Plot_2.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_2_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2807456382" Name="TV_2_Plot_5" ObjectPath="\Events\Default Work Unit\Object\TV_2\TV_2_Plot_5" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="9.644404" DurationMax="9.644404">
-					<IncludedMemoryFiles>
-						<File Id="84328202" Language="English(US)">
-							<ShortName>TV2_Plot_3.wav</ShortName>
-							<Path>Voices\English(US)\TV2_Plot_3_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="290976602" Name="Window_Rain" ObjectPath="\Events\Default Work Unit\Environment\Window_Rain" MaxAttenuation="9.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="847065920" Language="SFX">
@@ -899,6 +1137,9 @@
 							<Path>SFX\Rain on Window Sill-Mono_31EA8D7B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>

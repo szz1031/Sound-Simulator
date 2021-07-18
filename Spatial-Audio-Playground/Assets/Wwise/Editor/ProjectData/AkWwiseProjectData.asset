@@ -1607,6 +1607,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585777508140790003
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Spatial-Audio-Playground
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -26,7 +26,7 @@ public class SoundPath : MonoBehaviour {
         VirtualAudioSource.rotation = transform.rotation;
 	}
 	
-	/*   Custom popagation path
+	//   Custom popagation path
 	void Update () {
         IsPassFloor = gameObject.GetComponent<Occlusion>().PassFloor;
         InTheRoom = Room.gameObject.GetComponent<Room>().InRoom;
@@ -74,5 +74,5 @@ public class SoundPath : MonoBehaviour {
         }
     }
 
-    */
+    
 }
