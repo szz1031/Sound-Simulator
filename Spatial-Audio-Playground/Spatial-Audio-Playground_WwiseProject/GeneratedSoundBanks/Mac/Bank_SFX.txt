@@ -1,0 +1,204 @@
+Event	ID	Name			Wwise Object Path	Notes
+	64215390	Door_Wide_Axis_Open			\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Open	
+	75187861	ToiletCabinet_Open			\Default Work Unit\Object\Cabinet\ToiletCabinet_Open	
+	186852181	Thunder			\Default Work Unit\Environment\Thunder	
+	203066849	Safe_Axis_Open			\Default Work Unit\Object\safe\Safe_Axis_Open	
+	280670697	LightSwitch_Off			\Default Work Unit\Object\LightSwitch_Off	
+	290976602	Window_Rain			\Default Work Unit\Environment\Window_Rain	
+	326737280	TV_1_Music_6			\Default Work Unit\Object\TV_1\TV_1_Music_6	
+	326737282	TV_1_Music_4			\Default Work Unit\Object\TV_1\TV_1_Music_4	
+	326737283	TV_1_Music_5			\Default Work Unit\Object\TV_1\TV_1_Music_5	
+	326737284	TV_1_Music_2			\Default Work Unit\Object\TV_1\TV_1_Music_2	
+	326737285	TV_1_Music_3			\Default Work Unit\Object\TV_1\TV_1_Music_3	
+	326737287	TV_1_Music_1			\Default Work Unit\Object\TV_1\TV_1_Music_1	
+	435953925	Gramophone_OnOffTap			\Default Work Unit\Object\Gramophone\Gramophone_OnOffTap	
+	501750955	Door_Narrow_Handle_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Close	
+	541226684	Door_Closet_Handle_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Open	
+	554578976	GlassCabinet_Close			\Default Work Unit\Object\Cabinet\GlassCabinet_Close	
+	601288178	Safe_Handle_Close			\Default Work Unit\Object\safe\Safe_Handle_Close	
+	711857016	Door_Closet_Handle_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Handle_Close	
+	761761105	Key_Pickup			\Default Work Unit\Object\Key\Key_Pickup	
+	850197956	Gramophone_Squeak_3			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_3	
+	850197957	Gramophone_Squeak_2			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_2	
+	850197958	Gramophone_Squeak_1			\Default Work Unit\Object\Gramophone\Gramophone_Squeak_1	
+	850583253	Drawer_Open			\Default Work Unit\Object\Cabinet\Drawer_Open	
+	982290157	Door_Narrow_Handle_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Handle_Open	
+	996249450	Door_Wide_KeySound			\Default Work Unit\Object\Door_Wide\Door_Wide_KeySound	
+	1066855742	GlassCabinet_KeySound			\Default Work Unit\Object\Cabinet\GlassCabinet_KeySound	
+	1189764390	Safe_Handle_Open			\Default Work Unit\Object\safe\Safe_Handle_Open	
+	1301402079	Door_Closet_Axis_Open			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Open	
+	1311816845	Screws_Pickup			\Default Work Unit\Object\Screws_Pickup	
+	1404152342	Fireplace			\Default Work Unit\Environment\Fireplace	
+	1474002183	Safe_Close			\Default Work Unit\Object\safe\Safe_Close	
+	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
+	1948672150	Cabinet_Close			\Default Work Unit\Object\Cabinet\Cabinet_Close	
+	2043156035	Door_Wide_Handle_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close	
+	2054288328	Remote_Interact			\Default Work Unit\Object\Remote_Interact	
+	2080917547	Guitar_Music			\Default Work Unit\Object\Guitar_Music	
+	2116863413	Door_Wide_Handle_Open			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Open	
+	2141172849	Door_Closet_KeySound			\Default Work Unit\Object\Door_Closet\Door_Closet_KeySound	
+	2199697068	StopObject			\Default Work Unit\StopObject	
+	2232826297	Gramophone_Mainghosty			\Default Work Unit\Object\Gramophone\Gramophone_Mainghosty	
+	2253880733	LightSwitch_On			\Default Work Unit\Object\LightSwitch_On	
+	2314026839	Safe_KeySound			\Default Work Unit\Object\safe\Safe_KeySound	
+	2382010549	Key_Uncollected			\Default Work Unit\Object\Key\Key_Uncollected	
+	2407747538	Door_Narrow_Axis_Close			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Close	
+	2458915778	Cabinet_Open			\Default Work Unit\Object\Cabinet\Cabinet_Open	
+	2532082576	TV_1_SetVolume			\Default Work Unit\Object\TV_1\TV_1_SetVolume	
+	2673340027	Gramophone_MainNoise			\Default Work Unit\Object\Gramophone\Gramophone_MainNoise	
+	2853512794	Door_Wide_Axis_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Axis_Close	
+	2854523811	Safe_Locked			\Default Work Unit\Object\safe\Safe_Locked	
+	2879668892	Gramophone_Charge			\Default Work Unit\Object\Gramophone\Gramophone_Charge	
+	2916866438	Door_Narrow_Axis_Open			\Default Work Unit\Object\Door_Narrow\Door_Narrow_Axis_Open	
+	3041433330	Door_Narrow_KeySound			\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound	
+	3130091867	Laundary			\Default Work Unit\Environment\Laundary	
+	3173784171	Drawer_KeySound			\Default Work Unit\Object\Cabinet\Drawer_KeySound	
+	3333554874	Door_Locked			\Default Work Unit\Object\Door_Narrow\Door_Locked	
+	3463217684	Cabinet_KeySound			\Default Work Unit\Object\Cabinet\Cabinet_KeySound	
+	3498272821	Door_Closet_Axis_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close	
+	3525613408	Gramophone_NeedleTap			\Default Work Unit\Object\Gramophone\Gramophone_NeedleTap	
+	3555319575	Safe_Axis_Close			\Default Work Unit\Object\safe\Safe_Axis_Close	
+	3712553433	Test_SFX			\Default Work Unit\Test_SFX	
+	3721891028	GlassCabinet_Open			\Default Work Unit\Object\Cabinet\GlassCabinet_Open	
+	3727742371	ToiletCabinet_Close			\Default Work Unit\Object\Cabinet\ToiletCabinet_Close	
+	3753111523	Drawer_Close			\Default Work Unit\Object\Cabinet\Drawer_Close	
+	4140245326	Laptop_Interact			\Default Work Unit\Object\Computer\Laptop_Interact	
+	4161389291	Test_Roomtune			\Default Work Unit\Test_Roomtune	
+	4238930762	TV_1_Switch			\Default Work Unit\Object\TV_1\TV_1_Switch	
+	4254255911	Bear_Music			\Default Work Unit\Object\Bear_Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	GroundMaterial			
+	1088209313	Floor	GroundMaterial			
+	1164367372	Stair	GroundMaterial			
+	2412606308	Carpet	GroundMaterial			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1048369770	WorldState			\Default Work Unit\WorldState	
+
+State	ID	Name	State Group			Notes
+	84696445	B	WorldState			
+	84696446	A	WorldState			
+	748895195	None	WorldState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	165582252	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine		
+	293607552	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Bear		
+	343836973	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain		
+	373900420	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
+	431703738	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object		
+	433782185	A	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Mainghosty		
+	505675011	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder		
+	620045730	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position		
+	889955736	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire		
+	1022236422	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Guitar		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
+	1848266011	DecreaseVolume			\Default Work Unit\DecreaseVolume	
+
+Effect plug-ins	ID	Name	Type				Notes
+	486191333	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	2689776681	New_Wwise_Parametric_EQ_01	Wwise Parametric EQ			
+	2689776682	New_Wwise_Parametric_EQ_02	Wwise Parametric EQ			
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6940699	Door_Open_Handle_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_E9587BAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Open_Handle\Door_Open_Handle_01		3986
+	20227617	FRIDGE DOOR OPEN	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\FRIDGE DOOR OPEN_142C8C39.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\FRIDGE DOOR OPEN		4363
+	37444667	drawer close_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_20265F85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_02		4736
+	45498057	Squeak_2	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_2_42AB6E05.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Squeak_2		5206
+	46440598	Glass Cabinet Open	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_96521905.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\Glass Cabinet Open		10651
+	50177702	fstp_wood_empty	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_DCACF2D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_empty		2136
+	50253643	fstp_carpet_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_BCFCCFC6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_01		3876
+	78539637	drawer close_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_687AD302.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_01		5262
+	105157533	Mainghosty	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Mainghosty_29A541FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Mainghosty		526874
+	112940681	Sub	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT Fire Wind in Metal Stove 01_EDAA953D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\Sub		143631
+	126968948	fstp_concrete_06	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_E448CDF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5470
+	155837603	car clo	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\DoorWoodCabinetClose (1)_9E7261B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet Shut\car clo		4817
+	176976218	car lowcrak_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_A9B84F60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\close crack\car lowcrak_01		3505
+	203117369	fstp_wood_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_8A701285.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_03		4993
+	206318304	thunder low boom dist rain	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\thunder low boom dist rain_0CD0E34B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\thunder low boom dist rain		43943
+	219789314	On_1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_95CDE4B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_1		2727
+	229089504	Charge	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Charge_B9A9F170.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Charge		36364
+	233146622	Door_Close_Axis_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_D626AF47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Close_Axis\Door_Close_Axis_01		6322
+	238106575	Door_Close_Axis	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_E4A50047.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Close_Axis\Door_Close_Axis		6958
+	243168692	Door_Open_Axis	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_21DF2BFF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Open_Axis\Door_Open_Axis		6569
+	255800652	fstp_wood_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_94AA7454.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_03		3598
+	261043379	fstp_wood_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_41E0FD44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_02		1997
+	307543888	fstp_concrete_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_C3356CC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_02		3876
+	307565909	metal_door_hinge_squeak_1ft_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EXT_shipping_container_metal_door_hinge_squeak_1ft_02_84845559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\metal_door_hinge_squeak_1ft_02		3861
+	323133469	3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW1838_10_Violins-Virus_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\3		1831905
+	335077997	5	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW3185_01_Cello-Prelude_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\5		1831160
+	355509078	drawer slide_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_4781B95E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_04		3006
+	381684206	Washing machine draining subtly and humming	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Washing machine draining subtly and humming_3928149C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine\Washing machine draining subtly and humming		1721643
+	396493397	drawer slide_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_45C40E14.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_03		3245
+	405076756	fstp_carpet_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_CA5E6791.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_02		3199
+	413701673	MainNoise	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\MainNoise_ABC59516.wem		\Actor-Mixer Hierarchy\Default Work Unit\test\MainNoise		843316
+	424000544	fstp_carpet_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_0B7F76A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_04		3459
+	435878783	Closet _Close_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_E23CF124.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close_02		10080
+	441170689	car crack1_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_4191C213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\open crack\car crack1_02		3890
+	451088547	Key_Collect	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Key ring carabineer pick up_BLASTWAVEFX_02006_739A226C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Key_Collect		5040
+	458629548	NeedleTap	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\NeedleTap_7C001F0A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\NeedleTap		2159
+	473023217	Lightning cracks_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Lightning cracks_05_D5352E35.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\Lightning cracks_05		79391
+	483574875	open	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Metal-Large Chunk-Close_54C6179E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\open		3755
+	484742700	On_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_C87A83B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\On_01		2192
+	491382896	KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457_7568948C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\KAIB_FIRE_CU_Fire Crackle Extra Small Crackles_000457		534198
+	492614535	Lightning cracks dry_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Lightning cracks dry_03_AC48A35E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\Lightning cracks dry_03		47332
+	513100812	Squeak_3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Squeak_3		7380
+	519856163	fstp_wood_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_65360A36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_04		4819
+	534002572	Closet _Close_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_8D7C007E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close_01		8708
+	538976337	Key_Hint Sound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\test\Key_Hint Sound		370589
+	567029194	Closet _Close	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_7B3CA51E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close		8183
+	573201444	OnOffTap	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\OnOffTap_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\OnOffTap		4917
+	578918507	drawer close_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_C3D9F5F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_03		5202
+	595218375	Gas laundry dryer running rhythmically and tumbling	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Gas laundry dryer running rhythmically and tumbling_E00C9CFF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine\Gas laundry dryer running rhythmically and tumbling		1631561
+	613669782	Bear	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW2097_34_London-Bridge-Is-Falling-9-(30)_F2443EFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Bear		163154
+	623791931	close glass	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE Mud Room Cabinet O_C Action 03_C7366A32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\close glass		15025
+	624987087	Door_Open_Axis_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_9F177A4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Open_Axis\Door_Open_Axis_02		10129
+	643296694	4	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW3088_05_Fairground_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\4		2449912
+	646110042	fstp_wood_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_B6746BD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_05		3532
+	651713173	On_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_8DB61E0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_01		3282
+	653581658	fstp_concrete_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_6AB4E8D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_01		4458
+	653792465	fstp_concrete_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_3198964F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_04		4837
+	689672388	car crack1_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_8D3F1B94.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\open crack\car crack1_01		4701
+	704428846	fstp_carpet	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_F3848C59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet		3101
+	710131029	Door_Close_KeySound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_309F398A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Close_KeySound		6323
+	712503341	car crack1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_FBA3EB07.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\open crack\car crack1		4153
+	729219625	Door_Close_Axis_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_4676D4F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Close_Axis\Door_Close_Axis_02		9075
+	730283719	Squeak_1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_1_DA7F328F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Squeak_1		7577
+	734492731	drawer slide_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_309B87C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_02		2828
+	740920542	fstp_wood_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_38C65213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_02		3620
+	744698158	fstp_wood_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_C8940B7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_05		4834
+	756349642	Door_Open_Handle_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9986C7F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Open_Handle\Door_Open_Handle_02		3722
+	808117506	thunder 19	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\thunder 19_75B973B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\thunder 19		54782
+	813244428	fstp_wood_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_92239B5D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_01		4233
+	819079196	Door_Close_Handle	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_BC3DC769.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Close_Handle		3694
+	830186802	Door_Locked_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_3C1963FF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Locked_01		4174
+	846134701	UI_3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\calculations_n_text_spaced_33_C20CE6DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\UI_3		16675
+	847065920	Rain_smallwindow	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Rain on Window Sill-Mono_31EA8D7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Rain_smallwindow		1762955
+	854222693	On_2	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_2170E76B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\On_2		2691
+	873524984	2	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW1546_04_Karma_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\2		2830296
+	876868247	close glass 2	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\INT_closet_door_wood_open_close_04_138560BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\close glass 2		6667
+	883149415	Guitar	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW3088_06_Romantica_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Guitar		1817518
+	887034712	fstp_concrete_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_94CE4B8D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_05		4757
+	888892161	fstp_carpet_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_5ACA617B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_03		3437
+	911504740	6	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW3194_33_Coral-Oceans-3-(60)_B25BA132.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\6		786108
+	924713307	main	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT Wood Fire Crackle 02_D2854335.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\main		1289231
+	924911790	Screw_Pickup	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Ancient_Game_Metal_Game_Pick_Up_Snag_Grab_EBAAC015.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Screw_Pickup		5725
+	942554569	REFRIGERATOR DOOR CLOSE	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REFRIGERATOR DOOR CLOSE_48AD1867.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\REFRIGERATOR DOOR CLOSE		3720
+	945656954	fstp_concrete_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\fstepConcreteMono_15DBBE17.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_03		5377
+	967272807	On_3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_9D2D1B0F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle off\On_3		2536
+	997959073	Door_Open_Axis_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_09319053.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Open_Axis\Door_Open_Axis_01		11348
+	999271713	drawer slide_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_A3FE58E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_01		2921
+	1002441243	New Sound SFX	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Buttons_Switches_031_C32B553B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Light\Toggle on\New Sound SFX		1891
+	1019518702	thunder 02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\thunder 02_834824DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\thunder 02		58591
+	1026426294	locked	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Metal-Large Chunk-Close_ACAF5ADF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\locked		2240
+	1038279815	fstp_wood_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_26C52F43.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_01		2422
+	1041985487	Door_Open_Handle	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_67AB98B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Open_Handle\Door_Open_Handle		4289
+	1066902147	1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\ANW3174_04_Arturos-Waltz_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\1		2238067
+
