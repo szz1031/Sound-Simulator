@@ -14,19 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: 47884a31071ee5479523d9b4c0d5a007
     GuidInternal: 
-    m_lastTime: -8585777508140780085
+    m_lastTime: -8585750104201054816
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: c1ffe7deaa0e614bb759bac74ccf6fde
     GuidInternal: 
-    m_lastTime: -8585777508546093268
+    m_lastTime: -8585750104436852997
     List:
     - name: Auro-3D
       guid: fe6d54730806954ba9576f95ceffdb32
@@ -61,11 +65,13 @@ MonoBehaviour:
       Path: Default Work Unit\Master Audio Bus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8585777508140819766
+    m_lastTime: -8585750104201408779
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -96,11 +102,13 @@ MonoBehaviour:
       Path: Default Work Unit\Bank_VO
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8585777508591638721
+    m_lastTime: -8585750104441969880
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -126,9 +134,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Cabinet
         ObjectType: 4
-      - ElementName: Cabinet
-        ObjectType: 3
-      Path: Default Work Unit\Object\Cabinet\Cabinet
+      Path: Default Work Unit\Object\Cabinet
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -190,9 +196,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Computer
         ObjectType: 4
-      - ElementName: Computer
-        ObjectType: 3
-      Path: Default Work Unit\Object\Computer\Computer
+      Path: Default Work Unit\Object\Computer
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -206,9 +210,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Door_Closet
         ObjectType: 4
-      - ElementName: Door_Closet
-        ObjectType: 3
-      Path: Default Work Unit\Object\Door_Closet\Door_Closet
+      Path: Default Work Unit\Object\Door_Closet
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -318,9 +320,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Door_Narrow
         ObjectType: 4
-      - ElementName: Door_Narrow
-        ObjectType: 3
-      Path: Default Work Unit\Object\Door_Narrow\Door_Narrow
+      Path: Default Work Unit\Object\Door_Narrow
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -414,9 +414,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Door_Wide
         ObjectType: 4
-      - ElementName: Door_Wide
-        ObjectType: 3
-      Path: Default Work Unit\Object\Door_Wide\Door_Wide
+      Path: Default Work Unit\Object\Door_Wide
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -556,9 +554,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Environment
         ObjectType: 4
-      - ElementName: Environment
-        ObjectType: 3
-      Path: Default Work Unit\Environment\Environment
+      Path: Default Work Unit\Environment
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -634,9 +630,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Gramophone
         ObjectType: 4
-      - ElementName: Gramophone
-        ObjectType: 3
-      Path: Default Work Unit\Object\Gramophone\Gramophone
+      Path: Default Work Unit\Object\Gramophone
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -792,9 +786,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Key
         ObjectType: 4
-      - ElementName: Key
-        ObjectType: 3
-      Path: Default Work Unit\Object\Key\Key
+      Path: Default Work Unit\Object\Key
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -994,9 +986,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Object
         ObjectType: 4
-      - ElementName: Object
-        ObjectType: 3
-      Path: Default Work Unit\Object\Object
+      Path: Default Work Unit\Object
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1008,9 +998,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Player
         ObjectType: 4
-      - ElementName: Player
-        ObjectType: 3
-      Path: Default Work Unit\Player\Player
+      Path: Default Work Unit\Player
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1052,9 +1040,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: safe
         ObjectType: 4
-      - ElementName: safe
-        ObjectType: 3
-      Path: Default Work Unit\Object\safe\safe
+      Path: Default Work Unit\Object\safe
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1276,9 +1262,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: TV_1
         ObjectType: 4
-      - ElementName: TV_1
-        ObjectType: 3
-      Path: Default Work Unit\Object\TV_1\TV_1
+      Path: Default Work Unit\Object\TV_1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1460,9 +1444,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: VO
         ObjectType: 4
-      - ElementName: VO
-        ObjectType: 3
-      Path: Default Work Unit\VO\VO
+      Path: Default Work Unit\VO
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1482,11 +1464,13 @@ MonoBehaviour:
       minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: 03200b5d46398d45816fee77a83878c4
     GuidInternal: 
-    m_lastTime: -8585777508591628811
+    m_lastTime: -8585750104441959968
     List:
     - name: DecreaseVolume
       guid: 5f25f59b02f60a41806a21ba9448d092
@@ -1517,11 +1501,13 @@ MonoBehaviour:
       Path: Default Work Unit\Distance_max20
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: c429fcf79327e14dabaf29b6578fca2e
     GuidInternal: 
-    m_lastTime: -8585777508140804887
+    m_lastTime: -8585750104201094498
     List:
     - name: WorldState
       guid: 6295a6714a52744abaf200702a8bab1c
@@ -1556,11 +1542,13 @@ MonoBehaviour:
       valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: fce25eada189f14890b8b07b8874a80d
     GuidInternal: 
-    m_lastTime: -8585777508140799927
+    m_lastTime: -8585750104201084587
     List:
     - name: GroundMaterial
       guid: c45b4791dacbcc4a913aadb91be014ec
@@ -1601,11 +1589,13 @@ MonoBehaviour:
       valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
-    PathAndIcons: []
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
     ParentPath: Default Work Unit
     guid: c13710bade14d643b7344a7706171b58
     GuidInternal: 
-    m_lastTime: -8585777508140790003
+    m_lastTime: -8585750104201069692
     List: []
   ExpandedItems:
   - /Spatial-Audio-Playground
