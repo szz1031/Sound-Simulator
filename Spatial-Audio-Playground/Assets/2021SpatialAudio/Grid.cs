@@ -8,6 +8,7 @@ public class Grid : MonoBehaviour
     public LayerMask unwalkableMask;
     public Vector3 gridWorldSize;
     public float nodeRadius;
+    public List<Node> path;
     Node[,,] grid;
 
     private Vector3 offsetPosition;
@@ -35,12 +36,32 @@ public class Grid : MonoBehaviour
             {
                 for (int z = 0; z < gridSizeZ; z++)
                 {
-                    Vector3 worldPoint = offsetPosition + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius) + Vector3.forward * (z * nodeDiameter + nodeRadius);
-                    bool walkable = !(Physics.CheckSphere(worldPoint, nodeRadius/2,unwalkableMask));
-                    grid[x, y, z] = new Node(walkable, worldPoint);
+                    Vector3 worldPosition = offsetPosition + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius) + Vector3.forward * (z * nodeDiameter + nodeRadius);
+                    bool walkable = !(Physics.CheckSphere(worldPosition, nodeRadius/2,unwalkableMask));
+                    grid[x, y, z] = new Node(walkable, worldPosition,x,y,z);
                 }
             }
         }
+    }
+
+    public List<Node> GetNodeNeighbours(Node node){
+        List<Node> neighbours = new List<Node>();
+        for (int x = -1; x<=1;x++){
+            for (int y = -1; y<=1;y++){
+                for (int z = -1; z<=1;z++){
+                    if (x==0 && y==0 &&z==0){
+                        continue;
+                    }
+
+                    if (node.gridX+x>=0 && node.gridX+x < gridSizeX && node.gridY+y>=0 && node.gridY+y< gridSizeY && node.gridZ+z>=0 && node.gridZ+z<gridSizeZ){
+                        neighbours.Add(grid[node.gridX+x,node.gridY+y,node.gridZ+z]);
+                    }
+                    
+                }
+            }
+        }
+        return neighbours;
+            
     }
 
     public Node NodeFromWorldPosition(Vector3 worldPosition){
@@ -72,8 +93,8 @@ public class Grid : MonoBehaviour
         if (grid != null)
         {
             Node playerNode = NodeFromWorldPosition(player.position);
-            Debug.Log("Player =" + player.position.x+","+player.position.y+","+player.position.z +"   Point = "+playerNode.worldPosition.x+","+playerNode.worldPosition.y+","+playerNode.worldPosition.z);
-            Debug.Log("Distance="+ Vector3.Distance(player.position,playerNode.worldPosition));
+            //Debug.Log("Player =" + player.position.x+","+player.position.y+","+player.position.z +"   Point = "+playerNode.worldPosition.x+","+playerNode.worldPosition.y+","+playerNode.worldPosition.z);
+            //Debug.Log("Distance="+ Vector3.Distance(player.position,playerNode.worldPosition));
             foreach (Node n in grid)
             {
                 Gizmos.color = (n.walkable) ? Color.white : Color.red;
@@ -81,6 +102,12 @@ public class Grid : MonoBehaviour
                 {
                     Gizmos.color= Color.cyan;
                 }
+                if (path!=null){
+                    if (path.Contains(n))
+                        Gizmos.color = Color.blue;
+                    Debug.Log(path.Count);
+                }
+
                 Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter /5));
             }
         }
