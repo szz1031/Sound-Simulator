@@ -65380,7 +65380,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   gridWorldSize: {x: 20, y: 8, z: 20}
-  nodeRadius: 0.3
+  nodeRadius: 0.5
+  onlyDrawPath: 1
 --- !u!114 &1928802815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65395,6 +65396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeker: {fileID: 459752439}
   target: {fileID: 952910590}
+  updateTime: 1
 --- !u!1 &1929356205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 162430, guid: 583b73d1c6bc59e4d892f4d029c92f13,

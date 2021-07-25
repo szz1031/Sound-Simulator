@@ -70,7 +70,7 @@ public class FPSCameraController : CameraController
     }
     public void OnSprintAnimation(float animationRoll)
     {
-        f_sprintRoll = animationRoll;
+        f_sprintRoll = 0;
     }
     public void DoDamageAnimation(Vector3 v3_PitchYawRoll)
     {

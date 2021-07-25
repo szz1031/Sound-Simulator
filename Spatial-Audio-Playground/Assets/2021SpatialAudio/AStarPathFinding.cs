@@ -1,21 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class AStarPathFinding : MonoBehaviour
 {
     public Transform seeker, target;
-    Grid grid;
+    public float updateTime;
+    float timer;
+    MyGrid grid;
 
     void Awake(){
-        grid = GetComponent<Grid>();
+        grid = GetComponent<MyGrid>();
     }
 
     void Update()
     {
+        timer=timer+ Time.deltaTime;
+        if (timer >= updateTime){
+            FindPath(seeker.position,target.position);
+            timer=0;
+        }
+
         if (Input.GetKeyDown(KeyCode.P)){
             FindPath(seeker.position,target.position);
         }
+        
     }
 
     private float getNodesDistance(Node NodeA, Node NodeB){
@@ -31,34 +41,35 @@ public class AStarPathFinding : MonoBehaviour
             current = current.parent;
         }
         path.Reverse();
+        //Debug.Log("Path Length = " +path.Count);
         grid.path = path;
     }
 
     void FindPath(Vector3 startPos, Vector3 targetPos)
     {
+        Stopwatch sw = new Stopwatch();
+        sw.Start();
         Node startNode = grid.NodeFromWorldPosition(startPos);
         Node targetNode = grid.NodeFromWorldPosition(targetPos);
+        bool isFound=false;
 
-        List<Node> openList = new List<Node>();
+        MyHeap<Node> openList = new MyHeap<Node>(grid.MaxSize);
         HashSet<Node> closedList = new HashSet<Node>();
         openList.Add(startNode);
  
         while (openList.Count>0) 
         {
-            Node currentNode = openList[0];
-            for (int i=1; i< openList.Count;i++)
-            {
-                if (openList[i].fCost<currentNode.fCost || openList[i].fCost==currentNode.fCost && openList[i].hCost<currentNode.hCost)
-                {
-                    currentNode = openList[i];
-                }
-            }
-            openList.Remove(currentNode);
+            Node currentNode = openList.RemoveFirst();    //open队列里找可能离终点最近的点
+            
+          
             closedList.Add(currentNode);
 
-            if (currentNode== targetNode)
+            if (currentNode == targetNode)
             {
+                sw.Stop();
+                print("Path found in :"+sw.ElapsedMilliseconds +"ms");
                 OutputPath(startNode,targetNode);
+                //Debug.Log("Finished Path Finding");
                 return;
             }
 
@@ -82,6 +93,10 @@ public class AStarPathFinding : MonoBehaviour
 
             }
 
+        }
+
+        if (!isFound){
+            //Debug.Log("Path Not Found");
         }
 
     }
