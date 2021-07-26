@@ -1,38 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Diagnostics;
+using System;
 
 public class AStarPathFinding : MonoBehaviour
 {
-    public Transform seeker, target;
-    public float updateTime;
+    AStarPathRequestManager requestManager;
+    public float UpdateTime;
     float timer;
     MyGrid grid;
 
     void Awake(){
+        requestManager = GetComponent<AStarPathRequestManager>();
         grid = GetComponent<MyGrid>();
     }
 
     void Update()
     {
         timer=timer+ Time.deltaTime;
-        if (timer >= updateTime){
-            FindPath(seeker.position,target.position);
+        if (timer >= UpdateTime){
+            
             timer=0;
         }
 
         if (Input.GetKeyDown(KeyCode.P)){
-            FindPath(seeker.position,target.position);
+            
+            
         }
-        
+    }
+
+    public void StartFindPath(Vector3 startPos, Vector3 targetPos){
+        StartCoroutine(FindPath(startPos,targetPos));
+        Debug.Log("111--StartFindPath");
+
     }
 
     private float getNodesDistance(Node NodeA, Node NodeB){
         return Vector3.Distance(NodeA.worldPosition,NodeB.worldPosition);
     }
 
-    private void OutputPath(Node start, Node end){
+    Vector3[] OutputPath(Node start, Node end){
         List<Node> path = new List<Node>();
         Node current = end;
 
@@ -40,64 +47,90 @@ public class AStarPathFinding : MonoBehaviour
             path.Add(current);
             current = current.parent;
         }
-        path.Reverse();
-        //Debug.Log("Path Length = " +path.Count);
-        grid.path = path;
+        
+        Vector3[] pathPoints= SimplifyPath(path);
+        Array.Reverse(pathPoints);
+        Debug.Log("OutputPath");
+        return pathPoints;
     }
 
-    void FindPath(Vector3 startPos, Vector3 targetPos)
+    Vector3[] SimplifyPath(List<Node> path){
+        List<Vector3> waypoints = new List<Vector3>();
+        Vector3 directionOld= Vector3.zero;
+
+        for (int i=1; i<path.Count;i++){
+            Vector3 directionNew= new Vector3(path[i-1].gridX-path[i].gridX, path[i-1].gridY-path[i].gridY,path[i-1].gridZ-path[i].gridZ);
+            if (directionNew!=directionOld){
+                waypoints.Add(path[i].worldPosition);
+            }
+            directionOld = directionNew;
+        }
+        return waypoints.ToArray();
+    }
+
+    IEnumerator FindPath(Vector3 startPos, Vector3 targetPos)
     {
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
+        //Stopwatch sw = new Stopwatch();
+        //sw.Start();
+        Debug.Log("222---FindPath");
+
+        Vector3[] wayPoints= new Vector3[0];
+        bool pathSucess = false;
+
         Node startNode = grid.NodeFromWorldPosition(startPos);
         Node targetNode = grid.NodeFromWorldPosition(targetPos);
-        bool isFound=false;
-
-        MyHeap<Node> openList = new MyHeap<Node>(grid.MaxSize);
-        HashSet<Node> closedList = new HashSet<Node>();
-        openList.Add(startNode);
- 
-        while (openList.Count>0) 
-        {
-            Node currentNode = openList.RemoveFirst();    //open队列里找可能离终点最近的点
+        
+        if (startNode.walkable && targetNode.walkable){
+            MyHeap<Node> openList = new MyHeap<Node>(grid.MaxSize);
+            HashSet<Node> closedList = new HashSet<Node>();
+            openList.Add(startNode);
+    
+            while (openList.Count>0) 
+            {
+                Node currentNode = openList.RemoveFirst();    //open队列里找可能离终点最近的点
+                
             
-          
-            closedList.Add(currentNode);
+                closedList.Add(currentNode);
 
-            if (currentNode == targetNode)
-            {
-                sw.Stop();
-                print("Path found in :"+sw.ElapsedMilliseconds +"ms");
-                OutputPath(startNode,targetNode);
-                //Debug.Log("Finished Path Finding");
-                return;
-            }
-
-            foreach (Node neighbour in grid.GetNodeNeighbours(currentNode))
-            {
-                if (!neighbour.walkable || closedList.Contains(neighbour))   // 跳过这个邻接点
+                if (currentNode == targetNode)
                 {
-                    continue;
+                    //sw.Stop();
+                    //print("Path found in :"+sw.ElapsedMilliseconds +"ms");
+                    Debug.Log("333---FoundPath");
+                    pathSucess= true;
+                    break;
                 }
-                float newMovementCostToNeighbour = currentNode.gCost + getNodesDistance(currentNode,neighbour);
-                if (newMovementCostToNeighbour< neighbour.gCost || !openList.Contains(neighbour)){              //这个点的有更近的路线,则写入新的信息：g h 以及父节点
-                    neighbour.gCost = newMovementCostToNeighbour;
-                    neighbour.hCost = getNodesDistance(neighbour,targetNode);
-                    neighbour.parent = currentNode;
 
-                    if (!openList.Contains(neighbour)){
-                        openList.Add(neighbour);
+                foreach (Node neighbour in grid.GetNodeNeighbours(currentNode))
+                {
+                    if (!neighbour.walkable || closedList.Contains(neighbour))   // 跳过这个邻接点
+                    {
+                        continue;
+                    }
+                    float newMovementCostToNeighbour = currentNode.gCost + getNodesDistance(currentNode,neighbour);
+                    if (newMovementCostToNeighbour< neighbour.gCost || !openList.Contains(neighbour)){              //这个点的有更近的路线,则写入新的信息：g h 以及父节点
+                        neighbour.gCost = newMovementCostToNeighbour;
+                        neighbour.hCost = getNodesDistance(neighbour,targetNode);
+                        neighbour.parent = currentNode;
+
+                        if (!openList.Contains(neighbour)){
+                            openList.Add(neighbour);
+                        }
+
                     }
 
                 }
 
             }
-
         }
+        yield return null;
 
-        if (!isFound){
-            //Debug.Log("Path Not Found");
+        if (pathSucess){
+            wayPoints = OutputPath(startNode,targetNode);
         }
-
+        else{
+            Debug.Log("333---Cannot Find Path");
+        }
+        requestManager.FinishedProcessingPath(wayPoints,pathSucess);
     }
 }

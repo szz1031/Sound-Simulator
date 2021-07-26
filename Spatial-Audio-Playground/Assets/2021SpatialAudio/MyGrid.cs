@@ -8,8 +8,7 @@ public class MyGrid : MonoBehaviour
     public LayerMask unwalkableMask;
     public Vector3 gridWorldSize;
     public float nodeRadius;
-    public List<Node> path;
-    public bool onlyDrawPath;
+    public bool DisplayGrid;
     Node[,,] grid;
 
     Vector3 offsetPosition;
@@ -18,7 +17,7 @@ public class MyGrid : MonoBehaviour
     float nodeDiameter;
     int gridSizeX, gridSizeY, gridSizeZ;
 
-    void Start()
+    void Awake()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
@@ -45,7 +44,7 @@ public class MyGrid : MonoBehaviour
                 for (int z = 0; z < gridSizeZ; z++)
                 {
                     Vector3 worldPosition = offsetPosition + Vector3.right * (x * nodeDiameter + nodeRadius) + Vector3.up * (y * nodeDiameter + nodeRadius) + Vector3.forward * (z * nodeDiameter + nodeRadius);
-                    bool walkable = !(Physics.CheckSphere(worldPosition, nodeRadius/2,unwalkableMask));
+                    bool walkable = !(Physics.CheckSphere(worldPosition, nodeRadius,unwalkableMask));
                     grid[x, y, z] = new Node(walkable, worldPosition,x,y,z);
                 }
             }
@@ -82,7 +81,6 @@ public class MyGrid : MonoBehaviour
         //Debug.Log("deltaZ = "+ deltaZ);
 
         
-        
         int x = Mathf.RoundToInt(deltaX);
         int y = Mathf.RoundToInt(deltaY);
         int z = Mathf.RoundToInt(deltaZ);
@@ -98,41 +96,24 @@ public class MyGrid : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, gridWorldSize.y, gridWorldSize.z));
-        if (grid != null)
+        if (grid != null && DisplayGrid)
         {
             Node playerNode = NodeFromWorldPosition(player.position);
             //Debug.Log("Player =" + player.position.x+","+player.position.y+","+player.position.z +"   Point = "+playerNode.worldPosition.x+","+playerNode.worldPosition.y+","+playerNode.worldPosition.z);
             //Debug.Log("Distance="+ Vector3.Distance(player.position,playerNode.worldPosition));
             
-            if (onlyDrawPath){
-                Gizmos.color = Color.blue;
-                if (path!=null){
-                    foreach (Node n in grid){
-                        if (path.Contains(n)){
-                            Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter /2)); 
-                        }
-                    }                  
-                }
-
-            }
-            else{           
-                foreach (Node n in grid)
+                     
+            foreach (Node n in grid)
+            {
+                Gizmos.color = (n.walkable) ? Color.white : Color.red;
+                if (playerNode ==n)
                 {
-                    Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                    if (playerNode ==n)
-                    {
-                        Gizmos.color= Color.cyan;
-                    }
-                    if (path!=null){
-                        if (path.Contains(n))
-                            Gizmos.color = Color.blue;
-                        
-                    }
-
-                    Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter /3));
+                    Gizmos.color= Color.cyan;
                 }
 
+                Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter /5));
             }
+        
         }
     }
 }

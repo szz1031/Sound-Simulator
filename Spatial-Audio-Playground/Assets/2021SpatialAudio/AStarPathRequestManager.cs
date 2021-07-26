@@ -8,9 +8,12 @@ public class AStarPathRequestManager : MonoBehaviour
     Queue<PathRequest> pathRequestsQueue = new Queue<PathRequest>();
     PathRequest currentPathRequest;
     static AStarPathRequestManager instance;
+    AStarPathFinding pathFinding;
+    bool isProcessingPath;
 
     void Awake(){
         instance=this;
+        pathFinding = GetComponent<AStarPathFinding>();
     }
 
     public static void RequestPath(Vector3 pathStart, Vector3 pathEnd, Action<Vector3[],bool> callback){
@@ -21,9 +24,21 @@ public class AStarPathRequestManager : MonoBehaviour
     }
    
    void TryProcessNext(){
+       if (!isProcessingPath && pathRequestsQueue.Count>0){
+           currentPathRequest = pathRequestsQueue.Dequeue();
+           isProcessingPath = true;
+           pathFinding.StartFindPath(currentPathRequest.pathStart,currentPathRequest.pathEnd);
+       }
        
    }
    
+    public void FinishedProcessingPath(Vector3[] path, bool success){
+        Debug.Log("444---FinishedProcessingPath");
+        currentPathRequest.callback(path,success);
+        isProcessingPath=false;
+        TryProcessNext();
+    }
+
    struct PathRequest{
        public Vector3 pathStart;
        public Vector3 pathEnd;

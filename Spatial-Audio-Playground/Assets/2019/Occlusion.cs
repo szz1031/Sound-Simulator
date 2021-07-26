@@ -130,12 +130,12 @@ public class Occlusion : MonoBehaviour
                     OcclusionPercentage = 0;
 
                 //debug
-                if (OcclusionPercentage >=0.7)
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
-                else if (OcclusionPercentage >= 0.3)
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
-                else
-                    Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
+                // if (OcclusionPercentage >=0.7)
+                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                // else if (OcclusionPercentage >= 0.3)
+                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
+                // else
+                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
 
 
                 AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
