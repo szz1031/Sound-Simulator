@@ -116,6 +116,10 @@ public class AStarPathFinding : MonoBehaviour
                         if (!openList.Contains(neighbour)){
                             openList.Add(neighbour);
                         }
+                        else
+                        {
+                            openList.UpdateItem(neighbour);
+                        }
 
                     }
 
