@@ -6,6 +6,7 @@ public class SoundUnit : MonoBehaviour
 {
     public AkEvent AkEvent;
     public Transform target;
+    public bool drawPath;
     float speed = 1;
     Vector3[] path;
     Vector3[] soundPath;
@@ -29,6 +30,7 @@ public class SoundUnit : MonoBehaviour
             //StopCoroutine("FollowPath");
             //StartCoroutine("FollowPath");
 
+            SimplifyPathByRay();
             ChangeSoundPosition();
 
         }
@@ -40,16 +42,25 @@ public class SoundUnit : MonoBehaviour
 
     }
 
+    void SimplifyPathByRay(){
+
+    }
+
     void OnDrawGizmos() {
-		if (path != null) {
-			for (int i = 0; i < path.Length; i ++) {
-				Gizmos.color = Color.black;
-				Gizmos.DrawCube(path[i], Vector3.one);
+		if (path!=null && path.Length>0 && drawPath) {
+            Gizmos.DrawSphere(path[0], 0.2f);
+			for (int i = 1; i < path.Length; i ++) {           
+				Gizmos.color = Color.green;
+				Gizmos.DrawCube(path[i], Vector3.one/7);
 				Gizmos.DrawLine(path[i-1],path[i]);
 			}
 		}
 	}
 	
+
+    void OnDestory(){
+        path=null;
+    }
 
 
     // IEnumerator FollowPath(){
