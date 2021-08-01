@@ -8,6 +8,7 @@ public class SoundUnit : MonoBehaviour
     public AkEvent AkEvent;
     public Transform target;
     public bool drawPath;
+    public float UpdateTime=0.5f;
     float speed = 1;
     Vector3[] path;
     Vector3[] soundPath;
@@ -19,6 +20,7 @@ public class SoundUnit : MonoBehaviour
     Vector3 virtualLocation;
     float myOcclusion;
     float myObstruction;
+    float timer;
 
     void Start(){
         //AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
@@ -27,6 +29,13 @@ public class SoundUnit : MonoBehaviour
     void Update(){
         if (Input.GetKeyDown(KeyCode.P)){
             AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
+        }
+
+        timer+=Time.deltaTime;
+
+        if (timer>UpdateTime){
+            AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
+            timer=0;
         }
     }
 
@@ -40,6 +49,7 @@ public class SoundUnit : MonoBehaviour
 
             if (path.Length>0){
                 pathIndex=SimplifyPathByRay();
+                Debug.Log(pathIndex);
                 pathLocation=path[pathIndex];
                 ChangeSoundPosition();
             }
@@ -51,19 +61,21 @@ public class SoundUnit : MonoBehaviour
         float pathLength = 0.0f;
         float directLength = Vector3.Distance(this.transform.position,target.position);
 
-        for (int i=0;i<path.Length-1;i++){
+        pathLength += Vector3.Distance(this.transform.position,path[0]);
+
+        for (int i=0;i<path.Length-2;i++){
             pathLength += Vector3.Distance(path[i],path[i+1]); 
         }
-        pathLength += Vector3.Distance(path[path.Length],target.position);
+        pathLength += Vector3.Distance(path[path.Length-1],target.position);
 
         myObstruction = 1 - (directLength/pathLength);
-
-        AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,myObstruction,myOcclusion);
+        Debug.Log("myObstruction = " + myObstruction);
+        //AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,myObstruction,myOcclusion);
 
     }
 
     private int SimplifyPathByRay(){       //将path最后一个点改为可以直达目标的第一个点
-        RaycastHit hitInfo；
+        RaycastHit hitInfo;
         //Vector3[] newPath = new Vector3[];
         List<Vector3> newPath = new List<Vector3>(); 
         int closeIndex = -1;
@@ -71,10 +83,10 @@ public class SoundUnit : MonoBehaviour
         for (int i=0; i<path.Length-1; i++){    //找到第一个可以直连终点的中间节点，无视之后的路径
         
             Vector3 rayDirection= target.position - path[i];
-            float rayDistance = Vector3.distance(target.position, path[i]);
+            float rayDistance = Vector3.Distance(target.position, path[i]);
             bool isHit= Physics.Raycast(path[i], rayDirection, out hitInfo, rayDistance, GameSetting.GameLayer.I_SoundCastAll);   //Raycast
 
-            if (isHit){
+            if (isHit && hitInfo.transform.name!="MainCamera"){
                 newPath.Add(path[i]);
             }
             else{
@@ -85,11 +97,14 @@ public class SoundUnit : MonoBehaviour
         
         }
 
+
         if (closeIndex==-1){
             closeIndex=path.Length-1;
+            return closeIndex;
         }
 
         path = newPath.ToArray();
+
         return closeIndex;
     }
 

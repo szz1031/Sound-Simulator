@@ -6,8 +6,7 @@ using System;
 public class AStarPathFinding : MonoBehaviour
 {
     AStarPathRequestManager requestManager;
-    public float UpdateTime;
-    float timer;
+
     MyGrid grid;
 
     void Awake(){
@@ -15,23 +14,11 @@ public class AStarPathFinding : MonoBehaviour
         grid = GetComponent<MyGrid>();
     }
 
-    void Update()
-    {
-        timer=timer+ Time.deltaTime;
-        if (timer >= UpdateTime){
-            
-            timer=0;
-        }
 
-        if (Input.GetKeyDown(KeyCode.P)){
-            
-            
-        }
-    }
 
     public void StartFindPath(Vector3 startPos, Vector3 targetPos){
         StartCoroutine(FindPath(startPos,targetPos));
-        Debug.Log("111--StartFindPath");
+        //Debug.Log("111--StartFindPath");
 
     }
 
@@ -50,7 +37,7 @@ public class AStarPathFinding : MonoBehaviour
         
         Vector3[] pathPoints= SimplifyPath(path);
         Array.Reverse(pathPoints);
-        Debug.Log("OutputPath");
+        //Debug.Log("OutputPath");
         return pathPoints;
     }
 
@@ -72,7 +59,7 @@ public class AStarPathFinding : MonoBehaviour
     {
         //Stopwatch sw = new Stopwatch();
         //sw.Start();
-        Debug.Log("222---FindPath");
+        //Debug.Log("222---FindPath");
 
         Vector3[] wayPoints= new Vector3[0];
         bool pathSucess = false;
@@ -96,7 +83,7 @@ public class AStarPathFinding : MonoBehaviour
                 {
                     //sw.Stop();
                     //print("Path found in :"+sw.ElapsedMilliseconds +"ms");
-                    Debug.Log("333---FoundPath");
+                    //Debug.Log("333---FoundPath");
                     pathSucess= true;
                     break;
                 }

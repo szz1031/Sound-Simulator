@@ -33,7 +33,7 @@ public class AStarPathRequestManager : MonoBehaviour
    }
    
     public void FinishedProcessingPath(Vector3[] path, bool success){
-        Debug.Log("444---FinishedProcessingPath");
+        //Debug.Log("444---FinishedProcessingPath");
         currentPathRequest.callback(path,success);
         isProcessingPath=false;
         TryProcessNext();
