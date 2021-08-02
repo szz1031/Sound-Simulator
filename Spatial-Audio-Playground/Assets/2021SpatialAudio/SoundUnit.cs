@@ -7,23 +7,39 @@ public class SoundUnit : MonoBehaviour
 {
     public AkEvent AkEvent;
     public Transform target;
+    Transform VSource;
     public bool drawPath;
-    public float UpdateTime=0.5f;
-    float speed = 1;
+    public float UpdateTime=0.3f;
+
     Vector3[] path;
-    Vector3[] soundPath;
-    float soundPathLength;
-    int targetIndex;
+
+    //int targetIndex;
 
     int pathIndex;
+    float pathLength;
+    float directLength;
     Vector3 pathLocation;
     Vector3 virtualLocation;
     float myOcclusion;
     float myObstruction;
     float timer;
+    private Occlusion mOcclusion;
 
+    Vector3 virtualtarget;   //用来lerp的
+
+
+	void Awake(){
+        GameObject newObject = new GameObject("Empty");
+        VSource = newObject.transform;
+        mOcclusion = GetComponent<Occlusion>();
+    }
+    
     void Start(){
         //AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
+        virtualLocation=transform.position;
+        virtualtarget=virtualLocation;
+        
+        VSource.SetPositionAndRotation(virtualLocation,this.transform.rotation);
     }
     
     void Update(){
@@ -32,15 +48,23 @@ public class SoundUnit : MonoBehaviour
         }
 
         timer+=Time.deltaTime;
-
+        
         if (timer>UpdateTime){
             AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
             timer=0;
         }
+        
+        virtualLocation = 0.8f*virtualLocation + 0.2f*virtualtarget;
+        VSource.SetPositionAndRotation(virtualLocation,this.transform.rotation);
+        AkSoundEngine.SetObjectPosition(gameObject,VSource);
+
+        myOcclusion=mOcclusion.OcclusionPercentage;
+        AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,myObstruction,myOcclusion);
+
     }
 
 
-    public void OnPathFound(Vector3[] newPath, bool pathSucessful){
+    public void OnPathFound(Vector3[] newPath, bool pathSucessful){    //只在这里更新寻路相关的数值 不在update里面做更新
         if (pathSucessful){
             path = newPath;
             //targetIndex=0;
@@ -49,28 +73,57 @@ public class SoundUnit : MonoBehaviour
 
             if (path.Length>0){
                 pathIndex=SimplifyPathByRay();
-                Debug.Log(pathIndex);
+                //Debug.Log(pathIndex);
                 pathLocation=path[pathIndex];
-                ChangeSoundPosition();
+                ChangeObstructionByPath();
+                SetVirtualSoundLocation();
             }
 
         }
+        else
+        {
+            pathLocation=this.transform.position;
+            myObstruction=1f;
+            Debug.Log("Update myObstruction = " + myObstruction);
+            path = null;
+            directLength = Vector3.Distance(this.transform.position,target.position);
+            pathLength=directLength;
+            SetVirtualSoundLocation();
+        }
     }
 
-    void ChangeSoundPosition(){
-        float pathLength = 0.0f;
-        float directLength = Vector3.Distance(this.transform.position,target.position);
+    void SetVirtualSoundLocation(){
+        if (pathIndex==0){
+            virtualtarget = transform.position;
+            //VSource.SetPositionAndRotation(this.transform.position,this.transform.rotation);
+            //Debug.Log("111");
+
+        }
+        else{
+            float targetToMid = Vector3.Distance(pathLocation,target.position);
+
+
+            virtualtarget = target.position + pathLength/targetToMid*(pathLocation-target.position);
+            //Debug.Log("222");
+            //VSource.SetPositionAndRotation(virtualLocation,this.transform.rotation);
+        }
+
+
+    }
+
+    void ChangeObstructionByPath(){
+        pathLength=0.0f;
+        directLength = Vector3.Distance(this.transform.position,target.position);
 
         pathLength += Vector3.Distance(this.transform.position,path[0]);
 
-        for (int i=0;i<path.Length-2;i++){
+        for (int i=0;i<path.Length-1;i++){
             pathLength += Vector3.Distance(path[i],path[i+1]); 
         }
         pathLength += Vector3.Distance(path[path.Length-1],target.position);
-
         myObstruction = 1 - (directLength/pathLength);
-        Debug.Log("myObstruction = " + myObstruction);
-        //AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,myObstruction,myOcclusion);
+        Debug.Log("Update myObstruction = " + myObstruction);
+        
 
     }
 
@@ -110,13 +163,18 @@ public class SoundUnit : MonoBehaviour
 
     void OnDrawGizmos() {
 		if (path!=null && path.Length>0 && drawPath) {
-            Gizmos.DrawSphere(path[0], 0.2f);
+            Gizmos.DrawSphere(this.transform.position, 0.2f);
 			for (int i = 1; i < path.Length; i ++) {           
 				Gizmos.color = Color.green;
 				Gizmos.DrawCube(path[i], Vector3.one/7);
 				Gizmos.DrawLine(path[i-1],path[i]);
 			}
+            Gizmos.DrawLine(this.transform.position,path[0]);
 		}
+        Gizmos.color = Color.cyan;
+        if (VSource){
+            Gizmos.DrawSphere(VSource.position,0.5f);
+        }
 	}
 	
 

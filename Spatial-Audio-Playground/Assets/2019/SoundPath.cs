@@ -21,7 +21,8 @@ public class SoundPath : MonoBehaviour {
     float DistanceToDoor;
 
 	
-	void Start () {
+    void Start () {
+        
         VirtualAudioSource.position = transform.position;
         VirtualAudioSource.rotation = transform.rotation;
 	}

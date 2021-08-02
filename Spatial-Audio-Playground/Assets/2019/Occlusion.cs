@@ -16,7 +16,7 @@ public class Occlusion : MonoBehaviour
    // public float HightDistance;
     public bool PassFloor;
     public bool PassWall;
-    public float OcclusionPercentage;
+    public float OcclusionPercentage {get;private set;}
     public float hit1;
     public float hit2;
     
@@ -81,7 +81,7 @@ public class Occlusion : MonoBehaviour
                 else
                     OcclusionPercentage = 0.0f;
 
-                AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
+                //AkSoundEngine.SetObjectObstructionAndOcclusion(gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
             } 
             else  //calculate of occlusion
             {                
@@ -138,7 +138,7 @@ public class Occlusion : MonoBehaviour
                 //     Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
 
 
-                AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
+                //AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
                 
             }
         }

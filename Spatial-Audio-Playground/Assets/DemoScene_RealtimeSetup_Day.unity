@@ -424,7 +424,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &8088571
@@ -1908,7 +1907,6 @@ GameObject:
   - component: {fileID: 63358114}
   - component: {fileID: 63358113}
   - component: {fileID: 63358112}
-  - component: {fileID: 63358111}
   - component: {fileID: 63358115}
   m_Layer: 0
   m_Name: Sphere
@@ -1931,21 +1929,6 @@ Transform:
   m_Father: {fileID: 1860150486}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &63358111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63358109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e646b4c858ac6a3469f41787964d417e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AkEvent: {fileID: 0}
-  target: {fileID: 952910590}
-  drawPath: 1
 --- !u!135 &63358112
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2874,7 +2857,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &98397610
@@ -3902,7 +3884,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &121740239
@@ -5002,7 +4983,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!1 &152443926 stripped
@@ -6091,7 +6071,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!1 &190035202 stripped
@@ -8032,7 +8011,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237397465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44010105f2f189c44b1addb2b92687da, type: 3}
   m_Name: 
@@ -8072,7 +8051,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &237397470
@@ -8082,7 +8060,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237397465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
@@ -15278,7 +15256,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &445115263
@@ -18430,7 +18407,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544981208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
@@ -18487,7 +18464,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &544981213
@@ -18544,6 +18520,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4511a15a60384499094c13edaff221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &544981219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544981208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e646b4c858ac6a3469f41787964d417e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AkEvent: {fileID: 0}
+  target: {fileID: 952910590}
+  drawPath: 1
+  UpdateTime: 0.3
 --- !u!1001 &546126976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19657,7 +19649,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!4 &582559667 stripped
@@ -21404,7 +21395,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &642495766
@@ -21943,7 +21933,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660069790}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
@@ -21975,7 +21965,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &660069793
@@ -22346,7 +22335,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!1 &671746537 stripped
@@ -24410,7 +24398,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &729130396
@@ -27193,7 +27180,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &833822887
@@ -29124,7 +29110,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &896567647
@@ -32758,7 +32743,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &967000543
@@ -35203,7 +35187,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1045915955
@@ -35328,7 +35311,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1048380633
@@ -35675,7 +35657,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1051674861
@@ -36985,7 +36966,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1099705794
@@ -37231,7 +37211,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1102973374
@@ -37241,7 +37220,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102973370}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
@@ -37542,7 +37521,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1108372681
@@ -38211,7 +38189,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1129614763
@@ -39431,7 +39408,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1163912042
@@ -41016,7 +40992,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1205010868
@@ -44140,7 +44115,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1312742595
@@ -44751,7 +44725,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1326811160
@@ -44790,7 +44763,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326811158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
@@ -44953,7 +44926,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1328943974
@@ -52876,7 +52848,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1559992259
@@ -58564,7 +58535,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1726431923
@@ -60743,7 +60713,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &1798472762
@@ -63748,7 +63717,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!1 &1872481032 stripped
@@ -65632,7 +65600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea686f44894ca1a43a4d83bcae375c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdateTime: 1
 --- !u!114 &1928802816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72209,7 +72176,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &2127194311
@@ -72596,7 +72562,6 @@ MonoBehaviour:
   BlockedDistance: 0
   PassFloor: 0
   PassWall: 0
-  OcclusionPercentage: 0
   hit1: 0
   hit2: 0
 --- !u!114 &2133828045
@@ -72618,7 +72583,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133828042}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
   m_Name: 
