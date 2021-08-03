@@ -4,16 +4,16 @@ using UnityEngine;
 using System;
 
 struct HitMap{
-    public integer x;
-    public integer y;
+    public int x;
+    public int y;
     public RaycastHit hitInfo;
-    public integer color;
+    public int color;
 }
 
 struct HitArea{
-    public integer size;
-    public integer[] x;
-    public integer[] y;
+    public int size;
+    public int[] x;
+    public int[] y;
     public Vector3 centreLocation;
     public Transform soundPlayer;
     public bool isUsing;
@@ -25,8 +25,8 @@ struct HitArea{
 public class RainHitSystem : MonoBehaviour
 {
     public Transform Player;
-    public integer N = 4;
-    public integer Interval = 1;
+    public int N = 4;
+    public int Interval = 1;
     public float UpdateTime;
 
     Vector3 lastUsedLocation;
@@ -39,7 +39,9 @@ public class RainHitSystem : MonoBehaviour
 
 
     void Start(){
-        lastUsedLocation=(0f,0f,0f);
+        lastUsedLocation.x=0f;
+        lastUsedLocation.y=0f;
+        lastUsedLocation.z=0f;
     }
 
     void Update(){
@@ -59,18 +61,18 @@ public class RainHitSystem : MonoBehaviour
         
         UpdateHitMapAndHitArea();
 
-        for (i=0;i<lastHitArea.Length;i++){     //遍历每个旧区域
+        for (int i=0;i<lastHitArea.Length;i++){     //遍历每个旧区域
             bool foundInNewArea = false;
             int areaIndexInOldArea = i;
 
-            for (j=0;j<lastHitArea[i].size;j++){    //遍历旧区域每个点
+            for (int j=0;j<lastHitArea[i].size;j++){    //遍历旧区域每个点
 
                 int indexInNewMap = PointIndexInTheMap(lastHitArea[i].x[j],lastHitArea[i].y[j],newHitMap);
                 if (indexInNewMap!=-1){
 
                     int areaIndexInNewArea = newHitMap[indexInNewMap].color; 
                     
-                    if (!newHitArea[areaIndexInNewArea].isUsing) && (lastHitArea[areaIndexInOldArea].isUsing){
+                    if (!newHitArea[areaIndexInNewArea].isUsing && lastHitArea[areaIndexInOldArea].isUsing){
                         foundInNewArea = true;
 
                         newHitArea[areaIndexInNewArea].soundPlayer=lastHitArea[areaIndexInOldArea].soundPlayer;
@@ -94,10 +96,10 @@ public class RainHitSystem : MonoBehaviour
 
         }
 
-        for (i=0;i<newHitArea.Length;i++){
+        for (int i=0;i<newHitArea.Length;i++){
             if (!newHitArea[i].isUsing){
                 // 分配player
-                if (newHitArea[i].tagName){
+                if (newHitArea[i].tagName!=null){
                     //set rtpc on player
                     //set switch on player
                     //play audio on player
@@ -111,12 +113,16 @@ public class RainHitSystem : MonoBehaviour
     }
 
     void UpdateHitMapAndHitArea(){
-        Vector3 zeroPos = Player.position - (N*Interval,0,N*Interval);
-        int zeroX = mathf.RoundToInt(zeroPos.x / Interval) * Interval;
-        int zeroY = mathf.RoundToInt(zeroPos.z / Interval) * Interval;
+        Vector3 zeroPos ;
+        zeroPos.x=Player.position.x - (float)(N*Interval);
+        zeroPos.y=Player.position.y;
+        zeroPos.z=Player.position.z - (float)(N*Interval);
+
+        int zeroX = Mathf.RoundToInt(zeroPos.x / Interval) * Interval;
+        int zeroY = Mathf.RoundToInt(zeroPos.z / Interval) * Interval;
         
-        for (x=0;x<2*N+1;x++){
-            for (y=0;y<2*N+1;y++){
+        for (int x=0;x<2*N+1;x++){
+            for (int y=0;y<2*N+1;y++){
                 int indexInLastMap = PointIndexInTheMap(zeroX+x*Interval,zeroY+y*Interval,lastHitMap);
                 if (indexInLastMap==-1){
                     //raycast
@@ -131,20 +137,19 @@ public class RainHitSystem : MonoBehaviour
 
         int colorIndex =-1;
 
-        for (i=0;i<newHitMap.Length;i++){
-            if () //// 写道这里
+        for (int i=0;i<newHitMap.Length;i++){
+             //// 写道这里
         }
 
     }
 
 
 
-    int PointIndexInTheMap(integer x, integer y, HitMap map){
+    int PointIndexInTheMap(int  x, int y, HitMap[] map){
 
-        bool foundInMap=false;
 
         if (map.Length>0){
-            if (map[0].x<= x && x <= map[map.Length-1].x && map[0]y <= y && y <= map[map.Length-1].y){
+            if (map[0].x<= x && x <= map[map.Length-1].x && map[0].y <= y && y <= map[map.Length-1].y){
                 int index =  Mathf.RoundToInt((x-map[0].x)/Interval) + Mathf.RoundToInt((y-map[0].y)/Interval) * (2*N +1);
                 if (x!=map[index].x || y!=map[index].y){
                     Debug.Log("Wrong Index Calculate In Function:PointIndexInTheMap");

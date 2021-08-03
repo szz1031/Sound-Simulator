@@ -75,6 +75,7 @@
      <Compile Include="Assets\2021SpatialAudio\MyGrid.cs" />
      <Compile Include="Assets\2021SpatialAudio\MyHeap.cs" />
      <Compile Include="Assets\2021SpatialAudio\Node.cs" />
+     <Compile Include="Assets\2021SpatialAudio\RainHitSystem\RainHitSystem.cs" />
      <Compile Include="Assets\2021SpatialAudio\SoundUnit.cs" />
      <Compile Include="Assets\3DTOYS\rotatecamera.cs" />
      <Compile Include="Assets\GameManager.cs" />
