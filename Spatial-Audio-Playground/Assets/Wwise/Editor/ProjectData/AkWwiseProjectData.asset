@@ -1599,5 +1599,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Spatial-Audio-Playground
+  - /Spatial-Audio-Playground/Events
+  - /Spatial-Audio-Playground/Events/Default Work Unit
+  - /Spatial-Audio-Playground/Events/Default Work Unit/Object
+  - /Spatial-Audio-Playground/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

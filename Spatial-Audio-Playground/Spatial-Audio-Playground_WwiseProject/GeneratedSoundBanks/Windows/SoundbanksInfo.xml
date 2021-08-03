@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="322030223" Language="Simplified Chinese" Hash="1916224656">
+		<SoundBank Id="322030223" Language="Simplified Chinese">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
 			<ShortName>Bank_VO</ShortName>
 			<Path>Simplified Chinese\Bank_VO.bnk</Path>
@@ -127,12 +127,8 @@
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
-				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
-			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="322030223" Language="English(US)" Hash="3759375679">
+		<SoundBank Id="322030223" Language="English(US)" Hash="3422450152">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
 			<ShortName>Bank_VO</ShortName>
 			<Path>English(US)\Bank_VO.bnk</Path>
@@ -248,12 +244,8 @@
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
-				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
-			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1096206358">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4074514584">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -261,12 +253,12 @@
 				<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2800366463" Language="SFX" Hash="735334218">
+		<SoundBank Id="2800366463" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="SFX" Hash="2983779757">
+		<SoundBank Id="4017023971" Language="SFX" Hash="2395356467">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
@@ -1142,10 +1134,6 @@
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1192632456" Name="Distance_max10" ObjectPath="\Game Parameters\Default Work Unit\Distance_max10"/>
-				<GameParameter Id="1848266011" Name="DecreaseVolume" ObjectPath="\Game Parameters\Default Work Unit\DecreaseVolume"/>
-			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3072116243" Name="GroundMaterial" ObjectPath="\Switches\Default Work Unit\GroundMaterial">
 					<Switches>

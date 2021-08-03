@@ -96,10 +96,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 	889955736	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire		
 	1022236422	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Guitar		
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	1192632456	Distance_max10			\Default Work Unit\Distance_max10	
-	1848266011	DecreaseVolume			\Default Work Unit\DecreaseVolume	
-
 Effect plug-ins	ID	Name	Type				Notes
 	486191333	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
@@ -138,7 +134,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	381684206	Washing machine draining subtly and humming	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Washing machine draining subtly and humming_3928149C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine\Washing machine draining subtly and humming		1721643
 	396493397	drawer slide_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_45C40E14.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_03		3245
 	405076756	fstp_carpet_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_CA5E6791.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_02		3199
-	413701673	MainNoise	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\MainNoise_ABC59516.wem		\Actor-Mixer Hierarchy\Default Work Unit\test\MainNoise		843316
+	413701673	MainNoise	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\MainNoise_ABC59516.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\MainNoise		843316
 	424000544	fstp_carpet_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_0B7F76A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_04		3459
 	435878783	Closet _Close_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_E23CF124.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close_02		10080
 	441170689	car crack1_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_4191C213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\open crack\car crack1_02		3890
@@ -152,7 +148,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	513100812	Squeak_3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\Squeak_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Squeak_3		7380
 	519856163	fstp_wood_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\WoodfloorbarefootstepssqueakINT01-MS_65360A36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_04		4819
 	534002572	Closet _Close_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_8D7C007E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close_01		8708
-	538976337	Key_Hint Sound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\test\Key_Hint Sound		370589
+	538976337	Key_Hint Sound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object\Key_Hint Sound		370589
 	567029194	Closet _Close	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_7B3CA51E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close		8183
 	573201444	OnOffTap	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\REAPER Media\OnOffTap_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\OnOffTap		4917
 	578918507	drawer close_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Mac\SFX\Drawer Wooden Vanity_01_C3D9F5F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_03		5202

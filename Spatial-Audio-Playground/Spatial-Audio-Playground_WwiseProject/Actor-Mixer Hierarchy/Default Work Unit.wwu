@@ -1409,70 +1409,14 @@
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{F48E691B-EBB8-4459-8C44-CECDFBD3AD6A}" ShortID="131072697">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance_max10" ID="{9E5204DE-98CA-41BE-88EF-592BCCC7BD11}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{312D206A-DB92-4CAA-BE28-E7424D363401}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log1</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>3.79499</XPos>
-												<YPos>-0.98803</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>2.93988</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-3</Value>
 							</ValueList>
-							<RTPCList>
-								<RTPC Name="" ID="{7EAC17AC-2F62-42F6-BB55-F813A3789E58}" ShortID="36715677">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="DecreaseVolume" ID="{9BF5255F-F602-410A-806A-21BA9448D092}" WorkUnitID="{5D0B2003-3946-458D-816F-EE77A83878C4}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{51AF1CB0-1965-4A05-BC5F-06DCFA52E769}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>0</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log2</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>10</XPos>
-												<YPos>-6</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>

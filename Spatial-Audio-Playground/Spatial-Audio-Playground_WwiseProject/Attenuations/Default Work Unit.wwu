@@ -5,13 +5,13 @@
 			<ChildrenList>
 				<Attenuation Name="Attenuation_TV" ID="{9BA20216-7F0E-42C2-AE6D-7E352F1FDDA5}" ShortID="1004567962">
 					<PropertyList>
-						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
-						<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
-						<Property Name="ConeUse" Type="bool">
+						<Property Name="ConeAttenuation" Type="Real64">
 							<ValueList>
-								<Value>True</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
+						<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+						<Property Name="ConeOuterAngle" Type="int32" Value="235"/>
 						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
@@ -89,7 +89,7 @@
 										</Point>
 										<Point>
 											<XPos>20</XPos>
-											<YPos>76</YPos>
+											<YPos>30</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -111,7 +111,7 @@
 										</Point>
 										<Point>
 											<XPos>20</XPos>
-											<YPos>57</YPos>
+											<YPos>30</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
