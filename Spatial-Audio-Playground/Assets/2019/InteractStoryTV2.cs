@@ -9,11 +9,11 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
         switch (stage)
         {
             case enum_Stage.Stage1:
-                AudioManager.PostEvent("TV_2_Plot_1",gameObject);
+                AudioManager.PostEvent2021("TV_2_Plot_1",gameObject);
                 UIManager.Instance.AddSubtitle("Welcome to my game! You need to find keys to get out of this house. Good Luck and have fun!");
                 break;
             case enum_Stage.Stage5:
-                AudioManager.PostEvent("TV_2_Plot_2", gameObject);
+                AudioManager.PostEvent2021("TV_2_Plot_2", gameObject);
                 UIManager.Instance.AddSubtitle("Hey! Did you get the final key?");
                 break;
         }
@@ -23,7 +23,7 @@ public class InteractStoryTV2 : InteractStorySpecial<InteractStoryTV2> {
         if (B_Interacted || GameManager.Instance.m_CurrentStage != enum_Stage.Stage5)
             return;
         
-        AudioManager.PostEvent("TV_2_Plot_5", gameObject);
+        AudioManager.PostEvent2021("TV_2_Plot_5", gameObject);
         UIManager.Instance.AddSubtitle("Congradulations! Hope your like this game. I am very happy to hear some feedbacks afterwards. Thank you!");
 
         base.TryInteract();

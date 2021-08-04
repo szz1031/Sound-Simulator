@@ -39,4 +39,18 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
             AkSoundEngine.SetState("WorldState", "B");
         }
     }
+
+    public static void PostEvent2021(string eventName,GameObject obj){
+        SoundUnit mSoundUnit = obj.GetComponent<SoundUnit>();
+
+        if (mSoundUnit==null){
+            AkSoundEngine.PostEvent(eventName,obj);
+        }
+        else
+        {
+            mSoundUnit.PlaySound2021(eventName,true,true);
+        }
+    }
+
+
 }

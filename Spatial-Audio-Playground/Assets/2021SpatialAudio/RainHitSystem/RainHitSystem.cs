@@ -121,11 +121,16 @@ public class RainHitSystem : MonoBehaviour
         int zeroX = Mathf.RoundToInt(zeroPos.x / Interval) * Interval;
         int zeroY = Mathf.RoundToInt(zeroPos.z / Interval) * Interval;
         
+        List<HitMap> newHitList = new List<HitMap>();
+
         for (int x=0;x<2*N+1;x++){
             for (int y=0;y<2*N+1;y++){
-                int indexInLastMap = PointIndexInTheMap(zeroX+x*Interval,zeroY+y*Interval,lastHitMap);
+                int pointX =zeroX+x*Interval;
+                int pointY =zeroY+y*Interval;
+                int indexInLastMap = PointIndexInTheMap(pointX,pointY,lastHitMap);
                 if (indexInLastMap==-1){
-                    //raycast
+                    Vector3 rayStartPoint = new Vector3((float)pointX,(float)(Player.position.y+15),(float)pointY);
+                    Physics.Raycast(rayStartPoint, new Vector3(0,-1,0), out hitInfo, 20, GameSetting.GameLayer.I_SoundCastAll);
                     //存到新图里 color =-1
                 }
                 else{

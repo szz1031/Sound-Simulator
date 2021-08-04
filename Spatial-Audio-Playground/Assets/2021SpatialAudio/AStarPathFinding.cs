@@ -120,7 +120,7 @@ public class AStarPathFinding : MonoBehaviour
             wayPoints = OutputPath(startNode,targetNode);
         }
         else{
-            Debug.Log("333---Cannot Find Path");
+            //Debug.Log("333---Cannot Find Path");
         }
         requestManager.FinishedProcessingPath(wayPoints,pathSucess);
     }
