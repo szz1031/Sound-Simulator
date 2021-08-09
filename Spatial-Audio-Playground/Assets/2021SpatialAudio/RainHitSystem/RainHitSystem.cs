@@ -8,6 +8,13 @@ struct HitMap{
     public int y;
     public RaycastHit hitInfo;
     public int color;
+
+    public HitMap(int _x, int _y, RaycastHit _hitInfo, int _color){
+        x=_x;
+        y=_y;
+        hitInfo=_hitInfo;
+        color=_color;
+    }
 }
 
 struct HitArea{
@@ -19,7 +26,15 @@ struct HitArea{
     public bool isUsing;
     public string tagName;
 
-
+    public HitArea(int _size, bool _isUsing, string _tagName, int[] _x, int[] _y, Vector3 _centreLocation, Transform _soundPlayer){
+        size=_size;
+        isUsing=_isUsing;
+        tagName=_tagName;
+        x=_x;
+        y=_y;
+        centreLocation=_centreLocation;
+        soundPlayer=_soundPlayer;
+    }
 }
 
 public class RainHitSystem : MonoBehaviour
@@ -130,25 +145,98 @@ public class RainHitSystem : MonoBehaviour
                 int indexInLastMap = PointIndexInTheMap(pointX,pointY,lastHitMap);
                 if (indexInLastMap==-1){
                     Vector3 rayStartPoint = new Vector3((float)pointX,(float)(Player.position.y+15),(float)pointY);
+                    RaycastHit hitInfo;
                     Physics.Raycast(rayStartPoint, new Vector3(0,-1,0), out hitInfo, 20, GameSetting.GameLayer.I_SoundCastAll);
+
                     //存到新图里 color =-1
+                    HitMap temphitmap= new HitMap(pointX,pointY,hitInfo,-1);
+                    newHitList.Add(temphitmap);
+
                 }
                 else{
                     //复制到新图里 color =-1
+                    HitMap temphitmap=new HitMap();
+                    temphitmap=lastHitMap[indexInLastMap];
+                    temphitmap.color=-1;
+                    newHitList.Add(temphitmap);
+
                 }
             }
         }
         //新图转换成array
+        newHitMap=newHitList.ToArray();
 
         int colorIndex =-1;
 
+
+        //遍历新图
         for (int i=0;i<newHitMap.Length;i++){
-             //// 写道这里
+            if (newHitMap[i].color==-1 && !newHitMap[i].hitInfo.transform.CompareTag("Untagged")){
+                colorIndex++;
+                newHitMap[i].color=colorIndex;
+
+                //初始化队列和各种参数
+                string tempTagName=newHitMap[i].hitInfo.transform.tag;
+
+                Queue<int> LinearIndexQueue= new Queue<int>();  //含有点的队列
+                LinearIndexQueue.Enqueue(i);
+
+                HitArea tempHitArea= new HitArea(0,false,tempTagName,null,null,new Vector3(0,0,0),null);   //临时区域信息
+                List<HitArea> tempAreaList= new List<HitArea>();
+                tempAreaList.Add(tempHitArea);
+
+                List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
+                Vector3 tempFirstLocation =newHitMap[i].hitInfo.transform.position;
+                tempLocationList.Add(tempFirstLocation);
+
+                
+                //染色算法
+                // while (LinearIndexQueue.Count>0){
+                //     int n = LinearIndexQueue.Dequeue();
+                //     int[] neighours= GetNeighbourLinearIndex(n);
+                //     foreach(int j in neighours){
+                //         ////
+                //     }
+                // }
+
+             }
         }
 
     }
 
+    int[] GetNeighbourLinearIndex(int i){
+        List<int> NeighbourList= new List<int>();
+        int n= 2*N+1;
+        int x= i % n;
+        int y= i / n;
 
+        if (x>0){
+            NeighbourList.Add(GetLinearIndexByXY(x-1,y));
+        }
+
+        if (x<2*N){
+            NeighbourList.Add(GetLinearIndexByXY(x+1,y));
+        }
+
+        if (y>0){
+            NeighbourList.Add(GetLinearIndexByXY(x,y-1));
+        }
+
+        if (y<2*N){
+            NeighbourList.Add(GetLinearIndexByXY(x,y+1));
+        }
+
+        return NeighbourList.ToArray();
+    }
+
+    int GetLinearIndexByXY(int x, int y){
+        int ans = x + y*(2*N+1);
+        if (ans < 0 || ans >= newHitMap.Length){
+            Debug.Log("Invalid LinearIndex Calculate In : GetNeighbourLinearIndex");
+            return 0;
+        }
+        return ans;
+    }
 
     int PointIndexInTheMap(int  x, int y, HitMap[] map){
 
