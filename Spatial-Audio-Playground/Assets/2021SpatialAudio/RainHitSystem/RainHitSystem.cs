@@ -43,6 +43,7 @@ public class RainHitSystem : MonoBehaviour
     public int N = 4;
     public int Interval = 1;
     public float UpdateTime;
+    public bool Draw;
 
     Vector3 lastUsedLocation;
     float timer=0;
@@ -89,8 +90,10 @@ public class RainHitSystem : MonoBehaviour
                     
                     if (!newHitArea[areaIndexInNewArea].isUsing && lastHitArea[areaIndexInOldArea].isUsing){
                         foundInNewArea = true;
-
+                        
+                        //搬运
                         newHitArea[areaIndexInNewArea].soundPlayer=lastHitArea[areaIndexInOldArea].soundPlayer;
+                        lastHitArea[areaIndexInOldArea].soundPlayer=null;
                         newHitArea[areaIndexInNewArea].isUsing=true;
                         lastHitArea[areaIndexInOldArea].isUsing=false;
 
@@ -148,13 +151,13 @@ public class RainHitSystem : MonoBehaviour
                     RaycastHit hitInfo;
                     Physics.Raycast(rayStartPoint, new Vector3(0,-1,0), out hitInfo, 20, GameSetting.GameLayer.I_SoundCastAll);
 
-                    //存到新图里 color =-1
+                    //存到新图里 
                     HitMap temphitmap= new HitMap(pointX,pointY,hitInfo,-1);
                     newHitList.Add(temphitmap);
 
                 }
                 else{
-                    //复制到新图里 color =-1
+                    //复制到新图里 
                     HitMap temphitmap=new HitMap();
                     temphitmap=lastHitMap[indexInLastMap];
                     temphitmap.color=-1;
@@ -163,44 +166,71 @@ public class RainHitSystem : MonoBehaviour
                 }
             }
         }
-        //新图转换成array
+        //得到新图
         newHitMap=newHitList.ToArray();
 
         int colorIndex =-1;
 
+        List<HitArea> newAreaList = new List<HitArea>();
 
         //遍历新图
         for (int i=0;i<newHitMap.Length;i++){
             if (newHitMap[i].color==-1 && !newHitMap[i].hitInfo.transform.CompareTag("Untagged")){
                 colorIndex++;
-                newHitMap[i].color=colorIndex;
+                newHitMap[i].color=colorIndex;  //上色
 
                 //初始化队列和各种参数
                 string tempTagName=newHitMap[i].hitInfo.transform.tag;
 
-                Queue<int> LinearIndexQueue= new Queue<int>();  //含有点的队列
-                LinearIndexQueue.Enqueue(i);
-
-                HitArea tempHitArea= new HitArea(0,false,tempTagName,null,null,new Vector3(0,0,0),null);   //临时区域信息
-                List<HitArea> tempAreaList= new List<HitArea>();
-                tempAreaList.Add(tempHitArea);
+                List<HitMap> tempAreaList= new List<HitMap>();  //临时区域信息
+                tempAreaList.Add(newHitMap[i]);
 
                 List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
                 Vector3 tempFirstLocation =newHitMap[i].hitInfo.transform.position;
                 tempLocationList.Add(tempFirstLocation);
 
+                Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
+                LinearIndexQueue.Enqueue(i);
                 
+
                 //染色算法
-                // while (LinearIndexQueue.Count>0){
-                //     int n = LinearIndexQueue.Dequeue();
-                //     int[] neighours= GetNeighbourLinearIndex(n);
-                //     foreach(int j in neighours){
-                //         ////
-                //     }
-                // }
+                while (LinearIndexQueue.Count>0){
+                    int n = LinearIndexQueue.Dequeue();
+                    int[] neighours= GetNeighbourLinearIndex(n);
+                    foreach(int j in neighours){
+                        if(newHitMap[j].color==-1){
+                            if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName) && Vector3.Distance(newHitMap[j].hitInfo.transform.position,tempFirstLocation)<=3 ){
+                                newHitMap[j].color=colorIndex;
+                                tempAreaList.Add(newHitMap[j]);
+                                tempLocationList.Add(newHitMap[j].hitInfo.transform.position);
+                                LinearIndexQueue.Enqueue(j);
+                            }
+                        }
+                    }
+                }
+
+
+                //整理信息更新到新区域
+                int[] arrayX= new int[tempAreaList.Length];
+                int[] arrayY= new int[tempAreaList.Length];
+                Vector3 averageLocation= new Vector3(0f,0f,0f);
+                for (int k=0; k<tempAreaList.Length;k++){
+                    arrayX[k]=tempAreaList[k].pointX;
+                    arrayY[k]=tempAreaList[k].pointY;
+                    averageLocation+=tempAreaList[k].hitInfo.transform.position;
+                }
+                averageLocation=averageLocation/tempAreaList.Length;
+                
+
+
+                HitArea tempHitArea= new HitArea(tempAreaList.Length, false, tempTagName, arrayX, arrayY, averageLocation, null);
+                newAreaList.Add(tempHitArea);
 
              }
         }
+
+        //得到新区域
+        newHitArea=newAreaList.ToArray();
 
     }
 
@@ -239,7 +269,6 @@ public class RainHitSystem : MonoBehaviour
     }
 
     int PointIndexInTheMap(int  x, int y, HitMap[] map){
-
 
         if (map.Length>0){
             if (map[0].x<= x && x <= map[map.Length-1].x && map[0].y <= y && y <= map[map.Length-1].y){
