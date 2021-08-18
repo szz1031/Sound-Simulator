@@ -10514,7 +10514,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ASIO Output" PluginType="7" CompanyID="0" PluginID="168">
+				<SharedPropertyList ClassName="" PluginType="7" CompanyID="0" PluginID="168">
 					<PropertyList>
 						<Property Name="BaseChannel" Type="int32">
 							<ValueList>
@@ -10656,7 +10656,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Channel Router" PluginType="6" CompanyID="0" PluginID="172">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="0" PluginID="172">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -10675,7 +10675,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="0" PluginID="173">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="173">
 					<PropertyList>
 						<Property Name="Channel" Type="Real32">
 							<ValueList>
@@ -12236,7 +12236,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ASIO Input" PluginType="2" CompanyID="0" PluginID="204">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="0" PluginID="204">
 					<PropertyList>
 						<Property Name="BaseChannel" Type="int32">
 							<ValueList>

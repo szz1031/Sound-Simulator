@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8C9128F8-4D88-4383-B1E1-BB7431590615}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="2021" ID="{8C9128F8-4D88-4383-B1E1-BB7431590615}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="OutDoorRatio" ID="{17C66027-9BA8-4DE6-A01F-29AE88FCD2F7}">
+					<Comment>0=full indoor
+1=full outdoor</Comment>
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RainHit_AreaSize" ID="{EB8A368E-E265-4864-9D19-A693B8F136C7}">
+					<Comment>一个雨打声源的面积大小</Comment>
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

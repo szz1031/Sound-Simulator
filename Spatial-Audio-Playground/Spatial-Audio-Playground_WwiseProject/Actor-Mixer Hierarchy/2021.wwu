@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5FEC001B-65AA-46F5-A4D0-F2AAEA1F1017}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="2021" ID="{5FEC001B-65AA-46F5-A4D0-F2AAEA1F1017}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="RainHit" ID="{E4928181-23E2-4816-88FF-958715B25CCF}" ShortID="304891869">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="RainHit_Switch" ID="{97BB5653-DA34-4AFF-A9F9-844E12A8BC12}" ShortID="337122284">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{16378FCA-8A78-46C1-961A-64BF11A7832D}" ShortID="104251461">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="OutDoorRatio" ID="{17C66027-9BA8-4DE6-A01F-29AE88FCD2F7}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A7D71768-B68D-4CB6-9C22-E5354E206BCE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>34</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D46F7CF2-393A-4618-8321-32C155896407}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{85675463-5721-4200-AFE3-FE7425C029E2}" ShortID="781772278">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RainHit_AreaSize" ID="{EB8A368E-E265-4864-9D19-A693B8F136C7}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A2369E47-E804-41E6-A1CB-829ED20DDD17}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-9</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>2</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{1FD19BD6-F718-4F8E-8FC4-8FE2E4C995ED}" ShortID="780963445">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="OutDoorRatio" ID="{17C66027-9BA8-4DE6-A01F-29AE88FCD2F7}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{899D200C-51B8-4A9A-9F7A-66C9C6F9F273}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-30</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.75</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Default" ID="{AF8517E9-8C7F-4C50-8E4A-85B1C93D22CE}" WorkUnitID="{D931A7D9-0E75-4D2D-8216-DE84E4AFA401}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="RainHit_ObjectType" ID="{F7D4AAF5-19AA-4F30-A0DC-9AFBD30E0407}" WorkUnitID="{D931A7D9-0E75-4D2D-8216-DE84E4AFA401}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Tile-legacy" ID="{6F8B8657-45A0-43BB-B0F9-872C1FA90A34}" ShortID="751191057">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="270970-Water-11-City-Rain-Roof-T05" ID="{2992893F-20D6-4B9A-ABE4-706BB7A9CED3}" ShortID="28155366">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{EF3A69B9-A3B4-497A-9A44-080433D6F962}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+														<Property Name="LoopBegin" Type="Real64" Value="3.16438356164384"/>
+														<Property Name="LoopEnd" Type="Real64" Value="80.2602739726028"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.58219178082192"/>
+														<Property Name="TrimEnd" Type="Real64" Value="82.1301369863014"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="377791757"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{EF3A69B9-A3B4-497A-9A44-080433D6F962}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Stone" ID="{2E898A32-1167-4B07-918E-AFBDEC6CB554}" ShortID="437354619">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>51</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Stone_2D" ID="{958B27CE-7346-4223-A6D8-5796159C3BA8}" ShortID="515816458">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{DA1FFB2E-871C-40E6-A508-60BA50564C68}" ShortID="647109694">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{56408577-649B-4A12-8C2E-A544C9638FCB}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="300"/>
+																<Property Name="LoopBegin" Type="Real64" Value="60.3386215753425"/>
+																<Property Name="LoopEnd" Type="Real64" Value="197.537153966895"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.59158461757991"/>
+																<Property Name="TrimEnd" Type="Real64" Value="202.206213969749"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\480007-Medium_Rain_Rooftop_Floor_Tile.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="570502921"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{56408577-649B-4A12-8C2E-A544C9638FCB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Stone_3D" ID="{F42CCED8-3341-4048-9689-F1114E9E9733}" ShortID="183833280">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{5838D55F-F420-4909-85A1-EEAC042B5A06}" ShortID="643121253">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{CBBEA18A-A8B0-483F-9E65-53C86C7BFE91}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="300"/>
+																<Property Name="LoopBegin" Type="Real64" Value="60.3386215753425"/>
+																<Property Name="LoopEnd" Type="Real64" Value="197.537153966895"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.59158461757991"/>
+																<Property Name="TrimEnd" Type="Real64" Value="202.206213969749"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\480007-Medium_Rain_Rooftop_Floor_Tile.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="570502921"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="480007-Medium_Rain_Rooftop_Floor_Tile" ID="{CBBEA18A-A8B0-483F-9E65-53C86C7BFE91}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{24E24844-21BF-4CD7-83CF-7E9A2ED0AC24}" ShortID="341485624">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Stone_2D" ID="{958B27CE-7346-4223-A6D8-5796159C3BA8}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Stone_3D" ID="{F42CCED8-3341-4048-9689-F1114E9E9733}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tile" ID="{4731D185-6362-47F4-9514-69EF68649935}" ShortID="65228888">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>47</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1110</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Tile_2D" ID="{AD355246-1114-4DFF-9577-230968BF1DC2}" ShortID="75051017">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="270970-Water-11-City-Rain-Roof-T05" ID="{5D9BE064-1D20-4E04-BFAC-0586FE64DE99}" ShortID="325072163">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-250</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{9AAECFA3-6989-48C8-B8EF-B3255D776A8E}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.16438356164384"/>
+																<Property Name="LoopEnd" Type="Real64" Value="80.2602739726028"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.58219178082192"/>
+																<Property Name="TrimEnd" Type="Real64" Value="82.1301369863014"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="377791757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{9AAECFA3-6989-48C8-B8EF-B3255D776A8E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{625BCC7D-75BA-47D5-B65A-0837EC548074}" ShortID="463962901">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{F6D879F0-DC06-4564-9BA6-60F8B71D64F0}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{F6D879F0-DC06-4564-9BA6-60F8B71D64F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Tile_3D" ID="{4D475D2E-1A35-40AD-BD86-11DC23B866D1}" ShortID="182914996">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="270970-Water-11-City-Rain-Roof-T05" ID="{8084CAFD-CE81-4A2F-AC71-9520EAC81C53}" ShortID="1040343361">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-250</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{D5D30E35-24C2-47A0-B4B4-1212C8BB4283}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.16438356164384"/>
+																<Property Name="LoopEnd" Type="Real64" Value="80.2602739726028"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.58219178082192"/>
+																<Property Name="TrimEnd" Type="Real64" Value="82.1301369863014"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="377791757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="270970-Water-11-City-Rain-Roof-T05" ID="{D5D30E35-24C2-47A0-B4B4-1212C8BB4283}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{E9155D9E-4774-4252-9DDB-70902A2C01E2}" ShortID="467177627">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{463BE8CA-A7DD-4DB5-B610-FC8DCBA7532A}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{463BE8CA-A7DD-4DB5-B610-FC8DCBA7532A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{40E72A1A-3E37-455F-889C-19DCBBB3E77E}" ShortID="851894193">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Tile_2D" ID="{AD355246-1114-4DFF-9577-230968BF1DC2}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Tile_3D" ID="{4D475D2E-1A35-40AD-BD86-11DC23B866D1}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Water" ID="{43EA2AAB-E693-41FD-A02E-061E645C2098}" ShortID="338820095">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Water_2D" ID="{E7353F69-BCBD-4E29-8829-809A2681A4B9}" ShortID="227008971">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{A2FAAAF1-5C98-44F0-9D26-C9D6F5B28631}" ShortID="466984812">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{571F2298-7DB7-4687-8030-596E0E8EED81}">
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="735326714"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{571F2298-7DB7-4687-8030-596E0E8EED81}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Water_3D" ID="{C88BBDE9-9758-488B-A681-10B429E4CB11}" ShortID="1014500085">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{5C9157CF-424E-4D70-868B-BA1A35D1D342}" ShortID="138176612">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{75F02404-AB35-4BFB-86A6-806FF0663A5C}">
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="735326714"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="490482-CCC_-Borneo_River_Moderate_Rain_02-001" ID="{75F02404-AB35-4BFB-86A6-806FF0663A5C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{0EDE628A-F323-4B6E-86E5-4C127BC6A7E6}" ShortID="593448066">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Water_2D" ID="{E7353F69-BCBD-4E29-8829-809A2681A4B9}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Water_3D" ID="{C88BBDE9-9758-488B-A681-10B429E4CB11}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Grass" ID="{0F80FB66-FA2C-475E-B070-C2414FBA5CC7}" ShortID="952280188">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-130</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Grass_2D" ID="{B8AE182C-77E0-463A-9C46-772A429E26E3}" ShortID="244062976">
+											<PropertyList>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="385559-FREEZING_RAIN-1F38B795" ID="{E3578C75-4FEA-4CC1-AC6F-B1A3C1FCC54F}" ShortID="572330307">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="385559-FREEZING_RAIN-1F38B795" ID="{6828A00C-679D-487E-B76E-3A9DC8154346}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="21.7061643835616"/>
+																<Property Name="LoopEnd" Type="Real64" Value="171.705479452055"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="10.0431506849315"/>
+																<Property Name="TrimEnd" Type="Real64" Value="177.86095890411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\385559-FREEZING_RAIN-1F38B795.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="303600167"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="385559-FREEZING_RAIN-1F38B795" ID="{6828A00C-679D-487E-B76E-3A9DC8154346}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{BA89457D-4503-4343-B8FA-EB0C306FEFDE}" ShortID="784815033">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{2098C3D4-D09B-4271-9113-9B0F6E0CEE84}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{2098C3D4-D09B-4271-9113-9B0F6E0CEE84}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Grass_3D" ID="{508953BE-073D-4670-A0DF-197608EE3FAF}" ShortID="327760308">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="385559-FREEZING_RAIN-1F38B795" ID="{14BFA3AA-9184-492C-91F8-DB3E489C65D4}" ShortID="741116113">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="385559-FREEZING_RAIN-1F38B795" ID="{ECE0CDD8-1FCD-483D-8B1A-5815F6F1B20F}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="21.7061643835616"/>
+																<Property Name="LoopEnd" Type="Real64" Value="171.705479452055"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="10.0431506849315"/>
+																<Property Name="TrimEnd" Type="Real64" Value="177.86095890411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\385559-FREEZING_RAIN-1F38B795.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="303600167"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="385559-FREEZING_RAIN-1F38B795" ID="{ECE0CDD8-1FCD-483D-8B1A-5815F6F1B20F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{2BB18A2E-3D8B-47CA-9660-CC716F804E1A}" ShortID="1027548155">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{418FDD13-6E7C-4CC8-80F3-F9494FBCAC82}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{418FDD13-6E7C-4CC8-80F3-F9494FBCAC82}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{19A70D56-F6E5-4051-A52B-2B59EABDD44C}" ShortID="716855815">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Grass_2D" ID="{B8AE182C-77E0-463A-9C46-772A429E26E3}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Grass_3D" ID="{508953BE-073D-4670-A0DF-197608EE3FAF}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="WetMud" ID="{579DC7F8-41C7-4749-98DB-FF4680BD5E25}" ShortID="284201651">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="WetMud_2D" ID="{4354F658-65F1-489F-916B-4E4676E32966}" ShortID="526263164">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{27F9EC65-0E5B-4987-B3A4-8C864AA34129}" ShortID="126856487">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-230</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{423BE496-735F-4910-80AC-ADBD595D150F}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{423BE496-735F-4910-80AC-ADBD595D150F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="WetMud_3D" ID="{DE42622E-A9DB-49FB-98EB-5757D5C5F16F}" ShortID="389556874">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{FE80C987-4B6F-4006-9E94-19C9BC3250CB}" ShortID="924435440">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-230</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{DBB8EBF5-19C0-4336-A3E6-12196878B6A6}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+																<Property Name="LoopBegin" Type="Real64" Value="10.3732705479452"/>
+																<Property Name="LoopEnd" Type="Real64" Value="65.3131849315068"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.12260273972603"/>
+																<Property Name="TrimEnd" Type="Real64" Value="70.9480479452055"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111262216"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="375254-Weather-Rain_On_Things-Closeup_Grass_Ground" ID="{DBB8EBF5-19C0-4336-A3E6-12196878B6A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{6CAE801F-8CD5-4524-BA29-02EC5E3AA151}" ShortID="632464288">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="WetMud_2D" ID="{4354F658-65F1-489F-916B-4E4676E32966}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="WetMud_3D" ID="{DE42622E-A9DB-49FB-98EB-5757D5C5F16F}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Wood" ID="{791F2637-0889-426A-B3DA-6BF10F0375AA}" ShortID="608987913">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="255064-CA6-Ambience-Rain-on-Wooden-Roof-Thunder" ID="{C1A792FC-E496-4404-A059-54ACBA421C33}" ShortID="786170880">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>49</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>350</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="255064-CA6-Ambience-Rain-on-Wooden-Roof-Thunder" ID="{CC5FE1C2-E967-4F9F-9466-1C6173A47F87}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="200"/>
+														<Property Name="LoopBegin" Type="Real64" Value="11.9648378995434"/>
+														<Property Name="LoopEnd" Type="Real64" Value="91.0182311643836"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.97362842465753"/>
+														<Property Name="TrimEnd" Type="Real64" Value="96.1460188356164"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Environment\Weather\Weather Common\RainHit\255064-CA6-Ambience-Rain-on-Wooden-Roof-Thunder.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392315416"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="255064-CA6-Ambience-Rain-on-Wooden-Roof-Thunder" ID="{CC5FE1C2-E967-4F9F-9466-1C6173A47F87}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<BlendContainer Name="Wood_2D" ID="{76DA6B31-D127-4D63-8893-D1F812D409C0}" ShortID="490717406">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RainHit_Wood" ID="{BF761586-6365-4E53-92FB-1B44F3CAC14F}" ShortID="555816650">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-250</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RainHit_Wood" ID="{22EE94DA-C1F4-4D08-AB1E-4947AA0D1C27}">
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\RainHit_Wood.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="725928896"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RainHit_Wood" ID="{22EE94DA-C1F4-4D08-AB1E-4947AA0D1C27}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="Wood_3D" ID="{EED1F73B-1B2E-4F5C-9894-FB9509B3E35B}" ShortID="366850838">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RainHit_Wood" ID="{1460EF4C-F51C-419F-8792-4395327DEE7B}" ShortID="525095585">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-250</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" WorkUnitID="{1CE3E07C-245C-4BFD-B531-19148493D8EE}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RainHit_Wood" ID="{AEE86D4D-6CE9-4A7F-85B2-C89AF228F4F7}">
+															<Language>SFX</Language>
+															<AudioFile>Environment\Weather\Weather Common\RainHit\RainHit_Wood.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="725928896"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RainHit_Wood" ID="{AEE86D4D-6CE9-4A7F-85B2-C89AF228F4F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="2D-3D" ID="{AF7219DF-65EF-44AC-8C2C-FA54DBF38C48}" ShortID="233291110">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="BuiltIn_Dist" ID="{FBE83DF8-1E12-4453-B9EB-1C672E32496B}" WorkUnitID="{8C9128F8-4D88-4383-B1E1-BB7431590615}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Wood_2D" ID="{76DA6B31-D127-4D63-8893-D1F812D409C0}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>3</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Wood_3D" ID="{EED1F73B-1B2E-4F5C-9894-FB9509B3E35B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Stone" ID="{2E898A32-1167-4B07-918E-AFBDEC6CB554}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wood" ID="{791F2637-0889-426A-B3DA-6BF10F0375AA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Tile-legacy" ID="{6F8B8657-45A0-43BB-B0F9-872C1FA90A34}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{0F80FB66-FA2C-475E-B070-C2414FBA5CC7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Tile" ID="{4731D185-6362-47F4-9514-69EF68649935}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{43EA2AAB-E693-41FD-A02E-061E645C2098}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="WetMud" ID="{579DC7F8-41C7-4749-98DB-FF4680BD5E25}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Tile" ID="{59212906-677F-4890-AA76-0EEDF2668DFD}"/>
+										<ItemList>
+											<ItemRef Name="Tile" ID="{4731D185-6362-47F4-9514-69EF68649935}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{5F35A912-7EA3-471E-8433-9D40944793AF}"/>
+										<ItemList>
+											<ItemRef Name="Stone" ID="{2E898A32-1167-4B07-918E-AFBDEC6CB554}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Ground" ID="{AC86DD23-21DC-46AD-A1C4-EED27A67665D}"/>
+										<ItemList>
+											<ItemRef Name="Stone" ID="{2E898A32-1167-4B07-918E-AFBDEC6CB554}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="WetMud" ID="{585EB125-13C6-47B2-B9B9-97E5396DAEFE}"/>
+										<ItemList>
+											<ItemRef Name="WetMud" ID="{579DC7F8-41C7-4749-98DB-FF4680BD5E25}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{6A4EEB56-2014-4172-80D3-B73F16458FC6}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{43EA2AAB-E693-41FD-A02E-061E645C2098}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{5D26977E-5218-4EE9-A3DF-FAE2F901FD33}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{0F80FB66-FA2C-475E-B070-C2414FBA5CC7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{049F5B9B-1BF4-4152-A202-BD151B254A1B}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{791F2637-0889-426A-B3DA-6BF10F0375AA}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

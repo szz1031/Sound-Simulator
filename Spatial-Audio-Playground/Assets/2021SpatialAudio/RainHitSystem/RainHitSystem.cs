@@ -99,28 +99,31 @@ public class RainHitSystem : MonoBehaviour
 
                         newHitArea[areaIndexInNewArea].soundPlayer.SetPositionAndRotation(newHitArea[areaIndexInNewArea].centreLocation,this.transform.rotation);
 
-                        //set rtpc
+                        AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[areaIndexInNewArea].size,newHitArea[areaIndexInNewArea].soundPlayer)  //set rtpc
                         break;
                     }
                 }
             }
 
-            if (!foundInNewArea){
-                // stop player and recycle
-                //set rtpc =0
+            if (!foundInNewArea){   //清除不再使用的老区域的player
+                AudioManager.StopAndRecycle3DPlayer(lastHitArea[areaIndexInOldArea].soundPlayer); // stop player and recycle
+                AkSoundEngine.SetRTPCValue("RainHit_AreaSize",0f,lastHitArea[areaIndexInOldArea].soundPlayer)  //set rtpc =0
                 lastHitArea[areaIndexInOldArea].soundPlayer=null;
                 lastHitArea[areaIndexInOldArea].isUsing=false;
             }
 
         }
 
-        for (int i=0;i<newHitArea.Length;i++){
+        for (int i=0;i<newHitArea.Length;i++){   //遍历新区域，给未使用的区域配置player并播放
             if (!newHitArea[i].isUsing){
-                // 分配player
+                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation)  // 分配player
+                newHitArea[i].soundPlayer=newPlayer
+                newHitArea[i].isUsing=true;
+
                 if (newHitArea[i].tagName!=null){
-                    //set rtpc on player
-                    //set switch on player
-                    //play audio on player
+                    AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[i].size,newHitArea[i].soundPlayer) //set rtpc on player
+                    AkSoundEngine.SetSwitch("RainHit_ObjectType", GetSwitchNameFromTagName(newHitArea[i].tagName),newHitArea[i].soundPlayer)    //set switch on player
+                    AudioManager.PlaySoundOn3DPlayer(newHitArea[i].soundPlayer,"Play_RainHit_Switch")  //play audio on player
                 }
             }
         }
@@ -285,6 +288,21 @@ public class RainHitSystem : MonoBehaviour
         }
         else{
             return -1;
+        }
+    }
+
+    string GetSwitchNameFromTagName(string tagName){
+        switch(tagName){
+            case null:
+                return null;
+            case "Grass":
+                return "Grass";
+            case "Roof":
+                return "Tile";
+            case "Mud":
+                return "WetMud";
+            default:
+                return null;
         }
     }
 

@@ -17,15 +17,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>803270924</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-						</Bus>
 						<AuxBus Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}">
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -36,6 +27,14 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="EnvironmentAware" ID="{A375129E-A358-449F-A987-0CA8802F1664}">
+							<ChildrenList>
+								<Bus Name="En_Vo" ID="{C04D2B13-2ADF-4D79-ABDE-3118255618DF}"/>
+								<Bus Name="En_SFX" ID="{7464A530-92E6-411E-9065-79486D8F9DF6}"/>
+								<Bus Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}"/>
+								<Bus Name="Object" ID="{172C97EC-2FD7-46A0-88EC-060C6207F632}"/>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

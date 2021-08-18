@@ -887,6 +887,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_RainHit_Switch" ID="{541CD393-1D38-4330-B099-86F92D365253}">
+							<ChildrenList>
+								<Action Name="" ID="{B480D0D1-B9E9-43B9-A8BD-1C9FF9356B2E}" ShortID="610575553">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RainHit_Switch" ID="{97BB5653-DA34-4AFF-A9F9-844E12A8BC12}" WorkUnitID="{5FEC001B-65AA-46F5-A4D0-F2AAEA1F1017}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Test_SFX" ID="{4E5F8F1A-5163-4AE7-8D9C-25A98F1EE18A}">

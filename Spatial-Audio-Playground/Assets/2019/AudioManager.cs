@@ -79,10 +79,21 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         Audio3DPlayer player = in_3DPlayer.GetComponent<Audio3DPlayer>();
         if (player!=null){
             player.StopPlayingSound(1.5f);
-        }
-
         Using3DPlayer.Remove(in_3DPlayer);
         UnUsed3DPlayer.Add(in_3DPlayer);
+        }
+        else{
+            Debug.Log("Cannot Get Audio3DPlayer Component")
+        }
+
+
+    }
+
+    public static void PlaySoundOn3DPlayer(GameObject in_3DPlayer, string in_eventName){
+        Audio3DPlayer player = in_3DPlayer.GetComponent<Audio3DPlayer>()
+        if (in_eventName!=null&& player!=null){
+            AkSoundEngine.PostEvent(in_eventName,in_3DPlayer)
+        }
 
     }
 

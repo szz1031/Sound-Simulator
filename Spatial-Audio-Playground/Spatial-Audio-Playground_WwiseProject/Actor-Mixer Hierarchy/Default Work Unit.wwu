@@ -1501,7 +1501,7 @@
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -1813,7 +1813,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 								<Reference Name="UserAuxSend0">
 									<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -4212,7 +4212,7 @@
 									<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -4342,7 +4342,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4433,7 +4433,7 @@
 													<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -5582,7 +5582,7 @@
 											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -5626,7 +5626,7 @@
 											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -5664,7 +5664,7 @@
 											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -6002,7 +6002,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Auro-3D" ID="{73546DFE-0608-4B95-A957-6F95CEFFDB32}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D931A7D9-0E75-4D2D-8216-DE84E4AFA401}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="2021" ID="{D931A7D9-0E75-4D2D-8216-DE84E4AFA401}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="RainHit_ObjectType" ID="{F7D4AAF5-19AA-4F30-A0DC-9AFBD30E0407}">
+					<ChildrenList>
+						<Switch Name="Default" ID="{AF8517E9-8C7F-4C50-8E4A-85B1C93D22CE}"/>
+						<Switch Name="Grass" ID="{5D26977E-5218-4EE9-A3DF-FAE2F901FD33}"/>
+						<Switch Name="Tile" ID="{59212906-677F-4890-AA76-0EEDF2668DFD}"/>
+						<Switch Name="Wood" ID="{049F5B9B-1BF4-4152-A202-BD151B254A1B}"/>
+						<Switch Name="Stone" ID="{5F35A912-7EA3-471E-8433-9D40944793AF}"/>
+						<Switch Name="Snow" ID="{4DD9AE97-00BE-45B3-890B-B522C6E9E7EC}"/>
+						<Switch Name="Water" ID="{6A4EEB56-2014-4172-80D3-B73F16458FC6}"/>
+						<Switch Name="Ground" ID="{AC86DD23-21DC-46AD-A1C4-EED27A67665D}"/>
+						<Switch Name="WetMud" ID="{585EB125-13C6-47B2-B9B9-97E5396DAEFE}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
