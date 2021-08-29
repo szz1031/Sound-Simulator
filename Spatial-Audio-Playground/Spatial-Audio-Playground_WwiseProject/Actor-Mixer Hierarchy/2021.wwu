@@ -384,7 +384,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>3</RightEdgePos>
+														<RightEdgePos>5</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -392,7 +392,7 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="Stone_3D" ID="{F42CCED8-3341-4048-9689-F1114E9E9733}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>1</LeftEdgePos>
+														<LeftEdgePos>2</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
 														<RightEdgePos>100</RightEdgePos>
@@ -1114,7 +1114,7 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>3</RightEdgePos>
+														<RightEdgePos>5</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 														<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
 													</CrossfadingInfo>
@@ -1122,7 +1122,7 @@
 												<BlendTrackAssoc>
 													<ItemRef Name="Grass_3D" ID="{508953BE-073D-4670-A0DF-197608EE3FAF}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>1</LeftEdgePos>
+														<LeftEdgePos>2</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
 														<RightEdgePos>100</RightEdgePos>

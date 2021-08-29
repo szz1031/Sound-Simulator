@@ -39,10 +39,11 @@ struct HitArea{
 
 public class RainHitSystem : MonoBehaviour
 {
+    public bool Active=false;
     public Transform Player;
     public int N = 4;
     public int Interval = 1;
-    public float UpdateTime;
+    public float UpdateTime = 0.5f;
     public bool Draw;
 
     Vector3 lastUsedLocation;
@@ -62,74 +63,85 @@ public class RainHitSystem : MonoBehaviour
 
     void Update(){
 
-        timer+=Time.deltaTime;
-        
-        if (timer>UpdateTime&&Vector3.Distance(Player.position,lastUsedLocation)>1f){
+        if (Active){
+
+            timer+=Time.deltaTime;
             
-            TryUpdateRainHit();
-            lastUsedLocation=Player.position;
-            timer=0;
+            if (timer>UpdateTime&&Vector3.Distance(Player.position,lastUsedLocation)>1f){
+                
+                TryUpdateRainHit();
+                lastUsedLocation=Player.position;
+                timer=0;
+            }
         }
-        
     }
 
     void TryUpdateRainHit(){
         
         UpdateHitMapAndHitArea();
 
-        for (int i=0;i<lastHitArea.Length;i++){     //遍历每个旧区域
-            bool foundInNewArea = false;
-            int areaIndexInOldArea = i;
+        if (lastHitArea!=null){
 
-            for (int j=0;j<lastHitArea[i].size;j++){    //遍历旧区域每个点
+            for (int i=0;i<lastHitArea.Length;i++){     //遍历每个旧区域
+                bool foundInNewArea = false;
+                int areaIndexInOldArea = i;
 
-                int indexInNewMap = PointIndexInTheMap(lastHitArea[i].x[j],lastHitArea[i].y[j],newHitMap);
-                if (indexInNewMap!=-1){
+                for (int j=0;j<lastHitArea[i].size;j++){    //遍历旧区域每个点
 
-                    int areaIndexInNewArea = newHitMap[indexInNewMap].color; 
-                    
-                    if (!newHitArea[areaIndexInNewArea].isUsing && lastHitArea[areaIndexInOldArea].isUsing){
-                        foundInNewArea = true;
+                    int indexInNewMap = PointIndexInTheMap(lastHitArea[i].x[j],lastHitArea[i].y[j],newHitMap);
+                    if (indexInNewMap!=-1){
+
+                        int areaIndexInNewArea = newHitMap[indexInNewMap].color; 
                         
-                        //搬运
-                        newHitArea[areaIndexInNewArea].soundPlayer=lastHitArea[areaIndexInOldArea].soundPlayer;
-                        lastHitArea[areaIndexInOldArea].soundPlayer=null;
-                        newHitArea[areaIndexInNewArea].isUsing=true;
-                        lastHitArea[areaIndexInOldArea].isUsing=false;
+                        if (!newHitArea[areaIndexInNewArea].isUsing && lastHitArea[areaIndexInOldArea].isUsing){
+                            foundInNewArea = true;
+                            
+                            //搬运
+                            newHitArea[areaIndexInNewArea].soundPlayer=lastHitArea[areaIndexInOldArea].soundPlayer;
+                            lastHitArea[areaIndexInOldArea].soundPlayer=null;
+                            newHitArea[areaIndexInNewArea].isUsing=true;
+                            lastHitArea[areaIndexInOldArea].isUsing=false;
 
-                        newHitArea[areaIndexInNewArea].soundPlayer.SetPositionAndRotation(newHitArea[areaIndexInNewArea].centreLocation,this.transform.rotation);
+                            newHitArea[areaIndexInNewArea].soundPlayer.SetPositionAndRotation(newHitArea[areaIndexInNewArea].centreLocation,this.transform.rotation);
 
-                        AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[areaIndexInNewArea].size,newHitArea[areaIndexInNewArea].soundPlayer)  //set rtpc
-                        break;
+                            AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[areaIndexInNewArea].size,newHitArea[areaIndexInNewArea].soundPlayer.gameObject);  //set rtpc
+                            Debug.Log("Move");
+                            break;
+                        }
                     }
                 }
-            }
 
-            if (!foundInNewArea){   //清除不再使用的老区域的player
-                AudioManager.StopAndRecycle3DPlayer(lastHitArea[areaIndexInOldArea].soundPlayer); // stop player and recycle
-                AkSoundEngine.SetRTPCValue("RainHit_AreaSize",0f,lastHitArea[areaIndexInOldArea].soundPlayer)  //set rtpc =0
-                lastHitArea[areaIndexInOldArea].soundPlayer=null;
-                lastHitArea[areaIndexInOldArea].isUsing=false;
+                if (!foundInNewArea){   //清除不再使用的老区域的player
+                    AudioManager.StopAndRecycle3DPlayer(lastHitArea[areaIndexInOldArea].soundPlayer.gameObject); // stop player and recycle
+                    AkSoundEngine.SetRTPCValue("RainHit_AreaSize",0f,lastHitArea[areaIndexInOldArea].soundPlayer.gameObject);  //set rtpc =0
+                    lastHitArea[areaIndexInOldArea].soundPlayer=null;
+                    lastHitArea[areaIndexInOldArea].isUsing=false;
+                    Debug.Log("Stop an area");
+                }
+
             }
 
         }
 
         for (int i=0;i<newHitArea.Length;i++){   //遍历新区域，给未使用的区域配置player并播放
             if (!newHitArea[i].isUsing){
-                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation)  // 分配player
-                newHitArea[i].soundPlayer=newPlayer
+                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation);  // 分配player
+                newHitArea[i].soundPlayer=newPlayer.transform;
                 newHitArea[i].isUsing=true;
 
                 if (newHitArea[i].tagName!=null){
-                    AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[i].size,newHitArea[i].soundPlayer) //set rtpc on player
-                    AkSoundEngine.SetSwitch("RainHit_ObjectType", GetSwitchNameFromTagName(newHitArea[i].tagName),newHitArea[i].soundPlayer)    //set switch on player
-                    AudioManager.PlaySoundOn3DPlayer(newHitArea[i].soundPlayer,"Play_RainHit_Switch")  //play audio on player
+                    AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[i].size,newHitArea[i].soundPlayer.gameObject); //set rtpc on player
+                    AkSoundEngine.SetSwitch("RainHit_ObjectType", GetSwitchNameFromTagName(newHitArea[i].tagName),newHitArea[i].soundPlayer.gameObject);    //set switch on player
+                    AudioManager.PlaySoundOn3DPlayer(newHitArea[i].soundPlayer.gameObject,"Play_RainHit_Switch");  //play audio on player
+                    Debug.Log("Play an new area:"+GetSwitchNameFromTagName(newHitArea[i].tagName));
                 }
             }
         }
 
         lastHitArea=newHitArea;
         lastHitMap=newHitMap;
+
+        Debug.Log("RainHit Area Num = "+ newHitArea.Length);
 
     }
 
@@ -144,15 +156,18 @@ public class RainHitSystem : MonoBehaviour
         
         List<HitMap> newHitList = new List<HitMap>();
 
-        for (int x=0;x<2*N+1;x++){
-            for (int y=0;y<2*N+1;y++){
+        for (int y=0;y<2*N+1;y++){
+            for (int x=0;x<2*N+1;x++){
                 int pointX =zeroX+x*Interval;
                 int pointY =zeroY+y*Interval;
                 int indexInLastMap = PointIndexInTheMap(pointX,pointY,lastHitMap);
                 if (indexInLastMap==-1){
                     Vector3 rayStartPoint = new Vector3((float)pointX,(float)(Player.position.y+15),(float)pointY);
                     RaycastHit hitInfo;
-                    Physics.Raycast(rayStartPoint, new Vector3(0,-1,0), out hitInfo, 20, GameSetting.GameLayer.I_SoundCastAll);
+                    Physics.Raycast(rayStartPoint, new Vector3(0,-20,0), out hitInfo,20f);
+                    Debug.DrawRay(rayStartPoint, new Vector3(0,-20,0),Color.green,UpdateTime);
+                    //Debug.Log(hitInfo.transform.name);
+                    //Debug.DrawLine(hitInfo.transform.position,hitInfo.transform.position+ new Vector3(0.5f,0,0.5f),Color.red,1.5f);
 
                     //存到新图里 
                     HitMap temphitmap= new HitMap(pointX,pointY,hitInfo,-1);
@@ -189,7 +204,7 @@ public class RainHitSystem : MonoBehaviour
                 tempAreaList.Add(newHitMap[i]);
 
                 List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
-                Vector3 tempFirstLocation =newHitMap[i].hitInfo.transform.position;
+                Vector3 tempFirstLocation =newHitMap[i].hitInfo.point;
                 tempLocationList.Add(tempFirstLocation);
 
                 Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
@@ -202,10 +217,10 @@ public class RainHitSystem : MonoBehaviour
                     int[] neighours= GetNeighbourLinearIndex(n);
                     foreach(int j in neighours){
                         if(newHitMap[j].color==-1){
-                            if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName) && Vector3.Distance(newHitMap[j].hitInfo.transform.position,tempFirstLocation)<=3 ){
+                            if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName)){
                                 newHitMap[j].color=colorIndex;
                                 tempAreaList.Add(newHitMap[j]);
-                                tempLocationList.Add(newHitMap[j].hitInfo.transform.position);
+                                tempLocationList.Add(newHitMap[j].hitInfo.point);
                                 LinearIndexQueue.Enqueue(j);
                             }
                         }
@@ -214,19 +229,19 @@ public class RainHitSystem : MonoBehaviour
 
 
                 //整理信息更新到新区域
-                int[] arrayX= new int[tempAreaList.Length];
-                int[] arrayY= new int[tempAreaList.Length];
+                int[] arrayX= new int[tempAreaList.Count];
+                int[] arrayY= new int[tempAreaList.Count];
                 Vector3 averageLocation= new Vector3(0f,0f,0f);
-                for (int k=0; k<tempAreaList.Length;k++){
-                    arrayX[k]=tempAreaList[k].pointX;
-                    arrayY[k]=tempAreaList[k].pointY;
-                    averageLocation+=tempAreaList[k].hitInfo.transform.position;
+                for (int k=0; k<tempAreaList.Count;k++){
+                    arrayX[k]=tempAreaList[k].x;
+                    arrayY[k]=tempAreaList[k].y;
+                    averageLocation+=tempAreaList[k].hitInfo.point;
                 }
-                averageLocation=averageLocation/tempAreaList.Length;
+                averageLocation=averageLocation/tempAreaList.Count;
                 
 
 
-                HitArea tempHitArea= new HitArea(tempAreaList.Length, false, tempTagName, arrayX, arrayY, averageLocation, null);
+                HitArea tempHitArea= new HitArea(tempAreaList.Count, false, tempTagName, arrayX, arrayY, averageLocation, null);
                 newAreaList.Add(tempHitArea);
 
              }
@@ -272,6 +287,10 @@ public class RainHitSystem : MonoBehaviour
     }
 
     int PointIndexInTheMap(int  x, int y, HitMap[] map){
+        if (map==null){
+            Debug.Log("map=null");
+            return -1;
+        }
 
         if (map.Length>0){
             if (map[0].x<= x && x <= map[map.Length-1].x && map[0].y <= y && y <= map[map.Length-1].y){
@@ -301,8 +320,29 @@ public class RainHitSystem : MonoBehaviour
                 return "Tile";
             case "Mud":
                 return "WetMud";
+            case "Wood":
+                return "Wood";
             default:
                 return null;
+        }
+    }
+
+    void OnDrawGizmos(){
+        if (Draw){
+            if (newHitMap!=null){
+                foreach(HitMap hitpoint in newHitMap){
+                    Gizmos.color=Color.white;
+                    Gizmos.DrawCube(hitpoint.hitInfo.point, new Vector3(0.2f,0.1f,0.2f));
+                }
+
+            }
+            if (newHitArea!=null){
+                foreach(HitArea area in newHitArea){
+                    Gizmos.color=Color.yellow;
+                    Gizmos.DrawSphere(area.centreLocation,(float)area.size/20);
+                }
+            }
+
         }
     }
 

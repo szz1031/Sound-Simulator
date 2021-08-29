@@ -14,6 +14,8 @@ public class SoundUnit : MonoBehaviour
     public bool drawPath;
     public float UpdateTime=0.3f;
 
+    public bool DebugValue=false;
+
     Vector3[] path;
 
     //int targetIndex;
@@ -84,7 +86,9 @@ public class SoundUnit : MonoBehaviour
         if (timer>UpdateTime){
             AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
             timer=0;
-            Debug.Log("myObstruction = " + myObstruction + "   myOcclusion = "+myOcclusion);
+            if(DebugValue){
+                Debug.Log("myObstruction = " + myObstruction + "   myOcclusion = "+myOcclusion);
+            }
         }
         
         virtualLocation = 0.8f*virtualLocation + 0.2f*virtualtarget;

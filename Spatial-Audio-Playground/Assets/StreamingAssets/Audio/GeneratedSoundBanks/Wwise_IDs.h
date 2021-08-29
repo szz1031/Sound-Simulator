@@ -62,6 +62,7 @@ namespace AK
         static const AkUniqueID LAUNDARY = 3130091867U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
+        static const AkUniqueID PLAY_RAINHIT_SWITCH = 2037283958U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID REMOTE_INTERACT = 2054288328U;
         static const AkUniqueID SAFE_AXIS_CLOSE = 3555319575U;
@@ -123,13 +124,34 @@ namespace AK
             } // namespace SWITCH
         } // namespace GROUNDMATERIAL
 
+        namespace RAINHIT_OBJECTTYPE
+        {
+            static const AkUniqueID GROUP = 3066837860U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID GROUND = 2528658256U;
+                static const AkUniqueID SNOW = 787898836U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID TILE = 2637588553U;
+                static const AkUniqueID WATER = 2654748154U;
+                static const AkUniqueID WETMUD = 2246237663U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace RAINHIT_OBJECTTYPE
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BUILTIN_DIST = 80068529U;
         static const AkUniqueID DECREASEVOLUME = 1848266011U;
         static const AkUniqueID DISTANCE_MAX10 = 1192632456U;
         static const AkUniqueID DISTANCE_MAX20 = 1242965313U;
+        static const AkUniqueID OUTDOORRATIO = 2743955396U;
+        static const AkUniqueID RAINHIT_AREASIZE = 2356978833U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -142,8 +164,12 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID AURO_3D = 2857125394U;
+        static const AkUniqueID EN_SFX = 166933804U;
+        static const AkUniqueID EN_VO = 2157679982U;
+        static const AkUniqueID ENVIRONMENTAWARE = 3415624642U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID OBJECT = 3055412916U;
+        static const AkUniqueID WEATHER = 317282339U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

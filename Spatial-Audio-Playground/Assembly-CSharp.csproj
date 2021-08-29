@@ -72,6 +72,7 @@
      <Compile Include="Assets\2019\UIManager.cs" />
      <Compile Include="Assets\2021SpatialAudio\AStarPathFinding.cs" />
      <Compile Include="Assets\2021SpatialAudio\AStarPathRequestManager.cs" />
+     <Compile Include="Assets\2021SpatialAudio\Audio3DPlayer.cs" />
      <Compile Include="Assets\2021SpatialAudio\MyGrid.cs" />
      <Compile Include="Assets\2021SpatialAudio\MyHeap.cs" />
      <Compile Include="Assets\2021SpatialAudio\Node.cs" />

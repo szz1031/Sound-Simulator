@@ -7,6 +7,8 @@ TagManager:
   - Glass
   - Floor
   - MeshWall
+  - Grass
+  - Wood
   layers:
   - Default
   - TransparentFX

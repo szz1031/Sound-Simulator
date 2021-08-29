@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="322030223" Language="Simplified Chinese">
+		<SoundBank Id="322030223" Language="Simplified Chinese" Hash="1028306519">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
 			<ShortName>Bank_VO</ShortName>
 			<Path>Simplified Chinese\Bank_VO.bnk</Path>
@@ -245,7 +245,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4074514584">
+		<SoundBank Id="1355168291" Language="SFX" Hash="425667435">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -253,12 +253,12 @@
 				<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="2800366463" Language="SFX">
+		<SoundBank Id="2800366463" Language="SFX" Hash="735334218">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_music</ObjectPath>
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="SFX" Hash="2395356467">
+		<SoundBank Id="4017023971" Language="SFX" Hash="61287809">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
@@ -785,6 +785,69 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2037283958" Name="Play_RainHit_Switch" ObjectPath="\Events\Default Work Unit\Environment\Play_RainHit_Switch" MaxAttenuation="10.000000" DurationType="Mixed" DurationMin="75.509941" DurationMax="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="111262216" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground_2B9BE037.wem</Path>
+						</File>
+						<File Id="303600167" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\385559-FREEZING_RAIN-1F38B795.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\385559-FREEZING_RAIN-1F38B795_C216DFFB.wem</Path>
+						</File>
+						<File Id="377791757" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05_6F638DE7.wem</Path>
+						</File>
+						<File Id="570502921" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\480007-Medium_Rain_Rooftop_Floor_Tile.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\480007-Medium_Rain_Rooftop_Floor_Tile_52EA6F97.wem</Path>
+						</File>
+						<File Id="725928896" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\RainHit_Wood.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\RainHit_Wood_3F75BDB9.wem</Path>
+						</File>
+						<File Id="735326714" Language="SFX">
+							<ShortName>Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001.wav</ShortName>
+							<Path>SFX\Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{AF8517E9-8C7F-4C50-8E4A-85B1C93D22CE}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{5F35A912-7EA3-471E-8433-9D40944793AF}">
+							<Media>
+								<File Id="570502921"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{59212906-677F-4890-AA76-0EEDF2668DFD}">
+							<Media>
+								<File Id="111262216"/>
+								<File Id="377791757"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6A4EEB56-2014-4172-80D3-B73F16458FC6}">
+							<Media>
+								<File Id="735326714"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5D26977E-5218-4EE9-A3DF-FAE2F901FD33}">
+							<Media>
+								<File Id="111262216"/>
+								<File Id="303600167"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{585EB125-13C6-47B2-B9B9-97E5396DAEFE}">
+							<Media>
+								<File Id="111262216"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{049F5B9B-1BF4-4152-A202-BD151B254A1B}">
+							<Media>
+								<File Id="725928896"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" DurationType="OneShot" DurationMin="0.298879" DurationMax="0.646816">
 					<IncludedMemoryFiles>
 						<File Id="50177702" Language="SFX">
@@ -1134,7 +1197,25 @@
 					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="80068529" Name="BuiltIn_Dist" ObjectPath="\Game Parameters\2021\BuiltIn_Dist"/>
+				<GameParameter Id="2356978833" Name="RainHit_AreaSize" ObjectPath="\Game Parameters\2021\RainHit_AreaSize"/>
+				<GameParameter Id="2743955396" Name="OutDoorRatio" ObjectPath="\Game Parameters\2021\OutDoorRatio"/>
+			</GameParameters>
 			<SwitchGroups>
+				<SwitchGroup Id="3066837860" Name="RainHit_ObjectType" ObjectPath="\Switches\2021\RainHit_ObjectType">
+					<Switches>
+						<Switch Id="782826392" Name="Default" ObjectPath="\Switches\2021\RainHit_ObjectType\Default"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\2021\RainHit_ObjectType\Grass"/>
+						<Switch Id="2637588553" Name="Tile" ObjectPath="\Switches\2021\RainHit_ObjectType\Tile"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\2021\RainHit_ObjectType\Wood"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\2021\RainHit_ObjectType\Stone"/>
+						<Switch Id="787898836" Name="Snow" ObjectPath="\Switches\2021\RainHit_ObjectType\Snow"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\2021\RainHit_ObjectType\Water"/>
+						<Switch Id="2528658256" Name="Ground" ObjectPath="\Switches\2021\RainHit_ObjectType\Ground"/>
+						<Switch Id="2246237663" Name="WetMud" ObjectPath="\Switches\2021\RainHit_ObjectType\WetMud"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3072116243" Name="GroundMaterial" ObjectPath="\Switches\Default Work Unit\GroundMaterial">
 					<Switches>
 						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\GroundMaterial\Carpet"/>

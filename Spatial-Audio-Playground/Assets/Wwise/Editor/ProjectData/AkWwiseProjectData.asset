@@ -30,19 +30,45 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c1ffe7deaa0e614bb759bac74ccf6fde
     GuidInternal: 
-    m_lastTime: -8585750104436852997
+    m_lastTime: -8585723159759397963
     List:
-    - name: Auro-3D
-      guid: fe6d54730806954ba9576f95ceffdb32
-      id: 2857125394
+    - name: En_SFX
+      guid: 30a56474e6921e41906579486d8f9df6
+      id: 166933804
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
-      - ElementName: Auro-3D
+      - ElementName: EnvironmentAware
         ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus\Auro-3D
+      - ElementName: En_SFX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\EnvironmentAware\En_SFX
+    - name: En_Vo
+      guid: 132b4dc0df2a794dabde3118255618df
+      id: 2157679982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: EnvironmentAware
+        ObjectType: 2
+      - ElementName: En_Vo
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\EnvironmentAware\En_Vo
+    - name: EnvironmentAware
+      guid: 9e1275a358a39f44a9870ca8802f1664
+      id: 3415624642
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: EnvironmentAware
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\EnvironmentAware
     - name: LargeRoomReverb
       guid: 0857c94ebf2a0a4e826a84eb10531e6f
       id: 1409684747
@@ -63,6 +89,32 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: Object
+      guid: ec972c17d72fa04688ec060c6207f632
+      id: 3055412916
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: EnvironmentAware
+        ObjectType: 2
+      - ElementName: Object
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\EnvironmentAware\Object
+    - name: Weather
+      guid: d3b03dfb24c0644980406461eeb61679
+      id: 317282339
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: EnvironmentAware
+        ObjectType: 2
+      - ElementName: Weather
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\EnvironmentAware\Weather
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -71,7 +123,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 61471425322961458087885ce7ef58e4
     GuidInternal: 
-    m_lastTime: -8585750104201408779
+    m_lastTime: -8585713654225121787
     List:
     - name: Bank_music
       guid: a50a6c269192a14183974c359a6bc735
@@ -108,7 +160,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8585750104441969880
+    m_lastTime: -8585723159759427729
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -990,6 +1042,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_RainHit_Switch
+      guid: 93d31c54381d3043b09986f92d365253
+      id: 2037283958
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Play_RainHit_Switch
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Play_RainHit_Switch
+      maxAttenuation: 10
+      maxDuration: Infinity
+      minDuration: 75.50994
     - name: Player
       guid: b83498abc70c98478636db6d15a7447d
       id: 1069431850
@@ -1463,6 +1529,42 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
+  - PhysicalPath: Game Parameters\2021.wwu
+    PathAndIcons:
+    - ElementName: 2021
+      ObjectType: 12
+    ParentPath: 2021
+    guid: f828918c884d8343b1e1bb7431590615
+    GuidInternal: 
+    m_lastTime: -8585723159759412855
+    List:
+    - name: BuiltIn_Dist
+      guid: f83de8fb121e5344b9eb1c672e32496b
+      id: 80068529
+      PathAndIcons:
+      - ElementName: 2021
+        ObjectType: 12
+      - ElementName: BuiltIn_Dist
+        ObjectType: 13
+      Path: 2021\BuiltIn_Dist
+    - name: OutDoorRatio
+      guid: 2760c617a89be64da01f29ae88fcd2f7
+      id: 2743955396
+      PathAndIcons:
+      - ElementName: 2021
+        ObjectType: 12
+      - ElementName: OutDoorRatio
+        ObjectType: 13
+      Path: 2021\OutDoorRatio
+    - name: RainHit_AreaSize
+      guid: 8e368aeb65e264489d19a693b8f136c7
+      id: 2356978833
+      PathAndIcons:
+      - ElementName: 2021
+        ObjectType: 12
+      - ElementName: RainHit_AreaSize
+        ObjectType: 13
+      Path: 2021\RainHit_AreaSize
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -1541,6 +1643,82 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   SwitchWwu:
+  - PhysicalPath: Switches\2021.wwu
+    PathAndIcons:
+    - ElementName: 2021
+      ObjectType: 12
+    ParentPath: 2021
+    guid: d9a731d9750e2d4d8216de84e4afa401
+    GuidInternal: 
+    m_lastTime: -8585723159744126152
+    List:
+    - name: RainHit_ObjectType
+      guid: f5aad4f7aa19304fa0dc9afbd30e0407
+      id: 3066837860
+      PathAndIcons:
+      - ElementName: 2021
+        ObjectType: 12
+      - ElementName: RainHit_ObjectType
+        ObjectType: 11
+      Path: 2021\RainHit_ObjectType
+      values:
+      - name: Default
+        guid: e91785af7f8c504c8e4a85b1c93d22ce
+        id: 782826392
+        PathAndIcons:
+        - ElementName: Default
+          ObjectType: 10
+      - name: Grass
+        guid: 7e97265d1852e94ea3dffae2f901fd33
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Grass
+          ObjectType: 10
+      - name: Ground
+        guid: 23dd86acdc21ad46a1c4eed27a67665d
+        id: 2528658256
+        PathAndIcons:
+        - ElementName: Ground
+          ObjectType: 10
+      - name: Snow
+        guid: 97aed94dbe00b345890bb522c6e9e7ec
+        id: 787898836
+        PathAndIcons:
+        - ElementName: Snow
+          ObjectType: 10
+      - name: Stone
+        guid: 12a9355fa37e1e4784339d40944793af
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Stone
+          ObjectType: 10
+      - name: Tile
+        guid: 062921597f679048aa760eedf2668dfd
+        id: 2637588553
+        PathAndIcons:
+        - ElementName: Tile
+          ObjectType: 10
+      - name: Water
+        guid: 56eb4e6a1420724180d3b73f16458fc6
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Water
+          ObjectType: 10
+      - name: WetMud
+        guid: 25b15e58c613b247b9b997e5396daefe
+        id: 2246237663
+        PathAndIcons:
+        - ElementName: WetMud
+          ObjectType: 10
+      - name: Wood
+        guid: 9b5b9f04f41b5241a202bd151b254a1b
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -1601,6 +1779,7 @@ MonoBehaviour:
   - /Spatial-Audio-Playground
   - /Spatial-Audio-Playground/Events
   - /Spatial-Audio-Playground/Events/Default Work Unit
+  - /Spatial-Audio-Playground/Events/Default Work Unit/Environment
   - /Spatial-Audio-Playground/Events/Default Work Unit/Object
   - /Spatial-Audio-Playground/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1

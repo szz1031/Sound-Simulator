@@ -7,7 +7,11 @@ State	ID	Name	State Group			Notes
 	748895195	None	WorldState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	2857125394	Auro-3D			\Default Work Unit\Master Audio Bus\Auro-3D	
+	166933804	En_SFX			\Default Work Unit\Master Audio Bus\EnvironmentAware\En_SFX	
+	317282339	Weather			\Default Work Unit\Master Audio Bus\EnvironmentAware\Weather	
+	2157679982	En_Vo			\Default Work Unit\Master Audio Bus\EnvironmentAware\En_Vo	
+	3055412916	Object			\Default Work Unit\Master Audio Bus\EnvironmentAware\Object	
+	3415624642	EnvironmentAware			\Default Work Unit\Master Audio Bus\EnvironmentAware	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

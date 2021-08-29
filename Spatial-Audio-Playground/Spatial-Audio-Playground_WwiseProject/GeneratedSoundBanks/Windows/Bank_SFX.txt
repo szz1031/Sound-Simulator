@@ -32,6 +32,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1474002183	Safe_Close			\Default Work Unit\Object\safe\Safe_Close	
 	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	3 materials - switches
 	1948672150	Cabinet_Close			\Default Work Unit\Object\Cabinet\Cabinet_Close	
+	2037283958	Play_RainHit_Switch			\Default Work Unit\Environment\Play_RainHit_Switch	
 	2043156035	Door_Wide_Handle_Close			\Default Work Unit\Object\Door_Wide\Door_Wide_Handle_Close	
 	2054288328	Remote_Interact			\Default Work Unit\Object\Remote_Interact	
 	2080917547	Guitar_Music			\Default Work Unit\Object\Guitar_Music	
@@ -68,9 +69,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	4254255911	Bear_Music			\Default Work Unit\Object\Bear_Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	3066837860	RainHit_ObjectType			\2021\RainHit_ObjectType	
 	3072116243	GroundMaterial			\Default Work Unit\GroundMaterial	
 
 Switch	ID	Name	Switch Group			Notes
+	782826392	Default	RainHit_ObjectType			
+	787898836	Snow	RainHit_ObjectType			
+	1216965916	Stone	RainHit_ObjectType			
+	2058049674	Wood	RainHit_ObjectType			
+	2246237663	WetMud	RainHit_ObjectType			
+	2528658256	Ground	RainHit_ObjectType			
+	2637588553	Tile	RainHit_ObjectType			
+	2654748154	Water	RainHit_ObjectType			
+	4248645337	Grass	RainHit_ObjectType			
 	841620460	Concrete	GroundMaterial			
 	1088209313	Floor	GroundMaterial			
 	1164367372	Stair	GroundMaterial			
@@ -96,6 +107,11 @@ Custom State	ID	Name	State Group	Owner		Notes
 	889955736	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire		
 	1022236422	B	WorldState	\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\Guitar		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	80068529	BuiltIn_Dist			\2021\BuiltIn_Dist	
+	2356978833	RainHit_AreaSize			\2021\RainHit_AreaSize	一个雨打声源的面积大小
+	2743955396	OutDoorRatio			\2021\OutDoorRatio	0=full indoor 1=full outdoor
+
 Effect plug-ins	ID	Name	Type				Notes
 	486191333	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	935707920	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
@@ -113,6 +129,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	50253643	fstp_carpet_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_BCFCCFC6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_01		3876
 	78539637	drawer close_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Drawer Wooden Vanity_01_687AD302.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_01		5262
 	105157533	Mainghosty	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\REAPER Media\Mainghosty_29A541FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Mainghosty		526874
+	111262216	375254-Weather-Rain_On_Things-Closeup_Grass_Ground	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground_2B9BE037.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Tile\Tile_2D\375254-Weather-Rain_On_Things-Closeup_Grass_Ground		1819267
 	112940681	Sub	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT Fire Wind in Metal Stove 01_EDAA953D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Fire\Sub		143631
 	126968948	fstp_concrete_06	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_E448CDF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_06		5470
 	155837603	car clo	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\DoorWoodCabinetClose (1)_9E7261B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet Shut\car clo		4817
@@ -126,11 +143,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	243168692	Door_Open_Axis	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_21DF2BFF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Open_Axis\Door_Open_Axis		6569
 	255800652	fstp_wood_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_94AA7454.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_03		3598
 	261043379	fstp_wood_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_41E0FD44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodStair\fstp_wood_02		1997
+	303600167	385559-FREEZING_RAIN-1F38B795	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\385559-FREEZING_RAIN-1F38B795_C216DFFB.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Grass\Grass_2D\385559-FREEZING_RAIN-1F38B795		2864825
 	307543888	fstp_concrete_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\fstepConcreteMono_C3356CC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\fstp_concrete_02		3876
 	307565909	metal_door_hinge_squeak_1ft_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EXT_shipping_container_metal_door_hinge_squeak_1ft_02_84845559.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Safe\metal_door_hinge_squeak_1ft_02		3861
 	323133469	3	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\ANW1838_10_Violins-Virus_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\3		1831905
 	335077997	5	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\ANW3185_01_Cello-Prelude_CC241EC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\TV_Music\5		1831160
 	355509078	drawer slide_04	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Drawer Wooden Vanity_01_4781B95E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_04		3006
+	377791757	270970-Water-11-City-Rain-Roof-T05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\270970-Water-11-City-Rain-Roof-T05_6F638DE7.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Tile\Tile_2D\270970-Water-11-City-Rain-Roof-T05		1007552
 	381684206	Washing machine draining subtly and humming	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Washing machine draining subtly and humming_3928149C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine\Washing machine draining subtly and humming		1721643
 	396493397	drawer slide_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Drawer Wooden Vanity_01_45C40E14.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_03		3245
 	405076756	fstp_carpet_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_CA5E6791.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet_02		3199
@@ -150,6 +169,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	534002572	Closet _Close_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_8D7C007E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close_01		8708
 	538976337	Key_Hint Sound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\RE201 027A SIGNAL GENERATOR 1K _MONO_CF2576D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WorldB Hint Object\Key_Hint Sound		370589
 	567029194	Closet _Close	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_7B3CA51E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Closet_Close\Closet _Close		8183
+	570502921	480007-Medium_Rain_Rooftop_Floor_Tile	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\480007-Medium_Rain_Rooftop_Floor_Tile_52EA6F97.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Stone\Stone_2D\480007-Medium_Rain_Rooftop_Floor_Tile		4510864
 	573201444	OnOffTap	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\REAPER Media\OnOffTap_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\OnOffTap		4917
 	578918507	drawer close_03	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Drawer Wooden Vanity_01_C3D9F5F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Shut\drawer close_03		5202
 	595218375	Gas laundry dryer running rhythmically and tumbling	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Gas laundry dryer running rhythmically and tumbling_E00C9CFF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Laundray machine\Gas laundry dryer running rhythmically and tumbling		1631561
@@ -165,9 +185,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	704428846	fstp_carpet	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\422_Foley_Footsteps_Carpet_Sneaker_Jump_Land_On_One_Foot_Distance_F3848C59.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\fstp_carpet		3101
 	710131029	Door_Close_KeySound	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_309F398A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Close_KeySound		6323
 	712503341	car crack1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_FBA3EB07.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Carbinet crack\open crack\car crack1		4153
+	725928896	RainHit_Wood	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\RainHit_Wood_3F75BDB9.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Wood\Wood_2D\RainHit_Wood		1517223
 	729219625	Door_Close_Axis_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Door-Wood-Worn-Creaks-Swing Mvs 3_4676D4F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door&Closet_Close_Axis\Door_Close_Axis_02		9075
 	730283719	Squeak_1	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\REAPER Media\Squeak_1_DA7F328F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Object with Adaptive Reverb and Virtual position\gramophone\Squeak_1		7577
 	734492731	drawer slide_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Drawer Wooden Vanity_01_309B87C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Drawer, Carbinet\Drawer Slide\drawer slide_02		2828
+	735326714	490482-CCC_-Borneo_River_Moderate_Rain_02-001	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001_3F75BDB9.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Water\Water_2D\490482-CCC_-Borneo_River_Moderate_Rain_02-001		1402901
 	740920542	fstp_wood_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_38C65213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_02		3620
 	744698158	fstp_wood_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_C8940B7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_05		4834
 	756349642	Door_Open_Handle_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9986C7F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Open_Handle\Door_Open_Handle_02		3722
