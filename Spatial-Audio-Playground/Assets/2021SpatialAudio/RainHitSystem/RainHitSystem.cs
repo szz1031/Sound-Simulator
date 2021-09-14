@@ -201,11 +201,11 @@ public class RainHitSystem : MonoBehaviour
                 string tempTagName=newHitMap[i].hitInfo.transform.tag;
 
                 List<HitMap> tempAreaList= new List<HitMap>();  //临时区域信息
-                tempAreaList.Add(newHitMap[i]);
+                //tempAreaList.Add(newHitMap[i]);
 
                 List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
                 Vector3 tempFirstLocation =newHitMap[i].hitInfo.point;
-                tempLocationList.Add(tempFirstLocation);
+                //tempLocationList.Add(tempFirstLocation);
 
                 Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
                 LinearIndexQueue.Enqueue(i);
@@ -214,13 +214,15 @@ public class RainHitSystem : MonoBehaviour
                 //染色算法
                 while (LinearIndexQueue.Count>0){
                     int n = LinearIndexQueue.Dequeue();
+                    tempAreaList.Add(newHitMap[n]);
+                    tempLocationList.Add(newHitMap[n].hitInfo.point);
                     int[] neighours= GetNeighbourLinearIndex(n);
                     foreach(int j in neighours){
                         if(newHitMap[j].color==-1){
                             if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName)){
                                 newHitMap[j].color=colorIndex;
-                                tempAreaList.Add(newHitMap[j]);
-                                tempLocationList.Add(newHitMap[j].hitInfo.point);
+                                //tempAreaList.Add(newHitMap[j]);
+                                //tempLocationList.Add(newHitMap[j].hitInfo.point);
                                 LinearIndexQueue.Enqueue(j);
                             }
                         }
