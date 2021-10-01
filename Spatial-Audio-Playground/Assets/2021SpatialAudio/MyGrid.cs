@@ -72,6 +72,7 @@ public class MyGrid : MonoBehaviour
     }
 
     public Node NodeFromWorldPosition(Vector3 worldPosition){
+        
 
         float deltaX = (worldPosition.x - grid[0,0,0].worldPosition.x) / nodeDiameter;
         //Debug.Log("deltaX = "+ deltaX);
@@ -89,6 +90,8 @@ public class MyGrid : MonoBehaviour
         x =  Mathf.Clamp(x,0,gridSizeX-1);
         y =  Mathf.Clamp(y,0,gridSizeY-1);
         z =  Mathf.Clamp(z,0,gridSizeZ-1);
+
+        grid[x, y, z] = new Node(true, grid[x,y,z].worldPosition,grid[x,y,z].gridX,grid[x,y,z].gridY,grid[x,y,z].gridZ);
 
         return grid[x,y,z];
     }

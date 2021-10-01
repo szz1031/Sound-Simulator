@@ -245,7 +245,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="425667435">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1226039719">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -258,7 +258,7 @@
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="SFX" Hash="61287809">
+		<SoundBank Id="4017023971" Language="SFX" Hash="1263094025">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
@@ -785,7 +785,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2037283958" Name="Play_RainHit_Switch" ObjectPath="\Events\Default Work Unit\Environment\Play_RainHit_Switch" MaxAttenuation="10.000000" DurationType="Mixed" DurationMin="75.509941" DurationMax="Infinite">
+				<Event Id="2037283958" Name="Play_RainHit_Switch" ObjectPath="\Events\Default Work Unit\Environment\Play_RainHit_Switch" MaxAttenuation="7.000000" DurationType="Mixed" DurationMin="75.509941" DurationMax="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="111262216" Language="SFX">
 							<ShortName>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</ShortName>

@@ -43,8 +43,9 @@ public class RainHitSystem : MonoBehaviour
     public Transform Player;
     public int N = 4;
     public int Interval = 1;
-    public float UpdateTime = 0.5f;
+    public float UpdateTime = 0.3f;
     public bool Draw;
+    public bool mDebug=false;
 
     Vector3 lastUsedLocation;
     float timer=0;
@@ -67,7 +68,7 @@ public class RainHitSystem : MonoBehaviour
 
             timer+=Time.deltaTime;
             
-            if (timer>UpdateTime&&Vector3.Distance(Player.position,lastUsedLocation)>1f){
+            if (timer>UpdateTime&&Vector3.Distance(Player.position,lastUsedLocation)>0.8f){
                 
                 TryUpdateRainHit();
                 lastUsedLocation=Player.position;
@@ -104,8 +105,8 @@ public class RainHitSystem : MonoBehaviour
 
                             newHitArea[areaIndexInNewArea].soundPlayer.SetPositionAndRotation(newHitArea[areaIndexInNewArea].centreLocation,this.transform.rotation);
 
-                            AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[areaIndexInNewArea].size,newHitArea[areaIndexInNewArea].soundPlayer.gameObject);  //set rtpc
-                            Debug.Log("Move");
+                            AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[areaIndexInNewArea].size,newHitArea[areaIndexInNewArea].soundPlayer.gameObject,300);  //set rtpc
+                            //Debug.Log("Move");
                             break;
                         }
                     }
@@ -116,7 +117,7 @@ public class RainHitSystem : MonoBehaviour
                     AkSoundEngine.SetRTPCValue("RainHit_AreaSize",0f,lastHitArea[areaIndexInOldArea].soundPlayer.gameObject);  //set rtpc =0
                     lastHitArea[areaIndexInOldArea].soundPlayer=null;
                     lastHitArea[areaIndexInOldArea].isUsing=false;
-                    Debug.Log("Stop an area");
+                    //Debug.Log("Stop an area");
                 }
 
             }
@@ -125,7 +126,7 @@ public class RainHitSystem : MonoBehaviour
 
         for (int i=0;i<newHitArea.Length;i++){   //遍历新区域，给未使用的区域配置player并播放
             if (!newHitArea[i].isUsing){
-                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation);  // 分配player
+                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation,true);  // 分配player
                 newHitArea[i].soundPlayer=newPlayer.transform;
                 newHitArea[i].isUsing=true;
 
@@ -133,7 +134,7 @@ public class RainHitSystem : MonoBehaviour
                     AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[i].size,newHitArea[i].soundPlayer.gameObject); //set rtpc on player
                     AkSoundEngine.SetSwitch("RainHit_ObjectType", GetSwitchNameFromTagName(newHitArea[i].tagName),newHitArea[i].soundPlayer.gameObject);    //set switch on player
                     AudioManager.PlaySoundOn3DPlayer(newHitArea[i].soundPlayer.gameObject,"Play_RainHit_Switch");  //play audio on player
-                    Debug.Log("Play an new area:"+GetSwitchNameFromTagName(newHitArea[i].tagName));
+                    if (mDebug) Debug.Log("Play an new area:"+GetSwitchNameFromTagName(newHitArea[i].tagName));
                 }
             }
         }
@@ -141,7 +142,7 @@ public class RainHitSystem : MonoBehaviour
         lastHitArea=newHitArea;
         lastHitMap=newHitMap;
 
-        Debug.Log("RainHit Area Num = "+ newHitArea.Length);
+        if (mDebug) Debug.Log("RainHit Area Num = "+ newHitArea.Length);
 
     }
 
@@ -193,62 +194,63 @@ public class RainHitSystem : MonoBehaviour
 
         //遍历新图
         for (int i=0;i<newHitMap.Length;i++){
-            if (newHitMap[i].color==-1 && !newHitMap[i].hitInfo.transform.CompareTag("Untagged")){
-                colorIndex++;
-                newHitMap[i].color=colorIndex;  //上色
+            if (newHitMap[i].hitInfo.transform!=null){
+                if (newHitMap[i].color==-1 && !newHitMap[i].hitInfo.transform.CompareTag("Untagged")){
+                    colorIndex++;
+                    newHitMap[i].color=colorIndex;  //上色
 
-                //初始化队列和各种参数
-                string tempTagName=newHitMap[i].hitInfo.transform.tag;
+                    //初始化队列和各种参数
+                    string tempTagName=newHitMap[i].hitInfo.transform.tag;
 
-                List<HitMap> tempAreaList= new List<HitMap>();  //临时区域信息
-                //tempAreaList.Add(newHitMap[i]);
+                    List<HitMap> tempAreaList= new List<HitMap>();  //临时区域信息
+                    //tempAreaList.Add(newHitMap[i]);
 
-                List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
-                Vector3 tempFirstLocation =newHitMap[i].hitInfo.point;
-                //tempLocationList.Add(tempFirstLocation);
+                    List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
+                    Vector3 tempFirstLocation =newHitMap[i].hitInfo.point;
+                    //tempLocationList.Add(tempFirstLocation);
 
-                Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
-                LinearIndexQueue.Enqueue(i);
-                
+                    Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
+                    LinearIndexQueue.Enqueue(i);
+                    
 
-                //染色算法
-                while (LinearIndexQueue.Count>0){
-                    int n = LinearIndexQueue.Dequeue();
-                    tempAreaList.Add(newHitMap[n]);
-                    tempLocationList.Add(newHitMap[n].hitInfo.point);
-                    int[] neighours= GetNeighbourLinearIndex(n);
-                    foreach(int j in neighours){
-                        if(newHitMap[j].color==-1){
-                            if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName)){
-                                newHitMap[j].color=colorIndex;
-                                //tempAreaList.Add(newHitMap[j]);
-                                //tempLocationList.Add(newHitMap[j].hitInfo.point);
-                                LinearIndexQueue.Enqueue(j);
+                    //染色算法
+                    while (LinearIndexQueue.Count>0){
+                        int n = LinearIndexQueue.Dequeue();
+                        tempAreaList.Add(newHitMap[n]);
+                        tempLocationList.Add(newHitMap[n].hitInfo.point);
+                        int[] neighours= GetNeighbourLinearIndex(n);
+                        foreach(int j in neighours){
+                            if(newHitMap[j].color==-1&&newHitMap[j].hitInfo.transform!=null){
+                                if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName)){
+                                    newHitMap[j].color=colorIndex;
+                                    //tempAreaList.Add(newHitMap[j]);
+                                    //tempLocationList.Add(newHitMap[j].hitInfo.point);
+                                    LinearIndexQueue.Enqueue(j);
+                                }
                             }
                         }
                     }
+
+
+                    //整理信息更新到新区域
+                    int[] arrayX= new int[tempAreaList.Count];
+                    int[] arrayY= new int[tempAreaList.Count];
+                    Vector3 averageLocation= new Vector3(0f,0f,0f);
+                    for (int k=0; k<tempAreaList.Count;k++){
+                        arrayX[k]=tempAreaList[k].x;
+                        arrayY[k]=tempAreaList[k].y;
+                        averageLocation+=tempAreaList[k].hitInfo.point;
+                    }
+                    averageLocation=averageLocation/tempAreaList.Count;
+                    
+
+
+                    HitArea tempHitArea= new HitArea(tempAreaList.Count, false, tempTagName, arrayX, arrayY, averageLocation+ new Vector3(0f,0.2f,0f), null);
+                    newAreaList.Add(tempHitArea);
+
                 }
-
-
-                //整理信息更新到新区域
-                int[] arrayX= new int[tempAreaList.Count];
-                int[] arrayY= new int[tempAreaList.Count];
-                Vector3 averageLocation= new Vector3(0f,0f,0f);
-                for (int k=0; k<tempAreaList.Count;k++){
-                    arrayX[k]=tempAreaList[k].x;
-                    arrayY[k]=tempAreaList[k].y;
-                    averageLocation+=tempAreaList[k].hitInfo.point;
-                }
-                averageLocation=averageLocation/tempAreaList.Count;
-                
-
-
-                HitArea tempHitArea= new HitArea(tempAreaList.Count, false, tempTagName, arrayX, arrayY, averageLocation, null);
-                newAreaList.Add(tempHitArea);
-
-             }
+            }
         }
-
         //得到新区域
         newHitArea=newAreaList.ToArray();
 
@@ -282,7 +284,7 @@ public class RainHitSystem : MonoBehaviour
     int GetLinearIndexByXY(int x, int y){
         int ans = x + y*(2*N+1);
         if (ans < 0 || ans >= newHitMap.Length){
-            Debug.Log("Invalid LinearIndex Calculate In : GetNeighbourLinearIndex");
+            Debug.Log("Error: Invalid LinearIndex Calculate In : GetNeighbourLinearIndex");
             return 0;
         }
         return ans;
@@ -290,7 +292,7 @@ public class RainHitSystem : MonoBehaviour
 
     int PointIndexInTheMap(int  x, int y, HitMap[] map){
         if (map==null){
-            Debug.Log("map=null");
+            if (mDebug) Debug.Log("map=null");
             return -1;
         }
 
@@ -298,7 +300,7 @@ public class RainHitSystem : MonoBehaviour
             if (map[0].x<= x && x <= map[map.Length-1].x && map[0].y <= y && y <= map[map.Length-1].y){
                 int index =  Mathf.RoundToInt((x-map[0].x)/Interval) + Mathf.RoundToInt((y-map[0].y)/Interval) * (2*N +1);
                 if (x!=map[index].x || y!=map[index].y){
-                    Debug.Log("Wrong Index Calculate In Function:PointIndexInTheMap");
+                    Debug.Log("Error: Wrong Index Calculate In Function:PointIndexInTheMap");
                     return -1;
                 }
                 return index;
@@ -340,7 +342,7 @@ public class RainHitSystem : MonoBehaviour
             }
             if (newHitArea!=null){
                 foreach(HitArea area in newHitArea){
-                    Gizmos.color=Color.yellow;
+                    Gizmos.color=new Color(0f,0f,0f,0.5f);
                     Gizmos.DrawSphere(area.centreLocation,(float)area.size/20);
                 }
             }

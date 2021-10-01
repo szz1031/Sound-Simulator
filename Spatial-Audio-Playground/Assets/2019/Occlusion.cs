@@ -7,11 +7,11 @@ using GameSetting;
 public class Occlusion : MonoBehaviour
 {
     Vector3 SourcePosition;
-    public Transform Camera;
+    public Transform mCamera;
 
     [Header("Debug Info:")]
     public float DisToListener;
-    public float CalculateUnder;
+    public float CalculateUnder=40f;
     public float BlockedDistance;
    // public float HightDistance;
     public bool PassFloor;
@@ -19,12 +19,14 @@ public class Occlusion : MonoBehaviour
     public float OcclusionPercentage {get;private set;}
     public float hit1;
     public float hit2;
+    public bool Draw=false;
+    public float value; 
+    public bool mDebug;  
     
-
     // Use this for initialization
     void Start()
     {
-
+        mCamera=Camera.main.transform;
     }
 
     // Update is called once per frame
@@ -33,27 +35,35 @@ public class Occlusion : MonoBehaviour
         SourcePosition = transform.position;
         RaycastHit HitInfo1, HitInfo2;
         RaycastHit[] HitArrary;
-        Vector3 RayDirection1 = Camera.position - SourcePosition;
-        Vector3 RayDirection2 = SourcePosition - Camera.position;
+        Vector3 RayDirection1 = mCamera.position - SourcePosition;
+        Vector3 RayDirection2 = SourcePosition - mCamera.position;
         
 
 
-        DisToListener = Vector3.Distance(SourcePosition, Camera.position);
+        DisToListener = Vector3.Distance(SourcePosition, mCamera.position);
 
-        CalculateUnder = AkSoundEngine.GetMaxRadius(this.gameObject);
+        //CalculateUnder = AkSoundEngine.GetMaxRadius(this.gameObject);
         
 
         if (DisToListener <= CalculateUnder)
         {
 
             Physics.Raycast(SourcePosition, RayDirection1, out HitInfo1, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
-            Physics.Raycast(Camera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
+            Physics.Raycast(mCamera.position, RayDirection2, out HitInfo2, DisToListener, GameSetting.GameLayer.I_SoundCastAll);
 
 
             HitArrary = Physics.RaycastAll(SourcePosition, RayDirection1, DisToListener);        
 
             hit1 = HitInfo1.distance;
             hit2 = HitInfo2.distance;
+            
+            if (HitInfo1.transform==null) hit1=DisToListener;
+            if (HitInfo2.transform==null) hit2=DisToListener;
+
+            if (mDebug) Debug.Log(HitInfo1.transform.name);
+            if (mDebug) Debug.Log(HitInfo2.transform.name);
+
+
             PassFloor = false;
             PassWall = false;
 
@@ -87,10 +97,10 @@ public class Occlusion : MonoBehaviour
             {                
                                 
                 // avoid camera and object being blocked by themself
-                if (hit2 < 0.4 && DisToListener - hit1 >= 0.4)                
-                    hit2 = 0.4f;
-                if (hit1 < 0.1 && DisToListener - hit2 >= 0.1)
-                    hit1 = 0.1f;
+                //if (hit2 < 0.4 && DisToListener - hit1 >= 0.4)                
+                 //   hit2 = 0.4f;
+                //if (hit1 < 0.1 && DisToListener - hit2 >= 0.1)
+                  //  hit1 = 0.1f;
                 
                 
                 BlockedDistance = DisToListener - hit1 - hit2;
@@ -129,18 +139,19 @@ public class Occlusion : MonoBehaviour
                 if (OcclusionPercentage < 0)
                     OcclusionPercentage = 0;
 
-                //debug
-                // if (OcclusionPercentage >=0.7)
-                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
-                // else if (OcclusionPercentage >= 0.3)
-                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
-                // else
-                //     Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
-
 
                 //AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject, Camera.gameObject, 0.0f, OcclusionPercentage);
                 
             }
+            if (Draw){
+                if (OcclusionPercentage >=0.7)
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.red);
+                else if (OcclusionPercentage >= 0.3)
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.yellow);
+                else
+                    Debug.DrawRay(SourcePosition, RayDirection1, Color.green);
+            }
+            value=OcclusionPercentage;
         }
 
 

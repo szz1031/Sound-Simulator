@@ -1053,7 +1053,7 @@ MonoBehaviour:
       - ElementName: Play_RainHit_Switch
         ObjectType: 3
       Path: Default Work Unit\Environment\Play_RainHit_Switch
-      maxAttenuation: 10
+      maxAttenuation: 7
       maxDuration: Infinity
       minDuration: 75.50994
     - name: Player
@@ -1536,7 +1536,7 @@ MonoBehaviour:
     ParentPath: 2021
     guid: f828918c884d8343b1e1bb7431590615
     GuidInternal: 
-    m_lastTime: -8585723159759412855
+    m_lastTime: -8585684972817432366
     List:
     - name: BuiltIn_Dist
       guid: f83de8fb121e5344b9eb1c672e32496b

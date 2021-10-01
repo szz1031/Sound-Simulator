@@ -8,6 +8,8 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
     public static List<GameObject> Using3DPlayer = new List<GameObject>();
     public static List<GameObject> UnUsed3DPlayer = new List<GameObject>();
 
+    public static int Audio3DPlayerNum;
+
 
     public static void PostEvent(string eventName,GameObject obj)
     {
@@ -44,7 +46,7 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         }
     }
 
-    public static void PostEvent2021(string eventName,GameObject obj){
+    public static void PostEventOnSoundUnit2021(string eventName,GameObject obj){
         SoundUnit mSoundUnit = obj.GetComponent<SoundUnit>();
 
         if (mSoundUnit==null){
@@ -56,13 +58,18 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         }
     }
 
-    public static GameObject Get3DPlayerAtLocation(Vector3 in_position){
+    public static GameObject Get3DPlayerAtLocation(Vector3 in_position,bool in_usePathFinding){
 
         if (UnUsed3DPlayer.Count<=0){
-            GameObject newObject = new GameObject("3DPlayer");
+            Audio3DPlayerNum++;
+            GameObject newObject = new GameObject("3DPlayer"+Audio3DPlayerNum.ToString());
             newObject.AddComponent<Audio3DPlayer>();
             newObject.transform.SetPositionAndRotation(in_position,newObject.transform.rotation);
             Using3DPlayer.Add(newObject);
+            if (in_usePathFinding){
+                newObject.AddComponent<Occlusion>();
+                newObject.AddComponent<SoundUnit>();
+            }
             return newObject;
         }
         else{   

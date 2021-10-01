@@ -11,10 +11,11 @@ public class SoundUnit : MonoBehaviour
     public bool PlayVirtualPosition;
     public Transform target;
     Transform VSource;
-    public bool drawPath;
+    public bool drawPath=true;
     public float UpdateTime=0.3f;
 
     public bool DebugValue=false;
+    public bool DebugPlaynStop=false;
 
     Vector3[] path;
 
@@ -61,10 +62,11 @@ public class SoundUnit : MonoBehaviour
 	void Awake(){
         GameObject newObject = new GameObject("VirtualSoundSource");
         VSource = newObject.transform;
-        mOcclusion = GetComponent<Occlusion>();
     }
     
     void Start(){
+        target=Camera.main.transform;
+        mOcclusion = GetComponent<Occlusion>();
         //AStarPathRequestManager.RequestPath(transform.position,target.position, OnPathFound);
         virtualLocation=transform.position;
         virtualtarget=virtualLocation;
@@ -110,8 +112,10 @@ public class SoundUnit : MonoBehaviour
             //StartCoroutine("FollowPath");
 
             if (path.Length>0){
+                //Debug.Log("before "+(path.Length-1));
+                pathIndex=path.Length-1;
                 pathIndex=SimplifyPathByRay();
-                //Debug.Log(pathIndex);
+                //Debug.Log("after "+pathIndex);
                 pathLocation=path[pathIndex];
                 ChangeObstructionByPath();
                 SetVirtualSoundLocation();

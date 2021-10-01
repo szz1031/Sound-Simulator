@@ -35,13 +35,13 @@ public class AStarPathFinding : MonoBehaviour
             current = current.parent;
         }
         
-        Vector3[] pathPoints= SimplifyPath(path);
+        Vector3[] pathPoints= SimplifyPathByDirection(path);
         Array.Reverse(pathPoints);
         //Debug.Log("OutputPath");
         return pathPoints;
     }
 
-    Vector3[] SimplifyPath(List<Node> path){
+    Vector3[] SimplifyPathByDirection(List<Node> path){
         List<Vector3> waypoints = new List<Vector3>();
         Vector3 directionOld= Vector3.zero;
 
