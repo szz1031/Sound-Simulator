@@ -45,7 +45,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\2019\AudioBase.cs" />
-     <Compile Include="Assets\2019\AudioManager.cs" />
      <Compile Include="Assets\2019\HighLightBase.cs" />
      <Compile Include="Assets\2019\IntearctBranch.cs" />
      <Compile Include="Assets\2019\InteractBranch.cs" />
@@ -70,12 +69,13 @@
      <Compile Include="Assets\2019\UI_Subtitle.cs" />
      <Compile Include="Assets\2019\UIGI_DialogButton.cs" />
      <Compile Include="Assets\2019\UIManager.cs" />
-     <Compile Include="Assets\2021SpatialAudio\AStarPathFinding.cs" />
-     <Compile Include="Assets\2021SpatialAudio\AStarPathRequestManager.cs" />
      <Compile Include="Assets\2021SpatialAudio\Audio3DPlayer.cs" />
-     <Compile Include="Assets\2021SpatialAudio\MyGrid.cs" />
-     <Compile Include="Assets\2021SpatialAudio\MyHeap.cs" />
-     <Compile Include="Assets\2021SpatialAudio\Node.cs" />
+     <Compile Include="Assets\2021SpatialAudio\AudioManager.cs" />
+     <Compile Include="Assets\2021SpatialAudio\PathFinding\AStarPathFinding.cs" />
+     <Compile Include="Assets\2021SpatialAudio\PathFinding\AStarPathRequestManager.cs" />
+     <Compile Include="Assets\2021SpatialAudio\PathFinding\MyGrid.cs" />
+     <Compile Include="Assets\2021SpatialAudio\PathFinding\MyHeap.cs" />
+     <Compile Include="Assets\2021SpatialAudio\PathFinding\Node.cs" />
      <Compile Include="Assets\2021SpatialAudio\RainHitSystem\RainHitSystem.cs" />
      <Compile Include="Assets\2021SpatialAudio\SoundUnit.cs" />
      <Compile Include="Assets\3DTOYS\rotatecamera.cs" />
