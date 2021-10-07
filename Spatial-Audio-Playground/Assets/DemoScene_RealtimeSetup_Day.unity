@@ -18617,27 +18617,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &544981210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544981208}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6b57ab1764c9643929cd0bdf1ae7df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Camera: {fileID: 952910590}
-  Room: {fileID: 1709270087}
-  VirtualAudioSource: {fileID: 1151794685}
-  SelectedDoor: {fileID: 1349921605}
-  IsPassFloor: 0
-  IsActive: 1
-  MoveAmount: 0
-  VolumeDecreased: 0
-  InTheRoom: 0
 --- !u!114 &544981211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18698,36 +18677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf84205964e4f848b6ab2b5ba9a0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &544981214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544981208}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b4728abdb695b499e11c2b191eb540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5b72a14e688e70c46a6f39aae5b9dc17,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &544981218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18757,11 +18706,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5b72a14e688e70c46a6f39aae5b9dc17,
       type: 2}
-  PlaySoundAtStart: 0
+  PlaySoundAtStart: 1
   PlayOriginalPosition: 1
   PlayVirtualPosition: 1
   target: {fileID: 952910590}
-  drawPath: 0
+  drawPath: 1
   UpdateTime: 0.3
   DebugValue: 0
   DebugPlaynStop: 0
@@ -66138,7 +66087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928802812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.17, y: 4.32, z: 4.43}
+  m_LocalPosition: {x: 0, y: 4.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1860150486}
