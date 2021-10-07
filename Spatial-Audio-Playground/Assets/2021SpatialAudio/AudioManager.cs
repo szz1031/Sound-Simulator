@@ -74,6 +74,13 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
         }
         else{   
             GameObject oldObject = UnUsed3DPlayer[0];
+            if (in_usePathFinding)
+            {
+                Occlusion mOcclusion= oldObject.GetComponent<Occlusion>();
+                if (mOcclusion!=null) mOcclusion.enabled=true;
+                SoundUnit mSoundUnit= oldObject.GetComponent<SoundUnit>();
+                if (mSoundUnit!=null) mSoundUnit.enabled=true;
+            }
             oldObject.transform.SetPositionAndRotation(in_position,oldObject.transform.rotation);
             UnUsed3DPlayer.Remove(UnUsed3DPlayer[0]);
             Using3DPlayer.Add(oldObject);
@@ -82,12 +89,19 @@ public class AudioManager : SimpleSingletonMono<AudioManager> {
 
     }
 
-    public static void StopAndRecycle3DPlayer(GameObject in_3DPlayer){
-        Audio3DPlayer player = in_3DPlayer.GetComponent<Audio3DPlayer>();
+    public static void StopAndRecycle3DPlayer(GameObject in_3DPlayerGameObj){
+        Audio3DPlayer player = in_3DPlayerGameObj.GetComponent<Audio3DPlayer>();
         if (player!=null){
             player.StopPlayingSound(1.5f);
-            Using3DPlayer.Remove(in_3DPlayer);
-            UnUsed3DPlayer.Add(in_3DPlayer);
+            Using3DPlayer.Remove(in_3DPlayerGameObj);
+            UnUsed3DPlayer.Add(in_3DPlayerGameObj);
+            Occlusion mOcclusion= in_3DPlayerGameObj.GetComponent<Occlusion>();
+            if (mOcclusion!=null) mOcclusion.enabled=false;
+            SoundUnit mSoundUnit= in_3DPlayerGameObj.GetComponent<SoundUnit>();
+            if (mSoundUnit!=null){
+                mSoundUnit.enabled=false;
+                mSoundUnit.path=null;
+            }
         }
         else{
             Debug.Log("Cannot Get Audio3DPlayer Component");

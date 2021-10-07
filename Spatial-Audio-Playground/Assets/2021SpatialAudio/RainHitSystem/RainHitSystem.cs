@@ -40,12 +40,14 @@ struct HitArea{
 public class RainHitSystem : MonoBehaviour
 {
     public bool Active=false;
+    public bool usePathFinding=false;
     public Transform Player;
     public int N = 4;
     public int Interval = 1;
     public float UpdateTime = 0.3f;
     public bool Draw;
     public bool mDebug=false;
+
 
     Vector3 lastUsedLocation;
     float timer=0;
@@ -75,6 +77,9 @@ public class RainHitSystem : MonoBehaviour
                 timer=0;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.R)) this.Active=true;
+        if (Input.GetKeyDown(KeyCode.T)) this.Active=false;
     }
 
     void TryUpdateRainHit(){
@@ -126,11 +131,11 @@ public class RainHitSystem : MonoBehaviour
 
         for (int i=0;i<newHitArea.Length;i++){   //遍历新区域，给未使用的区域配置player并播放
             if (!newHitArea[i].isUsing){
-                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation,true);  // 分配player
+                GameObject newPlayer = AudioManager.Get3DPlayerAtLocation(newHitArea[i].centreLocation,usePathFinding);  // 分配player
                 newHitArea[i].soundPlayer=newPlayer.transform;
                 newHitArea[i].isUsing=true;
 
-                if (newHitArea[i].tagName!=null){
+                if (GetSwitchNameFromTagName(newHitArea[i].tagName)!=null){
                     AkSoundEngine.SetRTPCValue("RainHit_AreaSize",newHitArea[i].size,newHitArea[i].soundPlayer.gameObject); //set rtpc on player
                     AkSoundEngine.SetSwitch("RainHit_ObjectType", GetSwitchNameFromTagName(newHitArea[i].tagName),newHitArea[i].soundPlayer.gameObject);    //set switch on player
                     AudioManager.PlaySoundOn3DPlayer(newHitArea[i].soundPlayer.gameObject,"Play_RainHit_Switch");  //play audio on player
@@ -165,8 +170,8 @@ public class RainHitSystem : MonoBehaviour
                 if (indexInLastMap==-1){
                     Vector3 rayStartPoint = new Vector3((float)pointX,(float)(Player.position.y+15),(float)pointY);
                     RaycastHit hitInfo;
-                    Physics.Raycast(rayStartPoint, new Vector3(0,-20,0), out hitInfo,20f);
-                    Debug.DrawRay(rayStartPoint, new Vector3(0,-20,0),Color.green,UpdateTime);
+                    Physics.Raycast(rayStartPoint, new Vector3(0,-20,0), out hitInfo,18f);
+                    if (mDebug) Debug.DrawRay(rayStartPoint, new Vector3(0,-20,0),Color.green,UpdateTime);
                     //Debug.Log(hitInfo.transform.name);
                     //Debug.DrawLine(hitInfo.transform.position,hitInfo.transform.position+ new Vector3(0.5f,0,0.5f),Color.red,1.5f);
 
@@ -207,6 +212,7 @@ public class RainHitSystem : MonoBehaviour
 
                     List<Vector3> tempLocationList = new List<Vector3>();                 //位置信息
                     Vector3 tempFirstLocation =newHitMap[i].hitInfo.point;
+                    float tempHighestY=newHitMap[i].hitInfo.point.y;
                     //tempLocationList.Add(tempFirstLocation);
 
                     Queue<int> LinearIndexQueue= new Queue<int>();  //含有一个点的队列
@@ -218,10 +224,11 @@ public class RainHitSystem : MonoBehaviour
                         int n = LinearIndexQueue.Dequeue();
                         tempAreaList.Add(newHitMap[n]);
                         tempLocationList.Add(newHitMap[n].hitInfo.point);
+                        if (newHitMap[n].hitInfo.point.y>tempHighestY) tempHighestY=newHitMap[n].hitInfo.point.y;
                         int[] neighours= GetNeighbourLinearIndex(n);
                         foreach(int j in neighours){
                             if(newHitMap[j].color==-1&&newHitMap[j].hitInfo.transform!=null){
-                                if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName)){
+                                if (newHitMap[j].hitInfo.transform.CompareTag(tempTagName) && Mathf.Abs(tempFirstLocation.y-newHitMap[j].hitInfo.point.y)<=1.5f){
                                     newHitMap[j].color=colorIndex;
                                     //tempAreaList.Add(newHitMap[j]);
                                     //tempLocationList.Add(newHitMap[j].hitInfo.point);
@@ -242,6 +249,7 @@ public class RainHitSystem : MonoBehaviour
                         averageLocation+=tempAreaList[k].hitInfo.point;
                     }
                     averageLocation=averageLocation/tempAreaList.Count;
+                    averageLocation.y=tempHighestY;
                     
 
 
@@ -326,6 +334,8 @@ public class RainHitSystem : MonoBehaviour
                 return "WetMud";
             case "Wood":
                 return "Wood";
+            case "Water":
+                return "Water";
             default:
                 return null;
         }

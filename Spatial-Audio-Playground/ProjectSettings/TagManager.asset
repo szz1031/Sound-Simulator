@@ -9,6 +9,8 @@ TagManager:
   - MeshWall
   - Grass
   - Wood
+  - Roof
+  - Water
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ public class SoundUnit : MonoBehaviour
     public bool DebugValue=false;
     public bool DebugPlaynStop=false;
 
-    Vector3[] path;
+    public Vector3[] path;
 
     //int targetIndex;
 
@@ -30,6 +30,8 @@ public class SoundUnit : MonoBehaviour
     float myObstruction;
     float timer;
     private Occlusion mOcclusion;
+    private float lastOcclusion=-1f;
+    private float lastObstruction=-1f;
 
     Vector3 virtualtarget;   //用来lerp的
 
@@ -93,14 +95,25 @@ public class SoundUnit : MonoBehaviour
             }
         }
         
-        virtualLocation = 0.8f*virtualLocation + 0.2f*virtualtarget;
+        virtualLocation = 0.7f*virtualLocation + 0.3f*virtualtarget;
         VSource.SetPositionAndRotation(virtualLocation,this.transform.rotation);
         //AkSoundEngine.SetObjectPosition(gameObject,VSource);  //不把自身的gameobject设走，而是直接在V上播
 
         myOcclusion=mOcclusion.OcclusionPercentage;
-        AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,0.0f,myOcclusion);
-        AkSoundEngine.SetObjectObstructionAndOcclusion(VSource.gameObject,target.gameObject,myObstruction,0.0f);
-
+        if (lastObstruction<0) {
+            lastObstruction=myObstruction;
+        }
+        else{
+            lastObstruction=0.7f*lastObstruction+0.3f*myObstruction;
+        }
+        if (lastOcclusion<0) {
+            lastOcclusion=myOcclusion;
+        }
+        else{
+            lastOcclusion=lastOcclusion*0.7f+myOcclusion*0.3f;
+        }
+        AkSoundEngine.SetObjectObstructionAndOcclusion(this.gameObject,target.gameObject,lastObstruction,lastOcclusion);
+        
     }
 
 
@@ -203,7 +216,7 @@ public class SoundUnit : MonoBehaviour
     }
 
     void OnDrawGizmos() {
-		if (path!=null && path.Length>0 && drawPath) {
+		if (path!=null && path.Length>0 && drawPath && this.enabled==true) {
             Gizmos.DrawSphere(this.transform.position, 0.2f);
 			for (int i = 1; i < path.Length; i ++) {           
 				Gizmos.color = Color.green;
@@ -213,7 +226,7 @@ public class SoundUnit : MonoBehaviour
             Gizmos.DrawLine(this.transform.position,path[0]);
 		}
         Gizmos.color = Color.cyan;
-        if (VSource){
+        if (VSource && this.enabled==true){
             Gizmos.DrawSphere(VSource.position,0.2f);
         }
 	}

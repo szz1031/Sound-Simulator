@@ -1442,7 +1442,7 @@
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+							<ObjectRef Name="Object" ID="{172C97EC-2FD7-46A0-88EC-060C6207F632}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -2402,6 +2402,7 @@
 						<ActorMixer Name="Dialogue" ID="{80F812B8-D207-4C3B-A7E3-9446B11B27D7}" ShortID="874793418">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2412,7 +2413,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="En_Vo" ID="{C04D2B13-2ADF-4D79-ABDE-3118255618DF}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 								<Reference Name="UserAuxSend0">
 									<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -5456,6 +5457,7 @@
 						<ActorMixer Name="Fire" ID="{07F2CE74-77A1-480D-957C-95BA6A7CB892}" ShortID="414296320">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -5560,7 +5562,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Object" ID="{172C97EC-2FD7-46A0-88EC-060C6207F632}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5715,6 +5717,7 @@
 						<ActorMixer Name="Rain" ID="{348B05BC-91C0-41B3-AA07-05D5EF7A7FEB}" ShortID="893297203">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -5881,7 +5884,7 @@
 									<ObjectRef Name="Low" ID="{768A7DED-28F2-4F40-8B58-9C26846BE924}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5889,7 +5892,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
@@ -6002,7 +6004,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+											<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
@@ -6408,6 +6410,137 @@
 										</CustomStateList>
 									</StateInfo>
 								</RandomSequenceContainer>
+								<Sound Name="Rain_2D" ID="{8D1DC2D7-436C-464E-BBFD-21ACAA151912}" ShortID="350872703">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{AF6C862B-24B9-419B-881F-FBD48DDF921E}">
+												<Attenuation Name="Attenuation_Object_max10 (Custom)" ID="{829B0B0A-DDB6-4067-BA26-BB2DEF1565A9}" ShortID="394463072">
+													<PropertyList>
+														<Property Name="ConeInnerAngle" Type="int32" Value="115"/>
+														<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+														<Property Name="RadiusMax" Type="Real64" Value="9"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{387658AB-9F5E-444C-860B-93792E3369E7}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>-2</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>4.00251</XPos>
+																			<YPos>-10.43144</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{D86F2421-41C9-4AF1-A655-91A5136D41CD}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>62</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{D6F26309-B79F-4C35-BD74-409C251B4529}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>9</XPos>
+																			<YPos>57</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Mono" ID="{A8B4143C-F0A8-4C41-89AC-30DEA9DC189C}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Weather" ID="{FB3DB0D3-C024-4964-8040-6461EEB61679}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeRoomReverb" ID="{4EC95708-2ABF-4E0A-826A-84EB10531E6F}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rain on Window Sill-Mono" ID="{D3137706-4B23-4BAB-85BD-93BF629FE361}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2"/>
+												<Property Name="LoopEnd" Type="Real64" Value="185"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Rain on Window Sill-Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="847065920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rain on Window Sill-Mono" ID="{D3137706-4B23-4BAB-85BD-93BF629FE361}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -6436,6 +6569,7 @@
 						<ActorMixer Name="Laundray machine" ID="{32A89410-56B2-43AB-98BC-6BE8A437860F}" ShortID="861927255">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -6546,7 +6680,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24A728A1-BE5A-482F-85F1-920C0E308BB1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
+									<ObjectRef Name="Object" ID="{172C97EC-2FD7-46A0-88EC-060C6207F632}" WorkUnitID="{DEE7FFC1-0EAA-4B61-B759-BAC74CCF6FDE}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

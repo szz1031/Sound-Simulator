@@ -160,7 +160,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d415b48cfe971f4394483401dcb078cf
     GuidInternal: 
-    m_lastTime: -8585723159759427729
+    m_lastTime: -8585679883082445107
     List:
     - name: Bear_Music
       guid: f4785d4f2ed65b4595bc692b56cd3359
@@ -1042,6 +1042,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Rain_2D
+      guid: ee1e3e43dc7b5441a3153ad3c0e417d3
+      id: 3290036981
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Play_Rain_2D
+        ObjectType: 3
+      Path: Default Work Unit\Environment\Play_Rain_2D
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_RainHit_Switch
       guid: 93d31c54381d3043b09986f92d365253
       id: 2037283958
@@ -1053,7 +1067,7 @@ MonoBehaviour:
       - ElementName: Play_RainHit_Switch
         ObjectType: 3
       Path: Default Work Unit\Environment\Play_RainHit_Switch
-      maxAttenuation: 7
+      maxAttenuation: 10
       maxDuration: Infinity
       minDuration: 75.50994
     - name: Player
@@ -1780,7 +1794,5 @@ MonoBehaviour:
   - /Spatial-Audio-Playground/Events
   - /Spatial-Audio-Playground/Events/Default Work Unit
   - /Spatial-Audio-Playground/Events/Default Work Unit/Environment
-  - /Spatial-Audio-Playground/Events/Default Work Unit/Object
-  - /Spatial-Audio-Playground/Events/Default Work Unit/Object/TV_1
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

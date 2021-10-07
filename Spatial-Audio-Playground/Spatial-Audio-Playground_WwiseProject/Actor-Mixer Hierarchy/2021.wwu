@@ -6,6 +6,11 @@
 				<ActorMixer Name="RainHit" ID="{E4928181-23E2-4816-88FF-958715B25CCF}" ShortID="304891869">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -92,18 +97,18 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-9</YPos>
+														<YPos>-12</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log3</SegmentShape>
+														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>15</XPos>
+														<XPos>7</XPos>
 														<YPos>0</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>20</XPos>
-														<YPos>2</YPos>
+														<YPos>1</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -875,7 +880,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

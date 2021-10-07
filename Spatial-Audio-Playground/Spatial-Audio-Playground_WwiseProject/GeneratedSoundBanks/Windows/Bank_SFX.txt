@@ -54,6 +54,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3041433330	Door_Narrow_KeySound			\Default Work Unit\Object\Door_Narrow\Door_Narrow_KeySound	
 	3130091867	Laundary			\Default Work Unit\Environment\Laundary	
 	3173784171	Drawer_KeySound			\Default Work Unit\Object\Cabinet\Drawer_KeySound	
+	3290036981	Play_Rain_2D			\Default Work Unit\Environment\Play_Rain_2D	
 	3333554874	Door_Locked			\Default Work Unit\Object\Door_Narrow\Door_Locked	
 	3463217684	Cabinet_KeySound			\Default Work Unit\Object\Cabinet\Cabinet_KeySound	
 	3498272821	Door_Closet_Axis_Close			\Default Work Unit\Object\Door_Closet\Door_Closet_Axis_Close	
@@ -192,7 +193,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	735326714	490482-CCC_-Borneo_River_Moderate_Rain_02-001	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\Environment\Weather\Weather Common\RainHit\490482-CCC_-Borneo_River_Moderate_Rain_02-001_3F75BDB9.wem		\Actor-Mixer Hierarchy\2021\RainHit\RainHit_Switch\Water\Water_2D\490482-CCC_-Borneo_River_Moderate_Rain_02-001		1402901
 	740920542	fstp_wood_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_38C65213.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_02		3620
 	744698158	fstp_wood_05	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_C8940B7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_05		4834
-	756349642	Door_Locked_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9986C7F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Locked_02		3722
+	756349642	Door_Open_Handle_02	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_9986C7F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Open_Handle\Door_Open_Handle_02		3722
 	808117506	thunder 19	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\thunder 19_75B973B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environmental Object\Rain\Thunder\thunder 19		54782
 	813244428	fstp_wood_01	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\WoodfloorbarefootstepssqueakINT01-MS_92239B5D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\WoodFloor\fstp_wood_01		4233
 	819079196	Door_Close_Handle	F:\GitHub\Sound-Simulator\Spatial-Audio-Playground\Spatial-Audio-Playground_WwiseProject\.cache\Windows\SFX\EFX INT HOUSE DOOR Mud Room Wood O_C Close Soft 01_BC3DC769.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interact\Door, Closet, Safe\Door, Closet\Door_Close_Handle		3694

@@ -62,6 +62,7 @@ namespace AK
         static const AkUniqueID LAUNDARY = 3130091867U;
         static const AkUniqueID LIGHTSWITCH_OFF = 280670697U;
         static const AkUniqueID LIGHTSWITCH_ON = 2253880733U;
+        static const AkUniqueID PLAY_RAIN_2D = 3290036981U;
         static const AkUniqueID PLAY_RAINHIT_SWITCH = 2037283958U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID REMOTE_INTERACT = 2054288328U;

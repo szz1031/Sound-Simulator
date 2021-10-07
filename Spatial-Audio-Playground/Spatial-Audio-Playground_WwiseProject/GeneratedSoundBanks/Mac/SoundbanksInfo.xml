@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="322030223" Language="Simplified Chinese" Hash="1028306519">
+		<SoundBank Id="322030223" Language="Simplified Chinese" Hash="2041677282">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
 			<ShortName>Bank_VO</ShortName>
 			<Path>Simplified Chinese\Bank_VO.bnk</Path>
@@ -128,7 +128,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="322030223" Language="English(US)" Hash="3422450152">
+		<SoundBank Id="322030223" Language="English(US)" Hash="2532433977">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_VO</ObjectPath>
 			<ShortName>Bank_VO</ShortName>
 			<Path>English(US)\Bank_VO.bnk</Path>
@@ -245,7 +245,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="521978477">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3118678564">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -258,7 +258,7 @@
 			<ShortName>Bank_music</ShortName>
 			<Path>Bank_music.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4017023971" Language="SFX" Hash="1263094025">
+		<SoundBank Id="4017023971" Language="SFX" Hash="3116268088">
 			<ObjectPath>\SoundBanks\Default Work Unit\Bank_SFX</ObjectPath>
 			<ShortName>Bank_SFX</ShortName>
 			<Path>Bank_SFX.bnk</Path>
@@ -785,7 +785,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2037283958" Name="Play_RainHit_Switch" ObjectPath="\Events\Default Work Unit\Environment\Play_RainHit_Switch" MaxAttenuation="7.000000" DurationType="Mixed" DurationMin="75.509941" DurationMax="Infinite">
+				<Event Id="3290036981" Name="Play_Rain_2D" ObjectPath="\Events\Default Work Unit\Environment\Play_Rain_2D" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="847065920" Language="SFX">
+							<ShortName>Rain on Window Sill-Mono.wav</ShortName>
+							<Path>SFX\Rain on Window Sill-Mono_31EA8D7B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1409684747" Name="LargeRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeRoomReverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2037283958" Name="Play_RainHit_Switch" ObjectPath="\Events\Default Work Unit\Environment\Play_RainHit_Switch" MaxAttenuation="10.000000" DurationType="Mixed" DurationMin="75.509941" DurationMax="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="111262216" Language="SFX">
 							<ShortName>Environment\Weather\Weather Common\RainHit\375254-Weather-Rain_On_Things-Closeup_Grass_Ground.wav</ShortName>

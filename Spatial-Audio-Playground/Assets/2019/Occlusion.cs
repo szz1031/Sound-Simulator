@@ -127,11 +127,11 @@ public class Occlusion : MonoBehaviour
              
 
                 //extra occlusion added on floor and wall
-                //if (PassFloor)
-                //    OcclusionPercentage = OcclusionPercentage + 0.70f;
+                if (PassFloor)
+                    OcclusionPercentage = OcclusionPercentage + 0.50f;
 
-                //if (PassWall && !PassFloor)
-                //    OcclusionPercentage = OcclusionPercentage + 0.2f;
+                if (PassWall && !PassFloor)
+                    OcclusionPercentage = OcclusionPercentage + 0.1f;
 
                 if (OcclusionPercentage > 1)
                     OcclusionPercentage = 1f;

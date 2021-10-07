@@ -890,9 +890,72 @@
 						<Event Name="Play_RainHit_Switch" ID="{541CD393-1D38-4330-B099-86F92D365253}">
 							<ChildrenList>
 								<Action Name="" ID="{B480D0D1-B9E9-43B9-A8BD-1C9FF9356B2E}" ShortID="610575553">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="RainHit_Switch" ID="{97BB5653-DA34-4AFF-A9F9-844E12A8BC12}" WorkUnitID="{5FEC001B-65AA-46F5-A4D0-F2AAEA1F1017}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8EE34299-9649-4711-A20E-003D59AA5731}" ShortID="886104622">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64" Value="5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7DD5E486-8D3D-4410-B4AE-FF123AD7F4CD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="90"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RainHit_Switch" ID="{97BB5653-DA34-4AFF-A9F9-844E12A8BC12}" WorkUnitID="{5FEC001B-65AA-46F5-A4D0-F2AAEA1F1017}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Rain_2D" ID="{433E1EEE-7BDC-4154-A315-3AD3C0E417D3}">
+							<ChildrenList>
+								<Action Name="" ID="{188929CD-FD2B-473C-8AD7-6A60AE39DE46}" ShortID="267290201">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rain_2D" ID="{8D1DC2D7-436C-464E-BBFD-21ACAA151912}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{28AF584C-29C1-4732-AA6B-9B423D1B465E}" ShortID="340609690">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64" Value="5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7B9A9398-C968-4E5A-A60C-CE57CD616D13}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="90"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rain_2D" ID="{8D1DC2D7-436C-464E-BBFD-21ACAA151912}" WorkUnitID="{B2B69BEC-9CDF-4147-94B0-38705AC22D44}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

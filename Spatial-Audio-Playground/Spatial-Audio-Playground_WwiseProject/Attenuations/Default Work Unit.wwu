@@ -419,7 +419,7 @@
 				</Attenuation>
 				<Attenuation Name="RainHit" ID="{5D29C006-15D0-4DF7-802C-24E2C94E877A}" ShortID="271910946">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="7"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -433,10 +433,21 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log2</SegmentShape>
+											<SegmentShape>Exp2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>2.14285714285714</XPos>
+											<YPos>-1</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>7</XPos>
+											<YPos>-18</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Log2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -463,7 +474,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>2.14285714285714</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
 											<YPos>15</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -484,7 +500,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>2.14285714285714</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
 											<YPos>15</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -505,17 +526,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>2.625</XPos>
+											<XPos>3.75</XPos>
 											<YPos>100</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>5.25</XPos>
+											<XPos>7.5</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>10</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
